@@ -9,6 +9,7 @@ const defaultParams = {
   // Attaquant
   Attacks: "12",
   CT: 2,
+  Auto_hit: false,
   Strength: "8",
   PA: "2",
   Damage: "2",
@@ -18,7 +19,7 @@ const defaultParams = {
   Deva_wound: false,
   Modif_hit: 0,
   Modif_wound: 0,
-  Auto_hit: false,
+  Blast: false,
   Re_roll_hit1: false,
   Re_roll_hit: false,
   Re_roll_wound1: false,
@@ -40,9 +41,9 @@ const defaultParams = {
 };
 
 const attackerFields = [
-  "Attacks", "CT", "Strength", "PA", "Damage",
-  "Sustained_hit", "Sustained_X", "Lethal_hit", "Deva_wound",
-  "Modif_hit", "Modif_wound", "Auto_hit", "Re_roll_hit1",
+  "Attacks", "CT", "Auto_hit", "Strength", "PA", "Damage",
+  "Sustained_hit", "Sustained_X", "Lethal_hit", "Deva_wound", 'Blast',
+  "Modif_hit", "Modif_wound", "Re_roll_hit1",
   "Re_roll_hit", "Re_roll_wound1", "Re_roll_wound",
   "Crit_on_X_to_hit", "Crit_on_X_to_wound"
 ];
@@ -55,6 +56,7 @@ const defenderFields = [
 const fieldLabels = {
   Attacks: "Attaques",
   CT: "CC/CT",
+  Auto_hit: "Touches auto",
   Strength: "Force",
   PA: "Pénétration d'armure (PA)",
   Damage: "Dégâts",
@@ -62,9 +64,9 @@ const fieldLabels = {
   Sustained_X: "Touches soutenus X",
   Lethal_hit: "Touches létales",
   Deva_wound: "Blessures dévastatrices",
+  Blast: "Déflagration",
   Modif_hit: "Modificateur de touche",
   Modif_wound: "Modificateur de blessure",
-  Auto_hit: "Touches auto",
   Re_roll_hit1: "Relance des touches de 1",
   Re_roll_hit: "Relance des touches",
   Re_roll_wound1: "Relance des blessures de 1",
@@ -75,7 +77,7 @@ const fieldLabels = {
   Toughness: "Endurance",
   Save: "Sauvegarde d'armure",
   Save_invu: "Sauvegarde invulnérable",
-  Save_invu_X: "Invulnérable à X",
+  Save_invu_X: "Invulnérable à X+",
   PV: "PV par figurine",
   Nb_of_models: "Nombre de figurines",
   Cover: "Couvert",
@@ -98,8 +100,26 @@ function App() {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setParams({ ...params, [name]: type === "checkbox" ? checked : value });
+  
+    let val = type === "checkbox" ? checked : value;
+  
+    // Convertir les valeurs select en nombre
+    if (
+      ["Save", "Save_invu_X", "Strength", "PA", "Modif_hit", "Modif_wound",
+        "Crit_on_X_to_hit", "Crit_on_X_to_wound", "Toughness", "Fnp_X"
+      ].includes(name)
+    ) {
+      val = Number(val);
+  
+      // Pour PA, si valeur négative, renvoyer son absolu dans le code
+      if (name === "PA" && val < 0) {
+        val = Math.abs(val);
+      }
+    }
+  
+    setParams({ ...params, [name]: val });
   };
+  
 
   const handleSubmit = async () => {
     setLoading(true);
@@ -132,39 +152,123 @@ function App() {
     setLoading(false);
   };
 
+  // Options des différents champs
+  const optionsMap = {
+    CT: [2,3,4,5,6],
+    Strength: Array.from({ length: 24 }, (_, i) => i + 1),               // 1 à 24
+    PA: [0, -1, -2, -3, -4, -5],                                       // 0 à -5
+    Modif_hit: [-2, -1, 0, 1, 2],                                      // -2 à +2
+    Modif_wound: [-2, -1, 0, 1, 2],                                    // -2 à +2
+    Crit_on_X_to_hit: [2, 3, 4, 5, 6],                                 // 2+ à 6+
+    Crit_on_X_to_wound: [2, 3, 4, 5, 6],                               // 2+ à 6+
+    Toughness: Array.from({ length: 14 }, (_, i) => i + 1),             // 1 à 14
+    Fnp_X: [4, 5, 6],                                                  // 4+ à 6+
+  };
+
+  // Fonction utilitaire pour afficher l'option textuel
+  const optionLabel = (key, val) => {
+    if (key === "PA") return val === 0 ? "0" : `${val}`;               // On laisse tel quel (ex: -1)
+    if (
+      key === "Modif_hit" || key === "Modif_wound"
+    ) return val > 0 ? `+${val}` : `${val}`;
+    if (
+      key === "CT" ||
+      key === "Crit_on_X_to_hit" ||
+      key === "Crit_on_X_to_wound" ||
+      key === "Fnp_X"
+    ) return `${val}+`;
+    return `${val}`;
+  };
+
   const renderField = (key) => {
     const def = defaultParams[key];
-    return (
-      <div key={key} style={{ display: "flex", flexDirection: "column" }}>
-        <label style={{ fontWeight: "bold", textTransform: "capitalize", marginBottom: 4 }}>
-          {fieldLabels[key] || key.replaceAll("_", " ")}
-        </label>
-        {typeof def === "boolean" ? (
+
+    // Combo box pour Save et Save_invu_X (2+ à 7+)
+    if (key === "Save" || key === "Save_invu_X") {
+      const saveOptions = [2, 3, 4, 5, 6, 7];
+      return (
+        <div key={key} style={{ display: "flex", flexDirection: "column" }}>
+          <label style={{ fontWeight: "bold", textTransform: "capitalize", marginBottom: 4 }}>
+            {fieldLabels[key] || key.replaceAll("_", " ")}
+          </label>
+          <select
+            name={key}
+            value={params[key]}
+            onChange={handleChange}
+            style={{ border: "1px solid #ccc", padding: 6, borderRadius: 4, width: "100%" }}
+          >
+            {saveOptions.map((opt) => (
+              <option key={opt} value={opt}>
+                {opt}+
+              </option>
+            ))}
+          </select>
+        </div>
+      );
+    }
+
+    // Combo box pour les champs définis dans optionsMap
+    if (Object.keys(optionsMap).includes(key)) {
+      const opts = optionsMap[key];
+      return (
+        <div key={key} style={{ display: "flex", flexDirection: "column" }}>
+          <label style={{ fontWeight: "bold", textTransform: "capitalize", marginBottom: 4 }}>
+            {fieldLabels[key] || key.replaceAll("_", " ")}
+          </label>
+          <select
+            name={key}
+            value={params[key]}
+            onChange={handleChange}
+            style={{ border: "1px solid #ccc", padding: 6, borderRadius: 4, width: "100%" }}
+          >
+            {opts.map((opt) => (
+              <option key={opt} value={opt}>
+                {optionLabel(key, opt)}
+              </option>
+            ))}
+          </select>
+        </div>
+      );
+    }
+    // Checkbox pour les booléens
+    if (typeof def === "boolean") {
+      return (
+        <div key={key} style={{ display: "flex", flexDirection: "column" }}>
+          <label style={{ fontWeight: "bold", textTransform: "capitalize", marginBottom: 4 }}>
+            {fieldLabels[key] || key.replaceAll("_", " ")}
+          </label>
           <input
             type="checkbox"
             name={key}
             checked={params[key]}
             onChange={handleChange}
           />
-        ) : (
-          <input
-            type="text"
-            name={key}
-            value={params[key]}
-            onChange={handleChange}
-            style={{
-              border: "1px solid #ccc",
-              padding: 6,
-              borderRadius: 4,
-              width: "100%"
-            }}
-          />
-        )}
+        </div>
+      );
+    }
+
+    // Input texte par défaut
+    return (
+      <div key={key} style={{ display: "flex", flexDirection: "column" }}>
+        <label style={{ fontWeight: "bold", textTransform: "capitalize", marginBottom: 4 }}>
+          {fieldLabels[key] || key.replaceAll("_", " ")}
+        </label>
+        <input
+          type="text"
+          name={key}
+          value={params[key]}
+          onChange={handleChange}
+          style={{
+            border: "1px solid #ccc",
+            padding: 6,
+            borderRadius: 4,
+            width: "100%"
+          }}
+        />
       </div>
     );
   };
 
-  
   return (
     <div style={{ padding: 24, maxWidth: 1600, margin: "0 auto" }}>
       <h1 style={{ fontSize: 28, fontWeight: "bold", marginBottom: 24 }}>Simulateur de Dégâts Warhammer 40k</h1>
