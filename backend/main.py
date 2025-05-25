@@ -306,7 +306,7 @@ def damage_simulation(params):
             "std": std_cat,
             "unit": unit,
             "initial_force": cat_initial_force,
-            "relative_damages": mean_cat/initial_force*100
+            "relative_damages": mean_cat/cat_initial_force*100
         }
 
 
