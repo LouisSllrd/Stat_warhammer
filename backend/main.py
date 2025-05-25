@@ -7,6 +7,16 @@ import random
 import math
 import re
 from scipy.stats import norm
+import json
+import os
+
+# Chemin vers le fichier JSON
+catalogue_path = os.path.join(os.path.dirname(__file__), 'unit_catalogue.json')
+
+def load_unit_catalogue():
+    with open(catalogue_path, 'r', encoding='utf-8') as f:
+        catalogue = json.load(f)
+    return catalogue
 
 app = FastAPI()
 
@@ -71,7 +81,9 @@ def damage_trial(params):
     Modif_wound = params["Modif_wound"]
     Auto_hit = params["Auto_hit"]
     Re_roll_hit = params["Re_roll_hit"]
+    Re_roll_hit1 = params["Re_roll_hit1"]
     Re_roll_wound = params["Re_roll_wound"]
+    Re_roll_wound1 = params["Re_roll_wound1"]
     Crit_on_X_to_hit = params["Crit_on_X_to_hit"]
     Crit_on_X_to_wound = params["Crit_on_X_to_wound"]
     Toughness = params["Toughness"]
@@ -110,6 +122,17 @@ def damage_trial(params):
                     letals+=1
             elif result >= target_hit :
                 success_hits+=1
+            elif result == 1:
+                if Re_roll_hit1 or Re_roll_hit:
+                    result = D6()
+                    if result >= Crit_on_X_to_hit:
+                        success_hits+=1
+                        if Sustained_hit:
+                            sustained+=convert(Sustained_X)
+                        if Lethal_hit:
+                            letals+=1
+                    elif result >= target_hit :
+                        success_hits+=1
             else :
                 if Re_roll_hit:
                     result = D6()
@@ -154,6 +177,15 @@ def damage_trial(params):
                 deva+=1
         elif result >= target_wound :
             success_wounds+=1
+        elif result == 1 :
+            if Re_roll_wound1 or Re_roll_wound:
+                result = D6()
+                if result >= Crit_on_X_to_wound:
+                    success_wounds+=1
+                    if Deva_wound:
+                        deva+=1
+                elif result >= target_wound :
+                    success_wounds+=1
         else :
             if Re_roll_wound:
                 result = D6()
@@ -220,7 +252,7 @@ def damage_trial(params):
     
 def damage_simulation(params):
     #results = [damage_trial(params) for _ in range(params["Nb_iter"])]
-    results = [damage_trial(params) for _ in range(10000)]
+    results = [damage_trial(params) for _ in range(1000)]
     mean = np.mean(results)
     std = np.std(results)
     hist = dict()
@@ -234,10 +266,51 @@ def damage_simulation(params):
         cum_sum += hist[val]
         cumulative.append({"value": val, "cumulative_percent": 100 * cum_sum / total})
     if params["Nb_of_models"] == 1:
-        unit = "Nombre de PV perdus"
+        unit_descr = "Nombre de PV perdus"
+        unit = "PV"
+        relative_damage = mean/params["PV"]*100
+        initial_force = params["PV"]
     else : 
-        unit = "Nombre de figurines tuées"
-    return unit, mean, std, histogram_data, list(reversed(cumulative))
+        unit_descr = "Nombre de figurines tuées"
+        unit = "figurines"
+        relative_damage = mean/params["Nb_of_models"]*100
+        initial_force = params["Nb_of_models"]
+
+    # Résultats pour des profils d'unités classiques :
+    catalogue = load_unit_catalogue()
+    results_catalogue = {}
+    for unit_name, unit_stats in catalogue.items():
+        params["Toughness"] = unit_stats["Toughness"]
+        params["Save"] = unit_stats["Save"]
+        params["Save_invu"] = unit_stats["Save_invu"]
+        params["Save_invu_X"] = unit_stats["Save_invu_X"]
+        params["PV"] = unit_stats["PV"]
+        params["Nb_of_models"] = unit_stats["Nb_of_models"]
+        params["Cover"] = unit_stats["Cover"]
+        params["Fnp"] = unit_stats["Fnp"]
+        params["Fnp_X"] = unit_stats["Fnp_X"]
+
+        results_cat = [damage_trial(params) for _ in range(1000)]
+        mean_cat = np.mean(results_cat)
+        std_cat = np.std(results_cat)
+        if unit_stats["Nb_of_models"] == 1:
+            cat_initial_force = unit_stats["PV"]
+            unit = "PV"
+        else :
+            cat_initial_force = unit_stats["Nb_of_models"]
+            unit = "figs"
+
+
+        results_catalogue[unit_name] = {
+            "mean": mean_cat,
+            "std": std_cat,
+            "unit": unit,
+            "initial_force": cat_initial_force,
+            "relative_damages": mean_cat/initial_force*100
+        }
+
+
+    return unit, unit_descr, initial_force, relative_damage, mean, std, histogram_data, list(reversed(cumulative)), results_catalogue
 
 # -------------------- FastAPI Endpoint --------------------
 
@@ -254,10 +327,13 @@ class SimulationInput(BaseModel):
     Modif_hit: int
     Modif_wound: int
     Auto_hit: bool
+    Re_roll_hit1: bool
     Re_roll_hit: bool
+    Re_roll_wound1: bool
     Re_roll_wound: bool
     Crit_on_X_to_hit: int
     Crit_on_X_to_wound: int
+
     Toughness: int
     Save: int
     Save_invu: bool
@@ -271,11 +347,15 @@ class SimulationInput(BaseModel):
 
 @app.post("/simulate")
 def simulate(input: SimulationInput):
-    unit, mean, std, histogram_data, cumulative_data = damage_simulation(input.dict())
+    unit, unit_descr, initial_force, relative_damages, mean, std, histogram_data, cumulative_data, results_catalogue = damage_simulation(input.dict())
     return {
         "unit": unit,
+        "unit_descr": unit_descr,
+        "initial_force": initial_force,
+        "relative_damages": relative_damages,
         "mean": mean,
         "std": std,
         "histogram_data": histogram_data,
         "cumulative_data": cumulative_data,
+        "results_catalogue": results_catalogue
     }
