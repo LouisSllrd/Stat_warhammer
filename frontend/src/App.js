@@ -310,10 +310,10 @@ function App() {
             <h2 style={{ fontSize: 22, fontWeight: "bold" }}>Résultats</h2>
             <p>Unité : {result.unit_descr}</p>
             <p>
-              Moyenne : {result.mean.toFixed(2)} {result.unit} ,soit{" "}
+              Moyenne : {result.mean.toFixed(1)} {result.unit} ,soit{" "}
               {result.relative_damages.toFixed(0)}% de la force initiale de l'unité cible
             </p>
-            <p>Écart-type : {result.std.toFixed(2)}</p>
+            <p>Écart-type : {result.std.toFixed(1)}</p>
 
             {/* Graphiques côte à côte */}
             <div style={{ display: "flex", gap: 24, marginTop: 24 }}>
@@ -403,8 +403,8 @@ function App() {
                     {Object.entries(result.results_catalogue).map(([unitName, stats]) => (
                       <tr key={unitName}>
                         <td style={cellStyle}>{unitName} {stats.unit ? `(en ${stats.unit})` : ""}</td>
-                        <td style={cellStyle}>{stats.mean.toFixed(2)}</td>
-                        <td style={cellStyle}>{stats.std.toFixed(2)}</td>
+                        <td style={cellStyle}>{stats.mean.toFixed(1)}</td>
+                        <td style={cellStyle}>{stats.std.toFixed(1)}</td>
                         <td style={cellStyle}>{stats.initial_force}</td>
                         <td style={cellStyle}>{stats.relative_damages.toFixed(0)}%</td>
                       </tr>
