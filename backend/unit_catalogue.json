@@ -8,7 +8,8 @@
       "Nb_of_models": 20,
       "Cover": false,
       "Fnp": false,
-      "Fnp_X": 0
+      "Fnp_X": 0,
+      "Halve_damage": false
     },
     "Necron Warriors": {
       "Toughness": 4,
@@ -19,7 +20,8 @@
       "Nb_of_models": 10,
       "Cover": false,
       "Fnp": false,
-      "Fnp_X": 0
+      "Fnp_X": 0,
+      "Halve_damage": false
     },
     "Intercessors": {
       "Toughness": 4,
@@ -30,7 +32,8 @@
       "Nb_of_models": 10,
       "Cover": false,
       "Fnp": false,
-      "Fnp_X": 5
+      "Fnp_X": 5,
+      "Halve_damage": false
     },
     "Terminators": {
       "Toughness": 5,
@@ -41,7 +44,8 @@
       "Nb_of_models": 10,
       "Cover": false,
       "Fnp": false,
-      "Fnp_X": 5
+      "Fnp_X": 5,
+      "Halve_damage": false
     },
     "Rhino": {
       "Toughness": 9,
@@ -52,7 +56,8 @@
       "Nb_of_models": 1,
       "Cover": false,
       "Fnp": false,
-      "Fnp_X": 5
+      "Fnp_X": 5,
+      "Halve_damage": false
     },
     "Gladiator": {
       "Toughness": 10,
@@ -63,7 +68,8 @@
       "Nb_of_models": 1,
       "Cover": false,
       "Fnp": false,
-      "Fnp_X": 5
+      "Fnp_X": 5,
+      "Halve_damage": false
     },
     "Land Raider": {
       "Toughness": 12,
@@ -74,7 +80,8 @@
       "Nb_of_models": 1,
       "Cover": false,
       "Fnp": false,
-      "Fnp_X": 5
+      "Fnp_X": 5,
+      "Halve_damage": false
     },
     "Armiger avec invu 5+": {
       "Toughness": 10,
@@ -85,7 +92,8 @@
       "Nb_of_models": 1,
       "Cover": false,
       "Fnp": false,
-      "Fnp_X": 5
+      "Fnp_X": 5,
+      "Halve_damage": false
     },
     "Canis Rex avec invu 5+": {
       "Toughness": 12,
@@ -96,7 +104,8 @@
       "Nb_of_models": 1,
       "Cover": false,
       "Fnp": false,
-      "Fnp_X": 5
+      "Fnp_X": 5,
+      "Halve_damage": false
     }
   }
   
