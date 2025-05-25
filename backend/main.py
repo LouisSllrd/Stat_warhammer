@@ -95,6 +95,7 @@ def damage_trial(params):
     Cover = params["Cover"]
     Fnp = params["Fnp"]
     Fnp_X = params["Fnp_X"]
+    Halve_damage = params["Halve_damage"]
 
     Attacks = convert(Attacks)
     # Si Attacks est de type int ou float, pas besoin de le convertir.
@@ -224,6 +225,8 @@ def damage_trial(params):
         total_wounds_unsaved = missed_svg + deva
         for i in range(total_wounds_unsaved) :
             Damage = convert(Damage)
+            if Halve_damage:
+                Damage = math.ceil(Damage / 2)
             if Fnp :
                 for j in range(Damage):
                     if D6()<Fnp_X:
@@ -238,6 +241,8 @@ def damage_trial(params):
         total_wounds_unsaved = missed_svg + deva
         for i in range(total_wounds_unsaved) :
             Damage = convert(Damage)
+            if Halve_damage:
+                Damage = math.ceil(Damage / 2)
             if Fnp: 
                 for j in range(Damage):
                     if D6() < Fnp_X:
@@ -289,6 +294,7 @@ def damage_simulation(params):
         params["Cover"] = unit_stats["Cover"]
         params["Fnp"] = unit_stats["Fnp"]
         params["Fnp_X"] = unit_stats["Fnp_X"]
+        params["Halve_damage"] = unit_stats["Halve_damage"]
 
         results_cat = [damage_trial(params) for _ in range(1000)]
         mean_cat = np.mean(results_cat)
@@ -343,6 +349,7 @@ class SimulationInput(BaseModel):
     Cover: bool
     Fnp: bool
     Fnp_X: int
+    Halve_damage: bool
     #Nb_iter: int
 
 @app.post("/simulate")

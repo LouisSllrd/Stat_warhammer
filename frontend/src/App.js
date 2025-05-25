@@ -35,7 +35,8 @@ const defaultParams = {
   Nb_of_models: 1,
   Cover: false,
   Fnp: false,
-  Fnp_X: 5
+  Fnp_X: 5,
+  Halve_damage: false
 };
 
 const attackerFields = [
@@ -48,7 +49,7 @@ const attackerFields = [
 
 const defenderFields = [
   "Toughness", "Save", "Save_invu", "Save_invu_X",
-  "PV", "Nb_of_models", "Cover", "Fnp", "Fnp_X"
+  "PV", "Nb_of_models", "Cover", "Fnp", "Fnp_X", "Halve_damage"
 ];
 
 const fieldLabels = {
@@ -79,7 +80,8 @@ const fieldLabels = {
   Nb_of_models: "Nombre de figurines",
   Cover: "Couvert",
   Fnp: "Insensible à la douleur (FNP)",
-  Fnp_X: "FNP à X+"
+  Fnp_X: "FNP à X+",
+  Halve_damage: "Divise les dégâts par 2"
 };
 
 
