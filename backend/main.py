@@ -267,7 +267,7 @@ class SimulationInput(BaseModel):
     Cover: bool
     Fnp: bool
     Fnp_X: int
-    Nb_iter: int
+    #Nb_iter: int
 
 @app.post("/simulate")
 def simulate(input: SimulationInput):
