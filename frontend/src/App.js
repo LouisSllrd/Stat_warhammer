@@ -7,11 +7,11 @@ import {
 
 const defaultParams = {
   // Attaquant
-  Attacks: "6",
-  CT: 3,
-  Strength: "4",
-  PA: "0",
-  Damage: "1",
+  Attacks: "12",
+  CT: 2,
+  Strength: "8",
+  PA: "2",
+  Damage: "2",
   Sustained_hit: false,
   Sustained_X: 1,
   Lethal_hit: false,
@@ -25,12 +25,12 @@ const defaultParams = {
   Crit_on_X_to_wound: 6,
 
   // Défenseur
-  Toughness: 4,
-  Save: 3,
+  Toughness: 12,
+  Save: 2,
   Save_invu: false,
   Save_invu_X: 4,
-  PV: 1,
-  Nb_of_models: 5,
+  PV: 16,
+  Nb_of_models: 1,
   Cover: false,
   Fnp: false,
   Fnp_X: 5
@@ -48,6 +48,36 @@ const defenderFields = [
   "Toughness", "Save", "Save_invu", "Save_invu_X",
   "PV", "Nb_of_models", "Cover", "Fnp", "Fnp_X"
 ];
+
+const fieldLabels = {
+  Attacks: "Attaques",
+  CT: "CC/CT",
+  Strength: "Force",
+  PA: "Pénétration d'armure (PA)",
+  Damage: "Dégâts",
+  Sustained_hit: "Touches soutenus",
+  Sustained_X: "Touches soutenus X",
+  Lethal_hit: "Touches létales",
+  Deva_wound: "Blessures dévastatrices",
+  Modif_hit: "Modificateur de touche",
+  Modif_wound: "Modificateur de blessure",
+  Auto_hit: "Touches auto",
+  Re_roll_hit: "Relance des touches",
+  Re_roll_wound: "Relance des blessures",
+  Crit_on_X_to_hit: "Critique sur X+ en touche",
+  Crit_on_X_to_wound: "Critique sur X+ en blessure",
+
+  Toughness: "Endurance",
+  Save: "Sauvegarde d'armure",
+  Save_invu: "Sauvegarde invulnérable",
+  Save_invu_X: "Invulnérable à X",
+  PV: "PV par figurine",
+  Nb_of_models: "Nombre de figurines",
+  Cover: "Couvert",
+  Fnp: "Insensible à la douleur (FNP)",
+  Fnp_X: "FNP à X+"
+};
+
 
 function App() {
   const [params, setParams] = useState(defaultParams);
@@ -95,7 +125,7 @@ function App() {
     return (
       <div key={key} style={{ display: "flex", flexDirection: "column" }}>
         <label style={{ fontWeight: "bold", textTransform: "capitalize", marginBottom: 4 }}>
-          {key.replaceAll("_", " ")}
+          {fieldLabels[key] || key.replaceAll("_", " ")}
         </label>
         {typeof def === "boolean" ? (
           <input
@@ -121,6 +151,7 @@ function App() {
       </div>
     );
   };
+  
 
   return (
     <div style={{ padding: 24, maxWidth: 1600, margin: "0 auto" }}>
