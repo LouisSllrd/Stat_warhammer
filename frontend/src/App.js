@@ -77,7 +77,12 @@ function App() {
     });
 
     try {
-      const res = await axios.post("http://statwarhammer-production.up.railway.app", parsedParams);
+      const res = await axios.post(
+        "https://statwarhammer-production.up.railway.app/simulate",
+        parsedParams
+      );
+      
+      /*const res = await axios.post("http://localhost:8000/simulate", parsedParams);*/
       setResult(res.data);
     } catch (error) {
       console.error("Erreur lors de la simulation :", error);
