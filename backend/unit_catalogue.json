@@ -1,0 +1,102 @@
+{
+    "Gardes impériaux": {
+      "Toughness": 3,
+      "Save": 5,
+      "Save_invu": false,
+      "Save_invu_X": 0,
+      "PV": 1,
+      "Nb_of_models": 20,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 0
+    },
+    "Necron Warriors": {
+      "Toughness": 4,
+      "Save": 4,
+      "Save_invu": false,
+      "Save_invu_X": 0,
+      "PV": 1,
+      "Nb_of_models": 10,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 0
+    },
+    "Intercessors": {
+      "Toughness": 4,
+      "Save": 3,
+      "Save_invu": false,
+      "Save_invu_X": 0,
+      "PV": 2,
+      "Nb_of_models": 10,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 5
+    },
+    "Terminators": {
+      "Toughness": 5,
+      "Save": 2,
+      "Save_invu": true,
+      "Save_invu_X": 4,
+      "PV": 3,
+      "Nb_of_models": 10,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 5
+    },
+    "Rhino": {
+      "Toughness": 9,
+      "Save": 3,
+      "Save_invu": false,
+      "Save_invu_X": 0,
+      "PV": 10,
+      "Nb_of_models": 1,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 5
+    },
+    "Gladiator": {
+      "Toughness": 10,
+      "Save": 3,
+      "Save_invu": false,
+      "Save_invu_X": 0,
+      "PV": 12,
+      "Nb_of_models": 1,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 5
+    },
+    "Land Raider": {
+      "Toughness": 12,
+      "Save": 2,
+      "Save_invu": false,
+      "Save_invu_X": 0,
+      "PV": 16,
+      "Nb_of_models": 1,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 5
+    },
+    "Armiger avec invu 5+": {
+      "Toughness": 10,
+      "Save": 3,
+      "Save_invu": true,
+      "Save_invu_X": 5,
+      "PV": 12,
+      "Nb_of_models": 1,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 5
+    },
+    "Canis Rex avec invu 5+": {
+      "Toughness": 12,
+      "Save": 3,
+      "Save_invu": true,
+      "Save_invu_X": 5,
+      "PV": 22,
+      "Nb_of_models": 1,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 5
+    }
+  }
+  
