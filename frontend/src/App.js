@@ -110,11 +110,6 @@ function App() {
       ].includes(name)
     ) {
       val = Number(val);
-  
-      // Pour PA, si valeur négative, renvoyer son absolu dans le code
-      if (name === "PA" && val < 0) {
-        val = Math.abs(val);
-      }
     }
   
     setParams({ ...params, [name]: val });
