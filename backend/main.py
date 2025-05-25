@@ -301,16 +301,16 @@ def damage_simulation(params):
         std_cat = np.std(results_cat)
         if unit_stats["Nb_of_models"] == 1:
             cat_initial_force = unit_stats["PV"]
-            unit = "PV"
+            cat_unit = "PV"
         else :
             cat_initial_force = unit_stats["Nb_of_models"]
-            unit = "figs"
+            cat_unit = "figs"
 
 
         results_catalogue[unit_name] = {
             "mean": mean_cat,
             "std": std_cat,
-            "unit": unit,
+            "unit": cat_unit,
             "initial_force": cat_initial_force,
             "relative_damages": mean_cat/cat_initial_force*100
         }
