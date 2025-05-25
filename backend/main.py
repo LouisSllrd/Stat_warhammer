@@ -77,6 +77,7 @@ def damage_trial(params):
     Sustained_X = params["Sustained_X"]
     Lethal_hit = params["Lethal_hit"]
     Deva_wound = params["Deva_wound"]
+    Blast = params["Blast"]
     Modif_hit = params["Modif_hit"]
     Modif_wound = params["Modif_wound"]
     Auto_hit = params["Auto_hit"]
@@ -98,6 +99,8 @@ def damage_trial(params):
     Halve_damage = params["Halve_damage"]
 
     Attacks = convert(Attacks)
+    if Blast:
+        Attacks += Nb_of_models // 5
     # Si Attacks est de type int ou float, pas besoin de le convertir.
 
     if Auto_hit:
@@ -208,9 +211,9 @@ def damage_trial(params):
     missed_svg = 0
     PA = convert(PA)
     if Cover:
-        target_svg = max(Save+PA-1,2)
+        target_svg = max(Save-PA-1,2)
     else :
-        target_svg = max(Save+PA,2)
+        target_svg = max(Save-PA,2)
     if Save_invu:
         target_svg = min(Save_invu_X,target_svg)
 
@@ -330,6 +333,7 @@ class SimulationInput(BaseModel):
     Sustained_X: int
     Lethal_hit: bool
     Deva_wound: bool
+    Blast: bool
     Modif_hit: int
     Modif_wound: int
     Auto_hit: bool
