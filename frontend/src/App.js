@@ -118,7 +118,7 @@ function App() {
 
     try {
       const res = await axios.post(
-        /*"https://statwarhammer-production.up.railway.app/simulate"*/"http://localhost:8001/simulate",
+        "https://statwarhammer-production.up.railway.app/simulate",
         parsedParams
       );
       
