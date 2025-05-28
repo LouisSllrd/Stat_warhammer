@@ -78,6 +78,7 @@ def damage_trial(params):
     Lethal_hit = params["Lethal_hit"]
     Deva_wound = params["Deva_wound"]
     Blast = params["Blast"]
+    Melta = params["Melta"]
     Modif_hit = params["Modif_hit"]
     Modif_wound = params["Modif_wound"]
     Auto_hit = params["Auto_hit"]
@@ -230,6 +231,8 @@ def damage_trial(params):
             Damage = convert(Damage)
             if Halve_damage:
                 Damage = math.ceil(Damage / 2)
+            if Melta != 0:
+                Damage += Melta
             if Fnp :
                 for j in range(Damage):
                     if D6()<Fnp_X:
@@ -246,6 +249,8 @@ def damage_trial(params):
             Damage = convert(Damage)
             if Halve_damage:
                 Damage = math.ceil(Damage / 2)
+            if Melta != 0:
+                Damage += Melta
             if Fnp: 
                 for j in range(Damage):
                     if D6() < Fnp_X:
@@ -334,6 +339,7 @@ class SimulationInput(BaseModel):
     Lethal_hit: bool
     Deva_wound: bool
     Blast: bool
+    Melta: int
     Modif_hit: int
     Modif_wound: int
     Auto_hit: bool

@@ -4,8 +4,8 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip,
   LineChart, Line, CartesianGrid
 } from "recharts";
-import { useContext } from "react";
-import { ProfilesContext } from "./ProfileContext";
+/*import { useContext } from "react";
+import { ProfilesContext } from "./ProfileContext";*/
 
 const defaultParams = {
   // Attaquant
@@ -22,6 +22,7 @@ const defaultParams = {
   Modif_hit: 0,
   Modif_wound: 0,
   Blast: false,
+  Melta: 0,
   Re_roll_hit1: false,
   Re_roll_hit: false,
   Re_roll_wound1: false,
@@ -44,7 +45,7 @@ const defaultParams = {
 
 const attackerFields = [
   "Attacks", "CT", "Auto_hit", "Strength", "PA", "Damage",
-  "Sustained_hit", "Sustained_X", "Lethal_hit", "Deva_wound", 'Blast',
+  "Sustained_hit", "Sustained_X", "Lethal_hit", "Deva_wound", 'Blast', 'Melta',
   "Modif_hit", "Modif_wound", "Re_roll_hit1",
   "Re_roll_hit", "Re_roll_wound1", "Re_roll_wound",
   "Crit_on_X_to_hit", "Crit_on_X_to_wound"
@@ -67,6 +68,7 @@ const fieldLabels = {
   Lethal_hit: "Touches fatales",
   Deva_wound: "Blessures dévastatrices",
   Blast: "Déflagration",
+  Melta: "Melta X",
   Modif_hit: "Modificateur de touche",
   Modif_wound: "Modificateur de blessure",
   Re_roll_hit1: "Relance des touches de 1",
@@ -109,7 +111,7 @@ function Simulateur() {
   
     // Convertir les valeurs select en nombre
     if (
-      ["Save", "Save_invu_X", "Strength", "PA", "Modif_hit", "Modif_wound",
+      ["Save", "Save_invu_X", "Strength", "PA", "Melta", "Modif_hit", "Modif_wound",
         "Crit_on_X_to_hit", "Crit_on_X_to_wound", "Toughness", "Fnp_X"
       ].includes(name)
     ) {
@@ -156,6 +158,7 @@ function Simulateur() {
     CT: [2,3,4,5,6],
     Strength: Array.from({ length: 24 }, (_, i) => i + 1),               // 1 à 24
     PA: [0, -1, -2, -3, -4, -5],                                       // 0 à -5
+    Melta: [0,1,2,3,4,5,6],                                           // 0 à 6
     Modif_hit: [-2, -1, 0, 1, 2],                                      // -2 à +2
     Modif_wound: [-2, -1, 0, 1, 2],                                    // -2 à +2
     Crit_on_X_to_hit: [2, 3, 4, 5, 6],                                 // 2+ à 6+

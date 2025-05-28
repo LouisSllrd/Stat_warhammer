@@ -20,6 +20,7 @@ export function ProfilesProvider({ children }) {
       Modif_hit: 0,
       Modif_wound: 0,
       Blast: false,
+      Melta: 0,
       Re_roll_hit1: false,
       Re_roll_hit: false,
       Re_roll_wound1: false,
@@ -45,6 +46,7 @@ export function ProfilesProvider({ children }) {
       Modif_hit: 0,
       Modif_wound: 0,
       Blast: false,
+      Melta: 0,
       Re_roll_hit1: false,
       Re_roll_hit: false,
       Re_roll_wound1: false,
@@ -58,10 +60,11 @@ export function ProfilesProvider({ children }) {
   useEffect(() => {
     localStorage.setItem("attacker1", JSON.stringify(attacker1));
   }, [attacker1]);
-
+  
   useEffect(() => {
     localStorage.setItem("attacker2", JSON.stringify(attacker2));
   }, [attacker2]);
+  
 
   // Tu peux ajouter d'autres états ici (défenseur, résultats, etc.)
 
