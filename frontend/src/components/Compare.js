@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useContext } from "react";
-import { ProfilesContext } from "./ProfileContext";
+/*import { useContext } from "react";
+import { ProfilesContext } from "./ProfileContext";*/
 import axios from "axios";
 
 const defaultAttacker = {
@@ -17,6 +17,7 @@ const defaultAttacker = {
   Modif_hit: 0,
   Modif_wound: 0,
   Blast: false,
+  Melta: 0,
   Re_roll_hit1: false,
   Re_roll_hit: false,
   Re_roll_wound1: false,
@@ -50,6 +51,7 @@ const fieldLabels = {
   Lethal_hit: "Touches fatales",
   Deva_wound: "Blessures dévastatrices",
   Blast: "Déflagration",
+  Melta: "Melta X",
   Modif_hit: "Modificateur de touche",
   Modif_wound: "Modificateur de blessure",
   Re_roll_hit1: "Relance des touches de 1",
@@ -72,6 +74,7 @@ const optionsMap = {
   CT: [2, 3, 4, 5, 6],
   Strength: Array.from({ length: 24 }, (_, i) => i + 1),
   PA: [0, -1, -2, -3, -4, -5],
+  Melta: [0,1,2,3,4,5,6],                              
   Modif_hit: [-2, -1, 0, 1, 2],
   Modif_wound: [-2, -1, 0, 1, 2],
   Crit_on_X_to_hit: [2, 3, 4, 5, 6],
@@ -80,7 +83,7 @@ const optionsMap = {
   Fnp_X: [4, 5, 6],
 };
 
-const saveOptions = [2, 3, 4, 5, 6, 7];
+/*const saveOptions = [2, 3, 4, 5, 6, 7];*/
 
 // Fonction utilitaire pour formater l'affichage des options
 const optionLabel = (key, val) => {
