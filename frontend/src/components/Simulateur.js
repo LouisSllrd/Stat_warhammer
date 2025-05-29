@@ -273,7 +273,7 @@ function Simulateur() {
 
   return (
     <div style={{ padding: 24, maxWidth: 1600, margin: "0 auto" }}>
-      <h1 style={{ fontSize: 28, fontWeight: "bold", marginBottom: 24 }}>Simulateur de Dégâts Warhammer 40k</h1>
+      <h1 style={{ fontSize: 28, fontWeight: "bold", marginBottom: 24 }}>Simulateur Mono-Profil</h1>
 
       <div style={{ display: "flex", gap: 24 }}>
         {/* Attaquant */}
@@ -373,7 +373,7 @@ function Simulateur() {
                           fill={color}
                           fontWeight={isTarget ? "bold" : "normal"}
                         >
-                          {payload.value}
+                          {payload.value}+
                         </text>
                       );
                     }}

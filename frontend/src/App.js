@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Simulateur from "./components/Simulateur";
 import Compare from "./components/Compare";
+import MultiSimulateur from "./components/MultiSimulateur";
 import ReactDOM from "react-dom/client";
 import { ProfilesProvider } from "./components/ProfileContext";
 
@@ -12,10 +13,12 @@ function App() {
     <div>
       <nav style={{ marginBottom: 20 }}>
         <button onClick={() => setPage("simulateur")}>Simulateur</button>
+        <button onClick={() => setPage("multi-profiles")}>Multi Profiles</button>
         <button onClick={() => setPage("compare")}>Comparateur</button>
       </nav>
 
       {page === "simulateur" && <Simulateur />}
+      {page === "multi-profiles" && <MultiSimulateur />}
       {page === "compare" && <Compare />}
     </div>
   );
