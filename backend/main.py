@@ -326,6 +326,90 @@ def damage_simulation(params):
 
     return unit, unit_descr, initial_force, relative_damage, mean, std, histogram_data, list(reversed(cumulative)), results_catalogue
 
+def multi_profile_sim(params_attackers, params_defenser):
+    results = np.zeros(1000)
+    #total_mean = 0
+    #std_sq = 0
+    for attacker in params_attackers:
+        #attacker_results = []
+        for i in range (1000):
+            params = {**attacker, **params_defenser}
+            print(f"le type de strength est {type(params["Strength"])}")
+            local_result = damage_trial(params)
+            results[i] += local_result
+            #attacker_results.append(local_result)
+        #attacker_results = np.array(attacker_results)
+        #mean = np.mean(attacker_results)
+        #std = np.std(attacker_results)
+        #total_mean+=mean
+        #std_sq += std**2
+    #mean = total_mean
+    #std = np.sqrt(std_sq)
+    mean = np.mean(results)
+    std = np.std(results)
+    hist = dict()
+    for r in results:
+        hist[int(r)] = hist.get(int(r), 0) + 1
+    total = len(results)
+    histogram_data = [{"value": k, "frequency": v / total} for k, v in sorted(hist.items())]
+    cumulative = []
+    cum_sum = 0
+    for val in reversed(sorted(hist)):
+        cum_sum += hist[val]
+        cumulative.append({"value": val, "cumulative_percent": 100 * cum_sum / total})
+    if params_defenser["Nb_of_models"] == 1:
+        unit_descr = "Nombre de PV perdus"
+        unit = "PV"
+        relative_damage = mean/params_defenser["PV"]*100
+        initial_force = params_defenser["PV"]
+    else : 
+        unit_descr = "Nombre de figurines tuées"
+        unit = "figurines"
+        relative_damage = mean/params_defenser["Nb_of_models"]*100
+        initial_force = params_defenser["Nb_of_models"]
+
+    # Résultats pour des profils d'unités classiques :
+    catalogue = load_unit_catalogue()
+    results_catalogue = {}
+    for unit_name, unit_stats in catalogue.items():
+        params_defenser["Toughness"] = unit_stats["Toughness"]
+        params_defenser["Save"] = unit_stats["Save"]
+        params_defenser["Save_invu"] = unit_stats["Save_invu"]
+        params_defenser["Save_invu_X"] = unit_stats["Save_invu_X"]
+        params_defenser["PV"] = unit_stats["PV"]
+        params_defenser["Nb_of_models"] = unit_stats["Nb_of_models"]
+        params_defenser["Cover"] = unit_stats["Cover"]
+        params_defenser["Fnp"] = unit_stats["Fnp"]
+        params_defenser["Fnp_X"] = unit_stats["Fnp_X"]
+        params_defenser["Halve_damage"] = unit_stats["Halve_damage"]
+
+        results_cat = np.zeros(1000)
+        for attacker in params_attackers:
+            for i in range (1000):
+                params = {**attacker, **params_defenser}
+                print(f"le type de strength est {type(params["Strength"])}")
+                local_result = damage_trial(params)
+                results_cat[i] += local_result
+        mean_cat = np.mean(results_cat)
+        std_cat = np.std(results_cat)
+        if unit_stats["Nb_of_models"] == 1:
+            cat_initial_force = unit_stats["PV"]
+            cat_unit = "PV"
+        else :
+            cat_initial_force = unit_stats["Nb_of_models"]
+            cat_unit = "figs"
+
+        results_catalogue[unit_name] = {
+            "mean": mean_cat,
+            "std": std_cat,
+            "unit": cat_unit,
+            "initial_force": cat_initial_force,
+            "relative_damages": mean_cat/cat_initial_force*100
+        }
+
+    return unit, unit_descr, initial_force, relative_damage, mean, std, histogram_data, list(reversed(cumulative)), results_catalogue
+
+
 # -------------------- FastAPI Endpoint --------------------
 
 class SimulationInput(BaseModel):
@@ -362,6 +446,44 @@ class SimulationInput(BaseModel):
     Halve_damage: bool
     #Nb_iter: int
 
+class AttackerParams(BaseModel):
+    Attacks: str
+    CT: int
+    Strength: str
+    PA: str
+    Damage: str
+    Sustained_hit: bool
+    Sustained_X: int
+    Lethal_hit: bool
+    Deva_wound: bool
+    Blast: bool
+    Melta: int
+    Modif_hit: int
+    Modif_wound: int
+    Auto_hit: bool
+    Re_roll_hit1: bool
+    Re_roll_hit: bool
+    Re_roll_wound1: bool
+    Re_roll_wound: bool
+    Crit_on_X_to_hit: int
+    Crit_on_X_to_wound: int
+
+class DefenserParams(BaseModel):
+    Toughness: int
+    Save: int
+    Save_invu: bool
+    Save_invu_X: int
+    PV: int
+    Nb_of_models: int
+    Cover: bool
+    Fnp: bool
+    Fnp_X: int
+    Halve_damage: bool
+
+class MultiSimulationOutput(BaseModel):
+    attackers_params: list[AttackerParams]
+    defenser_params: DefenserParams
+
 @app.post("/simulate")
 def simulate(input: SimulationInput):
     unit, unit_descr, initial_force, relative_damages, mean, std, histogram_data, cumulative_data, results_catalogue = damage_simulation(input.dict())
@@ -375,4 +497,26 @@ def simulate(input: SimulationInput):
         "histogram_data": histogram_data,
         "cumulative_data": cumulative_data,
         "results_catalogue": results_catalogue
+    }
+
+
+@app.post("/multi_profile_simulate")
+def multi_profile_simulate(input: MultiSimulationOutput):
+    attackers_params = [attacker.dict() for attacker in input.attackers_params]
+    defenser_params = input.defenser_params.dict()
+
+    unit, unit_descr, initial_force, relative_damages, mean, std, histogram_data, cumulative_data, results_catalogue = multi_profile_sim(
+        attackers_params, defenser_params
+    )
+
+    return {
+        "unit": unit,
+        "unit_descr": unit_descr,
+        "initial_force": initial_force,
+        "relative_damages": relative_damages,
+        "mean": mean,
+        "std": std,
+        "histogram_data": histogram_data,
+        "cumulative_data": cumulative_data,
+        "results_catalogue": results_catalogue,
     }
