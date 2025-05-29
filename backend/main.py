@@ -387,7 +387,6 @@ def multi_profile_sim(params_attackers, params_defenser):
         for attacker in params_attackers:
             for i in range (1000):
                 params = {**attacker, **params_defenser}
-                print(f"le type de strength est {type(params["Strength"])}")
                 local_result = damage_trial(params)
                 results_cat[i] += local_result
         mean_cat = np.mean(results_cat)
