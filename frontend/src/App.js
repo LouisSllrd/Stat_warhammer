@@ -12,9 +12,9 @@ function App() {
     
     <div>
       <nav style={{ marginBottom: 20 }}>
-        <button onClick={() => setPage("simulateur")}>Simulateur</button>
-        <button onClick={() => setPage("multi-profiles")}>Multi Profiles</button>
-        <button onClick={() => setPage("compare")}>Comparateur</button>
+        <button onClick={() => setPage("simulateur")}>Simulation Mono Profile</button>
+        <button onClick={() => setPage("multi-profiles")}>SImulation Multi Profiles</button>
+        <button onClick={() => setPage("compare")}>Comparateur de profils </button>
       </nav>
 
       {page === "simulateur" && <Simulateur />}
