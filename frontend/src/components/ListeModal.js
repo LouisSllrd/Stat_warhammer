@@ -98,22 +98,33 @@ export default function ListeModal({
     if (Array.isArray(obj)) {
       return obj.map(cleanObject);
     } else if (obj !== null && typeof obj === "object") {
-      return Object.fromEntries(
-        Object.entries(obj)
-          .filter(([_, v]) => v !== undefined)  // filtre undefined
-          .map(([k, v]) => [k, cleanObject(v)]) // récursivité
-      );
+      // Assure que ce n'est pas un tableau déguisé en objet
+      // (par exemple un objet avec des clés numériques)
+      const keys = Object.keys(obj);
+      const allNumericKeys = keys.every(k => !isNaN(k));
+  
+      if (allNumericKeys) {
+        // C'est un objet avec clés numériques -> on convertit en tableau
+        return keys
+          .sort((a, b) => a - b)
+          .map(key => cleanObject(obj[key]));
+      } else {
+        // Objet normal
+        return Object.fromEntries(
+          Object.entries(obj)
+            .filter(([_, v]) => v !== undefined)
+            .map(([k, v]) => [k, cleanObject(v)])
+        );
+      }
     }
     return obj;
   }
-  
+
   const handleSaveList = () => {
     const cleanedListe = cleanObject(tempListe.unites);
     onSave(cleanedListe);
   };
-
   
-
 
   return (
     <div style={styles.overlay}>
@@ -153,7 +164,7 @@ export default function ListeModal({
                         {(Array.isArray(unit.profils) ? unit.profils : []).map(
                           (p, i) => (
                             <li key={i}>
-                              {`Att: ${p.Attacks ?? "?"}, F: ${p.Strength ?? "?"}, D: ${p.Damage ?? "?"}`}
+                              {`Att: ${p.Attacks ?? "?"}, CC/CT: ${p.CT ?? "?"}+, F: ${p.Strength ?? "?"}, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"}`}
                             </li>
                           )
                         )}

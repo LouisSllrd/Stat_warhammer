@@ -7,10 +7,13 @@ import {
   addDoc,
   updateDoc,
   doc,
-  getDoc
+  getDoc,
+  deleteDoc
 } from "firebase/firestore";
 import { db, auth } from "../firebaseConfig";
 import ListeModal from "./ListeModal";
+import AttackProfileCard from "./AttackProfileCard"; // J'imagine que tu as ce composant
+
 
 function MesListes() {
   const [listes, setListes] = useState([]);
@@ -21,6 +24,39 @@ function MesListes() {
   const [showCreationModal, setShowCreationModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [tempListe, setTempListe] = useState({ nom: "", unites: [] });
+
+  // États pour édition unité
+  const [editUnitIndex, setEditUnitIndex] = useState(null);
+  const [editUnitName, setEditUnitName] = useState("");
+  const [editAttackProfiles, setEditAttackProfiles] = useState([]);
+  const [showEditUnitModal, setShowEditUnitModal] = useState(false);
+
+  const [isEditMode, setIsEditMode] = useState(true); // true pour édition, false pour création
+
+
+  const defaultProfile = {
+    Attacks: "12",
+    CT: 2,
+    Auto_hit: false,
+    Strength: "8",
+    PA: "2",
+    Damage: "2",
+    Sustained_hit: false,
+    Sustained_X: 1,
+    Lethal_hit: false,
+    Deva_wound: false,
+    Modif_hit: 0,
+    Modif_wound: 0,
+    Blast: false,
+    Melta: 0,
+    Re_roll_hit1: false,
+    Re_roll_hit: false,
+    Re_roll_wound1: false,
+    Re_roll_wound: false,
+    Crit_on_X_to_hit: 6,
+    Crit_on_X_to_wound: 6,
+  };
+  
 
   // Charger les listes de l'utilisateur
   useEffect(() => {
@@ -47,7 +83,7 @@ function MesListes() {
       setSelectedListe({
         id,
         ...data,
-        unites: Array.isArray(data.unites) ? data.unites : []
+        unites: Array.isArray(data.unites) ? data.unites : [],
       });
     }
   };
@@ -64,16 +100,149 @@ function MesListes() {
   };
 
   // Modification d'une liste existante dans Firestore
-  const handleModifierListe = async (units) => {
+  const handleModifierListe = async (newListe) => {
+    if (!newListe || !newListe.nom || !Array.isArray(newListe.unites)) {
+      console.error("❌ Liste invalide :", newListe);
+      return;
+    }
+  
     const docRef = doc(db, "listes", selectedListe.id);
-    await updateDoc(docRef, {
-      nom: tempListe.nom,
-      unites: units,
-    });
-    setShowEditModal(false);
-    setTempListe({ nom: "", unites: [] });
-    fetchListe(selectedListe.id);
+    try {
+      await updateDoc(docRef, {
+        nom: newListe.nom,
+        unites: newListe.unites,
+      });
+  
+      setShowEditModal(false);
+      setTempListe({ nom: "", unites: [] });
+  
+      fetchListe(selectedListe.id);
+      console.log("✅ Liste mise à jour dans Firestore");
+    } catch (error) {
+      console.error("❌ Erreur lors de la mise à jour Firestore :", error);
+    }
   };
+  
+
+  // Ouvrir la modale d'édition d'une unité
+  const handleEditUnit = (index) => {
+    setIsEditMode(true);
+    const unitToEdit = selectedListe.unites[index];
+    setEditUnitIndex(index);
+    setEditUnitName(unitToEdit.nom);
+    setEditAttackProfiles(unitToEdit.profils);
+    setShowEditUnitModal(true);
+  };
+
+  const handleAddUnit = () => {
+    setIsEditMode(false);
+    setEditUnitName("");
+    setEditAttackProfiles([defaultProfile]);
+    setShowEditUnitModal(true);
+  };
+  
+
+  // Supprimer une unité
+  const handleDeleteUnit = async (index) => {
+    if (!selectedListe || !selectedListe.unites) return;
+  
+    // 1. Crée une copie mise à jour sans l’unité à l’index donné
+    const updatedUnits = selectedListe.unites.filter((_, i) => i !== index);
+  
+    // 2. Mets à jour localement
+    setSelectedListe((prev) => ({ ...prev, unites: updatedUnits }));
+    setTempListe((prev) => ({ ...prev, unites: updatedUnits }));
+  
+    // 3. Mets à jour dans Firestore
+    try {
+      const docRef = doc(db, "listes", selectedListe.id);
+      await updateDoc(docRef, {
+        unites: updatedUnits,
+      });
+      console.log("✅ Unité supprimée dans Firestore");
+    } catch (error) {
+      console.error("❌ Erreur lors de la suppression dans Firestore :", error);
+    }
+  };
+  
+    // Supprimer une liste
+  const handleDeleteListe = async () => {
+    if (!selectedListe || !selectedListe.id) return;
+  
+    const confirmDelete = window.confirm(`Supprimer la liste "${selectedListe.nom}" ?`);
+    if (!confirmDelete) return;
+  
+    try {
+      const docRef = doc(db, "listes", selectedListe.id);
+      await deleteDoc(docRef);
+      console.log("✅ Liste supprimée de Firestore");
+  
+      // Réinitialiser les états
+      setSelectedListe(null);
+      setSelectedListeId("");
+    } catch (error) {
+      console.error("❌ Erreur lors de la suppression de la liste :", error);
+    }
+  };
+  
+
+  // Sauvegarder l'unité éditée
+  const handleSaveEditedUnit = async () => {
+    const newUnit = {
+      nom: editUnitName,
+      profils: editAttackProfiles.map((p) => ({
+        Attacks: p.Attacks ?? 0,
+        CT: p.CT ?? 0,
+        Auto_hit: p.Auto_hit ?? false,
+        Strength: p.Strength ?? 0,
+        PA: p.PA ?? 0,
+        Damage: p.Damage ?? 0,
+        Sustained_hit: p.Sustained_hit ?? 0,
+        Sustained_X: p.Sustained_X ?? 0,
+        Lethal_hit: p.Lethal_hit ?? 0,
+        Deva_wound: p.Deva_wound ?? 0,
+        Blast: p.Blast ?? false,
+        Melta: p.Melta ?? 0,
+        Modif_hit: p.Modif_hit ?? 0,
+        Modif_wound: p.Modif_wound ?? 0,
+        Re_roll_hit1: p.Re_roll_hit1 ?? false,
+        Re_roll_hit: p.Re_roll_hit ?? false,
+        Re_roll_wound1: p.Re_roll_wound1 ?? false,
+        Re_roll_wound: p.Re_roll_wound ?? false,
+        Crit_on_X_to_hit: p.Crit_on_X_to_hit ?? 0,
+        Crit_on_X_to_wound: p.Crit_on_X_to_wound ?? 0,
+      })),
+    };
+  
+    let updatedUnits;
+    if (editUnitIndex === null) {
+      // Création
+      updatedUnits = [...(selectedListe?.unites ?? []), newUnit];
+    } else {
+      // Édition
+      updatedUnits = [...selectedListe.unites];
+      updatedUnits[editUnitIndex] = newUnit;
+    }
+  
+    // Mise à jour localement
+    setTempListe((prev) => ({ ...prev, unites: updatedUnits }));
+    setSelectedListe((prev) => ({ ...prev, unites: updatedUnits }));
+  
+    // Mise à jour Firestore
+    if (selectedListe?.id) {
+      try {
+        const docRef = doc(db, "listes", selectedListe.id);
+        await updateDoc(docRef, { unites: updatedUnits });
+        console.log("✅ Unité ajoutée/modifiée dans Firestore");
+      } catch (error) {
+        console.error("❌ Erreur lors de la mise à jour :", error);
+      }
+    }
+  
+    setShowEditUnitModal(false);
+  };
+  
+  
 
   return (
     <div>
@@ -114,7 +283,8 @@ function MesListes() {
               </tr>
             </thead>
             <tbody>
-              {Array.isArray(selectedListe.unites) && selectedListe.unites.length > 0 ? (
+              {Array.isArray(selectedListe.unites) &&
+              selectedListe.unites.length > 0 ? (
                 selectedListe.unites.map((u, idx) => (
                   <tr key={idx}>
                     <td>{u.nom}</td>
@@ -122,39 +292,53 @@ function MesListes() {
                       <ul>
                         {Array.isArray(u.profils) && u.profils.length > 0 ? (
                           u.profils.map((p, i) => (
-                            <li key={i}>
-                              {p.nom} (F{p.force}, A{p.attaques}, D{p.degats})
-                            </li>
+                            <li key={i}>{`Att: ${
+                              p.Attacks ?? "?"
+                            }, CC/CT: ${p.CT ?? "?"}+, F: ${
+                              p.Strength ?? "?"
+                            }, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"}`}</li>
                           ))
                         ) : (
                           <li>Aucun profil</li>
                         )}
                       </ul>
                     </td>
+                    {/* Modifier */}
+                    <td>
+                      <button onClick={() => handleEditUnit(idx)}>Modifier</button>
+                    </td>
+                    {/* Supprimer */}
+                    <td>
+                      <button onClick={() => handleDeleteUnit(idx)}>Supprimer</button>
+                    </td>
                   </tr>
                 ))
               ) : (
                 <tr>
-                  <td colSpan={2}>Aucune unité disponible</td>
+                  <td colSpan={4}>Aucune unité disponible</td>
                 </tr>
               )}
             </tbody>
           </table>
 
           <button
-            onClick={() => {
-              setTempListe({
-                nom: selectedListe.nom,
-                unites: Array.isArray(selectedListe.unites) ? selectedListe.unites : []
-              });
-              setShowEditModal(true);
-            }}
-          >
-            Modifier la liste
-          </button>
+            onClick={handleAddUnit}
+            /*style={{ backgroundColor: "green", color: "white", marginTop: 10 }}*/
+            >
+            Ajouter une unité
+            </button>
+
+          <button
+            /*style={{ marginLeft: 10, backgroundColor: "red", color: "white" }}*/
+            onClick={handleDeleteListe}
+            >
+            Supprimer la liste
+            </button>
+
         </div>
       )}
 
+      {/* Modales création et édition liste */}
       {showCreationModal && (
         <ListeModal
           open={showCreationModal}
@@ -175,6 +359,55 @@ function MesListes() {
           setTempListe={setTempListe}
           title="Modifier la liste"
         />
+      )}
+
+      {/* Modal d'édition d'une unité */}
+      {showEditUnitModal && (
+        <div style={{
+          position: "fixed",
+          top: "10%",
+          left: "50%",
+          transform: "translateX(-50%)",
+          backgroundColor: "white",
+          border: "1px solid #ccc",
+          padding: 20,
+          zIndex: 1000,
+          width: 400,
+          maxHeight: "80vh",
+          overflowY: "auto",
+        }}>
+          <h3>{isEditMode ? "Modifier l'unité" : "Créer une nouvelle unité"}</h3>
+
+
+          <input
+            type="text"
+            value={editUnitName}
+            onChange={(e) => setEditUnitName(e.target.value)}
+            placeholder="Nom de l'unité"
+            style={{ width: "100%", marginBottom: 10, padding: 5 }}
+          />
+
+          {editAttackProfiles.map((profile, index) => (
+            <div key={index} style={{ marginBottom: 10 }}>
+              <AttackProfileCard
+                profile={profile}
+                onChange={(newProfile) => {
+                  const updatedProfiles = [...editAttackProfiles];
+                  updatedProfiles[index] = newProfile;
+                  setEditAttackProfiles(updatedProfiles);
+                }}
+              />
+            </div>
+          ))}
+
+          <button onClick={handleSaveEditedUnit}>Sauvegarder</button>
+          <button
+            onClick={() => setShowEditUnitModal(false)}
+            style={{ marginLeft: 10 }}
+          >
+            Annuler
+          </button>
+        </div>
       )}
     </div>
   );
