@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+
 /*import { useContext } from "react";
 import { ProfilesContext } from "./ProfileContext";*/
+
 import axios from "axios";
 
 const defaultAttacker = {
@@ -94,8 +96,9 @@ const optionLabel = (key, val) => {
 };
 
 function Compare() {
-    /*const { attacker1, setAttacker1, attacker2, setAttacker2 } = useContext(ProfilesContext);*/
 
+    /*const { attacker1, setAttacker1, attacker2, setAttacker2 } = useContext(ProfilesContext);
+    console.log("ProfilesContext values:", { attacker1, attacker2 });*/
   const [attacker1, setAttacker1] = useState(defaultAttacker);
   const [attacker2, setAttacker2] = useState(defaultAttacker);
   const [results, setResults] = useState(null);
