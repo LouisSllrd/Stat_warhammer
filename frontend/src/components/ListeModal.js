@@ -11,7 +11,6 @@ export default function ListeModal({
   title
 }) {
   const [unitName, setUnitName] = useState("");
-  const [profilesCount, setProfilesCount] = useState(1);
   const [attackProfiles, setAttackProfiles] = useState([{}]);
   const [showAddUnit, setShowAddUnit] = useState(false);
 
@@ -19,7 +18,6 @@ export default function ListeModal({
 
   const handleAddUnit = () => {
     setUnitName("");
-    setProfilesCount(1);
     setAttackProfiles([{ ...defaultProfile }]);
     setShowAddUnit(true);
   };
@@ -29,7 +27,7 @@ export default function ListeModal({
     CT: 2,
     Auto_hit: false,
     Strength: "8",
-    PA: "2",
+    PA: "-2",
     Damage: "2",
     Sustained_hit: false,
     Sustained_X: 1,
@@ -193,19 +191,6 @@ export default function ListeModal({
               placeholder="Nom de l'unité"
               value={unitName}
               onChange={(e) => setUnitName(e.target.value)}
-              style={styles.input}
-            />
-
-            <input
-              type="number"
-              min={1}
-              value={profilesCount}
-              onChange={(e) => {
-                const count = Math.max(1, parseInt(e.target.value) || 1);
-                setProfilesCount(count);
-                setAttackProfiles(Array(count).fill(null).map(() => ({ ...defaultProfile })));
-                }}
-              placeholder="Nombre de profils d'attaque"
               style={styles.input}
             />
 

@@ -39,7 +39,7 @@ function MesListes() {
     CT: 2,
     Auto_hit: false,
     Strength: "8",
-    PA: "2",
+    PA: "-2",
     Damage: "2",
     Sustained_hit: false,
     Sustained_X: 1,
@@ -274,7 +274,7 @@ function MesListes() {
 
       {selectedListe && (
         <div>
-          <h3>Unités dans {selectedListe.nom}</h3>
+          <h3>Contenu de la liste {selectedListe.nom}</h3>
           <table>
             <thead>
               <tr>

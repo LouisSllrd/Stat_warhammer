@@ -39,6 +39,7 @@ const defender = {
   Fnp: false,
   Fnp_X: 5,
   Halve_damage: false,
+  Reduce_damage_1: false
 };
 
 const fieldLabels = {
@@ -234,9 +235,26 @@ function Compare() {
       const payload1 = { ...prepared1, ...defender };
       const payload2 = { ...prepared2, ...defender };
 
-      const [res1, res2] = await Promise.all([
+      /*const [res1, res2] = await Promise.all([
         axios.post("https://statwarhammer-production.up.railway.app/simulate", payload1),
         axios.post("https://statwarhammer-production.up.railway.app/simulate", payload2),
+      ]);*/
+      payload1.Attacks = String(payload1.Attacks);
+      payload1.Strength = String(payload1.Strength);
+      payload1.PA = String(payload1.PA);
+      payload1.Damage = String(payload1.Damage);
+      payload2.Attacks = String(payload2.Attacks);
+      payload2.Strength = String(payload2.Strength);
+      payload2.PA = String(payload2.PA);
+      payload2.Damage = String(payload2.Damage);
+
+      console.log("Payload 1 :", payload1);
+      console.log("Payload 2 :", payload2);
+      
+      const [res1, res2] = await Promise.all([
+        
+        axios.post("http://localhost:8000/simulate", payload1),
+        axios.post("http://localhost:8000/simulate", payload2),
       ]);
 
       setResults({
@@ -244,8 +262,13 @@ function Compare() {
         results2: res2.data.results_catalogue,
       });
     } catch (error) {
-      console.error("Erreur lors de la simulation :", error);
-    }
+        if (error.response) {
+          console.error("Erreur détaillée : ", error.response.data);
+        } else {
+          console.error("Erreur Axios sans réponse :", error);
+        }
+      }
+      
   };
 
   return (

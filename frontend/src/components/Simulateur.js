@@ -31,16 +31,17 @@ const defaultParams = {
   Crit_on_X_to_wound: 6,
 
   // Défenseur
-  Toughness: 12,
-  Save: 2,
+  Toughness: 4,
+  Save: 3,
   Save_invu: false,
   Save_invu_X: 4,
-  PV: 16,
-  Nb_of_models: 1,
+  PV: 2,
+  Nb_of_models: 10,
   Cover: false,
   Fnp: false,
   Fnp_X: 5,
-  Halve_damage: false
+  Halve_damage: false,
+  Reduce_damage_1: false
 };
 
 const attackerFields = [
@@ -53,7 +54,7 @@ const attackerFields = [
 
 const defenderFields = [
   "Toughness", "Save", "Save_invu", "Save_invu_X",
-  "PV", "Nb_of_models", "Cover", "Fnp", "Fnp_X", "Halve_damage"
+  "PV", "Nb_of_models", "Cover", "Fnp", "Fnp_X", "Halve_damage", "Reduce_damage_1"
 ];
 
 const fieldLabels = {
@@ -87,7 +88,8 @@ const fieldLabels = {
   Cover: "Couvert",
   Fnp: "Insensible à la douleur (FNP)",
   Fnp_X: "FNP à X+",
-  Halve_damage: "Divise les dégâts par 2"
+  Halve_damage: "Divise les dégâts par 2",
+  Reduce_damage_1: "Réduit les dégâts de 1"
 };
 
 
@@ -140,12 +142,12 @@ function Simulateur() {
     });
 
     try {
-      const res = await axios.post(
+      /*const res = await axios.post(
         "https://statwarhammer-production.up.railway.app/simulate",
         parsedParams
-      );
+      );*/
       
-      /*const res = await axios.post("http://localhost:8000/simulate", parsedParams);*/
+      const res = await axios.post("http://localhost:8000/simulate", parsedParams);
       setResult(res.data);
     } catch (error) {
       console.error("Erreur lors de la simulation :", error);
@@ -304,7 +306,6 @@ function Simulateur() {
             {loading ? "Simulation en cours..." : "Lancer la Simulation"}
           </button>
         </div>
-
 
         {/* Résultats à droite */}
         {result && (

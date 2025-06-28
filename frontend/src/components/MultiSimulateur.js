@@ -47,6 +47,7 @@ const defaultDefender = {
   Fnp: false,
   Fnp_X: 5,
   Halve_damage: false,
+  Reduce_damage_1: false,
 };
 
 const cellStyle = {
@@ -142,7 +143,7 @@ function MultiSimulateur() {
         }
       });
   
-      const res = await axios.post("https://statwarhammer-production.up.railway.app/multi_profile_simulate", {
+      const res = await axios.post("http://localhost:8000/multi_profile_simulate", {
         attackers_params: parsedAttackProfiles,
         defenser_params: parsedDefenderProfile,
       });

@@ -97,6 +97,7 @@ def damage_trial(params):
     Cover = params["Cover"]
     Fnp = params["Fnp"]
     Fnp_X = params["Fnp_X"]
+    Reduce_damage_1 = params["Reduce_damage_1"]
     Halve_damage = params["Halve_damage"]
 
     Attacks = convert(Attacks)
@@ -231,6 +232,8 @@ def damage_trial(params):
             Damage = convert(Damage)
             if Halve_damage:
                 Damage = math.ceil(Damage / 2)
+            if Reduce_damage_1:
+                Damage = max(1, math.ceil(Damage-1))
             if Melta != 0:
                 Damage += Melta
             if Fnp :
@@ -249,6 +252,8 @@ def damage_trial(params):
             Damage = convert(Damage)
             if Halve_damage:
                 Damage = math.ceil(Damage / 2)
+            if Reduce_damage_1:
+                Damage = max(1, math.ceil(Damage-1))
             if Melta != 0:
                 Damage += Melta
             if Fnp: 
@@ -442,6 +447,7 @@ class SimulationInput(BaseModel):
     Fnp: bool
     Fnp_X: int
     Halve_damage: bool
+    Reduce_damage_1: bool
     #Nb_iter: int
 
 class AttackerParams(BaseModel):
@@ -477,6 +483,7 @@ class DefenserParams(BaseModel):
     Fnp: bool
     Fnp_X: int
     Halve_damage: bool
+    Reduce_damage_1: bool
 
 class MultiSimulationOutput(BaseModel):
     attackers_params: list[AttackerParams]

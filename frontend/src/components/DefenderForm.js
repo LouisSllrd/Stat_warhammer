@@ -10,7 +10,8 @@ const fieldLabels = {
   Cover: "Couvert",
   Fnp: "Insensible à la douleur (FNP)",
   Fnp_X: "FNP à X+",
-  Halve_damage: "Divise les dégâts par 2"
+  Halve_damage: "Divise les dégâts par 2",
+  Reduce_damage_1: "Dégâts les dégâts de 1"
 };
 
 const defaultParams = {
@@ -23,7 +24,8 @@ const defaultParams = {
   Cover: false,
   Fnp: false,
   Fnp_X: 6,
-  Halve_damage: false
+  Halve_damage: false,
+  Reduce_damage_1: false
 };
 
 // Si tu veux ajouter d'autres dropdown plus tard
