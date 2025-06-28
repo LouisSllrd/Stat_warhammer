@@ -13,7 +13,7 @@ const defaultParams = {
   CT: 2,
   Auto_hit: false,
   Strength: "8",
-  PA: "2",
+  PA: "-2",
   Damage: "2",
   Sustained_hit: false,
   Sustained_X: 1,
@@ -123,6 +123,7 @@ function Simulateur() {
     setParams({ ...params, [name]: val });
   };
   
+  
 
   const handleSubmit = async () => {
     setLoading(true);
@@ -140,6 +141,10 @@ function Simulateur() {
         parsedParams[key] = Number(parsedParams[key]);
       }
     });
+    parsedParams.PA = String(parsedParams.PA);
+
+    console.log("Valeur de PA envoyée :", parsedParams.PA); 
+    console.log("Valeur de strength envoyée :", parsedParams.Strength); 
 
     try {
       /*const res = await axios.post(

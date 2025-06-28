@@ -58,6 +58,13 @@ export default function Auth() {
           {isRegister ? "Connectez-vous" : "Inscrivez-vous"}
         </button>
       </p>
+      {/* Texte explicatif */}
+  <p style={{ marginBottom: 20, fontStyle: "italic", color: "#555" }}>
+    {isRegister
+      ? "Créer un compte vous permet d'accéder à toutes les fonctionnalités exclusives et de sauvegarder vos données en toute sécurité."
+      : "Connectez-vous pour accéder à vos listes personnalisées et profiter d'une expérience personnalisée."}
+  </p>
     </div>
+    
   );
 }

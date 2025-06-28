@@ -32,25 +32,25 @@ function App() {
         <nav style={{ display: "flex", justifyContent: "space-between", background: "#eee", padding: "10px 20px" }}>
           
           {/* Groupe 1 : Préparer ma liste */}
-          <div>
+          <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
             <strong>Préparer ma liste:</strong>{" "}
-            <button onClick={() => setPage("simulateur")}>Mono Profile</button>
-            <button onClick={() => setPage("multi-profiles")}>Multi Profiles</button>
+            <button onClick={() => setPage("simulateur")}>Unité Mono Profile</button>
+            <button onClick={() => setPage("multi-profiles")}>Unité Multi Profiles</button>
             <button onClick={() => setPage("compare")}>Comparateur</button>
           </div>
 
           {/* Groupe 2 : Calculer en jeu */}
           {user && (
-            <div>
+            <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
               <strong>Calculer en jeu:</strong>{" "}
               <button onClick={() => setPage("mes-listes")}>Mes Listes</button>
               <button onClick={() => setPage("unites-adverses")}>Unités Adverses</button>
-              <button onClick={() => setPage("jeu")}>Calcul Temps Réel</button>
+              <button onClick={() => setPage("jeu")}>Calcul En Jeu</button>
             </div>
           )}
 
           {/* Groupe 3 : Connexion */}
-          <div>
+          <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
             {user ? (
               <>
                 <strong>Connecté : {user.email}</strong>{" "}
