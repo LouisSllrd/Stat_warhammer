@@ -29,13 +29,13 @@ function App() {
     <ProfilesProvider>
       <div>
         {/* BARRE DE NAVIGATION */}
-        <nav style={{ display: "flex", justifyContent: "space-between", background: "#eee", padding: "10px 20px" }}>
+        <nav style={{ display: "flex", justifyContent: "space-between", background: "#89B5FF", padding: "10px 20px" }}>
           
           {/* Groupe 1 : Préparer ma liste */}
           <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
             <strong>Préparer ma liste:</strong>{" "}
-            <button onClick={() => setPage("simulateur")}>Unité Mono Profile</button>
-            <button onClick={() => setPage("multi-profiles")}>Unité Multi Profiles</button>
+            <button onClick={() => setPage("simulateur")}>Unité Mono Profil</button>
+            <button onClick={() => setPage("multi-profiles")}>Unité Multi Profils</button>
             <button onClick={() => setPage("compare")}>Comparateur</button>
           </div>
 

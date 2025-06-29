@@ -192,6 +192,7 @@ function MesListes() {
       // Réinitialiser les états
       setSelectedListe(null);
       setSelectedListeId("");
+      setShowEditUnitModal(false);
     } catch (error) {
       console.error("❌ Erreur lors de la suppression de la liste :", error);
     }
@@ -265,6 +266,7 @@ function MesListes() {
         onClick={() => {
           setTempListe({ nom: "", unites: [] });
           setShowCreationModal(true);
+          setShowEditUnitModal(false);
         }}
       >
         Créer une nouvelle liste
@@ -322,7 +324,8 @@ function MesListes() {
                     </td>
                     {/* Supprimer */}
                     <td>
-                      <button onClick={() => handleDeleteUnit(idx)}>Supprimer</button>
+                      <button onClick={() => handleDeleteUnit(idx)}
+                    style={{ marginLeft: 8, color: "red" }}>Supprimer</button>
                     </td>
                   </tr>
                 ))
@@ -344,6 +347,7 @@ function MesListes() {
           <button
             /*style={{ marginLeft: 10, backgroundColor: "red", color: "white" }}*/
             onClick={handleDeleteListe}
+            style={{ marginLeft: 8, color: "red" }}
             >
             Supprimer la liste
             </button>

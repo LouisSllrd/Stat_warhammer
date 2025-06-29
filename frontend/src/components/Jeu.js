@@ -220,8 +220,17 @@ const [selectedProfiles, setSelectedProfiles] = useState({});
                                 {selectedUnite.profils.map((profil, i) => (
                   <div key={i} style={{ border: "1px solid #ccc", marginBottom: 10, padding: 10 }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                      <button onClick={() => setVisibleProfiles(prev => ({ ...prev, [i]: !prev[i] }))}>
-                        {visibleProfiles[i] ? "Cacher profil" : "Afficher profil"}
+                      <button onClick={() => setVisibleProfiles(prev => ({ ...prev, [i]: !prev[i] }))}style={{
+                        marginBottom: 8,
+                        padding: "6px 12px",
+                        cursor: "pointer",
+                        backgroundColor: "#3182ce",
+                        color: "white",
+                        border: "none",
+                        borderRadius: 4,
+                        }}>
+                      
+                        {visibleProfiles[i] ? `Cacher ${profil.nom || `Profil ${i + 1}`}` : `Afficher ${profil.nom || `Profil ${i + 1}`}`}
                       </button>
                       {/* Bouton pour afficher/masquer le profil */}
             

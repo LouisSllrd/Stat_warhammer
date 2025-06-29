@@ -9,7 +9,9 @@
       "Cover": false,
       "Fnp": false,
       "Fnp_X": 0,
-      "Halve_damage": false
+      "Halve_damage": false,
+      "Reduce_damage_1": false,
+      "unit_type": "Light Infantry "
     },
     "Necron Warriors": {
       "Toughness": 4,
@@ -21,7 +23,9 @@
       "Cover": false,
       "Fnp": false,
       "Fnp_X": 0,
-      "Halve_damage": false
+      "Halve_damage": false,
+      "Reduce_damage_1": false,
+      "unit_type": "Infantry"
     },
     "Intercessors": {
       "Toughness": 4,
@@ -33,7 +37,9 @@
       "Cover": false,
       "Fnp": false,
       "Fnp_X": 5,
-      "Halve_damage": false
+      "Halve_damage": false,
+      "Reduce_damage_1": false,
+      "unit_type": "Infantry"
     },
     "Terminators": {
       "Toughness": 5,
@@ -41,11 +47,27 @@
       "Save_invu": true,
       "Save_invu_X": 4,
       "PV": 3,
-      "Nb_of_models": 10,
+      "Nb_of_models": 5,
       "Cover": false,
       "Fnp": false,
       "Fnp_X": 5,
-      "Halve_damage": false
+      "Halve_damage": false,
+      "Reduce_damage_1": false,
+      "unit_type": "Heavy Infantry"
+    },
+    "Chevaliers Deathwing": {
+      "Toughness": 5,
+      "Save": 2,
+      "Save_invu": true,
+      "Save_invu_X": 4,
+      "PV": 4,
+      "Nb_of_models": 5,
+      "Cover": false,
+      "Fnp": false,
+      "Fnp_X": 5,
+      "Halve_damage": false,
+      "Reduce_damage_1": true,
+      "unit_type": "Heavy Infantry"
     },
     "Rhino": {
       "Toughness": 9,
@@ -57,7 +79,9 @@
       "Cover": false,
       "Fnp": false,
       "Fnp_X": 5,
-      "Halve_damage": false
+      "Halve_damage": false,
+      "Reduce_damage_1": false,
+      "unit_type": "Light Vehicule"
     },
     "Gladiator": {
       "Toughness": 10,
@@ -69,7 +93,9 @@
       "Cover": false,
       "Fnp": false,
       "Fnp_X": 5,
-      "Halve_damage": false
+      "Halve_damage": false,
+      "Reduce_damage_1": false,
+      "unit_type": "Vehicule"
     },
     "Land Raider": {
       "Toughness": 12,
@@ -81,31 +107,37 @@
       "Cover": false,
       "Fnp": false,
       "Fnp_X": 5,
-      "Halve_damage": false
+      "Halve_damage": false,
+      "Reduce_damage_1": false,
+      "unit_type": "Heavy Vehicule"
     },
     "Armiger avec invu 5+": {
-      "Toughness": 10,
+      "Toughness": 9,
       "Save": 3,
       "Save_invu": true,
       "Save_invu_X": 5,
-      "PV": 12,
+      "PV": 14,
       "Nb_of_models": 1,
       "Cover": false,
       "Fnp": false,
       "Fnp_X": 5,
-      "Halve_damage": false
+      "Halve_damage": false,
+      "Reduce_damage_1": false,
+      "unit_type": "Light Vehicule"
     },
     "Canis Rex avec invu 5+": {
-      "Toughness": 12,
+      "Toughness": 11,
       "Save": 3,
       "Save_invu": true,
       "Save_invu_X": 5,
-      "PV": 22,
+      "PV": 26,
       "Nb_of_models": 1,
       "Cover": false,
       "Fnp": false,
       "Fnp_X": 5,
-      "Halve_damage": false
+      "Halve_damage": false,
+      "Reduce_damage_1": false,
+      "unit_type": "Heavy Vehicule"
     }
   }
   

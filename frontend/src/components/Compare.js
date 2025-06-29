@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import { motion, AnimatePresence } from "framer-motion";
 /*import { useContext } from "react";
 import { ProfilesContext } from "./ProfileContext";*/
 
@@ -103,6 +104,7 @@ function Compare() {
   const [attacker1, setAttacker1] = useState(defaultAttacker);
   const [attacker2, setAttacker2] = useState(defaultAttacker);
   const [results, setResults] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   // Fonction de changement qui cible le bon attaquant
   const handleChange = (e, setAttacker, attacker) => {
@@ -272,42 +274,169 @@ function Compare() {
   };
 
   return (
-    <div style={{ padding: 24 }}>
-      <h2 style={{ marginBottom: 20 }}>Comparateur de Profils</h2>
-      <div style={{ display: "flex", gap: 40 }}>
-        <div style={{ display: "flex", flex: 2, gap: 40 }}>
-          <div style={{ flex: 1 }}>
-            <h3 style={{ color: "orange" }}>Attaquant 1</h3>
-            {attackerFields.map((key) => renderField(key, attacker1, setAttacker1))}
-          </div>
-          <div style={{ flex: 1 }}>
-            <h3 style={{ color: "blue" }}>Attaquant 2</h3>
-            {attackerFields.map((key) => renderField(key, attacker2, setAttacker2))}
-          </div>
-        </div>
+    <div
+  style={{
+    padding: 24,
+    fontFamily: "Segoe UI, sans-serif",
+    background: "#DCFEFF",
+    minHeight: "100vh",
+  }}
+>
+  <h1
+    style={{
+      fontSize: 32,
+      fontWeight: 700,
+      marginBottom: 32,
+      textAlign: "center",
+      color: "#2d3748",
+    }}
+  >
+    Comparateur de Profils
+  </h1>
 
-        <div style={{ flex: 2 }}>
-          <button
-            onClick={handleSubmit}
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "row",
+      gap: 24,
+      // conteneur principal qui contient les 2 boîtes
+      justifyContent: "center",
+      alignItems: "flex-start",
+    }}
+  >
+    {/* Boîte attaquants (gauche) */}
+    <div
+  style={{
+    flex: 1,
+    backgroundColor: "white",
+    padding: 20,
+    borderRadius: 12,
+    boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+    display: "flex",
+    flexDirection: "row",
+    gap: 40,
+  }}
+>
+  <div
+    style={{
+      flex: 1,  // <== Remplit la moitié de la boîte parente
+      display: "flex",
+      flexDirection: "column",
+    }}
+  >
+    <h3
+      style={{
+        fontWeight: "bold",
+        fontSize: 18,
+        marginBottom: 8,
+        color: "orange",
+      }}
+    >
+      ⚔️ Attaquant 1
+    </h3>
+    {attackerFields.map((key) => renderField(key, attacker1, setAttacker1))}
+  </div>
+
+  <div
+    style={{
+      flex: 1,  // <== Remplit l'autre moitié
+      display: "flex",
+      flexDirection: "column",
+    }}
+  >
+    <h3
+      style={{
+        fontWeight: "bold",
+        fontSize: 18,
+        marginBottom: 8,
+        color: "blue",
+      }}
+    >
+      ⚔️ Attaquant 2
+    </h3>
+    {attackerFields.map((key) => renderField(key, attacker2, setAttacker2))}
+  </div>
+</div>
+
+    {/* Boîte résultats + bouton (droite) */}
+    <div
+      style={{
+        flex: 1,
+        backgroundColor: "white",
+        padding: 20,
+        borderRadius: 12,
+        boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+        display: "flex",
+        flexDirection: "column",
+        gap: 16,
+        minWidth: 400,
+      }}
+    >
+      <button
+        onClick={handleSubmit}
+        disabled={loading}
+        style={{
+          padding: "12px 20px",
+          backgroundColor: loading ? "#a0aec0" : "#2b6cb0",
+          color: "white",
+          border: "none",
+          borderRadius: 8,
+          cursor: loading ? "not-allowed" : "pointer",
+          fontWeight: "bold",
+          fontSize: 16,
+          transition: "background-color 0.3s",
+          marginBottom: 20,
+        }}
+      >
+        {loading ? "Simulation en cours..." : "🆚 Lancer la Comparaison"}
+      </button>
+
+      <AnimatePresence>
+        {results && (
+          <motion.div
+            key="result-block"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeOut",
+              type: "spring",
+              stiffness: 70,
+            }}
             style={{
-              marginBottom: 20,
-              padding: 10,
-              background: "#3182ce",
-              color: "white",
-              border: "none",
-              cursor: "pointer",
+              flex: 1,
+              backgroundColor: "white",
+              padding: 20,
+              borderRadius: 12,
+              boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+              display: "flex",
+              flexDirection: "column",
+              gap: 16,
+              overflowY: "auto",
+              maxHeight: "70vh",
             }}
           >
-            Lancer la comparaison
-          </button>
-
-          {results && (
-            <div style={{ marginTop: 48 }}>
-              <h3 style={{ fontWeight: "bold", fontSize: 18 }}>
+            <div>
+              <h3
+                style={{
+                  fontSize: 18,
+                  fontWeight: "bold",
+                  marginBottom: 12,
+                }}
+              >
                 Résultats sur des unités classiques
               </h3>
-              <table style={{ width: "100%", borderCollapse: "collapse", marginTop: 12 }}>
-                <thead>
+              <table
+                style={{
+                  width: "100%",
+                  borderCollapse: "collapse",
+                  borderRadius: 8,
+                  overflow: "hidden",
+                  backgroundColor: "#fefefe",
+                }}
+              >
+                <thead style={{ backgroundColor: "#ebf8ff" }}>
                   <tr>
                     <th style={cellStyle}>Unité</th>
                     <th style={cellStyle}>Moyenne arme 1</th>
@@ -321,7 +450,8 @@ function Compare() {
                     const mean2 = results.results2[unitName]?.mean ?? 0;
 
                     const diff = mean2 - mean1;
-                    const percentage = mean1 !== 0 ? ((diff / mean1) * 100).toFixed(1) : "0";
+                    const percentage =
+                      mean1 !== 0 ? ((diff / mean1) * 100).toFixed(1) : "0";
 
                     return (
                       <tr key={unitName}>
@@ -349,11 +479,14 @@ function Compare() {
                 </tbody>
               </table>
             </div>
-          )}
-        </div>
-      </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
-  );
+  </div>
+</div>
+);
+
 }
 
 export default Compare;

@@ -28,8 +28,9 @@ const defaultParams = {
   Reduce_damage_1: false
 };
 
-// Si tu veux ajouter d'autres dropdown plus tard
+// Ajout de Toughness dans optionsMap avec options 1 à 12
 const optionsMap = {
+  Toughness: Array.from({ length: 12 }, (_, i) => i + 1),
   // Exemple : Fnp_X pourrait être dans cette logique aussi
 };
 
