@@ -13,6 +13,7 @@ export default function ListeModal({
   const [unitName, setUnitName] = useState("");
   const [attackProfiles, setAttackProfiles] = useState([{}]);
   const [showAddUnit, setShowAddUnit] = useState(false);
+  const [visibleProfiles, setVisibleProfiles] = useState([0]); // Par défaut, premier profil visible
 
   if (!open) return null;
 
@@ -22,7 +23,17 @@ export default function ListeModal({
     setShowAddUnit(true);
   };
 
+  const toggleProfileVisibility = (index) => {
+    setVisibleProfiles((prev) =>
+      prev.includes(index)
+        ? prev.filter((i) => i !== index)
+        : [...prev, index]
+    );
+  };
+  
+
   const defaultProfile = {
+    nom: "",
     Attacks: "12",
     CT: 2,
     Auto_hit: false,
@@ -58,6 +69,7 @@ export default function ListeModal({
   const handleCreateUnit = () => {
     // On prépare une copie propre des profils avec tous les champs définis (si undefined, on met une valeur par défaut)
     const profilsComplets = attackProfiles.map(p => ({
+        nom: p.nom ?? "",
         Attacks: p.Attacks ?? 0,
         CT: p.CT ?? 0,
         Auto_hit: p.Auto_hit ?? false,
@@ -162,7 +174,8 @@ export default function ListeModal({
                         {(Array.isArray(unit.profils) ? unit.profils : []).map(
                           (p, i) => (
                             <li key={i}>
-                              {`Att: ${p.Attacks ?? "?"}, CC/CT: ${p.CT ?? "?"}+, F: ${p.Strength ?? "?"}, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"}`}
+                              {p.nom && <strong>{p.nom}: </strong>}
+                              {`${p.nom ?? `Profil ${i + 1}` }(Att: ${p.Attacks ?? "?"}, CC/CT: ${p.CT ?? "?"}+, F: ${p.Strength ?? "?"}, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"}`}
                             </li>
                           )
                         )}
@@ -194,16 +207,81 @@ export default function ListeModal({
               style={styles.input}
             />
 
-            {attackProfiles.map((profile, index) => (
-              <div key={index} style={{ marginBottom: 10 }}>
-                <AttackProfileCard
-                  profile={profile}
-                  onChange={(newProfile) =>
-                    handleProfileChange(index, newProfile)
-                  }
-                />
-              </div>
-            ))}
+{attackProfiles.map((profile, index) => (
+  <div key={index} style={{ marginBottom: 10, border: "1px solid #ccc", padding: 10 }}>
+    
+    {/* Bouton pour afficher/masquer le profil */}
+    <button
+      onClick={() => toggleProfileVisibility(index)}
+      style={{
+        marginBottom: 8,
+        padding: "6px 12px",
+        cursor: "pointer",
+        backgroundColor: "#3182ce",
+        color: "white",
+        border: "none",
+        borderRadius: 4,
+      }}
+    >
+      {visibleProfiles.includes(index)
+  ? `Cacher ${profile.nom || `Profil ${index + 1}`}`
+  : `Afficher ${profile.nom || `Profil ${index + 1}`}`}
+
+    </button>
+
+    {/* Si le profil est visible, on affiche le champ pour le nom ET la carte */}
+    {visibleProfiles.includes(index) && (
+      <>
+        {/* Champ pour le nom du profil */}
+        <input
+          type="text"
+          placeholder={`Nom du profil ${index + 1}`}
+          value={profile.nom || ""}
+          onChange={(e) =>
+            handleProfileChange(index, { ...profile, nom: e.target.value })
+          }
+          style={{ marginBottom: 8, width: "100%", padding: 6 }}
+        />
+
+        {/* Carte de profil */}
+        <AttackProfileCard
+          profile={profile}
+          onChange={(newProfile) =>
+            handleProfileChange(index, { ...newProfile, nom: profile.nom })
+          }
+        />
+      </>
+    )}
+
+    {/* Bouton pour supprimer un profil */}
+    {attackProfiles.length > 1 && (
+      <button
+        onClick={() => {
+          setAttackProfiles((prev) => prev.filter((_, i) => i !== index));
+          setVisibleProfiles((prev) => prev.filter((i) => i !== index));
+        }}
+        style={{ marginTop: 5, backgroundColor: "#fdd", color: "#900" }}
+      >
+        Supprimer ce profil
+      </button>
+    )}
+  </div>
+))}
+
+
+
+
+<button
+  onClick={() => {
+    setAttackProfiles((prev) => [...prev, { ...defaultProfile }]);
+    setVisibleProfiles((prev) => [...prev, attackProfiles.length]); // rendre le nouveau visible
+  }}
+  style={{ marginBottom: 10 }}
+>
+  + Ajouter un profil d'attaque
+</button>
+
+
 
             <button onClick={handleCreateUnit}>Créer l'unité</button>
             <button onClick={() => setShowAddUnit(false)} style={{ marginLeft: 10 }}>

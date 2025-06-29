@@ -33,6 +33,18 @@ function MesListes() {
 
   const [isEditMode, setIsEditMode] = useState(true); // true pour édition, false pour création
 
+  
+  
+  const [visibleProfiles, setVisibleProfiles] = useState(
+    editAttackProfiles.map((_, i) => i) // tout visible par défaut
+  );
+  const toggleProfileVisibility = (index) => {
+    setVisibleProfiles((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    );
+  };
+    
+
 
   const defaultProfile = {
     Attacks: "12",
@@ -191,6 +203,7 @@ function MesListes() {
     const newUnit = {
       nom: editUnitName,
       profils: editAttackProfiles.map((p) => ({
+        nom: p.nom ?? "",
         Attacks: p.Attacks ?? 0,
         CT: p.CT ?? 0,
         Auto_hit: p.Auto_hit ?? false,
@@ -292,11 +305,11 @@ function MesListes() {
                       <ul>
                         {Array.isArray(u.profils) && u.profils.length > 0 ? (
                           u.profils.map((p, i) => (
-                            <li key={i}>{`Att: ${
+                            <li key={i}>{`${p.nom ?? `Profil ${i + 1}` } (Att: ${
                               p.Attacks ?? "?"
                             }, CC/CT: ${p.CT ?? "?"}+, F: ${
                               p.Strength ?? "?"
-                            }, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"}`}</li>
+                            }, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"})`}</li>
                           ))
                         ) : (
                           <li>Aucun profil</li>
@@ -388,17 +401,95 @@ function MesListes() {
           />
 
           {editAttackProfiles.map((profile, index) => (
-            <div key={index} style={{ marginBottom: 10 }}>
-              <AttackProfileCard
-                profile={profile}
-                onChange={(newProfile) => {
-                  const updatedProfiles = [...editAttackProfiles];
-                  updatedProfiles[index] = newProfile;
-                  setEditAttackProfiles(updatedProfiles);
+            <div
+              key={index}
+              style={{
+                marginBottom: 10,
+                padding: 10,
+                border: "1px solid #ddd",
+                borderRadius: 4,
+                backgroundColor: "#f9f9f9",
+              }}
+            >
+              <button
+                onClick={() => toggleProfileVisibility(index)}
+                style={{
+                  marginBottom: 8,
+                  padding: "6px 12px",
+                  cursor: "pointer",
+                  backgroundColor: "#3182ce",
+                  color: "white",
+                  border: "none",
+                  borderRadius: 4,
                 }}
-              />
+              >
+                {visibleProfiles.includes(index)
+                ? `Cacher ${profile.nom || `Profil ${index + 1}`}`
+                : `Afficher ${profile.nom || `Profil ${index + 1}`}`}
+              </button>
+
+              {visibleProfiles.includes(index) && (
+                <>
+                  {/* Champ pour le nom du profil */}
+                  <input
+                    type="text"
+                    value={profile.nom || ""}
+                    onChange={(e) => {
+                      const updatedProfiles = [...editAttackProfiles];
+                      updatedProfiles[index] = {
+                        ...profile,
+                        nom: e.target.value,
+                      };
+                      setEditAttackProfiles(updatedProfiles);
+                    }}
+                    placeholder={`Nom du profil ${index + 1}`}
+                    style={{
+                      width: "100%",
+                      marginBottom: 8,
+                      padding: 6,
+                    }}
+                  />
+
+                  {/* Carte du profil */}
+                  <AttackProfileCard
+                    profile={profile}
+                    onChange={(newProfile) => {
+                      const updatedProfiles = [...editAttackProfiles];
+                      updatedProfiles[index] = {
+                        ...newProfile,
+                        nom: profile.nom, // garder le nom en dehors d'AttackProfileCard
+                      };
+                      setEditAttackProfiles(updatedProfiles);
+                    }}
+                  />
+                </>
+              )}
+
+              {editAttackProfiles.length > 1 && (
+                <button
+                  onClick={() => {
+                    const filtered = editAttackProfiles.filter((_, i) => i !== index);
+                    setEditAttackProfiles(filtered);
+                    setVisibleProfiles((prev) => prev.filter((i) => i !== index));
+                  }}
+                  style={{ marginTop: 5, backgroundColor: "#fdd", color: "#900" }}
+                >
+                  Supprimer ce profil
+                </button>
+              )}
             </div>
           ))}
+
+
+          <button
+            onClick={() =>
+              setEditAttackProfiles((prev) => [...prev, { ...defaultProfile }])
+            }
+            style={{ marginBottom: 10 }}
+          >
+            + Ajouter un profil d'attaque
+          </button>
+
 
           <button onClick={handleSaveEditedUnit}>Sauvegarder</button>
           <button

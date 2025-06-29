@@ -30,6 +30,10 @@ function SimulationEnJeu() {
   const [defenderUnits, setDefenderUnits] = useState([]);
   const [results, setResults] = useState(null);
 
+  const [visibleProfiles, setVisibleProfiles] = useState({});
+const [selectedProfiles, setSelectedProfiles] = useState({});
+
+
   const handleAttackProfileChange = (updatedProfile, index) => {
     // Mets à jour selectedUnite.profils[index] avec updatedProfile
     const updatedProfils = [...selectedUnite.profils];
@@ -47,6 +51,37 @@ function SimulationEnJeu() {
 
     return () => unsubscribe();
   }, []);
+
+  useEffect(() => {
+    if (!selectedUnite) return;
+  
+    // On ne réinitialise que si le nombre de profils change
+    setVisibleProfiles(prev => {
+      // Si le nombre de profils est différent, réinitialiser
+      if (Object.keys(prev).length !== selectedUnite.profils.length) {
+        const initVisible = {};
+        selectedUnite.profils.forEach((_, i) => {
+          initVisible[i] = false; // caché par défaut
+        });
+        return initVisible;
+      }
+      return prev; // sinon garder l’état actuel
+    });
+  
+    setSelectedProfiles(prev => {
+      if (Object.keys(prev).length !== selectedUnite.profils.length) {
+        const initSelected = {};
+        selectedUnite.profils.forEach((_, i) => {
+          initSelected[i] = true; // sélectionné par défaut
+        });
+        return initSelected;
+      }
+      return prev;
+    });
+  
+  }, [selectedUnite]);
+  
+  
 
   // Lorsque enemyUnitName change, trouver l'unité dans la liste Firestore
   useEffect(() => {
@@ -71,26 +106,19 @@ function SimulationEnJeu() {
     setResults(null);
   
     try {
-      // Préparation des profils en parsant les champs numériques
-      const parsedAttackProfiles = selectedUnite.profils.map((params) => {
+      const profilsToSend = selectedUnite.profils.filter((_, i) => selectedProfiles[i]);
+  
+      const parsedAttackProfiles = profilsToSend.map((params) => {
         const parsedParams = { ...params };
         Object.keys(parsedParams).forEach((key) => {
-          if (
-            key !== "Attacks" &&
-            key !== "Strength" &&
-            key !== "PA" &&
-            key !== "Damage" 
-          ) {
+          if (key !== "Attacks" && key !== "Strength" && key !== "PA" && key !== "Damage") {
             parsedParams[key] = Number(parsedParams[key]);
           }
         });
         return parsedParams;
       });
   
-      // Parse aussi le defenderProfile
       const parsedDefenderProfile = { ...defenderParams.profils[0] };
-
-      
   
       const res = await axios.post("http://localhost:8000/multi_profile_simulate", {
         attackers_params: parsedAttackProfiles,
@@ -102,8 +130,8 @@ function SimulationEnJeu() {
       console.error("Erreur lors de la simulation multiple :", error);
       alert("Erreur lors de la simulation. Veuillez vérifier la console pour plus d'informations.");
     }
-  
   };
+  
 
   // Récupère les listes personnelles
   useEffect(() => {
@@ -189,13 +217,32 @@ function SimulationEnJeu() {
 
             {selectedUnite && (
               <div>
-                {selectedUnite.profils.map((profil, i) => (
-                  <AttackProfileCard
-                  key={i}
-                  profile={profil}
-                  onChange={(updatedProfile) => handleAttackProfileChange(updatedProfile, i)}
-                />
+                                {selectedUnite.profils.map((profil, i) => (
+                  <div key={i} style={{ border: "1px solid #ccc", marginBottom: 10, padding: 10 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                      <button onClick={() => setVisibleProfiles(prev => ({ ...prev, [i]: !prev[i] }))}>
+                        {visibleProfiles[i] ? "Cacher profil" : "Afficher profil"}
+                      </button>
+                      {/* Bouton pour afficher/masquer le profil */}
+            
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked={selectedProfiles[i] || false}
+                          onChange={(e) => setSelectedProfiles(prev => ({ ...prev, [i]: e.target.checked }))}
+                        />
+                        Inclure dans la simulation
+                      </label>
+                    </div>
+                    {visibleProfiles[i] && (
+                      <AttackProfileCard
+                        profile={profil}
+                        onChange={(updatedProfile) => handleAttackProfileChange(updatedProfile, i)}
+                      />
+                    )}
+                  </div>
                 ))}
+
               </div>
             )}
           </>
