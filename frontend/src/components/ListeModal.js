@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import AttackProfileCard from "./AttackProfileCard";
+import { motion, AnimatePresence } from "framer-motion";
 
+// ... même imports
 export default function ListeModal({
   open,
   onClose,
@@ -8,14 +10,14 @@ export default function ListeModal({
   tempListe = { nom: "", unites: [] },
   setTempListe,
   onAddUnite,
-  title
+  title,
 }) {
   const [unitName, setUnitName] = useState("");
   const [attackProfiles, setAttackProfiles] = useState([{}]);
   const [showAddUnit, setShowAddUnit] = useState(false);
-  const [visibleProfiles, setVisibleProfiles] = useState([0]); // Par défaut, premier profil visible
+  const [visibleProfiles, setVisibleProfiles] = useState([0]);
+ 
 
-  if (!open) return null;
 
   const handleAddUnit = () => {
     setUnitName("");
@@ -30,7 +32,6 @@ export default function ListeModal({
         : [...prev, index]
     );
   };
-  
 
   const defaultProfile = {
     nom: "",
@@ -55,71 +56,58 @@ export default function ListeModal({
     Crit_on_X_to_hit: 6,
     Crit_on_X_to_wound: 6,
   };
-  
 
   const handleProfileChange = (index, newProfile) => {
-    setAttackProfiles(prev => {
+    setAttackProfiles((prev) => {
       const updated = [...prev];
       updated[index] = newProfile;
       return updated;
     });
   };
-  
 
   const handleCreateUnit = () => {
-    // On prépare une copie propre des profils avec tous les champs définis (si undefined, on met une valeur par défaut)
-    const profilsComplets = attackProfiles.map(p => ({
-        nom: p.nom ?? "",
-        Attacks: p.Attacks ?? 0,
-        CT: p.CT ?? 0,
-        Auto_hit: p.Auto_hit ?? false,
-        Strength: p.Strength ?? 0,
-        PA: p.PA ?? 0,
-        Damage: p.Damage ?? 0,
-        Sustained_hit: p.Sustained_hit ?? 0,
-        Sustained_X: p.Sustained_X ?? 0,
-        Lethal_hit: p.Lethal_hit ?? 0,
-        Deva_wound: p.Deva_wound ?? 0,
-        Blast: p.Blast ?? false,
-        Melta: p.Melta ?? 0,
-        Modif_hit: p.Modif_hit ?? 0,
-        Modif_wound: p.Modif_wound ?? 0,
-        Re_roll_hit1: p.Re_roll_hit1 ?? false,
-        Re_roll_hit: p.Re_roll_hit ?? false,
-        Re_roll_wound1: p.Re_roll_wound1 ?? false,
-        Re_roll_wound: p.Re_roll_wound ?? false,
-        Crit_on_X_to_hit: p.Crit_on_X_to_hit ?? 0,
-        Crit_on_X_to_wound: p.Crit_on_X_to_wound ?? 0,
-      }));
-      
-  
-    const newUnit = { nom: unitName, profils: profilsComplets };
-    
-    setTempListe(prev => ({
-      ...prev,
-      unites: [...prev.unites, newUnit]
+    const profilsComplets = attackProfiles.map((p) => ({
+      nom: p.nom ?? "",
+      Attacks: p.Attacks ?? 0,
+      CT: p.CT ?? 0,
+      Auto_hit: p.Auto_hit ?? false,
+      Strength: p.Strength ?? 0,
+      PA: p.PA ?? 0,
+      Damage: p.Damage ?? 0,
+      Sustained_hit: p.Sustained_hit ?? 0,
+      Sustained_X: p.Sustained_X ?? 0,
+      Lethal_hit: p.Lethal_hit ?? 0,
+      Deva_wound: p.Deva_wound ?? 0,
+      Blast: p.Blast ?? false,
+      Melta: p.Melta ?? 0,
+      Modif_hit: p.Modif_hit ?? 0,
+      Modif_wound: p.Modif_wound ?? 0,
+      Re_roll_hit1: p.Re_roll_hit1 ?? false,
+      Re_roll_hit: p.Re_roll_hit ?? false,
+      Re_roll_wound1: p.Re_roll_wound1 ?? false,
+      Re_roll_wound: p.Re_roll_wound ?? false,
+      Crit_on_X_to_hit: p.Crit_on_X_to_hit ?? 0,
+      Crit_on_X_to_wound: p.Crit_on_X_to_wound ?? 0,
     }));
-  
+
+    const newUnit = { nom: unitName, profils: profilsComplets };
+    setTempListe((prev) => ({
+      ...prev,
+      unites: [...prev.unites, newUnit],
+    }));
     setShowAddUnit(false);
   };
-  
 
   function cleanObject(obj) {
-    if (Array.isArray(obj)) {
-      return obj.map(cleanObject);
-    } else if (obj !== null && typeof obj === "object") {
-      // Assure que ce n'est pas un tableau déguisé en objet
-      // (par exemple un objet avec des clés numériques)
+    if (Array.isArray(obj)) return obj.map(cleanObject);
+    if (obj !== null && typeof obj === "object") {
       const keys = Object.keys(obj);
-      const allNumericKeys = keys.every(k => !isNaN(k));
-  
+      const allNumericKeys = keys.every((k) => !isNaN(k));
       if (allNumericKeys) {
-        // C'est un objet avec clés numériques -> on convertit en tableau
         return keys
           .sort((a, b) => a - b)
-          .map(key => cleanObject(obj[key]));
+          .map((key) => cleanObject(obj[key]));
       } else {
-        // Objet normal
         return Object.fromEntries(
           Object.entries(obj)
             .filter(([_, v]) => v !== undefined)
@@ -134,14 +122,24 @@ export default function ListeModal({
     const cleanedListe = cleanObject(tempListe.unites);
     onSave(cleanedListe);
   };
-  
 
   return (
-    <div style={styles.overlay}>
+    <AnimatePresence >
+      {open && (
+    <motion.div
+      key="modal-overlay"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{
+        duration: 0.7,
+        ease: "easeOut",
+        type: "spring",
+        stiffness: 70,
+      }}  style={styles.overlay}>
       <div style={styles.modal}>
-        <h2>{title}</h2>
+        <h2 style={styles.title}>{title}</h2>
 
-        {/* Nom de la liste */}
         <input
           type="text"
           placeholder="Nom de la liste"
@@ -152,17 +150,25 @@ export default function ListeModal({
           style={styles.input}
         />
 
-        <button onClick={handleAddUnit}>Ajouter une unité</button>
+        <button style={styles.buttonPrimary} onClick={handleAddUnit}>
+          + Ajouter une unité
+        </button>
 
-        {/* Tableau des unités */}
         {tempListe.unites.length > 0 && (
-          <div style={{ marginTop: 20 }}>
-            <h3>Unités ajoutées :</h3>
-            <table style={{ width: "100%", borderCollapse: "collapse" }}>
-              <thead>
+          <div style={{ marginTop: 24 }}>
+            <h3 style={styles.subtitle}>Unités ajoutées :</h3>
+            <table style={{
+              width: "100%",
+              borderCollapse: "collapse",
+              marginTop: 12,
+              borderRadius: 8,
+              overflow: "hidden",
+              backgroundColor: "#fefefe",
+            }}>
+              <thead  style={{ backgroundColor: "#ebf8ff" }}>
                 <tr>
-                  <th style={styles.th}>Nom</th>
-                  <th style={styles.th}>Profils</th>
+                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>Unités</th>
+                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>Profils</th>
                 </tr>
               </thead>
               <tbody>
@@ -171,14 +177,15 @@ export default function ListeModal({
                     <td style={styles.td}>{unit.nom}</td>
                     <td style={styles.td}>
                       <ul style={{ paddingLeft: 16, margin: 0 }}>
+                      <ol>
                         {(Array.isArray(unit.profils) ? unit.profils : []).map(
                           (p, i) => (
                             <li key={i}>
-                              {p.nom && <strong>{p.nom}: </strong>}
-                              {`${p.nom ?? `Profil ${i + 1}` }(Att: ${p.Attacks ?? "?"}, CC/CT: ${p.CT ?? "?"}+, F: ${p.Strength ?? "?"}, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"}`}
+                              <em>{p.nom || `Profil ${i + 1}`}</em>{` (A: ${p.Attacks ?? "?"}, CC/CT: ${p.CT ?? "?"}+, F: ${p.Strength ?? "?"}, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"})`}
                             </li>
                           )
                         )}
+                        </ol>
                       </ul>
                     </td>
                   </tr>
@@ -188,17 +195,20 @@ export default function ListeModal({
           </div>
         )}
 
-        <button onClick={handleSaveList} style={{ marginTop: 20 }}>
-          Valider la liste
-        </button>
-        <button onClick={onClose} style={{ marginLeft: 10 }}>
-          Annuler
-        </button>
-
-        {/* Sous-modal pour créer une unité */}
+        
+        <AnimatePresence mode = "wait">
         {showAddUnit && (
-          <div style={styles.subModal}>
-            <h3>Créer une unité</h3>
+          <motion.div 
+          key="sub-modal-create-unit"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.1,
+            ease: "easeInOut",
+            type: "spring",
+            stiffness: 70,
+          }} style={styles.subModal}>
+            <h3 style={styles.subtitle}>Créer une unité</h3>
             <input
               type="text"
               placeholder="Nom de l'unité"
@@ -207,90 +217,99 @@ export default function ListeModal({
               style={styles.input}
             />
 
-{attackProfiles.map((profile, index) => (
-  <div key={index} style={{ marginBottom: 10, border: "1px solid #ccc", padding: 10 }}>
-    
-    {/* Bouton pour afficher/masquer le profil */}
-    <button
-      onClick={() => toggleProfileVisibility(index)}
-      style={{
-        marginBottom: 8,
-        padding: "6px 12px",
-        cursor: "pointer",
-        backgroundColor: "#3182ce",
-        color: "white",
-        border: "none",
-        borderRadius: 4,
-      }}
-    >
-      {visibleProfiles.includes(index)
-  ? `Cacher ${profile.nom || `Profil ${index + 1}`}`
-  : `Afficher ${profile.nom || `Profil ${index + 1}`}`}
+            {attackProfiles.map((profile, index) => (
+              <div key={index} style={styles.profileCard}>
+                <button
+                  onClick={() => toggleProfileVisibility(index)}
+                  style={styles.buttonToggle}
+                >
+                  {visibleProfiles.includes(index)
+                    ? `Cacher ${profile.nom || `Profil ${index + 1}`}`
+                    : `Afficher ${profile.nom || `Profil ${index + 1}`}`}
+                </button>
+                {attackProfiles.length > 1 && (
+                  <button
+                    onClick={() => {
+                      setAttackProfiles((prev) =>
+                        prev.filter((_, i) => i !== index)
+                      );
+                      setVisibleProfiles((prev) =>
+                        prev.filter((i) => i !== index)
+                      );
+                    }}
+                    style={{... styles.buttonDelete, marginLeft: 10}}
+                  >
+                    Supprimer ce profil
+                  </button>
+                )}
 
-    </button>
+                {visibleProfiles.includes(index) && (
+                  <>
+                    <input
+                      type="text"
+                      placeholder={`Nom du profil ${index + 1}`}
+                      value={profile.nom || ""}
+                      onChange={(e) =>
+                        handleProfileChange(index, {
+                          ...profile,
+                          nom: e.target.value,
+                        })
+                      }
+                      style={styles.input}
+                    />
+                    <AttackProfileCard
+                      profile={profile}
+                      onChange={(newProfile) =>
+                        handleProfileChange(index, {
+                          ...newProfile,
+                          nom: profile.nom,
+                        })
+                      }
+                    />
+                  </>
+                )}
 
-    {/* Si le profil est visible, on affiche le champ pour le nom ET la carte */}
-    {visibleProfiles.includes(index) && (
-      <>
-        {/* Champ pour le nom du profil */}
-        <input
-          type="text"
-          placeholder={`Nom du profil ${index + 1}`}
-          value={profile.nom || ""}
-          onChange={(e) =>
-            handleProfileChange(index, { ...profile, nom: e.target.value })
-          }
-          style={{ marginBottom: 8, width: "100%", padding: 6 }}
-        />
+                
+              </div>
+            ))}
 
-        {/* Carte de profil */}
-        <AttackProfileCard
-          profile={profile}
-          onChange={(newProfile) =>
-            handleProfileChange(index, { ...newProfile, nom: profile.nom })
-          }
-        />
-      </>
-    )}
+            <button
+              onClick={() => {
+                setAttackProfiles((prev) => [...prev, { ...defaultProfile }]);
 
-    {/* Bouton pour supprimer un profil */}
-    {attackProfiles.length > 1 && (
-      <button
-        onClick={() => {
-          setAttackProfiles((prev) => prev.filter((_, i) => i !== index));
-          setVisibleProfiles((prev) => prev.filter((i) => i !== index));
-        }}
-        style={{ marginTop: 5, backgroundColor: "#fdd", color: "#900" }}
-      >
-        Supprimer ce profil
-      </button>
-    )}
-  </div>
-))}
-
-
-
-
-<button
-  onClick={() => {
-    setAttackProfiles((prev) => [...prev, { ...defaultProfile }]);
-    setVisibleProfiles((prev) => [...prev, attackProfiles.length]); // rendre le nouveau visible
-  }}
-  style={{ marginBottom: 10 }}
->
-  + Ajouter un profil d'attaque
-</button>
-
-
-
-            <button onClick={handleCreateUnit}>Créer l'unité</button>
-            <button onClick={() => setShowAddUnit(false)} style={{ marginLeft: 10 }}>
-              Annuler
+              }}
+              style={styles.buttonPrimary}
+            >
+              + Ajouter un profil d'attaque
             </button>
-          </div>
+
+            <div style={{ marginTop: 16 }}>
+              <button onClick={handleCreateUnit} style={styles.buttonSecondary}>
+                ✅ Sauvegarder l'unité
+              </button>
+              <button
+                onClick={() => setShowAddUnit(false)}
+                style={{... styles.buttonSecondary, marginLeft: 10}}
+              >
+                ❌ Annuler
+              </button>
+            </div>
+            </motion.div>
         )}
+    </AnimatePresence>
+
+        <div style={{ marginTop: 20 }}>
+          <button onClick={handleSaveList} style={styles.buttonSecondary}>
+            ✅ Sauvegarder la liste
+          </button>
+          <button onClick={onClose} style={{... styles.buttonSecondary, marginLeft: 10}}>
+            ❌ Annuler
+          </button>
+        </div>
       </div>
-    </div>
+      </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
 
@@ -306,26 +325,37 @@ const styles = {
   },
   modal: {
     backgroundColor: "#fff",
-    borderRadius: 8,
-    padding: 20,
-    width: "80%",
-    maxWidth: 600,
+    borderRadius: 12,
+    padding: 24,
+    width: "90%",
+    maxWidth: 700,
     maxHeight: "90vh",
     overflowY: "auto",
-    boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
   },
   subModal: {
-    marginTop: 20,
-    padding: 15,
-    backgroundColor: "#eee",
-    borderRadius: 6,
+    marginTop: 24,
+    padding: 20,
+    backgroundColor: "#f9f9f9",
+    borderRadius: 8,
+    border: "1px solid #ddd",
   },
   input: {
     display: "block",
     width: "100%",
-    padding: 8,
-    marginBottom: 10,
+    padding: 10,
+    marginBottom: 12,
+    borderRadius: 6,
+    border: "1px solid #ccc",
     fontSize: 16,
+  },
+  title: {
+    fontSize: 24,
+    marginBottom: 16,
+  },
+  subtitle: {
+    fontSize: 20,
+    marginBottom: 12,
   },
   th: {
     borderBottom: "1px solid #ccc",
@@ -333,8 +363,48 @@ const styles = {
     padding: 8,
   },
   td: {
-    borderBottom: "1px solid #eee",
-    padding: 8,
-    verticalAlign: "top",
+    border: "1px solid #ccc",
+    padding: "8px",
+    textAlign: "center",
+  },
+  buttonPrimary: {
+    backgroundColor: "#3182ce",
+    color: "#fff",
+    padding: "10px 16px",
+    border: "none",
+    borderRadius: 6,
+    cursor: "pointer",
+    marginRight: 10,
+  },
+  buttonSecondary: {
+    backgroundColor: "#eee",
+    color: "#333",
+    padding: "10px 16px",
+    border: "none",
+    borderRadius: 6,
+    cursor: "pointer",
+  },
+  buttonDelete: {
+    backgroundColor: "#fee",
+    color: "#a00",
+    border: "1px solid #faa",
+    padding: "6px 12px",
+    borderRadius: 6,
+    marginTop: 8,
+  },
+  buttonToggle: {
+    backgroundColor: "#ddd",
+    padding: "6px 12px",
+    marginBottom: 10,
+    border: "none",
+    borderRadius: 6,
+    cursor: "pointer",
+  },
+  profileCard: {
+    marginBottom: 20,
+    border: "1px solid #ccc",
+    borderRadius: 8,
+    padding: 16,
+    backgroundColor: "#fff",
   },
 };

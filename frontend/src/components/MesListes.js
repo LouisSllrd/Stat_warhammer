@@ -12,7 +12,8 @@ import {
 } from "firebase/firestore";
 import { db, auth } from "../firebaseConfig";
 import ListeModal from "./ListeModal";
-import AttackProfileCard from "./AttackProfileCard"; // J'imagine que tu as ce composant
+import AttackProfileCard from "./AttackProfileCard"; 
+import { motion, AnimatePresence } from "framer-motion";
 
 
 function MesListes() {
@@ -33,7 +34,12 @@ function MesListes() {
 
   const [isEditMode, setIsEditMode] = useState(true); // true pour édition, false pour création
 
-  
+  const cellStyle = {
+    border: "1px solid #ccc",
+    padding: "8px",
+    textAlign: "center",
+    
+  };
   
   const [visibleProfiles, setVisibleProfiles] = useState(
     editAttackProfiles.map((_, i) => i) // tout visible par défaut
@@ -154,18 +160,20 @@ function MesListes() {
   };
   
 
-  // Supprimer une unité
   const handleDeleteUnit = async (index) => {
     if (!selectedListe || !selectedListe.unites) return;
   
-    // 1. Crée une copie mise à jour sans l’unité à l’index donné
+    // Fermer la modale si on supprime l’unité en cours d’édition
+    if (editUnitIndex === index && showEditUnitModal) {
+      setShowEditUnitModal(false);
+      setEditUnitIndex(null);
+    }
+  
     const updatedUnits = selectedListe.unites.filter((_, i) => i !== index);
   
-    // 2. Mets à jour localement
     setSelectedListe((prev) => ({ ...prev, unites: updatedUnits }));
     setTempListe((prev) => ({ ...prev, unites: updatedUnits }));
   
-    // 3. Mets à jour dans Firestore
     try {
       const docRef = doc(db, "listes", selectedListe.id);
       await updateDoc(docRef, {
@@ -176,6 +184,7 @@ function MesListes() {
       console.error("❌ Erreur lors de la suppression dans Firestore :", error);
     }
   };
+  
   
     // Supprimer une liste
   const handleDeleteListe = async () => {
@@ -259,253 +268,479 @@ function MesListes() {
   
 
   return (
-    <div>
-      <h2>Mes Listes</h2>
+    <div
+      style={{
+        minHeight: "100vh",
+        fontFamily: "Segoe UI, sans-serif",
+        background: "#DCFEFF",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      {/* Titre centré */}
+      <div style={{ textAlign: "center", padding: "32px 0" }}>
+        <h1 style={{ fontSize: 32, fontWeight: 700, color: "#2d3748", margin: 0 }}>
+          Mes listes
+        </h1>
+      </div>
+  
+      {/* Contenu en deux colonnes */}
+      <div style={{ display: "flex", flex: 1 }}>
+        {/* Colonne gauche */}
+        <div style={{ width: "50%", padding: 32 }}>
+        <div style={{ display: "flex", gap: 12, marginBottom: 16 }}>
+        <button
+          onClick={() => {
+            setTempListe({ nom: "", unites: [] });
+            setShowCreationModal(true);
+            setShowEditUnitModal(false);
+          }}
+          style={{
+            padding: "8px 16px",
+            backgroundColor: "#38a169",
+            color: "white",
+            border: "none",
+            borderRadius: 6,
+            cursor: "pointer",
+          }}
+        >
+          ➕ Créer une nouvelle liste
+        </button>
+  
+        <select
+          onChange={(e) => {
+            const selectedId = e.target.value;
+            setSelectedListeId(selectedId);
 
-      <button
-        onClick={() => {
-          setTempListe({ nom: "", unites: [] });
-          setShowCreationModal(true);
-          setShowEditUnitModal(false);
-        }}
-      >
-        Créer une nouvelle liste
-      </button>
+            if (selectedId) {
+              fetchListe(selectedId);
+            } else {
+              // Si on revient à l'option "Sélectionner une liste", on vide l'affichage
+              setSelectedListe(null);
+            }
+          }}
+          value={selectedListeId}
+          style={{
+            padding: "10px 16px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            backgroundColor: "#f9f9f9",
+            fontSize: "16px",
+            color: "#333",
+            appearance: "none",
+            WebkitAppearance: "none",
+            MozAppearance: "none",
+            backgroundImage:
+              "url('data:image/svg+xml;utf8,<svg fill=\"%23333\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 10l5 5 5-5z\"/></svg>')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "right 10px center",
+            backgroundSize: "16px 16px",
+            cursor: "pointer",
+            boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
+            transition: "border 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+            maxWidth: "100%",
+          }}
+        >
+          <option value="">Sélectionner une liste</option>
+          {listes.map((l) => (
+            <option key={l.id} value={l.id}>
+              {l.nom}
+            </option>
+          ))}
+        </select>
 
-      <select
-        onChange={(e) => {
-          setSelectedListeId(e.target.value);
-          fetchListe(e.target.value);
-        }}
-        value={selectedListeId}
-      >
-        <option value="">-- Sélectionner une liste --</option>
-        {listes.map((l) => (
-          <option key={l.id} value={l.id}>
-            {l.nom}
-          </option>
-        ))}
-      </select>
-
-      {selectedListe && (
-        <div>
-          <h3>Contenu de la liste {selectedListe.nom}</h3>
-          <table>
-            <thead>
+        </div>
+        <AnimatePresence mode="wait">
+        {selectedListe && (
+        <motion.div 
+        key={selectedListe.id} 
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -40 }}
+        transition={{
+          duration: 0.1,
+          ease: "easeInOut",
+          type: "spring",
+          stiffness: 70,
+        }} style={{ marginTop: 24, flex: 1,
+          backgroundColor: "white",
+          padding: 20,
+          borderRadius: 12,
+          boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+          display: "flex",
+          flexDirection: "column",
+          gap: 16, }}>
+          <h3 style={{ fontSize: 20, marginBottom: 12 }}>
+            Contenu de la liste <span style={{ fontWeight: "bold" }}>{selectedListe.nom}</span>
+          </h3>
+  
+          <table
+            style={{
+              width: "100%",
+              borderCollapse: "collapse",
+              marginTop: 12,
+              borderRadius: 8,
+              overflow: "hidden",
+              backgroundColor: "#fefefe",
+            }}
+          >
+            <thead style={{ backgroundColor: "#ebf8ff" }}>
               <tr>
-                <th>Unité</th>
-                <th>Profils</th>
+                <th style={{ padding: 12, textAlign: "left", border: "1px solid #ddd" }}>Unités</th>
+                <th style={{ padding: 12, textAlign: "left", border: "1px solid #ddd" }}>Profils</th>
+                <th colSpan={2} style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>
+                  Actions
+                </th>
               </tr>
             </thead>
             <tbody>
-              {Array.isArray(selectedListe.unites) &&
-              selectedListe.unites.length > 0 ? (
+              {Array.isArray(selectedListe.unites) && selectedListe.unites.length > 0 ? (
                 selectedListe.unites.map((u, idx) => (
                   <tr key={idx}>
-                    <td>{u.nom}</td>
-                    <td>
-                      <ul>
-                        {Array.isArray(u.profils) && u.profils.length > 0 ? (
-                          u.profils.map((p, i) => (
-                            <li key={i}>{`${p.nom ?? `Profil ${i + 1}` } (Att: ${
-                              p.Attacks ?? "?"
-                            }, CC/CT: ${p.CT ?? "?"}+, F: ${
-                              p.Strength ?? "?"
-                            }, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"})`}</li>
-                          ))
+                    <td style={cellStyle}><strong>{u.nom}</strong></td>
+                    <td style={cellStyle}>
+                      <ul style={{ margin: 0, paddingLeft: 16 }}>
+                        {u.profils?.length > 0 ? (
+                          <ol>
+                          {u.profils.map((p, i) => (
+                            <li key={i}>
+                              <em>{p.nom || `Profil ${i + 1}`}</em>{` (A: ${p.Attacks ?? "?"}, CC/CT: ${p.CT ?? "?"}+, F: ${p.Strength ?? "?"}, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"})`}
+                            </li>
+                          ))}
+                        </ol>
+                        
                         ) : (
                           <li>Aucun profil</li>
                         )}
                       </ul>
                     </td>
-                    {/* Modifier */}
-                    <td>
-                      <button onClick={() => handleEditUnit(idx)}>Modifier</button>
+                    <td style={cellStyle}>
+                      <button
+                        onClick={() => handleEditUnit(idx)}
+                        style={{
+                          padding: "6px 10px",
+                          backgroundColor: "#3182ce",
+                          color: "white",
+                          border: "none",
+                          borderRadius: 4,
+                          cursor: "pointer",
+                        }}
+                      >
+                        ✏️ Modifier
+                      </button>
                     </td>
-                    {/* Supprimer */}
-                    <td>
-                      <button onClick={() => handleDeleteUnit(idx)}
-                    style={{ marginLeft: 8, color: "red" }}>Supprimer</button>
+                    <td style={cellStyle}>
+                      <button
+                        onClick={() => handleDeleteUnit(idx)}
+                        style={{
+                          padding: "6px 10px",
+                          backgroundColor: "#e53e3e",
+                          color: "white",
+                          border: "none",
+                          borderRadius: 4,
+                          cursor: "pointer",
+                        }}
+                      >
+                        🗑️ Supprimer
+                      </button>
                     </td>
                   </tr>
                 ))
               ) : (
                 <tr>
-                  <td colSpan={4}>Aucune unité disponible</td>
+                  <td colSpan={4} style={{ padding: 12, textAlign: "center" }}>
+                    Aucune unité disponible
+                  </td>
                 </tr>
               )}
             </tbody>
           </table>
-
-          <button
-            onClick={handleAddUnit}
-            /*style={{ backgroundColor: "green", color: "white", marginTop: 10 }}*/
-            >
-            Ajouter une unité
-            </button>
-
-          <button
-            /*style={{ marginLeft: 10, backgroundColor: "red", color: "white" }}*/
-            onClick={handleDeleteListe}
-            style={{ marginLeft: 8, color: "red" }}
-            >
-            Supprimer la liste
-            </button>
-
-        </div>
-      )}
-
-      {/* Modales création et édition liste */}
-      {showCreationModal && (
-        <ListeModal
-          open={showCreationModal}
-          onClose={() => setShowCreationModal(false)}
-          onSave={handleCreateListe}
-          tempListe={tempListe}
-          setTempListe={setTempListe}
-          title="Créer une nouvelle liste"
-        />
-      )}
-
-      {showEditModal && (
-        <ListeModal
-          open={showEditModal}
-          onClose={() => setShowEditModal(false)}
-          onSave={handleModifierListe}
-          tempListe={tempListe}
-          setTempListe={setTempListe}
-          title="Modifier la liste"
-        />
-      )}
-
-      {/* Modal d'édition d'une unité */}
-      {showEditUnitModal && (
-        <div style={{
-          position: "fixed",
-          top: "10%",
-          left: "50%",
-          transform: "translateX(-50%)",
-          backgroundColor: "white",
-          border: "1px solid #ccc",
-          padding: 20,
-          zIndex: 1000,
-          width: 400,
-          maxHeight: "80vh",
-          overflowY: "auto",
-        }}>
-          <h3>{isEditMode ? "Modifier l'unité" : "Créer une nouvelle unité"}</h3>
-
-
-          <input
-            type="text"
-            value={editUnitName}
-            onChange={(e) => setEditUnitName(e.target.value)}
-            placeholder="Nom de l'unité"
-            style={{ width: "100%", marginBottom: 10, padding: 5 }}
-          />
-
-          {editAttackProfiles.map((profile, index) => (
-            <div
-              key={index}
+  
+          <div style={{ display: "flex", gap: 12 }}>
+            <button
+              onClick={handleAddUnit}
               style={{
-                marginBottom: 10,
-                padding: 10,
-                border: "1px solid #ddd",
-                borderRadius: 4,
-                backgroundColor: "#f9f9f9",
+                padding: "8px 16px",
+                backgroundColor: "#2b6cb0",
+                color: "white",
+                border: "none",
+                borderRadius: 6,
+                cursor: "pointer",
               }}
             >
-              <button
-                onClick={() => toggleProfileVisibility(index)}
-                style={{
-                  marginBottom: 8,
-                  padding: "6px 12px",
-                  cursor: "pointer",
-                  backgroundColor: "#3182ce",
-                  color: "white",
-                  border: "none",
-                  borderRadius: 4,
-                }}
-              >
-                {visibleProfiles.includes(index)
+              ➕ Ajouter une unité
+            </button>
+  
+            <button
+              onClick={handleDeleteListe}
+              style={{
+                padding: "8px 16px",
+                backgroundColor: "#c53030",
+                color: "white",
+                border: "none",
+                borderRadius: 6,
+                cursor: "pointer",
+              }}
+            >
+              🗑️ Supprimer la liste
+            </button>
+          </div>
+        </motion.div>
+        )}
+        </AnimatePresence>
+      </div>
+
+      
+    {/* Colonne droite */}
+    <div
+        style={{
+          width: "50%",
+          padding: 32,
+          overflowY: "auto",
+        }}
+      >
+    {/* Modales création et édition liste */}
+    <AnimatePresence mode="wait">
+    {showCreationModal && (
+      
+      <ListeModal
+        open={showCreationModal}
+        onClose={() => setShowCreationModal(false)}
+        onSave={handleCreateListe}
+        tempListe={tempListe}
+        setTempListe={setTempListe}
+        title="Créer une nouvelle liste"
+      />
+    )}
+
+    {showEditModal && (
+      <ListeModal
+        open={showEditModal}
+        onClose={() => setShowEditModal(false)}
+        onSave={handleModifierListe}
+        tempListe={tempListe}
+        setTempListe={setTempListe}
+        title="Modifier la liste"
+      />
+    )}
+
+    {/* Modal d'édition d'une unité */}
+    {showEditUnitModal ? (
+      <motion.div
+      key="result-block"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{
+        duration: 0.7,
+        ease: "easeOut",
+        type: "spring",
+        stiffness: 70,
+      }} style={{
+        flex: 1, display: "flex", flexDirection: "column", gap: 16,
+        backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
+      }}>
+        <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>{isEditMode ? "Modifier l'unité" : "Créer une nouvelle unité"}</h3>
+
+        <input
+          type="text"
+          value={editUnitName}
+          onChange={(e) => setEditUnitName(e.target.value)}
+          placeholder="Nom de l'unité"
+          style={styles.input}
+        />
+
+        {editAttackProfiles.map((profile, index) => (
+          <div
+            key={index}
+            style={styles.profileCard}
+          >
+            <button
+              onClick={() => toggleProfileVisibility(index)}
+              style={styles.buttonToggle}
+            >
+              {visibleProfiles.includes(index)
                 ? `Cacher ${profile.nom || `Profil ${index + 1}`}`
                 : `Afficher ${profile.nom || `Profil ${index + 1}`}`}
+            </button>
+
+            {editAttackProfiles.length > 1 && (
+              <button
+                onClick={() => {
+                  const filtered = editAttackProfiles.filter((_, i) => i !== index);
+                  setEditAttackProfiles(filtered);
+                  setVisibleProfiles((prev) => prev.filter((i) => i !== index));
+                }}
+                style={{... styles.buttonDelete, marginLeft: 10}}
+              >
+                Supprimer ce profil
               </button>
+            )}
 
-              {visibleProfiles.includes(index) && (
-                <>
-                  {/* Champ pour le nom du profil */}
-                  <input
-                    type="text"
-                    value={profile.nom || ""}
-                    onChange={(e) => {
-                      const updatedProfiles = [...editAttackProfiles];
-                      updatedProfiles[index] = {
-                        ...profile,
-                        nom: e.target.value,
-                      };
-                      setEditAttackProfiles(updatedProfiles);
-                    }}
-                    placeholder={`Nom du profil ${index + 1}`}
-                    style={{
-                      width: "100%",
-                      marginBottom: 8,
-                      padding: 6,
-                    }}
-                  />
-
-                  {/* Carte du profil */}
-                  <AttackProfileCard
-                    profile={profile}
-                    onChange={(newProfile) => {
-                      const updatedProfiles = [...editAttackProfiles];
-                      updatedProfiles[index] = {
-                        ...newProfile,
-                        nom: profile.nom, // garder le nom en dehors d'AttackProfileCard
-                      };
-                      setEditAttackProfiles(updatedProfiles);
-                    }}
-                  />
-                </>
-              )}
-
-              {editAttackProfiles.length > 1 && (
-                <button
-                  onClick={() => {
-                    const filtered = editAttackProfiles.filter((_, i) => i !== index);
-                    setEditAttackProfiles(filtered);
-                    setVisibleProfiles((prev) => prev.filter((i) => i !== index));
+            {visibleProfiles.includes(index) && (
+              <>
+                <input
+                  type="text"
+                  value={profile.nom || ""}
+                  onChange={(e) => {
+                    const updatedProfiles = [...editAttackProfiles];
+                    updatedProfiles[index] = {
+                      ...profile,
+                      nom: e.target.value,
+                    };
+                    setEditAttackProfiles(updatedProfiles);
                   }}
-                  style={{ marginTop: 5, backgroundColor: "#fdd", color: "#900" }}
-                >
-                  Supprimer ce profil
-                </button>
-              )}
-            </div>
-          ))}
+                  placeholder={`Nom du profil ${index + 1}`}
+                  style={styles.input}
+                />
 
+                <AttackProfileCard
+                  profile={profile}
+                  onChange={(newProfile) => {
+                    const updatedProfiles = [...editAttackProfiles];
+                    updatedProfiles[index] = {
+                      ...newProfile,
+                      nom: profile.nom,
+                    };
+                    setEditAttackProfiles(updatedProfiles);
+                  }}
+                />
+              </>
+            )}
 
-          <button
-            onClick={() =>
-              setEditAttackProfiles((prev) => [...prev, { ...defaultProfile }])
-            }
-            style={{ marginBottom: 10 }}
-          >
-            + Ajouter un profil d'attaque
-          </button>
+            
+          </div>
+        ))}
 
+        <button
+          onClick={() =>
+            setEditAttackProfiles((prev) => [...prev, { ...defaultProfile }])
+          }
+          style={styles.buttonPrimary}
+        >
+          + Ajouter un profil d'attaque
+        </button>
 
-          <button onClick={handleSaveEditedUnit}>Sauvegarder</button>
+        <div>
+          <button onClick={handleSaveEditedUnit} style={styles.buttonSecondary}> 
+            ✅ Sauvegarder</button>
           <button
             onClick={() => setShowEditUnitModal(false)}
-            style={{ marginLeft: 10 }}
+            style={{... styles.buttonSecondary, marginLeft: 10}}
           >
-            Annuler
+            ❌ Annuler
           </button>
         </div>
-      )}
-    </div>
+        </motion.div>
+      ) : (
+        <div style={{ height: "100%", border: "2px dashed #ccc", borderRadius: 8, padding: 20, color: "#aaa" }}>
+          Modifiez ou ajoutez une unité pour l’éditer ici
+        </div>
+    )}
+    </AnimatePresence>
+  </div>
+</div>
+
+</div>
   );
 }
 
 export default MesListes;
+
+
+
+const styles = {
+  overlay: {
+    position: "fixed",
+    top: 0, left: 0, right: 0, bottom: 0,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 1000,
+  },
+  modal: {
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    padding: 24,
+    width: "90%",
+    maxWidth: 700,
+    maxHeight: "90vh",
+    overflowY: "auto",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
+  },
+  subModal: {
+    marginTop: 24,
+    padding: 20,
+    backgroundColor: "#f9f9f9",
+    borderRadius: 8,
+    border: "1px solid #ddd",
+  },
+  input: {
+    display: "block",
+    width: "97%",
+    padding: 10,
+    marginBottom: 12,
+    borderRadius: 6,
+    border: "1px solid #ccc",
+    fontSize: 16,
+  },
+  title: {
+    fontSize: 24,
+    marginBottom: 16,
+  },
+  subtitle: {
+    fontSize: 20,
+    marginBottom: 12,
+  },
+  th: {
+    borderBottom: "1px solid #ccc",
+    textAlign: "left",
+    padding: 8,
+  },
+  td: {
+    border: "1px solid #ccc",
+    padding: "8px",
+    textAlign: "center",
+  },
+  buttonPrimary: {
+    backgroundColor: "#3182ce",
+    color: "#fff",
+    padding: "10px 16px",
+    border: "none",
+    borderRadius: 6,
+    cursor: "pointer",
+    marginRight: 10,
+  },
+  buttonSecondary: {
+    backgroundColor: "#eee",
+    color: "#333",
+    padding: "10px 16px",
+    border: "none",
+    borderRadius: 6,
+    cursor: "pointer",
+  },
+  buttonDelete: {
+    backgroundColor: "#fee",
+    color: "#a00",
+    border: "1px solid #faa",
+    padding: "6px 12px",
+    borderRadius: 6,
+    marginTop: 8,
+  },
+  buttonToggle: {
+    backgroundColor: "#ddd",
+    padding: "6px 12px",
+    marginBottom: 10,
+    border: "none",
+    borderRadius: 6,
+    cursor: "pointer",
+  },
+  profileCard: {
+    marginBottom: 20,
+    border: "1px solid #ccc",
+    borderRadius: 8,
+    padding: 16,
+    backgroundColor: "#fff",
+  },
+};
