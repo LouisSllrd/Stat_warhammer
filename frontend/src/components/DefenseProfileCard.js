@@ -18,7 +18,7 @@ const optionsMap = {
   Toughness: Array.from({ length: 24 }, (_, i) => i + 1),
   Save: [2, 3, 4, 5, 6, 7],
   Save_invu_X: [2, 3, 4, 5, 6, 7],
-  PV: Array.from({ length: 20 }, (_, i) => i + 1),
+  PV: Array.from({ length: 30 }, (_, i) => i + 1),
   Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
   Fnp_X: [2, 3, 4, 5, 6]
 };
@@ -81,7 +81,7 @@ const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToE
           return (
             <div key={key} style={{ marginBottom: 8, display: 'flex', flexDirection: 'column' }}>
               <label style={{ marginBottom: 4 }}>{fieldLabels[key]}</label>
-              <select name={key} value={value} onChange={handleChange}>
+              <select name={key} value={value} onChange={handleChange} style={{ border: "1px solid #ccc", padding: 6, borderRadius: 4, width: "100%" }}>
                 {optionsMap[key].map((opt) => (
                   <option key={opt} value={opt}>
                     {key.includes("_X") || key === "Save" ? `${opt}+` : opt}

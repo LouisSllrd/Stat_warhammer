@@ -154,6 +154,7 @@ function MesListes() {
 
   const handleAddUnit = () => {
     setIsEditMode(false);
+    setEditUnitIndex(null);
     setEditUnitName("");
     setEditAttackProfiles([defaultProfile]);
     setShowEditUnitModal(true);
@@ -386,8 +387,8 @@ function MesListes() {
           >
             <thead style={{ backgroundColor: "#ebf8ff" }}>
               <tr>
-                <th style={{ padding: 12, textAlign: "left", border: "1px solid #ddd" }}>Unités</th>
-                <th style={{ padding: 12, textAlign: "left", border: "1px solid #ddd" }}>Profils</th>
+                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>Unités</th>
+                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>Profils</th>
                 <th colSpan={2} style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>
                   Actions
                 </th>

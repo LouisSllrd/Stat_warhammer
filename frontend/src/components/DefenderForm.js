@@ -31,6 +31,8 @@ const defaultParams = {
 // Ajout de Toughness dans optionsMap avec options 1 à 12
 const optionsMap = {
   Toughness: Array.from({ length: 12 }, (_, i) => i + 1),
+  PV: Array.from({ length: 30 }, (_, i) => i + 1),
+  Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
   // Exemple : Fnp_X pourrait être dans cette logique aussi
 };
 
@@ -121,6 +123,7 @@ const DefenderForm = ({ params, setParams }) => {
             name={key}
             checked={params[key]}
             onChange={handleChange}
+            style={{ marginRight: 6 }}
           />
         </div>
       );

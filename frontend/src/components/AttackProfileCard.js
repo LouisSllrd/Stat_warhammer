@@ -111,7 +111,7 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
           return (
             <div key={key} style={{ marginBottom: 8, display: 'flex', flexDirection: 'column' }}>
               <label style={{ marginBottom: 4 }}>{fieldLabels[key]}</label>
-              <select name={key} value={value} onChange={handleChange}>
+              <select name={key} value={value} onChange={handleChange} style={{ border: "1px solid #ccc", padding: 6, borderRadius: 4, width: "100%" }}>
                 {optionsMap[key].map((opt) => (
                   <option key={opt} value={opt}>
                     {optionLabel(key, opt)}
@@ -130,7 +130,12 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
               name={key}
               value={value}
               onChange={handleChange}
-              style={{ padding: 6, borderRadius: 4, border: '1px solid #ccc' }}
+              style={{
+                border: "1px solid #ccc",
+                padding: 6,
+                borderRadius: 4,
+                width: "100%"
+              }}
             />
           </div>
         );

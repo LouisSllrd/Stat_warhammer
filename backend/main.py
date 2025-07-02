@@ -280,6 +280,7 @@ def damage_simulation(params):
     histogram_data = [{"value": k, "frequency": v / total} for k, v in sorted(hist.items())]
     cumulative = []
     cum_sum = 0
+    proba_unit_killed = 0
     for val in reversed(sorted(hist)):
         cum_sum += hist[val]
         cumulative.append({"value": val, "cumulative_percent": 100 * cum_sum / total})
@@ -288,12 +289,21 @@ def damage_simulation(params):
         unit = "PV"
         relative_damage = mean/params["PV"]*100
         initial_force = params["PV"]
+        proba_unit_killed = round(next(
+    (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
+    100))
+ # par défaut si introuvable
+    
     else : 
         unit_descr = "Nombre de figurines tuées"
         unit = "figurines"
         relative_damage = mean/params["Nb_of_models"]*100
         initial_force = params["Nb_of_models"]
-
+        proba_unit_killed = round(next(
+    (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
+    100))
+ # par défaut si introuvable
+    
     # Résultats pour des profils d'unités classiques :
     catalogue = load_unit_catalogue()
     results_catalogue = {}
@@ -331,8 +341,7 @@ def damage_simulation(params):
             "relative_damages": mean_cat/cat_initial_force*100
         }
 
-
-    return unit, unit_descr, initial_force, relative_damage, mean, std, histogram_data, list(reversed(cumulative)), results_catalogue
+    return unit, unit_descr, initial_force, relative_damage, mean, std, histogram_data, list(reversed(cumulative)), results_catalogue, proba_unit_killed
 
 def multi_profile_sim(params_attackers, params_defenser):
     results = np.zeros(1000)
@@ -369,11 +378,19 @@ def multi_profile_sim(params_attackers, params_defenser):
         unit = "PV"
         relative_damage = mean/params_defenser["PV"]*100
         initial_force = params_defenser["PV"]
+        proba_unit_killed = round(next(
+    (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
+    100))
+ # par défaut si introuvable
     else : 
         unit_descr = "Nombre de figurines tuées"
         unit = "figurines"
         relative_damage = mean/params_defenser["Nb_of_models"]*100
         initial_force = params_defenser["Nb_of_models"]
+        proba_unit_killed = round(next(
+    (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
+    100))
+ # par défaut si introuvable
 
     # Résultats pour des profils d'unités classiques :
     catalogue = load_unit_catalogue()
@@ -413,7 +430,7 @@ def multi_profile_sim(params_attackers, params_defenser):
             "relative_damages": mean_cat/cat_initial_force*100
         }
 
-    return unit, unit_descr, initial_force, relative_damage, mean, std, histogram_data, list(reversed(cumulative)), results_catalogue
+    return unit, unit_descr, initial_force, relative_damage, mean, std, histogram_data, list(reversed(cumulative)), results_catalogue, proba_unit_killed
 
 
 # -------------------- FastAPI Endpoint --------------------
@@ -494,7 +511,7 @@ class MultiSimulationOutput(BaseModel):
 
 @app.post("/simulate")
 def simulate(input: SimulationInput):
-    unit, unit_descr, initial_force, relative_damages, mean, std, histogram_data, cumulative_data, results_catalogue = damage_simulation(input.dict())
+    unit, unit_descr, initial_force, relative_damages, mean, std, histogram_data, cumulative_data, results_catalogue, proba_unit_killed = damage_simulation(input.dict())
     return {
         "unit": unit,
         "unit_descr": unit_descr,
@@ -504,7 +521,8 @@ def simulate(input: SimulationInput):
         "std": std,
         "histogram_data": histogram_data,
         "cumulative_data": cumulative_data,
-        "results_catalogue": results_catalogue
+        "results_catalogue": results_catalogue,
+        "proba_unit_killed": proba_unit_killed,
     }
 
 
@@ -513,7 +531,7 @@ def multi_profile_simulate(input: MultiSimulationOutput):
     attackers_params = [attacker.dict() for attacker in input.attackers_params]
     defenser_params = input.defenser_params.dict()
 
-    unit, unit_descr, initial_force, relative_damages, mean, std, histogram_data, cumulative_data, results_catalogue = multi_profile_sim(
+    unit, unit_descr, initial_force, relative_damages, mean, std, histogram_data, cumulative_data, results_catalogue,proba_unit_killed = multi_profile_sim(
         attackers_params, defenser_params
     )
 
@@ -527,4 +545,5 @@ def multi_profile_simulate(input: MultiSimulationOutput):
         "histogram_data": histogram_data,
         "cumulative_data": cumulative_data,
         "results_catalogue": results_catalogue,
+        "proba_unit_killed": proba_unit_killed,
     }

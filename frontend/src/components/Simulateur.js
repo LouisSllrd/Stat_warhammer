@@ -176,6 +176,8 @@ function Simulateur() {
     Crit_on_X_to_hit: [2, 3, 4, 5, 6],                                 // 2+ à 6+
     Crit_on_X_to_wound: [2, 3, 4, 5, 6],                               // 2+ à 6+
     Toughness: Array.from({ length: 14 }, (_, i) => i + 1),             // 1 à 14
+    PV: Array.from({ length: 30 }, (_, i) => i + 1),
+    Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
     Fnp_X: [4, 5, 6],                                                  // 4+ à 6+
   };
 

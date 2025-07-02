@@ -11,6 +11,7 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 import { db } from "../firebaseConfig"; // ton fichier firebase config
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function UnitesAdversesPage() {
   const [unites, setUnites] = useState([]);
@@ -51,6 +52,8 @@ export default function UnitesAdversesPage() {
       return copy;
     });
   };
+  
+  
 
   // Ouvre la modale en mode création
   const handleOpenCreateModal = () => {
@@ -112,29 +115,59 @@ export default function UnitesAdversesPage() {
   };
 
   return (
-    <div style={{ padding: 20 }}>
-      <h1>Unités adverses</h1>
-      <button onClick={handleOpenCreateModal}>Ajouter une unité</button>
+    <div style={{
+      minHeight: "100vh",
+      fontFamily: "Segoe UI, sans-serif",
+      background: "#DCFEFF",
+      display: "flex",
+      flexDirection: "column",
+    }}>
+      {/* Titre centré */}
+      <div style={{ textAlign: "center", padding: "32px 0" }}>
+        <h1 style={{ fontSize: 32, fontWeight: 700, color: "#2d3748", margin: 0 }}>
+          Unités cibles
+        </h1>
+      </div>
+
+      <button onClick={handleOpenCreateModal} style={{
+            padding: "8px 16px",
+            backgroundColor: "#38a169",
+            color: "white",
+            border: "none",
+            borderRadius: 6,
+            cursor: "pointer",
+            width: "15%",
+            marginLeft: 40
+          }}> ➕ Ajouter une unité</button>
 
       {unites.length === 0 ? (
         <p>Aucune unité adverse pour l'instant.</p>
       ) : (
-        <table style={{ marginTop: 20, width: "100%", borderCollapse: "collapse" }}>
-          <thead>
+        <table style={{
+          width: "95%",
+          borderCollapse: "collapse",
+          marginTop: 12,
+          borderRadius: 8,
+          overflow: "hidden",
+          backgroundColor: "#fefefe",
+          marginLeft: "auto",
+          marginRight: "auto"
+        }}>
+          <thead style={{ backgroundColor: "#FFECE6" }}>
             <tr>
-              <th style={styles.th}>Nom</th>
+              <th style={styles.th}>Unités</th>
               <th style={styles.th}>Profils défensifs</th>
-              <th style={styles.th}>Actions</th>
+              <th colSpan={2} style={styles.th}>Actions</th>
             </tr>
           </thead>
           <tbody>
             {unites.map((unit) => (
               <tr key={unit.id} style={{ borderBottom: "1px solid #ddd" }}>
-                <td style={styles.td}>{unit.nom}</td>
+                <td style={styles.td}><strong>{unit.nom}</strong></td>
                 <td style={styles.td}>
                   <ul style={{ paddingLeft: 16, margin: 0 }}>
                     {(unit.profils || []).map((p, i) => (
-                      <li key={i}>
+                      <li key={i} style={{ listStyleType: "none" }}>
                         Endurance: {p.Toughness}, Save: {p.Save}+, PV: {p.PV}, Nb modèles:{" "}
                         {p.Nb_of_models}
                         {p.Save_invu ? `, Save invu: ${p.Save_invu_X}+` : ""}
@@ -147,12 +180,28 @@ export default function UnitesAdversesPage() {
                   </ul>
                 </td>
                 <td style={styles.td}>
-                  <button onClick={() => handleOpenEditModal(unit)}>Modifier</button>
+                  <button onClick={() => handleOpenEditModal(unit)} style={{
+                          padding: "6px 10px",
+                          backgroundColor: "#3182ce",
+                          color: "white",
+                          border: "none",
+                          borderRadius: 4,
+                          cursor: "pointer",
+                        }}> ✏️ Modifier</button>
+                  </td>
+                <td style={styles.td}>
                   <button
                     onClick={() => handleDeleteUnit(unit.id)}
-                    style={{ marginLeft: 8, color: "red" }}
+                    style={{
+                      padding: "6px 10px",
+                      backgroundColor: "#e53e3e",
+                      color: "white",
+                      border: "none",
+                      borderRadius: 4,
+                      cursor: "pointer",
+                    }}
                   >
-                    Supprimer
+                    🗑️ Supprimer
                   </button>
                 </td>
               </tr>
@@ -162,58 +211,74 @@ export default function UnitesAdversesPage() {
       )}
 
       {/* Modal création/édition unité */}
-      {openModal && (
-        <div style={styles.overlay}>
-          <div style={styles.modal}>
-            <h2>{editUnitId ? "Modifier l'unité adverse" : "Ajouter une unité adverse"}</h2>
-            <input
-              type="text"
-              placeholder="Nom de l'unité"
-              value={unitName}
-              onChange={(e) => setUnitName(e.target.value)}
-              style={styles.input}
-            />
-
-            {profiles.map((profile, index) => (
-              <DefenseProfileCard
-                key={index}
-                profile={profile}
-                onChange={(newProfile) => handleProfileChange(index, newProfile)}
-                title={`Profil défensif #${index + 1}`}
+      <AnimatePresence>
+        {openModal && (
+          <motion.div
+            key="modal"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{
+              duration: 0.5,
+              ease: "easeOut",
+              type: "spring",
+              stiffness: 70,
+            }}
+            style={styles.overlay}
+          >
+            <div style={styles.modal}>
+              <h2>{editUnitId ? "Modifier l'unité adverse" : "Ajouter une unité adverse"}</h2>
+              <input
+                type="text"
+                placeholder="Nom de l'unité"
+                value={unitName}
+                onChange={(e) => setUnitName(e.target.value)}
+                style={styles.input}
               />
-            ))}
 
-            <div>
-              <button onClick={handleSaveUnit}>
-                {editUnitId ? "Sauvegarder" : "Créer l'unité"}
-              </button>
-              <button onClick={() => setOpenModal(false)} style={{ marginLeft: 10 }}>
-                Annuler
-              </button>
+              {profiles.map((profile, index) => (
+                <DefenseProfileCard
+                  key={index}
+                  profile={profile}
+                  onChange={(newProfile) => handleProfileChange(index, newProfile)}
+                  title={`Profil défensif #${index + 1}`}
+                />
+              ))}
+
+              <div style={{ marginTop: 20 }}>
+                <button onClick={handleSaveUnit} style={styles.buttonSecondary}>
+                  {editUnitId ? "✅ Sauvegarder" : "✅ Créer l'unité"}
+                </button>
+                <button
+                  onClick={() => setOpenModal(false)}
+                  style={{ ...styles.buttonSecondary, marginLeft: 10 }}
+                >
+                  ❌ Annuler
+                </button>
+              </div>
             </div>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
 
 const styles = {
   th: {
-    textAlign: "left",
-    padding: 8,
-    borderBottom: "1px solid #ccc",
+    textAlign: "center",
+    border: "1px solid #ccc",
+    padding: 12,
+    borderBottom: "1px solid #ddd",
   },
   td: {
-    padding: 8,
-    verticalAlign: "top",
+    border: "1px solid #ccc",
+    padding: "8px",
+    textAlign: "center",
   },
   overlay: {
     position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
+    top: 0, left: 0, right: 0, bottom: 0,
     backgroundColor: "rgba(0,0,0,0.5)",
     display: "flex",
     justifyContent: "center",
@@ -222,13 +287,13 @@ const styles = {
   },
   modal: {
     backgroundColor: "#fff",
-    borderRadius: 8,
-    padding: 20,
-    width: "80%",
-    maxWidth: 600,
+    borderRadius: 12,
+    padding: 24,
+    width: "90%",
+    maxWidth: 700,
     maxHeight: "90vh",
     overflowY: "auto",
-    boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
   },
   input: {
     width: "100%",
@@ -237,5 +302,13 @@ const styles = {
     fontSize: 16,
     borderRadius: 4,
     border: "1px solid #ccc",
+  },
+  buttonSecondary: {
+    backgroundColor: "#eee",
+    color: "#333",
+    padding: "10px 16px",
+    border: "none",
+    borderRadius: 6,
+    cursor: "pointer",
   },
 };

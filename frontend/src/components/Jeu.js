@@ -5,14 +5,7 @@ import unitCatalogue from "../data/unit_catalogue.json"; // ⚠️ adapte le che
 import AttackProfileCard from "./AttackProfileCard";
 import DefenseProfileCard from "./DefenseProfileCard";
 import axios from "axios";
-import {
-    LineChart,
-    Line,
-    CartesianGrid,
-    XAxis,
-    YAxis,
-    Tooltip,
-  } from "recharts";
+import { motion, AnimatePresence } from "framer-motion";
 
 
 function SimulationEnJeu() {
@@ -32,6 +25,8 @@ function SimulationEnJeu() {
 
   const [visibleProfiles, setVisibleProfiles] = useState({});
 const [selectedProfiles, setSelectedProfiles] = useState({});
+const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
+
 
 
   const handleAttackProfileChange = (updatedProfile, index) => {
@@ -175,13 +170,79 @@ const [selectedProfiles, setSelectedProfiles] = useState({});
     setDefenderParams({ ...defenderParams, ...newProfile });
   };
   
+  const Modal = ({ children, onClose }) => {
+    return (
+      <div style={{
+        position: "fixed",
+        top: 0, left: 0,
+        width: "100vw",
+        height: "100vh",
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        zIndex: 1000,
+      }}>
+        <div style={{
+          backgroundColor: "#fff",
+          padding: 24,
+          borderRadius: 12,
+          maxWidth: 800,
+          width: "90%",
+          maxHeight: "90vh",
+          overflowY: "auto",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+          position: "relative"
+        }}>
+          <button
+            onClick={onClose}
+            style={{
+              position: "absolute",
+              top: 12,
+              right: 12,
+              background: "transparent",
+              border: "none",
+              fontSize: 24,
+              cursor: "pointer",
+              color: "#999"
+            }}
+          >
+            &times;
+          </button>
+          {children}
+        </div>
+      </div>
+    );
+  };
   
 
   return (
-    <div style={{ display: "flex", gap: 30 }}>
+    <div style={{
+      minHeight: "100vh",
+      fontFamily: "Segoe UI, sans-serif",
+      background: "#DCFEFF",
+      display: "flex",
+      flexDirection: "column",
+    }}>
+      {/* Titre centré */}
+      <div style={{ textAlign: "center", padding: "32px 0" }}>
+        <h1 style={{ fontSize: 32, fontWeight: 700, color: "#2d3748", margin: 0 }}>
+          Calculateur En Jeu
+        </h1>
+      </div>
+
+      {/* Contenu en deux colonnes */}
+      <div style={{  display: "flex", 
+          gap: 40, 
+          padding: "0 20px", }}>
+
+
       {/* Colonne gauche : Attaquant */}
-      <div style={{ flex: 1 }}>
-        <h2>Unité Attaquante</h2>
+      <div style={{
+          flex: 1, display: "flex", flexDirection: "column", gap: 16,
+          backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
+        }}>
+        <h2 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>⚔️ Attaquant</h2>
 
         <label>Choisir une liste :</label>
         <select
@@ -189,6 +250,26 @@ const [selectedProfiles, setSelectedProfiles] = useState({});
           onChange={(e) => {
             setSelectedListeId(e.target.value);
             fetchListe(e.target.value);
+          }}
+          style={{
+            padding: "10px 16px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            backgroundColor: "#f9f9f9",
+            fontSize: "16px",
+            color: "#333",
+            appearance: "none",
+            WebkitAppearance: "none",
+            MozAppearance: "none",
+            backgroundImage:
+              "url('data:image/svg+xml;utf8,<svg fill=\"%23333\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 10l5 5 5-5z\"/></svg>')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "right 10px center",
+            backgroundSize: "16px 16px",
+            cursor: "pointer",
+            boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
+            transition: "border 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+            maxWidth: "100%",
           }}
         >
           <option value="">-- Sélectionner --</option>
@@ -199,13 +280,47 @@ const [selectedProfiles, setSelectedProfiles] = useState({});
           ))}
         </select>
 
-        {selectedListe && (
-          <>
+        <AnimatePresence mode="wait">
+          {selectedListe && (
+            <motion.div
+              key="unit-select"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 70,
+              }}
+            >
             <br />
             <label>Choisir une unité :</label>
             <select
               value={selectedUniteNom}
               onChange={(e) => setSelectedUniteNom(e.target.value)}
+              style={{
+                padding: "10px 16px",
+                borderRadius: "8px",
+                border: "1px solid #ccc",
+                backgroundColor: "#f9f9f9",
+                fontSize: "16px",
+                color: "#333",
+                appearance: "none",
+                WebkitAppearance: "none",
+                MozAppearance: "none",
+                backgroundImage:
+                  "url('data:image/svg+xml;utf8,<svg fill=\"%23333\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 10l5 5 5-5z\"/></svg>')",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "right 10px center",
+                backgroundSize: "16px 16px",
+                cursor: "pointer",
+                boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
+                transition: "border 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+                maxWidth: "100%",
+                marginBottom: "16px",
+
+              }}
             >
               <option value="">-- Sélectionner une unité --</option>
               {selectedListe.unites.map((u, idx) => (
@@ -216,139 +331,228 @@ const [selectedProfiles, setSelectedProfiles] = useState({});
             </select>
 
             {selectedUnite && (
-              <div>
-                                {selectedUnite.profils.map((profil, i) => (
-                  <div key={i} style={{ border: "1px solid #ccc", marginBottom: 10, padding: 10 }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                      <button onClick={() => setVisibleProfiles(prev => ({ ...prev, [i]: !prev[i] }))}style={{
-                        marginBottom: 8,
-                        padding: "6px 12px",
-                        cursor: "pointer",
-                        backgroundColor: "#3182ce",
-                        color: "white",
-                        border: "none",
-                        borderRadius: 4,
-                        }}>
-                      
-                        {visibleProfiles[i] ? `Cacher ${profil.nom || `Profil ${i + 1}`}` : `Afficher ${profil.nom || `Profil ${i + 1}`}`}
+              <motion.div
+              key="profiles"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 70,
+              }}
+              style={{ display: "flex", flexDirection: "column", gap: 16 }}
+            >
+              {selectedUnite.profils.map((profil, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: i * 0.1, // <-- Décalage progressif
+                    ease: "easeOut",
+                    type: "spring",
+                    stiffness: 70,
+                  }}
+                  style={{
+                    border: "1px solid #e2e8f0",
+                    borderRadius: 12,
+                    padding: 16,
+                    backgroundColor: "#ffffff",
+                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.04)",
+                  }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                      <button
+                        onClick={() =>
+                          setVisibleProfiles((prev) => ({ ...prev, [i]: !prev[i] }))
+                        }
+                        style={{
+                          padding: "8px 16px",
+                          backgroundColor: "#2b6cb0",
+                          color: "#fff",
+                          border: "none",
+                          borderRadius: 8,
+                          fontWeight: 600,
+                          cursor: "pointer",
+                          fontSize: 14,
+                        }}
+                      >
+                        {visibleProfiles[i]
+                          ? `Cacher ${profil.nom || `Profil ${i + 1}`}`
+                          : `Afficher ${profil.nom || `Profil ${i + 1}`}`}
                       </button>
-                      {/* Bouton pour afficher/masquer le profil */}
-            
-                      <label>
+
+                      <label style={{ display: "flex", alignItems: "center", fontSize: 14 }}>
                         <input
                           type="checkbox"
                           checked={selectedProfiles[i] || false}
-                          onChange={(e) => setSelectedProfiles(prev => ({ ...prev, [i]: e.target.checked }))}
+                          onChange={(e) =>
+                            setSelectedProfiles((prev) => ({
+                              ...prev,
+                              [i]: e.target.checked,
+                            }))
+                          }
+                          style={{ transform: "scale(2)", marginRight: 8 }}
                         />
-                        Inclure dans la simulation
+                        Inclure dans le calcul
                       </label>
                     </div>
-                    {visibleProfiles[i] && (
+                  </div>
+
+                  {visibleProfiles[i] && (
+                    <div style={{ marginTop: 8 }}>
                       <AttackProfileCard
                         profile={profil}
-                        onChange={(updatedProfile) => handleAttackProfileChange(updatedProfile, i)}
+                        onChange={(updatedProfile) =>
+                          handleAttackProfileChange(updatedProfile, i)
+                        }
                       />
-                    )}
-                  </div>
-                ))}
+                    </div>
+                  )}
+                </motion.div>
+              ))}
 
-              </div>
+            </motion.div>
+            
             )}
-          </>
-        )}
+          </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
     {/* Colonne droite : Défenseur */}
-    <div style={{ flex: 1 }}>
-        <h2>Unité Défenseur</h2>
+    <div style={{
+      flex: 1, display: "flex", flexDirection: "column", gap: 16,
+      backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
+    }}>
+  <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>🛡️ Défenseur</h3>
 
-        <label>Choisir une unité du catalogue Firestore :</label>
-        <select
-          value={enemyUnitName}
-          onChange={(e) => setEnemyUnitName(e.target.value)}
-        >
-          <option value="">-- Sélectionner une cible --</option>
-          {defenderUnits.map((unit) => (
-            <option key={unit.id} value={unit.nom}>
-              {unit.nom}
-            </option>
-          ))}
-        </select>
+  <label>Choisir une unité cible :</label>
+  <select
+    value={enemyUnitName}
+    style={{
+      padding: "10px 16px",
+      borderRadius: "8px",
+      border: "1px solid #ccc",
+      backgroundColor: "#f9f9f9",
+      fontSize: "16px",
+      color: "#333",
+      appearance: "none",
+      WebkitAppearance: "none",
+      MozAppearance: "none",
+      backgroundImage:
+        "url('data:image/svg+xml;utf8,<svg fill=\"%23333\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 10l5 5 5-5z\"/></svg>')",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "right 10px center",
+      backgroundSize: "16px 16px",
+      cursor: "pointer",
+      boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
+      transition: "border 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+      maxWidth: "100%",
+    }}
+    onChange={(e) => setEnemyUnitName(e.target.value)}
+  >
+    <option value="">-- Sélectionner une cible --</option>
+    {defenderUnits.map((unit) => (
+      <option key={unit.id} value={unit.nom}>
+        {unit.nom}
+      </option>
+    ))}
+  </select>
 
-        <div style={{ display: "flex", gap: 20, alignItems: "center", marginTop: 20 }}>
-          <div style={{ flex: 2, minWidth: 300 }}>
-          {defenderParams && (
-            <DefenseProfileCard
-            profile={defenderParams?.profils?.[0]}
-            onChange={(newProfile) => {
-              const newParams = { ...defenderParams };
-              newParams.profils[0] = newProfile;
-              setDefenderParams(newParams);
-            }}
-          />
-          
-            )}
-
-          </div>
-
-    <button onClick={handleSubmit} style={{ flexShrink: 0, padding: "10px 20px" }}>
-      Lancer la simulation
+  {defenderParams && (
+  <div
+    style={{
+      border: "1px solid #e2e8f0",
+      borderRadius: 12,
+      padding: 16,
+      backgroundColor: "#ffffff",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.04)",
+      marginTop: 16,
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+    }}
+  >
+    <button
+      onClick={() => setVisibleDefenseProfile((prev) => !prev)}
+      style={{
+        padding: "8px 16px",
+        backgroundColor: "#2b6cb0",
+        color: "#fff",
+        border: "none",
+        borderRadius: 8,
+        fontWeight: 600,
+        cursor: "pointer",
+        transition: "background-color 0.3s",
+        fontSize: 14,
+        alignSelf: "flex-start",  
+      }}
+    >
+      {visibleDefenseProfile ? "Cacher Profil Défensif" : "Afficher Profil Défensif"}
     </button>
+
+    {visibleDefenseProfile && (
+      <DefenseProfileCard
+        profile={defenderParams.profils[0]}
+        onChange={(newProfile) => {
+          const newParams = { ...defenderParams };
+          newParams.profils[0] = newProfile;
+          setDefenderParams(newParams);
+        }}
+      />
+    )}
   </div>
+)}
+
+  <button onClick={handleSubmit} 
+    style={{
+              marginTop: 20,
+              padding: "12px 20px",
+              backgroundColor:"#2b6cb0",
+              color: "white",
+              border: "none",
+              borderRadius: 8,
+              fontWeight: "bold",
+              fontSize: 16,
+              transition: "background-color 0.3s"
+            }}>
+      🚀 Lancer la simulation
+    </button>
 </div>
 
-      {/* Résultats */}
-        {results && (
-          <div style={{ flex: 2, minWidth: 600 }}>
-            <h2 style={{ fontSize: 22, fontWeight: "bold" }}>Résultats :</h2>
-            <p>Unité : {results.unit_descr}</p>
-            <p>
-              Moyenne : {results.mean.toFixed(1)} {results.unit}, soit{" "}
-              {results.relative_damages.toFixed(0)}% de la force initiale de l'unité cible
-            </p>
-            <p>Écart-type : {results.std.toFixed(1)}</p>
-            <div style={{ flex: "1 1 0", maxWidth: 400 }}>
-                    <h3 style={{ fontWeight: "bold" }}>
-                    Probabilité d'atteindre un seuil de dégâts 
-                    </h3>
-                    <LineChart
-                    width={400}
-                    height={300}
-                    data={results.cumulative_data}
-                    margin={{ top: 5, right: 15, left: 15, bottom: 5 }}
-                    >
-                    <CartesianGrid stroke="#ccc" />
-                    <XAxis
-                        dataKey="value"
-                        tick={({ x, y, payload }) => {
-                        const isTarget = payload.value === results.initial_force;
-                        const color = isTarget
-                            ? results.mean >= results.initial_force
-                            ? "green"
-                            : "red"
-                            : "#666";
-                        return (
-                            <text
-                            x={x}
-                            y={y + 10}
-                            textAnchor="middle"
-                            fill={color}
-                            fontWeight={isTarget ? "bold" : "normal"}
-                            >
-                            {payload.value}+
-                            </text>
-                        );
-                        }}
-                    />
-                    <YAxis />
-                    <Tooltip />
-                    <Line type="monotone" dataKey="cumulative_percent" stroke="#2b6cb0" />
-                    </LineChart>
-                </div>
 
-          </div>
-        )}
+      {/* Résultats */}
+{results && (
+  <>
+    {console.log("Probabilité de tuer l'unité ennemie :", results.proba_unit_killed)}
+    <Modal onClose={() => setResults(null)}>
+      <h2 style={{ fontSize: 22, fontWeight: "bold" }}>📊 Résultats :</h2>
+      <p>
+        ➢ En moyenne : <strong>{results.mean.toFixed(1)}</strong> {"(±"} {results.std.toFixed(0)} {")"} {results.unit} , soit {results.relative_damages.toFixed(0)}% de la force initiale
+      </p>
+      <p>
+        ➢ <strong style={{
+          color:
+            results.proba_unit_killed < 30 ? "red" :
+            results.proba_unit_killed < 60 ? "orange" :
+            results.proba_unit_killed < 80 ? "gold" :
+            "green"
+        }}>
+          {results.proba_unit_killed.toFixed(0)}%
+        </strong> {"de chance de tuer l'unité ennemie"} 
+      </p>
+    </Modal>
+  </>
+)}
+
+
       
+      </div>
     </div>
   );
 }
