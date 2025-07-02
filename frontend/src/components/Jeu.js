@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { collection, query, where, onSnapshot, doc, getDoc } from "firebase/firestore";
 import { db, auth } from "../firebaseConfig";
-import unitCatalogue from "../data/unit_catalogue.json"; // ⚠️ adapte le chemin
 import AttackProfileCard from "./AttackProfileCard";
 import DefenseProfileCard from "./DefenseProfileCard";
 import axios from "axios";
@@ -106,10 +105,17 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
       const parsedAttackProfiles = profilsToSend.map((params) => {
         const parsedParams = { ...params };
         Object.keys(parsedParams).forEach((key) => {
-          if (key !== "Attacks" && key !== "Strength" && key !== "PA" && key !== "Damage") {
+          if (key !== "Attacks" && key !== "Strength" && key !== "PA" && key !== "Damage"&& key !== "Sustained_hit"&& key !== "CT"&& key !== "Re_roll_hit"&& key !== "Re_roll_wound") {
             parsedParams[key] = Number(parsedParams[key]);
           }
         });
+        parsedParams.Sustained_hit = String(parsedParams.Sustained_hit);
+        parsedParams.Re_roll_hit = String(parsedParams.Re_roll_hit);
+        parsedParams.Re_roll_wound = String(parsedParams.Re_roll_wound);
+        parsedParams.CT = String(parsedParams.CT);
+        console.log("CT : ",parsedParams.CT)
+        console.log("Re_roll_hit : ",parsedParams.Re_roll_hit)
+        console.log("Sustained_hit : ",parsedParams.Sustained_hit)
         return parsedParams;
       });
   
@@ -172,7 +178,19 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
   
   const Modal = ({ children, onClose }) => {
     return (
-      <div style={{
+      <AnimatePresence>
+      <motion.div
+      key="modal-overlay"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{
+        duration: 0.1,
+        ease: "easeOut",
+        type: "spring",
+        stiffness: 70,
+      }}
+         style={{
         position: "fixed",
         top: 0, left: 0,
         width: "100vw",
@@ -211,7 +229,8 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
           </button>
           {children}
         </div>
-      </div>
+        </motion.div>
+      </AnimatePresence>
     );
   };
   
@@ -351,7 +370,7 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 0.6,
-                    delay: i * 0.1, // <-- Décalage progressif
+                    delay: i * 0.1,
                     ease: "easeOut",
                     type: "spring",
                     stiffness: 70,
@@ -424,6 +443,7 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
         </AnimatePresence>
       </div>
 
+      
     {/* Colonne droite : Défenseur */}
     <div style={{
       flex: 1, display: "flex", flexDirection: "column", gap: 16,
@@ -464,8 +484,19 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
     ))}
   </select>
 
+  <AnimatePresence>
   {defenderParams && (
-  <div
+  <motion.div
+  key="results-block"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  exit={{ opacity: 0, y: 20 }}
+  transition={{
+    duration: 0.7,
+    ease: "easeOut",
+    type: "spring",
+    stiffness: 70,
+  }}
     style={{
       border: "1px solid #e2e8f0",
       borderRadius: 12,
@@ -506,8 +537,9 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
         }}
       />
     )}
-  </div>
+    </motion.div>
 )}
+</AnimatePresence>
 
   <button onClick={handleSubmit} 
     style={{
@@ -526,7 +558,9 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
 </div>
 
 
+
       {/* Résultats */}
+    
 {results && (
   <>
     {console.log("Probabilité de tuer l'unité ennemie :", results.proba_unit_killed)}

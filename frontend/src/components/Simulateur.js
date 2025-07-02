@@ -12,23 +12,19 @@ import { ProfilesContext } from "./ProfileContext";*/
 const defaultParams = {
   // Attaquant
   Attacks: "12",
-  CT: 2,
-  Auto_hit: false,
+  CT: "2",
   Strength: "8",
   PA: "-2",
   Damage: "2",
-  Sustained_hit: false,
-  Sustained_X: 1,
+  Sustained_hit: "N/A",
   Lethal_hit: false,
   Deva_wound: false,
   Modif_hit: 0,
   Modif_wound: 0,
   Blast: false,
   Melta: 0,
-  Re_roll_hit1: false,
-  Re_roll_hit: false,
-  Re_roll_wound1: false,
-  Re_roll_wound: false,
+  Re_roll_hit: "N/A",
+  Re_roll_wound: "N/A",
   Crit_on_X_to_hit: 6,
   Crit_on_X_to_wound: 6,
 
@@ -47,10 +43,10 @@ const defaultParams = {
 };
 
 const attackerFields = [
-  "Attacks", "CT", "Auto_hit", "Strength", "PA", "Damage",
-  "Sustained_hit", "Sustained_X", "Lethal_hit", "Deva_wound", 'Blast', 'Melta',
-  "Modif_hit", "Modif_wound", "Re_roll_hit1",
-  "Re_roll_hit", "Re_roll_wound1", "Re_roll_wound",
+  "Attacks", "CT", "Strength", "PA", "Damage",
+  "Sustained_hit", "Lethal_hit", "Deva_wound", 'Blast', 'Melta',
+  "Modif_hit", "Modif_wound",
+  "Re_roll_hit", "Re_roll_wound",
   "Crit_on_X_to_hit", "Crit_on_X_to_wound"
 ];
 
@@ -62,21 +58,17 @@ const defenderFields = [
 const fieldLabels = {
   Attacks: "Attaques",
   CT: "CC/CT",
-  Auto_hit: "Touches auto",
   Strength: "Force",
   PA: "Pénétration d'armure (PA)",
   Damage: "Dégâts",
   Sustained_hit: "Touches soutenues",
-  Sustained_X: "Touches soutenues X",
   Lethal_hit: "Touches fatales",
   Deva_wound: "Blessures dévastatrices",
   Blast: "Déflagration",
   Melta: "Melta X",
   Modif_hit: "Modificateur de touche",
   Modif_wound: "Modificateur de blessure",
-  Re_roll_hit1: "Relance des touches de 1",
   Re_roll_hit: "Relance des touches",
-  Re_roll_wound1: "Relance des blessures de 1",
   Re_roll_wound: "Relance des blessures",
   Crit_on_X_to_hit: "Critique sur X+ en touche",
   Crit_on_X_to_wound: "Critique sur X+ en blessure",
@@ -138,6 +130,10 @@ function Simulateur() {
         key !== "Strength" &&
         key !== "PA" &&
         key !== "Damage" &&
+        key !== "Sustained_hit" &&
+        key !== "CT" &&
+        key !== "Re_roll_hit" &&
+        key !== "Re_roll_wound" &&
         typeof defaultParams[key] === "number"
       ) {
         parsedParams[key] = Number(parsedParams[key]);
@@ -147,9 +143,10 @@ function Simulateur() {
     parsedParams.Damage = String(parsedParams.Damage);
     parsedParams.Strength = String(parsedParams.Strength);
     parsedParams.Attacks = String(parsedParams.Attacks);
-
-    console.log("Valeur de PA envoyée :", parsedParams.PA); 
-    console.log("Valeur de strength envoyée :", parsedParams.Strength); 
+    parsedParams.Sustained_hit = String(parsedParams.Sustained_hit);
+    parsedParams.CT = String(parsedParams.CT);
+    parsedParams.Re_roll_hit = String(parsedParams.Re_roll_hit);
+    parsedParams.Re_roll_wound = String(parsedParams.Re_roll_wound);
 
     try {
       /*const res = await axios.post(
@@ -167,10 +164,13 @@ function Simulateur() {
 
   // Options des différents champs
   const optionsMap = {
-    CT: [2,3,4,5,6],
+    CT: ["Torrent","2","3","4","5","6"],
     Strength: Array.from({ length: 24 }, (_, i) => i + 1),               // 1 à 24
     PA: [0, -1, -2, -3, -4, -5],                                       // 0 à -5
+    Sustained_hit: ["N/A", "1", "2", "3", "D3", "D6"],
     Melta: [0,1,2,3,4,5,6],                                           // 0 à 6
+    Re_roll_hit: ["N/A", "Relance des 1", "Relance des touches ratées", "Relance des touches non critiques (pêcher)" ],
+    Re_roll_wound: ["N/A", "Relance des 1", "Relance des blessures ratées", "Relance des blessures non critiques (pêcher)" ],
     Modif_hit: [-2, -1, 0, 1, 2],                                      // -2 à +2
     Modif_wound: [-2, -1, 0, 1, 2],                                    // -2 à +2
     Crit_on_X_to_hit: [2, 3, 4, 5, 6],                                 // 2+ à 6+
@@ -188,7 +188,7 @@ function Simulateur() {
       key === "Modif_hit" || key === "Modif_wound"
     ) return val > 0 ? `+${val}` : `${val}`;
     if (
-      key === "CT" ||
+      key === "CT" && val != "Torrent" ||
       key === "Crit_on_X_to_hit" ||
       key === "Crit_on_X_to_wound" ||
       key === "Fnp_X"

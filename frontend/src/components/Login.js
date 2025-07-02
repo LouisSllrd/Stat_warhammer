@@ -25,8 +25,19 @@ export default function Auth() {
   };
 
   return (
-    <div style={{ maxWidth: 400, margin: "auto", padding: 20 }}>
-      <h2>{isRegister ? "Inscription" : "Connexion"}</h2>
+    <div style={{ padding: 32, fontFamily: "Segoe UI, sans-serif", background: "#DCFEFF", minHeight: "100vh" }}>
+    <div style={{
+      maxWidth: 400,
+      margin: "40px auto",
+      padding: 30,
+      borderRadius: 12,
+      boxShadow: "0 6px 15px rgba(0,0,0,0.1)",
+      backgroundColor: "#fff",
+      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    }}>
+      <h2 style={{ textAlign: "center", marginBottom: 24, color: "#333" }}>
+        {isRegister ? "Inscription" : "Connexion"}
+      </h2>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -34,7 +45,17 @@ export default function Auth() {
           value={email}
           required
           onChange={(e) => setEmail(e.target.value)}
-          style={{ width: "100%", padding: 8, marginBottom: 12 }}
+          style={{
+            width: "92%",
+            padding: "12px 14px",
+            marginBottom: 16,
+            borderRadius: 6,
+            border: "1.5px solid #ccc",
+            fontSize: 16,
+            transition: "border-color 0.3s",
+          }}
+          onFocus={(e) => (e.target.style.borderColor = "#007bff")}
+          onBlur={(e) => (e.target.style.borderColor = "#ccc")}
         />
         <input
           type="password"
@@ -42,29 +63,89 @@ export default function Auth() {
           value={password}
           required
           onChange={(e) => setPassword(e.target.value)}
-          style={{ width: "100%", padding: 8, marginBottom: 12 }}
+          style={{
+            width: "92%",
+            padding: "12px 14px",
+            marginBottom: 16,
+            borderRadius: 6,
+            border: "1.5px solid #ccc",
+            fontSize: 16,
+            transition: "border-color 0.3s",
+          }}
+          onFocus={(e) => (e.target.style.borderColor = "#007bff")}
+          onBlur={(e) => (e.target.style.borderColor = "#ccc")}
         />
-        {error && <p style={{ color: "red" }}>{error}</p>}
-        <button type="submit" style={{ padding: 10, width: "100%" }}>
+        {error && (
+          <p style={{
+            color: "red",
+            marginBottom: 16,
+            fontWeight: "600",
+            textAlign: "center"
+          }}>
+            {error}
+          </p>
+        )}
+        <button
+          type="submit"
+          style={{
+            width: "100%",
+            padding: "14px",
+            backgroundColor: isRegister ? "#28a745" : "#007bff",
+            color: "white",
+            fontSize: 18,
+            fontWeight: "600",
+            border: "none",
+            borderRadius: 8,
+            cursor: "pointer",
+            boxShadow: "0 3px 8px rgba(0,0,0,0.15)",
+            transition: "background-color 0.3s",
+          }}
+          onMouseEnter={e => e.currentTarget.style.backgroundColor = isRegister ? "#218838" : "#0056b3"}
+          onMouseLeave={e => e.currentTarget.style.backgroundColor = isRegister ? "#28a745" : "#007bff"}
+        >
           {isRegister ? "Créer un compte" : "Se connecter"}
         </button>
       </form>
-      <p style={{ marginTop: 12, textAlign: "center" }}>
+      <p style={{
+        marginTop: 20,
+        textAlign: "center",
+        fontSize: 15,
+        color: "#555",
+        userSelect: "none"
+      }}>
         {isRegister ? "Déjà un compte ?" : "Pas encore de compte ?"}{" "}
         <button
           onClick={() => setIsRegister(!isRegister)}
-          style={{ color: "blue", cursor: "pointer", background: "none", border: "none" }}
+          style={{
+            color: "#007bff",
+            cursor: "pointer",
+            background: "none",
+            border: "none",
+            fontWeight: "600",
+            fontSize: 15,
+            textDecoration: "underline",
+            padding: 0,
+            marginLeft: 4,
+            userSelect: "text",
+          }}
         >
           {isRegister ? "Connectez-vous" : "Inscrivez-vous"}
         </button>
       </p>
-      {/* Texte explicatif */}
-  <p style={{ marginBottom: 20, fontStyle: "italic", color: "#555" }}>
-    {isRegister
-      ? "Créer un compte vous permet d'accéder à toutes les fonctionnalités exclusives et de sauvegarder vos données en toute sécurité."
-      : "Connectez-vous pour accéder à vos listes personnalisées et profiter d'une expérience personnalisée."}
-  </p>
+      <p style={{
+        marginTop: 20,
+        fontStyle: "italic",
+        color: "#666",
+        fontSize: 14,
+        lineHeight: 1.4,
+        textAlign: "center",
+        userSelect: "none"
+      }}>
+        {isRegister
+          ? "Créer un compte vous permet d'accéder à toutes les fonctionnalités exclusives et de sauvegarder vos données en toute sécurité."
+          : "Connectez-vous pour accéder à vos listes personnalisées et profiter d'une expérience personnalisée."}
+      </p>
     </div>
-    
+    </div>
   );
 }

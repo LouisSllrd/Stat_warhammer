@@ -74,18 +74,15 @@ def damage_trial(params):
     PA = params["PA"]
     Damage = params["Damage"]
     Sustained_hit = params["Sustained_hit"]
-    Sustained_X = params["Sustained_X"]
     Lethal_hit = params["Lethal_hit"]
     Deva_wound = params["Deva_wound"]
     Blast = params["Blast"]
     Melta = params["Melta"]
     Modif_hit = params["Modif_hit"]
     Modif_wound = params["Modif_wound"]
-    Auto_hit = params["Auto_hit"]
-    Re_roll_hit = params["Re_roll_hit"]
-    Re_roll_hit1 = params["Re_roll_hit1"]
+    Re_roll_hit = params["Re_roll_hit"] # str parmi : Re_roll_all_hit, Re_roll_hit1, Re_roll_hit_fishing, None
+    #Re_roll_hit1 = params["Re_roll_hit1"]
     Re_roll_wound = params["Re_roll_wound"]
-    Re_roll_wound1 = params["Re_roll_wound1"]
     Crit_on_X_to_hit = params["Crit_on_X_to_hit"]
     Crit_on_X_to_wound = params["Crit_on_X_to_wound"]
     Toughness = params["Toughness"]
@@ -105,10 +102,12 @@ def damage_trial(params):
         Attacks += Nb_of_models // 5
     # Si Attacks est de type int ou float, pas besoin de le convertir.
 
-    if Auto_hit:
+    if CT == "Torrent":
         total_hits = Attacks
         letals = 0
+
     else :
+        CT = float(CT)
         # On lance le jet pour toucher
         Results_hit = []
         for i in range(Attacks):
@@ -122,30 +121,30 @@ def damage_trial(params):
         for result in Results_hit:
             if result >= Crit_on_X_to_hit:
                 success_hits+=1
-                if Sustained_hit:
-                    sustained+=convert(Sustained_X)
+                if Sustained_hit != "N/A":
+                    sustained+=convert(Sustained_hit)
                 if Lethal_hit:
                     letals+=1
-            elif result >= target_hit :
+            elif result >= target_hit and Re_roll_hit != "Relance des touches non critiques (pêcher)" :
                 success_hits+=1
             elif result == 1:
-                if Re_roll_hit1 or Re_roll_hit:
+                if (Re_roll_hit == "Relance des 1") or (Re_roll_hit ==  "Relance des touches ratées") or (Re_roll_hit == "Relance des touches non critiques (pêcher)"):
                     result = D6()
                     if result >= Crit_on_X_to_hit:
                         success_hits+=1
-                        if Sustained_hit:
-                            sustained+=convert(Sustained_X)
+                        if Sustained_hit != "N/A":
+                            sustained+=convert(Sustained_hit)
                         if Lethal_hit:
                             letals+=1
                     elif result >= target_hit :
                         success_hits+=1
             else :
-                if Re_roll_hit:
+                if (Re_roll_hit ==  "Relance des touches ratées") or (Re_roll_hit == "Relance des touches non critiques (pêcher)"):
                     result = D6()
                     if result >= Crit_on_X_to_hit:
                         success_hits+=1
-                        if Sustained_hit:
-                            sustained+=convert(Sustained_X)
+                        if Sustained_hit!="N/A":
+                            sustained+=convert(Sustained_hit)
                         if Lethal_hit:
                             letals+=1
                     elif result >= target_hit :
@@ -181,10 +180,10 @@ def damage_trial(params):
             success_wounds+=1
             if Deva_wound:
                 deva+=1
-        elif result >= target_wound :
+        elif result >= target_wound and Re_roll_wound != "Relance des blessures non critiques (pêcher)" :
             success_wounds+=1
         elif result == 1 :
-            if Re_roll_wound1 or Re_roll_wound:
+            if (Re_roll_wound == "Relance des 1") or (Re_roll_wound ==  "Relance des blessures ratées") or (Re_roll_wound == "Relance des blessures non critiques (pêcher)"):
                 result = D6()
                 if result >= Crit_on_X_to_wound:
                     success_wounds+=1
@@ -193,7 +192,7 @@ def damage_trial(params):
                 elif result >= target_wound :
                     success_wounds+=1
         else :
-            if Re_roll_wound:
+            if (Re_roll_wound ==  "Relance des blessures ratées") or (Re_roll_wound == "Relance des blessures non critiques (pêcher)"):
                 result = D6()
                 if result >= Crit_on_X_to_wound:
                     success_wounds+=1
@@ -437,23 +436,19 @@ def multi_profile_sim(params_attackers, params_defenser):
 
 class SimulationInput(BaseModel):
     Attacks: str
-    CT: int
+    CT: str
     Strength: str
     PA: str
     Damage: str
-    Sustained_hit: bool
-    Sustained_X: int
+    Sustained_hit: str
     Lethal_hit: bool
     Deva_wound: bool
     Blast: bool
     Melta: int
     Modif_hit: int
     Modif_wound: int
-    Auto_hit: bool
-    Re_roll_hit1: bool
-    Re_roll_hit: bool
-    Re_roll_wound1: bool
-    Re_roll_wound: bool
+    Re_roll_hit: str
+    Re_roll_wound: str
     Crit_on_X_to_hit: int
     Crit_on_X_to_wound: int
 
@@ -472,23 +467,19 @@ class SimulationInput(BaseModel):
 
 class AttackerParams(BaseModel):
     Attacks: str
-    CT: int
+    CT: str
     Strength: str
     PA: str
     Damage: str
-    Sustained_hit: bool
-    Sustained_X: int
+    Sustained_hit: str
     Lethal_hit: bool
     Deva_wound: bool
     Blast: bool
     Melta: int
     Modif_hit: int
     Modif_wound: int
-    Auto_hit: bool
-    Re_roll_hit1: bool
-    Re_roll_hit: bool
-    Re_roll_wound1: bool
-    Re_roll_wound: bool
+    Re_roll_hit: str
+    Re_roll_wound: str
     Crit_on_X_to_hit: int
     Crit_on_X_to_wound: int
 

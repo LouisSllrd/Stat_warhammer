@@ -8,23 +8,19 @@ import axios from "axios";
 
 const defaultAttacker = {
   Attacks: "12",
-  CT: 2,
-  Auto_hit: false,
+  CT: "2",
   Strength: "8",
   PA: "2",
   Damage: "2",
-  Sustained_hit: false,
-  Sustained_X: 1,
+  Sustained_hit: "N/A",
   Lethal_hit: false,
   Deva_wound: false,
   Modif_hit: 0,
   Modif_wound: 0,
   Blast: false,
   Melta: 0,
-  Re_roll_hit1: false,
-  Re_roll_hit: false,
-  Re_roll_wound1: false,
-  Re_roll_wound: false,
+  Re_roll_hit: "N/A",
+  Re_roll_wound: "N/A",
   Crit_on_X_to_hit: 6,
   Crit_on_X_to_wound: 6,
 };
@@ -46,21 +42,17 @@ const defender = {
 const fieldLabels = {
   Attacks: "Attaques",
   CT: "CC/CT",
-  Auto_hit: "Touches auto",
   Strength: "Force",
   PA: "Pénétration d'armure (PA)",
   Damage: "Dégâts",
   Sustained_hit: "Touches soutenues",
-  Sustained_X: "Touches soutenues X",
   Lethal_hit: "Touches fatales",
   Deva_wound: "Blessures dévastatrices",
   Blast: "Déflagration",
   Melta: "Melta X",
   Modif_hit: "Modificateur de touche",
   Modif_wound: "Modificateur de blessure",
-  Re_roll_hit1: "Relance des touches de 1",
   Re_roll_hit: "Relance des touches",
-  Re_roll_wound1: "Relance des blessures de 1",
   Re_roll_wound: "Relance des blessures",
   Crit_on_X_to_hit: "Critique sur X+ en touche",
   Crit_on_X_to_wound: "Critique sur X+ en blessure",
@@ -75,9 +67,12 @@ const cellStyle = {
 };
 
 const optionsMap = {
-  CT: [2, 3, 4, 5, 6],
+  CT: ["Torrent","2","3","4","5","6"],
   Strength: Array.from({ length: 24 }, (_, i) => i + 1),
   PA: [0, -1, -2, -3, -4, -5],
+  Re_roll_hit: ["N/A", "Relance des 1", "Relance des touches ratées", "Relance des touches non critiques (pêcher)" ],
+  Re_roll_wound: ["N/A", "Relance des 1", "Relance des blessures ratées", "Relance des blessures non critiques (pêcher)" ],
+  Sustained_hit: ["N/A", "1", "2", "3", "D3", "D6"],
   Melta: [0,1,2,3,4,5,6],                              
   Modif_hit: [-2, -1, 0, 1, 2],
   Modif_wound: [-2, -1, 0, 1, 2],
@@ -93,7 +88,12 @@ const optionsMap = {
 const optionLabel = (key, val) => {
   if (key === "PA") return val === 0 ? "0" : `${val}`; // on laisse -1, -2 etc.
   if (key === "Modif_hit" || key === "Modif_wound") return val > 0 ? `+${val}` : `${val}`;
-  if (["CT", "Crit_on_X_to_hit", "Crit_on_X_to_wound", "Fnp_X"].includes(key)) return `${val}+`;
+  if (
+    key === "CT" && val != "Torrent" ||
+    key === "Crit_on_X_to_hit" ||
+    key === "Crit_on_X_to_wound" ||
+    key === "Fnp_X"
+  ) return `${val}+`;
   return `${val}`;
 };
 
@@ -242,13 +242,25 @@ function Compare() {
         axios.post("https://statwarhammer-production.up.railway.app/simulate", payload2),
       ]);*/
       payload1.Attacks = String(payload1.Attacks);
+      payload1.CT = String(payload1.CT);
       payload1.Strength = String(payload1.Strength);
       payload1.PA = String(payload1.PA);
       payload1.Damage = String(payload1.Damage);
+      payload1.Sustained_hit = String(payload1.Sustained_hit);
+      payload2.Sustained_hit = String(payload2.Sustained_hit);
       payload2.Attacks = String(payload2.Attacks);
       payload2.Strength = String(payload2.Strength);
       payload2.PA = String(payload2.PA);
       payload2.Damage = String(payload2.Damage);
+      payload2.CT = String(payload2.CT);
+
+
+      payload1.Re_roll_hit = String(payload1.Re_roll_hit);
+      payload2.Re_roll_hit = String(payload2.Re_roll_hit);
+
+      payload1.Re_roll_wound = String(payload1.Re_roll_wound);
+      payload2.Re_roll_wound = String(payload2.Re_roll_wound);
+
 
       console.log("Payload 1 :", payload1);
       console.log("Payload 2 :", payload2);

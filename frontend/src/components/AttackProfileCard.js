@@ -3,31 +3,30 @@ import React from 'react';
 const fieldLabels = {
   Attacks: "Attaques",
   CT: "CC/CT",
-  Auto_hit: "Touches auto",
   Strength: "Force",
   PA: "PA",
   Damage: "Dégâts",
   Sustained_hit: "Touches soutenues",
-  Sustained_X: "Touches soutenues X",
   Lethal_hit: "Touches fatales",
   Deva_wound: "Blessures dévastatrices",
   Blast: "Déflagration",
   Melta: "Melta X",
   Modif_hit: "Modif touche",
   Modif_wound: "Modif blessure",
-  Re_roll_hit1: "Relance touches de 1",
-  Re_roll_hit: "Relance toutes les touches",
-  Re_roll_wound1: "Relance blessures de 1",
-  Re_roll_wound: "Relance toutes les blessures",
+  Re_roll_hit: "Relance des touches",
+  Re_roll_wound: "Relance des blessures",
   Crit_on_X_to_hit: "Critique en touche sur X+",
   Crit_on_X_to_wound: "Critique en blessure sur X+"
 };
 
 const optionsMap = {
-  CT: [2, 3, 4, 5, 6],
+  CT: ["Torrent","2","3","4","5","6"],
   Strength: Array.from({ length: 24 }, (_, i) => i + 1),
   PA: [0, -1, -2, -3, -4, -5],
+  Sustained_hit: ["N/A", "1", "2", "3", "D3", "D6"],
   Melta: [0, 1, 2, 3, 4, 5, 6],
+  Re_roll_hit: ["N/A", "Relance des 1", "Relance des touches ratées", "Relance des touches non critiques (pêcher)" ],
+  Re_roll_wound: ["N/A", "Relance des 1", "Relance des blessures ratées", "Relance des blessures non critiques (pêcher)" ],
   Modif_hit: [-2, -1, 0, 1, 2],
   Modif_wound: [-2, -1, 0, 1, 2],
   Crit_on_X_to_hit: [2, 3, 4, 5, 6],
@@ -35,16 +34,14 @@ const optionsMap = {
 };
 
 const booleanFields = new Set([
-  "Auto_hit", "Sustained_hit", "Lethal_hit", "Deva_wound",
-  "Blast", "Re_roll_hit1", "Re_roll_hit",
-  "Re_roll_wound1", "Re_roll_wound"
+  "Lethal_hit", "Deva_wound",
+  "Blast"
 ]);
 
 const defaultFieldsToEdit = [
-  "Attacks", "CT", "Auto_hit", "Strength", "PA", "Damage", 
-  "Sustained_hit", "Sustained_X", "Lethal_hit", "Deva_wound", 
-  "Modif_hit", "Modif_wound", "Blast", "Melta", 
-  "Re_roll_hit1", "Re_roll_hit", "Re_roll_wound1", "Re_roll_wound", 
+  "Attacks", "CT", "Strength", "PA", "Damage", 
+  "Sustained_hit", "Lethal_hit", "Deva_wound", 
+  "Modif_hit", "Modif_wound", "Blast", "Melta", "Re_roll_hit", "Re_roll_wound", 
   "Crit_on_X_to_hit", "Crit_on_X_to_wound"
 ];
 
@@ -55,9 +52,10 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
 
     // Convert numerical values
     if (!booleanFields.has(name) && optionsMap[name]) {
-        if (name === "Strength" || name === "PA") {
+        if (name === "Strength" || name === "PA" || name === "Re_roll_hit" || name === "Re_roll_wound") {
           val = String(val);
         } else {
+          console.log(val)
           val = Number(val);
         }
       }
@@ -73,7 +71,12 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
   const optionLabel = (key, val) => {
     if (key === "PA") return val;
     if (["Modif_hit", "Modif_wound"].includes(key)) return val > 0 ? `+${val}` : `${val}`;
-    if (["CT", "Crit_on_X_to_hit", "Crit_on_X_to_wound"].includes(key)) return `${val}+`;
+    if (
+      key === "CT" && val != "Torrent" ||
+      key === "Crit_on_X_to_hit" ||
+      key === "Crit_on_X_to_wound" ||
+      key === "Fnp_X"
+    ) return `${val}+`;
     return val;
   };
 
