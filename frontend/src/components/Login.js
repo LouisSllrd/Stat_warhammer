@@ -142,8 +142,8 @@ export default function Auth() {
         userSelect: "none"
       }}>
         {isRegister
-          ? "Créer un compte vous permet d'accéder à toutes les fonctionnalités exclusives et de sauvegarder vos données en toute sécurité."
-          : "Connectez-vous pour accéder à vos listes personnalisées et profiter d'une expérience personnalisée."}
+          ? "Créer un compte vous permet d'accéder à toutes les fonctionnalités exclusives et de sauvegarder vos données en toute sécurité. La création d'un compte est nécessaire pour créer ses propres profils d'attaquant et de défenseur personnalisés. la création d'un compte vous donne également accès au simulateur de dégât optimisé pour être utilisé rapidement en pleine partie."
+          : "Connectez-vous pour accéder à vos listes personnalisées et au simulateur de dégâts optimisé pour vos parties de jeu."}
       </p>
     </div>
     </div>

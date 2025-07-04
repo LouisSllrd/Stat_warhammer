@@ -23,8 +23,8 @@ const defaultAttackProfile = {
   Sustained_hit: "N/A",
   Lethal_hit: false,
   Deva_wound: false,
-  Modif_hit: 0,
-  Modif_wound: 0,
+  Modif_hit_att: 0,
+  Modif_wound_att: 0,
   Blast: false,
   Melta: 0,
   Re_roll_hit: "N/A",
@@ -36,13 +36,13 @@ const defaultAttackProfile = {
 const defaultDefender = {
   Toughness: 12,
   Save: 2,
-  Save_invu: false,
-  Save_invu_X: 4,
+  Save_invu: "N/A",
   PV: 16,
   Nb_of_models: 1,
   Cover: false,
-  Fnp: false,
-  Fnp_X: 5,
+  Fnp: "N/A",
+  Modif_hit_def: 0,
+  Modif_wound_def: 0,
   Halve_damage: false,
   Reduce_damage_1: false,
 };
@@ -187,10 +187,16 @@ function MultiSimulateur() {
       const parsedDefenderProfile = { ...defenderProfile };
       Object.keys(parsedDefenderProfile).forEach((key) => {
         if (
-          typeof defaultDefender[key] === "number"
-        ) {
+          key !== "Fnp" &&
+          key !== "Save_invu" &&
+          typeof defaultDefender[key] === "number") {
           parsedDefenderProfile[key] = Number(parsedDefenderProfile[key]);
         }
+        
+        parsedDefenderProfile.Save_invu = String(parsedDefenderProfile.Save_invu)
+        parsedDefenderProfile.Fnp = String(parsedDefenderProfile.Fnp)
+        console.log("Save invu : ", parsedDefenderProfile.Save_invu)
+        console.log("Fnp : ", parsedDefenderProfile.Fnp)
       });
   
       const res = await axios.post("http://localhost:8000/multi_profile_simulate", {
@@ -473,7 +479,15 @@ function MultiSimulateur() {
                     <td style={cellStyle}>{stats.mean.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.std.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.initial_force}</td>
-                    <td style={cellStyle}>{stats.relative_damages.toFixed(0)}%</td>
+                            <td style={cellStyle}>
+                            <strong style={{
+                              color:
+                              stats.relative_damages < 30 ? "red" :
+                              stats.relative_damages < 60 ? "orange" :
+                              stats.relative_damages < 80 ? "gold" :
+                                "green"
+                            }}>{stats.relative_damages.toFixed(0)}% </strong>
+                            </td>
                   </tr>
                 ))}
               </tbody>

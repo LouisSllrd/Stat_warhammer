@@ -9,9 +9,11 @@ import SimulationEnJeu from "./components/Jeu";
 import UnitesAdversesPage from "./components/ListeAdverse";
 import { auth } from "./firebaseConfig";
 import { onAuthStateChanged, signOut } from "firebase/auth";
+import Accueil from "./components/Accueil";
+
 
 function App() {
-  const [page, setPage] = useState("simulateur");
+  const [page, setPage] = useState("accueil");
   const [user, setUser] = useState(null);
   const [loadingUser, setLoadingUser] = useState(true);
 
@@ -30,9 +32,13 @@ function App() {
       <div>
         {/* BARRE DE NAVIGATION */}
         <nav style={{ display: "flex", justifyContent: "space-between", background: "#89B5FF", padding: "10px 20px" }}>
+
+
+        <button onClick={() => setPage("accueil")}>Accueil</button>
           
           {/* Groupe 1 : Préparer ma liste */}
           <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+
             <strong>Préparer ma liste:</strong>{" "}
             <button onClick={() => setPage("simulateur")}>Unité Mono Profil</button>
             <button onClick={() => setPage("multi-profiles")}>Unité Multi Profils</button>
@@ -64,6 +70,8 @@ function App() {
 
         {/* CONTENU SELON PAGE */}
         <div style={{ padding: 20 }}>
+        {page === "accueil" && <Accueil />}
+
           {page === "simulateur" && <Simulateur />}
           {page === "multi-profiles" && <MultiSimulateur />}
           {page === "compare" && <Compare />}

@@ -11,8 +11,8 @@ const fieldLabels = {
   Deva_wound: "Blessures dévastatrices",
   Blast: "Déflagration",
   Melta: "Melta X",
-  Modif_hit: "Modif touche",
-  Modif_wound: "Modif blessure",
+  Modif_hit_att: "Modif touche",
+  Modif_wound_att: "Modif blessure",
   Re_roll_hit: "Relance des touches",
   Re_roll_wound: "Relance des blessures",
   Crit_on_X_to_hit: "Critique en touche sur X+",
@@ -27,8 +27,8 @@ const optionsMap = {
   Melta: [0, 1, 2, 3, 4, 5, 6],
   Re_roll_hit: ["N/A", "Relance des 1", "Relance des touches ratées", "Relance des touches non critiques (pêcher)" ],
   Re_roll_wound: ["N/A", "Relance des 1", "Relance des blessures ratées", "Relance des blessures non critiques (pêcher)" ],
-  Modif_hit: [-2, -1, 0, 1, 2],
-  Modif_wound: [-2, -1, 0, 1, 2],
+  Modif_hit_att: [0, 1, 2],
+  Modif_wound_att: [0, 1],
   Crit_on_X_to_hit: [2, 3, 4, 5, 6],
   Crit_on_X_to_wound: [2, 3, 4, 5, 6],
 };
@@ -41,7 +41,7 @@ const booleanFields = new Set([
 const defaultFieldsToEdit = [
   "Attacks", "CT", "Strength", "PA", "Damage", 
   "Sustained_hit", "Lethal_hit", "Deva_wound", 
-  "Modif_hit", "Modif_wound", "Blast", "Melta", "Re_roll_hit", "Re_roll_wound", 
+  "Modif_hit_att", "Modif_wound_att", "Blast", "Melta", "Re_roll_hit", "Re_roll_wound", 
   "Crit_on_X_to_hit", "Crit_on_X_to_wound"
 ];
 
@@ -52,7 +52,7 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
 
     // Convert numerical values
     if (!booleanFields.has(name) && optionsMap[name]) {
-        if (name === "Strength" || name === "PA" || name === "Re_roll_hit" || name === "Re_roll_wound") {
+        if (name === "Strength" || name === "PA" || name === "Re_roll_hit" || name === "Re_roll_wound"|| name === "Sustained_hit" || name === "CT") {
           val = String(val);
         } else {
           console.log(val)
@@ -70,7 +70,7 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
 
   const optionLabel = (key, val) => {
     if (key === "PA") return val;
-    if (["Modif_hit", "Modif_wound"].includes(key)) return val > 0 ? `+${val}` : `${val}`;
+    if (["Modif_hit_att", "Modif_wound_att"].includes(key)) return val > 0 ? `+${val}` : `${val}`;
     if (
       key === "CT" && val != "Torrent" ||
       key === "Crit_on_X_to_hit" ||

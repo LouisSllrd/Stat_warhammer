@@ -19,8 +19,8 @@ const defaultParams = {
   Sustained_hit: "N/A",
   Lethal_hit: false,
   Deva_wound: false,
-  Modif_hit: 0,
-  Modif_wound: 0,
+  Modif_hit_att: 0,
+  Modif_wound_att: 0,
   Blast: false,
   Melta: 0,
   Re_roll_hit: "N/A",
@@ -31,13 +31,13 @@ const defaultParams = {
   // Défenseur
   Toughness: 4,
   Save: 3,
-  Save_invu: false,
-  Save_invu_X: 4,
+  Save_invu: "N/A",
   PV: 2,
   Nb_of_models: 10,
   Cover: false,
-  Fnp: false,
-  Fnp_X: 5,
+  Fnp: "N/A",
+  Modif_hit_def: 0,
+  Modif_wound_def: 0,
   Halve_damage: false,
   Reduce_damage_1: false
 };
@@ -45,14 +45,14 @@ const defaultParams = {
 const attackerFields = [
   "Attacks", "CT", "Strength", "PA", "Damage",
   "Sustained_hit", "Lethal_hit", "Deva_wound", 'Blast', 'Melta',
-  "Modif_hit", "Modif_wound",
+  "Modif_hit_att", "Modif_wound_att",
   "Re_roll_hit", "Re_roll_wound",
   "Crit_on_X_to_hit", "Crit_on_X_to_wound"
 ];
 
 const defenderFields = [
-  "Toughness", "Save", "Save_invu", "Save_invu_X",
-  "PV", "Nb_of_models", "Cover", "Fnp", "Fnp_X", "Halve_damage", "Reduce_damage_1"
+  "Toughness", "Save", "Save_invu",
+  "PV", "Nb_of_models", "Cover", "Fnp","Modif_hit_def", "Modif_wound_def", "Halve_damage", "Reduce_damage_1"
 ];
 
 const fieldLabels = {
@@ -66,8 +66,8 @@ const fieldLabels = {
   Deva_wound: "Blessures dévastatrices",
   Blast: "Déflagration",
   Melta: "Melta X",
-  Modif_hit: "Modificateur de touche",
-  Modif_wound: "Modificateur de blessure",
+  Modif_hit_att: "Modificateur de touche",
+  Modif_wound_att: "Modificateur de blessure",
   Re_roll_hit: "Relance des touches",
   Re_roll_wound: "Relance des blessures",
   Crit_on_X_to_hit: "Critique sur X+ en touche",
@@ -76,12 +76,12 @@ const fieldLabels = {
   Toughness: "Endurance",
   Save: "Sauvegarde d'armure",
   Save_invu: "Sauvegarde invulnérable",
-  Save_invu_X: "Invulnérable à X+",
   PV: "PV par figurine",
   Nb_of_models: "Nombre de figurines",
   Cover: "Couvert",
   Fnp: "Insensible à la douleur (FNP)",
-  Fnp_X: "FNP à X+",
+  Modif_hit_def: "Modificateur de touche",
+  Modif_wound_def: "Modificateur de blessure",
   Halve_damage: "Divise les dégâts par 2",
   Reduce_damage_1: "Réduit les dégâts de 1"
 };
@@ -107,8 +107,8 @@ function Simulateur() {
   
     // Convertir les valeurs select en nombre
     if (
-      ["Save", "Save_invu_X", "Strength", "PA", "Melta", "Modif_hit", "Modif_wound",
-        "Crit_on_X_to_hit", "Crit_on_X_to_wound", "Toughness", "Fnp_X"
+      ["Save", "Strength", "PA", "Melta", "Modif_hit_att", "Modif_wound_att",
+        "Crit_on_X_to_hit", "Crit_on_X_to_wound", "Toughness", "Modif_hit_def", "Modif_wound_def",
       ].includes(name)
     ) {
       val = Number(val);
@@ -134,6 +134,8 @@ function Simulateur() {
         key !== "CT" &&
         key !== "Re_roll_hit" &&
         key !== "Re_roll_wound" &&
+        key !== "Save_invu" &&
+        key !== "Fnp" &&
         typeof defaultParams[key] === "number"
       ) {
         parsedParams[key] = Number(parsedParams[key]);
@@ -147,6 +149,10 @@ function Simulateur() {
     parsedParams.CT = String(parsedParams.CT);
     parsedParams.Re_roll_hit = String(parsedParams.Re_roll_hit);
     parsedParams.Re_roll_wound = String(parsedParams.Re_roll_wound);
+    parsedParams.Save_invu = String(parsedParams.Save_invu);
+    parsedParams.Fnp = String(parsedParams.Fnp);
+
+    console.log("FNP : ",parsedParams.Fnp )
 
     try {
       /*const res = await axios.post(
@@ -171,27 +177,31 @@ function Simulateur() {
     Melta: [0,1,2,3,4,5,6],                                           // 0 à 6
     Re_roll_hit: ["N/A", "Relance des 1", "Relance des touches ratées", "Relance des touches non critiques (pêcher)" ],
     Re_roll_wound: ["N/A", "Relance des 1", "Relance des blessures ratées", "Relance des blessures non critiques (pêcher)" ],
-    Modif_hit: [-2, -1, 0, 1, 2],                                      // -2 à +2
-    Modif_wound: [-2, -1, 0, 1, 2],                                    // -2 à +2
+    Modif_hit_att: [0, 1, 2],                                      
+    Modif_wound_att: [0, 1],                                  
     Crit_on_X_to_hit: [2, 3, 4, 5, 6],                                 // 2+ à 6+
     Crit_on_X_to_wound: [2, 3, 4, 5, 6],                               // 2+ à 6+
     Toughness: Array.from({ length: 14 }, (_, i) => i + 1),             // 1 à 14
     PV: Array.from({ length: 30 }, (_, i) => i + 1),
     Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
-    Fnp_X: [4, 5, 6],                                                  // 4+ à 6+
+    Fnp: ["N/A", "4", "5", "6"],                                                  // 4+ à 6+
+    Modif_hit_def: [0, -1, -2],                                      
+    Modif_wound_def: [0, -1],                                  
+    Save_invu: ["N/A", "2", "3", "4", "5", "6"]
   };
 
   // Fonction utilitaire pour afficher l'option textuel
   const optionLabel = (key, val) => {
     if (key === "PA") return val === 0 ? "0" : `${val}`;               // On laisse tel quel (ex: -1)
     if (
-      key === "Modif_hit" || key === "Modif_wound"
+      key === "Modif_hit_att" || key === "Modif_wound_att" || key === "Modif_hit_def" || key === "Modif_wound_def"
     ) return val > 0 ? `+${val}` : `${val}`;
     if (
       key === "CT" && val != "Torrent" ||
       key === "Crit_on_X_to_hit" ||
       key === "Crit_on_X_to_wound" ||
-      key === "Fnp_X"
+      key === "Save_invu" && val != "N/A" ||
+      key === "Fnp" && val != "N/A"
     ) return `${val}+`;
     return `${val}`;
   };
@@ -199,8 +209,8 @@ function Simulateur() {
   const renderField = (key) => {
     const def = defaultParams[key];
 
-    // Combo box pour Save et Save_invu_X (2+ à 7+)
-    if (key === "Save" || key === "Save_invu_X") {
+    // Combo box pour Save (2+ à 7+)
+    if (key === "Save" ) {
       const saveOptions = [2, 3, 4, 5, 6, 7];
       return (
         <div key={key} style={{ display: "flex", flexDirection: "column" }}>
@@ -368,6 +378,15 @@ function Simulateur() {
               <p>
                 <strong>Écart-type :</strong> {result.std.toFixed(1)}
               </p>
+              <p> <strong>Probabilité de tuer l'unité ennemie :</strong> <strong style={{
+          color:
+          result.proba_unit_killed < 30 ? "red" :
+          result.proba_unit_killed < 60 ? "orange" :
+          result.proba_unit_killed < 80 ? "gold" :
+            "green"
+        }}>
+          {result.proba_unit_killed.toFixed(0)}%
+        </strong>  </p>
 
               {/* Graphiques */}
               <div style={{ display: "flex", gap: 24, marginTop: 24 }}>
@@ -482,7 +501,13 @@ function Simulateur() {
                             <td style={cellStyle}>{stats.std.toFixed(1)}</td>
                             <td style={cellStyle}>{stats.initial_force}</td>
                             <td style={cellStyle}>
-                              {stats.relative_damages.toFixed(0)}%
+                            <strong style={{
+                              color:
+                              stats.relative_damages < 30 ? "red" :
+                              stats.relative_damages < 60 ? "orange" :
+                              stats.relative_damages < 80 ? "gold" :
+                                "green"
+                            }}>{stats.relative_damages.toFixed(0)}% </strong>
                             </td>
                           </tr>
                         )

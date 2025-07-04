@@ -4,6 +4,10 @@ import { db, auth } from "../firebaseConfig";
 import AttackProfileCard from "./AttackProfileCard";
 import DefenseProfileCard from "./DefenseProfileCard";
 import axios from "axios";
+import {
+  BarChart, Bar, XAxis, YAxis, Tooltip,
+  LineChart, Line, CartesianGrid
+} from "recharts";
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -26,6 +30,13 @@ function SimulationEnJeu() {
 const [selectedProfiles, setSelectedProfiles] = useState({});
 const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
 
+const [showFullResults, setShowFullResults] = useState(false);
+
+const cellStyle = {
+  border: "1px solid #ccc",
+  padding: "8px",
+  textAlign: "center",
+};
 
 
   const handleAttackProfileChange = (updatedProfile, index) => {
@@ -120,6 +131,12 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
       });
   
       const parsedDefenderProfile = { ...defenderParams.profils[0] };
+      Object.keys(parsedDefenderProfile).forEach((key) => {
+        
+        parsedDefenderProfile.Save_invu = String(parsedDefenderProfile.Save_invu)
+        parsedDefenderProfile.Fnp = String(parsedDefenderProfile.Fnp)
+        console.log("Fnp: ", parsedDefenderProfile.Fnp)
+      });
   
       const res = await axios.post("http://localhost:8000/multi_profile_simulate", {
         attackers_params: parsedAttackProfiles,
@@ -541,31 +558,45 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
 )}
 </AnimatePresence>
 
+<div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 20 }}>
   <button onClick={handleSubmit} 
     style={{
-              marginTop: 20,
-              padding: "12px 20px",
-              backgroundColor:"#2b6cb0",
-              color: "white",
-              border: "none",
-              borderRadius: 8,
-              fontWeight: "bold",
-              fontSize: 16,
-              transition: "background-color 0.3s"
-            }}>
-      🚀 Lancer la simulation
-    </button>
+      padding: "12px 20px",
+      backgroundColor:"#2b6cb0",
+      color: "white",
+      border: "none",
+      borderRadius: 8,
+      fontWeight: "bold",
+      fontSize: 16,
+      transition: "background-color 0.3s"
+    }}>
+    🚀 Lancer la simulation
+  </button>
+
+  <label style={{ display: "flex", alignItems: "center", gap: 8 }}>
+    <input
+      type="checkbox"
+      checked={showFullResults}
+      onChange={() => setShowFullResults(!showFullResults)}
+    />
+    Affichage complet
+  </label>
+</div>
+
 </div>
 
 
 
       {/* Résultats */}
     
-{results && (
-  <>
-    {console.log("Probabilité de tuer l'unité ennemie :", results.proba_unit_killed)}
-    <Modal onClose={() => setResults(null)}>
+      {results && (
+  <Modal onClose={() => setResults(null)}>
+    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
       <h2 style={{ fontSize: 22, fontWeight: "bold" }}>📊 Résultats :</h2>
+    </div>
+
+    {/* Résumé */}
+    <div style={{ marginBottom: 24 }}>
       <p>
         ➢ En moyenne : <strong>{results.mean.toFixed(1)}</strong> {"(±"} {results.std.toFixed(0)} {")"} {results.unit} , soit {results.relative_damages.toFixed(0)}% de la force initiale
       </p>
@@ -580,8 +611,98 @@ const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
           {results.proba_unit_killed.toFixed(0)}%
         </strong> {"de chance de tuer l'unité ennemie"} 
       </p>
-    </Modal>
-  </>
+    </div>
+    <label style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        <input
+          type="checkbox"
+          checked={showFullResults}
+          onChange={() => setShowFullResults(!showFullResults)}
+        />
+        Affichage complet
+      </label>
+
+    {/* Affichage complet */}
+    {showFullResults && (
+      <div>
+        <h3 style={{ fontSize: 18, fontWeight: "bold", marginBottom: 12 }}>
+        ➕ Détails supplémentaires
+        </h3>
+        <p>
+          <strong>Unité de mesure :</strong> {results.unit_descr}
+        </p>
+        <p>
+          <strong>Moyenne :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit}
+        </p>
+        <p>
+          <strong>Écart-type :</strong> {results.std.toFixed(1)}
+        </p>
+
+        {/* Graphiques */}
+        <div style={{ display: "flex", gap: 32, marginTop: 24, flexWrap: "wrap" }}>
+  
+          {/* Distribution */}
+          <div style={{ flex: "1 1 0", minWidth: 350 }}>
+            <h4 style={{ fontWeight: "bold", marginBottom: 12 }}>
+              Distribution
+            </h4>
+            <BarChart width={400} height={300} data={results.histogram_data}>
+              <XAxis dataKey="value" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="frequency" fill="#3182ce" />
+            </BarChart>
+          </div>
+
+          {/* Courbe cumulative */}
+          <div style={{ flex: "1 1 0", minWidth: 350 }}>
+            <h4 style={{ fontWeight: "bold", marginBottom: 12 }}>
+              Probabilité d'atteindre un seuil
+            </h4>
+            <LineChart width={400} height={300} data={results.cumulative_data}>
+              <CartesianGrid stroke="#ccc" />
+              <XAxis dataKey="value" />
+              <YAxis />
+              <Tooltip />
+              <Line type="monotone" dataKey="cumulative_percent" stroke="#2b6cb0" />
+            </LineChart>
+          </div>
+
+        </div>
+
+
+        {/* Tableau */}
+        {results.results_catalogue && (
+          <div style={{ marginTop: 32 }}>
+            <h4 style={{ fontSize: 16, fontWeight: "bold", marginBottom: 12 }}>
+              Comparaison avec unités classiques
+            </h4>
+            <table style={{ width: "100%", borderCollapse: "collapse", backgroundColor: "#fefefe" }}>
+              <thead style={{ backgroundColor: "#ebf8ff" }}>
+                <tr>
+                  <th style={cellStyle}>Unité</th>
+                  <th style={cellStyle}>Moyenne</th>
+                  <th style={cellStyle}>Écart-type</th>
+                  <th style={cellStyle}>Force initiale</th>
+                  <th style={cellStyle}>Dégâts relatifs</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.entries(results.results_catalogue).map(([unitName, stats]) => (
+                  <tr key={unitName}>
+                    <td style={cellStyle}>{unitName} {stats.unit ? `(en ${stats.unit})` : ""}</td>
+                    <td style={cellStyle}>{stats.mean.toFixed(1)}</td>
+                    <td style={cellStyle}>{stats.std.toFixed(1)}</td>
+                    <td style={cellStyle}>{stats.initial_force}</td>
+                    <td style={cellStyle}>{stats.relative_damages.toFixed(0)}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+    )}
+  </Modal>
 )}
 
 

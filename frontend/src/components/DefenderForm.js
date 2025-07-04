@@ -4,12 +4,12 @@ const fieldLabels = {
   Toughness: "Endurance",
   Save: "Sauvegarde d'armure",
   Save_invu: "Sauvegarde invulnérable",
-  Save_invu_X: "Invulnérable à X+",
   PV: "PV par figurine",
   Nb_of_models: "Nombre de figurines",
   Cover: "Couvert",
   Fnp: "Insensible à la douleur (FNP)",
-  Fnp_X: "FNP à X+",
+  Modif_hit_def: "Modificateur de touche",
+  Modif_wound_def: "Modificateur de blessure",
   Halve_damage: "Divise les dégâts par 2",
   Reduce_damage_1: "Dégâts les dégâts de 1"
 };
@@ -17,34 +17,47 @@ const fieldLabels = {
 const defaultParams = {
   Toughness: 4,
   Save: 3,
-  Save_invu: false,
-  Save_invu_X: 5,
+  Save_invu: "N/A",
   PV: 2,
   Nb_of_models: 5,
   Cover: false,
-  Fnp: false,
-  Fnp_X: 6,
+  Fnp: "N/A",
+  Modif_hit_def: 0,
+  Modif_wound_def: 0,
   Halve_damage: false,
   Reduce_damage_1: false
 };
 
 // Ajout de Toughness dans optionsMap avec options 1 à 12
 const optionsMap = {
-  Toughness: Array.from({ length: 12 }, (_, i) => i + 1),
+  Toughness: Array.from({ length: 14 }, (_, i) => i + 1),
   PV: Array.from({ length: 30 }, (_, i) => i + 1),
   Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
-  // Exemple : Fnp_X pourrait être dans cette logique aussi
+  Save_invu: ["N/A", "2", "3", "4", "5", "6"],
+  Fnp: ["N/A", "4", "5", "6"],
+  Modif_hit_def: [0,-1,-2],
+  Modif_wound_def: [0, -1],
 };
 
 const DefenderForm = ({ params, setParams }) => {
   const handleChange = (e) => {
     const { name, type, value, checked } = e.target;
-    const val = type === "checkbox" ? checked : Number(value);
+    
+    let val;
+    if (type === "checkbox") {
+      val = checked;
+    } else if (["Save_invu", "Fnp"].includes(name) && value === "N/A") {
+      val = "N/A";
+    } else {
+      val = Number(value);
+    }
+  
     setParams({ ...params, [name]: val });
   };
+  
 
   const optionLabel = (key, val) => {
-    if (["Save", "Save_invu_X", "Fnp_X"].includes(key)) {
+    if (["Save", "Save_invu", "Fnp"].includes(key) && val != "N/A") {
       return `${val}+`;
     }
     return val;
@@ -53,9 +66,8 @@ const DefenderForm = ({ params, setParams }) => {
   const renderField = (key) => {
     const def = defaultParams[key];
 
-    if (key === "Save" || key === "Save_invu_X" || key === "Fnp_X") {
+    if (key === "Save"  ) {
       const saveOptions = [2, 3, 4, 5, 6, 7];
-      const isDisabled = key === "Fnp_X" && !params.Fnp;
 
       return (
         <div key={key} style={{ display: "flex", flexDirection: "column" }}>
@@ -66,7 +78,6 @@ const DefenderForm = ({ params, setParams }) => {
             name={key}
             value={params[key]}
             onChange={handleChange}
-            disabled={isDisabled}
             style={{
               border: "1px solid #ccc",
               padding: 6,

@@ -15,8 +15,8 @@ const defaultAttacker = {
   Sustained_hit: "N/A",
   Lethal_hit: false,
   Deva_wound: false,
-  Modif_hit: 0,
-  Modif_wound: 0,
+  Modif_hit_att: 0,
+  Modif_wound_att: 0,
   Blast: false,
   Melta: 0,
   Re_roll_hit: "N/A",
@@ -28,13 +28,13 @@ const defaultAttacker = {
 const defender = {
   Toughness: 12,
   Save: 2,
-  Save_invu: false,
-  Save_invu_X: 4,
+  Save_invu: "N/A",
   PV: 16,
   Nb_of_models: 1,
   Cover: false,
-  Fnp: false,
-  Fnp_X: 5,
+  Fnp: "N/A",
+  Modif_hit_def: 0,
+  Modif_wound_def: 0,
   Halve_damage: false,
   Reduce_damage_1: false
 };
@@ -50,8 +50,8 @@ const fieldLabels = {
   Deva_wound: "Blessures dévastatrices",
   Blast: "Déflagration",
   Melta: "Melta X",
-  Modif_hit: "Modificateur de touche",
-  Modif_wound: "Modificateur de blessure",
+  Modif_hit_att: "Modificateur de touche",
+  Modif_wound_att: "Modificateur de blessure",
   Re_roll_hit: "Relance des touches",
   Re_roll_wound: "Relance des blessures",
   Crit_on_X_to_hit: "Critique sur X+ en touche",
@@ -74,8 +74,8 @@ const optionsMap = {
   Re_roll_wound: ["N/A", "Relance des 1", "Relance des blessures ratées", "Relance des blessures non critiques (pêcher)" ],
   Sustained_hit: ["N/A", "1", "2", "3", "D3", "D6"],
   Melta: [0,1,2,3,4,5,6],                              
-  Modif_hit: [-2, -1, 0, 1, 2],
-  Modif_wound: [-2, -1, 0, 1, 2],
+  Modif_hit_att: [0, 1, 2],
+  Modif_wound_att: [0, 1],
   Crit_on_X_to_hit: [2, 3, 4, 5, 6],
   Crit_on_X_to_wound: [2, 3, 4, 5, 6],
   Toughness: Array.from({ length: 14 }, (_, i) => i + 1),
@@ -87,7 +87,7 @@ const optionsMap = {
 // Fonction utilitaire pour formater l'affichage des options
 const optionLabel = (key, val) => {
   if (key === "PA") return val === 0 ? "0" : `${val}`; // on laisse -1, -2 etc.
-  if (key === "Modif_hit" || key === "Modif_wound") return val > 0 ? `+${val}` : `${val}`;
+  if (key === "Modif_hit_att" || key === "Modif_wound_att") return val > 0 ? `+${val}` : `${val}`;
   if (
     key === "CT" && val != "Torrent" ||
     key === "Crit_on_X_to_hit" ||
@@ -118,8 +118,8 @@ function Compare() {
         "Save_invu_X",
         "Strength",
         "PA",
-        "Modif_hit",
-        "Modif_wound",
+        "Modif_hit_att",
+        "Modif_wound_att",
         "Crit_on_X_to_hit",
         "Crit_on_X_to_wound",
         "Toughness",

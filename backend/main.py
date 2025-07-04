@@ -78,22 +78,21 @@ def damage_trial(params):
     Deva_wound = params["Deva_wound"]
     Blast = params["Blast"]
     Melta = params["Melta"]
-    Modif_hit = params["Modif_hit"]
-    Modif_wound = params["Modif_wound"]
-    Re_roll_hit = params["Re_roll_hit"] # str parmi : Re_roll_all_hit, Re_roll_hit1, Re_roll_hit_fishing, None
-    #Re_roll_hit1 = params["Re_roll_hit1"]
+    Modif_hit_att = params["Modif_hit_att"]
+    Modif_wound_att = params["Modif_wound_att"]
+    Re_roll_hit = params["Re_roll_hit"]
     Re_roll_wound = params["Re_roll_wound"]
     Crit_on_X_to_hit = params["Crit_on_X_to_hit"]
     Crit_on_X_to_wound = params["Crit_on_X_to_wound"]
     Toughness = params["Toughness"]
     Save = params["Save"]
     Save_invu = params["Save_invu"]
-    Save_invu_X = params["Save_invu_X"]
     PV = params["PV"]
     Nb_of_models = params["Nb_of_models"]
     Cover = params["Cover"]
     Fnp = params["Fnp"]
-    Fnp_X = params["Fnp_X"]
+    Modif_hit_def = params["Modif_hit_def"]
+    Modif_wound_def = params["Modif_wound_def"]
     Halve_damage = params["Halve_damage"]
     Reduce_damage_1 = params["Reduce_damage_1"]
 
@@ -108,6 +107,7 @@ def damage_trial(params):
 
     else :
         CT = float(CT)
+        Modif_hit = Modif_hit_att + Modif_hit_def
         # On lance le jet pour toucher
         Results_hit = []
         for i in range(Attacks):
@@ -158,6 +158,7 @@ def damage_trial(params):
         Results_wound.append(D6())
 
     # On regarde les résultats du jet de blessure
+    Modif_wound = Modif_wound_att + Modif_wound_def
     success_wounds = 0
     deva = 0
     Strength = convert(Strength)
@@ -215,8 +216,9 @@ def damage_trial(params):
         target_svg = max(Save-PA-1,2)
     else :
         target_svg = max(Save-PA,2)
-    if Save_invu:
-        target_svg = min(Save_invu_X,target_svg)
+    if Save_invu != "N/A":
+        Save_invu = float(Save_invu)
+        target_svg = min(Save_invu,target_svg)
 
     for result in Results_svg:
         if result<target_svg:
@@ -235,9 +237,10 @@ def damage_trial(params):
                 Damage = max(1, math.ceil(Damage-1))
             if Melta != 0:
                 Damage += Melta
-            if Fnp :
+            if Fnp != "N/A" :
+                Fnp = float(Fnp)
                 for j in range(Damage):
-                    if D6()<Fnp_X:
+                    if D6()<Fnp:
                         PV_lost+=1
             else :
                 PV_lost += Damage
@@ -255,9 +258,10 @@ def damage_trial(params):
                 Damage = max(1, math.ceil(Damage-1))
             if Melta != 0:
                 Damage += Melta
-            if Fnp: 
+            if Fnp != "N/A": 
+                Fnp = float(Fnp)
                 for j in range(Damage):
-                    if D6() < Fnp_X:
+                    if D6() < Fnp:
                         PV_remaining_on_next_model -= 1
             else : 
                 PV_remaining_on_next_model -= Damage
@@ -288,9 +292,13 @@ def damage_simulation(params):
         unit = "PV"
         relative_damage = mean/params["PV"]*100
         initial_force = params["PV"]
+        if relative_damage >=50:
+            proba_default_killed = 100
+        else:
+            proba_default_killed = 0
         proba_unit_killed = round(next(
     (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
-    100))
+    proba_default_killed))
  # par défaut si introuvable
     
     else : 
@@ -298,9 +306,13 @@ def damage_simulation(params):
         unit = "figurines"
         relative_damage = mean/params["Nb_of_models"]*100
         initial_force = params["Nb_of_models"]
+        if relative_damage >=50:
+            proba_default_killed = 100
+        else:
+            proba_default_killed = 0
         proba_unit_killed = round(next(
     (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
-    100))
+    proba_default_killed))
  # par défaut si introuvable
     
     # Résultats pour des profils d'unités classiques :
@@ -310,12 +322,10 @@ def damage_simulation(params):
         params["Toughness"] = unit_stats["Toughness"]
         params["Save"] = unit_stats["Save"]
         params["Save_invu"] = unit_stats["Save_invu"]
-        params["Save_invu_X"] = unit_stats["Save_invu_X"]
         params["PV"] = unit_stats["PV"]
         params["Nb_of_models"] = unit_stats["Nb_of_models"]
         params["Cover"] = unit_stats["Cover"]
         params["Fnp"] = unit_stats["Fnp"]
-        params["Fnp_X"] = unit_stats["Fnp_X"]
         params["Halve_damage"] = unit_stats["Halve_damage"]
         params["Reduce_damage_1"] = unit_stats["Reduce_damage_1"]
 
@@ -377,18 +387,26 @@ def multi_profile_sim(params_attackers, params_defenser):
         unit = "PV"
         relative_damage = mean/params_defenser["PV"]*100
         initial_force = params_defenser["PV"]
+        if relative_damage >=50:
+            proba_default_killed = 100
+        else:
+            proba_default_killed = 0
         proba_unit_killed = round(next(
     (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
-    100))
+    proba_default_killed))
  # par défaut si introuvable
     else : 
         unit_descr = "Nombre de figurines tuées"
         unit = "figurines"
         relative_damage = mean/params_defenser["Nb_of_models"]*100
         initial_force = params_defenser["Nb_of_models"]
+        if relative_damage >=50:
+            proba_default_killed = 100
+        else:
+            proba_default_killed = 0
         proba_unit_killed = round(next(
     (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
-    100))
+    proba_default_killed))
  # par défaut si introuvable
 
     # Résultats pour des profils d'unités classiques :
@@ -398,12 +416,10 @@ def multi_profile_sim(params_attackers, params_defenser):
         params_defenser["Toughness"] = unit_stats["Toughness"]
         params_defenser["Save"] = unit_stats["Save"]
         params_defenser["Save_invu"] = unit_stats["Save_invu"]
-        params_defenser["Save_invu_X"] = unit_stats["Save_invu_X"]
         params_defenser["PV"] = unit_stats["PV"]
         params_defenser["Nb_of_models"] = unit_stats["Nb_of_models"]
         params_defenser["Cover"] = unit_stats["Cover"]
         params_defenser["Fnp"] = unit_stats["Fnp"]
-        params_defenser["Fnp_X"] = unit_stats["Fnp_X"]
         params_defenser["Halve_damage"] = unit_stats["Halve_damage"]
 
         results_cat = np.zeros(1000)
@@ -445,8 +461,8 @@ class SimulationInput(BaseModel):
     Deva_wound: bool
     Blast: bool
     Melta: int
-    Modif_hit: int
-    Modif_wound: int
+    Modif_hit_att: int
+    Modif_wound_att: int
     Re_roll_hit: str
     Re_roll_wound: str
     Crit_on_X_to_hit: int
@@ -454,13 +470,13 @@ class SimulationInput(BaseModel):
 
     Toughness: int
     Save: int
-    Save_invu: bool
-    Save_invu_X: int
+    Save_invu: str
     PV: int
     Nb_of_models: int
     Cover: bool
-    Fnp: bool
-    Fnp_X: int
+    Fnp: str
+    Modif_hit_def: int
+    Modif_wound_def: int
     Halve_damage: bool
     Reduce_damage_1: bool
     #Nb_iter: int
@@ -476,8 +492,8 @@ class AttackerParams(BaseModel):
     Deva_wound: bool
     Blast: bool
     Melta: int
-    Modif_hit: int
-    Modif_wound: int
+    Modif_hit_att: int
+    Modif_wound_att: int
     Re_roll_hit: str
     Re_roll_wound: str
     Crit_on_X_to_hit: int
@@ -486,13 +502,13 @@ class AttackerParams(BaseModel):
 class DefenserParams(BaseModel):
     Toughness: int
     Save: int
-    Save_invu: bool
-    Save_invu_X: int
+    Save_invu: str
     PV: int
     Nb_of_models: int
     Cover: bool
-    Fnp: bool
-    Fnp_X: int
+    Fnp: str
+    Modif_hit_def: int
+    Modif_wound_def: int
     Halve_damage: bool
     Reduce_damage_1: bool
 

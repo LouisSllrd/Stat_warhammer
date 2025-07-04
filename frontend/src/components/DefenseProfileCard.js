@@ -3,49 +3,62 @@ import React from 'react';
 const fieldLabels = {
   Toughness: "Endurance",
   Save: "Save",
-  Save_invu: "Save invu",
-  Save_invu_X: "Save invu X+",
+  Save_invu: "Sauvegarde invulnérable",
   PV: "PV par modèle",
   Nb_of_models: "Nombre de figurines",
-  Fnp: "FNP",
-  Fnp_X: "FNP X+",
+  Fnp: "Insensible à la douleur (FNP)",
+  Modif_hit_def: "Modificateur de touche",
+  Modif_wound_def: "Modificateur de blessure",
   Halve_damage: "Divise les dégâts par 2",
   Reduce_damage_1: "Réduit les dégâts de 1",
   Cover: "Couvert"
 };
 
 const optionsMap = {
-  Toughness: Array.from({ length: 24 }, (_, i) => i + 1),
-  Save: [2, 3, 4, 5, 6, 7],
-  Save_invu_X: [2, 3, 4, 5, 6, 7],
+  Toughness: Array.from({ length: 14 }, (_, i) => i + 1),
+  Save: [2,3,4,5,6,7],
+  Save_invu: ["N/A", "2", "3", "4", "5", "6"],
   PV: Array.from({ length: 30 }, (_, i) => i + 1),
   Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
-  Fnp_X: [2, 3, 4, 5, 6]
+  Fnp: ["N/A", "4", "5", "6"],
+  Modif_hit_def: [0,-1,-2],
+  Modif_wound_def: [0,-1],
 };
 
 const booleanFields = new Set([
-  "Save_invu", "Fnp", "Halve_damage", "Reduce_damage_1", "Cover"
+   "Halve_damage", "Reduce_damage_1", "Cover"
 ]);
 
 const defaultFieldsToEdit = [
-  "Toughness", "Save", "Save_invu", "Save_invu_X", "PV",
-  "Nb_of_models", "Fnp", "Fnp_X", "Halve_damage", "Reduce_damage_1", "Cover"
+  "Toughness", "Save", "Save_invu", "PV",
+  "Nb_of_models", "Fnp",
+  "Modif_hit_def",
+  "Modif_wound_def", "Halve_damage", "Reduce_damage_1", "Cover"
 ];
 
 const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToEdit, title = "Profil Défensif" }) => {
-    const handleChange = (e) => {
-        if (!e || !e.target) return;
-        const { name, type, checked, value } = e.target;
-      
-    let val = type === "checkbox" ? checked : value;
-
-    if (!booleanFields.has(name) && optionsMap[name]) {
-      val = Number(val);
+  const handleChange = (e) => {
+    if (!e || !e.target) return;
+    const { name, type, checked, value } = e.target;
+  
+    let val;
+    if (booleanFields.has(name)) {
+      val = checked;
+    } else if (optionsMap[name]) {
+      // Si c'est "Save_invu" ET qu'on a "N/A", garde la string "N/A"
+      if (value === "N/A") {
+        val = "N/A";
+      } else {
+        val = Number(value);
+      }
+    } else {
+      val = value;
     }
-
+  
     const updatedProfile = { ...profile, [name]: val };
     onChange(updatedProfile);
   };
+  
 
   return (
     <div style={{
@@ -84,7 +97,7 @@ const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToE
               <select name={key} value={value} onChange={handleChange} style={{ border: "1px solid #ccc", padding: 6, borderRadius: 4, width: "100%" }}>
                 {optionsMap[key].map((opt) => (
                   <option key={opt} value={opt}>
-                    {key.includes("_X") || key === "Save" ? `${opt}+` : opt}
+                    {(key === "Save_invu" && opt !== "N/A") || key === "Save" ? `${opt}+` : opt}
                   </option>
                 ))}
               </select>
