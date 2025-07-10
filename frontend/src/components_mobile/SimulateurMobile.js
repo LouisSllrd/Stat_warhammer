@@ -87,7 +87,7 @@ const fieldLabels = {
 };
 
 
-function Simulateur() {
+function SimulateurMobile() {
   const [params, setParams] = useState(defaultParams);
   /*const { params, setParams } = useContext(ProfilesContext);*/
 
@@ -301,21 +301,52 @@ function Simulateur() {
         Simulateur Mono-Profil
       </h1>
   
-      <div style={{ display: "flex", gap: 24, alignItems: "flex-start" }}>
+      <div
+  style={{
+    display: "flex",
+    gap: 24,
+    alignItems: "flex-start",
+    flexWrap: "wrap",
+    justifyContent: "center",
+  }}
+>
+
         {/* Attaquant */}
-        <div style={{
-          flex: 1, display: "flex", flexDirection: "column", gap: 16,
-          backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
-        }}>
+        <div
+  style={{
+    flex: "1 1 320px",
+    minWidth: 300,
+    maxWidth: 600,
+    display: "flex",
+    flexDirection: "column",
+    gap: 16,
+    backgroundColor: "white",
+    padding: 20,
+    borderRadius: 12,
+    boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+  }}
+>
+
           <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>⚔️ Attaquant</h3>
           {attackerFields.map(renderField)}
         </div>
   
         {/* Défenseur + bouton */}
-        <div style={{
-          flex: 1, display: "flex", flexDirection: "column", gap: 16,
-          backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
-        }}>
+        <div
+  style={{
+    flex: "1 1 320px",
+    minWidth: 300,
+    maxWidth: 600,
+    display: "flex",
+    flexDirection: "column",
+    gap: 16,
+    backgroundColor: "white",
+    padding: 20,
+    borderRadius: 12,
+    boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+  }}
+>
+
           <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>🛡️ Défenseur</h3>
           {defenderFields.map(renderField)}
   
@@ -355,14 +386,16 @@ function Simulateur() {
                 stiffness: 70,
               }}
               style={{
-                flex: 1,
+                flex: "1 1 320px",
+                minWidth: 300,
+                maxWidth: 600,
+                display: "flex",
+                flexDirection: "column",
+                gap: 16,
                 backgroundColor: "white",
                 padding: 20,
                 borderRadius: 12,
                 boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                gap: 16,
               }}
             >
               <h2 style={{ fontSize: 22, fontWeight: "bold", color: "#2d3748" }}>
@@ -389,12 +422,13 @@ function Simulateur() {
         </strong>  </p>
 
               {/* Graphiques */}
-              <div style={{ display: "flex", gap: 24, marginTop: 24 }}>
+              <div style={{ display: "flex", gap: 24, marginTop: 24, flexDirection: "column" }}>
                 <div>
                   <h3 style={{ fontWeight: "bold", marginBottom: 12 }}>
                     Distribution
                   </h3>
-                  <BarChart width={400} height={300} data={result.histogram_data}>
+                  <BarChart width={Math.min(window.innerWidth - 80, 400)} height={300} data={result.histogram_data}>
+
                     <XAxis
                       dataKey="value"
                       tick={(props) => {
@@ -428,7 +462,8 @@ function Simulateur() {
                   <h3 style={{ fontWeight: "bold", marginBottom: 12 }}>
                     Probabilité d'atteindre un seuil de dégâts
                   </h3>
-                  <LineChart width={400} height={300} data={result.cumulative_data}>
+                  <LineChart width={Math.min(window.innerWidth - 80, 400)} height={300} data={result.cumulative_data}>
+
                     <CartesianGrid stroke="#ccc" />
                     <XAxis
                       dataKey="value"
@@ -525,4 +560,4 @@ function Simulateur() {
   );
 }
 
-export default Simulateur;
+export default SimulateurMobile;

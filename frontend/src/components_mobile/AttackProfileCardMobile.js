@@ -85,14 +85,16 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
       border: '1px solid #ccc',
       borderRadius: 8,
       padding: 16,
-      maxWidth: 400,
       margin: 8,
-      backgroundColor: '#f9f9f9'
+      backgroundColor: '#f9f9f9',
+      maxWidth: 400,
+      width: '100%', // ➜ prend 100% de la largeur disponible
+      boxSizing: 'border-box', // ➜ évite les débordements à cause du padding
     }}>
       <h3 style={{ marginBottom: 12 }}>{title}</h3>
       {fieldsToEdit.map((key) => {
         const value = profile[key];
-
+  
         if (booleanFields.has(key)) {
           return (
             <div key={key} style={{ marginBottom: 8 }}>
@@ -109,12 +111,23 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
             </div>
           );
         }
-
+  
         if (optionsMap[key]) {
           return (
             <div key={key} style={{ marginBottom: 8, display: 'flex', flexDirection: 'column' }}>
               <label style={{ marginBottom: 4 }}>{fieldLabels[key]}</label>
-              <select name={key} value={value} onChange={handleChange} style={{ border: "1px solid #ccc", padding: 6, borderRadius: 4, width: "100%" }}>
+              <select
+                name={key}
+                value={value}
+                onChange={handleChange}
+                style={{
+                  border: "1px solid #ccc",
+                  padding: 6,
+                  borderRadius: 4,
+                  width: "100%",
+                  boxSizing: 'border-box'
+                }}
+              >
                 {optionsMap[key].map((opt) => (
                   <option key={opt} value={opt}>
                     {optionLabel(key, opt)}
@@ -124,7 +137,7 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
             </div>
           );
         }
-
+  
         return (
           <div key={key} style={{ marginBottom: 8, display: 'flex', flexDirection: 'column' }}>
             <label style={{ marginBottom: 4 }}>{fieldLabels[key]}</label>
@@ -137,7 +150,8 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
                 border: "1px solid #ccc",
                 padding: 6,
                 borderRadius: 4,
-                width: "100%"
+                width: "100%",
+                boxSizing: 'border-box'
               }}
             />
           </div>

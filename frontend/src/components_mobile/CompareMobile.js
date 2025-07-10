@@ -97,7 +97,7 @@ const optionLabel = (key, val) => {
   return `${val}`;
 };
 
-function Compare() {
+function CompareMobile() {
 
     /*const { attacker1, setAttacker1, attacker2, setAttacker2 } = useContext(ProfilesContext);
     console.log("ProfilesContext values:", { attacker1, attacker2 });*/
@@ -231,7 +231,8 @@ function Compare() {
   // Envoi des données pour les deux attaquants
   const handleSubmit = async () => {
     try {
-      setLoading(true);
+
+    setLoading(true);
       const prepared1 = prepareAttacker(attacker1);
       const prepared2 = prepareAttacker(attacker2);
 
@@ -276,7 +277,7 @@ function Compare() {
         results1: res1.data.results_catalogue,
         results2: res2.data.results_catalogue,
       });
-      setLoading(false);
+      setLoading(false)
     } catch (error) {
         if (error.response) {
           console.error("Erreur détaillée : ", error.response.data);
@@ -311,7 +312,7 @@ function Compare() {
   <div
     style={{
       display: "flex",
-      flexDirection: "row",
+      flexDirection: "column",
       gap: 24,
       // conteneur principal qui contient les 2 boîtes
       justifyContent: "center",
@@ -327,8 +328,9 @@ function Compare() {
     borderRadius: 12,
     boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "column",
     gap: 40,
+    marginBottom: 24, 
   }}
 >
   <div
@@ -336,6 +338,7 @@ function Compare() {
       flex: 1,  // <== Remplit la moitié de la boîte parente
       display: "flex",
       flexDirection: "column",
+      marginBottom: 24, 
     }}
   >
     <h3
@@ -356,6 +359,7 @@ function Compare() {
       flex: 1,  // <== Remplit l'autre moitié
       display: "flex",
       flexDirection: "column",
+      marginBottom: 24, 
     }}
   >
     <h3
@@ -383,7 +387,8 @@ function Compare() {
         display: "flex",
         flexDirection: "column",
         gap: 16,
-        minWidth: 400,
+        marginBottom: 24, 
+        minWidth: "100%",
       }}
     >
       <button
@@ -437,6 +442,7 @@ function Compare() {
                   fontSize: 18,
                   fontWeight: "bold",
                   marginBottom: 12,
+                  overflowX: "auto"
                 }}
               >
                 Résultats sur des unités classiques
@@ -503,4 +509,4 @@ function Compare() {
 
 }
 
-export default Compare;
+export default CompareMobile;
