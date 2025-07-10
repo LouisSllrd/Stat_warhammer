@@ -332,7 +332,6 @@ def damage_simulation(params):
         results_cat = [damage_trial(params) for _ in range(1000)]
 
         mean_cat = np.mean(results_cat)
-        print(f"Unité : {unit_name}, et Reduce_damage_1 : {params["Reduce_damage_1"]}, et résultat : {mean_cat}")
         std_cat = np.std(results_cat)
         if unit_stats["Nb_of_models"] == 1:
             cat_initial_force = unit_stats["PV"]
