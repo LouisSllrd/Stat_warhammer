@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { collection, query, where, onSnapshot, doc, getDoc } from "firebase/firestore";
 import { db, auth } from "../firebaseConfig";
-import AttackProfileCard from "./AttackProfileCard";
-import DefenseProfileCard from "./DefenseProfileCard";
+import AttackProfileCard from "./AttackProfileCardMobile";
+import DefenseProfileCard from "./DefenseProfileCardMobile";
 import axios from "axios";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip,
@@ -11,7 +11,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 
-function SimulationEnJeu() {
+function SimulationEnJeuMobile() {
   const [listes, setListes] = useState([]);
   const [selectedListeId, setSelectedListeId] = useState("");
   const [selectedListe, setSelectedListe] = useState(null);
@@ -25,8 +25,6 @@ function SimulationEnJeu() {
   const [defenderParams, setDefenderParams] = useState(null);
   const [defenderUnits, setDefenderUnits] = useState([]);
   const [results, setResults] = useState(null);
-  const [loading, setLoading] = useState(null);
-
 
   const [visibleProfiles, setVisibleProfiles] = useState({});
 const [selectedProfiles, setSelectedProfiles] = useState({});
@@ -113,7 +111,6 @@ const cellStyle = {
     setResults(null);
   
     try {
-      setLoading(true);
       const profilsToSend = selectedUnite.profils.filter((_, i) => selectedProfiles[i]);
   
       const parsedAttackProfiles = profilsToSend.map((params) => {
@@ -147,7 +144,6 @@ const cellStyle = {
       });
   
       setResults(res.data);
-      setLoading(false);
     } catch (error) {
       console.error("Erreur lors de la simulation multiple :", error);
       alert("Erreur lors de la simulation. Veuillez vérifier la console pour plus d'informations.");
@@ -274,12 +270,13 @@ const cellStyle = {
       {/* Contenu en deux colonnes */}
       <div style={{  display: "flex", 
           gap: 40, 
-          padding: "0 20px", }}>
+          padding: "0 20px",
+          flexDirection: "column" }}>
 
 
       {/* Colonne gauche : Attaquant */}
       <div style={{
-          flex: 1, display: "flex", flexDirection: "column", gap: 16,
+          flex: 1, width: "100%", display: "flex", flexDirection: "column", gap: 16,
           backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
         }}>
         <h2 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>⚔️ Attaquant</h2>
@@ -467,7 +464,7 @@ const cellStyle = {
       
     {/* Colonne droite : Défenseur */}
     <div style={{
-      flex: 1, display: "flex", flexDirection: "column", gap: 16,
+      flex: 1, width: "100%", display: "flex", flexDirection: "column", gap: 16,
       backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
     }}>
   <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>🛡️ Défenseur</h3>
@@ -574,7 +571,7 @@ const cellStyle = {
       fontSize: 16,
       transition: "background-color 0.3s"
     }}>
-    {loading ? "Simulation en cours..." : "🚀 Lancer la Simulation"}
+    🚀 Lancer la simulation
   </button>
 
   <label style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -746,4 +743,4 @@ const cellStyle = {
   );
 }
 
-export default SimulationEnJeu;
+export default SimulationEnJeuMobile;

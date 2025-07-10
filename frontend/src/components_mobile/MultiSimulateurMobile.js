@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AttackProfileCard from "./AttackProfileCard";
-import DefenderForm from "./DefenderForm";
+import AttackProfileCard from "./AttackProfileCardMobile";
+import DefenderForm from "./DefenderFormMobile";
 import axios from "axios";
 import {
   BarChart,
@@ -88,7 +88,7 @@ const profileVariants = {
 
 
 
-function MultiSimulateur() {
+function MultiSimulateurMobile() {
   const [numProfiles, setNumProfiles] = useState(2);
   const [attackProfiles, setAttackProfiles] = useState([
     { id: crypto.randomUUID(), ...defaultAttackProfile },
@@ -215,7 +215,7 @@ function MultiSimulateur() {
   
 
   return (
-    <div style={{ padding: 32, fontFamily: "Segoe UI, sans-serif", background: "#DCFEFF", minHeight: "100vh" }}>
+    <div style={{ padding: 16, fontFamily: "Segoe UI, sans-serif", background: "#DCFEFF", minHeight: "100vh" }}>
   <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32, textAlign: "center", color: "#2d3748" }}> Simulateur Multi-Profils</h1>
 
   <div style={{ marginBottom: 16 }}>
@@ -240,9 +240,19 @@ function MultiSimulateur() {
     </select>
   </div>
 
-  <div style={{ display: "flex", gap: 24, alignItems: "flex-start", marginTop: 24, flexWrap: "wrap" }}>
+  <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: 24,
+    alignItems: "flex-start",
+    marginTop: 24,
+    flexWrap: "wrap",
+  }}
+>
+
     {/* Profils d'attaque */}
-    <div style={{ flex: 1, minWidth: 320 }}>
+    <div style={{ flex: 1, minWidth: "100%" }}>
   <h2 style={{ fontSize: 20, marginBottom: 12 }}>⚔️ Profils d'attaque</h2>
   
     
@@ -310,7 +320,7 @@ function MultiSimulateur() {
 
 
     {/* Défenseur */}
-    <div style={{ flex: 1, minWidth: 320 }}>
+    <div style={{ flex: 1, minWidth: "100%" }}>
       <h2 style={{ fontSize: 20, marginBottom: 12 }}>🛡️ Défenseur</h2>
       <div
         style={{
@@ -337,7 +347,7 @@ function MultiSimulateur() {
             transition: "background-color 0.3s"
           }}
         >
-          {loading ? "Simulation en cours..." : "🚀 Lancer la Simulation"}
+          {loading ? "Calcul..." : "🚀 Lancer la Simulation"}
         </button>
       </div>
     </div>
@@ -356,7 +366,7 @@ function MultiSimulateur() {
         type: "spring",
         stiffness: 70,
       }}
-      style={{ flex: 2, minWidth: 600 }}
+      style={{ flex: 2, minWidth: "100%" }}
     >
       <div
         style={{
@@ -374,8 +384,8 @@ function MultiSimulateur() {
 
         <div style={{ display: "flex", gap: 24, marginTop: 24 }}>
           {/* Graphiques */}
-          <div style={{ display: "flex", gap: 24, marginTop: 24 }}>
-                <div>
+              <div style={{ display: "flex", gap: 24, marginTop: 24, flexDirection: "column" }}>
+              <div style={{ display: "flex", gap: 24, marginTop: 24, flexDirection: "column" }}>
                   <h3 style={{ fontWeight: "bold", marginBottom: 12 }}>
                     Distribution
                   </h3>
@@ -503,4 +513,4 @@ function MultiSimulateur() {
   );
 }
 
-export default MultiSimulateur;
+export default MultiSimulateurMobile;

@@ -353,12 +353,12 @@ def damage_simulation(params):
     return unit, unit_descr, initial_force, relative_damage, mean, std, histogram_data, list(reversed(cumulative)), results_catalogue, proba_unit_killed
 
 def multi_profile_sim(params_attackers, params_defenser):
-    results = np.zeros(1000)
+    results = np.zeros(10000)
     #total_mean = 0
     #std_sq = 0
     for attacker in params_attackers:
         #attacker_results = []
-        for i in range (1000):
+        for i in range (10000):
             params = {**attacker, **params_defenser}
             local_result = damage_trial(params)
             results[i] += local_result
