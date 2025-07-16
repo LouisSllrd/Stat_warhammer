@@ -28,12 +28,17 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 
 import { useIsMobile } from "./hooks/useIsMobile";
 
+import { motion, AnimatePresence } from "framer-motion";
+
 function App() {
   const [page, setPage] = useState("accueil");
   const [user, setUser] = useState(null);
   const [loadingUser, setLoadingUser] = useState(true);
   const isMobile = useIsMobile();
   const [menuOpen, setMenuOpen] = useState(false); // <- état pour ouvrir/fermer le menu mobile
+  const [showWelcomeModal, setShowWelcomeModal] = useState(false);
+const [hasShownWelcome, setHasShownWelcome] = useState(false);
+
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -42,6 +47,21 @@ function App() {
     });
     return () => unsubscribe();
   }, []);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      setLoadingUser(false);
+  
+      // Affiche le message uniquement une fois par session après connexion
+      if (currentUser && !hasShownWelcome) {
+        setShowWelcomeModal(true);
+        setHasShownWelcome(true);
+      }
+    });
+    return () => unsubscribe();
+  }, [hasShownWelcome]);
+  
 
   if (loadingUser) return <p>Chargement utilisateur...</p>;
 
@@ -69,7 +89,7 @@ function App() {
             <>
               {/* NAVIGATION CLASSIQUE */}
               <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-                <strong>Préparer ma liste:</strong>
+                <strong>Simulations génériques:</strong>
                 <button onClick={() => setPage("simulateur")}>Unité Mono Profil</button>
                 <button onClick={() => setPage("multi-profiles")}>Unité Multi Profils</button>
                 <button onClick={() => setPage("compare")}>Comparateur</button>
@@ -77,7 +97,7 @@ function App() {
 
               {user && (
                 <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-                  <strong>Calculer en jeu:</strong>
+                  <strong>Simulations personnalisées :</strong>
                   <button onClick={() => setPage("mes-listes")}>Mes Listes</button>
                   <button onClick={() => setPage("unites-adverses")}>Unités Adverses</button>
                   <button onClick={() => setPage("jeu")}>Calcul En Jeu</button>
@@ -98,23 +118,186 @@ function App() {
             )}
           </div>
         </nav>
-
-        {/* MENU MOBILE VERTICAL */}
+        <AnimatePresence>
         {isMobile && menuOpen && (
-          <div style={{ display: "flex", flexDirection: "column", padding: 10, background: "#DDEBFF" }}>
-            <strong>Préparer ma liste:</strong>
-            <button onClick={() => { setPage("simulateur"); setMenuOpen(false); }}>Unité Mono Profil</button>
-            <button onClick={() => { setPage("multi-profiles"); setMenuOpen(false); }}>Unité Multi Profils</button>
-            <button onClick={() => { setPage("compare"); setMenuOpen(false); }}>Comparateur</button>
+              <motion.div
+              key="result-block"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+                type: "spring",
+                stiffness: 70,
+              }}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  padding: 20,
+                  background: "#DDEBFF",
+                  borderRadius: 8,
+                  boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                  width: "80vw",
+                  maxWidth: 300,
+                  fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                  color: "#1a202c",
 
-            {user && (
-              <>
-                <strong>Calculer en jeu:</strong>
-                <button onClick={() => { setPage("mes-listes"); setMenuOpen(false); }}>Mes Listes</button>
-                <button onClick={() => { setPage("unites-adverses"); setMenuOpen(false); }}>Unités Adverses</button>
-                <button onClick={() => { setPage("jeu"); setMenuOpen(false); }}>Calcul En Jeu</button>
-              </>
+                  
+                }}
+              >
+                <strong style={{ marginBottom: 12, fontSize: 18, borderBottom: "2px solid #5577cc", paddingBottom: 4 }}>
+                  Simulations génériques :
+                </strong>
+
+                {["simulateur", "multi-profiles", "compare"].map((page, idx) => {
+                  const labels = {
+                    simulateur: "Unité Mono Profil",
+                    "multi-profiles": "Unité Multi Profils",
+                    compare: "Comparateur",
+                  };
+                  return (
+                    <button
+                      key={page}
+                      onClick={() => {
+                        setPage(page);
+                        setMenuOpen(false);
+                      }}
+                      style={{
+                        padding: "10px 15px",
+                        marginBottom: 10,
+                        borderRadius: 6,
+                        border: "none",
+                        backgroundColor: "#4a90e2",
+                        color: "white",
+                        fontWeight: "600",
+                        cursor: "pointer",
+                        transition: "background-color 0.3s ease",
+                      }}
+                      onMouseEnter={e => (e.currentTarget.style.backgroundColor = "#357ABD")}
+                      onMouseLeave={e => (e.currentTarget.style.backgroundColor = "#4a90e2")}
+                    >
+                      {labels[page]}
+                    </button>
+                  );
+                })}
+
+                {user && (
+                  <>
+                    <strong
+                      style={{
+                        marginTop: 20,
+                        marginBottom: 12,
+                        fontSize: 18,
+                        borderBottom: "2px solid #5577cc",
+                        paddingBottom: 4,
+                      }}
+                    >
+                      Simulations personnalisées :
+                    </strong>
+
+                    {["mes-listes", "unites-adverses", "jeu"].map((page) => {
+                      const labels = {
+                        "mes-listes": "Mes Listes",
+                        "unites-adverses": "Unités Adverses",
+                        jeu: "Calcul En Jeu",
+                      };
+                      return (
+                        <button
+                          key={page}
+                          onClick={() => {
+                            setPage(page);
+                            setMenuOpen(false);
+                          }}
+                          style={{
+                            padding: "10px 15px",
+                            marginBottom: 10,
+                            borderRadius: 6,
+                            border: "none",
+                            backgroundColor: "#4a90e2",
+                            color: "white",
+                            fontWeight: "600",
+                            cursor: "pointer",
+                            transition: "background-color 0.3s ease",
+                          }}
+                          onMouseEnter={e => (e.currentTarget.style.backgroundColor = "#357ABD")}
+                          onMouseLeave={e => (e.currentTarget.style.backgroundColor = "#4a90e2")}
+                        >
+                          {labels[page]}
+                        </button>
+                      );
+                    })}
+                  </>
+                )}
+              </motion.div>
             )}
+          </AnimatePresence>
+
+
+        {showWelcomeModal && (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100vw",
+              height: "100vh",
+              backgroundColor: "rgba(0,0,0,0.5)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: 9999,
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "white",
+                padding: 20,
+                borderRadius: 10,
+                maxWidth: 400,
+                position: "relative",
+                boxShadow: "0 0 10px rgba(0,0,0,0.25)",
+                textAlign: "center",
+              }}
+            >
+              {/* Bouton de fermeture */}
+              <button
+                onClick={() => setShowWelcomeModal(false)}
+                style={{
+                  position: "absolute",
+                  top: 10,
+                  right: 10,
+                  border: "none",
+                  background: "transparent",
+                  fontSize: 18,
+                  cursor: "pointer",
+                }}
+              >
+                ✕
+              </button>
+
+              <h2>Bienvenue !</h2>
+              <p>Merci de t'être connecté sur <strong>StatWarhammer40k</strong> !</p>
+              <p>⚠️ Ce site est entièrement <strong>gratuit</strong>, mais son hébergement a un coût pour son développeur.</p>
+              <p>Ce projet <strong>ne peut vivre sans des dons</strong> de la communauté, et sera forcé de fermer sans un soutien régulier.</p>
+              <p>Si tu veux soutenir le projet, tu peux faire un don ! </p>
+              <a
+                href="https://ko-fi.com/statwargame40k" // ← remplace par ton vrai lien
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  marginTop: 10,
+                  padding: "10px 20px",
+                  backgroundColor: "#89B5FF",
+                  color: "white",
+                  borderRadius: 5,
+                  textDecoration: "none",
+                }}
+              >
+                Faire un don 
+              </a>
+            </div>
           </div>
         )}
 
