@@ -268,8 +268,8 @@ function Compare() {
       
       const [res1, res2] = await Promise.all([
         
-        axios.post("http://localhost:8000/simulate", payload1),
-        axios.post("http://localhost:8000/simulate", payload2),
+        axios.post("https://statwarhammer-production-871f.up.railway.app/simulate", payload1),
+        axios.post("https://statwarhammer-production-871f.up.railway.app/simulate", payload2),
       ]);
 
       setResults({

@@ -138,7 +138,7 @@ const cellStyle = {
         console.log("Fnp: ", parsedDefenderProfile.Fnp)
       });
   
-      const res = await axios.post("http://localhost:8000/multi_profile_simulate", {
+      const res = await axios.post("https://statwarhammer-production-871f.up.railway.app/multi_profile_simulate", {
         attackers_params: parsedAttackProfiles,
         defenser_params: parsedDefenderProfile,
       });
