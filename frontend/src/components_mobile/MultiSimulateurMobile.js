@@ -53,6 +53,64 @@ const cellStyle = {
   textAlign: "center",
 };
 
+const Modal = ({ children, onClose }) => {
+  return (
+    <AnimatePresence>
+    <motion.div
+    key="modal-overlay"
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: 20 }}
+    transition={{
+      duration: 0.1,
+      ease: "easeOut",
+      type: "spring",
+      stiffness: 70,
+    }}
+       style={{
+      position: "fixed",
+      top: 0, left: 0,
+      width: "100vw",
+      height: "100vh",
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      zIndex: 1000,
+    }}>
+      <div style={{
+        backgroundColor: "#fff",
+        padding: 24,
+        borderRadius: 12,
+        maxWidth: 800,
+        width: "90%",
+        maxHeight: "90vh",
+        overflowY: "auto",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+        position: "relative"
+      }}>
+        <button
+          onClick={onClose}
+          style={{
+            position: "absolute",
+            top: 12,
+            right: 12,
+            background: "transparent",
+            border: "none",
+            fontSize: 24,
+            cursor: "pointer",
+            color: "#999"
+          }}
+        >
+          &times;
+        </button>
+        {children}
+      </div>
+      </motion.div>
+    </AnimatePresence>
+  );
+};
+
 // Variants d'animation pour chaque profil
 const containerVariants = {
   animate: {
@@ -102,6 +160,8 @@ function MultiSimulateurMobile() {
   const [defenderProfile, setDefenderProfile] = useState({ ...defaultDefender });
   const [results, setResults] = useState(null);
   const [loading, setLoading] = useState(false);
+
+  const [showFullResults, setShowFullResults] = useState(false);
 
   // Met à jour un profil d'attaque à l'index donné
   const updateProfile = (index, newParams) => {
@@ -355,77 +415,80 @@ function MultiSimulateurMobile() {
     {/* Résultats */}
     <AnimatePresence>
   {results && (
-    <motion.div
-      key="results-block"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 20 }}
-      transition={{
-        duration: 0.7,
-        ease: "easeOut",
-        type: "spring",
-        stiffness: 70,
+    <Modal onClose={() => setResults(null)}>
+    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+      <h2 style={{ fontSize: 22, fontWeight: "bold" }}>📊 Résultats :</h2>
+    </div>
+
+    {/* Résumé */}
+    <div style={{ marginBottom: 24 }}>
+      <p>
+        ➢ En moyenne : <strong>{results.mean.toFixed(1)}</strong> {"(±"} {results.std.toFixed(0)} {")"} {results.unit} , soit {results.relative_damages.toFixed(0)}% de la force initiale
+      </p>
+      <p>
+        ➢ <strong style={{
+          color:
+            results.proba_unit_killed < 30 ? "red" :
+            results.proba_unit_killed < 60 ? "orange" :
+            results.proba_unit_killed < 80 ? "gold" :
+            "green"
+        }}>
+          {results.proba_unit_killed.toFixed(0)}%
+        </strong> {"de chance de tuer l'unité ennemie"} 
+      </p>
+    </div>
+    <button
+      onClick={() => setShowFullResults(!showFullResults)}
+      style={{
+        padding: "8px 12px",
+        backgroundColor: "#3182ce",
+        color: "white",
+        border: "none",
+        borderRadius: 4,
+        cursor: "pointer",
       }}
-      style={{ flex: 2, minWidth: "100%" }}
     >
-      <div
-        style={{
-          backgroundColor: "#ffffff",
-          padding: 24,
-          borderRadius: 12,
-          boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
-          marginTop: 24,
-        }}
-      >
-        <h2 style={{ fontSize: 22, fontWeight: "bold", marginBottom: 8 }}>📊 Résultats</h2>
-        <p><strong>Unité :</strong> {results.unit_descr}</p>
-        <p><strong>Moyenne :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit}, soit {results.relative_damages.toFixed(0)}% de la force initiale</p>
-        <p><strong>Écart-type :</strong> {results.std.toFixed(1)}</p>
+      {showFullResults ? "➖ Afficher Moins" : "➕ Afficher Plus"}
+    </button>
 
-        <div style={{ display: "flex", gap: 24, marginTop: 24 }}>
-          {/* Graphiques */}
-              <div style={{ display: "flex", gap: 24, marginTop: 24, flexDirection: "column" }}>
-              <div style={{ display: "flex", gap: 24, marginTop: 24, flexDirection: "column" }}>
-                  <h3 style={{ fontWeight: "bold", marginBottom: 12 }}>
-                    Distribution
-                  </h3>
-                  <BarChart width={350} height={300} data={results.histogram_data}>
-                    <XAxis
-                      dataKey="value"
-                      tick={(props) => {
-                        const { x, y, payload } = props;
-                        const isTarget = payload.value === results.initial_force;
-                        const color = isTarget
-                          ? results.mean >= results.initial_force
-                            ? "green"
-                            : "red"
-                          : "#666";
-                        return (
-                          <text
-                            x={x}
-                            y={y + 10}
-                            textAnchor="middle"
-                            fill={color}
-                            fontWeight={isTarget ? "bold" : "normal"}
-                          >
-                            {payload.value}
-                          </text>
-                        );
-                      }}
-                    />
-                    <YAxis />
-                    <Tooltip />
-                    <Bar dataKey="frequency" fill="#3182ce" />
-                  </BarChart>
-                </div>
 
-                <div>
-                  <h3 style={{ fontWeight: "bold", marginBottom: 12 }}>
-                    Probabilité d'atteindre un seuil de dégâts
-                  </h3>
-                  <LineChart width={350} height={300} data={results.cumulative_data}>
-                    <CartesianGrid stroke="#ccc" />
-                    <XAxis
+    {/* Affichage complet */}
+    {showFullResults && (
+      <div>
+        <p>
+          <strong>Unité de mesure :</strong> {results.unit_descr}
+        </p>
+        <p>
+          <strong>Moyenne :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit}
+        </p>
+        <p>
+          <strong>Écart-type :</strong> {results.std.toFixed(1)}
+        </p>
+
+        {/* Graphiques */}
+        <div style={{ display: "flex", gap: 32, marginTop: 24, flexWrap: "wrap" }}>
+  
+          {/* Distribution */}
+          <div style={{ flex: "1 1 0", minWidth: 350 }}>
+            <h4 style={{ fontWeight: "bold", marginBottom: 12 }}>
+              Distribution
+            </h4>
+            <BarChart width={400} height={300} data={results.histogram_data}>
+              <XAxis dataKey="value" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="frequency" fill="#3182ce" />
+            </BarChart>
+          </div>
+
+          {/* Courbe cumulative */}
+          <div style={{ flex: "1 1 0", minWidth: 350 }}>
+            <h4 style={{ fontWeight: "bold", marginBottom: 12 }}>
+              Probabilité d'atteindre un seuil
+            </h4>
+            <LineChart width={400} height={300} data={results.cumulative_data}>
+              <CartesianGrid stroke="#ccc" />
+              <XAxis
                       dataKey="value"
                       tick={(props) => {
                         const { x, y, payload } = props;
@@ -448,31 +511,22 @@ function MultiSimulateurMobile() {
                         );
                       }}
                     />
-                    <YAxis />
-                    <Tooltip />
-                    <Line
-                      type="monotone"
-                      dataKey="cumulative_percent"
-                      stroke="#2b6cb0"
-                    />
-                  </LineChart>
-                </div>
-              </div>
+              <YAxis />
+              <Tooltip />
+              <Line type="monotone" dataKey="cumulative_percent" stroke="#2b6cb0" />
+            </LineChart>
+          </div>
+
         </div>
 
+
+        {/* Tableau */}
         {results.results_catalogue && (
-          <div style={{ marginTop: 48 }}>
-            <h3 style={{ fontSize: 18, fontWeight: "bold", marginBottom: 12 }}>🆚 Comparaison avec unités classiques</h3>
-            <table
-              style={{
-                width: "100%",
-                borderCollapse: "collapse",
-                marginTop: 12,
-                borderRadius: 8,
-                overflow: "hidden",
-                backgroundColor: "#fefefe",
-              }}
-            >
+          <div style={{ marginTop: 32 }}>
+            <h4 style={{ fontSize: 16, fontWeight: "bold", marginBottom: 12 }}>
+              Comparaison avec unités classiques
+            </h4>
+            <table style={{ width: "100%", borderCollapse: "collapse", backgroundColor: "#fefefe" }}>
               <thead style={{ backgroundColor: "#ebf8ff" }}>
                 <tr>
                   <th style={cellStyle}>Unité</th>
@@ -485,7 +539,7 @@ function MultiSimulateurMobile() {
               <tbody>
                 {Object.entries(results.results_catalogue).map(([unitName, stats]) => (
                   <tr key={unitName}>
-                    <td style={cellStyle}>{unitName} {stats.unit ? `(${stats.unit})` : ""}</td>
+                    <td style={cellStyle}>{unitName} {stats.unit ? `(en ${stats.unit})` : ""}</td>
                     <td style={cellStyle}>{stats.mean.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.std.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.initial_force}</td>
@@ -505,7 +559,8 @@ function MultiSimulateurMobile() {
           </div>
         )}
       </div>
-    </motion.div>
+    )}
+  </Modal>
   )}
 </AnimatePresence>
   </div>

@@ -78,16 +78,39 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
             alignItems: "center",
           }}
         >
-          <button onClick={() => setPage("accueil")}>Accueil</button>
 
           {isMobile ? (
-            <>
-              {/* BOUTON MENU MOBILE */}
-              <button onClick={() => setMenuOpen(!menuOpen)}>☰</button>
-            </>
+            <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
+              {/* BOUTON MENU MOBILE À GAUCHE */}
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                style={{
+                  fontSize: 34,
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  marginRight: 10,
+                }}
+              >
+                ☰
+              </button>
+
+              {/* TITRE CENTRÉ */}
+              <div style={{
+                flex: 1,
+                textAlign: "center",
+                fontWeight: "bold",
+                fontSize: 18,
+                color: "#1a202c"
+              }}>
+                StatWarhammer40k
+              </div>
+            </div>
           ) : (
+
             <>
               {/* NAVIGATION CLASSIQUE */}
+          <button onClick={() => setPage("accueil")}>Accueil</button>
               <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
                 <strong>Simulations génériques:</strong>
                 <button onClick={() => setPage("simulateur")}>Unité Mono Profil</button>
@@ -107,16 +130,19 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
           )}
 
           {/* Connexion / Déconnexion */}
-          <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            {user ? (
-              <>
-                <strong>Connecté : {user.email}</strong>
-                <button onClick={() => signOut(auth)}>Déconnexion</button>
-              </>
-            ) : (
-              <button onClick={() => setPage("login")}>Connexion</button>
+            {!isMobile && (
+              <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+                {user ? (
+                  <>
+                    <strong>Connecté : {user.email}</strong>
+                    <button onClick={() => signOut(auth)}>Déconnexion</button>
+                  </>
+                ) : (
+                  <button onClick={() => setPage("login")}>Connexion</button>
+                )}
+              </div>
             )}
-          </div>
+
         </nav>
         <AnimatePresence>
         {isMobile && menuOpen && (
@@ -146,6 +172,30 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
                   
                 }}
               >
+                {/* Accueil */}
+                  <button
+                    onClick={() => {
+                      setPage("accueil");
+                      setMenuOpen(false);
+                    }}
+                    style={{
+                      padding: "10px 15px",
+                      marginBottom: 20,
+                      borderRadius: 6,
+                      border: "none",
+                      backgroundColor: "#4a90e2",
+                      color: "white",
+                      fontWeight: "600",
+                      fontSize: 16,
+                      cursor: "pointer",
+                      transition: "background-color 0.3s ease",
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#357ABD")}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#4a90e2")}
+                  >
+                    Accueil
+                  </button>
+
                 <strong style={{ marginBottom: 12, fontSize: 18, borderBottom: "2px solid #5577cc", paddingBottom: 4 }}>
                   Simulations génériques :
                 </strong>
@@ -229,6 +279,68 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
                     })}
                   </>
                 )}
+                {/* Connexion */}
+<strong
+  style={{
+    marginTop: 20,
+    marginBottom: 12,
+    fontSize: 18,
+    borderBottom: "2px solid #5577cc",
+    paddingBottom: 4,
+  }}
+>
+  Informations de connexion :
+</strong>
+
+{user ? (
+  <>
+    <p style={{ marginBottom: 10 }}>Connecté : <strong>{user.email}</strong></p>
+    <button
+      onClick={() => {
+        signOut(auth);
+        setMenuOpen(false);
+      }}
+      style={{
+        padding: "10px 15px",
+        marginBottom: 10,
+        borderRadius: 6,
+        border: "none",
+        backgroundColor: "#e53e3e",
+        color: "white",
+        fontWeight: "600",
+        cursor: "pointer",
+        transition: "background-color 0.3s ease",
+      }}
+      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#c53030")}
+      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#e53e3e")}
+    >
+      Déconnexion
+    </button>
+  </>
+) : (
+  <button
+    onClick={() => {
+      setPage("login");
+      setMenuOpen(false);
+    }}
+    style={{
+      padding: "10px 15px",
+      marginBottom: 10,
+      borderRadius: 6,
+      border: "none",
+      backgroundColor: "#38a169",
+      color: "white",
+      fontWeight: "600",
+      cursor: "pointer",
+      transition: "background-color 0.3s ease",
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#2f855a")}
+    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#38a169")}
+  >
+    Connexion
+  </button>
+)}
+
               </motion.div>
             )}
           </AnimatePresence>

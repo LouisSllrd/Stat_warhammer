@@ -66,6 +66,65 @@ const cellStyle = {
   textAlign: "left",
 };
 
+const Modal = ({ children, onClose }) => {
+  return (
+    <AnimatePresence>
+    <motion.div
+    key="modal-overlay"
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: 20 }}
+    transition={{
+      duration: 0.1,
+      ease: "easeOut",
+      type: "spring",
+      stiffness: 70,
+    }}
+       style={{
+      position: "fixed",
+      top: 0, left: 0,
+      width: "100vw",
+      height: "100vh",
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      zIndex: 1000,
+    }}>
+      <div style={{
+        backgroundColor: "#fff",
+        padding: 24,
+        borderRadius: 12,
+        maxWidth: 800,
+        width: "90%",
+        maxHeight: "90vh",
+        overflowY: "auto",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+        position: "relative"
+      }}>
+        <button
+          onClick={onClose}
+          style={{
+            position: "absolute",
+            top: 12,
+            right: 12,
+            background: "transparent",
+            border: "none",
+            fontSize: 24,
+            cursor: "pointer",
+            color: "#999"
+          }}
+        >
+          &times;
+        </button>
+        {children}
+      </div>
+      </motion.div>
+    </AnimatePresence>
+  );
+};
+
+
 const optionsMap = {
   CT: ["Torrent","2","3","4","5","6"],
   Strength: Array.from({ length: 24 }, (_, i) => i + 1),
@@ -412,30 +471,7 @@ function CompareMobile() {
 
       <AnimatePresence>
         {results && (
-          <motion.div
-            key="result-block"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            transition={{
-              duration: 0.7,
-              ease: "easeOut",
-              type: "spring",
-              stiffness: 70,
-            }}
-            style={{
-              flex: 1,
-              backgroundColor: "white",
-              padding: 20,
-              borderRadius: 12,
-              boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
-              display: "flex",
-              flexDirection: "column",
-              gap: 16,
-              overflowY: "auto",
-              maxHeight: "70vh",
-            }}
-          >
+          <Modal onClose={() => setResults(null)}>
             <div>
               <h3
                 style={{
@@ -499,7 +535,7 @@ function CompareMobile() {
                 </tbody>
               </table>
             </div>
-          </motion.div>
+            </Modal>
         )}
       </AnimatePresence>
     </div>

@@ -5,12 +5,13 @@ import {
   addDoc,
   onSnapshot,
   query,
+  where,
   orderBy,
   doc,
   updateDoc,
   deleteDoc,
 } from "firebase/firestore";
-import { db } from "../firebaseConfig"; // ton fichier firebase config
+import { db, auth } from "../firebaseConfig"; // ton fichier firebase config
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function UnitesAdversesPageMobile() {
@@ -21,11 +22,18 @@ export default function UnitesAdversesPageMobile() {
   const [editUnitId, setEditUnitId] = useState(null); // Pour savoir si on édite
 
   useEffect(() => {
-    const q = query(collection(db, "unités_adverses"), orderBy("nom"));
+    if (!auth.currentUser) return;
+  
+    const q = query(
+      collection(db, "unités_adverses"),
+      where("userId", "==", auth.currentUser.uid)
+    );
+  
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const unitsData = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
       setUnites(unitsData);
     });
+  
     return () => unsubscribe();
   }, []);
 
