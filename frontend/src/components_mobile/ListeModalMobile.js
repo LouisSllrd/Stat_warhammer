@@ -16,6 +16,7 @@ export default function ListeModal({
   const [attackProfiles, setAttackProfiles] = useState([{}]);
   const [showAddUnit, setShowAddUnit] = useState(false);
   const [visibleProfiles, setVisibleProfiles] = useState([0]);
+  const [loading, setLoading] = useState(false);
  
 
 
@@ -111,8 +112,10 @@ export default function ListeModal({
   }
 
   const handleSaveList = () => {
+    setLoading(true);
     const cleanedListe = cleanObject(tempListe.unites);
     onSave(cleanedListe);
+    setLoading(false);
   };
 
   return (
@@ -296,7 +299,7 @@ export default function ListeModal({
 
         <div style={{ marginTop: 20 }}>
           <button onClick={handleSaveList} style={styles.buttonSecondary}>
-            ✅ Sauvegarder la liste
+          {loading ? "Sauvegarde en cours..." : "✅ Sauvegarder"}
           </button>
           <button onClick={onClose} style={{... styles.buttonSecondary, marginLeft: 10}}>
             ❌ Annuler

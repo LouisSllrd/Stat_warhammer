@@ -32,6 +32,7 @@ export default function ListeModal({
         : [...prev, index]
     );
   };
+  const [loading, setLoading] = useState(false);
 
   const defaultProfile = {
     nom: "",
@@ -111,8 +112,10 @@ export default function ListeModal({
   }
 
   const handleSaveList = () => {
+    setLoading(true);
     const cleanedListe = cleanObject(tempListe.unites);
     onSave(cleanedListe);
+    setLoading(false);
   };
 
   return (
@@ -277,7 +280,7 @@ export default function ListeModal({
 
             <div style={{ marginTop: 16 }}>
               <button onClick={handleCreateUnit} style={styles.buttonSecondary}>
-                ✅ Sauvegarder l'unité
+              {loading ? "Sauvegarde en cours..." : "✅ Sauvegarder"}
               </button>
               <button
                 onClick={() => setShowAddUnit(false)}
