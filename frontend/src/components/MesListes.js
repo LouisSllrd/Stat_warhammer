@@ -22,6 +22,8 @@ function MesListes() {
   const [selectedListeId, setSelectedListeId] = useState("");
   const [selectedListe, setSelectedListe] = useState(null);
 
+  const [loading, setLoading] = useState(false);
+
   // Etat pour gérer la modale et la liste temporaire en création/édition
   const [showCreationModal, setShowCreationModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
@@ -120,6 +122,7 @@ function MesListes() {
 
   // Modification d'une liste existante dans Firestore
   const handleModifierListe = async (newListe) => {
+    setLoading(true);
     if (!newListe || !newListe.nom || !Array.isArray(newListe.unites)) {
       console.error("❌ Liste invalide :", newListe);
       return;
@@ -140,6 +143,7 @@ function MesListes() {
     } catch (error) {
       console.error("❌ Erreur lors de la mise à jour Firestore :", error);
     }
+    setLoading(false);
   };
   
 
@@ -212,6 +216,7 @@ function MesListes() {
 
   // Sauvegarder l'unité éditée
   const handleSaveEditedUnit = async () => {
+    setLoading(true);
     const newUnit = {
       nom: editUnitName,
       profils: editAttackProfiles.map((p) => ({
@@ -265,6 +270,7 @@ function MesListes() {
     }
   
     setShowEditUnitModal(false);
+    setLoading(false);
   };
   
   
@@ -625,7 +631,8 @@ function MesListes() {
 
         <div>
           <button onClick={handleSaveEditedUnit} style={styles.buttonSecondary}> 
-            ✅ Sauvegarder</button>
+          {loading ? "Sauvegarde en cours..." : "✅ Sauvegarder"}
+          </button>
           <button
             onClick={() => setShowEditUnitModal(false)}
             style={{... styles.buttonSecondary, marginLeft: 10}}
