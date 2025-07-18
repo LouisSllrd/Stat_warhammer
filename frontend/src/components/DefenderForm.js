@@ -11,7 +11,7 @@ const fieldLabels = {
   Modif_hit_def: "Modificateur de touche",
   Modif_wound_def: "Modificateur de blessure",
   Halve_damage: "Divise les dégâts par 2",
-  Reduce_damage_1: "Dégâts les dégâts de 1"
+  Reduce_damage_1: "Réduit les dégâts de 1"
 };
 
 const defaultParams = {

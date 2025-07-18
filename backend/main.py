@@ -400,7 +400,7 @@ def multi_profile_sim(params_attackers, params_defenser):
         unit = "figurines"
         relative_damage = mean/params_defenser["Nb_of_models"]*100
         initial_force = params_defenser["Nb_of_models"]
-        if relative_damage >=50:
+        if relative_damage >=70:
             proba_default_killed = 100
         else:
             proba_default_killed = 0
@@ -421,6 +421,7 @@ def multi_profile_sim(params_attackers, params_defenser):
         params_defenser["Cover"] = unit_stats["Cover"]
         params_defenser["Fnp"] = unit_stats["Fnp"]
         params_defenser["Halve_damage"] = unit_stats["Halve_damage"]
+        params_defenser["Reduce_damage_1"] = unit_stats["Reduce_damage_1"]
 
         results_cat = np.zeros(1000)
         for attacker in params_attackers:

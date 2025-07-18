@@ -203,6 +203,7 @@ function MultiSimulateur() {
         attackers_params: parsedAttackProfiles,
         defenser_params: parsedDefenderProfile,
       });
+      console.log("ok pour multi sim")
   
       setResults(res.data);
     } catch (error) {

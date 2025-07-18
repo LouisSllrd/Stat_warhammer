@@ -10,7 +10,7 @@ const Accueil = () => {
         Que vous soyez en train de construire votre liste d'armée ou en pleine partie, vous pouvez rapidement estimer les dégâts potentiels que peut infliger une unité contre une cible spécifique.
       </p>
 
-      <h2 style={{ marginTop: 30, fontSize: 22 }}> Simulations génériques </h2>
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Simulations génériques </h2>
       <ul>
         <li>
           <strong>Unité Mono Profil :</strong> Simulez une attaque d'un profil d'attaque contre un profil de défense.
@@ -23,7 +23,7 @@ const Accueil = () => {
         </li>
       </ul>
 
-      <h2 style={{ marginTop: 30, fontSize: 22 }}> Simulations personnalisées (connexion requise)</h2>
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Simulations personnalisées (connexion requise)</h2>
       <ul>
         <li>
           <strong>Mes Listes :</strong> Enregistrez et gérez vos listes personnelles de profils d'attaque pour les retrouver rapidement lors d'une simulation de dégâts pendant vos parties. 
@@ -36,13 +36,23 @@ const Accueil = () => {
         </li>
       </ul>
 
-      <h2 style={{ marginTop: 30, fontSize: 22 }}> Connexion</h2>
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Connexion</h2>
       <p>
         La connexion est requise pour sauvegarder vos listes personnelles et accéder au mode "Simulations personnalisées". Vous pouvez vous connecter avec un compte Google.
       </p>
 
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Remarques</h2>
+      <ul>
+        <li>
+          Les paramètres "Attaques" et "Dégâts" oeuvent être définis avec des valeurs aléatoires comprenant des D6 ou D3 dans le profil. Il suffit d'écrire un texte de la forme "XD6+Y" ou "XD3+Y".
+        </li>
+        <li>
+          Le calcul en arrière-plan est une simulation de 1000 séquences d'attaques. Pour chaque séquence, on simule une suite de lancers de dés comprenant les jets pour toucher, blesser, sauvegarder, et éventuels insensibles à la douleur. On obtiens ainsi une liste de 1000 résultats. On peut ensuite calculer la moyenne et l'écart-type des valeurs de cet échantillon. 
+        </li>
+      </ul>
 
-      <h2 style={{ marginTop: 30, fontSize: 22 }}> Faire un don</h2>
+
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Faire un don</h2>
       <p >
       Ce site est entièrement gratuit, mais son hébergement a un coût pour son développeur.
               Ce projet ne peut vivre sans des dons de la communauté, et sera forcé de fermer sans un soutien régulier.
@@ -67,6 +77,12 @@ const Accueil = () => {
               </a>
 
 
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Contacter le développeur</h2>
+      <p >
+      N'hésitez pas à m'envoyer un message si vous avez des remarques, questions, ou erreurs à signaler lors de votre utilisation de la plateforme ! Vous pouvez utiliser la boîte ci-dessous pour me contacter directement.
+      </p>
+
+
               <form
   action="https://formspree.io/f/xkgznqao"
   method="POST"
@@ -83,11 +99,11 @@ const Accueil = () => {
   }}
 >
   <h2 style={{ textAlign: "center", marginBottom: "1rem", color: "#333" }}>
-    Contacte le développeur
+    Contact
   </h2>
 
   <label style={{ display: "flex", flexDirection: "column", fontWeight: "bold" }}>
-    Ton nom :
+    Nom :
     <input
       type="text"
       name="name"
@@ -102,7 +118,7 @@ const Accueil = () => {
   </label>
 
   <label style={{ display: "flex", flexDirection: "column", fontWeight: "bold" }}>
-    Ton email :
+    Email :
     <input
       type="email"
       name="email"

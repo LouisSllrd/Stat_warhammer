@@ -50,7 +50,10 @@ const cellStyle = {
   };
   // Charger les unités défenseurs depuis Firestore
   useEffect(() => {
-    const q = query(collection(db, "unités_adverses")); // adapte le nom de la collection
+    const q = query(
+      collection(db, "unités_adverses"),
+      where("userId", "==", auth.currentUser.uid)
+    );
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const unitsFromDb = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setDefenderUnits(unitsFromDb);
@@ -577,14 +580,7 @@ const cellStyle = {
     {loading ? "Simulation en cours..." : "🚀 Lancer la Simulation"}
   </button>
 
-  <label style={{ display: "flex", alignItems: "center", gap: 8 }}>
-    <input
-      type="checkbox"
-      checked={showFullResults}
-      onChange={() => setShowFullResults(!showFullResults)}
-    />
-    Affichage complet
-  </label>
+
 </div>
 
 </div>
@@ -616,21 +612,24 @@ const cellStyle = {
         </strong> {"de chance de tuer l'unité ennemie"} 
       </p>
     </div>
-    <label style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <input
-          type="checkbox"
-          checked={showFullResults}
-          onChange={() => setShowFullResults(!showFullResults)}
-        />
-        Affichage complet
-      </label>
+    <button
+      onClick={() => setShowFullResults(!showFullResults)}
+      style={{
+        padding: "8px 12px",
+        backgroundColor: "#3182ce",
+        color: "white",
+        border: "none",
+        borderRadius: 4,
+        cursor: "pointer",
+      }}
+    >
+      {showFullResults ? "➖ Afficher Moins" : "➕ Afficher Plus"}
+    </button>
+
 
     {/* Affichage complet */}
     {showFullResults && (
       <div>
-        <h3 style={{ fontSize: 18, fontWeight: "bold", marginBottom: 12 }}>
-        ➕ Détails supplémentaires
-        </h3>
         <p>
           <strong>Unité de mesure :</strong> {results.unit_descr}
         </p>
