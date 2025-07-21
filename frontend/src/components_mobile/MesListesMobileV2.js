@@ -16,11 +16,11 @@ import AttackProfileCard from "./AttackProfileCardMobile";
 import { motion, AnimatePresence } from "framer-motion";
 
 
-function MesListesMobile() {
+function MesListes() {
   const [listes, setListes] = useState([]);
   const [selectedListeId, setSelectedListeId] = useState("");
   const [selectedListe, setSelectedListe] = useState(null);
-  
+
   const [loading, setLoading] = useState(false);
 
   // Etat pour gérer la modale et la liste temporaire en création/édition
@@ -43,70 +43,12 @@ function MesListesMobile() {
     
   };
   
-  const [visibleProfiles, setVisibleProfiles] = useState([]);
-
+  const [visibleProfiles, setVisibleProfiles] = useState(
+    editAttackProfiles.map((_, i) => i) // tout visible par défaut
+  );
   const toggleProfileVisibility = (index) => {
     setVisibleProfiles((prev) =>
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
-  };
-
-  const Modal = ({ children, onClose }) => {
-    return (
-      <AnimatePresence>
-
-      <motion.div
-      key="modal"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 20 }}
-      transition={{
-        duration: 0.1,
-        ease: "easeOut",
-        type: "spring",
-        stiffness: 70,
-      }}
-         style={{
-        position: "fixed",
-        top: 0, left: 0,
-        width: "100vw",
-        height: "100vh",
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        zIndex: 1000,
-      }}>
-        <div style={{
-          backgroundColor: "#fff",
-          padding: 24,
-          borderRadius: 12,
-          maxWidth: 800,
-          width: "90%",
-          maxHeight: "90vh",
-          overflowY: "auto",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-          position: "relative"
-        }}>
-          <button
-            onClick={onClose}
-            style={{
-              position: "absolute",
-              top: 12,
-              right: 12,
-              background: "transparent",
-              border: "none",
-              fontSize: 24,
-              cursor: "pointer",
-              color: "#999"
-            }}
-          >
-            &times;
-          </button>
-          {children}
-        </div>
-        </motion.div>
-      </AnimatePresence>
     );
   };
     
@@ -151,13 +93,6 @@ function MesListesMobile() {
 
     return () => unsubscribe();
   }, []);
-
-  useEffect(() => {
-    if (showEditUnitModal) {
-      setVisibleProfiles(editAttackProfiles.map((_, i) => i));
-    }
-  }, [showEditUnitModal]);
-  
 
   // Récupérer une liste précise par son id
   const fetchListe = async (id) => {
@@ -357,10 +292,10 @@ function MesListesMobile() {
       </div>
   
       {/* Contenu en deux colonnes */}
-      <div style={{ display: "flex", flex: 1 }}>
+      <div style={{ display: "flex", flex: 1, flexDirection: "column" }}>
         {/* Colonne gauche */}
         <div style={{ 
-      width: "100%", 
+      width: "100%",  
       padding: "16px",}}>
         <div style={{ display: "flex", gap: 12, marginBottom: 16 }}>
         <button
@@ -478,7 +413,7 @@ function MesListesMobile() {
                           <ol>
                           {u.profils.map((p, i) => (
                             <li key={i}>
-                              <em>{p.nom || `Profil ${i + 1}`}</em>{` (A: ${p.Attacks ?? "?"}, CC/CT: ${p.CT ?? "?"}+, F: ${p.Strength ?? "?"}, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"})`}
+                              <em>{p.nom || `Profil ${i + 1}`}</em>
                             </li>
                           ))}
                         </ol>
@@ -568,10 +503,9 @@ function MesListesMobile() {
     {/* Colonne droite */}
     <div
         style={{
-          width: "100%",  // 100% largeur
+          width: "100%",
           padding: "16px",
           overflowY: "auto",
-          marginTop: 16,    
         }}
       >
     {/* Modales création et édition liste */}
@@ -600,11 +534,23 @@ function MesListesMobile() {
     )}
 
     {/* Modal d'édition d'une unité */}
-    {showEditUnitModal && (
-  <Modal onClose={() => setShowEditUnitModal(false)}>
-    <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>
-      {isEditMode ? "Modifier l'unité" : "Créer une nouvelle unité"}
-    </h3>
+    {showEditUnitModal ? (
+      <motion.div
+      key="result-block"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{
+        duration: 0.7,
+        ease: "easeOut",
+        type: "spring",
+        stiffness: 70,
+      }} style={{
+        flex: 1, display: "flex", flexDirection: "column", gap: 16,
+        backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
+      }}>
+        <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>{isEditMode ? "Modifier l'unité" : "Créer une nouvelle unité"}</h3>
+
         <input
           type="text"
           value={editUnitName}
@@ -687,7 +633,7 @@ function MesListesMobile() {
         <div>
           <button onClick={handleSaveEditedUnit} style={styles.buttonSecondary}> 
           {loading ? "Sauvegarde en cours..." : "✅ Sauvegarder"}
-            </button>
+          </button>
           <button
             onClick={() => setShowEditUnitModal(false)}
             style={{... styles.buttonSecondary, marginLeft: 10}}
@@ -695,8 +641,12 @@ function MesListesMobile() {
             ❌ Annuler
           </button>
         </div>
-        </Modal>
-      ) }
+        </motion.div>
+      ) : (
+        <div style={{ height: "100%", border: "2px dashed #ccc", borderRadius: 8, padding: 20, color: "#aaa" }}>
+          Modifiez ou ajoutez une unité pour l’éditer ici
+        </div>
+    )}
     </AnimatePresence>
   </div>
 </div>
@@ -705,7 +655,7 @@ function MesListesMobile() {
   );
 }
 
-export default MesListesMobile;
+export default MesListes;
 
 
 

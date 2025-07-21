@@ -9,7 +9,7 @@ import Compare from "./components/Compare";
 import CompareMobile from "./components_mobile/CompareMobile";
 
 import MesListes from "./components/MesListes";
-import MesListesMobile from "./components_mobile/MesListesMobile";
+import MesListesMobile from "./components_mobile/MesListesMobileV2";
 
 import SimulationEnJeu from "./components/Jeu";
 import SimulationEnJeuMobile from "./components_mobile/JeuMobile";
