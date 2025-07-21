@@ -7,7 +7,7 @@ const AccueilMobile = () => {
 
       <p>
         Cette plateforme vous permet de réaliser des simulations de dégâts pour vos unités Warhammer 40k contre divers cibles. 
-        Que vous soyez en train de construire votre liste d'armée ou en pleine partie, vous pouvez rapidement estimer les dégâts potentiels que peut infliger une unité contre une cible spécifique.
+        Que vous soyez en train de construire votre liste d'armée ou en pleine partie, vous pouvez rapidement estimer les dégâts potentiels que peut infliger une unité contre une cible spécifique. Cette plateforme possède un affichage adaptatif suivant si elle est ouverte sur oridnateur ou sur téléphone, pour simplifier son usage dans tous les cas d'utilisation. 
       </p>
 
       <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F"  }}> Simulations génériques </h2>

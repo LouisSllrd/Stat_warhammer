@@ -76,8 +76,12 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
             background: "#89B5FF",
             padding: "10px 20px",
             alignItems: "center",
+            position: "sticky" ,  // ← position sticky uniquement sur desktop
+            top: 0,
+            zIndex: 1000, // ← pour que ça reste au-dessus du contenu
           }}
         >
+
 
           {isMobile ? (
             <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
