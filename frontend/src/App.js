@@ -161,20 +161,23 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
                 type: "spring",
                 stiffness: 70,
               }}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: 20,
-                  background: "#DDEBFF",
-                  borderRadius: 8,
-                  boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-                  width: "80vw",
-                  maxWidth: 300,
-                  fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-                  color: "#1a202c",
-
-                  
-                }}
+              style={{
+                position: "fixed", // ← pour qu'il flotte
+                top: 60, // ← ajusté à la hauteur du bandeau sticky (si padding + hauteur ≈ 60px)
+                left: 10,
+                zIndex: 999, // ← inférieur ou égal à celui du bandeau
+                display: "flex",
+                flexDirection: "column",
+                padding: 20,
+                background: "#DDEBFF",
+                borderRadius: 8,
+                boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+                width: "80vw",
+                maxWidth: 300,
+                fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                color: "#1a202c",
+              }}
+              
               >
                 {/* Accueil */}
                   <button
