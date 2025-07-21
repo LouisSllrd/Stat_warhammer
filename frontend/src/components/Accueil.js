@@ -3,11 +3,11 @@ import React from "react";
 const Accueil = () => {
   return (
     <div style={{ maxWidth: 900, margin: "0 auto", padding: 20, lineHeight: 1.7 }}>
-      <h1 style={{ fontSize: 28, marginBottom: 20 }}> Bienvenue sur la plateforme StatWarhammer40k</h1>
+      <h1 style={{ fontSize: 28, marginBottom: 20 }}> Bienvenue sur la plateforme StatWarhammer40k pour ordinateur !</h1>
 
       <p>
         Cette plateforme vous permet de réaliser des simulations de dégâts pour vos unités Warhammer 40k contre divers cibles. 
-        Que vous soyez en train de construire votre liste d'armée ou en pleine partie, vous pouvez rapidement estimer les dégâts potentiels que peut infliger une unité contre une cible spécifique.
+        Que vous soyez en train de construire votre liste d'armée ou en pleine partie, vous pouvez rapidement estimer les dégâts potentiels que peut infliger une unité contre une cible spécifique. Cette plateforme possède un affichage adaptatif suivant si elle est ouverte sur oridnateur ou sur téléphone, pour simplifier son usage dans tous les cas d'utilisation. 
       </p>
 
       <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Simulations génériques </h2>
