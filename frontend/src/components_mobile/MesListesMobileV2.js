@@ -55,6 +55,7 @@ function MesListes() {
 
 
   const defaultProfile = {
+    Nb_weapons: 1,
     Attacks: "12",
     CT: 2,
     Auto_hit: false,
@@ -220,6 +221,7 @@ function MesListes() {
       nom: editUnitName,
       profils: editAttackProfiles.map((p) => ({
         nom: p.nom ?? "",
+        Nb_weapons: p.Nb_weapons ?? 0,
         Attacks: p.Attacks ?? 0,
         CT: p.CT ?? 0,
         Auto_hit: p.Auto_hit ?? false,

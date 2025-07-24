@@ -130,7 +130,7 @@ const cellStyle = {
         parsedParams.Re_roll_hit = String(parsedParams.Re_roll_hit);
         parsedParams.Re_roll_wound = String(parsedParams.Re_roll_wound);
         parsedParams.CT = String(parsedParams.CT);
-        console.log("CT : ",parsedParams.CT)
+        console.log("Nb_weapons : ",parsedParams.Nb_weapons)
         console.log("Re_roll_hit : ",parsedParams.Re_roll_hit)
         console.log("Sustained_hit : ",parsedParams.Sustained_hit)
         return parsedParams;
@@ -144,7 +144,7 @@ const cellStyle = {
         console.log("Fnp: ", parsedDefenderProfile.Fnp)
       });
   
-      const res = await axios.post("https://statwarhammer-production-871f.up.railway.app/multi_profile_simulate", {
+      const res = await axios.post("http://127.0.0.1:8000/multi_profile_simulate", {
         attackers_params: parsedAttackProfiles,
         defenser_params: parsedDefenderProfile,
       });

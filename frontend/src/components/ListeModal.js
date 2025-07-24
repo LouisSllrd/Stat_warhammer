@@ -36,6 +36,7 @@ export default function ListeModal({
 
   const defaultProfile = {
     nom: "",
+    Nb_weapons: 1,
     Attacks: "12",
     CT: "2",
     Strength: "8",
@@ -65,6 +66,7 @@ export default function ListeModal({
   const handleCreateUnit = () => {
     const profilsComplets = attackProfiles.map((p) => ({
       nom: p.nom ?? "",
+      Nb_weapons: p.Nb_weapons ?? 1,
       Attacks: p.Attacks ?? 0,
       CT: p.CT ?? "0",
       Strength: p.Strength ?? 0,

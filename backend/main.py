@@ -69,6 +69,7 @@ def convert(val):
 
 def damage_trial(params):
     # Extraction des paramètres
+    Nb_weapons = params["Nb_weapons"]
     Attacks = params["Attacks"]
     CT = params["CT"]
     Strength = params["Strength"]
@@ -97,13 +98,17 @@ def damage_trial(params):
     Halve_damage = params["Halve_damage"]
     Reduce_damage_1 = params["Reduce_damage_1"]
 
-    Attacks = convert(Attacks)
-    if Blast:
-        Attacks += Nb_of_models // 5
-    # Si Attacks est de type int ou float, pas besoin de le convertir.
+    Total_attacks = 0
+
+    for i in range(Nb_weapons):
+        Attacks = convert(Attacks)
+        if Blast:
+            Attacks += Nb_of_models // 5
+        # Si Attacks est de type int ou float, pas besoin de le convertir.
+        Total_attacks+=Attacks
 
     if CT == "Torrent":
-        total_hits = Attacks
+        total_hits = Total_attacks
         letals = 0
 
     else :
@@ -111,7 +116,7 @@ def damage_trial(params):
         Modif_hit = Modif_hit_att + Modif_hit_def
         # On lance le jet pour toucher
         Results_hit = []
-        for i in range(Attacks):
+        for i in range(Total_attacks):
             Results_hit.append(D6())
         
         # On regarde les résultats du jet de touche
@@ -452,6 +457,7 @@ def multi_profile_sim(params_attackers, params_defenser):
 # -------------------- FastAPI Endpoint --------------------
 
 class SimulationInput(BaseModel):
+    Nb_weapons: int
     Attacks: str
     CT: str
     Strength: str
@@ -483,6 +489,7 @@ class SimulationInput(BaseModel):
     #Nb_iter: int
 
 class AttackerParams(BaseModel):
+    Nb_weapons: int
     Attacks: str
     CT: str
     Strength: str
