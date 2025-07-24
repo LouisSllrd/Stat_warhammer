@@ -15,6 +15,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 const defaultAttackProfile = {
+  Nb_weapons: "1",
   Attacks: "12",
   CT:"2",
   Strength: "8",
@@ -180,6 +181,8 @@ function MultiSimulateur() {
         });
         parsedParams.Sustained_hit = String(parsedParams.Sustained_hit);
         parsedParams.CT = String(parsedParams.CT);
+        parsedParams.Nb_weapons = Number(parsedParams.Nb_weapons);
+        console.log("Nb_weapons : ", parsedParams.Nb_weapons);
         return parsedParams;
       });
   
@@ -195,15 +198,12 @@ function MultiSimulateur() {
         
         parsedDefenderProfile.Save_invu = String(parsedDefenderProfile.Save_invu)
         parsedDefenderProfile.Fnp = String(parsedDefenderProfile.Fnp)
-        console.log("Save invu : ", parsedDefenderProfile.Save_invu)
-        console.log("Fnp : ", parsedDefenderProfile.Fnp)
       });
   
       const res = await axios.post("https://statwarhammer-production-871f.up.railway.app/multi_profile_simulate", {
         attackers_params: parsedAttackProfiles,
         defenser_params: parsedDefenderProfile,
       });
-      console.log("ok pour multi sim")
   
       setResults(res.data);
     } catch (error) {

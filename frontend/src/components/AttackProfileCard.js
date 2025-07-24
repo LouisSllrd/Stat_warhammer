@@ -1,6 +1,7 @@
 import React from 'react';
 
 const fieldLabels = {
+  Nb_weapons: "Nombre d'armes",
   Attacks: "Attaques",
   CT: "CC/CT",
   Strength: "Force",
@@ -20,6 +21,7 @@ const fieldLabels = {
 };
 
 const optionsMap = {
+  Nb_weapons: Array.from({ length: 20 }, (_, i) => i + 1),
   CT: ["Torrent","2","3","4","5","6"],
   Strength: Array.from({ length: 24 }, (_, i) => i + 1),
   PA: [0, -1, -2, -3, -4, -5],
@@ -39,7 +41,7 @@ const booleanFields = new Set([
 ]);
 
 const defaultFieldsToEdit = [
-  "Attacks", "CT", "Strength", "PA", "Damage", 
+  "Nb_weapons","Attacks", "CT", "Strength", "PA", "Damage", 
   "Sustained_hit", "Lethal_hit", "Deva_wound", 
   "Modif_hit_att", "Modif_wound_att", "Blast", "Melta", "Re_roll_hit", "Re_roll_wound", 
   "Crit_on_X_to_hit", "Crit_on_X_to_wound"

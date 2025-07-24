@@ -15,6 +15,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 const defaultAttackProfile = {
+  Nb_weapons: 1,
   Attacks: "12",
   CT:"2",
   Strength: "8",

@@ -353,72 +353,90 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
           </AnimatePresence>
 
 
-        {showWelcomeModal && (
-          <div
-            style={{
-              position: "fixed",
-              top: 0,
-              left: 0,
-              width: "100vw",
-              height: "100vh",
-              backgroundColor: "rgba(0,0,0,0.5)",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              zIndex: 9999,
-            }}
-          >
-            <div
-              style={{
-                backgroundColor: "white",
-                padding: 20,
-                borderRadius: 10,
-                maxWidth: 400,
-                position: "relative",
-                boxShadow: "0 0 10px rgba(0,0,0,0.25)",
-                textAlign: "center",
-              }}
-            >
-              {/* Bouton de fermeture */}
-              <button
-                onClick={() => setShowWelcomeModal(false)}
-                style={{
-                  position: "absolute",
-                  top: 10,
-                  right: 10,
-                  border: "none",
-                  background: "transparent",
-                  fontSize: 18,
-                  cursor: "pointer",
-                }}
-              >
-                ✕
-              </button>
+          {showWelcomeModal && (
+  <div
+    style={{
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100vw",
+      height: "100vh",
+      backgroundColor: "rgba(0,0,0,0.5)",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      zIndex: 9999,
+    }}
+  >
+    <div
+      style={{
+        backgroundColor: "white",
+        padding: 20,
+        borderRadius: 10,
+        maxWidth: 400,
+        position: "relative",
+        boxShadow: "0 0 10px rgba(0,0,0,0.25)",
+        textAlign: "center",
+      }}
+    >
+      {/* Bouton de fermeture en haut */}
+      <button
+        onClick={() => setShowWelcomeModal(false)}
+        style={{
+          position: "absolute",
+          top: 10,
+          right: 10,
+          border: "none",
+          background: "transparent",
+          fontSize: 18,
+          cursor: "pointer",
+        }}
+      >
+        ✕
+      </button>
 
-              <h2>Bienvenue !</h2>
-              <p>Merci de t'être connecté sur <strong>StatWarhammer40k</strong> !</p>
-              <p>⚠️ Ce site est entièrement <strong>gratuit</strong>, mais son hébergement a un coût pour son développeur.</p>
-              <p>Ce projet <strong>ne peut vivre sans des dons</strong> de la communauté, et sera forcé de fermer sans un soutien régulier.</p>
-              <p>Si tu veux soutenir le projet, tu peux faire un don ! </p>
-              <a
-                href="https://ko-fi.com/statwargame40k" // ← remplace par ton vrai lien
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  marginTop: 10,
-                  padding: "10px 20px",
-                  backgroundColor: "#89B5FF",
-                  color: "white",
-                  borderRadius: 5,
-                  textDecoration: "none",
-                }}
-              >
-                Faire un don 
-              </a>
-            </div>
-          </div>
-        )}
+      <h2>Bienvenue !</h2>
+      <p>Merci de t'être connecté sur <strong>StatWarhammer40k</strong> !</p>
+      <p>⚠️ Ce site est entièrement <strong>gratuit</strong>, mais son hébergement a un coût pour son développeur.</p>
+      <p>Ce projet <strong>ne peut vivre sans des dons</strong> de la communauté, et sera forcé de fermer sans un soutien régulier.</p>
+      <p>Si tu veux soutenir le projet, tu peux faire un don ! </p>
+
+      {/* Boutons côte à côte */}
+      <div style={{ marginTop: 20, display: "flex", justifyContent: "center", gap: 10 }}>
+        <a
+          href="https://ko-fi.com/statwargame40k"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: "10px 20px",
+            backgroundColor: "#89B5FF",
+            color: "white",
+            borderRadius: 5,
+            textDecoration: "none",
+            fontWeight: "bold",
+          }}
+        >
+          Faire un don
+        </a>
+        <button
+          onClick={() => setShowWelcomeModal(false)}
+          style={{
+            padding: "10px 20px",
+            backgroundColor: "#e0e0e0",
+            color: "#333",
+            border: "none",
+            borderRadius: 5,
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          Continuer vers le site 
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
 
         {/* CONTENU */}
         <div style={{ padding: 20 }}>

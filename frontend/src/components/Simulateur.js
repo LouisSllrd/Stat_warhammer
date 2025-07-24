@@ -11,6 +11,7 @@ import { ProfilesContext } from "./ProfileContext";*/
 
 const defaultParams = {
   // Attaquant
+  Nb_weapons: 1,
   Attacks: "12",
   CT: "2",
   Strength: "8",
@@ -43,7 +44,7 @@ const defaultParams = {
 };
 
 const attackerFields = [
-  "Attacks", "CT", "Strength", "PA", "Damage",
+  "Nb_weapons","Attacks", "CT", "Strength", "PA", "Damage",
   "Sustained_hit", "Lethal_hit", "Deva_wound", 'Blast', 'Melta',
   "Modif_hit_att", "Modif_wound_att",
   "Re_roll_hit", "Re_roll_wound",
@@ -56,6 +57,7 @@ const defenderFields = [
 ];
 
 const fieldLabels = {
+  Nb_weapons: "Nombre d'armes",
   Attacks: "Attaques",
   CT: "CC/CT",
   Strength: "Force",
@@ -160,7 +162,7 @@ function Simulateur() {
         parsedParams
       );*/
       
-      const res = await axios.post("https://statwarhammer-production-871f.up.railway.app/simulate", parsedParams);
+      const res = await axios.post("http://127.0.0.1:8000/simulate", parsedParams);
       setResult(res.data);
     } catch (error) {
       console.error("Erreur lors de la simulation :", error);
@@ -170,6 +172,7 @@ function Simulateur() {
 
   // Options des différents champs
   const optionsMap = {
+    Nb_weapons: Array.from({ length: 20 }, (_, i) => i + 1),
     CT: ["Torrent","2","3","4","5","6"],
     Strength: Array.from({ length: 24 }, (_, i) => i + 1),               // 1 à 24
     PA: [0, -1, -2, -3, -4, -5],                                       // 0 à -5

@@ -7,6 +7,7 @@ import { ProfilesContext } from "./ProfileContext";*/
 import axios from "axios";
 
 const defaultAttacker = {
+  Nb_weapons: 1,
   Attacks: "12",
   CT: "2",
   Strength: "8",
@@ -40,6 +41,7 @@ const defender = {
 };
 
 const fieldLabels = {
+  Nb_weapons: "Nombre d'armes",
   Attacks: "Attaques",
   CT: "CC/CT",
   Strength: "Force",
@@ -67,6 +69,7 @@ const cellStyle = {
 };
 
 const optionsMap = {
+  Nb_weapons: Array.from({ length: 20 }, (_, i) => i + 1),
   CT: ["Torrent","2","3","4","5","6"],
   Strength: Array.from({ length: 24 }, (_, i) => i + 1),
   PA: [0, -1, -2, -3, -4, -5],
