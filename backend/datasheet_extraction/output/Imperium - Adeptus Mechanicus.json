@@ -1,0 +1,3141 @@
+{
+  "Archaeopter Fusilave": {
+    "cost": {
+      "pts": "160"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Archaeopter Fusilave",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Bomb Rack",
+          "characteristics": {
+            "Description": "Each time this model finishes a Normal move, you can select one enemy unit it moved across and roll six D6: for each 4+, that unit suffers 1 mortal wound."
+          }
+        },
+        {
+          "name": "Chaff Launcher",
+          "characteristics": {
+            "Description": "The bearer has the Smoke keyword."
+          }
+        },
+        {
+          "name": "Command Uplink",
+          "characteristics": {
+            "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ]
+    }
+  },
+  "Archaeopter Stratoraptor": {
+    "cost": {
+      "pts": "185"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Archaeopter Stratoraptor",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Strafing Run",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets an enemy unit (excluding units that can Fly), add 1 to the Hit roll."
+          }
+        },
+        {
+          "name": "Chaff Launcher",
+          "characteristics": {
+            "Description": "The bearer has the Smoke keyword.�"
+          }
+        },
+        {
+          "name": "Command Uplink",
+          "characteristics": {
+            "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Cognis heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 3, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Heavy phosphor blaster",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover"
+          }
+        },
+        {
+          "name": "Twin cognis lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Sustained hits 1, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Archaeopter Transvector": {
+    "cost": {
+      "pts": "150"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Archaeopter Transvector",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Aerial Deployment",
+          "characteristics": {
+            "Description": "If this model starts the game in Hover mode and in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules."
+          }
+        },
+        {
+          "name": "Chaff Launcher",
+          "characteristics": {
+            "Description": "The bearer has the Smoke keyword.�"
+          }
+        },
+        {
+          "name": "Command Uplink",
+          "characteristics": {
+            "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 11 SKITARII INFANTRY or TECH-PRIEST INFANTRY models. It cannot transport JUMP PACK, KATAPHRON or SYDONIAN SKATROS models."
+          }
+        }
+      ]
+    }
+  },
+  "Belisarius Cawl": {
+    "cost": {
+      "pts": "135",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Belisarius Cawl",
+          "characteristics": {
+            "M": "8\"",
+            "T": "8",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Canticles of the Omnissiah",
+          "characteristics": {
+            "Description": "At the start of the battle round, select one of the abilities in the Canticles of the Omnissiah section. Until the start of the next battle round, this model has that ability.\n\nInvocation of Machine Vengeance (Aura): While a friendly Adeptus Mechanicus unit is within 6\" of this model, each time a model in that unit makes an attack, re-roll a Hit roll of 1.\n\nMantra of Discipline:  This model has the Battleline keyword and has the following ability:\nBinharic Courage (Aura): While a friendly Adeptus Mechanicus unit is within 6\" of this model, each time you take a Battle-shock or Leadership test for that unit, add 1 to that test.’\n\nShroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6\" of this model, each time a ranged attack targets that unit, that unit has the Benefit of cover against that attack."
+          }
+        },
+        {
+          "name": "Mechanicus Bodyguard",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more other friendly ADEPTUS MECHANICUS units, this model has the Lone Operative ability."
+          }
+        },
+        {
+          "name": "Self-repair Mechanisms",
+          "characteristics": {
+            "Description": "At the start of your Command phase, this model regains up to D3 lost wounds."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Arc Scourge",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Extra Attacks"
+          }
+        },
+        {
+          "name": "Cawl's Omnissian axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Mechadendrite hive",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2D6",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Solar atomiser",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "2+",
+            "S": "14",
+            "AP": "-4",
+            "D": "3",
+            "Keywords": "Blast, Melta D3"
+          }
+        }
+      ]
+    }
+  },
+  "Corpuscarii Electro-Priests": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Electrostatic gauntlets",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol, Sustained Hits 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Electrostatic gauntlets",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Fulgurite Electro-Priests": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Electroleech stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Ironstrider Ballistarius (Twin cognis autocannon)": {
+    "cost": {
+      "pts": "70",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Twin cognis autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Ironstrider Ballistarius (Twin cognis lascannon)": {
+    "cost": {
+      "pts": "70",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Twin cognis lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Kastelan Robot": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin Kastelan fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Kastelan fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin Kastelan phosphor blaster",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Twin-linked"
+          }
+        },
+        {
+          "name": "Kastelan phosphor blaster",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover"
+          }
+        },
+        {
+          "name": "Incendine combustor",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Heavy phosphor blaster",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover"
+          }
+        }
+      ]
+    }
+  },
+  "Kataphron Breacher (Heavy arc rifle & arc claw)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Kataphron Breacher (Heavy arc rifle & hydraulic claw)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Kataphron Breacher (Torsion cannon & arc claw)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Kataphron Breacher (Torsion cannon & hydraulic claw)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Kataphron Destroyer (Heavy grav-cannon & Cognis flamer)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Kataphron Destroyer (Heavy grav-cannon & phosphor blaster)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Kataphron Destroyer (Kataphron plasma culverin & Phosphor blaster)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Kataphron Destroyer (Kataphron plasma culverin & Cognis flamer)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Onager Dunecrawler": {
+    "cost": {
+      "pts": "155",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Onager Dunecrawler",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Emanatus Forcefield (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ADEPTUS MECHANICUS BATTLELINE model is wholly within 6\" of this model, that BATTLELINE model has a 4+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Damaged: 1-4 wounds remaining",
+          "characteristics": {
+            "Description": "While this mdel has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Scuttling Walker",
+          "characteristics": {
+            "Description": "Each time this model makes a Normal, Advance or Fall Back move, it can move through friendly Monster and Vehicle models and sections of terrain features that are 4\" or less in height."
+          }
+        },
+        {
+          "name": "Broad spectrum data-tether",
+          "characteristics": {
+            "Description": "The bearer loses the SMOKE keyword, but each time you target the bearer with a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Cognis heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 3, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Eradication beamer - dissipated",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Sustained Hits D3"
+          }
+        },
+        {
+          "name": "➤ Eradication beamer - focused",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Daedalus missile launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "Anti-Fly 2+"
+          }
+        },
+        {
+          "name": "Icarus array",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "6",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Fly 4+, Twin-linked"
+          }
+        },
+        {
+          "name": "Cognis heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 3, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Neutron laser",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+2",
+            "Keywords": "Heavy"
+          }
+        },
+        {
+          "name": "Twin Onager heavy phosphor blaster",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "12",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Dunecrawler legs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Pteraxii Skystalker Alpha": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Pteraxii Skystalker Alpha",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flechette blaster",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Taser goad",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Pteraxii Skystalkers": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flechette carbine",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "6",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Pteraxii Sterylizor Alpha": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Pteraxii Skystalker Alpha",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flechette blaster",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Taser goad",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        },
+        {
+          "name": "Pteraxii talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Pteraxii Sterylizors": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Pteraxii talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Phosphor torch",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Serberys Raider Alpha": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Galvanic carbine",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Cavalry sabre & clawed limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Serberys Raider": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Cavalry sabre & clawed limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Galvanic carbine",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Serberys Raider w/ data-tether": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Cavalry sabre & clawed limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Galvanic carbine",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Enhanced data-tether",
+          "characteristics": {
+            "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ]
+    }
+  },
+  "Serberys Sulphurhound Alpha": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Cavalry arc maul",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Extra Attacks"
+          }
+        },
+        {
+          "name": "Clawed limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Sulphur breath",
+          "characteristics": {
+            "Range": "9\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Pistol, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Serberys Sulphurhound (Twin phosphor pistols)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Clawed limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Sulphur breath",
+          "characteristics": {
+            "Range": "9\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Pistol, Torrent"
+          }
+        },
+        {
+          "name": "Phosphor pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Serberys Sulphurhound (Phosphor blast carbine & Phosphor pistol)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Phosphor blast carbine",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Ignores cover"
+          }
+        },
+        {
+          "name": "Phosphor pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Pistol"
+          }
+        },
+        {
+          "name": "Sulphur breath",
+          "characteristics": {
+            "Range": "9\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Pistol, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Clawed limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Sicarian Infiltrator (Power weapon & stubcarbine)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Stubcarbine",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Sicarian Infiltrator (Taser goad & flechette blaster)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Flechette blaster",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Taser goad",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Sicarian Infiltrator Princeps (Power weapon & stub carbine)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Stubcarbine",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Sicarian Infiltrator Princeps (Taser goad & flechette blaster)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Taser goad",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flechette blaster",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Sicarian Ruststalker (Transonic razor & chordclaw)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Transonic razor & chordclaw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Anti-Infantry 3+, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Sicarian Ruststalker (Transonic blades)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Transonic blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Sicarian Ruststalker Princeps (Transonic blades & chordclaw)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Transonic blades & chordclaw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Anti-Infantry 3+, Devastating Wounds, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Sicarian Ruststalker Princeps (Transonic razor & chordclaw)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Transonic razor & chordclaw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Anti-Infantry 3+, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Marshal": {
+    "cost": {
+      "pts": "35"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skitarii Marshal",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "4+",
+            "W": "3",
+            "LD": "6",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Skitarii Rangers\n■ Skitarii Vanguard"
+          }
+        },
+        {
+          "name": "Control Edict",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+          }
+        },
+        {
+          "name": "Servo-skull Uplink",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, you can select one friendly SKITARII unit that is Battle-shocked and within 6\" of this model. That unit is no longer Battle-shocked."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Control stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Ranger Alpha": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Galvanic rifle",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Alpha combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Ranger w/ transuranic arquebus": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Transuranic arquebus",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Ranger w/ arc rifle": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Arc rifle",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Ranger w/ plasma caliver": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma caliver -  supercharge",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous"
+          }
+        },
+        {
+          "name": "➤ Plasma caliver - standard",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Ranger w/ galvanic rifle": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Galvanic rifle",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Ranger w/ data-tether": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Galvanic rifle",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Enhanced data-tether",
+          "characteristics": {
+            "Description": "Each time you select the bearer’s unit\nas the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Ranger w/ omnispex": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Galvanic rifle",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Omnispex",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by models in the bearer’s unit have the IGNORES COVER ability."
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Vanguard Alpha": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Radium carbine",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-Infantry 4+"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Alpha combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Vanguard w/ transuranic arquebus": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Transuranic arquebus",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Vanguard w/ arc rifle": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Arc rifle",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Vanguard w/ plasma caliver": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma caliver -  supercharge",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous"
+          }
+        },
+        {
+          "name": "➤ Plasma caliver - standard",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Vanguard w/ radium carbine": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Radium carbine",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-Infantry 4+"
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Vanguard w/ data-tether": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Radium carbine",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-Infantry 4+"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Enhanced data-tether",
+          "characteristics": {
+            "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ]
+    }
+  },
+  "Skitarii Vanguard w/ omnispex": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Radium carbine",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-Infantry 4+"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Omnispex",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by models in the bearer’s unit have the IGNORES COVER ability."
+          }
+        }
+      ]
+    }
+  },
+  "Skorpius Disintegrator": {
+    "cost": {
+      "pts": "165",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skorpius Disintegrator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "12",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Broad spectrum data-tether",
+          "characteristics": {
+            "Description": "Each time you select the bearer as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        },
+        {
+          "name": "Blistering Salvoes",
+          "characteristics": {
+            "Description": "Each time this model makes an attack with a belleros energy cannon that targets an Infantry unit, add 1 to the Hit roll. Each time this model makes an attack with a ferrumite cannon that targets a Monster or Vehicle unit, add 1 to the Hit roll."
+          }
+        },
+        {
+          "name": "Damaged: 1-4 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Cognis heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 3, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Disruptor missile launcher",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Belleros energy cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        },
+        {
+          "name": "Ferrumite cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skorpius Dunerider": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Broad spectrum data-tether",
+          "characteristics": {
+            "Description": "Each time you select the bearer as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        },
+        {
+          "name": "Fire Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Skorpius Dunerider",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 ADEPTUS MECHANICUS INFANTRY models. It cannot transport JUMP PACK or KATAPHRON models."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Skorpius Dunerider",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Sydonian Dragoon with taser lance": {
+    "cost": {
+      "pts": "65",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Phosphor serpenta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Taser lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Walker 2+, Lance, Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Tech-Priest Dominus": {
+    "cost": {
+      "pts": "65",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tech-Priest Dominus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Corpuscarii Electro-Priests\n■ Fulgurite Electro-Priests\n■ Kataphron Breachers\n■ Kataphron Destroyers\n■ Skitarii Rangers\n■ Skitarii Vanguard"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Lord of the Machine Cult",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability. If that unit has the Electro-Priests keyword, models in that unit have the Feel No Pain 4+ ability instead"
+          }
+        },
+        {
+          "name": "Data-spike",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, you can select one enemy Vehicle unit within Engagement Range of this model’s unit and roll one D6: on a 4+, that enemy unit suffers D6 mortal wounds and, until the end of the phase, the Weapon Skill characteristic of melee weapons equipped by that enemy unit is worsened by 1."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Omnissian axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Macrostubber",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "5",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Phosphor serpenta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Pistol"
+          }
+        },
+        {
+          "name": "➤ Eradication ray - dissipated",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Eradication ray - focused",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Volkite blaster",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Tech-Priest Enginseer": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tech-Priest Enginseer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Enginseer",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly Adeptus Mechanicus Vehicle units, unless it is leading a unit, this model has the Lone Operative ability."
+          }
+        },
+        {
+          "name": "Omnissiah's Blessing",
+          "characteristics": {
+            "Description": "In your Command phase, select one friendly Adeptus Mechanicus model within 3\" of this model. That model regains up to D3 lost wounds and, if it is a Vehicle model, until the start of your next Command phase, that model has the Feel No Pain 5+ ability. Each model can only be selected for this ability once per Command phase"
+          }
+        },
+        {
+          "name": "Vengeance for the Omnissiah",
+          "characteristics": {
+            "Description": "If a friendly Adeptus Mechanicus Vehicle model is destroyed within 12\" of this model, until the end of the battle, this model’s Omnissian axe has an Attacks characteristic of 6."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Corpuscarii Electro-Priests\n■ Fulgurite Electro-Priests\n■ Kataphron Breachers\n■ Kataphron Destroyers\n■ Servitors\n■ Skitarii Rangers\n■ Skitarii Vanguard"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Servo arm",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Extra Attacks"
+          }
+        },
+        {
+          "name": "Omnissian axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Tech-Priest Manipulus": {
+    "cost": {
+      "pts": "60",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tech-Priest Manipulus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Corpuscarii Electro-Priests\n■ Fulgurite Electro-Priests\n■ Kataphron Breachers\n■ Kataphron Destroyers\n■ Skitarii Rangers\n■ Skitarii Vanguard"
+          }
+        },
+        {
+          "name": "Galvanic Field",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [Lethal Hits] ability."
+          }
+        },
+        {
+          "name": "Defend the Divine Work",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the  end of the phase, all models in this model’s unit have a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Magnarail lance",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Heavy"
+          }
+        },
+        {
+          "name": "Transonic cannon",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Omnissian staff",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Technoarcheologist": {
+    "cost": {
+      "pts": "45"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Technoarcheologist",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Seekers of Divine Arcana",
+          "characteristics": {
+            "Description": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
+          }
+        },
+        {
+          "name": "Cogitative Instincts",
+          "characteristics": {
+            "Description": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" horizontally of this model."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Corpuscarii Electro-Priests\n■ Fulgurite Electro-Priests\n■ Kataphron Breachers\n■ Kataphron Destroyers\n■ Skitarii Rangers\n■ Skitarii Vanguard"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Servo-arc claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Cybernetica Datasmith": {
+    "cost": {
+      "pts": "35"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cybernetica Datasmith",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model must be attached to the following unit:\n■ Kastelan Robots\n\nYou must attach this model to a Kastelan Robots unit, even if one or more other Cybernetica Datasmith models havealready been attached to it. In such cases, if that bodyguard unit is destroyed, the Leader units attached to it become separate units with their original Starting Strengths. If you cannot attach this model to a Kastelan Robots unit, this model cannot be deployed and counts as having been destroyed during the first battle round. While attached to a Kastelan Robots unit, this model loses the INFANTRY keyword."
+          }
+        },
+        {
+          "name": "Battle Protocols",
+          "characteristics": {
+            "Description": "At the start of the battle, if this model is leading a Kastelan Robots unit, that unit enters Aegis Protocols (see below). In your Command phase, if this model is leading a Kastelan Robots unit, you can select one protocol from those listed below for that unit to enter. Once a unit enters a protocol, it remains in that protocol until it enters a different one\n■ Protector Protocol: Add 2 to the Attacks characteristic of ranged weapons equipped by Kastelan Robot models in that unit.\n■ Conqueror Protocol: Add 2 to the Attacks characteristic of melee weapons equipped by Kastelan Robot models in that unit.\n■ Aegis Protocol: Add 1 to the Toughness characteristic of Kastelan Robot models in that unit."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Secutarii Hoplite Alpha": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Alpha close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Arc lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Lance"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Arc lance",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Secutarii Hoplite": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Arc lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Lance"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Arc lance",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Secutarii Hoplite w/ data-tether": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Arc lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Lance"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Arc lance",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Enhanced data-tether",
+          "characteristics": {
+            "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ]
+    }
+  },
+  "Secutarii Hoplite w/ omnispex": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Arc lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Lance"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Arc lance",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Vehicle 4+, Devastating Wounds"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Omnispex",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by models in the bearer’s unit have the IGNORES COVER ability."
+          }
+        }
+      ]
+    }
+  },
+  "Secutarii Peltast Alpha": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Alpha close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Galvanic caster - flechette",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "➤ Galvanic caster - hammershot",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Secutarii Peltast": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Galvanic caster - flechette",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "➤ Galvanic caster - hammershot",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Secutarii Peltast w/ data-tether": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Galvanic caster - flechette",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "➤ Galvanic caster - hammershot",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Enhanced data-tether",
+          "characteristics": {
+            "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Secutarii Peltast w/ omnispex": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Galvanic caster - flechette",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "➤ Galvanic caster - hammershot",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Omnispex",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by models in the bearer’s unit have the IGNORES COVER ability."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Terrax-Pattern Termite [Legends]": {
+    "cost": {
+      "pts": "200"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Damaged: 1-5 wounds remaining",
+          "characteristics": {
+            "Description": "While this mdel has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Termite Assault",
+          "characteristics": {
+            "Description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units  ou can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units  embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models."
+          }
+        },
+        {
+          "name": "Deadly Demise",
+          "characteristics": {
+            "Description": "D3"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Terrax-pattern Termite",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 Adeptus Mechanicus Infantry models. It cannot transport Jump Pack or Kataphron models"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Terrax-pattern Termite",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Termite drill",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "14",
+            "AP": "-2",
+            "D": "D3+3",
+            "Keywords": "Anti-Vehicle 3+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Terrax melta cutter",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "-9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "Combi bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        },
+        {
+          "name": "Heavy flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Twin volkite charger",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Sydonian Dragoon with radium jezzail": {
+    "cost": {
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Phosphor serpenta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Pistol"
+          }
+        },
+        {
+          "name": "Radium jezzail",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Infantry 3+, Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Servitor with servo-arm": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Servitor's servo arm",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "5+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Servitor with heavy bolter": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "6+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Heavy, Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Servitor with multi-melta": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "6+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Heavy, Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Servitor with plasma cannon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma cannon - Standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "6+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Heavy, Blast"
+          }
+        },
+        {
+          "name": "➤ Plasma cannon - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "6+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Heavy, Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Servitor Underseer": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Servitor Underseer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Mechanicus pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Dataspikes",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Gun Servitor w/ heavy arc rifle": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy arc rifle",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-VEHICLE 4+, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Gun Servitor w/ heavy bolter": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Heavy, Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Combat Servitor w/ incendine igniter": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Incendine igniter",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Combat Servitor w/ meltagun": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Meltagun",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Combat Servitor w/ phophor blaster": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Phosphor blaster",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  }
+}

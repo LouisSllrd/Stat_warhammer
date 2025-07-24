@@ -1,0 +1,62 @@
+{
+  "Kor'sarro Khan": {
+    "cost": {
+      "pts": "70"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Moonfang",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Precision"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Kor'sarro Khan",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "For the Khan!",
+          "characteristics": {
+            "Description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability and melee weapons equipped by models in that unit have the [LANCE] ability."
+          }
+        },
+        {
+          "name": "Trophy Taker",
+          "characteristics": {
+            "Description": "Each time this model destroys an enemy Character model, you gain 1CP"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad\n■ Company Heroes"
+          }
+        },
+        {
+          "name": "Inspiring Commander",
+          "characteristics": {
+            "Description": "If you include this model in your army, until the end of the battle, non-Character models in Outrider Squad units from your army have an Objective Control characteristic of 3 while they are not Battle-shocked."
+          }
+        }
+      ]
+    }
+  }
+}

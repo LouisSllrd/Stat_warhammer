@@ -1,0 +1,1594 @@
+{
+  "Lucius the Eternal": {
+    "cost": {
+      "pts": "150",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lucius the Eternal",
+          "characteristics": {
+            "M": "8\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- **^^Flawless Blades^^**"
+          }
+        },
+        {
+          "name": "Duellist’s Hubris",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, if this model is not leading a unit, until the end of the phase, it has the Fights First ability."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "A Challenge Worthy of Skill",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a **^^Character, Monster^^** or **^^Walker^^** unit, you can re-roll the Hit roll and re-roll the Wound roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blade of the Laer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Precision"
+          }
+        },
+        {
+          "name": "Lash of Torment",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Fulgrim": {
+    "cost": {
+      "pts": "365",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Fulgrim",
+          "characteristics": {
+            "M": "16\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "16",
+            "LD": "5+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Daemonic Poisons",
+          "characteristics": {
+            "Description": "In your Shooting phase and the Fight phase, after this model has finished making its attacks, select one enemy unit hit by one or more of those attacks. Until the end of the battle, that enemy unit is poisoned. At the start of each player's Command phase, roll one D6 for each poisoned enemy unit on the battlefield: on a 4+, that enemy unit suffers D3 mortal wounds."
+          }
+        },
+        {
+          "name": "Daemon Prince of Slaanesh",
+          "characteristics": {
+            "Description": "At the start of your opponent's Command phase, select one of the abilities in the Daemon Prince of Slaanesh section. Until the start of your opponent's next Command phase, this model has that ability."
+          }
+        },
+        {
+          "name": "Damaged: 1-6 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Supreme Commander",
+          "characteristics": {
+            "Description": "If this model is in your army, it must be your **^^Warlord^^**."
+          }
+        },
+        {
+          "name": "Beguiling Form",
+          "characteristics": {
+            "Description": "Each time a model makes an attack that targets this unit, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Daemonic Speed",
+          "characteristics": {
+            "Description": "This model has the Fights First ability."
+          }
+        },
+        {
+          "name": "Enthralling Hypnosis (Aura)",
+          "characteristics": {
+            "Description": "While an enemy unit is within 6\" of this model, each time that unit is selected to Fall Back, it must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Malefic lash",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Serpentine tail",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        },
+        {
+          "name": "➤ Daemonic blades - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Daemonic blades - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Lord Exultant": {
+    "cost": {
+      "pts": "80",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lord Exultant",
+          "characteristics": {
+            "M": "7\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Perfectionists",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the **^^[LETHAL HITS]^^** ability."
+          }
+        },
+        {
+          "name": "Euphoric Strikes",
+          "characteristics": {
+            "Description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does so, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and improve the Armour Penetration characteristic of those weapons by 1."
+          }
+        },
+        {
+          "name": "Lord of the Host",
+          "characteristics": {
+            "Description": "If this model is attached to an **^^Emperor's Children Battleline^^** unit during the Declare Battle Formations step, this model has the Infiltrators and Scouts 6\" ability."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: **^^Infractors; Tormentors^^**"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Rapture lash",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        },
+        {
+          "name": "Phoenix power spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lance"
+          }
+        },
+        {
+          "name": "Master-crafted power sword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Precision"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Lord Kakophonist": {
+    "cost": {
+      "pts": "60",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lord Kakophonist",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: **^^Emperor's Children Terminator Squad; Noise Marines^^**"
+          }
+        },
+        {
+          "name": "Obsessive Annunciation",
+          "characteristics": {
+            "Description": "While this model is leading a unit, ranged weapons equipped by that unit have the [SUSTAINED HITS 1] ability."
+          }
+        },
+        {
+          "name": "Doom Siren",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model's unit has shot, select one enemy **^^Infantry^^** unit hit by one or more of those attacks and roll three D6: for each 4+, that enemy unit suffers 1 mortal wound. If an enemy suffers one or more mortal wounds as a result of this ability, it must take a Battle-shock test."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power sword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Sorcerer": {
+    "cost": {
+      "pts": "60",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Agonising Energies - witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        },
+        {
+          "name": "Agonising Energies - focused witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Devastating Wounds, Hazardous, Psychic"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: **^^Infractors; Noise Marines; Tormentors^^**"
+          }
+        },
+        {
+          "name": "Warped Interference (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a ranged attack targets that unit, models in it have the Benefit of Cover against that attack."
+          }
+        },
+        {
+          "name": "Wracking Agonies (Psychic)",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one INFANTRY unit hit by one or more of those attacks made with its Agonising Energies. Until the start of your next turn, that unit is wracked with agonies. While a unit is wracked with agonies, subtract 2\" from its Move characteristic and subtract 2 from charge rolls made for it."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sorcerer",
+          "characteristics": {
+            "M": "7\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Daemon Prince of Slaanesh": {
+    "cost": {
+      "pts": "195",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Daemon Prince of Slaanesh",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Lord of Excess",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly **^^Slaanesh Infantry^^**, this model has the Lone Operative ability."
+          }
+        },
+        {
+          "name": "Excessive Vigour (Aura)",
+          "characteristics": {
+            "Description": "While a friendly **^^Slaanesh^^** unit is within 6\" of this model, if that unit made a Charge move this turn, improve the Armour Penetration characteristic of melee weapons equipped by that unit by 1."
+          }
+        },
+        {
+          "name": "Ecstatic Death",
+          "characteristics": {
+            "Description": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. This model can fight after the attacking unit has finished making its attacks, and is then removed from play."
+          }
+        }
+      ]
+    }
+  },
+  "Daemon Prince of Slaanesh with Wings": {
+    "cost": {
+      "pts": "200",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Daemon Prince of Slaanesh with Wings",
+          "characteristics": {
+            "M": "14\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Daemonic Destruction",
+          "characteristics": {
+            "Description": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of this model and roll one D6 for each of this model's remaining wounds: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds)."
+          }
+        },
+        {
+          "name": "Stimulated by Pain",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
+          }
+        }
+      ]
+    }
+  },
+  "Obsessionist": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tormentor": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Tormentor w/ plasma gun": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma gun - standard",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Precision, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Plasma gun - supercharge",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Precision, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Tormentor w/ meltagun": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Meltagun",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Infractor": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Duelling sabre",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Flawless Blade": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Blissblade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Accursed weapon and combi-bolter": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Accursed weapon and combi-weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Power fist and combi-weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Chainfist and combi-bolter": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Heavy weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Reaper autocannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Power fist and combi-bolter": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Chainfist and combi-weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Paired accursed weapons": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Terminator Champion": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Chaos Spawn": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Hideous Mutations",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "D6+2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Land Raider": {
+    "cost": {
+      "pts": "240"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Land Raider",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Assault Ramp",
+          "characteristics": {
+            "Description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Chaos Land Raider",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 14 **^^Emperor's Children Infantry^^** models. Each **^^Terminator^^** and ^^**Flawless Blade^^** model takes up the space of 2 models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Soulshatter lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured tracks",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Disharmonist": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Power sword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Screamer pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Pistol"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Disharmonist",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Noise Marine w/ sonic blaster": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Noise Marines",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Noise Marine w/ blastmaster": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Blastmaster - varied frequency",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Ignores Cover"
+          }
+        },
+        {
+          "name": "➤ Blastmaster - single frequency",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Ignores Cover"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Noise Marines",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Heldrake": {
+    "cost": {
+      "pts": "195",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Airborne Predator",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal move, you can select one enemy unit that it moved over during that move and roll two D6, adding 1 to each result if that enemy unit can ^^FLY^^: for each 4+, that enemy unit suffers D3 mortal wounds."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Heldrake",
+          "characteristics": {
+            "M": "20\"+",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Heldrake claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-FLY 2+, Devastating Wounds"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Baleflamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Hades autocannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Maulerfiend": {
+    "cost": {
+      "pts": "130",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Maulerfiend",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Glutton for Punishment",
+          "characteristics": {
+            "Description": "Each time this model makes an attack, if it is below its Starting Strength, add 1 to the Hit roll. If this model is also Below Half-Strength, add 1 to the Wound roll as well."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Maulerfiend fists",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Lasher tendrils",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Magma cutter",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Rhino": {
+    "cost": {
+      "pts": "0",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Rhino",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Assault Vehicle",
+          "characteristics": {
+            "Description": "Units can disembark from this **^^Vehicle**^^ after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Chaos Rhino",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 **^^Emperor's Children Infantry^^**models (excluding ^^**Terminator**^^ and ^^**Flawless Blade**^^ models)."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured tracks",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Shalaxi Helbane": {
+    "cost": {
+      "pts": "380",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "No Prey Can Evade",
+          "characteristics": {
+            "Description": "You can re-roll Advance and Charge rolls made for this model."
+          }
+        },
+        {
+          "name": "Monarch of the Hunt",
+          "characteristics": {
+            "Description": "At the start of the first battle round, select one enemy unit to be this model's quarry. Each time this model makes a melee attack that targets its quarry, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model's quarry is destroyed, select one new enemy unit to be this model's quarry."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Shalaxi Helbane",
+          "characteristics": {
+            "M": "14\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "20",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Lash of Slaanesh",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "➤ Pavane of Slaanesh - witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        },
+        {
+          "name": "➤ Pavane of Slaanesh - focused witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Hazardous, Devastating Wounds, Psychic, Sustained Hits 3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Snapping claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Devastating Wounds, Extra Attacks"
+          }
+        },
+        {
+          "name": "Soulpiercer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+2",
+            "Keywords": "Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Keeper of Secrets": {
+    "cost": {
+      "pts": "280",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Daemon Lord of Slaanesh (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**Legions of Excess**^^ unit is within 6\" of this model, improve the Armour Penetration of melee weapons in that unit by 1."
+          }
+        },
+        {
+          "name": "Mesmerising Form",
+          "characteristics": {
+            "Description": "Each time an attack targets this model, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Shining aegis",
+          "characteristics": {
+            "Description": "The bearer has a Save characteristic of 3+."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Keeper of Secrets",
+          "characteristics": {
+            "M": "14\"",
+            "T": "10",
+            "SV": "5+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Phantasmagoria - witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        },
+        {
+          "name": "➤ Phantasmagoria - focused witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "9",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Hazardous, Psychic"
+          }
+        },
+        {
+          "name": "Living whip",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Witstealer sword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Snapping claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Devastating Wounds, Extra Attacks"
+          }
+        },
+        {
+          "name": "Ritual knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Daemonette": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Slashing claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Alluress": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Slashing claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Fiends": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Fiends",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "7+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Barbed tail and dissecting claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Blissbringer": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Barbed tail and dissecting claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Fiends",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "7+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Seeker": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Seeker",
+          "characteristics": {
+            "M": "14\"",
+            "T": "4",
+            "SV": "7+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Lashing tongues",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Extra Attacks, Lethal Hits"
+          }
+        },
+        {
+          "name": "Slashing claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Heartseeker": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Lashing tongues",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Extra Attacks, Lethal Hits"
+          }
+        },
+        {
+          "name": "Slashing claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  }
+}

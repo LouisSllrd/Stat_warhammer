@@ -1,0 +1,2084 @@
+{
+  "Angron": {
+    "cost": {
+      "pts": "385",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Angron",
+          "characteristics": {
+            "M": "14\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "16",
+            "LD": "5+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Reborn in Blood",
+          "characteristics": {
+            "Description": "At the start of the battle round, when you make a Blessings of Khorne roll, if this model is destroyed, you can use a triple 6 from that roll to use this ability instead of activating any Blessings of Khorne at the start of that battle round. If you do, this model is no longer destroyed and in the Reinforcements step of your next Movement phase, it is set up anywhere on the battlefield using its Deep Strike ability, with 8 wounds remaining."
+          }
+        },
+        {
+          "name": "Wrathful Presence",
+          "characteristics": {
+            "Description": "At the start of the battle round, select one Wrathful Presence ability. Until the start of the next battle round, this model has that ability."
+          }
+        },
+        {
+          "name": "Damaged: 1-6 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Wrathful Presence": [
+        {
+          "name": "The Blood God's Favour",
+          "characteristics": {
+            "Effect": "Each time you make a Blessings of Khorne roll, if this model is on the battlefield, you can re-roll up to 6 of the D6 rolled."
+          }
+        },
+        {
+          "name": "Driven by Ultimate Rage (Aura)",
+          "characteristics": {
+            "Effect": "While a friendly ^^**World Eaters^^** unit is within 6\" of this model, you can ignore any or all modifiers to that unit's Move characteristic and to Advance and Charge rolls made for it, and each time a model in that unit makes a melee attack, you can ignore any or all modifiers to that attack's Weapon Skill characteristic and/or any or all modifiers to the Hit roll."
+          }
+        },
+        {
+          "name": "Overwhelming Wrath (Aura)",
+          "characteristics": {
+            "Effect": "Each time an enemy unit within 6\" of this model is selected to Fall Back, that unit must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Samni’arius and Spinegrinder - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6+2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "➤ Samni’arius and Spinegrinder - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "16",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Khârn the Betrayer": {
+    "cost": {
+      "pts": "85",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Khârn the Betrayer",
+          "characteristics": {
+            "M": "8\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Legendary Killer",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes a melee attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1."
+          }
+        },
+        {
+          "name": "The Betrayer",
+          "characteristics": {
+            "Description": "At the end of your Charge phase, if this model is leading a unit and that unit is not within Engagement Range of one or more enemy units, you must take a Leadership test for this model. If that test is failed, one Bodyguard model of your choice in that unit is destroyed."
+          }
+        },
+        {
+          "name": "Berserker Frenzy",
+          "characteristics": {
+            "Description": "The first time this model is destroyed, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: ^^**Khorne Berserkers^^**"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Gorechild",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Lord Invocatus": {
+    "cost": {
+      "pts": "110",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: ^^**Eightbound^^**, ^^**Exalted Eightbound^^**, ^^**Khorne Berserkers^^**"
+          }
+        },
+        {
+          "name": "Fire Riders",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Deep Strike ability and each time a model in that unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally through models and terrain features. When making a Normal, Advance or Fall Back move, models in that unit can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them and any Desperate Escape test is automatically passed."
+          }
+        },
+        {
+          "name": "Bloody Stampede",
+          "characteristics": {
+            "Description": "Each time this model's unit ends a Charge move, select one enemy unit within Engagement Range of this model, then roll one D6: on a 2-3, that enemy unit suffers 1 mortal wound; on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Lord Invocatus",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Coward's Bane",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Bladed horn",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Extra Attacks, Lance"
+          }
+        }
+      ]
+    }
+  },
+  "Daemon Prince of Khorne": {
+    "cost": {
+      "pts": "200",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Lord of Murder",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly ^^**World Eaters Infantry**^^ units, this model has the Lone Operative ability."
+          }
+        },
+        {
+          "name": "Devastating Assault",
+          "characteristics": {
+            "Description": "Each time this model makes a Charge move, until the end of the turn, its hellforged weapons have the [DEVASTATING WOUNDS] ability."
+          }
+        },
+        {
+          "name": "Direct the Slaughter",
+          "characteristics": {
+            "Description": "Once per battle round, one model from your army with this ability can use it when a friendly ^^**World Eaters^^** unit within 12\" of this model is targeted with a Stratagem. If it does, reduce the CP cost of that Stratagem by 1CP."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Daemon Prince of Khorne",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Infernal cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Hellforged weapons - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Hellforged weapons - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "16",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Daemon Prince of Khorne with wings": {
+    "cost": {
+      "pts": "180",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Bloodied Terror",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, each enemy unit within Engagement Range of this model must take a Battle-shock test, subtracting 1 if that enemy unit is Below Half-strength."
+          }
+        },
+        {
+          "name": "Swooping Predator",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal or Advance move, you can select one enemy unit that it moved over during that move and roll 6 D6: for each 4+, that enemy unit suffers 1 mortal wound."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Daemon Prince of Khorne with wings",
+          "characteristics": {
+            "M": "14\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Infernal cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Hellforged weapons - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Hellforged weapons - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "16",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Lord on Juggernaut": {
+    "cost": {
+      "pts": "90",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Aggressive Advance",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have a Move characteristic of 10\" and each time a model in that unit makes a Normal, Advance, Fall Back or Charge move, it can move horizontally though terrain features."
+          }
+        },
+        {
+          "name": "Crush All Who Stand Before Us",
+          "characteristics": {
+            "Description": "Each time this model's unit is selected to fight, you can use this ability. When determining which models in this unit are eligible to fight, any models in it that are within 3\" of one or more enemy models are eligible to fight. When resolving those attacks, such models can target one of those enemy units that is within 3\" of them and within Engagement Range of their unit."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: ^^**Eightbound^^**, ^^**Exalted Eightbound^^**, ^^**Khorne Berserkers^^**"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Lord on Juggernaut",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "7",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Bladed horn",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Extra Attacks, Lance"
+          }
+        },
+        {
+          "name": "Exalted chainblade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Master of Executions": {
+    "cost": {
+      "pts": "60",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Master of Executions",
+          "characteristics": {
+            "M": "8\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: ^^**Khorne Berserkers^^**"
+          }
+        },
+        {
+          "name": "A Worthy Skull",
+          "characteristics": {
+            "Description": "Each time this model makes a melee attack that targets a ^^**Character^^** unit, you can re-roll the Hit roll and you can re-roll the Wound roll. Each time this model's unit destroys a ^^**Character^^** model, you gain 1CP."
+          }
+        },
+        {
+          "name": "Forwards, For Blood!",
+          "characteristics": {
+            "Description": "While this model is leading a unit, you can re-roll Advance rolls made for that unit and each time that unit makes a Blood Surge move, you can re-roll the D6 used to determine how far models in that unit move."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Axe of dismemberment",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Khorne Berzerker Champion": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Khorne Berzerker",
+          "characteristics": {
+            "M": "8\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Khorne Berzerker": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Khorne Berzerker w/ eviscerator and bolt pistol": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Khorne Berzerker w/ eviscerator and plasma pistol": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Khorne Berzerker w/ chainblade and plasma pistol": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Terminator Champion": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Combi-bolter, accursed weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Combi-bolter, chainfist": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Combi-bolter, power fist": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Combi-weapon, accursed weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Combi-weapon, chainfist": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Combi-weapon, power fist": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Paired accursed weapons": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Heavy weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Reaper autocannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Rapid Fire 2, Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Jakhal Pack Leader": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Jakhal w/ mauler chainblade": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Dishonoured w/ skullsmasher and mangler": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Skullsmasher and mangler",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Dishonoured w/ paired manglers": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Paired manglers",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Eightbound": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Chainblades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Eightbound Champion": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Chainblades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Exalted Eightbound": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Exalted Eightbound Champion": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Chaos Land Raider": {
+    "cost": {
+      "pts": "240",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Land Raider",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Assault Ramp",
+          "characteristics": {
+            "Description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Chaos Land Raider",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 14 ^^**World Eaters Infantry^^** models. Each ^^**Possessed^^** and ^^**Terminator^^** model takes up the space of 2 models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Soulshatter lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured tracks",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "9",
+            "WS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Predator Annihilator": {
+    "cost": {
+      "pts": "145",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Predator Annihilator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Blood-hungry Annihilator",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets the closest eligible ^^**Monster^^** or ^^**Vehicle^^** target within 18\", you can re-roll the Wound roll and you can re-roll the Damage roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Predator twin lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Rapid Fire 2, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Predator Destructor": {
+    "cost": {
+      "pts": "145",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Predator Destructor",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Punishing Suppression",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks (excluding ^^**Monsters^^** and ^^**Vehicles^^*). Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Predator autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Rapid Fire 6"
+          }
+        }
+      ]
+    }
+  },
+  "Defiler": {
+    "cost": {
+      "pts": "180",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Defiler",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Scuttling Walker",
+          "characteristics": {
+            "Description": "Each time this model makes a Normal, Advance or Fall Back move, it can move through friendly ^^**Monster^^** and ^^**Vehicle^^** models and sections of terrain features that are 4\" or less in height."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Unleash Wrath",
+          "characteristics": {
+            "Description": "At the end of your opponent's Movement phase, you can select one enemy unit that was set up on the battlefield within 12\" of this model; this model can then either:\n- Shoot at that unit, but only if it is an eligible target.\n- Declare a charge against that unit (note that even if this charge is successful, this model does not receive any Charge bonus this turn)."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Defiler cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Blast, Rapid Fire 3"
+          }
+        },
+        {
+          "name": "Reaper autocannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Rapid Fire 4, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Twin heavy flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Defiler claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "16",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Defiler scourge",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Forgefiend": {
+    "cost": {
+      "pts": "150",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Forgefiend",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Furious Onslaught",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets the closest eligible target within 18\", you can re-roll the Hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Forgefiend claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Forgefiend jaws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Helbrute": {
+    "cost": {
+      "pts": "120",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Helbrute",
+          "characteristics": {
+            "M": "9\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Frenzy",
+          "characteristics": {
+            "Description": "In your opponent's Shooting phase, and in the Fight phase, each time an enemy unit targets this model, after that unit has finished making its attacks, this model can either shoot or fight, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target)."
+          }
+        },
+        {
+          "name": "Devoted to Destruction",
+          "characteristics": {
+            "Description": "If this model is equipped with 2 melee weapons in addition to its close combat weapon, add 2 to the Attacks characteristic of those two weapons."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Twin autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Rapid Fire 2, Twin-linked"
+          }
+        },
+        {
+          "name": "Plasma cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Hazardous, Rapid Fire D3"
+          }
+        },
+        {
+          "name": "➤ Missile launcher - frag",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Rapid Fire 3"
+          }
+        },
+        {
+          "name": "➤ Missile launcher - krak",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Helbrute hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power scourge",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Heldrake": {
+    "cost": {
+      "pts": "200",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Airborne Predator",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a unit that can ^^**Fly^^**, add 1 to the Hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Heldrake",
+          "characteristics": {
+            "M": "20\"+",
+            "T": "9",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Heldrake claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-FLY 2+, Devastating Wounds"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Baleflamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Maulerfiend": {
+    "cost": {
+      "pts": "150",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Maulerfiend",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "The Scent of Blood",
+          "characteristics": {
+            "Description": "Each time this model declares a charge that targets one or more units below Starting Strength, add 1 to the Charge roll. If one or more of the targets of that charge are Below Half-strength, add 2 to the Charge roll instead."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Savage Exaltation",
+          "characteristics": {
+            "Description": "Each time this model makes a melee attack that targets an enemy unit that is below its Starting Strength, add 1 to the Hit roll and, if that attack targets an enemy unit that is Below Half-Strength, add 1 to the Wound roll as well."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Maulerfiend fists",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Lasher tendrils",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Magma cutter",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Rhino": {
+    "cost": {
+      "pts": "85",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Rhino",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Meet Any Challenge",
+          "characteristics": {
+            "Description": "In your opponent's Movement phase, each time an enemy unit is set up or ends a Normal, Advance or Fall Back move within 9\" of this model, any units embarked within it can disembark."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Chaos Rhino",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 ^^**World Eaters Infantry**^^ models. It cannot transport ^^**Possessed^^** or ^^**Terminator^^** models."
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Spawn": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Hideous Mutations",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "D6+4",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Khorne Lord of Skulls": {
+    "cost": {
+      "pts": "505",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Khorne Lord of Skulls",
+          "characteristics": {
+            "M": "12\"",
+            "T": "13",
+            "SV": "3+",
+            "W": "24",
+            "LD": "6+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Idol of Blessed Blood",
+          "characteristics": {
+            "Description": "At the start of the battle round, if this unit is on the battlefield, when you make a Blessings of Khorne roll, roll one additional D6."
+          }
+        },
+        {
+          "name": "Damaged: 1-8 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-8 wounds remaining, subtract 4 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Great cleaver of Khorne - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "8",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Great cleaver of Khorne - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "18",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gorestorm cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast, Rapid Fire 3"
+          }
+        },
+        {
+          "name": "Daemongore cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "14",
+            "AP": "-4",
+            "D": "D6+2",
+            "Keywords": "Blast, Rapid Fire 3"
+          }
+        },
+        {
+          "name": "Ichor cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2D6",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Rapid Fire 4"
+          }
+        },
+        {
+          "name": "Hades gatling cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "12",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Rapid Fire 6, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Skullhurler",
+          "characteristics": {
+            "Range": "60\"",
+            "A": "2D6",
+            "BS": "4+",
+            "S": "14",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Rapid Fire 3"
+          }
+        }
+      ]
+    }
+  },
+  "Hell Talon [Legends]": {
+    "cost": {
+      "pts": "140"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Bomb Rack",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal move, you can select one enemy unit it moved across during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Hell Talon",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hellblade [Legends]": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hellblade",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Interceptor",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Jakhal": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Blood Herald": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Goremonger w/ blood harpoon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Blood harpoon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault, Sustained Hits D3"
+          }
+        }
+      ]
+    }
+  },
+  "Goremonger w/ 2 pistols": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Goremonger w/ chainblade": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Slaughterbound": {
+    "cost": {
+      "pts": "85",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Slaughterbound",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Rage Eternal",
+          "characteristics": {
+            "Description": "While this model is leading a unit, in your Command phase, you can return one destroyed Bodyguard model to that unit."
+          }
+        },
+        {
+          "name": "Possessed Lord",
+          "characteristics": {
+            "Description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [Devastating Wounds] ability."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: ^^**Eightbound^^**, ^^**Exalted Eightbound^^**"
+          }
+        },
+        {
+          "name": "Lord of the Eightbound",
+          "characteristics": {
+            "Description": "If this model is attached to a ^^**World Eaters Possessed^^** unit during the Declare Battle Formations step, this model has the Deep Strike and Scouts 6\" abilities."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Lacerator and daemonic claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skarbrand": {
+    "cost": {
+      "pts": "305",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skarbrand",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "20",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Rage Embodied (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^Blood Legions^^ unit is within 6\" of this model, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit."
+          }
+        },
+        {
+          "name": "Murderlust",
+          "characteristics": {
+            "Description": "This unit is eligible to declare a charge in a turn in which it Advanced."
+          }
+        },
+        {
+          "name": "Damaged: 1-7 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, add 2 to the Attacks characteristic of this model’s Slaughter and Carnage."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bellow of endless fury",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "8",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Slaughter and Carnage - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "16",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Slaughter and Carnage - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "16",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Bloodthirster": {
+    "cost": {
+      "pts": "305",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Daemon Lord of Khorne (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^Blood Legions^^ unit is within 6\" of this model, each time a model in that unit makes a melee attack, add 1 to the Hit roll."
+          }
+        },
+        {
+          "name": "Relentless Carnage",
+          "characteristics": {
+            "Description": "At the end of the Fight phase, you can select one enemy unit within Engagement Range of this model and roll eight D6: for each 4+, that enemy unit suffers 1 mortal wound."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Damaged: 1-6 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Bloodthirster",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hellfire breath",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Bloodflail",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "16",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Lash of Khorne",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Great axe of Khorne - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Great axe of Khorne - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "14",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Bloodletter": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Bloodreaper": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Bloodcrusher": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Bloodhunter": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Flesh Hound": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Gore Hound": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Burning maw",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  }
+}

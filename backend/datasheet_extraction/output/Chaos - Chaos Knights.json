@@ -1,0 +1,1537 @@
+{
+  "Torment": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Torment",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "6+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Hideous mutations",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "D6+2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Mutant": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Mutant",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "6+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blasphemous appendages",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Cultist Champion": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Cultist w/ autopistol and brutal assault weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Cult Demagogue": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cult Demagogue",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Commune stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "D3",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Mindwitch": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Mindwitch",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Warp Curse - witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Psychic"
+          }
+        },
+        {
+          "name": "➤ Warp Curse - focused witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Hazardous, Psychic, Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Iconarch": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Iconarch",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Blessed Blades": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Blessed Blade",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Commune blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Traitor Sergeant": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Corrupted pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Guardsman w/ lasgun": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Lasgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Guardsman w/ flamer": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Guardsman w/ plasma gun": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma gun - standard",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Plasma gun - supercharge",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Guardsman w/ meltagun": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Meltagun",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Guardsman w/ Cultist sniper rifle": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Cultist sniper rifle",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Guardsman w/ Cultist grenade launcher": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Cultist grenade launcher - frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Cultist grenade launcher - krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Fellgor Champion": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol- supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Beastman": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Beastman w/ great weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Great weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "5+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Beastman w/ corrupted stave": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Corrupted stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Corrupted stave",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        },
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Traitor Enforcer": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Traitor Enforcer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This unit's TRAITOR ENFORCER model has a 5+ invulnerable save"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Traitor Ogryn": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Traitor Ogryn",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "5+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Ogryn weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Cultist Firebrand": {
+    "cost": {
+      "pts": "45"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cultist Firebrand",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fiery Faith",
+          "characteristics": {
+            "Description": "While this model is leading a unit, you can re-roll Leadership tests taken for that unit."
+          }
+        },
+        {
+          "name": "Cursed Flames",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy INFANTRY unit hit by one or more of those attacks. That unit must make a Battle-shock test."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ ACCURSED CULTISTS\n■ CULTIST MOB"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Balefire pike",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Cultist w/ autogun and close combat weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Cultist w/ flamer": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Cultist w/ cultist grenade launcher": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Cultist grenade launcher - frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Cultist grenade launcher - krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Cultist w/ heavy stubber": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "5+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Heavy, Rapid Fire 3"
+          }
+        }
+      ]
+    }
+  },
+  "Renegade Enforcer [Legends]": {
+    "cost": {
+      "pts": "65"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Renegade Enforcer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Brutal Example",
+          "characteristics": {
+            "Description": "While this model is leading a unit, you can target that unit with the Insane Bravery Stratagem for 0CP, and can do so even if another unit from your army has already been targeted with that Stratagem this phase. Each time you use this ability, one Bodyguard model in that unit is destroyed."
+          }
+        },
+        {
+          "name": "Enforcer",
+          "characteristics": {
+            "Description": "This model's unit is eligible to declare a charge in a turn in which it Fell Back."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ TRAITOR GUARDSMEN SQUAD\n■ RENEGADE HEAVY WEAPONS SQUAD"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Enforcer melee weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Enforcer pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Autogun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Lasgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Shotgun",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Heavy Weapons Team": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Renegade firearm",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "5+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Heavy, Rapid Fire 3"
+          }
+        },
+        {
+          "name": "Heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "5+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Heavy, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "5+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Heavy"
+          }
+        },
+        {
+          "name": "Lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "5+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        },
+        {
+          "name": "➤ Missile launcher - frag",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "5+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy"
+          }
+        },
+        {
+          "name": "➤ Missile launcher - krak",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "5+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Mortar",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "5+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy, Indirect Fire"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ogryn Pack Master": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Mauler goad and ripper claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Ogryn Pack Master",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "5+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Mauler Hound": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Befouled fangs and claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Chaos Mauler Hound",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "6+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Brute w/ Ogryn weapon": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Ogryn weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Brute w/ power drill": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Ogryn power drill",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Renegade Plague Ogryn": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Ogryn plague claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Rogue Psyker [Legends]": {
+    "cost": {
+      "pts": "60"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ ACCURSED CULTISTS\n■ CULTIST MOB\n■ NEGAVOLT CULTISTS"
+          }
+        },
+        {
+          "name": "Cursed Wardings (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks."
+          }
+        },
+        {
+          "name": "Psychic Barrier (Psychic)",
+          "characteristics": {
+            "Description": "At the start of your opponent’s Shooting phase, you can roll one D6: on a 1, this PSYKER’s unit suffers D3 mortal wounds; on a 2+, until the end of the phase, models in this PSYKER’s unit have a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Rogue Psyker",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Laspistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Psychic Strike - focused witchfire",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Devastating Wounds, Hazardous, Psychic"
+          }
+        },
+        {
+          "name": "➤ Psychic Strike - witchfire",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Blast, Devastating Wounds, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chaos stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Gellerpox Mutant": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Brutal weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Gellerpox Mutant",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "6+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Nightmare Hulk w/ belly flamer": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Hideous mutations",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Belly flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Nightmare Hulk": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Hideous mutations",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Nightmare Hulk",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "6+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Mutoid Vermin": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Diseased claws and fangs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Negavolt Cultist": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Electro-goads",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  }
+}
