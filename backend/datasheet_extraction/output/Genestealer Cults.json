@@ -1,0 +1,1619 @@
+{
+  "Aberrant Hypermorph": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Aberrant Hypermorph",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Aberrant": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Aberrant",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Abominant": {
+    "cost": {
+      "pts": "95",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Abominant",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "5+",
+            "W": "5",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Feel No Pain 5+",
+          "characteristics": {
+            "Description": "This model has a 5+ Feel No Pain"
+          }
+        },
+        {
+          "name": "The Chosen One",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+ do not remove the destroyed model from play, it can fight after the attacking model's unit has finished making it's attacks and is then removed from play."
+          }
+        },
+        {
+          "name": "Regenerating Gene-mass",
+          "characteristics": {
+            "Description": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- ABERRANTS"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power sledgehammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Achilles Ridgerunner": {
+    "cost": {
+      "pts": "85",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Achilles Ridge Runner",
+          "characteristics": {
+            "M": "12\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "8",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Flare Launcher",
+          "characteristics": {
+            "Description": "The bearer’s unit has the SMOKE keyword and you can target it with the Smokescreen Stratagem for 0CP."
+          }
+        },
+        {
+          "name": "Spotter",
+          "characteristics": {
+            "Description": "The bearer’s ranged weapons have a Ballistic Skill characteristic of 3+."
+          }
+        },
+        {
+          "name": "Survey Augur",
+          "characteristics": {
+            "Description": "Each time the bearer’s unit has shot, select one enemy unit that was hit by one or more attacks made by the bearer this phase. Until the end of the phase, each time a friendly GENESTEALER CULTS model makes an attack against that unit, that attack has the [IGNORES COVER] ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Achilles missile launcher",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Heavy mortar",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        },
+        {
+          "name": "Twin heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Twin-linked, Rapid Fire 3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Acolyte Hybrid w/ Hand Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Acolyte Hybrid w/ Cult Icon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Acolyte Hybrid w/ Demolition Charge, and Cult Claws and Knife": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Demolition charge",
+          "characteristics": {
+            "Range": "8\"",
+            "A": "D6",
+            "BS": "5+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Assault, Blast, Hazardous, One Shot"
+          }
+        }
+      ]
+    }
+  },
+  "Acolyte Leader": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Leader's Bio-weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Acolyte Iconward": {
+    "cost": {
+      "pts": "50",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS"
+          }
+        },
+        {
+          "name": "Nexus of Devotion",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability. If that unit has the HYBRID METAMORPHS keyword, models in that unit have the Feel No Pain 4+ ability instead."
+          }
+        },
+        {
+          "name": "Summon the Cult",
+          "characteristics": {
+            "Description": "Once per battle, when you have to remove a Cult Ambush marker because your opponent has moved too close to it, if one or more models from your army with this ability are on the battlefield, you can use this ability. If you do, instead of removing that marker, you can place it anywhere on the battlefield that is within 12\" of a model from your army with this ability and more than 9\" horizontally away from all enemy units (if this is not possible, this ability is not considered to have been used and that marker is removed as normal)."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Acolyte Iconward",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Cult claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Atalan Jackal w/ Grenade launcher": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Atalan Jackal",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Atalan Jackal": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Atalan Jackal",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Atalan Jackal w/ Atalan power weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Atalan Jackal",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Atalan Jackal w/ Grenade launcher & power weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Atalan Jackal",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Atalan Wolfquad": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Atalan Wolfquad",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Mining laser",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Atalan incinerator",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Biophagus": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- ABERRANTS\n\n- ACOLYTE HYBRIDS WITH AUTOPISTOLS\n- ACOLYTE HYBRIDS WITH HANDFLAMERS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS\n\nYou can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if a PRIMUS, MAGUS, or ACOLYTE ICONWARD model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Twisted Science",
+          "characteristics": {
+            "Description": "While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability."
+          }
+        },
+        {
+          "name": "Biological Warfare",
+          "characteristics": {
+            "Description": "Once per battle, when this model’s unit is selected to fight, this model can use this ability. If it does, until the end of the phase, improve the Attacks and Damage characteristics of its injector goad by 3."
+          }
+        },
+        {
+          "name": "Alchemicus Familiar",
+          "characteristics": {
+            "Description": "Once per battle, when the bearer’s unit is selected to fight, the bearer can use its alchemicus familiar. If it does, until the end of the phase, each time a model in the bearer's unit makes an attack that targets an INFANTRY unit, add 1 to the Wound roll"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Biophagus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Injector goad",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "3+",
+            "S": "2",
+            "AP": "0",
+            "D": "D3",
+            "Keywords": "Anti-infantry 2+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Chemical vials",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "1",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Infantry 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Clamavus": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS\nYou can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if a PRIMUS, MAGUS, or ACOLYTE ICONWARD model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Voice of New Truths",
+          "characteristics": {
+            "Description": "In your Command phase, one model from your army with this ability can use it, if it does, select one enemy unit with 18\" of it, that enemy unit must take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Scrambler Array",
+          "characteristics": {
+            "Description": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this model."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Clamavus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Goliath Rockgrinder": {
+    "cost": {
+      "pts": "120"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Goliath Rockgrinder",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Grinding Line-breaker",
+          "characteristics": {
+            "Description": "Each time an enemy unit (excluding MONSTER and VEHICLES) that is within Engagement Range of this model Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 6 GENESTEALER CULTS INFANTRY models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Clearance incinerator",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Heavy seismic cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Drilldozer blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Goliath Truck": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 GENESTEALER CULTS INFANTRY models."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Goliath Truck",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fire Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this TRANSPORT this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Goliath wheels",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hybrid Metamorph w/ Autopistol": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Hybrid Metamorph w/ Cult Icon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Hybrid Metamorph w/ Hand Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Metamorph Leader": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hybrid Leader",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Leader's Bio-weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Jackal Alphus": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Jackal Alphus",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "5",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Priority Target",
+          "characteristics": {
+            "Description": "Each time this model makes an attack with its cult sniper rifle that targets an enemy unit, if it scores a hit, until the end of the phase, each time another GENESTEALER CULTS model from your army makes a ranged attack that targets that enemy unit, re-roll a Hit roll of 1."
+          }
+        },
+        {
+          "name": "Master Outrider",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model’s unit has shot, if it is not within Engagement Range of any enemy units, that unit can make a Normal move of up to 6\" as if it were your Movement phase. If it does, until the end of the turn, that unit is not eligible to declare a charge."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- ATALAN JACKALS"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Cult sniper rifle",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Kelermorph": {
+    "cost": {
+      "pts": "60"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Hypersensory Abilities",
+          "characteristics": {
+            "Description": "Once per turn, in your opponent's Movement phase, when an enemy unit ends a Normal, Advance, or Fall Back move within 9\" of this model, if this unit is not within Engagement Range of one or more enemy units, it can shoot at that unit as if it were your Shooting phase, and then make a Normal move of up to D6\" (it cannot embark within a TRANSPORT as part of this move)"
+          }
+        },
+        {
+          "name": "Heroic Fusillade",
+          "characteristics": {
+            "Description": "Once per turn, after one model from your army with this ability has shot, you can select one INFANTRY unit hit by one or more of those attacks. That unit must take a Battle-shock test."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Kelermorph",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Liberator autostubs",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Locus": {
+    "cost": {
+      "pts": "45"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Locus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sudden Assault",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Fights First ability"
+          }
+        },
+        {
+          "name": "Bodyguard",
+          "characteristics": {
+            "Description": "While this model is leading a unit, other Character models attached to that unit have the Feel No Pain 4+ ability"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS\nYou can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if a PRIMUS, MAGUS, or ACOLYTE ICONWARD model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Locus blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Magus": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Psychic Familiar",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any of your opponent’s Shooting phases, this model can use its psychic familiar. If it does, until the end of the phase, add 6\" to the range of its Mind Control ability."
+          }
+        },
+        {
+          "name": "Mind Control (Psychic)",
+          "characteristics": {
+            "Description": "At the start of your opponent’s Shooting phase, one PSYKER model from your army with this ability can use it. If used, select one enemy unit within 18\" of and visible to that PSYKER model and roll one D6: on a 1, that PSYKER model suffers D3 mortal wounds; on a 2-5, until the end of the phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll; on a 6, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll and subtract 1 from the Wound Roll."
+          }
+        },
+        {
+          "name": "Spiritual Leader",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, you can select one friendly GENESTELERS CULTS unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Magus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Magus stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Neophyte Hybrid w/ Hybrid Firearm": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neophyte Hybrid",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Neophyte Hybrid w/ Hybrid Firearm & Cult Icon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neophyte Hybrid",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Cult Icon",
+          "characteristics": {
+            "Description": "In your Command phase, you can return up to 3 destroyed models to the bearer’s unit. If the bearer’s unit is within range of an objective marker you control, you can return up to D3+3 destroyed models to that unit instead. This ability cannot be used to return destroyed CHARACTER models in Attached units and any [ONE SHOT] weapons equipped with by returned models that were shot before they were destroyed are still considered to have been shot."
+          }
+        }
+      ]
+    }
+  },
+  "Neophyte Hybrid w/ Heavy Weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neophyte Hybrid",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Mining Laser",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "5+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        },
+        {
+          "name": "Seismic Cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "5+",
+            "S": "6",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Heavy, Rapid Fire 2"
+          }
+        }
+      ]
+    }
+  },
+  "Neophyte Hybrid w/ Special Weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neophyte Hybrid",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Webber",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Neophyte Leader": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neophyte Hybrid",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Nexos": {
+    "cost": {
+      "pts": "60"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Nexos",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Battlefield Analysis",
+          "characteristics": {
+            "Description": "Once per battle round, one model from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+          }
+        },
+        {
+          "name": "Cult Infiltration",
+          "characteristics": {
+            "Description": "At the start of each player’s Command phase, if this model is on the battlefield, you can select one of your Cult Ambush markers that is on the battlefield and has not been moved this turn and move it up to 6\""
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS\nYou can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if a PRIMUS, MAGUS, or ACOLYTE ICONWARD model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        }
+      ]
+    }
+  },
+  "Patriarch": {
+    "cost": {
+      "pts": "75",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- PURESTRAIN GENESTEALERS"
+          }
+        },
+        {
+          "name": "Might From Beyond",
+          "characteristics": {
+            "Description": "While this model is leading a unit, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+          }
+        },
+        {
+          "name": "Cosmic Horror (Psychic)",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, each enemy unit within 6\" of this model must take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Psychic Familiar",
+          "characteristics": {
+            "Description": "Once per battle, at the start of the Fight phase, this model can use its psychic familiar. If it does, until the end of the phase, add 6\" to the range of its Cosmic Horror ability."
+          }
+        },
+        {
+          "name": "Supreme Commander",
+          "characteristics": {
+            "Description": "- You cannot include more than one **^^Patriarch^^** model in your army.\n- If this model is in your army, it must be your **^^Warlord^^**."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Patriarch",
+          "characteristics": {
+            "M": "8\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Patriarch's claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Primus": {
+    "cost": {
+      "pts": "80",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Primus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Cult Demagogue",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+          }
+        },
+        {
+          "name": "Decoys and Misdirection",
+          "characteristics": {
+            "Description": "If your army includes one or more models with this ability, after both players have deployed their armies, select up to three GENESTEALER CULTS units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Toxin injector claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "2+",
+            "S": "2",
+            "AP": "0",
+            "D": "D3",
+            "Keywords": "Anti-infantry 2+, Extra Attacks"
+          }
+        },
+        {
+          "name": "Cult bonesword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Scoped needle pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "1",
+            "AP": "0",
+            "D": "D3",
+            "Keywords": "Anti-infantry 2+, Ignores Cover, Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Purestrain Genestealer": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Purestrain Genestealer",
+          "characteristics": {
+            "M": "8\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Cult claws and talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Reductus Saboteur": {
+    "cost": {
+      "pts": "65"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Reductus Saboteur",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Primed and Ready",
+          "characteristics": {
+            "Description": "In your Shooting phase, you can select one model from your army with this ability as the target of the Grenade Stratagem for 0CP, provided that model has not already been the target of that Stratagem this phase."
+          }
+        },
+        {
+          "name": "Planted Explosives",
+          "characteristics": {
+            "Description": "Once per battle, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this model, this model can use its Reductus mine. If it does, roll one D6: on a 2+, that enemy unit suffers D3+3 mortal wounds. Only one model from your army with this ability can use it in the same battle round."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Demolition charges",
+          "characteristics": {
+            "Range": "8\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Assault, Blast, One Shot"
+          }
+        },
+        {
+          "name": "Remote explosives",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Sanctus": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sanctus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Creeping Shadow",
+          "characteristics": {
+            "Description": "If this model is equipped with a cult sniper rifle, once per turn when an enemy unit ends a Normal, Advance, or Fall Back move within 9\" of this model, if this model is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\""
+          }
+        },
+        {
+          "name": "Psychic Spoor",
+          "characteristics": {
+            "Description": "At the start of the first battle round, select one enemy unit to be this model’s prey. Each time this model makes an attack that targets its prey, you can re-roll the Hit roll and you can re-roll the Wound roll."
+          }
+        },
+        {
+          "name": "Cloaked Assassin",
+          "characteristics": {
+            "Description": "If this model is equipped with a Sanctus Bio-dagger, enemy units cannot use the Fire Overwatch Stratagem to shoot at this model."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Sanctus bio-dagger",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "3",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-infantry 3+, Precision"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Cult sniper rifle",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Psyker 2+, Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Tectonic Fragdrill [Legends]": {
+    "cost": {
+      "pts": "125"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tectonic Fragdrill",
+          "characteristics": {
+            "M": "-",
+            "T": "11",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Tectonic Fragdrill",
+          "characteristics": {
+            "Description": "Friendly GENESTEALER CULT INFANTRY models can be set up or end any type of move on top of the floor sections of this FORTIFICATION."
+          }
+        },
+        {
+          "name": "Underground Egress",
+          "characteristics": {
+            "Description": "Each time one of your Cult Ambush markers is removed as the result of an enemy unit ending any kind of move within 9\" of it, you can instead move that marker so that it is wholly within 9\" of this FORTIFICATION and more than 9\" horizontally away from all enemy units (if this is not possible, that marker is removed as normal)."
+          }
+        },
+        {
+          "name": "Manufactorum Cover",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack."
+          }
+        },
+        {
+          "name": "Fortification",
+          "characteristics": {
+            "Description": "While an enemy unit is only within Engagement Range of one or more FORTIFICATION from your army:\n■ That unit can still be selected as the target of ranged attacks, but each time such an attack is made, unless it is made with a Pistol, subtract 1 from the Hit roll.\n■ Models in that unit do not need to take Desperate Escape tests due to Falling Back while Battle-shocked, except for those that will move over enemy models when doing so."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Fragdrill",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "6+",
+            "S": "12",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Benefictus": {
+    "cost": {
+      "pts": "70",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- ACOLYTE HYBRIDS\n- HYBRID METAMORPHS\n- NEOPHYTE HYBRIDS"
+          }
+        },
+        {
+          "name": "Bio-horror Disruption (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability."
+          }
+        },
+        {
+          "name": "Psionic Shield (Psychic)",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Benefictus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Psionic cascade - witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Ignores Cover, Psychic"
+          }
+        },
+        {
+          "name": "➤ Psionic cascade - focused witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Hazardous, Ignores Cover, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Acolyte Hybrid w/ Auto Pistol": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Acolyte Hybrid w/ Heavy Mining Tool": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Heavy Mining Tool",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Vehicle 4+"
+          }
+        }
+      ]
+    }
+  }
+}

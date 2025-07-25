@@ -1,0 +1,204 @@
+{
+  "Darnath Lysander": {
+    "cost": {
+      "pts": "100"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Darnath Lysander",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Icon of Obstinacy",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time an attack targets that unit, if the Strength characteristic of that attack is greater than or equal to the Toughness characteristic of that unit, subtract 1 from the Wound roll."
+          }
+        },
+        {
+          "name": "Rampart",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Relic Terminator Squad\n■ Terminator Assault Squad\n■ Terminator Squad"
+          }
+        },
+        {
+          "name": "Inspiring Commander",
+          "characteristics": {
+            "Description": "‘If you include this model in your army, until the end of the battle, non-Character models in Terminator Assault Squad and Terminator Squad units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Fist of Dorn",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Tor Garadon": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tor Garadon",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Signum Array",
+          "characteristics": {
+            "Description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability."
+          }
+        },
+        {
+          "name": "Siege Captain",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a Monster, Vehicle, or Fortification unit, improve the Strength, Armour Penetration and Damage characteristics of that attack by 2."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Aggressor Squad\n■ Eradicator Squad\n■ Heavy Intercessor Squad"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Aritficer Grav Gun",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-vehicle 2+"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Hand of Defiance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "12",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Pedro Kantor": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Dorn's Arrow",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Rapid Fire 2, Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Fist of Retribution",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Pedro Kantor",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Oath of Rynn",
+          "characteristics": {
+            "Description": "Once per battle, at the start of either player’s Command phase, this model can use this ability. When it does, until the end of the turn, add 1 to the Attacks characteristic of weapons equipped by models in this model’s unit."
+          }
+        },
+        {
+          "name": "To the Last",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Below Half-strength."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Company Heroes\n■ Bladeguard Veteran Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+          }
+        },
+        {
+          "name": "Inspiring Commander",
+          "characteristics": {
+            "Description": "If you include this model in your army, until the end of the battle, non-Character models in Sternguard\nVeteran Squad units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked."
+          }
+        }
+      ]
+    }
+  }
+}

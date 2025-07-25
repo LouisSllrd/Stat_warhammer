@@ -1,0 +1,1165 @@
+{
+  "Chaplain Grimaldus": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Artificer Crozius",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma Pistol - Supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma Pistol - Standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Cenobyte Servitor": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close Combat Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "High Marshal Helbrecht": {
+    "cost": {
+      "pts": "120",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "High Marshal Helbrecht",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "5",
+            "LD": "5+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Crusade of Wrath",
+          "characteristics": {
+            "Description": "While this model is leading a unit, add 1 to the Strength characteristic of melee weapons equipped by models in that unit and each time an attack is  made with such a weapon, a successful unmodified Hit roll of 5+ scores a Critical Hit."
+          }
+        },
+        {
+          "name": "High Marshal",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model’s unit and roll one D6: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Intercessor Squad\n■ Primaris Crusader Squad\n■ Primaris Sword Brethren"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Sword of the High Marshals - One Handed",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Sword of the High Marshals - Two Handed",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Ferocity",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-infantry 4+, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Primaris Sword Brother": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Thunder Hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Primaris Sword Brethren",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Primaris Initiate w/Bolt Rifle": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Primaris Initiate",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Primaris Initiate w/Chainsword & Heavy Bolt Pistol": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Primaris Initiate",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Primaris Initiate w/Power Fist & Heavy Bolt Pistol": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Primaris Initiate",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Primaris Initiate w/Pyreblaster": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Pyreblaster",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Primaris Initiate",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Primaris Neophyte w/Firearm": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Neophyte Firearm",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Primaris Neophyte",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Primaris Neophyte w/Astartes Chainsword": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Primaris Neophyte",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Sword Brother Castellan": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Combi-weapon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sword Brother Castellan",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Primaris Sword Brother w/Twin Lightning Claws": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Primaris Sword Brethren",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "The Emperor's Champion": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "The Emperor's Champion",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Skillful Parry",
+          "characteristics": {
+            "Description": "Once per phase, when a melee attack is allocated to this model and the saving throw is failed, you can change the Damage characteristic of that attack to 0."
+          }
+        },
+        {
+          "name": "Sigismund's Heir",
+          "characteristics": {
+            "Description": "Each time this model makes a melee attack that targets a Character unit, add 1 to the Wound roll"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Intercessor Squad\n■ Primaris Crusader Squad\n■ Primaris Sword Brethren\n■ Sternguard Veteran Squad"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Black Sword - Strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Precision"
+          }
+        },
+        {
+          "name": "➤ Black Sword - Sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Neophyte w/Combat Knife": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Combat Knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Neophytes",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Neophyte w/Astartes Shotgun": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Astartes Shotgun",
+          "characteristics": {
+            "Range": "18",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Neophytes",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Neophyte w/Boltgun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neophytes",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Initiate w/Astartes Chainsword": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Astartes Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Initiate",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Initiate w/Boltgun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Initiate",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Initiate w/Heavy": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Initiate",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Initiate w/Special": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Initiate",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Sword Brother": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Astartes Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin Lightning Claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Close Combat Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sword Brother",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Black Templars Gladiator Lancer": {
+    "cost": {
+      "pts": "170"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Black Templars Gladiator Lancer",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Aquilon Optics",
+          "characteristics": {
+            "Description": "Each time this model is selected to shoot, you can re-roll one Hit roll, you can re-roll one Wound roll and you can re-roll one Damage roll when resolving its attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Lancer Laser Destroyer",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "D6+3",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Black Templars Gladiator Reaper": {
+    "cost": {
+      "pts": "170"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Black Templars Gladiator Reaper",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rotating Death",
+          "characteristics": {
+            "Description": "This model’s twin heavy onslaught gatling cannon has the [SUSTAINED HITS 2] ability when targeting Infantry units."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Tempest Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Rapid Fire 4"
+          }
+        },
+        {
+          "name": "Twin Heavy Onslaught Gatling Cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "12",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Black Templars Gladiator Valiant": {
+    "cost": {
+      "pts": "170"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Black Templars Gladiator Valiant",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Ferocious Assault",
+          "characteristics": {
+            "Description": "Each time this model makes an attack with its twin las-talon that targets the closest eligible Monster or Vehicle unit, add 1 to the Hit roll"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "Twin Las-talon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Black Templars Impulsor": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Black Templars Impulsor",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Description": "This model has a transport capacity of 7 TACTICUS or PHOBOS INFANTRY models. It cannot transport JUMP PACK models."
+          }
+        },
+        {
+          "name": "Assault Vehicle",
+          "characteristics": {
+            "Description": "Units can disembark from this Transport after it has Advanced. Units that do so count as having made a Normal move, and cannot declare a charge that turn."
+          }
+        },
+        {
+          "name": "Orbital Comms Array [Aura]",
+          "characteristics": {
+            "Description": "While a friendly Adeptus Astartes unit is within 6\" of the bearer, each time you target that unit with a Stratagem, roll one D6: on a 5+, you gain 1CP"
+          }
+        },
+        {
+          "name": "Shield Dome",
+          "characteristics": {
+            "Description": "The bearer has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Bellicatus Missile Array - Frag",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Bellicatus Missile Array - Icarus",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Fly 2+"
+          }
+        },
+        {
+          "name": "➤ Bellicatus Missile Array - Krak",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Ironhail Skytalon Array",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "8",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-Fly 4+, Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Black Templars Repulsor": {
+    "cost": {
+      "pts": "190",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Black Templars Repulsor",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "3+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Description": "This model has a transport capacity of 14 ADEPTUS ASTARTES INFANTRY models. Each JUMP PACK, GRAVIS or TERMINATOR model takes up the space of 2 models and each CENTURION model takes up the space of 3 models."
+          }
+        },
+        {
+          "name": "Emergency Combat Embarkation",
+          "characteristics": {
+            "Description": "Once per turn, in your opponent’s Charge phase, after an enemy unit has selected targets for its charge but before it makes a Charge move, you can select one Adeptus Astartes unit from your army that was selected as a target of that charge. Provided that unit is not within Engagement Range of any enemy units and every model in that unit is within 3\" of this Transport, it can embark within this Transport. The charging unit can then select new targets for its charge."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hunter-slayer Missile",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Indirect Fire, One Shot"
+          }
+        },
+        {
+          "name": "Repulsor Defensive Array",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "18",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Black Templars Repulsor Executioner": {
+    "cost": {
+      "pts": "230",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Description": "This model has a transport capacity of 7 Adeptus Astartes Infantry models. Each Jump Pack, Wulfen, Gravis or Terminator model takes up the space of 2 models and each Centurion model takes up the space of 3 models."
+          }
+        },
+        {
+          "name": "Executioner",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a unit that is Below Half-strength, add 1 to the Hit roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Black Templars Repulsor Executioner",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "3+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Repulsor Executioner Defensive Array",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "10",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Heavy Laser Destroyer",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+4",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Castellan": {
+    "cost": {
+      "pts": "60",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Astartes Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Castellan",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Primaris Crusader Squad\n■ Primaris Sword Brethren\n■ Sternguard Veteran Squad\n\nYou can attach this model to one of the above units even if one Captain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        }
+      ]
+    }
+  },
+  "Marshal": {
+    "cost": {
+      "pts": "75",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Marshal",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Primaris Crusader Squad\n■ Primaris Sword Brethren\n■ Sternguard Veteran Squad"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma Pistol - Standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma Pistol - Supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        }
+      ]
+    }
+  }
+}

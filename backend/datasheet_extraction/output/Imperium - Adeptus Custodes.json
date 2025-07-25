@@ -1,0 +1,2747 @@
+{
+  "Aleya": {
+    "cost": {
+      "pts": "65",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Aleya",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Tactical Perception",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Fights First ability."
+          }
+        },
+        {
+          "name": "Tenacious Spirit",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Below Half-strength."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Prosecutors\n■ Vigilators\n■ Witchseekers"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Somnus",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Anti-Psyker 5+, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Allarus Custodian (Guardian Spear)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Allarus Custodian (Castellan Axe)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Allarus Custodian (Vexilla & Misericordia)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Misericordia",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Anathema Psykana Rhino": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Anathema Psykana Rhino",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Self Repair",
+          "characteristics": {
+            "Description": "At the start of your Command phase, this model regains 1 lost wound."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 ANATHEMA PSYKANA INFANTRY models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        },
+        {
+          "name": "Hunter-killer missile",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "One Shot"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured tracks",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Blade Champion": {
+    "cost": {
+      "pts": "120",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Custodian Guard\n■ Custodian Wardens"
+          }
+        },
+        {
+          "name": "Martial Inspiration",
+          "characteristics": {
+            "Description": "Once per battle, in your Charge phase, this model's unit is eligible to declare a charge in a turn in which it Advanced."
+          }
+        },
+        {
+          "name": "Swift Onslaught",
+          "characteristics": {
+            "Description": "While this model is leading a unit, you can re-roll Charge rolls made for that unit."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Blade Champion",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Vaultswords - Behemor",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Precision"
+          }
+        },
+        {
+          "name": "➤ Vaultswords - Hurricanis",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "9",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Vaultswords - Victus",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Custodian Guard (Guardian Spear)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Custodian Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Custodian Guard (Sentinel Blade & Praesidium Shield)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Custodian Guard (Shield)",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Sentinel Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Sentinel Blade",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault, Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Custodian Guard (Vexilla, Praesidium Shield & Misericordia)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Custodian Guard (Vexilla)",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Misericordia",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Custodian Warden (Guardian Spear)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Custodian Warden (Castellan axe)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Custodian Warden w/ Vexilla": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Vexilla",
+          "characteristics": {
+            "Description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+          }
+        }
+      ]
+    }
+  },
+  "Knight-Centura": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight-Centura",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Prosecutors\n■ Vigilators\n■ Witchseekers"
+          }
+        },
+        {
+          "name": "Seeker's Instincts",
+          "characteristics": {
+            "Description": "While this model is leading a unit, add 2\" to the Move characteristic of models in that unit and add 2 to Advance and Charge rolls made for that unit."
+          }
+        },
+        {
+          "name": "Corner the Quarry",
+          "characteristics": {
+            "Description": "Each time an enemy unit (excluding MONSTERS and VEHICLES) that is within Engagement Range of this model’s unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Executioner Greatblade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Psyker 5+, Devastating Wounds"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "2+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "2+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Witchseeker Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Master-crafted boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Prosecutor Sister Superior": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Prosecutor Sister Superior",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Prosecutor": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Prosecutor",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Shield-Captain": {
+    "cost": {
+      "pts": "130",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Shield-Captain",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Master of the Stances",
+          "characteristics": {
+            "Description": "Once per battle, when this model's unit is selected to fight, it can use this ability. If it does, until that fight is resolved, both Ka'tah Stances are active for that unit, instead of only one."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Custodian Guard\n■ Custodian Wardens"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Sentinel Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Sentinel Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Pyrithite Spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "Sentinel Blade",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault, Pistol"
+          }
+        },
+        {
+          "name": "Sentinel Blade",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault, Pistol"
+          }
+        },
+        {
+          "name": "Pyrithite Spear",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Shield-Captain in Allarus Terminator Armour": {
+    "cost": {
+      "pts": "130",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Shield-Captain in Allarus Terminator Armour",
+          "characteristics": {
+            "M": "5\"",
+            "T": "7",
+            "SV": "2+",
+            "W": "7",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Allarus Custodians"
+          }
+        },
+        {
+          "name": "Auramite and Adamantite",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, each time an attack is allocated to this model, change the Damage characteristic of that attack to 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Balistus grenade launcher",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Guardian Spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Castellan axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Shield-Captain on Dawneagle Jetbike": {
+    "cost": {
+      "pts": "150",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Vertus Praetors"
+          }
+        },
+        {
+          "name": "Sweeping Advance",
+          "characteristics": {
+            "Description": "Once per battle, at the end of the Fight phase, if this model's unit fought this phase, if it is within Engagement Range of one or more enemy units, it can make a Fall Back move or, if it is not within Engagement Range of one or more enemy units, it can make a Normal move."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Shield-Captain on Dawneagle Jetbike",
+          "characteristics": {
+            "M": "12\"",
+            "T": "7",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Interceptor lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lance"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Vertus hurricane bolter",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Rapid Fire 3, Twin-linked"
+          }
+        },
+        {
+          "name": "Salvo launcher",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Trajann Valoris": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Trajann Valoris",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "7",
+            "LD": "5+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Feel No Pain",
+          "characteristics": {
+            "Description": "5+"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Custodian Guard\n■ Custodian Wardens"
+          }
+        },
+        {
+          "name": "Captain-General",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, you can ignore any or all modifiers to that attack's Ballistic Skill or Weapon Skill characteristics and/or all modifiers to the Hit roll."
+          }
+        },
+        {
+          "name": "Moment Shackle",
+          "characteristics": {
+            "Description": "Once per battle, at the start of the Fight phase, you can select one of the following to take effect until the end of the phase:\n■ This model's Watcher's Axe melee weapon has an Attacks characteristic of 12.\n■ This model has a 2+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Watcher's Axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Eagle's Scream",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Valerian": {
+    "cost": {
+      "pts": "110"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Valerian",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Custodian Guard\n■ Custodian Wardens"
+          }
+        },
+        {
+          "name": "Golden Laurels",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a melee attack targets that unit, worsen that Armour Penetration characteristic of that attack by 1."
+          }
+        },
+        {
+          "name": "Hero of Lion's Gate",
+          "characteristics": {
+            "Description": "Once per battle, after making a Hit roll, Wound roll or saving throw for this model, you can change the result of that roll to an unmodified 6."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gnosis",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Gnosis",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Venerable Contemptor Dreadnought": {
+    "cost": {
+      "pts": "170",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Venerable Contemptor Dreadnought",
+          "characteristics": {
+            "M": "6\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Unyielding Ancient",
+          "characteristics": {
+            "Description": "The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Combi-bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        },
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "Kheres-pattern assault cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Contemptor combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Venerable Land Raider": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Venerable Land Raider",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Assault Ramp",
+          "characteristics": {
+            "Description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 Wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 6 ADEPTUS CUSTODES INFANTRY models."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured tracks",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Godhammer lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Hunter-killer missile",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "One Shot"
+          }
+        },
+        {
+          "name": "Storm bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid fire 2"
+          }
+        },
+        {
+          "name": "Twin heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Vertus Praetor (Salvo Launcher)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Interceptor lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lance"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Salvo launcher",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Vertus Praetor (Hurricane Bolter)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Interceptor lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lance"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Vertus hurricane bolter",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Rapid Fire 3, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Vigilator Sister Superior": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Vigilator Sister Superior",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Executioner greatblade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Psyker 5+, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Vigilator": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Vigilator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Executioner greatblade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Psyker 5+, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Witchseeker Sister Superior": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Witchseeker Sister Superior",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Witchseeker flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Witchseeker": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Witchseeker",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Witchseeker Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Custodian Guard (Adrasite spear)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Adrasite spear",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Adrasite spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Custodian Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Custodian Guard (Pyrithite spear)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Pyrithite spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Pyrithite spear",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Custodian Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Sagittarum Custodian": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sagittarum Custodian",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Adrastus bolt caliver",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Misericordia",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Aquilon Custodian (Gauntlet & Lastrum bolter)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Aquilon Custodian (Gauntlet & Twin adrathic destructor)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Aquilon Custodian (Gauntlet & Infernus firepike)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Aquilon Custodian (Talon & infernus firepike)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Aquilon Custodian (Talon & Lastrum bolter)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Aquilon Custodian (Talon & Twin adrathic destructor)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Agamatus Custodian (Lastrum bolt cannon)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Lastrum bolt cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Interceptor Lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lance"
+          }
+        }
+      ]
+    }
+  },
+  "Agamatus Custodian (Adrathic devastator)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Adrathic devastator",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Interceptor Lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lance"
+          }
+        }
+      ]
+    }
+  },
+  "Agamatus Custodian (Twin las-pulsar)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Twin las-pulsar",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Interceptor Lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lance"
+          }
+        }
+      ]
+    }
+  },
+  "Venatari Custodian (Venatari lance)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Venatari Custodian",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Venatari lance",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Venatari lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lance"
+          }
+        }
+      ]
+    }
+  },
+  "Venatari Custodian (Kinetic Destroyer & Tarsus Buckler)": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Venatari Custodian (Tarsis Buckler)",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Kinetic destroyer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol, Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Tarsis buckler",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Tarsis Buckler",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 4."
+          }
+        }
+      ]
+    }
+  },
+  "Contemptor-Galatus Dreadnought": {
+    "cost": {
+      "pts": "165",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Contemptor-Galatus Dreadnought",
+          "characteristics": {
+            "M": "6\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Galatus Shield",
+          "characteristics": {
+            "Description": "Each time a melee attack targets this model subtract 1 from the Wound roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Galatus warblade",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Galatus warblade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Contemptor-Achillus Dreadnought": {
+    "cost": {
+      "pts": "155",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Contemptor-Achillus Dreadnought",
+          "characteristics": {
+            "M": "6\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Dread Foe",
+          "characteristics": {
+            "Description": "Each time this model is selected to fight, you can select one enemy unit within Engagement Range of it and roll one D6, adding 2 to the result if it made a Charge move this turn: on 4-5, hat enemy unit suffers D3 mortal wounds; on a 6+, that enemy suffers 3 mortal wounds."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Achillus dreadspear",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Infernus incinerator",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Lastrum storm bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        },
+        {
+          "name": "Twin adrathic destructor",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Achillus dreadspear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "12",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "Lance"
+          }
+        }
+      ]
+    }
+  },
+  "Pallas Grav-attack": {
+    "cost": {
+      "pts": "105"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Palas Grav-attack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "8",
+            "SV": "2+",
+            "W": "9",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Merciless Hunter",
+          "characteristics": {
+            "Description": "In your Shooting phase, each time this model makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Wound roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin arachnus blaze cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "8",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Caladius Grav-tank": {
+    "cost": {
+      "pts": "215"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Caladius Grav-tank",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Advanced Firepower",
+          "characteristics": {
+            "Description": "Each time this model makes an attack with its Twin iliastus accelerator cannon that targets an enemy unit (excluding MONSTERS and VEHICLES), that attack has the [LETHAL HITS] ability. Each time this model makes an attack with its Twin arachnus heavy blaze cannon that targets an enemy MONSTER or VEHICLE unit, that attack has the [LETHAL HITS] ability."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin iliastus accelerator cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "2+",
+            "S": "10",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Rapid Fire 4, Twin-linked"
+          }
+        },
+        {
+          "name": "Twin arachnus heavy blaze cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "2+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+2",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Twin lastrum bolt cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Telemon Heavy Dreadnought": {
+    "cost": {
+      "pts": "225",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Telemon Heavy Dreadnought",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Guardian Eternal",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
+          }
+        },
+        {
+          "name": "Damaged: 1-4 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Devoted to Destruction",
+          "characteristics": {
+            "Description": "If this model is equipped with 2 Telemon caestus weapons in addition to its armoured feet weapon, add 2 to the Attacks characteristic of those Telemon caestus weapons."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured feet",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Telemon Caestus",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Spiculus bolt launcher",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Arachnus storm cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "12",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Iliastus accelerator culverin",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin plasma projector",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D3",
+            "BS": "N/A",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Torrent, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Coronus Grav-carrier": {
+    "cost": {
+      "pts": "200"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Coronus Grav-carrier",
+          "characteristics": {
+            "M": "12\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fire Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this ^^Transport^^ this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Coronus Grav-carrier",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 8 ^^Adeptus Custodes Infantry^^ models."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin arachnus blaze cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "8",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Twin-linked"
+          }
+        },
+        {
+          "name": "Twin lastrum bolt cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Orion Assault Dropship": {
+    "cost": {
+      "pts": "690"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Orion Assault Dropship",
+          "characteristics": {
+            "M": "20\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "22",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-7 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Assault Dropship",
+          "characteristics": {
+            "Description": "If a unit disembarks from this TRANSPORT before it moves, until the end of the turn, that unit is eligibile to charge in a turn in which it Advanced."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 ADEPTUS CUSTODES INFANTRY models. This model can also transport 1 VENERABLE CONTEMPTOR DREADNOUGHt, 1 CONTEMPTOR-ACHILLUS DREADNOUGHT or 1 CONTEMPTOR GALATUS-DREADNOUGHT; while doing so, its transport capacity is reduced to 6 ADEPTUS CUSTODES INFANTRY models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Arachnus heavy blaze cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "2+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Spiculus heavy bolt launcher",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+6",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Twin lastrum bolt cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "9",
+            "WS": "4+",
+            "S": "9",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ares Gunship": {
+    "cost": {
+      "pts": "580"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ares Gunship",
+          "characteristics": {
+            "M": "20\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "22",
+            "LD": "6",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Infernus Firebomb",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move. Until the end of the turn, models in that unit cannot have the Benefit of Cover. In addition, roll one D6 for eah model in that unit: for each 6, that unit suffers 1 mortal wound."
+          }
+        },
+        {
+          "name": "Damaged: 1-7 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Arachnus heavy blaze cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "2+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Arachnus magna-blaze cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "18",
+            "AP": "-4",
+            "D": "D6+6",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "9",
+            "WS": "4+",
+            "S": "9",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  }
+}

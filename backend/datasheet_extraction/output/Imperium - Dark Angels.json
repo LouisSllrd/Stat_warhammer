@@ -1,0 +1,2522 @@
+{
+  "Azrael": {
+    "cost": {
+      "pts": "115",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Lion's Wrath",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Sword of Secrets",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-4",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Azrael",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Supreme Grand Master",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+          }
+        },
+        {
+          "name": "Masterful Tactician",
+          "characteristics": {
+            "Description": "At the start of your Command phase, if this model is on the battlefield, you gain 1CP."
+          }
+        },
+        {
+          "name": "The Lion Helm",
+          "characteristics": {
+            "Description": "Models in the bearer’s unit have a 4+ invulnerable save. In addition, once per battle, in any phase, the bearer can summon a Watcher in the Dark. When it does, until the end of the phase, models in the bearer’s unit have the Feel No Pain 4+ ability against mortal wounds."
+          }
+        },
+        {
+          "name": "Invulnerable save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Inner Circle Companions\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+          }
+        }
+      ]
+    }
+  },
+  "Belial": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Belial",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Grand Master of the Deathwing",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, if a Critical Hit is scored, that attack has the [PRECISION] ability."
+          }
+        },
+        {
+          "name": "Strikes of Retribution",
+          "characteristics": {
+            "Description": "Each time a melee attack is allocated to this model, after the attacking model’s unit has finished making its attacks, roll one D6 (to a maximum of six D6 per attacking unit): for each 4+, the attacking unit suffers 1 mortal wound."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This unit can be attached to the following units:\n■ Deathwing Knights\n■ Deathwing Terminator Squad\n■ Terminator Assault Squad\n■ Terminator Squad"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Master-crafted storm bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Precision, Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Sword of Silence",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Sammael": {
+    "cost": {
+      "pts": "115",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sammael",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "7",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Outrider Squad\n■ Ravenwing Black Knights"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Grand Master of the Ravenwing",
+          "characteristics": {
+            "Description": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced. If that unit is already eligible to shoot and declare a charge in a turn in which it Advanced, add 1 to Advance and Charge rolls made for that unit instead."
+          }
+        },
+        {
+          "name": "Cut Off Their Escape",
+          "characteristics": {
+            "Description": "Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of this model’s unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked. When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Master-crafted plasma cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Twin storm bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2, Twin-Linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Raven Sword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Ezekiel": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ezekiel",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Engulfing Fear [Psychic]",
+          "characteristics": {
+            "Description": "In your Shooting phase, you can select one enemy unit within 18\" of this model. That enemy unit must take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Book of Salvation",
+          "characteristics": {
+            "Description": "While this model is leading a unit, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. When this model is destroyed, each friendly Adeptus Astartes unit within 6\" of this model must take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Inner Circle Companions\n■ Intercessor Squad\n■ Sternguard Veterans Squad\n■ Tactical Squad"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "The Deliverer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Pistol, Precision"
+          }
+        },
+        {
+          "name": "➤ Mind Wipe - witchfire",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Devastating Wounds, Precision, Psychic"
+          }
+        },
+        {
+          "name": "➤ Mind Wipe - focussed witchfire",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Anti-Character 4+, Devastating Wounds, Hazardous, Precision, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Traitor's Bane",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Anti-Chaos 2+, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Asmodai": {
+    "cost": {
+      "pts": "70"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Asmodai",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Exemplar of Hate",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes a melee attack, you can re-roll the Hit roll."
+          }
+        },
+        {
+          "name": "Feared Interrogator",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, each enemy Character unit within 6\" of this model must take a Battle-shock test, subtracting 1 from that test when they do. In addition, each time this model destroys an enemy Character model with a melee attack, you gain 1CP."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Inner Circle Companions\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Crozius Arcanum and Power Weapon - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Crozius Arcanum and Power Weapon - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Lion El'Jonson": {
+    "cost": {
+      "pts": "315",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lion El'Jonson",
+          "characteristics": {
+            "M": "8\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "5+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Primarch of the First Legion",
+          "characteristics": {
+            "Description": "In your Command phase, select one Primarch of the First Legion abilities (see left). Until the start of your next Command phase, this model has that ability."
+          }
+        },
+        {
+          "name": "The Emperor's Shield",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, if the Strength characteristic of that attack is greater than the Toughness characteristic of this model, subtract 1 from the Wound roll."
+          }
+        },
+        {
+          "name": "Dark Angels Bodyguard",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly Adeptus Astartes Infantry units, this model has the Lone Operative ability."
+          }
+        },
+        {
+          "name": "Invulnerable save",
+          "characteristics": {
+            "Description": "3+"
+          }
+        }
+      ],
+      "Primarch of the First Legion": [
+        {
+          "name": "Mist-wreathed Shadow Realms",
+          "characteristics": {
+            "Effect": "In your Command phase, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves."
+          }
+        },
+        {
+          "name": "Martial Exemplar [Aura]",
+          "characteristics": {
+            "Effect": "While a friendly Adeptus Astartes unit is within 6\" of this model, each time a model in that unit makes a melee attack, re-roll a hit roll of 1 and re-roll a wound roll of 1."
+          }
+        },
+        {
+          "name": "No Hiding From the Watchers [Aura]",
+          "characteristics": {
+            "Effect": "While a friendly Adeptus Astartes unit is within 6\" of this model, models in that unit have the Feel No Pain 4+ ability against mortal wounds."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Arma Luminis - bolt",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "4",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Arma Luminis - plasma",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Fealty - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "12",
+            "AP": "-4",
+            "D": "4",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "➤ Fealty - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "16",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Lazarus": {
+    "cost": {
+      "pts": "70"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lazarus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Intractable Will",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play."
+          }
+        },
+        {
+          "name": "The Spiritshield Helm",
+          "characteristics": {
+            "Description": "This model has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Infernus Squad\n■ Inner Circle Companions\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Enmity’s Edge",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Anti-Psyker 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Nephilim Jetfighter": {
+    "cost": {
+      "pts": "195"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Nephilim Jetfighter",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Lightning-fast Manoeuvres",
+          "characteristics": {
+            "Description": "Each time a ranged attack targets this model, subtract 1 from the Hit roll. If that attack was made by a model that can Fly, subtract 1 from the Wound roll as well."
+          }
+        },
+        {
+          "name": "DAMAGED: 1-3 WOUNDS REMAINING",
+          "characteristics": {
+            "Description": "While this model has 1-3 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "5+"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Blacksword missiles",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Anti-Fly 2+"
+          }
+        },
+        {
+          "name": "Twin heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1, Twin-Linked"
+          }
+        },
+        {
+          "name": "Avenger mega bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "10",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Nephilim lascannons",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ravenwing Dark Talon": {
+    "cost": {
+      "pts": "210"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravenwing Dark Talon",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "5+"
+          }
+        },
+        {
+          "name": "Stasis Bomb",
+          "characteristics": {
+            "Description": "Once per battle, one model from your army with this ability can use it after it ends a Normal move. If it does, you can select one enemy unit (excluding Aircraft) that model moved over this phase. That unit suffers D3 mortal wounds and you must roll one D6: on a 1-3, that unit cannot Advance or Fall Back in your opponent’s next Movement phase; on a 4-6, that unit must Remain Stationary in your opponent’s next Movement phase. Each model can only use this ability once per battle."
+          }
+        },
+        {
+          "name": "DAMAGED: 1-3 WOUNDS REMAINING",
+          "characteristics": {
+            "Description": "While this model has 1-3 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured Hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hurricane bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 6, Twin-Linked"
+          }
+        },
+        {
+          "name": "Rift cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3+1",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "3",
+            "Keywords": "Blast, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Land Speeder Vengeance": {
+    "cost": {
+      "pts": "120",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Land Speeder Vengeance",
+          "characteristics": {
+            "M": "14\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "5+"
+          }
+        },
+        {
+          "name": "Storm of Vengeance",
+          "characteristics": {
+            "Description": "Once per turn, in your opponent’s Shooting phase, when another friendly Adeptus Astartes unit within 6\" of this model is destroyed, one model with this ability can use it. If it does, after the attacking unit has finished making its attacks, that model can shoot as if it were your Shooting phase, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target)."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close Combat Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma storm battery - standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Blast, Twin-Linked"
+          }
+        },
+        {
+          "name": "➤ Plasma storm battery - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Blast, Hazardous, Twin-Linked"
+          }
+        },
+        {
+          "name": "Assault cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Ravenwing Darkshroud": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "5+"
+          }
+        },
+        {
+          "name": "Icon of Old Caliban (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Adeptus Astartes unit is within 6\" of this model, models in that unit have the Stealth ability and each time a ranged attack targets that unit, that unit has the Benefit of Cover against that attack."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Ravenwing Darkshroud",
+          "characteristics": {
+            "M": "14\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close Combat Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Assault cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Ravenwing Huntmaster": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravenwing Huntmaster",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma talon - Standard",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Plasma talon - Supercharged",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Black Knight combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Ravenwing Black Knight": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravenwing Black Knight",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma talon - Standard",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Plasma talon - Supercharged",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Black Knight combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Ravenwing Black Knight w/ Grenade Launcher": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravenwing Black Knight",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Black Knight combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Astartes grenade launcher - frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Astartes grenade launcher - krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ravenwing Ancient": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravenwing Ancient",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Black Knight combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma talon - Standard",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Plasma talon - Supercharged",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Astartes Grenade Launcher - Frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Astartes Grenade Launcher - Krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ravenwing Apothecary": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravenwing Apothecary",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Black Knight combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma talon - Standard",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Plasma talon - Supercharged",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Astartes Grenade Launcher - Frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Astartes Grenade Launcher - Krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ravenwing Champion": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravenwing Champion",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma talon - Standard",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Plasma talon - Supercharged",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Astartes Grenade Launcher - Frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Astartes Grenade Launcher - Krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Knight": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Knight",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Mace of absolution",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Monster 4+, Anti-Vehicle 4+"
+          }
+        },
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Master": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Master",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Great Weapon of the Unforgiven",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Relic Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Sergeant": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Sergeant",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Terminator": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Terminator",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Terminator w/ Chainfist": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Command Terminator",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chainfist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 3+"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Terminator w/ Heavy Weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Command Terminator",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Assault Cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Heavy Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "➤ Plasma Cannon - Standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Plasma Cannon - Supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Blast, Hazardous"
+          }
+        },
+        {
+          "name": "➤ Cyclone Missile Launcher - Frag",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Cyclone Missile Launcher - Krak",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Chainfist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 3+"
+          }
+        }
+      ]
+    }
+  },
+  "Inner Circle Companion": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Calibanite Greatsword - Strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "➤ Calibanite Greatsword - Sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Inner Circle Companion",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Ravenwing Talonmaster [Legends]": {
+    "cost": {
+      "pts": "105"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravenwing Talonmaster [Legends]",
+          "characteristics": {
+            "M": "16\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Talonmaster",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more other friendly Adeptus Astartes Mounted or Adeptus Astartes Fly Vehicle units, this model has the Lone Operative ability."
+          }
+        },
+        {
+          "name": "Nowhere To Hide",
+          "characteristics": {
+            "Description": "While a friendly Adeptus Astartes Mounted or Adeptus Astartes Fly Vehicle unit is within 6\" of this model, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability."
+          }
+        },
+        {
+          "name": "Master of Manoeuvre",
+          "characteristics": {
+            "Description": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this model, if this model is not within Engagement Range of one or more enemy units, this model can make a Normal move of up to 6\"."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "5+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1, Twin-Linked"
+          }
+        },
+        {
+          "name": "Twin Assault Cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Twin-Linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Strikemaster [Legends]": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Strikemaster [Legends]",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This unit can be attached to the following units:\n■ Deathwing Command Squad\n■ Deathwing Terminator Squad\n\n■ Relic Terminator Squad\n■ Terminator Assault Squad\n■ Terminator Squad"
+          }
+        },
+        {
+          "name": "Tactical Precision",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+          }
+        },
+        {
+          "name": "Vanquish the Foe",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Hit roll and add 1 to the Wound roll."
+          }
+        },
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 6."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Chainfist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 3+"
+          }
+        },
+        {
+          "name": "Mace of Absolution",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Thunder Hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Twin Lightning Claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-Linked"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Ancient": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Ancient",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Astartes Banner",
+          "characteristics": {
+            "Description": "While this unit contains an Ancient, add 1 to the Objective Control characteristic of its models."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Apothecary": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Apothecary",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Narthecium",
+          "characteristics": {
+            "Description": "While this unit contains an Apothecary, in your Command phase, you can return 1 destroyed model (excluding Character models) to this unit."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chainfist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 3+"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Champion": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Champion",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Honour or Death",
+          "characteristics": {
+            "Description": "While this unit contains a Company Champion, add 1 to Advance and Charge rolls made for this unit and you can target this unit with the Heroic Intervention Stratagem for 0CP."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Halberd of Caliban",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Command Terminator": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Command Terminator",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Command Terminator w/ Power Weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Command Terminator",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Command Terminator w/ Twin Claws": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Command Terminator",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin Lightning Claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-Linked"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwing Command Terminator w/ Hammer & Shield": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwing Command Terminator w/ Shield",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
+          }
+        },
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 4."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Thunder Hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  }
+}

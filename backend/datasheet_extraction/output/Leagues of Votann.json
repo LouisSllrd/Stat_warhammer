@@ -1,0 +1,1446 @@
+{
+  "Ûthar the Destined": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ûthar the Destined",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "5",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Ancestral Fortune",
+          "characteristics": {
+            "Description": "Once per turn, you can change one Hit roll or one Wound roll made for this model to an unmodified 6."
+          }
+        },
+        {
+          "name": "The Destined",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, change the Damage characteristic of that attack to 1."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- Einhyr Hearthguard\n- Hearthkyn Warriors"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blade of the Ancestors",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Hearthkyn Warrior": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Autoch-pattern bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Ion blaster",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Autoch-pattern bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Theyn": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Kin melee weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Autoch-pattern bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Ion blaster",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Autoch-pattern bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Etacarn plasma pistol",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Ion pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Hearthkyn Warrior w/ heavy weapon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Kin melee weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Autoch-pattern bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "HYLas auto rifle",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Assault, Rapid Fire 3"
+          }
+        },
+        {
+          "name": "HYLas rotary cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "5+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Etacarn plasma beamer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Magna-rail rifle",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "5+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D3+3",
+            "Keywords": "Devastating Wounds, Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Kâhl": {
+    "cost": {
+      "pts": "70"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kâhl",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Kindred Hero",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- EINHYR HEARTHGUARD\n- HEARTHKYN WARRIORS"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Mass gauntlet",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Forgewrought plasma axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Einhyr Champion": {
+    "cost": {
+      "pts": "60"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- EINHYR HEARTHGUARD"
+          }
+        },
+        {
+          "name": "Exemplar of the Einhyr",
+          "characteristics": {
+            "Description": "While this model is leading a unit, you can re-roll Charge rolls made for that unit."
+          }
+        },
+        {
+          "name": "Mass Driver Accelerators",
+          "characteristics": {
+            "Description": "Each time this model ends a Charge move, you can select one enemy unit within Engagement Range of this unit and roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Einhyr Champion",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "5",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Mass hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Darkstar axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Grimnyr": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grimnyr",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Ancestral ward stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Ancestral Wrath - witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        },
+        {
+          "name": "➤ Ancestral Wrath - focused witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Hazardous, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "CORV": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "CORV",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "1",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Autoch-pattern bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Brôkhyr Iron-master": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Brôkhyr Iron-master",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Graviton rifle",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Anti-VEHICLE 2+"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Graviton hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Anti-VEHICLE 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Ironkyn Assistant": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ironkyn Assistant",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Las-beam cutter",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-3",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "E-COG": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Manipulator arms",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hesyr": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Einhyr Hearthguard",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Exo-armour grenade launcher",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "EtaCarn plasma gun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Volkanite disintegrator",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Concussion gauntlet",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Plasma blade gauntlet",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Concussion hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Teleport crest",
+          "characteristics": {
+            "Description": "Models in the bearer's unit have the Deep Strike ability."
+          }
+        }
+      ]
+    }
+  },
+  "Einhyr Hearthguard": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Einhyr Hearthguard",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Exo-armour grenade launcher",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "EtaCarn plasma gun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Volkanite disintegrator",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Concussion gauntlet",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Plasma blade gauntlet",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Beserk": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Beserk",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "6+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Beserk w/ twin concussion gauntlets": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Twin concussion gauntlets",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Beserk w/ mole grenade launcher": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Beserk w/ mole grenade launcher",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "6+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Subterranean Explosives",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this unit has shot, select one enemy unit (excluding MONSTERS and VEHICLES) that was hit by one or more of this unit’s mole grenade launchers this phase and roll one D6. On a 4+, until the end of your opponent’s next turn, that enemy unit is shaken. While a unit is shaken, subtract 2\" from its Move characteristic and subtract 2 from Advance and Charge rolls made for it.\n\nDesigner’s Note: While a unit is shaken, place a Mole Grenade token next to that unit as a reminder."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Mole grenade launcher",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Hernkyn Pioneer": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {}
+  },
+  "Hernkyn Pioneer w/ comms array": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Comms array",
+          "characteristics": {
+            "Description": "Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ]
+    }
+  },
+  "Hernkyn Pioneer w/ pan-spectral scanner": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Pan-spectral scanner",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability."
+          }
+        }
+      ]
+    }
+  },
+  "Hernkyn Pioneer w/ searchlight": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Rollbar searchlight",
+          "characteristics": {
+            "Description": "Each time a model in the bearer’s unit makes an attack that targets a unit that contains one or more models with the Stealth ability, add 1 to the Hit roll."
+          }
+        }
+      ]
+    }
+  },
+  "Hernkyn Pioneer w/ HYLas rotary cannon": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hernkyn Pioneer w/ HYLas rotary cannon",
+          "characteristics": {
+            "M": "12\"",
+            "T": "6",
+            "SV": "4+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "HYLas rotary cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Hernkyn Pioneer w/ ion beamer": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hernkyn Pioneer w/ ion beamer",
+          "characteristics": {
+            "M": "12\"",
+            "T": "6",
+            "SV": "4+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Ion beamer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Sustained Hits D3"
+          }
+        }
+      ]
+    }
+  },
+  "Sagitaur": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sagitaur",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "9",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Blistering Advance",
+          "characteristics": {
+            "Description": "Units can disembark from this TRANSPORT after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Sagitaur",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 6 LEAGUES OF VOTANN INFANTRY models. It cannot transport EXO-ARMOUR or EXO-FRAME models.\nAt the start of the Declare Battle Formations step, you can select one Hearthkyn Warriors unit from your army and split it into two units, each containing 5 models (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured wheels",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "HYLas beam cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Sagitaur missile launcher",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Brôkhyr Thunderkyn": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Graviton blast cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-VEHICLE 2+, Blast"
+          }
+        },
+        {
+          "name": "SP conversion beamer",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Conversion, Sustained Hits D3"
+          }
+        }
+      ]
+    }
+  },
+  "Hekaton Land Fortress": {
+    "cost": {
+      "pts": "225"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hekaton Land Fortress",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fire Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Pan spectral scanner",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by the bearer have the [IGNORES COVER] ability."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Hekaton Land Fortress",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 LEAGUES OF VOTANN INFANTRY models. Each EXO-ARMOUR model takes up the space of 2 models and each EXO-FRAME model takes up the space of 3 models."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured wheels",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin ion beamer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Sustained Hits D3, Twin-linked"
+          }
+        },
+        {
+          "name": "Hekaton warhead",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Indirect Fire, One Shot"
+          }
+        },
+        {
+          "name": "SP heavy conversion beamer",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "4",
+            "Keywords": "Conversion, Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Heavy magna-rail cannon",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "18",
+            "AP": "-4",
+            "D": "D6+6",
+            "Keywords": "Devastating Wounds, Heavy"
+          }
+        },
+        {
+          "name": "Cyclic ion cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Hernkyn Yaegir": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Bolt revolver and plasma knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt revolver",
+          "characteristics": {
+            "Range": "9\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Bolt shotgun",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Hernkyn Yaegir w/ magna-coil rifle": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Magna-coil rifle",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Ignores Cover, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Hernkyn Yaegir w/ APM launcher": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "APM launcher",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Anti-MONSTER 3+, Anti-VEHICLE 3+"
+          }
+        }
+      ]
+    }
+  }
+}
