@@ -1,0 +1,2736 @@
+{
+  "Aestred Thurga": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Aestred Thurga",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Auto-Tapestry of the Emperor's Judgement",
+          "characteristics": {
+            "Description": "While this unit is leading a unit and contains an Aestred Thurga model, weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blade of Vigil",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Agathae Dolan": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Agathae Dolan",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Recount the Deeds of the Saints",
+          "characteristics": {
+            "Description": "While this unit is leading a unit and contains and Agathae Dolan model, each time that unit destroys an enemy unit, you gain 1 Miracle dice. When that Agathae Dolan model is destroyed, you gain D3 Miracle dice."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Scribe's staff",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Arco-Flagellant": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Arco-flails",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Sister Superior": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Battle Sister": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Battle Sister w/ Simulacrum Imperialis": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Battle Sister w/ Special or Heavy Weapon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Battle Sister w/ Special Weapon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Canoness": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Null Rod",
+          "characteristics": {
+            "Description": "Models in the bearer’s unit have the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks."
+          }
+        },
+        {
+          "name": "Rod of Office",
+          "characteristics": {
+            "Description": "Each time a model in the bearer's unit makes an attack, re-roll a Hit roll of 1."
+          }
+        },
+        {
+          "name": "The Emperor's Grace",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 4+"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This unit can be attached to the following units: \n- Battle Sisters Squad\n- Celestian Sacresants\n- Dominion Squad\n- Retributor Squad\n- Sisters Novitiate Squad"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Brazier of Holy Fire",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, One Shot, Torrent"
+          }
+        },
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Condemnor boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-Psyker 2+, Devastating Wounds, Precision, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Inferno Pistol",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-4",
+            "D": "D3",
+            "Keywords": "Melta 2, Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blessed blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Hallowed Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Canoness",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Castigator": {
+    "cost": {
+      "pts": "160",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Castigator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rites of Castigation",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly Adepta Sororitas unit makes a ranged attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn."
+          }
+        },
+        {
+          "name": "Damaged: 1-4 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 6+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Castigator autocannons",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Twin-Linked, Rapid Fire 4"
+          }
+        },
+        {
+          "name": "Castigator battle cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Blast, Ignores Cover"
+          }
+        }
+      ]
+    }
+  },
+  "Celestian Sacresant (Anointed Halberd)": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Sacresant Superior": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Spear of the Faithful",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Celestian Sacresant (Hallowed Mace)": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Ephrael Stern": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ephrael Stern",
+          "characteristics": {
+            "M": "8\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "5",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Sanctity",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Chaos 2+, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Kyganil of the Bloody Tears": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kyganil of the Bloody Tears",
+          "characteristics": {
+            "M": "8\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Outcast's Blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Dialogus": {
+    "cost": {
+      "pts": "40",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\n■ Sisters Novitiate Squad\nThis model can be attached to a Battle Sisters Squad, even if one Canoness, Palatine, Junith Eruita, or Aestred Thurga unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Laud Hailer",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, you can select one friendly Adepta Sororitas unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked."
+          }
+        },
+        {
+          "name": "Stirring Rhetoric",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time that unit performs an Act of Faith, the value of one of the Miracle dice used in that Act of Faith is first changed to a 6."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 4+"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Dialogus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Dialogus staff",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Dogmata": {
+    "cost": {
+      "pts": "45"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Dogmata",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Executioner of Heretics (Aura)",
+          "characteristics": {
+            "Description": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1."
+          }
+        },
+        {
+          "name": "Unflinching Determination",
+          "characteristics": {
+            "Description": "While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 6+"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\nThis model can be attached to a Battle Sisters Squad, even if one Canoness, Palatine, Junith Eruita, or Aestred Thurga unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Mace of the Righteous",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Dominion Superior": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Dominion": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Dominion w/ Simulacrum Imperialis": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Dominion w/ Special Weapon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Artificer-crafted storm bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Rapid Fire 2, Assault"
+          }
+        },
+        {
+          "name": "Meltagun",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Assault"
+          }
+        },
+        {
+          "name": "Ministorum flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault, Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Exorcist": {
+    "cost": {
+      "pts": "210",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Exorcist",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-4 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Devastating Refrain",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with an Indirect Fire weapon scored a hit against an enemy unit, that unit must take a Battle-shock test. Each time such an attack destroys an enemy model that has the Deadly Demise ability, the model's Deadly Demise ability inflicts mortal wounds on a D6 roll of 5+ instead of a 6."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 6+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Exorcist Missile Launcher",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+2",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Indirect Fire"
+          }
+        },
+        {
+          "name": "Exorcist Conflagration Rockets",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Blast, Ignores Cover, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Hospitaller": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\n■ Sisters Novitiate Squad\nThis model can be attached to a Battle Sisters Squad, even if one Canoness, Palatine, Junith Eruita, or Aestred Thurga unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Medicus Ministorum",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability."
+          }
+        },
+        {
+          "name": "Sacred Healing",
+          "characteristics": {
+            "Description": "While this model is leading a unit, in your Command phase, you can return up to 1 destroyed model (excluding Character models) to that unit. If you wish, you first discard 1 Miracle dice; if you do, you can return up to D3+1 destroyed models (excluding Character models) to that unit instead."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 6+"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 6+"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Hospitaller",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chirugeon's tools",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Imagifier": {
+    "cost": {
+      "pts": "65"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\nThis model can be attached to a Battle Sisters Squad, even if one Canoness, Palatine, Junith Eruita, or Aestred Thurga unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Litany of Deeds",
+          "characteristics": {
+            "Description": "Each time you gain a Miracle dice as the result of a friendly ADEPTA SORORITAS unit or model being destroyed, if that unit or model was destroyed within 12\" of this model, you can re-roll the result of that Miracle dice before adding it to your Miracle dice pool."
+          }
+        },
+        {
+          "name": "Stanchion of Holy Martyrs",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have a Save characteristic of 2+ and a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 4+"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Imagifier",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Immolator": {
+    "cost": {
+      "pts": "115",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Description": "This model has a transport capacity of 6 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the Triumph of Saint Katherine.\n\nAt the start of the Declare Battle Formations step, you can select one BATTLE SISTERS SQUAD, DOMINION SQUAD or SISTERS NOVIATIATE SQUAD from your army. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units. If you are splitting a unit that has the Cherub ability, only one of the new units can use that ability during the battle – make a note of which of the new units this will be). One of these units must start the battle embarked within this TRANSPORT; the other can start the battle embarked within another TRANSPORT, or it can be deployed as a separate unit."
+          }
+        },
+        {
+          "name": "Purge and Cleanse",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 6+"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Immolator",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Immolation Flamers",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Twin Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 2, Twin-Linked"
+          }
+        },
+        {
+          "name": "Twin Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Twin-Linked"
+          }
+        }
+      ]
+    }
+  },
+  "Junith Eruita": {
+    "cost": {
+      "pts": "80",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\n■ Sisters Noviatiate Squad"
+          }
+        },
+        {
+          "name": "The Pulpit of Saint Holline’s Basilica",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Fiery Conviction",
+          "characteristics": {
+            "Description": "If this model is on the battlefield at the start\nof your Command phase, you can choose one of the following:\n■ Discard 1 Miracle dice and gain 1CP.\n■ Take a Leadership test for this model, if that test is passed, gain 1CP."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 4+"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Junith Eruita",
+          "characteristics": {
+            "M": "8\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin Ministorum Heavy Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent, Twin-Linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Mace of Castigation",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Mortifier": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Mortifier",
+          "characteristics": {
+            "M": "8\"",
+            "T": "6",
+            "SV": "4+",
+            "W": "5",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin Penitent Buzz-Blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Sustained Hits 1,Twin-Linked"
+          }
+        },
+        {
+          "name": "Twin Penitent Flails",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1, Twin-Linked"
+          }
+        },
+        {
+          "name": "Penitent Buzz-Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Penitent Flail",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Mortimer Heavy Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "n/a",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent, Twin-Linked"
+          }
+        },
+        {
+          "name": "Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Mortimer Heavy Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "n/a",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent, Twin-Linked"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Anchorite Sarcophagus",
+          "characteristics": {
+            "Description": "The bearer has a Move characteristic of 7\" and a Save Characteristic of 3+."
+          }
+        }
+      ]
+    }
+  },
+  "Morvenn Vahl": {
+    "cost": {
+      "pts": "170",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n■ Paragon Warsuits"
+          }
+        },
+        {
+          "name": "Abbess Sanctorum",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll and you can re-roll the Wound roll."
+          }
+        },
+        {
+          "name": "Righteous Repugnance",
+          "characteristics": {
+            "Description": "Each time this model's unit is selected to shoot or fight, you can discard 1 Miracle dice. If you do, until the end of the phase, add 3 to the Attacks characteristic of Fidelis and the Lance of Illumination. Each time an enemy unit is destroyed by this model, you gain 1 Miracle dice."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 4+"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Morvenn Vahl",
+          "characteristics": {
+            "M": "8\"",
+            "T": "7",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Lance of Illumination - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "➤ Lance of Illumination - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Fidelis",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Paragon missile launcher - prioris",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Paragon missile launcher - sanctorum",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Palatine": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Battle Sisters Squad\n■ Celestian Sacresants\n■ Dominion Squad\n■ Retributor Squad\n■ Sisters Novitiate Squad"
+          }
+        },
+        {
+          "name": "Fury of the Righteous",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+          }
+        },
+        {
+          "name": "Rapturous Blows",
+          "characteristics": {
+            "Description": "Each time this model’s unit is selected to fight, you can discard 1 Miracle dice. If you do, then until the end of the phase, each time a melee attack made by this model scores a wound, the target of that attack suffers 1 mortal wound in addition to any normal damage."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 4+"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Palatine blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma pistol - supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Palatine",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Paragon Warsuit": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Paragon Warsuit",
+          "characteristics": {
+            "M": "8\"",
+            "T": "7",
+            "SV": "2+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Paragon Storm Bolters",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2, Twin-Linked"
+          }
+        },
+        {
+          "name": "Paragon Grenade Launchers",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Twin-Linked"
+          }
+        },
+        {
+          "name": "Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Paragon War Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Paragon War Mace",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Paragon Superior": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Paragon Superior",
+          "characteristics": {
+            "M": "8\"",
+            "T": "7",
+            "SV": "2+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Paragon Storm Bolters",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2, Twin-Linked"
+          }
+        },
+        {
+          "name": "Paragon Grenade Launchers",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Twin-Linked"
+          }
+        },
+        {
+          "name": "Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Paragon War Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Paragon War Mace",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Penitent Engine": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Penitent Engine",
+          "characteristics": {
+            "M": "8\"",
+            "T": "6",
+            "SV": "4+",
+            "W": "5",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin Penitent Buzz-Blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "10",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Sustained Hits 1, Twin-Linked"
+          }
+        },
+        {
+          "name": "Twin Penitent Flails",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1, Twin-Linked"
+          }
+        },
+        {
+          "name": "Penitent Buzz-Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "10",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Penitent Flail",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Penitent Flamers",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault, Ignores Cover, Torrent, Twin-Linked"
+          }
+        }
+      ]
+    }
+  },
+  "Ministorum Priest": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Arco-flagellants\n■ Battle Sisters Squad\n■ Dominion Squad\n■ Sisters Novitiate Squad"
+          }
+        },
+        {
+          "name": "Righteous Smiting",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll."
+          }
+        },
+        {
+          "name": "Zealot",
+          "characteristics": {
+            "Description": "Once per battle, in the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristics of melee weapons equipped by this model by 3."
+          }
+        },
+        {
+          "name": "Holy Mission",
+          "characteristics": {
+            "Description": "If this model is attached to a Dominion Squad during the Declare Battle Formations step, it gains the Scouts 6\" ability. If this model is attached to a Sisters Novitiate Squad during the Declare Battle Formations step, it gains the Infiltrators ability."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 4+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Holy Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Zealot's vindictor",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Zealot's vindictor",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Ministorum Priest",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Sister Repentia": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Penitent Eviscerator",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Repentia Superior": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Neural Whips",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Infantry 4+"
+          }
+        }
+      ]
+    }
+  },
+  "Retributor Superior": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Retributor Superior",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Retributor": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Retributor",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Saint Celestine": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Saint Celestine",
+          "characteristics": {
+            "M": "12\"",
+            "T": "3",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "The Ardent Blade",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Ardent Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Seraphim Superior": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Seraphim",
+          "characteristics": {
+            "M": "12\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Seraphim": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Seraphim",
+          "characteristics": {
+            "M": "12\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Seraphim with Special Weapons": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Seraphim",
+          "characteristics": {
+            "M": "12\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Inferno Pistol",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-4",
+            "D": "D3",
+            "Keywords": "Melta 2, Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Novitiate with Sacred Banner": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Sacred Banner",
+          "characteristics": {
+            "Description": "You can re-roll Advance and Charge rolls made for the bearer’s unit."
+          }
+        }
+      ]
+    }
+  },
+  "Novitiate with Simulacrum Imperialis": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Novitiate with Ministorum Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Novitiate Superior": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Sororitas Rhino": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Description": "This model has a transport capacity of 12 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the TRIUMPH OF SAINT KATHERINE."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 6+"
+          }
+        },
+        {
+          "name": "Self Repair",
+          "characteristics": {
+            "Description": "At the start of your Command phase, this model regains 1 lost wound."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sororitas Rhino",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Triumph of Saint Katherine": {
+    "cost": {
+      "pts": "235",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n■ Battle Sisters Squad"
+          }
+        },
+        {
+          "name": "Damaged: 1-6 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-6 wounds remaining, the Attacks characteristics of all of its weapons are halved, and you can only select one ability when using its Relics of the Matriarchs ability, instead of up to two."
+          }
+        },
+        {
+          "name": "Relics of the Matriarchs",
+          "characteristics": {
+            "Description": "At the start of the battle round, select up to two of the abilities in the Relics of the Matriarchs section. Until the start of the next battle round, this model has those abilities."
+          }
+        },
+        {
+          "name": "Relic of the Matriarch - The Fiery Heart (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Adepta Sororitas unit is within 6\" of this model, add 2\" to that unit's Move characteristic and add 1 to the Advance and Charge rolls made for that unit."
+          }
+        },
+        {
+          "name": "Relic of the Matriarch - Censer of the Sacred Rose (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Adepta Sororitas unit is within 6\" of this model, you can re-roll all Battle-shock tests taken for that unit."
+          }
+        },
+        {
+          "name": "Relic of the Matriarch - Simulacrum of the Ebon Chalice (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Adepta Sororitas unit is within 6\" of this model, that unit can perform up to two Acts of Faith per phase, instead of only one."
+          }
+        },
+        {
+          "name": "Relic of the Matriarch - Simulacrum of the Argent Shroud (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Adepta Sororitas unit is within 6\" of this model, each time a model in that unit makes a ranged attack, re-roll a Wound roll of 1."
+          }
+        },
+        {
+          "name": "Relic of the Matriarch - Icon of the Valorous Heart (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Adepta Sororitas unit is within 6\" of this model, models in that unit have the Feel No Pain 6+ ability."
+          }
+        },
+        {
+          "name": "Relic of the Matriarch - Petals of the Bloody Rose (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Adepta Sororitas unit is within 6\" of this model, improve the Armour Penetration characteristic of melee weapons equipped by model in that unit by 1."
+          }
+        },
+        {
+          "name": "Solemn Procession",
+          "characteristics": {
+            "Description": "Each time you gain 1 Miracle dice at the start of the battle round, if this model is on the battlefield, do not roll one D6 to determine the value of that Miracle dice; it has a value of 6.’"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 4+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Pistols",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Relic Weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "18",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Triumph of Saint Katherine",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "6"
+          }
+        }
+      ]
+    }
+  },
+  "Zephyrim Superior": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sacred Banner",
+          "characteristics": {
+            "Description": "You can re-roll Advance and Charge rolls made for the bearer’s unit."
+          }
+        }
+      ]
+    }
+  },
+  "Zephyrim": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Geminae Superia": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Geminae Superia",
+          "characteristics": {
+            "M": "12\"",
+            "T": "3",
+            "SV": "2",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Sister Novitiate (Melee Weapon)": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Novitiate melee weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Sister Novitiate (Autogun)": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Novitiate autogun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Repressor [Legends]": {
+    "cost": {
+      "pts": "130"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Description": "This model has a transport capacity of 12 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the Triumph of Saint Katherine."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 6+"
+          }
+        },
+        {
+          "name": "Emergency Combat Embarkation",
+          "characteristics": {
+            "Description": "Once per turn, in your opponent’s Charge phase, after an enemy unit has selected targets for its charge but before it makes a Charge move, you can select one ADEPTA SORORITAS unit from your army that was selected as a target of that charge. Provided that unit is not within Engagement Range of any enemy units and every model in that unit is within 3\" of this TRANSPORT, it can embark within this TRANSPORT."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Repressor",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Dozer Ram",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "7",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Repressor twin heavy flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent, Twin-Linked"
+          }
+        },
+        {
+          "name": "Heavy flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Canoness with Jump Pack": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Blessed Halberd",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Holy Eviscerator",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Canoness with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Divine Deliverance",
+          "characteristics": {
+            "Description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by the model and those weapons have the [DEVASTATING WOUNDS] ability"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has an invulnerable save of 4+"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This unit can be attached to the following units: \n- Seraphim Squad\n- Zephyrim Squad"
+          }
+        }
+      ]
+    }
+  },
+  "Death Cult Assassin": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Death Cult blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Crusader": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Crusader",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Battle Sanctum [Legends]": {
+    "cost": {
+      "pts": "170"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Battle Sanctum",
+          "characteristics": {
+            "M": "-",
+            "T": "11",
+            "SV": "3+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Consecrated Ground",
+          "characteristics": {
+            "Description": "When this FORTIFICATION is set up, all parts of it must be set up within 1\" of another part. Friendly ADEPTA SORORITAS INFANTRY models can be set up or end any type of move on top of the floor sections of this FORTIFICATION. While an ADEPTA SORORITAS unit from your army is within 1\" of this FORTIFICATION, that unit can perform one additional Act of Faith per phase."
+          }
+        },
+        {
+          "name": "Holy Cover",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack."
+          }
+        }
+      ]
+    }
+  },
+  "Celestian Sacresant Aveline [Legends]": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Celestian Sacresant Aveline",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Instrument of the Emperor's Wrath",
+          "characteristics": {
+            "Description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability."
+          }
+        },
+        {
+          "name": "Daemonbreaker",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a DAEMON unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Thorn of the White Rose",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Sanctifier w/ simulacrum imperialis": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Simulacrum Imperialis",
+          "characteristics": {
+            "Description": "At the end of your Command phase, for each objective marker you control that has one or more units from your army with this ability within range of it, roll one D6: on a 4+, you gain 1 Miracle dice showing a value equal to that result."
+          }
+        }
+      ]
+    }
+  },
+  "Sanctifier w/ two hand flamers": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Missionary w/ plasma gun": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma gun - standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Plasma gun - supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Meltagun",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "Holy fire",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, One Shot, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Sanctifier w/ hand flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Miraculist": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Holy fire",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, One Shot, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Burning hands",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Missionary w/ flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Salvationist": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Salvationist Medikit",
+          "characteristics": {
+            "Description": "In your Command phase, if the bearer is on the battlefield, you can return up to D3 destroyed models (excluding ^^**Character models^^**) to this unit."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  }
+}

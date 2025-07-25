@@ -1,0 +1,1638 @@
+{
+  "War Dog Executioner": {
+    "cost": {
+      "pts": "130",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "War Dog Executioner",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Executioner",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a unit Below Half-strength, add 1 to the Hit roll. Each time an enemy unit is destroyed as the result of this model's attacks, before removing the last model in that unit from the battlefield, each other unit from your opponent's army that is within 3\" of it must take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "War Dog autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "War Dog Stalker": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "War Dog Stalker",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Stalker",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets an enemy unit, if there are no other units from your opponent’s army within 6\" of that target, add 1 to the Wound roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        }
+      ]
+    }
+  },
+  "War Dog Karnivore": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "War Dog Karnivore",
+          "characteristics": {
+            "M": "14\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Karnivore",
+          "characteristics": {
+            "Description": "You can re-roll Advance and Charge rolls made for this model."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Reaper chaintalon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Slaughterclaw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "War Dog Brigand": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "War Dog Brigand",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Brigand",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by this model have the [Ignores Cover] ability while targeting enemy units in range of one or more objective markers."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        }
+      ]
+    }
+  },
+  "War Dog Huntsman": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "War Dog Huntsman",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Huntsman",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a ^^**Monster^^** or ^^**Vehicle^^** unit, you can re-roll the Wound roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        }
+      ]
+    }
+  },
+  "Knight Despoiler": {
+    "cost": {
+      "pts": "335",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Despoiler",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Dread Dominion (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 9\" of this model, improve that ^^**War Dog^^** model's Leadership  and Objective Control characteristics by 1."
+          }
+        },
+        {
+          "name": "Seething Hatred",
+          "characteristics": {
+            "Description": "Each time this model is selected to shoot or fight, you can re-roll one Hit roll or you can re-roll one Wound roll when resolving those attacks."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Titanic feet",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Desecrator": {
+    "cost": {
+      "pts": "335",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Desecrator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Taskmaster (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 9\" of this model, each time that ^^**War Dog^^** model makes a ranged attack, re-roll a Hit roll of 1."
+          }
+        },
+        {
+          "name": "Obsessive Ruthlessness",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a ^^**Monster^^** or ^^**Vehicle^^** unit, that attack has the [DEVASTATING WOUNDS] ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Desecrator laser destructor",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "18",
+            "AP": "-4",
+            "D": "D6+3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Diabolus heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 3"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Rampager": {
+    "cost": {
+      "pts": "335",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Rampager",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Frenzied Rampage (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 9\" of this model, each time that ^^**War Dog^^** model makes a melee attack, re-roll a Hit roll of 1."
+          }
+        },
+        {
+          "name": "Bloodlust",
+          "characteristics": {
+            "Description": "Each time this model makes a Charge move, until the end of the turn, its melee weapons have the [Devastating Wounds] ability."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Reaper chainsword - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "14",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Reaper chainsword - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "18",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Warpstrike claw - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "20",
+            "AP": "-3",
+            "D": "8",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Warpstrike claw - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Abominant": {
+    "cost": {
+      "pts": "325",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Abominant",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Vortex Terrors (Psychic)",
+          "characteristics": {
+            "Description": "At the start of your Shooting phase, select one enemy unit within 24\" of and visible to this model. That enemy unit must take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Warp Storms (Psychic)",
+          "characteristics": {
+            "Description": "At the end of your Movement phase, roll one D6 for each enemy unit within 9\" of this model: on a 3+, that enemy unit suffers D3 mortal wounds."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Volkite combustor",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "12",
+            "BS": "3+",
+            "S": "12",
+            "AP": "0",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Electroscourge",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "9",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Balemace",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Tyrant": {
+    "cost": {
+      "pts": "395",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Tyrant",
+          "characteristics": {
+            "M": "8\"",
+            "T": "12",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Infernal Aegis (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 6\" of this model, that ^^**War Dog^^** model has the Benefit of Cover."
+          }
+        },
+        {
+          "name": "Bastion of Corruption",
+          "characteristics": {
+            "Description": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this model."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin daemonbreath meltagun",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Twin-linked"
+          }
+        },
+        {
+          "name": "Brimstone volcano lance",
+          "characteristics": {
+            "Range": "60\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "20",
+            "AP": "-5",
+            "D": "D6+8",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Ectoplasma decimator - standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Ectoplasma decimator - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "3",
+            "Keywords": "Blast, Hazardous"
+          }
+        },
+        {
+          "name": "Darkflame cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3D6",
+            "BS": "N/A",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Warpshock harpoon",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "24",
+            "AP": "-6",
+            "D": "12",
+            "Keywords": "Blast, Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Titanic feet",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Acastus Knight Asterius": {
+    "cost": {
+      "pts": "765"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Sunderer of Fortresses",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a ^^**Vehicle^^**, improve the Strength and Damage characteristics of that attack by 1 (if that attack targets a ^^**Fortification^^**, improve the Strength and Damage characteristics of that attack by 2 instead)."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Chaos Acastus Knight Asterius",
+          "characteristics": {
+            "M": "8\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "30",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Asterius volkite culverin",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Karacnos mortar battery",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-INFANTRY 2+, Blast, Ignores Cover, Indirect Fire"
+          }
+        },
+        {
+          "name": "Twin conversion beam cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-2",
+            "D": "6",
+            "Keywords": "Conversion, Twin-linked, Sustained Hits D3"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Acastus Knight Porphyrion": {
+    "cost": {
+      "pts": "700"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Bastion of Firepower",
+          "characteristics": {
+            "Description": "Each time this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the [LETHAL HITS] ability."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Chaos Acastus Knight Porphyrion",
+          "characteristics": {
+            "M": "8\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "30",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin magna lascannon",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "18",
+            "AP": "-4",
+            "D": "D6+6",
+            "Keywords": "Blast, Twin-linked"
+          }
+        },
+        {
+          "name": "Acastus autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Acastus ironstorm missile pod",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy, Indirect Fire"
+          }
+        },
+        {
+          "name": "Helios defence missiles",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Anti-FLY 2+, Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Cerastus Knight Lancer": {
+    "cost": {
+      "pts": "355",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Cerastus Knight Lancer",
+          "characteristics": {
+            "M": "14\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Shock Charge",
+          "characteristics": {
+            "Description": "You can target this model with the Tank Shock Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+          }
+        },
+        {
+          "name": "Dark Fervour (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 6\" of this model, ranged weapons equipped by that ^^**War Dog^^** model have the [ASSAULT] ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Cerastus shock lance",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Assault, Sustained Hits 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Cerastus shock lance - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "20",
+            "AP": "-3",
+            "D": "8",
+            "Keywords": "Lance"
+          }
+        },
+        {
+          "name": "➤ Cerastus shock lance - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Cerastus Knight Castigator": {
+    "cost": {
+      "pts": "355",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Cerastus Knight Castigator",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Storm of Bolts",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Offerings for the Dark Gods (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 6\" of this model, ranged weapons equipped by that ^^**War Dog^^** model have the [SUSTAINED HITS 1] ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Castigator bolt cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "18",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Tempest warblade - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Tempest warblade - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Cerastus Knight Acheron": {
+    "cost": {
+      "pts": "355",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Cerastus Knight Acheron",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Searing Flames",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with an Acheron flame cannon. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+          }
+        },
+        {
+          "name": "Unrestrained Terror (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 6\" of this model, it is affected by this ability. At the start of the Fight phase, each enemy unit within Engagement Range of one or more ^^**War Dog^^** units affected by this ability must take a Battle-shock test."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Acheron flame cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Twin heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Reaper chainfist - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Reaper chainfist - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Cerastus Knight Atrapos": {
+    "cost": {
+      "pts": "355",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Macro-extinction Protocols",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a ^^**Monster^^** or ^^**Vehicle^^** unit, add 1 to the Hit roll. If that target is ^^**Titanic^^** or ^^**Towering^^**, add 1 to the Wound roll as well."
+          }
+        },
+        {
+          "name": "Consumed with Hunger (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 6\" of this model, each time that ^^**War Dog^^** model makes an attack that targets a ^^**Titanic^^** or ^^**Towering^^** unit, you can re-roll the Hit roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Chaos Cerastus Knight Atrapos",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Atrapos lascutter - low intensity",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Atrapos lascutter - high intensity",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "4",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Atrapos lascutter - low intensity",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Atrapos lascutter - high intensity",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "4",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Graviton singularity cannon - contained",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Graviton singularity cannon - singularity",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Blast, Devastating Wounds, Hazardous"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Questoris Knight Magaera": {
+    "cost": {
+      "pts": "345",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Repair Auto-simulacra",
+          "characteristics": {
+            "Description": "At the end of your Command phase, this model regains up to D3 lost wounds."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Chaos Questoris Knight Magaera",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Lightning cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "12",
+            "BS": "3+",
+            "S": "9",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Sustained Hits 2"
+          }
+        },
+        {
+          "name": "Phased plasma-fusil",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Rapid Fire 2"
+          }
+        },
+        {
+          "name": "Twin rad cleanser",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-INFANTRY 2+, Ignores Cover, Torrent, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Hekaton siege claw - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "20",
+            "AP": "-3",
+            "D": "8",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Hekaton siege claw - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Questoris Knight Styrix": {
+    "cost": {
+      "pts": "345",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Grav-pinned",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if an enemy ^^**Infantry^^** unit was hit by one or more of those attacks made with a graviton crusher, until the end of your opponent’s next turn, that enemy unit is grav-pinned. While a unit is grav-pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Advance and Charge rolls made for that unit."
+          }
+        },
+        {
+          "name": "Preysight (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 6\" of this model, ranged weapons equipped by that ^^**War Dog^^** model have the [IGNORES COVER] ability."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Chaos Questoris Knight Styrix",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Graviton crusher",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-VEHICLE 2+, Blast"
+          }
+        },
+        {
+          "name": "Volkite chierovile",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "9",
+            "BS": "3+",
+            "S": "12",
+            "AP": "0",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Twin rad cleanser",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-INFANTRY 2+, Ignores Cover, Torrent, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Hekaton siege claw - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "20",
+            "AP": "-3",
+            "D": "8",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Hekaton siege claw - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "War Dog Moirax": {
+    "cost": {
+      "pts": "150",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Protection Protocols",
+          "characteristics": {
+            "Description": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "War Dog Moirax",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Volkite veuglaire",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Conversion beam cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Conversion, Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Graviton pulsar",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-VEHICLE 2+, Blast"
+          }
+        },
+        {
+          "name": "Lightning lock",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        },
+        {
+          "name": "Rad cleanser",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-INFANTRY 2+, Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Siege claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Ruinator": {
+    "cost": {
+      "pts": "350",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Ruinator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Methodical Destruction",
+          "characteristics": {
+            "Description": "At the start of the first battle round, select one unit from your opponent's army to be this model's victim. Each time this model makes an attack that targets its victim, you can re-roll the Wound roll. Each time this model's victim is destroyed, select one new enemy unit to be this model's victim."
+          }
+        },
+        {
+          "name": "Close-range Killers (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**War Dog^^** model is within 9\" of this model, each time that ^^**War Dog^^** model makes an attack that targets the closest enemy unit, improve the Armour Penetration characteristic of that attack by 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Darkflame lance",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Terrorpulse missiles",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Fellbore - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "6",
+            "Keywords": "Anti-Monster 2+, Anti-Vehicle 2+"
+          }
+        },
+        {
+          "name": "➤ Fellbore - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  }
+}

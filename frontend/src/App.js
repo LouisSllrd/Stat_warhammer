@@ -17,6 +17,8 @@ import SimulationEnJeuMobile from "./components_mobile/JeuMobile";
 import UnitesAdversesPage from "./components/ListeAdverse";
 import UnitesAdversesPageMobile from "./components_mobile/ListeAdverseMobile";
 
+import SimulationDatasheets from "./components/SimulationDatasheets"
+
 import Accueil from "./components/Accueil";
 import AccueilMobile from "./components_mobile/AccueilMobile";
 
@@ -120,6 +122,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
                 <button onClick={() => setPage("simulateur")}>Unité Mono Profil</button>
                 <button onClick={() => setPage("multi-profiles")}>Unité Multi Profils</button>
                 <button onClick={() => setPage("compare")}>Comparateur</button>
+                {/*<button onClick={() => setPage("simulateur-datasheets")}>Simulateur datasheets</button>*/}
               </div>
 
               {user && (
@@ -444,6 +447,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
           {page === "simulateur" && (isMobile ? <SimulateurMobile /> : <Simulateur />)}
           {page === "multi-profiles" && (isMobile ? <MultiSimulateurMobile /> : <MultiSimulateur />)}
           {page === "compare" && (isMobile ? <CompareMobile /> : <Compare />)}
+          {/*{page === "simulateur-datasheets" && (isMobile ? <SimulationDatasheets /> : <SimulationDatasheets />)}*/}
           {page === "mes-listes" && user && (isMobile ? <MesListesMobile user={user} /> : <MesListes user={user} />)}
           {page === "unites-adverses" && user && (isMobile ? <UnitesAdversesPageMobile user={user} /> : <UnitesAdversesPage user={user} />)}
           {page === "jeu" && user && (isMobile ? <SimulationEnJeuMobile user={user} /> : <SimulationEnJeu user={user} />)}

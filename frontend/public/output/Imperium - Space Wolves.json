@@ -1,0 +1,2911 @@
+{
+  "Logan Grimnar": {
+    "cost": {
+      "pts": "110",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Logan Grimnar",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Wolf Guard Terminators"
+          }
+        },
+        {
+          "name": "High King of Fenris",
+          "characteristics": {
+            "Description": "Once per battle round, in your Movement phase, you can select one friendly Space Wolves unit that is in Strategic Reserves. If you do, until the end of the phase, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is."
+          }
+        },
+        {
+          "name": "Guile of the Wolf (Aura)",
+          "characteristics": {
+            "Description": "Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that usage of that Stratagem by 1CP P (this is not cumulative with any other rules that increase the CP cost of that Stratagem)"
+          }
+        },
+        {
+          "name": "Embarking within Transports",
+          "characteristics": {
+            "Description": "This model can embark within friendly Adeptus Astartes Transport models that can transport Terminator models. When doing, it takes up the space of 4 Infantry models"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Tyrnak and Fenrir [Extra Attacks]",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": null
+          }
+        }
+      ]
+    }
+  },
+  "Logan Grimnar on Stormrider [Legends]": {
+    "cost": {
+      "pts": "180"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Logan Grimnar on Stormrider",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n\n■ Thunderwolf Cavalry"
+          }
+        },
+        {
+          "name": "Logan Grimnar",
+          "characteristics": {
+            "Description": "Your army cannot contain both Logan Grimnar and Logan Grimnar on Stormrider"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Flurry of teeth and claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Njal Stormcaller": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Njal Stormcaller",
+          "characteristics": {
+            "M": "7\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Wolf Guard Headtakers"
+          }
+        },
+        {
+          "name": "Wind Walker (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [ASSAULT] ability and each time that unit advances, do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit"
+          }
+        },
+        {
+          "name": "Tempest's Wrath (Psychic)",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model's unit has shot, select one enemy unit, (excluding MONSTERS and VEHICLES) hit by one or more of those attacks made with this model's Living Lightning weapon. Until the start of your next turn, that enemy is stormwracked. While a unit is stormwracked, subtract 6\" from the Range characteristic of ranged weapons equipped by models in that unit (to a minimum of 12\")"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Staff of the Stormcaller",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic, Sustained Hits 2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Living Lightning - witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Psychic, Sustained Hits 2"
+          }
+        },
+        {
+          "name": "➤ Living Lightning - focused witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Hazardous, Psychic, Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Bjorn the Fell-Handed": {
+    "cost": {
+      "pts": "170",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Bjorn the Fell-Handed",
+          "characteristics": {
+            "M": "9\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Legendary Tenacity",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, if the Strength characteristic of that attack is greater than this model's Toughness characteristic, subtract 1 from the Wound roll."
+          }
+        },
+        {
+          "name": "Ancient Tactician",
+          "characteristics": {
+            "Description": "At the start of your Command phase, if this model is on the battlefield, you gain 1 CP"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "5+"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Trueclaw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Assault cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "➤ Helfrost cannon - dispersed",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Torrent"
+          }
+        },
+        {
+          "name": "➤ Helfrost cannon - focused",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "10",
+            "AP": "-3",
+            "D": "5",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Arjac Rockfist": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Wolf Guard Terminators"
+          }
+        },
+        {
+          "name": "Anvil of Endurance",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6, on a 4+, do not remove the destroyed model from play. The destroyed model can fight after the attacking unit has finished making its attacks, and then is removed from play"
+          }
+        },
+        {
+          "name": "Champion of the Kingsguard",
+          "characteristics": {
+            "Description": "Each time this model makes a melee attack that targets a CHARACTER unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Arjac Rockfist",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Foehammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Monster 3+, Anti-Vehicle 3+, Precision"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Foehammer",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Monster 3+, Anti-Vehicle 3+, Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Ulrik the Slayer": {
+    "cost": {
+      "pts": "70"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ulrik the Slayer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Slayer’s Oath",
+          "characteristics": {
+            "Description": "At the start of the battle, select one of the following keywords to be this model's Slayer's Oath: CHARACTER, VEHICLE or MONSTER. The first time this model's unit destroys a unit with this model's Slayer's Oath keyword, if your Detachment has a Saga, until the end of the battle, this model's unit receives the benefits of that Detachment rule as if that Saga had been completed."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Wolf Guard Headtakers"
+          }
+        },
+        {
+          "name": "Oathbound",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Hit roll. If that attack targets a unit that has this model's Slayer's Oath keyword (see above), add 1 to the Wound roll as well."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma pistol - standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Artificer crozius",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Monster 4+, Anti-Vehicle 4+"
+          }
+        }
+      ]
+    }
+  },
+  "Ragnar Blackmane": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Frostfang",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Wolf Guard Headtakers"
+          }
+        },
+        {
+          "name": "War Howl",
+          "characteristics": {
+            "Description": "While this model is leading a BLOOD CLAWS unit, each time a model in that unit makes a melee attack, you can re-roll the Wound roll. While this model is leading a WOLF GUARD HEADTAKERS UNIT, that unit is eligible to declare a charge in a turn in which it Advanced."
+          }
+        },
+        {
+          "name": "Battle-lust",
+          "characteristics": {
+            "Description": "Each time this model ends a Charge move, until the end of the turn, add 2 to the Attacks characteristics of this model’s Frostfang."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Ragnar Blackmane",
+          "characteristics": {
+            "M": "7\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Krom Dragongaze [Legends]": {
+    "cost": {
+      "pts": "65"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Wolf Guard"
+          }
+        },
+        {
+          "name": "Refuse to Accept Defeat",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Below Half-strength."
+          }
+        },
+        {
+          "name": "The Fierce Eye",
+          "characteristics": {
+            "Description": "In your Shooting phase, you can select one enemy INFANTRY unit within 12\" of and visible to this model. That enemy unit must take a Battle-shock test."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Krom Dragongaze",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Wyrmclaw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Harald Deathwolf [Legends]": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Thunderwolf Cavalry"
+          }
+        },
+        {
+          "name": "Lord of the Wolfkin",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time that unit makes a Charge move, until the end of the turn, crushing teeth and claws equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+          }
+        },
+        {
+          "name": "Mantle of the Troll King",
+          "characteristics": {
+            "Description": "Once per phase, when resolving an attack made against this model, after you make a saving throw for this model, you can change the Damage characteristic of that attack to 0."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Harald Deathwolf",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "7",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Glacius",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Crushing teeth and claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Canis Wolfborn [Legends]": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Fenrisian Wolves\n■ Thunderwolf Cavalry"
+          }
+        },
+        {
+          "name": "Born of Wolves",
+          "characteristics": {
+            "Description": "While this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+          }
+        },
+        {
+          "name": "Alpha Predator",
+          "characteristics": {
+            "Description": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6: on a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6, that enemy units suffers D3+3 mortal wounds."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Canis Wolfborn",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "5+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Wolf claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Battle Leader in Terminator Armour [Legends]": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Guard Battle Leader in Terminator Armour",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Relic Terminator Squad\n■ Terminator Assault Squad\n■ Terminator Squad\n■ Wolf Guard Terminators\n\nYou can attach this model to one of the above units even if one Captain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Huskarl to the Jarl",
+          "characteristics": {
+            "Description": "While this model is attached to a unit that contains another CHARACTER model, all CHARACTER models in that unit have the Feel No Pain 4+ ability."
+          }
+        },
+        {
+          "name": "Relic shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 6."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chainfist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-VEHICLE 3+"
+          }
+        },
+        {
+          "name": "Chainfist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-VEHICLE 3+"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Combi-weapon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Lord on Thunderwolf [Legends]": {
+    "cost": {
+      "pts": "100"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Thunderwolf Cavalry"
+          }
+        },
+        {
+          "name": "Speed of the Hunter",
+          "characteristics": {
+            "Description": "Add 1 to Advance and Charge rolls made for this model’s unit."
+          }
+        },
+        {
+          "name": "Relic shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 7."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Wolf Lord on Thunderwolf",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Battle Leader on Thunderwolf [Legends]": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n\n■ Thunderwolf Cavalry\n\nYou can attach this model to the above unit even if one Captain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Aggressive Hunter",
+          "characteristics": {
+            "Description": "Once per battle, in your opponent’s Shooting phase, after an enemy unit has finished making its attacks, if this model’s unit was targeted by one or more of those attacks, this model’s unit can make a Normal move of up to D6\", but must end that move as close as possible to the closest enemy unit. When doing so, models in this model’s unit can be moved within Engagement Range of that enemy unit."
+          }
+        },
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Wolf Guard Battle Leader on Thunderwolf",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Blood Claw": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Blood Claw Pack Leader": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Grey Hunter Pack Leader": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Hunter": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard w/ boltgun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard w/ combi-weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard w/ plasma pistol": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard w/ storm bolter": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard w/ storm shield": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Wolf Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard w/ bolt pistol": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Lukas the Trickster [Legends]": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lukas the Trickster",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Pelt of the Doppelgangrel:",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Last Laugh",
+          "characteristics": {
+            "Description": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, roll one D6: on a 4+, the attacking unit suffers D6 mortal wounds and is Battle-shocked."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n\n■ Blood Claws"
+          }
+        },
+        {
+          "name": "Master of Mischief",
+          "characteristics": {
+            "Description": "This model cannot be your WARLORD."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Claw of the Jackalwolf",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Terminator": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Terminator w/Assault Cannon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Assault Cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Terminator Pack Leader": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Relic Great Axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Master-crafted Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hound of Morkai": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Morkai bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-PSYKER 4+, Devastating Wounds, Pistol, Precision"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Morkai combat knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-PSYKER 4+, Devastating Wounds, Precision"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Hounds of Morkai",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wulfen w/Auto-launcher": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Thunder Hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Monster 3+, Anti-Vehicle 3+"
+          }
+        }
+      ]
+    }
+  },
+  "Wulfen w/Death Totem": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Death Totem",
+          "characteristics": {
+            "Description": "Each time the bearer makes a melee attack, re-roll a hit roll of 1."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Thunder Hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Monster 3+, Anti-Vehicle 3+"
+          }
+        }
+      ]
+    }
+  },
+  "Wulfen Dreadnought": {
+    "cost": {
+      "pts": "145",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wulfen Dreadnought",
+          "characteristics": {
+            "M": "9\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Bestial Rage",
+          "characteristics": {
+            "Description": "Each time an enemy unit is selected to shoot, after that unit has shot, if this model lost one or more wounds as a result of those attacks, this model can make a Bestial Rage move. To do so, roll one D6, adding 2 to the result: this model can be moved a number of inches up to the result, but must finish that move as close as possible to the closest enemy unit(excluding AIRCRAFT). When doing so, this model can be moved within Engagement Range of that enemy unit. Each model can only make one Bestial Rage move per phase."
+          }
+        },
+        {
+          "name": "Violent Fury",
+          "characteristics": {
+            "Description": "If this model is equipped with two melee weapons, those weapon profiles have the TWIN-LINKED ability."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Great wolf claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Murderfang": {
+    "cost": {
+      "pts": "160",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Murderfang",
+          "characteristics": {
+            "M": "9\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Murder-maker [Aura]",
+          "characteristics": {
+            "Description": "In the Fight phase, each time an attack targets a friendly WULFEN unit within 6\" of this model, if a model in that unit is destroyed as a result of that attack, if that model has not fought this phase, roll one D6: on a 4+, do not remove the destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play."
+          }
+        },
+        {
+          "name": "Force of Untamed Destruction",
+          "characteristics": {
+            "Description": "This model cannot be your WARLORD."
+          }
+        },
+        {
+          "name": "Beastial Fury",
+          "characteristics": {
+            "Description": "You can re-roll Advance and Charge rolls made for this model."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Murderclaws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Sustained Hits 1, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Thunderwolf w/ plasma pistol": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Thunderwolf w/ boltgun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Thunderwolf w/ storm shield": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Thunderwolf w/ bolt pistol": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Fenrisian Wolf": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Teeth and claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skyclaw Pack Leader": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skyclaw Pack Leader",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Skyclaw": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skyclaws",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Skyclaw w/ plasma pistol": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skyclaws",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Skyclaw w/ flamer": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skyclaws",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Skyclaw w/ grav-gun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skyclaws",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Skyclaw w/ plasma gun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skyclaws",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Skyclaw w/ meltagun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Skyclaws",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Long Fang w/ boltgun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Long Fangs",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Long Fang w/ lascannon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Long Fangs",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Long Fang w/ heavy bolter": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Heavy, Sustained Hits 1"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Long Fangs",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Long Fang w/ grav-cannon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Grav-cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Anti-VEHICLE 2+, Heavy"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Long Fangs",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Long Fang w/ missile launcher": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Missile launcher - frag",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy"
+          }
+        },
+        {
+          "name": "➤ Missile launcher - krak",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Heavy"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Long Fangs",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Long Fang w/ plasma cannon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma cannon - standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Blast, Heavy"
+          }
+        },
+        {
+          "name": "➤ Plasma cannon - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Blast, Hazardous, Heavy"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Long Fangs",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Long Fang w/ multi-melta": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Heavy, Melta 2"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Long Fangs",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Long Fang w/ heavy flamer": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy, Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Long Fangs",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Long Fang Pack Leader": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Long Fang Pack Leader",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Stormfang Gunship [Legends]": {
+    "cost": {
+      "pts": "300"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Stormfang Gunship",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Frozen Prey",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if an enemy MONSTER or VEHICLE unit was hit by one or more of those attacks made with this model’s helfrost destructor, until the end of your opponent’s next turn, that enemy unit is Frozen. While a unit is Frozen, subtract 2 from that unit’s Move characteristic, and  subtract 2 from Advance and Charge rolls made for that unit."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Stormfang Gunship",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 6 ADEPTUS ASTARTES INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS or TERMINATOR model takes up the space of 2 models and each CENTURION model takes up the space of 3 models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Helfrost destructor - dispersed",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "11",
+            "AP": "-3",
+            "D": "7",
+            "Keywords": "Sustained Hits D3"
+          }
+        },
+        {
+          "name": "➤ Helfrost destructor - focused",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Torrent"
+          }
+        },
+        {
+          "name": "Twin stormstrike missile launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Stormwolf [Legends]": {
+    "cost": {
+      "pts": "250"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Into the Foe",
+          "characteristics": {
+            "Description": "If a unit disembarks from this TRANSPORT before it moves, until the end of the turn, that unit is eligible to charge in a turn in which it Advanced."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Stormwolf",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Stormwolf",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 16 ADEPTUS ASTARTES INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS or TERMINATOR model takes up the space of 2 models and each CENTURION model takes up the space of 3 models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Twin helfrost cannon - dispersed",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Torrent, Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Twin helfrost cannon - focused",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "5",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Pack Leader [Legends]": {
+    "cost": {
+      "pts": "30"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Guard Pack Leader",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Long Fangs\n\nYou must attach this model to one of the above units, and can do so even if one or more Character units have already been attached to that unit, but a unit can never include more than one Pack Leader model. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths. If it is not possible to attach this model to a unit, it does not take part in the battle and counts as having been destroyed."
+          }
+        },
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Pack Leader with Jump Pack [Legends]": {
+    "cost": {
+      "pts": "35"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Guard Pack Leader with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n\n■ Skyclaws\n\nYou must attach this model to the above unit, and can do so even if one or more Character units have already been attached to that unit, but a unit can never include more than one Pack Leader model. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths. If it is not possible to attach this model to a unit, it does not take part in the battle and counts as having been destroyed."
+          }
+        },
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Pack Leader in Terminator Armour [Legends]": {
+    "cost": {
+      "pts": "40"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Long Fangs\n\nYou must attach this model to one of the above units, and can do so even if one or more Character units have already been attached to that unit, but a unit can never include more than one Pack Leader model. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths. If it is not possible to attach this model to a unit, it does not take part in the battle and counts as having been destroyed."
+          }
+        },
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 4."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Wolf Guard Pack Leader in Terminator Armour",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Cyclone missile launcher - frag",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Cyclone missile launcher - krak",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Iron Priest": {
+    "cost": {
+      "pts": "60"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Iron Priest",
+          "characteristics": {
+            "M": "7\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Iron Priest",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly ADEPTUS ASTARTES VEHICLE units, this model has the Lone Operative ability"
+          }
+        },
+        {
+          "name": "Gift of the Iron Wolf",
+          "characteristics": {
+            "Description": "In your Command phase, you can select one friendly ADEPTUS ASTARTES VEHICLE model within 3\" of this model. That model regains up to D3 lost wounds and, until the start of your next Command phase, select one ranged weapon equipped by that model to have the [RAPID FIRE 1] ability. Each model can only be selected for this ability or Blessing of the Omnissiah ability once per turn."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Wolfguard Headtakers\n■ Blood Claws\n■ Grey Hunters"
+          }
+        },
+        {
+          "name": "Judgement of the Omnissiah",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets an enemy unit within Engagement Range of one or more friendly ADEPTUS ASTARTES VEHICLE units, you can re-roll the wound roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Helfrost pistol - dispersed",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol, Torrent"
+          }
+        },
+        {
+          "name": "➤ Helfrost pistol - focused",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Tempest hammer and Servo-arm",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Cyberwolf [Legends]": {
+    "cost": {
+      "pts": "20"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cyberwolf",
+          "characteristics": {
+            "M": "10\"",
+            "T": "4",
+            "SV": "6+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Alpha Hunter",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Scouts 6\" ability."
+          }
+        },
+        {
+          "name": "Close In for the Kill",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets an enemy unit that is Below Half-strength, add 1 to the Hit roll and add 1 to the Wound roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "6+"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n\n■ Fenrisian Wolves\n\nYou must attach this model to the above unit, even if Canis Wolfborn has been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths. If it is not possible to attach this model to a unit, it does not take part in the battle and counts as having been destroyed."
+          }
+        },
+        {
+          "name": "Wolfkin",
+          "characteristics": {
+            "Description": "This model cannot be your WARLORD and cannot be given Enhancements."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Teeth and claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Scout Pack Leader": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Grav-pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-VEHICLE 2+, Pistol"
+          }
+        },
+        {
+          "name": "Hand flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Inferno pistol",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-4",
+            "D": "D3",
+            "Keywords": "Melta 2, Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin Lightning Claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Wolf Scout Pack Leader",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Scout w/ boltgun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Scouts",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Scout w/ shotgun": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Astartes shotgun",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Wolf Scouts",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Scout w/ combat knife": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Combat knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Wolf Scouts",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Scout w/ special weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Scouts",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Scout w/ power weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Scouts",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Scout w/ plasma pistol": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Scouts",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Venerable Dreadnought": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Space Wolves Venerable Dreadnought",
+          "characteristics": {
+            "M": "8\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fervour of the Ancients (Aura)",
+          "characteristics": {
+            "Description": "While a friendly SPACE WOLVES unit is within 6\" of this model, add 1 to Advance and Charge rolls made for that unit."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Helfrost cannon - dispersed",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Torrent"
+          }
+        },
+        {
+          "name": "➤ Helfrost cannon - focused",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "5",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Iron Priest on Thunderwolf [Legends]": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Vengeance of the Omnissiah",
+          "characteristics": {
+            "Description": "If a friendly ADEPTUS ASTARTES VEHICLE model is destroyed within 12\" of this model, until the end of the battle, this model’s Iron Priest hammer has an Attacks characteristic of 6."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Thunderwolf Cavalry"
+          }
+        },
+        {
+          "name": "Iron Priest",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly ADEPTUS ASTARTES VEHICLE units, this model has the Lone Operative ability"
+          }
+        },
+        {
+          "name": "Blessing of the Omnissiah",
+          "characteristics": {
+            "Description": "In your Command phase, you can select one friendly ADEPTUS ASTARTES VEHICLE model within 3\" of this model. That model regains up to D3 lost wounds and, until the start of your next Command phase, each time that VEHICLE model makes an attack, add 1 to the Hit roll. Each model can only be selected for this ability once per turn."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Iron Priest on Thunderwolf",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Iron Priest hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Servo-arm",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Helfrost pistol - dispersed",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D3",
+            "BS": "N/A",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol, Torrent"
+          }
+        },
+        {
+          "name": "➤ Helfrost pistol - focused",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Priest": {
+    "cost": {
+      "pts": "70",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Wolf Guard Headtakers"
+          }
+        },
+        {
+          "name": "Healing Balms",
+          "characteristics": {
+            "Description": "While this model is leading a unit, in your Command phase, you can return 1 model (excluding CHARACTER models) to that unit."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Wolf Priest",
+          "characteristics": {
+            "M": "7\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Battle Leader": {
+    "cost": {
+      "pts": "65",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wolf Guard Battle Leader",
+          "characteristics": {
+            "M": "7\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Blood Claws\n■ Grey Hunters\n■ Wolf Guard Headtakers"
+          }
+        },
+        {
+          "name": "Tempered Ferocity",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability and, each time a model in that unit makes an attack that targets an enemy unit within 6\", re-roll a Hit roll of 1"
+          }
+        },
+        {
+          "name": "Heroic Last Stand",
+          "characteristics": {
+            "Description": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and then it is removed from play."
+          }
+        },
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 6"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Master-crafted Bolt Carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Master-crafted Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Wolf Guard Headtakers": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Paired Master-crafted Power Weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hunting Wolves": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Teeth and Claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  }
+}

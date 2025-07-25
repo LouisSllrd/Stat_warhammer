@@ -1,0 +1,6775 @@
+{
+  "Aegis Defence Line": {
+    "cost": {
+      "pts": "145"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Aegis Defence Line",
+          "characteristics": {
+            "M": "-",
+            "T": "12",
+            "SV": "2+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Emplacement Platform",
+          "characteristics": {
+            "Description": "Friendly **^^Astra Militarum Infantry**^^ models can be set up or end any type of move on top of the platform section of this **^^Fortification^^**."
+          }
+        },
+        {
+          "name": "Reinforced Cover",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this **^^Fortification^^**, that model has the Benefit of Cover against that attack."
+          }
+        },
+        {
+          "name": "Defence Line",
+          "characteristics": {
+            "Description": "While an **^^Astra Militarum Infantry^^** model has the Benefit of Cover as a result of this terrain feature, that model has a 4+ invulnerable save"
+          }
+        },
+        {
+          "name": "Deployment",
+          "characteristics": {
+            "Description": "When this model is set up, it will consist of 1 platform section, up to 5 shield sections, up to 2 broken shield sections and up to 2 end sections. All sections must be connected to each other to form a continuous defence line; the 2 broken shield sections can be placed either at the end of the defence line, or in the middle of it such that both are within ½\" of each other (in this case, these 2 sections count as being connected to each other). All of the sections that have been set up are then treated as a single model for all rules purposes."
+          }
+        }
+      ]
+    }
+  },
+  "Armoured Sentinel": {
+    "cost": {
+      "pts": "65"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Armoured Sentinel",
+          "characteristics": {
+            "M": "8\"",
+            "T": "8",
+            "SV": "2+",
+            "W": "7",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Rough Rider w/ Hunting lance": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Rough Rider w/ Goad lance": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Rough Rider Sergeant": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Power sabre",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Baneblade": {
+    "cost": {
+      "pts": "480"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Baneblade",
+          "characteristics": {
+            "M": "12\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rolling Fortress",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to an **^^Astra Militarum^^** model from your army, if that model is not fully visible to every model in the attacking unit because of this **^^Baneblade^^** model, that model has the Benefit of Cover against that attack."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Baneblade cannon",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "3D6",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Banehammer": {
+    "cost": {
+      "pts": "450"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Banehammer",
+          "characteristics": {
+            "M": "12\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Tremor Quake",
+          "characteristics": {
+            "Description": "In your Shooting phase, just after selecting a target for this model’s tremor cannon, the target unit and every other enemy **^^Infantry^^** unit within 3\" of that unit must take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Description": "This model has a transport capacity of 26 **^^Astra Militarum Infantry models^^**. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Tremor cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6+3",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Banesword": {
+    "cost": {
+      "pts": "480"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Banesword",
+          "characteristics": {
+            "M": "12\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Armour Obliteration",
+          "characteristics": {
+            "Description": "Each time an attack made with this model’s quake cannon destroys an enemy model that has the Deadly Demise ability, that model’s Deadly Demise ability inflicts mortal wounds on a D6 roll of 3+ instead of on a 6."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Quake cannon",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "D6+6",
+            "BS": "4+",
+            "S": "16",
+            "AP": "-4",
+            "D": "4",
+            "Keywords": "Blast, Ignores Cover"
+          }
+        }
+      ]
+    }
+  },
+  "Basilisk": {
+    "cost": {
+      "pts": "140"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Basilisk",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Earthshaker Rounds",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its earthshaker cannon scored a hit against an enemy **^^Infantry^^** unit, until the start of your next Shooting phase, that unit is shaken. While a unit is shaken, subtract 2\" from its Move characteristic and subtract 2 from Charge rolls made for it."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Earthshaker cannon",
+          "characteristics": {
+            "Range": "240\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Indirect Fire,"
+          }
+        }
+      ]
+    }
+  },
+  "Bullgryn": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Bullgryn Bone 'ead": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Cadian Castellan": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Kasrkin^^**"
+          }
+        },
+        {
+          "name": "Senior Officer",
+          "characteristics": {
+            "Description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the **[SUSTAINED HITS 1]** ability"
+          }
+        },
+        {
+          "name": "Get Back in the Fight",
+          "characteristics": {
+            "Description": "While this model is leading a unit, that unit is eligible to shoot in a turn in which it Fell Back."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Cadian Castellan",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Orders": [
+        {
+          "name": "Orders",
+          "characteristics": {
+            "Orders": "This **^^Officer^^** can issue 2 Orders to **^^Regiment^^** units."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Cadian Commander": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cadian Commander",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Cadian Veteran Guardsman w/ Regimental standard": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cadian Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Cadian Veteran Guardsman w/ Chainsword": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cadian Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Cadian Veteran Guardsman w/ Master vox": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cadian Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Cadian Veteran Guardsman w/ Medi-pack": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cadian Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Jungle Fighter Sergeant": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Jungle Fighter w/ Vox-caster": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Jungle Fighter w/ Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Chimera": {
+    "cost": {
+      "pts": "85",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chimera",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Mobile Command Vehicle",
+          "characteristics": {
+            "Description": "In your Command phase, one **^^Officer^^** model embarked within this **^^Transport^^** can issue Orders even though it is not on the battlefield. When doing so, measure distances to and from this *^^Transport^^**."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 **^^Astra Militarum Infantry^^** models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Lasgun array",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 6"
+          }
+        }
+      ]
+    }
+  },
+  "Commissar": {
+    "cost": {
+      "pts": "30"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Catachan Jungle Fighters^^**, **^^Death Korps of Krieg^^**, **^^Kasrkin^^**, **^^Krieg Combat Engineers^^**, **^^Tempestus Scions^^**"
+          }
+        },
+        {
+          "name": "Summary Execution",
+          "characteristics": {
+            "Description": "Once per battle round, at the start of any phase, you can select one friendly **^^Astra Militarum Infantry^^** unit that is Battle-shocked and within 12\" of this model. If you do, one model in that unit is destroyed, and that unit is then no longer Battle-shocked."
+          }
+        },
+        {
+          "name": "Political Overwatch",
+          "characteristics": {
+            "Description": "While another **^^Officer^^** model is in the same unit as this model, you can re-roll Battle-shock tests taken for that unit."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Commissar",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Orders": [
+        {
+          "name": "Officer",
+          "characteristics": {
+            "Orders": "This Officer can issue 1 Order to a Regiment unit. This Officer can only issue the Duty and Honour! and Fix Bayonets! Orders."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Death Korps Trooper": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Korps Trooper w/ Death Korps medi-pack": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Korps Trooper w/ Vox-caster": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Korps Trooper w/ Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Korps Trooper w/ Grenade launcher": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Korps Trooper w/ Long-las": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Korps Trooper w/ Meltagun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Korps Trooper w/ Plasma gun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Korps Watchmaster": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Deathstrike": {
+    "cost": {
+      "pts": "145"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathstrike",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Deathstrike Missile",
+          "characteristics": {
+            "Description": "In your Shooting phase, each time this model is selected to shoot, if it has not shot with its  Deathstrike missile this battle, you can do one of the following in addition to resolving this model’s ranged attacks:\n\n- **Designate Target:** If this model does not have a Deathstrike Target marker on the battlefield, place a Deathstrike Target marker for this model anywhere on the battlefield.\n\n- **Adjust Target:** If this model has a Deathstrike Target marker on the battlefield, move that marker to anywhere else on the battlefield."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Deathstrike Missile",
+          "characteristics": {
+            "Range": "N/A",
+            "A": "2D6",
+            "BS": "2+",
+            "S": "16",
+            "AP": "-4",
+            "D": "1",
+            "Keywords": "Blast, One Shot, Plasma Warhead"
+          }
+        }
+      ]
+    }
+  },
+  "Doomhammer": {
+    "cost": {
+      "pts": "445",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Doomhammer",
+          "characteristics": {
+            "M": "12\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Close-range Titan Killer",
+          "characteristics": {
+            "Description": "Each time this model’s magma cannon targets a **^^Monster^^** or **^^Vehicle^^** unit, that target is always considered to be within half range of that weapon."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 26 **^^Astra Militarum Infantry^^** models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Magma cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Blast, Melta 6"
+          }
+        }
+      ]
+    }
+  },
+  "Ordnance Team w/ Malleus rocket launcher": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Malleus rocket launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+6",
+            "BS": "5+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Blast, Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Ordnance Team w/ Bombast field gun": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Bombast field gun",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "5+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Heavy, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Ordnance Team w/ Heavy lascannon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "5+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Ibram Gaunt": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ibram Gaunt",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "4+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save 5+",
+          "characteristics": {
+            "Description": "Ibram Gaunt has a 5+ Invulnerable Save"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Gaunt's chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Tanith Ghost w/ Corbec's hot-shot lascarbine": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tanith Ghost",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Corbec's hot-shot lascarbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Tanith Ghost w/ Larkin's long-las": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tanith Ghost",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Larkin's long-las",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "4",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Tanith Ghost w/ Mkoll's Straight Silver Knife": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tanith Ghost",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Lascarbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Mkoll's straight silver knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Tanith Ghost w/ Rawne's lascarbine": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tanith Ghost",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Rawne's lascarbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault, Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Tanith Ghost w/ Bragg's autocannon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Bragg's autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "5+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Heavy"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Tanith Ghost",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Heavy Weapons Team w/ Heavy bolter": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Heavy Weapons Team w/ Mortar": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Heavy Weapons Team w/ Missile launcher": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Heavy Weapons Team w/ Lascannon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Heavy Weapons Team w/ Autocannon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Hellhammer": {
+    "cost": {
+      "pts": "450"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hellhammer",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Close-quarters Warfare",
+          "characteristics": {
+            "Description": "This model does not suffer the penalty to its Hit rolls for making ranged attacks while enemy units are within Engagement Range of it."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hellhammer cannon",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "4D6",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Ignores Cover"
+          }
+        }
+      ]
+    }
+  },
+  "Hellhound": {
+    "cost": {
+      "pts": "125",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hellhound",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Flush Them Out",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. Until the start of your next Shooting phase, that unit is scattered. While a unit is scattered, it cannot have the Benefit of Cover."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Chem cannon",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+1",
+            "BS": "N/A",
+            "S": "2",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Infantry 2+, Torrent"
+          }
+        },
+        {
+          "name": "Inferno cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Melta cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Blast, Melta 4"
+          }
+        }
+      ]
+    }
+  },
+  "Hydra": {
+    "cost": {
+      "pts": "95",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hydra",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Flak Battery",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a unit that can **^^Fly^^**, you can re-roll the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hydra autocannon",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Anti-Fly 2+, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "‘Iron Hand’ Straken [Legends]": {
+    "cost": {
+      "pts": "55"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- Catachan Jungle Fighters"
+          }
+        },
+        {
+          "name": "Cold Steel and Courage",
+          "characteristics": {
+            "Description": "While this model is leading a unit, melee weapons equipped by models in that unit have the **[LETHAL HITS]** ability."
+          }
+        },
+        {
+          "name": "Been There, Seen it, Killed it",
+          "characteristics": {
+            "Description": "Each time this model makes a melee attack, if it made a Charge move this turn, you can re-roll the Hit roll and you can re-roll the Wound roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "‘Iron Hand’ Straken",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "3+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Orders": [
+        {
+          "name": "Officer",
+          "characteristics": {
+            "Orders": "This Officer can issue up to 2 Orders to Regiment units."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Auto Shotgun",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Bionic Arm with Devil's Claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-monster 4+"
+          }
+        }
+      ]
+    }
+  },
+  "Kasrkin Trooper": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kasrkin Trooper w/ Hot-shot marksman rifle": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Hot-shot marksman rifle",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Kasrkin Trooper w/ Hot-shot laspistol and melta mine": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Melta mine",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, you can select one enemy unit within 3\" of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a **^^Vehicle^^** unit."
+          }
+        }
+      ]
+    }
+  },
+  "Kasrkin Trooper w/ Vox-caster": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Hot-shot lasgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Kasrkin Trooper w/ Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kasrkin Trooper w/ Plasma gun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kasrkin Trooper w/ Hot-shot volley gun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kasrkin Trooper w/ Meltagun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kasrkin Trooper w/ Grenade launcher": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kasrkin Sergeant": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Leman Russ Battle Tank": {
+    "cost": {
+      "pts": "185",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Logistics Points": "0",
+      "Commendation Points": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Armoured Spearhead",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets an enemy unit, re-roll a Hit roll of 1 and, if that unit is within range of an objective marker you do not control, you can re-roll the Hit roll instead."
+          }
+        }
+      ]
+    }
+  },
+  "Leman Russ Demolisher": {
+    "cost": {
+      "pts": "190",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Line-breaker",
+          "characteristics": {
+            "Description": "When making ranged attacks with its demolisher battle cannon, this model can target enemy units within Engagement Range of it (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units."
+          }
+        }
+      ]
+    }
+  },
+  "Leman Russ Eradicator": {
+    "cost": {
+      "pts": "170",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Urban Warfare",
+          "characteristics": {
+            "Description": "Each time a ranged attack targets this model, if this model has the Benefit of Cover against that attack, subtract 1 from the Damage characteristic of that attack."
+          }
+        }
+      ]
+    }
+  },
+  "Leman Russ Executioner": {
+    "cost": {
+      "pts": "170"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Gung-ho Executioners",
+          "characteristics": {
+            "Description": "Each time this model makes an attack with its executioner plasma cannon that targets a unit that is Below Half-strength, add 1 to the Hit roll."
+          }
+        }
+      ]
+    }
+  },
+  "Leman Russ Exterminator": {
+    "cost": {
+      "pts": "180",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Withering Hail",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with its exterminator autocannon. Until the end of the phase, each time a friendly **^^Astra Militarum^^** unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per phase."
+          }
+        }
+      ]
+    }
+  },
+  "Leman Russ Punisher": {
+    "cost": {
+      "pts": "150"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Mow Down the Enemy",
+          "characteristics": {
+            "Description": "Each time this model makes an attack with its punisher gatling cannon that targets an enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**), that attack has the **[DEVASTATING WOUNDS]** ability."
+          }
+        }
+      ]
+    }
+  },
+  "Leman Russ Vanquisher": {
+    "cost": {
+      "pts": "145"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Tank-killer",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack with its vanquisher battle cannon that targets a **^^Monster^^** or **^^Vehicle^^** unit, you can re-roll the Wound roll."
+          }
+        }
+      ]
+    }
+  },
+  "Lord Solar Leontus": {
+    "cost": {
+      "pts": "150",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lord Solar Leontus",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Orders": [
+        {
+          "name": "Orders",
+          "characteristics": {
+            "Orders": "This **^^Officer^^** can issue up to 3 Orders to:\n- **^^Regiment^^** units\n- **^^Squadron^^** units\n- **^^Titanic^^** units"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "The Lord Solar",
+          "characteristics": {
+            "Description": "At the start of your Command phase, If this model is on the battlefield, you gain 1CP."
+          }
+        },
+        {
+          "name": "The Collegiate Astrolex",
+          "characteristics": {
+            "Description": "After both players have deployed their armies, select up to three **^^Astra Militarum^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves."
+          }
+        },
+        {
+          "name": "Supreme Commander",
+          "characteristics": {
+            "Description": "If this model is in your army, it must be your **^^Warlord^^**."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: **^^Attilan Rough Riders^^**, **^^ Cadian Shock Troops^^**, **^^ Catachan Jungle Fighters^^**, **^^ Death Korps of Krieg^^**, **^^Death Riders^^**, **^^Kasrkin^^**, **^^Krieg Combat Engineers^^**"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Sol's Righteous Gaze",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Conquest",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Konstantin's hooves",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Manticore": {
+    "cost": {
+      "pts": "165",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Manticore",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Furious Barrage",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**) that was hit by one or more of those attacks made with this model's storm eagle rockets. Until the start of your next Shooting phase, that enemy unit is staggered. While a unit is staggered, subtract 1 from the Objective Control characteristic of models in that unit (to a minimum of 1)."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm eagle rockets",
+          "characteristics": {
+            "Range": "120\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Infantry 2+, Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Tempestus Scion": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Scion w/ Regimental Standard": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Scion w/ Master Vox": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Scion w/ Medi-pack": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Medi-pack",
+          "characteristics": {
+            "Description": "At the start of your Command phase, if the bearer's unit is below its Starting Strength, you can return up to D3 destroyed Tempestus Scions models to this unit."
+          }
+        }
+      ]
+    }
+  },
+  "Tempestor Prime": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tempestor Prime",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "4+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Command Rod",
+          "characteristics": {
+            "Description": "While the bearer is leading a unit, that unit can be affected by up to two different Orders at the same time."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Tempestus dagger",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Munitorum Servitor w/ Servitor's Servo Arm": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Servitor's servo arm",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "5+",
+            "S": "6",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Munitorum Servitor w/ Special Weapon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "6+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Heavy, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "6+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Heavy, Melta 2"
+          }
+        },
+        {
+          "name": "➤ Plasma cannon - standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "6+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Blast, Heavy"
+          }
+        },
+        {
+          "name": "➤ Plasma cannon - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "6+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Blast, Hazardous, Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Nork Deddog": {
+    "cost": {
+      "pts": "60"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Nork Deddog",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Thunderous Head-butt",
+          "characteristics": {
+            "Description": "Each time this model’s unit is selected to fight, you can select one enemy unit within Engagement Range of this model and roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+          }
+        },
+        {
+          "name": "Loyal Protector",
+          "characteristics": {
+            "Description": "At the start of the Declare Battle Formations step, this model must join one **^^Command Squad^^** unit from your army (a **^^Command Squad^^** cannot have more than one **^^Loyal Protector^^** model joined to it). This model then counts as part of that **^^Command Squad^^** for the rest of the battle, and its Starting Strength is increased accordingly. If it is not possible to join this model to a **^^Command Squad^^**, it does not take part in the battle and counts as having been destroyed. \n\nWhile this model is joined to a unit, it can embark within any **^^Transport^^** that unit can embark within, and takes up the space of 3 models.\n\nThis model cannot be selected as your **^^Warlord^^**."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Huge knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Ripper gun",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Rapid Fire 3"
+          }
+        }
+      ]
+    }
+  },
+  "Ogryn Bodyguard": {
+    "cost": {
+      "pts": "40"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ogryn Bodyguard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "6",
+            "SV": "5+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Loyal Protector",
+          "characteristics": {
+            "Description": "At the start of the Declare Battle Formations step, this model must join one **^^Command Squad^^** unit from your army (a **^^Command Squad^^** cannot have more than one **^^Loyal Protector^^** model joined to it). This model then counts as part of that **^^Command Squad^^** for the rest of the battle, and its Starting Strength is increased accordingly. If it is not possible to join this model to a **^^Command Squad^^**, it does not take part in the battle and counts as having been destroyed. \n\nWhile this model is joined to a unit, it can embark within any **^^Transport^^** that unit can embark within, and takes up the space of 3 models.\n\n\nThis model cannot be selected as your **^^Warlord^^** and cannot be given Enhancements."
+          }
+        },
+        {
+          "name": "Slabshield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 7."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Huge knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Bullgryn maul",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Grenadier gauntlet",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Ogryn": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Ogryn Bone 'ead": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Primaris Psyker": {
+    "cost": {
+      "pts": "60"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Catachan Jungle Fighters^^**, **^^Death Korps of Krieg^^**, **^^Kasrkin^^**, **^^Krieg Combat Engineers^^**, **^^Tempestus Scions^^**"
+          }
+        },
+        {
+          "name": "Malign Wardings (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks"
+          }
+        },
+        {
+          "name": "Psychic Barrier (Psychic)",
+          "characteristics": {
+            "Description": "At the start of your opponent’s Shooting phase, you can roll one D6: on a 1, this **^^Psyker^^**’s unit suffers D3 mortal wounds; on a 2+, until the end of the phase, models in this **^^Psyker^^**’s unit have a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Primaris Psyker",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Psychic maelstrom - witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Blast, Devastating Wounds, Psychic"
+          }
+        },
+        {
+          "name": "➤ Psychic maelstrom - focused witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+1",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Devastating Wounds, Hazardous, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Astropath": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Regimental Attachés",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Astropath's stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Master of Ordnance": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Regimental Attachés",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Officer of the Fleet": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Regimental Attachés",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Tech-Priest Enginseer": {
+    "cost": {
+      "pts": "45"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- Cadian Shock Troops\n- Catachan Jungle Fighters\n- Death Korps of Krieg\n- Infantry Squad\n- Kasrkin\n- Munitorum Servitors"
+          }
+        },
+        {
+          "name": "Enginseer",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly **^^Astra Militarum Vehicle^^** units, this model has the Lone Operative ability"
+          }
+        },
+        {
+          "name": "Vengeance for the Omnissiah",
+          "characteristics": {
+            "Description": "If a friendly **^^Astra Militarum Vehicle^^** model is destroyed within 12\" of this model, until the end of the battle, this model’s Enginseer axe has an Attacks characteristic of 6"
+          }
+        },
+        {
+          "name": "Omnissiah’s Blessing",
+          "characteristics": {
+            "Description": "In your Command phase, select one friendly **^^Astra Militarum Vehicle^^** model within 3\" of this model. That **^^Vehicle^^** model regains up to D3 lost wounds and, until the start of your next Command phase, that **^^Vehicle^^** model has a 4+ invulnerable save. Each model can only be selected for this ability once per turn."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Tech-Priest Enginseer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Enginseer Axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Servo-arm",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Mechanicus pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Rogal Dorn Battle Tank": {
+    "cost": {
+      "pts": "240"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Rogal Dorn Battle Tank",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "18",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Ablative Plating",
+          "characteristics": {
+            "Description": "Once per battle, when an attack is allocated to this model, you change the Damage characteristic of that attack to 0."
+          }
+        }
+      ]
+    }
+  },
+  "Scout Sentinel": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Scout Sentinel",
+          "characteristics": {
+            "M": "10\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "7",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Sergeant Harker [Legends]": {
+    "cost": {
+      "pts": "40"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- Catachan Jungle Fighters"
+          }
+        },
+        {
+          "name": "Payback Time",
+          "characteristics": {
+            "Description": "Once per battle, when this model is selected to shoot, it can use this ability. If it does, until the end of the phase, its Payback weapon has an Attacks characteristic of 6 and the **[SUSTAINED HITS 3]** ability instead of the **[SUSTAINED HITS 1]** ability."
+          }
+        },
+        {
+          "name": "Harker’s Hellraisers",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a ranged attack targets that unit, if the attacking model is more than 12\" away, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sergeant Harker",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Orders": [
+        {
+          "name": "Officer",
+          "characteristics": {
+            "Orders": "This Officer can issue 1 Order to a Catachan Jungle Fighters unit"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Payback",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Shadowsword": {
+    "cost": {
+      "pts": "440"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Shadowsword",
+          "characteristics": {
+            "M": "12\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Titan-killer",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack with its volcano cannon that targets a **^^Monster^^** or **^^Vehicle^^** unit, that attack has the **[DEVASTATING WOUNDS]** ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Volcano cannon",
+          "characteristics": {
+            "Range": "96\"",
+            "A": "D3+1",
+            "BS": "4+",
+            "S": "24",
+            "AP": "-5",
+            "D": "12",
+            "Keywords": "Blast, Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Sly Marbo": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Like Fighting a Shadow",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if it is not within Engagement Rage of one or more enemy units, it can make a Normal move. If it does, until the end of the turn, this model is not eligible to declare a charge."
+          }
+        },
+        {
+          "name": "One-man Army",
+          "characteristics": {
+            "Description": "Once per turn, in your opponent's Shooting phase, when an enemy unit makes a ranged attack that targets a friendly **^^Regiment^^** unit within 3\" of this model, after that enemy unit has shot, this model can shoot as if it were your Shooting phase, but it must target only that enemy unit when doing so, and can only do so if that enemy unit is an eligible target."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sly Marbo",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Ripper pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Infantry 2+, Pistol, Precision"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Envenomed blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Infantry 2+, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Stormlord": {
+    "cost": {
+      "pts": "460"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Stormlord",
+          "characteristics": {
+            "M": "12\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Mount Up!",
+          "characteristics": {
+            "Description": "At the end of your opponent’s Movement phase, if there are no models currently embarked within this **^^Transport^^**, you can select one friendly **^^Astra Militarum Infantry^^** unit (excluding **^^Artillery^^** units) that is wholly within 6\" of this **^^Transport^^**. Unless that unit is within Engagement Range of one or more enemy units, it can embark within this **^^Transport^^**."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 40 **^^Astra Militarum Infantry^^** models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Vulcan mega-bolter",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "20",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Stormsword": {
+    "cost": {
+      "pts": "495"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Stormsword",
+          "characteristics": {
+            "M": "12\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Concussive Wave",
+          "characteristics": {
+            "Description": "In your Shooting phase, just after selecting a target for this model’s Stormsword siege cannon, roll one D6 for the target unit and every other unit within 3\" of that unit: on a 5+, the unit being rolled for is struck by a concussive wave. After this model has finished making its attacks against that target unit this phase, each unit struck by a concussive wave suffers D3 mortal wounds."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Stormsword siege cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+6",
+            "BS": "4+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+2",
+            "Keywords": "Blast, Ignores Cover"
+          }
+        }
+      ]
+    }
+  },
+  "Leman Russ Commander": {
+    "cost": {
+      "pts": "235",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Leman Russ Commander",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "13",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Orders": [
+        {
+          "name": "Orders",
+          "characteristics": {
+            "Orders": "This **^^Officer^^** can issue 2 Orders to **^^Squadron^^** units."
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Death Befitting An Officer",
+          "characteristics": {
+            "Description": "When this model is destroyed, roll one D6: on a 2+, do not remove it from play – it can, after the attacking model’s unit has finished making its attacks, shoot as if it were your Shooting phase and as if it had its full wounds remaining. This model is then removed from play."
+          }
+        },
+        {
+          "name": "Vox-net",
+          "characteristics": {
+            "Description": "Each time this model issues an Order, it can issue it to an eligible unit up to 12\" away"
+          }
+        }
+      ]
+    }
+  },
+  "Taurox": {
+    "cost": {
+      "pts": "75",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Logistics Points": "0",
+      "Commendation Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Taurox",
+          "characteristics": {
+            "M": "12\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rapid Deployment",
+          "characteristics": {
+            "Description": "Units can disembark from this **^^Transport^^** after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 **^^Astra Militarum Infantry^^** models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models."
+          }
+        }
+      ]
+    }
+  },
+  "Taurox Prime": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Transport Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this **^^Transport^^** this turn makes an attack that targets that enemy unit, you can re-roll the Hit roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Taurox Prime",
+          "characteristics": {
+            "M": "12\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 **^^Militarum Tempestus Infantry^^** or **^^Astra Militarum Infantry Character^^** models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Taurox battle cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Taurox gatling cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "8",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Taurox missile launcher - frag",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Taurox missile launcher - krak",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Twin Taurox hot-shot volley gun",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Rapid Fire 3, Twin-linked"
+          }
+        },
+        {
+          "name": "Twin autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Storm bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ]
+    }
+  },
+  "Tempestus Scion w/ Vox-caster": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Scion w/ Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Scion w/ Grenade launcher": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Scion w/ Hot-shot volley gun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Scion w/ Meltagun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Scion w/ Plasma gun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestor": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Ursula Creed": {
+    "cost": {
+      "pts": "85",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Logistics Points": "0",
+      "Commendation Points": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: ^^**Cadian Shock Troops**^^, **^^Kasrkin^^**"
+          }
+        },
+        {
+          "name": "Lord Castellan",
+          "characteristics": {
+            "Description": "While this model is leading a unit, that unit can be affected by up to two different Orders at the same time."
+          }
+        },
+        {
+          "name": "Tactical Genius",
+          "characteristics": {
+            "Description": "Once per battle round, one unit from your army with this ability can use it when a friendly **^^Regiment^^** unit within 12\" of that model is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that Stratagem by 1 CP."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Duty and Vengeance",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Orders": [
+        {
+          "name": "Orders",
+          "characteristics": {
+            "Orders": "This **^^Officer^^** can issue up to 3 Orders to **^^Regiment^^** units."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Ursula Creed",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "4+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Valkyrie": {
+    "cost": {
+      "pts": "190"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Valkyrie",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Airborne Insertion",
+          "characteristics": {
+            "Description": "At the end of your opponent’s Movement phase, one or more units embarked within this **^^Transport^^** can disembark from it."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 **^^Astra Militarum Infantry^^** models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models."
+          }
+        }
+      ]
+    }
+  },
+  "Wyvern": {
+    "cost": {
+      "pts": "110"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Wyvern",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Suppression Bombardment",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**) that was hit by one or more attacks made with this model’s Wyvern quad stormshard mortar. Unit the start of your next Shooting phase, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Wyvern quad stormshard mortar",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2D6",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Indirect Fire, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Shock Trooper": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Shock Trooper w/ Vox Caster": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Shock Trooper Sergeant": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Sergeant's autogun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Jungle Fighter": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Ridemaster": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ridemaster",
+          "characteristics": {
+            "M": "10\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Death Rider": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Death Riders",
+          "characteristics": {
+            "M": "10\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Carnodon [Legends]": {
+    "cost": {
+      "pts": "160"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Carnodon",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "12",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Ancient Conquest",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets an enemy unit that is within your opponent’s deployment zone, re-roll a Hit roll of 1 and re-roll a Wound roll of 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Volkite caliver",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Carnodon twin autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Carnodon twin lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Carnodon twin multi-laser",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Volkite culverin",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Cyclops Demolition Vehicle": {
+    "cost": {
+      "pts": "25"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cyclops Demolition Vehicle",
+          "characteristics": {
+            "M": "8\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "8+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Demolition Charges",
+          "characteristics": {
+            "Description": "Each time this model or an enemy unit ends a move, if this model is within 3\" of one or more enemy units, select one of those enemy units. This model is destroyed, but instead of rolling for its Deadly Demise ability, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D6 mortal wounds."
+          }
+        },
+        {
+          "name": "Unstable Payload",
+          "characteristics": {
+            "Description": "When rolling for this model’s Deadly Demise ability, units within 6\" suffer mortal wounds on a 4+, instead of on a 6."
+          }
+        },
+        {
+          "name": "Compact",
+          "characteristics": {
+            "Description": "This model can embark within an ASTRA MILITARUM TRANSPORT model as if it were an INFANTRY model. If it does, it takes up the space of 7 models."
+          }
+        }
+      ]
+    }
+  },
+  "Malcador [Legends]": {
+    "cost": {
+      "pts": "250"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Malcador",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "18",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rugged Reliability",
+          "characteristics": {
+            "Description": "Each time a ranged attack targets this model, worsen the Armour Penetration characteristic of that attack by 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Malcador battle cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Malcador Annihilator [Legends]": {
+    "cost": {
+      "pts": "270"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Malcador Annihilator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "18",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Battlefield Dominance",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by this model have the [IGNORES COVER] ability while targeting an enemy unit within half range."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Demolisher cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Malcador twin lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Malcador Defender [Legends]": {
+    "cost": {
+      "pts": "310"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Malcador Defender",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "18",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Armoured Defender",
+          "characteristics": {
+            "Description": "Each time you target this model with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Demolisher cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Malcador Infernus [Legends]": {
+    "cost": {
+      "pts": "235"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Malcador Infernus",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "18",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Explosive Death",
+          "characteristics": {
+            "Description": "When this model is destroyed, roll one D6: on a 3+, do not remove it from play – it can, after the attacking model’s unit has finished making its attacks, shoot with its inferno gun as if it were your Shooting phase and as if it had its full wounds remaining. This model is then removed from play."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Inferno gun",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Medusa Carriage Battery [Legends]": {
+    "cost": {
+      "pts": "125"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Medusa Carriage Battery",
+          "characteristics": {
+            "M": "4\"",
+            "T": "7",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Siege Bombardment",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Battery close combat weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Medusa siege cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6",
+            "BS": "5+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Heavy, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Earthshaker Carriage Battery [Legends]": {
+    "cost": {
+      "pts": "120"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Earthshaker Carriage Battery",
+          "characteristics": {
+            "M": "4\"",
+            "T": "7",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Earthshaker Rounds",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its earthshaker cannon scored a hit against an INFANTRY unit, until the end of your opponent’s next turn, that INFANTRY unit is shaken. While a unit is shaken, subtract 2\" from its Move characteristic and subtract 2 from Advance and Charge rolls made for it."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Battery close combat weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Earthshaker cannon",
+          "characteristics": {
+            "Range": "240\"",
+            "A": "D6+3",
+            "BS": "5+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Heavy, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Stormblade [Legends]": {
+    "cost": {
+      "pts": "415"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Stormblade",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Close-range Devastation",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack with its Stormblade plasma blastgun that targets a unit within half range, you can re-roll the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Stormblade plasma blastgun - standard",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Stormblade plasma blastgun - supercharge",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-3",
+            "D": "4",
+            "Keywords": "Blast, Hazardous"
+          }
+        }
+      ]
+    }
+  },
+  "Macharius [Legends]": {
+    "cost": {
+      "pts": "310"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Macharius",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Battlefield Control",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack, if it is within range of an objective marker you control, re-roll a Hit roll of 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Macharius twin battlecannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Blast, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Macharius Vanquisher [Legends]": {
+    "cost": {
+      "pts": "285"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Macharius Vanquisher",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Tank Hunter",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack with its Macharius twin vanquisher cannon that targets a MONSTER or VEHICLE unit, you can re-roll the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Macharius twin vanquisher cannon",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "18",
+            "AP": "-4",
+            "D": "D6+6",
+            "Keywords": "Heavy, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Macharius Vulcan [Legends]": {
+    "cost": {
+      "pts": "310"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Macharius Vulcan",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Battlefield Control",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack, if it is within range of an objective marker you control, re-roll a Hit roll of 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Macharius vulcan mega-bolter",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "16",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Praetor [Legends]": {
+    "cost": {
+      "pts": "275"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Praetor",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "18",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Targeting Coordinates",
+          "characteristics": {
+            "Description": "While this model is being affected by an Order, each time it makes an attack with its Praetor launcher, it does not suffer the penalty to the Hit roll for attacking a unit that is not visible to it."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured tracks",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "7",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Praetor launcher - firestorm",
+          "characteristics": {
+            "Range": "120\"",
+            "A": "2D6",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Heavy, Ignores Cover, Indirect Fire"
+          }
+        },
+        {
+          "name": "➤ Praetor launcher - foehammer",
+          "characteristics": {
+            "Range": "120\"",
+            "A": "D6+1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-MONSTER 4+, Anti-VEHICLE 4+, Blast, Heavy, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Crassus [Legends]": {
+    "cost": {
+      "pts": "180"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Crassus",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "18",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fire Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Crassus",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 35 ASTRA MILITARUM INFANTRY models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of  2 models. Each OGRYN model takes up the space of 3 models. It cannot transport ARTILLERY models."
+          }
+        }
+      ]
+    }
+  },
+  "Colossus [Legends]": {
+    "cost": {
+      "pts": "160"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Colossus",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Tracking Target",
+          "characteristics": {
+            "Description": "Each time this model is selected to shoot, provided it Remained Stationary this turn, its Colossus siege mortar has the [ANTI-MONSTER 5+] and [ANTI-VEHICLE 5+] abilities while resolving those attacks."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Colossus siege mortar",
+          "characteristics": {
+            "Range": "120\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "D6+2",
+            "Keywords": "Blast, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Valdor [Legends]": {
+    "cost": {
+      "pts": "285"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Valdor",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Power Overload",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a MONSTER or VEHICLE unit, you can re-roll the Damage roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Valdor neutron laser",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Avenger Strike Fighter": {
+    "cost": {
+      "pts": "130"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Avenger Strike Fighter",
+          "characteristics": {
+            "M": "20\"+",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fiery Vengeance",
+          "characteristics": {
+            "Description": "Once per turn, in your opponent’s Shooting phase, when another friendly ASTRA MILITARUM unit within 6\" of this model is destroyed by an attack made by a unit that can Fly, one model from your army with this ability can use it. If it does, after the attacking unit has finished making its attacks, that model can shoot as if it were your Shooting phase, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target)."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Avenger bolt cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "10",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Voss-pattern Lightning [Legends]": {
+    "cost": {
+      "pts": "130"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Voss-pattern Lightning",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Agile Dogfighter",
+          "characteristics": {
+            "Description": "Each time an attack targets this model, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Lightning hellstrike rack",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Anti-FLY 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Vulture Gunship [Legends]": {
+    "cost": {
+      "pts": "225"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Vulture Gunship",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Gunship Barrage",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Vulture gatling cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "18",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Multiple rocket pods",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Vulture hellstrike rack",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Anti-FLY 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Marauder Bomber [Legends]": {
+    "cost": {
+      "pts": "345"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Damaged: 1-7 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Heavy Bombs",
+          "characteristics": {
+            "Description": "Each time the bearer ends a Normal move, you can select one enemy unit it moved over during that move and roll nine D6, adding 1 to each result if that unit is a MONSTER or VEHICLE: for each 5+, that unit suffers 1 mortal wound."
+          }
+        },
+        {
+          "name": "Inferno Bombs",
+          "characteristics": {
+            "Description": "Each time the bearer ends a Normal move, you can select one enemy unit it moved over during that move and roll nine D6, adding 1 to each result if that unit is not a MONSTER or VEHICLE: for each 5+, that unit suffers 1 mortal wound."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Marauder Bomber",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ]
+    }
+  },
+  "Marauder Destroyer [Legends]": {
+    "cost": {
+      "pts": "375"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Damaged: 1-7 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Bomb Drop",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Marauder Destroyer",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Marauder nose autocannons",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Assault cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Hellstrike missile rack",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Anti-FLY 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Tarantula w/ twin heavy bolter": {
+    "cost": {
+      "pts": "40"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Twin heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Tarantula w/ twin lascannon": {
+    "cost": {
+      "pts": "40"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Twin lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Rapier Laser Destroyer": {
+    "cost": {
+      "pts": "35"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Laser destroyer",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "5+",
+            "S": "12",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "Heavy, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Hades Breaching Drill [Legends]": {
+    "cost": {
+      "pts": "110"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hades Breaching Drill",
+          "characteristics": {
+            "M": "6\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "8",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Subterranean Assault",
+          "characteristics": {
+            "Description": "Each time you set up this model on the battlefield using the Deep Strike ability, you can select one friendly ASTRA MILITARUM INFANTRY unit in Strategic Reserves. If you do, set up that unit anywhere on the battlefield that is wholly within 9\" of this model and more than 9\" away from all enemy units."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Melta-cutter drill",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6+2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Trojan Support Vehicle [Legends]": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Trojan Support Vehicle",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Support Vehicle",
+          "characteristics": {
+            "Description": "In your Command phase, select one friendly ASTRA MILITARUM VEHICLE model within 3\" of this model. That VEHICLE model regains up to D3 lost wounds and, until the start of your next Command phase, each time that VEHICLE model makes an attack, re-roll a Hit roll of 1. The same VEHICLE model cannot be selected for both this ability and the REGIMENTAL ENGINSEER's Omnissiah’s Blessing ability in the same turn, and each model can only be selected for this ability once per Command phase."
+          }
+        }
+      ]
+    }
+  },
+  "Valkyrie Sky Talon [Legends]": {
+    "cost": {
+      "pts": "185"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Valkyrie Sky Talon",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 1 TAUROS model or 2 ASTRA MILITARUM WALKER models."
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fire Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
+          }
+        }
+      ]
+    }
+  },
+  "Aquila Lander [Legends]": {
+    "cost": {
+      "pts": "120"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Aquila Lander",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "12",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Aerial Deployment",
+          "characteristics": {
+            "Description": "If this model starts the game in Hover mode and in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 Astra Militarum Infantry models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. Each Ogryn model takes up the space of 3 models. It cannot transport Artillery models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Multi-laser",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Dominus Armoured Siege Bombard [Legends]": {
+    "cost": {
+      "pts": "325"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Dominus triple bombard",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2D6",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Pinning Bombardment",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its Dominus triple bombard scored a hit against an enemy Infantry unit, that unit must take a Battle-shock test."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Dominus Armoured Siege Bombard",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ]
+    }
+  },
+  "Gorgon Heavy Transport [Legends]": {
+    "cost": {
+      "pts": "275"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Gorgon Heavy Transport",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This unit has a 5+ Invulnerable Save against ranged attacks."
+          }
+        },
+        {
+          "name": "Mount Up!",
+          "characteristics": {
+            "Description": "At the end of your opponent’s Movement phase, if there are no models currently embarked within this **^^Transport^^**, you can select one friendly **^^Astra Militarum Infantry^^** unit (excluding **^^Artillery^^** units) that is wholly within 6\" of this **^^Transport^^**. Unless that unit is within Engagement Range of one or more enemy units, it can embark within this **^^Transport^^**."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 30 **^^Astra Militarum Infantry^^** models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gorgon mortar",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Landing ramp",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Grenadier": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Heavy Weapons Team": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Heavy Weapons Team",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Grenadier w/ Grenade launcher": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Grenadier w/ Heavy stubber": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Heavy, Rapid Fire 3"
+          }
+        }
+      ]
+    }
+  },
+  "Grenadier w/ Meltagun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Grenadier w/ Plasma gun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Grenadier w/ Sniper rifle": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Grenadier w/ Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Grenadier Sergeant": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Sergeant's pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Sergeant's close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Centaur Light Carrier [Legends]": {
+    "cost": {
+      "pts": "40"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Centaur Light Carrier",
+          "characteristics": {
+            "M": "10\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "7",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Blistering Advance",
+          "characteristics": {
+            "Description": "Units can disembark from this Transport after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 6 Astra Militarum Infantry models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. It cannot transport Ogryn or Artillery models."
+          }
+        }
+      ]
+    }
+  },
+  "Macharius Omega [Legends]": {
+    "cost": {
+      "pts": "310"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Macharius Omega",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "20",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Overwhelming Short-range Firepower",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets the closest eligible enemy unit, re-roll a Hit roll of 1 and re-roll a Wound roll or 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Omega-pattern plasma blastgun - standard",
+          "characteristics": {
+            "Range": "60\"",
+            "A": "2D6",
+            "BS": "4",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Omega-pattern plasma blastgun - supercharged",
+          "characteristics": {
+            "Range": "60\"",
+            "A": "2D6",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Hazardous"
+          }
+        }
+      ]
+    }
+  },
+  "Stygies Destroyer Tank Hunter [Legends]": {
+    "cost": {
+      "pts": "180"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Stygies Destroyer Tank Hunter",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "13",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Tank Hunter",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a Vehicle unit, add 1 to the Wound roll"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Stygies laser destroyer",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "14",
+            "AP": "-4",
+            "D": "D6+3",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Rein": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Rein",
+          "characteristics": {
+            "M": "6\"",
+            "T": "2",
+            "SV": "6+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close Combat Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "5+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Raus": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Raus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "2",
+            "SV": "6+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close Combat Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "5+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Demolition Charge",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Hazardous, One Shot"
+          }
+        }
+      ]
+    }
+  },
+  "Quartermaster Revenant": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Quartermaster's pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Quartermaster's close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Quartermaster Revenant",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "4+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Medicae Servitors": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Medical scalpels",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Medicae Servitors",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "4+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "0"
+          }
+        }
+      ]
+    }
+  },
+  "Atlas Recovery Vehicle [Legends]": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Atlas Recovery Vehicle",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Recovery Vehicle",
+          "characteristics": {
+            "Description": "At the end of your Movement phase, you can select one friendly Astra Militarum Vehicle model within 3\" of this model. That Vehicle model regains up to D3 lost wounds. Each model can only be selected for this ability once per turn."
+          }
+        }
+      ]
+    }
+  },
+  "Sabre Gun Platform": {
+    "cost": {
+      "pts": "45"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sabre Weapons Battery",
+          "characteristics": {
+            "M": "-",
+            "T": "4",
+            "SV": "4+",
+            "W": "4",
+            "LD": "7",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Defence Searchlight",
+          "characteristics": {
+            "Description": "At the start of your Shooting phase, you can select one enemy unit within 24\" and visible to the bearer. Until the end of the phase, that unit cannot have the Benefit of Cover."
+          }
+        }
+      ]
+    }
+  },
+  "Elysian Drop Sentinel [Legends]": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Elysian Drop Sentinel",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Meteoric Descent",
+          "characteristics": {
+            "Description": "When this model is set up on the battlefield using the Deep Strike ability, it can perform a meteoric descent. If it does, this model can be set up anywhere on the battlefield that is more than 3\" horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close Combat Weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Elysian Sniper Team": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Elysian Sniper Team",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Heavy Mortar Team [Legends]": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Heavy Mortar Team",
+          "characteristics": {
+            "M": "4\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rearm, Reload, Fire",
+          "characteristics": {
+            "Description": "While this model is being affected by an Order, provided it Remained Stationary this turn, ranged weapons equipped by this model have the [SUSTAINED HITS 1] ability"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy mortar",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "5+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Heavy, Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Armageddon-pattern Medusa [Legends]": {
+    "cost": {
+      "pts": "105"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Armageddon-pattern Medusa [Legends]",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Pinning Bombardment",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its Medusa siege cannon scored a hit against an enemy Infantry unit, that unit must take a Battle-shock test."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Medusa siege cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-2",
+            "D": "4",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Heavy Quad Launcher Team [Legends]": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Heavy Quad Launcher Team",
+          "characteristics": {
+            "M": "4\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Suppression Bombardment",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit (excluding Monster and Vehicle units) hit by one or more of those attacks. Unit the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy quad launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2D6",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Arvus Lighter [Legends]": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Arvus Lighter",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "8",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Aerial Deployment",
+          "characteristics": {
+            "Description": "If this model starts the game in Hover mode and in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 Astra Militarum Infantry models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. It cannot transport Ogryn or Artillery models."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured Hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Vendetta Gunship [Legends]": {
+    "cost": {
+      "pts": "255"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Vendetta Gunship",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "14",
+            "LD": "7",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Anti-armour Gunship",
+          "characteristics": {
+            "Description": "Each time a ranged attack made by this model is allocated to a Monster or Vehicle model, re-roll a Damage roll of 1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Vendetta hellstrike rack",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Anti-fly 2+"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Minotaur [Legends]": {
+    "cost": {
+      "pts": "225"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Minotaur",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "18",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Armoured Frontis",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Minotaur twin earthshaker cannon",
+          "characteristics": {
+            "Range": "240\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Indirect Fire, Twin-Linked"
+          }
+        }
+      ]
+    }
+  },
+  "Death Rider Commissar [Legends]": {
+    "cost": {
+      "pts": "35"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- **^^Death Riders^^**\n\n\n*You can attach this model to the above unit even if one **^^Death Rider Squadron Commander^^**, **^^Lord Marshal Dreir^^** or **^^Lord Solar Leontus^^** model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.*"
+          }
+        },
+        {
+          "name": "Summary Execution",
+          "characteristics": {
+            "Description": "Once per battle round, at the start of any phase, you can select one friendly ASTRA MILITARUM INFANTRY or ASTRA MILITARUM MOUNTED unit that is Battle-shocked and within 12\" of this model. If you do, one model in that unit is destroyed, and that unit is then no longer Battle-shocked."
+          }
+        },
+        {
+          "name": "Political Overwatch",
+          "characteristics": {
+            "Description": "While another Officer model is in the same unit as this model, you can re-roll Battle-shock tests taken for that unit."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Death Rider Commissar",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Commisar's pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Commissar’s close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Savage claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Sentinel Powerlifter [Legends]": {
+    "cost": {
+      "pts": "55"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sentinel Powerlifter",
+          "characteristics": {
+            "M": "8\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Powerlifter Charge",
+          "characteristics": {
+            "Description": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Powerlifter",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Manticore Platform [Legends]": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Reinforced Cover",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack"
+          }
+        },
+        {
+          "name": "Furious Barrage",
+          "characteristics": {
+            "Description": "Each time this model makes an attack with its storm eagle rockets that targets an enemy unit that contains five or more models, you can re-roll the Hit roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Manticore Platform",
+          "characteristics": {
+            "M": "-",
+            "T": "8",
+            "SV": "3+",
+            "W": "8",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Eagle Rockets",
+          "characteristics": {
+            "Range": "120\"",
+            "A": "D6+1",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Hydra Platform [Legends]": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hydra Platform",
+          "characteristics": {
+            "M": "-",
+            "T": "8",
+            "SV": "3+",
+            "W": "8",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Flak Battery",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a unit that can Fly, you can re-roll the Hit roll."
+          }
+        },
+        {
+          "name": "Reinforced Cover",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hydra Quad Autocannon",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Anti-fly 2+, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Griffon Mortar Carrier [Legends]": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Griffon Mortar Carrier",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Suppression Bombardment",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit (excluding Monster and Vehicle units) hit by one or more of those attacks made with this model’s Griffon heavy mortar. Unit the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Griffon heavy mortar",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Earthshaker Platform [Legends]": {
+    "cost": {
+      "pts": "110"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Earthshaker Cannon",
+          "characteristics": {
+            "Range": "240\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Earthshaker Rounds",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its earthshaker cannon scored a hit against an enemy Infantry unit, until the end of your opponent’s next turn, that unit is shaken. While a unit is shaken, subtract 2\" from its Move characteristic and subtract 2 from Advance and Charge rolls made for it."
+          }
+        },
+        {
+          "name": "Reinforced Cover",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack."
+          }
+        },
+        {
+          "name": "Fortification",
+          "characteristics": {
+            "Description": "While an enemy unit is only within Engagement Range of one or more Fortifications from your army:\n■ That unit can still be selected as the target of ranged attacks, but each time such an attack is made, unless it is made with a Pistol, subtract 1 from the Hit roll.\n■ Models in that unit do not need to take Desperate Escape tests due to Falling Back while Battle-shocked, except for those that will move over enemy models when doing so."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Earthshaker Platform",
+          "characteristics": {
+            "M": "-",
+            "T": "8",
+            "SV": "3+",
+            "W": "8",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Mukaali Rider Sergeant": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma pistol - standard",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Rapid Fire 1"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - supercharged",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Mukaali Riders": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Salamander Scout Vehicle [Legends]": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Salamander Scout Vehicle",
+          "characteristics": {
+            "M": "12\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Outflank",
+          "characteristics": {
+            "Description": "When this model arrives from Strategic Reserves, it can be set up within your opponent’s deployment zone (all other restrictions still apply)."
+          }
+        }
+      ]
+    }
+  },
+  "Tauros Assault Vehicle [Legends]": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tauros Assault Vehicle",
+          "characteristics": {
+            "M": "12\"",
+            "T": "6",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Turbo-boost",
+          "characteristics": {
+            "Description": "Each time this model Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of this model."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Tauros grenade launcher - frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "4",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Tauros grenade launcher - krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Tauros Venator [Legends]": {
+    "cost": {
+      "pts": "55"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Mobile Hunter-killer",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a Monster or Vehicle unit, you can re-roll the Wound roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Tauros Venator",
+          "characteristics": {
+            "M": "12\"",
+            "T": "6",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin multi-laser",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Salamander Command Vehicle [Legends]": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Salamander Command Vehicle",
+          "characteristics": {
+            "M": "12\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Auspex Surveyor",
+          "characteristics": {
+            "Description": "Each time this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that unit cannot have the Benefit of Cover"
+          }
+        }
+      ]
+    }
+  },
+  "Arkurian Stormhammer [Legends]": {
+    "cost": {
+      "pts": "480"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Arkurian Stormhammer",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rolling Fortress",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to an ASTRA MILITARUM model from your army, if that model is not fully visible to every model in the attacking unit because of this Arkurian Stormhammer model, that model has the Benefit of Cover against that attack"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Stormhammer cannon",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "3D6",
+            "BS": "4+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Twin battle cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Blast, Twin-linked"
+          }
+        },
+        {
+          "name": "Multi-laser",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Storm Chimera [Legends]": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Storm Chimera",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "11",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 Astra Militarum Infantry models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. Each Ogryn model takes up the space of 3 models. It cannot transport Artillery models."
+          }
+        }
+      ]
+    }
+  },
+  "Tempestus Aquilon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Aquilon w/ 2 Hot-shot laspistols": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Aquilon w/ 1 Hot-shot laspistol": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tempestus Aquilon w/ Hot-shot long-las": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Hot-shot long las",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Tempestus Aquilon w/ Special weapon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma carbine - standard",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "➤ Plasma carbine - supercharge",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Assault, Hazardous"
+          }
+        },
+        {
+          "name": "Melta carbine",
+          "characteristics": {
+            "Range": "10\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Assault, Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Tempestor Aquilon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Sentry flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Sentry hot-shot volley gun",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Rapid Fire 4"
+          }
+        },
+        {
+          "name": "➤ Sentry grenade launcher - frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3+3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Sentry grenade launcher - krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ratlings": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ratlings",
+          "characteristics": {
+            "M": "6\"",
+            "T": "2",
+            "SV": "6+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "5+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ratling w/ tankstopper rifle": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ratlings",
+          "characteristics": {
+            "M": "6\"",
+            "T": "2",
+            "SV": "6+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "5+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Tankstopper rifle",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Lord Commissar": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma pistol - standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Lord Commissar",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Alchemyk counteragents": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Alchemyk Counteragents",
+          "characteristics": {
+            "Description": "The bearer's unit has the Feel No Pain 6+ ability against mortal wounds."
+          }
+        },
+        {
+          "name": "Servo-scribes",
+          "characteristics": {
+            "Description": "Once per battle, when issuing an Order, the Lord Commissar can issue one additional Order.\n\n\nDesigner's Note: Place a Servo-scribes token next to the unit, removing it when this ability has been used."
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Boltgun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Chainsword": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Trench club",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Master vox": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Regimental standard": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Lord Marshal Dreir": {
+    "cost": {
+      "pts": "100",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lord Marshal Dreir",
+          "characteristics": {
+            "M": "10\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Orders": [
+        {
+          "name": "Orders",
+          "characteristics": {
+            "Orders": "This **^^Officer^^** can issue up to 3 Orders to **^^Regiment^^** units"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Tough to Kill",
+          "characteristics": {
+            "Description": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D3 wounds remaining."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: **^^Death Riders^^**"
+          }
+        },
+        {
+          "name": "Leading the Charge",
+          "characteristics": {
+            "Description": "Each time this model's unit makes a Charge move, until the end of the turn, melee weapons equipped by models in that unit have the **[DEVASTATING WOUNDS]** ability."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Sabre of Sacrifice",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Anti-Infantry 4+"
+          }
+        },
+        {
+          "name": "Savage claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Medi-pack": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Flamer": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Grenade launcher": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Heavy flamer": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Meltagun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Plasma gun": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Veteran Guardsman w/ Sniper rifle": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Veteran Guardsman",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Catachan Commander": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Catachan Commander",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Rogal Dorn Commander": {
+    "cost": {
+      "pts": "265",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Rogal Dorn Commander",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "18",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Called Shots",
+          "characteristics": {
+            "Description": "Each time this model is selected to shoot, you can re-roll one Hit roll, you can re-roll one Wound roll and you can re-roll one Damage roll when resolving its attacks."
+          }
+        },
+        {
+          "name": "Vox-net",
+          "characteristics": {
+            "Description": "Each time this model issues an Order, it can issue it to an eligible unit up to 12\" away"
+          }
+        }
+      ],
+      "Orders": [
+        {
+          "name": "Orders",
+          "characteristics": {
+            "Orders": "This **^^Officer^^** can issue 2 Orders to **^^Squadron^^** units."
+          }
+        }
+      ]
+    }
+  },
+  "Ministorum Priest": {
+    "cost": {
+      "pts": "35",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: **^^Cadian Shock Troops^^**, **^^Catachan Jungle Fighters^^**, **^^Death Korps of Krieg^^**, **^^Kasrkin^^**, **^^Krieg Combat Engineers^^**, **^^Tempestus Scions^^**,"
+          }
+        },
+        {
+          "name": "War Hymns",
+          "characteristics": {
+            "Description": "While this model is leading a unit, melee weapons equipped by models in that unit have the **[SUSTAINED HITS 1]** ability."
+          }
+        },
+        {
+          "name": "Holy Piety",
+          "characteristics": {
+            "Description": "Each time this model makes a melee attack, unless this model's unit is Battle-shocked, you can re-roll the Hit roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Ministorum Priest",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Zealot's vindicator",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Zealot's vindicator",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Holy pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Krieg Combat Engineer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Krieg Combat Engineer w/ Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Krieg Combat Engineer w/ Combat shotgun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Krieg Combat Engineer w/ Remote mine": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Remote mine",
+          "characteristics": {
+            "Description": "Once per battle, at the start of your Shooting phase, you can select one enemy unit within 9\" of and visible to the bearer and roll one D6: on 3+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a **^^Vehicle^^** or **^^Fortifications^^** unit.\n\n**Designer's Note:** *Place a Remote Mine token next to the unit, removing it once this ability has been used.*"
+          }
+        }
+      ]
+    }
+  },
+  "Krieg Engineer Watchmaster": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Hand flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Pistol, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Heavy Weapons Gunners w/ Krieg heavy flamer": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Krieg heavy flamer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Heavy Weapons Gunners w/ Twin Krieg heavy stubber": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Twin Krieg heavy stubber",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "5+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy, Rapid Fire 3, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Heavy Weapons Gunners w/ Lascannon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Fire Coordinator": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Fire Coordinator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Artillery Team": {
+    "cost": {
+      "pts": "95",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Artillery Team",
+          "characteristics": {
+            "M": "3\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Remorseless Barrage",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with an Indirect Fire weapon scored a hit against an enemy unit, that unit must take a Battle-shock test (if an **^^Infantry^^** unit is hit by one or more attacks made by a multiple rocket launcher, they must subtract 1 from their Battle-shock test when doing so)."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Crew close combat weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy mortar",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "5+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Heavy, Indirect Fire"
+          }
+        },
+        {
+          "name": "Siege cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "5+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast, Heavy, Indirect Fire"
+          }
+        },
+        {
+          "name": "Multiple rocket launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "5+",
+            "S": "2",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Infantry 3+, Blast, Heavy, Indirect Fire"
+          }
+        },
+        {
+          "name": "Heavy quad launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2D6",
+            "BS": "5+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy, Indirect Fire, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Provisionally Prepared [Legends]": {
+    "cost": {
+      "pts": "40",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- **^^Ratlings^^**"
+          }
+        },
+        {
+          "name": "Well-stocked Supplies",
+          "characteristics": {
+            "Description": "While this model is leading a unit, improve the Leadership and Objective Control characteristics of models in that unit by 1."
+          }
+        },
+        {
+          "name": "A Hearty 'Pick Me Up'",
+          "characteristics": {
+            "Description": "While this model is leading a unit, in your Command phase, you can return up to D3 destroyed models to that unit."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Provisionally Prepared",
+          "characteristics": {
+            "M": "6\"",
+            "T": "2",
+            "SV": "6+",
+            "W": "2",
+            "LD": "8+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "5+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Minka Lesk": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Minka Lesk",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Lesk's Hero": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lesk's Veterans",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Regimental Banner",
+          "characteristics": {
+            "Description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+          }
+        }
+      ]
+    }
+  },
+  "Shock Trooper w/ Flamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Shock Trooper w/ Grenade Launcher": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Shock Trooper w/ Meltagun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Shock Trooper w/ Plasma Gun": {
+    "cost": {},
+    "profiles": {}
+  }
+}

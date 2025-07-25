@@ -1,0 +1,1745 @@
+{
+  "Watch Master": {
+    "cost": {
+      "pts": "105"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Watch Master",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Strategic Knowledge",
+          "characteristics": {
+            "Description": "While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back."
+          }
+        },
+        {
+          "name": "Watch Master",
+          "characteristics": {
+            "Description": "Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- DEATHWATCH VETERANS\n- FORTIS KILL TEAM"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Vigil spear",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Vigil spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Lance"
+          }
+        }
+      ]
+    }
+  },
+  "Watch Captain Artemis": {
+    "cost": {
+      "pts": "65"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Tactical Instinct",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability."
+          }
+        },
+        {
+          "name": "Unstoppable Champion",
+          "characteristics": {
+            "Description": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 1 wound remaining."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: \n- DEATHWATCH VETERANS\n- FORTIS KILL TEAM"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Watch Captain Artemis",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hellfire Extremis",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Infantry 4+, Devastating Wounds, Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Corvus Blackstar": {
+    "cost": {
+      "pts": "180"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Corvus Blackstar",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Blackstar Cluster Launcher",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 5+, that unit suffers 1 mortal wound."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Description": "This model has a transport capacity of 12 ADEPTUS ASTARTES INFANTRY or KILL TEAM models. Each JUMP PACK, GRAVIS or TERMINATOR model takes up the space of 2 models and each CENTURION model takes up the space of 3 models."
+          }
+        },
+        {
+          "name": "Auspex Array",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by the bearer have the [IGNORES COVER] ability."
+          }
+        },
+        {
+          "name": "Infernum Halo-launcher",
+          "characteristics": {
+            "Description": "The bearer has the SMOKE keyword."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hurricane bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 6, Twin-Linked"
+          }
+        },
+        {
+          "name": "Twin assault cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Twin-Linked"
+          }
+        },
+        {
+          "name": "Twin lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Twin-Linked"
+          }
+        },
+        {
+          "name": "Blackstar rocket launcher",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "D6+1",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Stormstrike missile launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaplain Cassius": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaplain Cassius",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "5+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "Chaplain Cassius has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Artificer crozius",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Vael Donatus": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Vael Donatus",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Zameon Gydrael": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Zameon Gydrael",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Rodricus Grytt": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Rodricus Grytt",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Frag cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Heavy, Rapid Fire D3"
+          }
+        }
+      ]
+    }
+  },
+  "Antor Delassio": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Antor Delassio",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Jump Pack",
+          "characteristics": {
+            "Description": "The bearer has a Move characteristic of 12\" and can move over models and terrain as if they were not there."
+          }
+        }
+      ]
+    }
+  },
+  "Edryc Setorax": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Edryc Setorax",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Jump Pack",
+          "characteristics": {
+            "Description": "The bearer has a Move characteristic of 12\" and can move over models and terrain as if they were not there."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-Linked"
+          }
+        }
+      ]
+    }
+  },
+  "Jensus Natorian": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Jensus Natorian",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Psychic Hood",
+          "characteristics": {
+            "Description": "Models in the bearer’s unit have the Feel No Pain 4+ ability against Psychic Attacks."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Psychic Cleanse",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-3",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Drenn Redblade": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Drenn Redblade",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Garran Branatar": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Garran Branatar",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "Garran Branatar has a 4+ invulnerable save."
+          }
+        }
+      ]
+    }
+  },
+  "Ennox Sorrlock": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ennox Sorrlock",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Jetek Suberei": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Deathwatch twin boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Jetek Suberei",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwatch Terminator": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwatch Terminator",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin Lightning Claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-Linked"
+          }
+        },
+        {
+          "name": "Thunder Hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Chainfist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8+",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 3+"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 4."
+          }
+        }
+      ]
+    }
+  },
+  "Deathwatch Terminator w/ Heavy Weapon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwatch Terminator",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Deathwatch Terminator Sergeant": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathwatch Terminator Sergeant",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin Lightning Claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-Linked"
+          }
+        },
+        {
+          "name": "Thunder Hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Chainfist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8+",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 3+"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 4."
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Intercessor w/ plasma pistol and incinerator": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kill Team Intercessor w/ bolt pistol and incinerator": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kill Team Intercessor w/ vengor launcher": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Vengor launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Intercessor w/ superfrag missile launcher": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Superfrag missile launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Intercessor w/ superkrak missile launcher": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Superkrak missile launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Intercessor": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kill Team Intercessor w/ grenade launcher": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kill Team Intercessor w/ heavy bolt pistol": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Intercessor w/ pyreblaster": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kill Team Sergeant": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Sergeant",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Heavy Intercessor w/ melta rifle": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Heavy Intercessor",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Melta rifle",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Heavy, Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Heavy Intercessor w/ multi-melta": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Heavy Intercessor",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Heavy, Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Heavy Intercessor w/ power fists & auto boltstorm gauntlets": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Heavy Intercessor",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Auto boltstorm gauntlets",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Fragstorm grenade launcher",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin power fists",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Heavy Intercessor w/ power fists & flamestorm gauntlets": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Heavy Intercessor",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flamestorm gauntlets",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+1",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin power fists",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Heavy Intercessor": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Deathwatch heavy bolt rifle",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Assault, Heavy, Lethal Hits"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Kill Team Heavy Intercessor",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Heavy Intercessor w/ heavy bolter": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Deathwatch heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Assault, Heavy, Lethal Hits, Sustained Hits 1"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Kill Team Heavy Intercessor w/ Heavy Bolter",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Infiltrator": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Infiltrator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Deathwatch marksman bolt carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy, Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Infiltrator w/ occulus bolt carbine": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Infiltrator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Deathwatch occulus bolt carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Assault, Ignores Cover, Lethal Hits"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Paired combat blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Infiltrator w/ wargear": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Infiltrator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Deathwatch marksman bolt carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy, Lethal Hits"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Helix Gauntlet",
+          "characteristics": {
+            "Description": "Models in the bearer’s unit have the Feel No Pain 6+ ability."
+          }
+        },
+        {
+          "name": "Infiltrator Comms Array",
+          "characteristics": {
+            "Description": "Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Infiltrator w/ combat knife": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Infiltrator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Special-issue bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol, Precision"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Combat knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Infiltrator w/ bolt carbine": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Infiltrator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Special-issue bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol, Precision"
+          }
+        },
+        {
+          "name": "Deathwatch Bolt carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Lethal Hits, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Infiltrator w/ instigator bolt carbine": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Infiltrator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Instigator bolt carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Heavy"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Instigator Bolt Carbine",
+          "characteristics": {
+            "Description": "In your Shooting phase, after the bearer’s unit has shot, the bearer’s unit can make a Normal move. If it does, until the end of the turn, the bearer’s unit is not eligible to declare a charge."
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Infiltrator w/ las fusil": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Infiltrator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Las fusil",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Kill Team Infiltrator w/ bolt sniper rifle": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Infiltrator",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt sniper rifle",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Model w/ boltgun and power weapon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Model w/ Deathwatch thunder hammer": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Deathwatch thunder hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Model w/ frag cannon and CCW": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Frag cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Heavy, Rapid Fire D3"
+          }
+        }
+      ]
+    }
+  },
+  "Model w/ infernus heavy bolter and CCW": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Model w/ Astartes shield and boltgun": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Model w/ Astartes shield and power weapon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Model w/ stalker-pattern boltgun and CCW": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Stalker-pattern boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Model w/ Deathwatch shotgun and CCW": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Deathwatch shotgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Model w/ Black Shield blades": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Blackshield blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Sgt w/ Astartes shield and xenophase blade": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Sgt w/ boltgun and xenophase blade": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Sgt w/ combi-weapon and power weapon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Sgt w/ combi-weapon and xenophase blade": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Sgt w/ Astartes shield and combi-weapon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kill Team Sergeant w/ Jump Pack": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Sergeant w/ Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Intercessor w/ heavy bolt pistol and Jump Pack": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Intercessor w/ Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Heavy Intercessor w/ Jump Pack": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Assault bolters",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault, Pistol, Sustained Hits 2, Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Plasma exterminators - standard",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Assault, Pistol, Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Plasma exterminators - supercharge",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Assault, Hazardous, Pistol, Twin-linked"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Kill Team Heavy Intercessor w/ Jump Pack",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Intercessor w/ plasma pistol and Jump Pack": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kill Team Intercessor w/ Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  }
+}

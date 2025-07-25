@@ -162,7 +162,7 @@ function Simulateur() {
         parsedParams
       );*/
       
-      const res = await axios.post("http://127.0.0.1:8000/simulate", parsedParams);
+      const res = await axios.post("https://statwarhammer-production-871f.up.railway.app/simulate", parsedParams);
       setResult(res.data);
     } catch (error) {
       console.error("Erreur lors de la simulation :", error);

@@ -1,0 +1,1674 @@
+{
+  "Brother-Captain": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Brother-Captain",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+          }
+        },
+        {
+          "name": "Empyric Amplification (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, Psychic weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+          }
+        },
+        {
+          "name": "Focused Mind (Psychic)",
+          "characteristics": {
+            "Description": "Each time this model makes an attack with a Psychic weapon, you can re-roll the Wound roll."
+          }
+        }
+      ]
+    }
+  },
+  "Brother-Captain Stern": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Brother-Captain Stern",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+          }
+        },
+        {
+          "name": "Exemplar of the Silvered Host",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes a melee attack, on a Critical Wound, the target suffers 1 mortal wound in addition to any normal damage."
+          }
+        },
+        {
+          "name": "Strands of Fate (Psychic)",
+          "characteristics": {
+            "Description": "The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Nemesis force sword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Brotherhood Champion": {
+    "cost": {
+      "pts": "70",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Brotherhood Champion",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Purgation Squad\n■ Strike Squad"
+          }
+        },
+        {
+          "name": "Ethereal Castigation (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Fights First ability."
+          }
+        },
+        {
+          "name": "Martial Fury",
+          "characteristics": {
+            "Description": "Each time this model makes a melee attack that targets a Character unit, you can re-roll the Hit roll and you can re-roll the Wound roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Nemesis force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Precision, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Brotherhood Chaplain": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Brotherhood Chaplain",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "5",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Words of Power (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes a melee attack, add 1 to the Wound roll."
+          }
+        },
+        {
+          "name": "Dread Bearing (Aura)",
+          "characteristics": {
+            "Description": "While an enemy unit is within 6\" of this model, each time that unit takes a Battle-shock or Leadership test, subtract 1 from that test"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Crozius arcanum",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Brotherhood Librarian": {
+    "cost": {
+      "pts": "120"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Brotherhood Librarian",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Vortex of Doom (Psychic)",
+          "characteristics": {
+            "Description": "In your Shooting phase, you can select one enemy unit within 18\" of and visible to this Psyker (excluding units with the Lone Operative ability that are not part of an Attached unit and are not within 12\" of this Psyker). If you do, roll one D6: on a 1, this Psyker’s unit suffers D6 mortal wounds; on a 2-5, that enemy unit suffers 2D3 mortal wounds; on a 6, that enemy unit suffers 2D6 mortal wounds."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- BROTHERHOOD TERMINATOR SQUAD\n- PALADIN SQUAD"
+          }
+        },
+        {
+          "name": "Sanctic Hood",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Nemesis force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Psychic"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Purge Soul - witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Psychic"
+          }
+        },
+        {
+          "name": "➤ Purge Soul - focused witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Precision, Psychic, Hazardous"
+          }
+        },
+        {
+          "name": "Combi-weapon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Brotherhood Techmarine": {
+    "cost": {
+      "pts": "70"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Brotherhood Techmarine",
+          "characteristics": {
+            "M": "5\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Servitors\n■ Strike Squad"
+          }
+        },
+        {
+          "name": "Awaken the Machine Spirit",
+          "characteristics": {
+            "Description": "In your Command phase, you can select one friendly GREY KNIGHTS VEHICLE model within 6\" of this model. Until the start of your next Command phase, each time that VEHICLE model makes an attack, add 1 to the Hit roll."
+          }
+        },
+        {
+          "name": "Omnissiah’s Blessing",
+          "characteristics": {
+            "Description": "In your Command phase, you can select one friendly Grey Knights Vehicle model within 3\" of this model. That Vehicle model regains up to D3 lost wounds. Each model can only be selected for this ability once per turn."
+          }
+        },
+        {
+          "name": "Techmarine",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly Grey Knights Vehicle units, unless it is leading a unit, this model has the Lone Operative ability"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Omnissian power axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Plasma cutter - standard",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        },
+        {
+          "name": "➤ Plasma cutter - supercharge",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Extra Attacks, Hazardous"
+          }
+        },
+        {
+          "name": "Servo-arms",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Terminator": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Terminator with Ancient's Banner": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Ancient's Banner",
+          "characteristics": {
+            "Description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+          }
+        }
+      ]
+    }
+  },
+  "Terminator with Narthecium": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Narthecium",
+          "characteristics": {
+            "Description": "In your Command phase, you can return 1 destroyed model (excluding Characters) to the bearer’s unit"
+          }
+        }
+      ]
+    }
+  },
+  "Terminator with Heavy Weapon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Justicar": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Castellan Crowe": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Castellan Crowe",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Champion of the Order of Purifiers (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, add 1 to the Attacks characteristic of that unit’s Purifying Flame."
+          }
+        },
+        {
+          "name": "Foresight of the Prognosticars (Psychic)",
+          "characteristics": {
+            "Description": "Once per turn, the first time a saving throw is failed for this model, change the Damage characteristic of that attack to 0"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n■ Purifier Squad"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Purifying Flame",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Infantry 2+, Ignores Cover, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Black Blade of Antwyr",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Grand Master": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grand Master",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "7",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Might of Purity (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, you can ignore any or all modifiers to the characteristics of models in that unit and to any roll or test made for models in that unit (excluding modifiers to saving throws)."
+          }
+        },
+        {
+          "name": "Master Strategist",
+          "characteristics": {
+            "Description": "Once per battle, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Nemesis force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Grand Master in Nemesis Dreadknight": {
+    "cost": {
+      "pts": "210"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grand Master in Nemesis Dreadknight",
+          "characteristics": {
+            "M": "8\"",
+            "T": "8",
+            "SV": "2+",
+            "W": "13",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Surge of Wrath (Psychic)",
+          "characteristics": {
+            "Description": "Once per battle round, in the Fight phase, one model from your army with this ability can use it before resolving its attacks. If it does, until the end of the phase, each time that model makes an attack that targets a Monster or Vehicle unit, you can re-roll the Hit roll, you can re-roll the Wound roll and you can re-roll the Damage roll."
+          }
+        },
+        {
+          "name": "Heroism’s Favour",
+          "characteristics": {
+            "Description": "Each time you target this model with a Stratagem, it only costs 1CP to use, even if the CP cost is higher"
+          }
+        },
+        {
+          "name": "Damaged: 1-4 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ]
+    }
+  },
+  "Grand Master Voldus": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grand Master Voldus",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sanctuary (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Hammer Aflame (Psychic)",
+          "characteristics": {
+            "Description": "Each time this model’s unit is selected to fight, you can select one enemy unit within Engagement Range of this model’s unit and roll one D6, adding 2 to the result if that unit has the Daemon keyword: on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6+, that enemy unit suffers D3+3 mortal wounds."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Malleus Argyrum",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Land Raider": {
+    "cost": {
+      "pts": "240"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Land Raider",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Assault Ramp",
+          "characteristics": {
+            "Description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Grey Knights Land Raider",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Godhammer lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Land Raider Crusader": {
+    "cost": {
+      "pts": "220"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Land Raider Crusader",
+          "characteristics": {
+            "M": "12\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Assault Ramp",
+          "characteristics": {
+            "Description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Grey Knights Land Raider Crusader",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 16 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Land Raider Redeemer": {
+    "cost": {
+      "pts": "285"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Land Raider Redeemer",
+          "characteristics": {
+            "M": "12\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Grey Knights Land Raider Redeemer",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 14 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Assault Ramp",
+          "characteristics": {
+            "Description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flamestorm cannon",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Razorback": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Razorback",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Grey Knights Razorback",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 6 Grey Knights Infantry models. It cannot transport Terminator models."
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fire Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Rhino": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Rhino",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Grey Knights Rhino",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 Grey Knights Infantry models. It cannot transport Terminator models."
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Self Repair",
+          "characteristics": {
+            "Description": "At the start of your Command phase, this model regains 1 lost wound."
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Stormhawk Interceptor": {
+    "cost": {
+      "pts": "160"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Stormhawk Interceptor",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Interceptor",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a unit that can Fly, add 1 to the Hit roll"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Las-talon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Icarus stormcannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Fly 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Stormraven Gunship": {
+    "cost": {
+      "pts": "280"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Stormraven Gunship",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Armoured Resilience",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack"
+          }
+        },
+        {
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Grey Knights Stormraven Gunship",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 Grey Knights Infantry models and 1 Grey Knights Venerable Dreadnought model. Each Terminator model takes up the space of 2 models"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Stormstrike missile launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6+2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Twin heavy plasma cannon - standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Twin heavy plasma cannon - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Hazardous, Twin-linked"
+          }
+        },
+        {
+          "name": "Twin multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Stormtalon Gunship": {
+    "cost": {
+      "pts": "170"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Stormtalon Gunship",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Strafing Run",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a unit that cannot Fly, add 1 to the Hit roll"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Venerable Dreadnought": {
+    "cost": {
+      "pts": "155"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Venerable Dreadnought",
+          "characteristics": {
+            "M": "6\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Wisdom of the Ancients (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Grey Knights Infantry unit is within 6\" of this model, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1"
+          }
+        }
+      ]
+    }
+  },
+  "Interceptor": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Interceptor w/ incinerator": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Interceptor w/ psilencer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Interceptor w/ psycannon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kaldor Draigo": {
+    "cost": {
+      "pts": "125"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kaldor Draigo",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "7",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Untouchable Purity",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against mortal wounds"
+          }
+        },
+        {
+          "name": "One With the Warp (Psychic)",
+          "characteristics": {
+            "Description": "Once per battle, when this model’s unit declares a charge in the same turn it was set up on the battlefield using the Deep Strike or Teleport Assault ability, add 3 to the Charge roll."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ Brotherhood Terminator Squad\n■ Paladin Squad"
+          }
+        },
+        {
+          "name": "Supreme Commander",
+          "characteristics": {
+            "Description": "If this model is in your army, it must be your WARLORD."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Scourging",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Daemon 2+, Ignores Cover, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Titansword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-4",
+            "D": "3",
+            "Keywords": "Anti-Daemon 2+, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Nemesis Dreadknight": {
+    "cost": {
+      "pts": "210",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Nemesis Dreadknight",
+          "characteristics": {
+            "M": "8\"",
+            "T": "8",
+            "SV": "2+",
+            "W": "13",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Empyric Reprisal (Psychic)",
+          "characteristics": {
+            "Description": "This model is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back."
+          }
+        },
+        {
+          "name": "Damaged: 1-4 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ]
+    }
+  },
+  "Paladin": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Paladin with Ancient's Banner": {
+    "cost": {},
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Ancient's Banner",
+          "characteristics": {
+            "Description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+          }
+        }
+      ]
+    }
+  },
+  "Paladin with Heavy Weapon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Paragon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Purgator": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Purgator w/ incinerator": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Purgator w/ psilencer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Purgator w/ psycannon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Purifier": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Purifier w/ incinerator": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Purifier w/ psilencer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Purifier w/ psycannon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Knight of the Flame": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Servitor with servo-arm": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Servo-arm",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "5+",
+            "S": "6",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Servitor with heavy bolter": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Heavy, Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Servitor with multi-melta": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Heavy, Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Servitor with plasma cannon": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma cannon - standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Blast, Heavy"
+          }
+        },
+        {
+          "name": "➤ Plasma cannon - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Blast, Hazardous, Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knight": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Grey Knight with Heavy Weapon": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Thunderhawk Gunship": {
+    "cost": {
+      "pts": "805"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Thunderhawk Gunship",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "30",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Grey Knights Thunderhawk Gunship",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 30 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models."
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-10 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-10 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Aerial Assault",
+          "characteristics": {
+            "Description": "Each time a unit with the Deep Strike ability disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn"
+          }
+        },
+        {
+          "name": "Thunderhawk Cluster Bombs",
+          "characteristics": {
+            "Description": "Each time the bearer ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armored Hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Thunderhawk heavy cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+6",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Turbo-laser destructor",
+          "characteristics": {
+            "Range": "96\"",
+            "A": "D3+1",
+            "BS": "3+",
+            "S": "20",
+            "AP": "-4",
+            "D": "D6+6",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Hellstrike missile battery",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Fly 4+"
+          }
+        }
+      ]
+    }
+  },
+  "Land Raider Banisher": {
+    "cost": {
+      "pts": "255"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Land Raider Banisher",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-5 Wounds Remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Assault Ramp",
+          "characteristics": {
+            "Description": "Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        },
+        {
+          "name": "Land Raider Banisher",
+          "characteristics": {
+            "Description": "This model has a transport capacity of 12 Grey Knights Infantry models. Each Terminator model takes up the space of 2 models."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armored Tracks",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin psycannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Psychic, Sustained Hits 1, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Dreadnought [Legends]": {
+    "cost": {
+      "pts": "160"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Dreadnought [Legends]",
+          "characteristics": {
+            "M": "6\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Wisdom of the Ancients (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Grey Knights Infantry unit is within 6\" of this model, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1"
+          }
+        }
+      ]
+    }
+  },
+  "Grey Knights Relic Razorback [Legends]": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Grey Knights Relic Razorback [Legends]",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Transport",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 6 Grey Knights Infantry models. It cannot transport Terminator models."
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fire Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll"
+          }
+        }
+      ]
+    }
+  }
+}

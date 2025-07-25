@@ -1,0 +1,3787 @@
+{
+  "Orikan the Diviner": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Orikan the Diviner",
+          "characteristics": {
+            "M": "5\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Master Chronomancer",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "The Stars Are Right",
+          "characteristics": {
+            "Description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, triple the Attacks and Strength characteristics of this model’s Staff of Tomorrow and every successful Wound roll made for this model’s attacks scores a Critical Wound."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ NECRON WARRIORS\nYou can attach this model to one of the above units even if one ROYAL WARDEN or NOBLE model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Staff of Tomorrow",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-3",
+            "D": "D3",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Imotekh the Stormlord": {
+    "cost": {
+      "pts": "100"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ LYCHGUARD\n■ NECRON WARRIORS"
+          }
+        },
+        {
+          "name": "Grand Strategist",
+          "characteristics": {
+            "Description": "At the start of your Command phase, if this model is on the battlefield, you gain 1CP."
+          }
+        },
+        {
+          "name": "Lord of the Storm",
+          "characteristics": {
+            "Description": "Once per battle, at the end of your Command phase, this model can use this ability. If it does, roll one D6 for each enemy unit within 12\" of this model: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Imotekh the Stormlord",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gauntlet of Fire",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Staff of the Destroyer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Staff of the Destroyer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Anrakyr the Traveller [Legends]": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Anrakyr the Traveller",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Lord of the Pyrrhian Eternals",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Wound roll."
+          }
+        },
+        {
+          "name": "Mind in the Machine",
+          "characteristics": {
+            "Description": "At the start of your opponent’s Shooting phase, select one enemy VEHICLE unit within 12\" of and visible to this model. That unit must take a Leadership test. If that test is passed, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll; if that test is failed, that unit is not eligible to shoot this phase."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Warscythe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Varguard Obyron [Legends]": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Varguard Obyron",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ LYCHGUARD\n■ NECRON WARRIORS\nYou can attach this model to one of the above units even if NEMESOR ZAHNDREKH has already been attached to it. If it is, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Ghostwalk Mantle",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Fights First ability."
+          }
+        },
+        {
+          "name": "The Vargard’s Duty",
+          "characteristics": {
+            "Description": "While this model is in the same unit as NEMESOR ZAHNDREKH, CHARACTER models in that unit have the Feel No Pain 4+ ability."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Warscythe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Illuminor Szeras": {
+    "cost": {
+      "pts": "165",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Illuminor",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more other friendly NECRONS units, this model has the Lone Operative ability."
+          }
+        },
+        {
+          "name": "Mechanical Augmentation (Aura)",
+          "characteristics": {
+            "Description": "While a friendly NECRONS BATTLELINE unit is within 3\" of this model, each time a model in that unit makes an attack, improve the Armour Penetration characteristic of that attack by 1, and each time an attack targets that unit, worsen the Armour Penetration characteristic of that attack by 1."
+          }
+        },
+        {
+          "name": "Atomic Energy Manipulator",
+          "characteristics": {
+            "Description": "At the end of the Fight phase, if this model destroyed one or more models this phase, until the end of the battle, add 3\" to the range of its Mechanical Augmentation ability (to a maximum of 12\")."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Illuminor Szeras",
+          "characteristics": {
+            "M": "8\"",
+            "T": "8",
+            "SV": "2+",
+            "W": "9",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Eldritch lance",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Eldritch lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Impaling legs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Nemesor Zahndrekh [Legends]": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ LYCHGUARD\n■ NECRON WARRIORS"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Transient Madness",
+          "characteristics": {
+            "Description": "While this model is leading a unit, at the start of your Command phase, roll one D6: until the start of your next Command phase, weapons equipped by models in that unit gain the ability below that corresponds with that roll:\n■ 1-2: [SUSTAINED HITS 1]\n■ 3-4: [LETHAL HITS]\n■ 5-6: [DEVASTATING WOUNDS]"
+          }
+        },
+        {
+          "name": "Counter-tactics",
+          "characteristics": {
+            "Description": "Once per battle, after your opponent uses a Stratagem, if this model is on the battlefield, it can use this ability. If it does, until the end of the battle, the CP cost your opponent must pay to use that Stratagem again is increased by 1CP."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Nemesor Zahndrekh",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Trazyn the Infinite": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ LYCHGUARD\n■ NECRON WARRIORS"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Ancient Collector",
+          "characteristics": {
+            "Description": "While this model is leading a unit, at the end of your Command phase, if that unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at start or end of any turn."
+          }
+        },
+        {
+          "name": "Surrogate Hosts",
+          "characteristics": {
+            "Description": "At the start of your Command phase, if this model is on the battlefield, you can select one other friendly NECRONS INFANTRY CHARACTER model on the battlefield (excluding SKORPEKH LORD or EPIC HERO models). The selected model is destroyed (ignoring any rules that are triggered when a model is destroyed) and this model is put\nin its place, with all of its wounds remaining (if the selected model was leading a unit, this model now attaches to that unit as its Leader)."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Trazyn the Infinite",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Empathic Obliterator",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "7",
+            "AP": "0",
+            "D": "D3",
+            "Keywords": "Sustained Hits D3"
+          }
+        }
+      ]
+    }
+  },
+  "Royal Warden": {
+    "cost": {
+      "pts": "50",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ NECRON WARRIORS"
+          }
+        },
+        {
+          "name": "Adaptive Strategy",
+          "characteristics": {
+            "Description": "This model's unit is eligible to shoot and declare a charge in a turn in which it Fell Back."
+          }
+        },
+        {
+          "name": "Engrammatic Logic",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, you can select one friendly NECRONS unit that is Battle-shocked and within 12\" of this model. That unit is no longer Battle-shocked."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Royal Warden",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Relic gauss blaster",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Lethal Hits, Rapid Fire 2"
+          }
+        }
+      ]
+    }
+  },
+  "Skorpekh Lord": {
+    "cost": {
+      "pts": "90",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ SKORPEKH DESTROYERS"
+          }
+        },
+        {
+          "name": "United In Destruction",
+          "characteristics": {
+            "Description": "While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability."
+          }
+        },
+        {
+          "name": "Crimson Harvest",
+          "characteristics": {
+            "Description": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of this model and roll one D6: on a 2-5, that unit suffers D3 mortal wounds; on a 6, that unit suffers D3+3 mortal wounds."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Skorpekh Lord",
+          "characteristics": {
+            "M": "8\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "7",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Enmitic annihilator",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Flensing claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Hyperphase harvester",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Lokhust Lord": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ LOKHUST DESTROYERS\n■ LOKHUST HEAVY DESTROYERS"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Destroyer Cult",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes a ranged attack, a successful unmodifed Hit roll of 5+ scores a Critical Hit."
+          }
+        },
+        {
+          "name": "Driven by Hatred",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets an enemy unit that is Below Half-strength, you can re-roll the Hit roll and you can re-roll the Wound roll."
+          }
+        },
+        {
+          "name": "Nanoscarab amulet",
+          "characteristics": {
+            "Description": "The bearer has the Feel No Pain 5+ ability."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Lokhust Lord",
+          "characteristics": {
+            "M": "8\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Lord's blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Lord [Legends]": {
+    "cost": {
+      "pts": "65"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lord",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Relentless March",
+          "characteristics": {
+            "Description": "While this model is leading a unit, add 1\" to the Move characteristic of models in that unit."
+          }
+        },
+        {
+          "name": "The Lord’s Will",
+          "characteristics": {
+            "Description": "While this model is leading a unit, you can target that unit with Stratagems even when it is Battle-shocked."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ LYCHGUARD\n■ NECRON WARRIORS"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Lord's blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Catacomb Command Barge": {
+    "cost": {
+      "pts": "120",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Catacomb Command Barge",
+          "characteristics": {
+            "M": "10\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "9",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Carrier Wave (Aura)",
+          "characteristics": {
+            "Description": "While a friendly NECRONS unit is within 6\" of this model, add 1 to the Objective Control characteristic of models in that unit."
+          }
+        },
+        {
+          "name": "Advanced Quantum Shielding",
+          "characteristics": {
+            "Description": "Each time an attack targets this model, if the Strength characteristic of that attack is greater than this model’s Toughness characteristic, subtract 1 from the Wound roll."
+          }
+        },
+        {
+          "name": "Resurrection orb",
+          "characteristics": {
+            "Description": "Once per battle, at the end of any phase, select one friendly NECRONS INFANTRY or NECRONS MOUNTED unit with 6\" of the bearer and resurrect that unit. When you do, that unit’s Reanimation Protocols are activated reanimating D6 wounds instead of D3 when doing so. You cannot resurrect more than one unit per turn."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gauss cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "Tesla cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        },
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Overlord": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Overlord",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Implacable Resilience",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, subtract 1 from that attack’s Damage characteristic."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ LYCHGUARD\n■ NECRON WARRIORS"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Voidscythe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Technomancer": {
+    "cost": {
+      "pts": "80",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ CANOPTEK WRAITHS\n■ IMMORTALS\n■ NECRON WARRIORS\nYou can attach this model to one of the above units even if one ROYAL WARDEN or NOBLE model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Rites of Reanimation",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability."
+          }
+        },
+        {
+          "name": "Technomancer",
+          "characteristics": {
+            "Description": "At the end of your Movement phase, select one friendly NECRONS model within 6\" of the bearer. That model regains up to D3 lost wounds. Each model can only be selected for this ability once per turn."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Technomancer",
+          "characteristics": {
+            "M": "10\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Staff of light",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Psychomancer": {
+    "cost": {
+      "pts": "55"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ NECRON WARRIORS\nYou can attach this model to one of the above units even if one ROYAL WARDEN or NOBLE model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Nightmare Shroud (Aura)",
+          "characteristics": {
+            "Description": "In the Battle-shock step of your opponent's Command phase, if an enemy unit that is below its Starting Strength is within 6\" of this model, that enemy unit must take a Battle-shock test, subtracting 1 from the roll when it does so."
+          }
+        },
+        {
+          "name": "Harbinger of Despair",
+          "characteristics": {
+            "Description": "Once per turn, at the start of your Command, Movement, Shooting, Charge or Fight phase, you can select one enemy unit within 18\" of this model. That unit must take a Battle-shock test, subtracting 1 from the roll when it does so."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Psychomancer",
+          "characteristics": {
+            "M": "5\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Abyssal lance",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Abyssal lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chronomancer": {
+    "cost": {
+      "pts": "65"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ NECRON WARRIORS\nYou can attach this model to one of the above units even if one ROYAL WARDEN or NOBLE model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Timesplinter Mantle",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Chronometron",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model’s unit has shot, if it is not within Engagement Range of any enemy units, that unit can make a Normal move of up to 5\". If it does, until the end of the turn, that unit is not eligible to declare a charge."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Chronomancer",
+          "characteristics": {
+            "M": "5\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chronomancer's stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Chronomancer's stave",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Plasmancer": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ NECRON WARRIORS\nYou can attach this model to one of the above units even if one ROYAL WARDEN or NOBLE model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        },
+        {
+          "name": "Harbinger of Destruction",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes a ranged attack, a successful unmodifed Hit roll of 5+ scores a Critical Hit."
+          }
+        },
+        {
+          "name": "Living Lightning",
+          "characteristics": {
+            "Description": "In your Shooting phase, select one enemy unit within 18\" of and visible to this model (excluding units with the Lone Operative ability that are not part of an Attached unit and are not within 12\" of this model) and roll four D6: for each 4+, that enemy unit suffers 1 mortal wound."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Plasmancer",
+          "characteristics": {
+            "M": "5\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Plasmic lance",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Plasmic lance",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "7",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Warrior w/ gauss flayer": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Gauss flayer",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Lethal Hits, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Warrior w/ gauss reaper": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Gauss reaper",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Immortal": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Gauss blaster",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "Tesla carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault, Sustained Hits 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Canoptek Reanimator": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Canoptek Reanimator",
+          "characteristics": {
+            "M": "8\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "6",
+            "LD": "8+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Nanoscarab Reanimation Beam (Aura)",
+          "characteristics": {
+            "Description": "While a friendly NECRONS unit is within 3\" of this model, each time that unit’s Reanimation Protocols activate, that unit reanimates an additional D3 wounds."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Atomiser beam",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Reanimator's claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hexmark Destroyer": {
+    "cost": {
+      "pts": "75",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hexmark Destroyer",
+          "characteristics": {
+            "M": "8\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Inescapable Death",
+          "characteristics": {
+            "Description": "Once per turn, one unit from your army with this ability can be targeted with the Fire Overwatch Stratagem for 0CP, even if you have already used that Stratagem on a different unit this phase. In addition, each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 2+."
+          }
+        },
+        {
+          "name": "Multi-threat Eliminator",
+          "characteristics": {
+            "Description": "Once per turn, in your opponent's Shooting phase, when an enemy unit makes a ranged attack that targets a friendly NECRONS unit within 3\" of a model with this ability, after that enemy has shot, one model with this ability that is within 3\" of that target can shoot as if it were your Shooting phase, but must target that enemy unit when doing so, and can only do so if that enemy unit is an eligible target."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Enmitic disintegrator pistols",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Ignores Cover, Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Lychguard": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Warscythe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Hyperphase sword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Dispersion Shield",
+          "characteristics": {
+            "Description": "The bearer has a 4+ invulnerable save."
+          }
+        }
+      ]
+    }
+  },
+  "Deathmark": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Synaptic disintegrator",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Heavy, Precision"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Flayed One": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Flayer claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Cryptothrall": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Scouring eye",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Scythed limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Skorpekh Destroyer": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Skorpekh hyperphase weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Triarch Stalker": {
+    "cost": {
+      "pts": "110",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Triarch Stalker",
+          "characteristics": {
+            "M": "8\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "12",
+            "LD": "7+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Targeting Relay",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that unit cannot have the Benefit of Cover."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Stalker's forelimbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Heat ray - dispersed",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "➤ Heat ray - focused",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 4"
+          }
+        },
+        {
+          "name": "Particle shredder",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+6",
+            "BS": "2+",
+            "S": "7",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Devastating Wounds"
+          }
+        },
+        {
+          "name": "Heavy gauss cannon array",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "C'tan Shard of the Deceiver": {
+    "cost": {
+      "pts": "265"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "C'tan Shard of the Deceiver",
+          "characteristics": {
+            "M": "6\"",
+            "T": "11",
+            "SV": "4+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Grand Illusion",
+          "characteristics": {
+            "Description": "If your army includes this model, after both players have deployed their armies, select up to three NECRONS units from your army and redeploy them. When doing so, any of those units can be placed in Strategic Reserves, regardless of how many units are already in Strategic Reserves."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Cosmic insanity",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Anti-CHARACTER 4+, Devastating Wounds, Precision"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Golden fists",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "C'tan Shard of the Nightbringer": {
+    "cost": {
+      "pts": "305",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "C'tan Shard of the Nightbringer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "11",
+            "SV": "4+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Drain Life",
+          "characteristics": {
+            "Description": "At the end of the Fight phase, roll one D6 for each enemy unit within 6\" of this model: on a 4+, that enemy unit suffers D3 mortal wounds."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gaze of death",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "2+",
+            "S": "12",
+            "AP": "-2",
+            "D": "D6+3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Scythe of the Nightbringer - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "14",
+            "AP": "-4",
+            "D": "D6+2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "➤ Scythe of the Nightbringer - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "14",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "C'tan Shard of the Void Dragon": {
+    "cost": {
+      "pts": "300",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "C'tan Shard of the Void Dragon",
+          "characteristics": {
+            "M": "6\"",
+            "T": "11",
+            "SV": "4+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Matter Absorption",
+          "characteristics": {
+            "Description": "At the start of your Shooting phase, select one enemy VEHICLE unit within 12\" of this model and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds and this model regains up to that many lost wounds."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Spear of the Void Dragon",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-3",
+            "D": "D6+2",
+            "Keywords": "Anti-VEHICLE 2+"
+          }
+        },
+        {
+          "name": "Voltaic storm",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+3",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Sustained Hits 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Spear of the Void Dragon - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+2",
+            "Keywords": "Anti-VEHICLE 2+"
+          }
+        },
+        {
+          "name": "➤ Spear of the Void Dragon - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Canoptek tail blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Transcendent C'tan": {
+    "cost": {
+      "pts": "295",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Transcendent C'tan",
+          "characteristics": {
+            "M": "6\"",
+            "T": "11",
+            "SV": "4+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Transdimensional Displacement",
+          "characteristics": {
+            "Description": "Each time this model is selected to Advance, you can remove it from the battlefield and set it up again anywhere on the battlefield that is more than 9\" horizontally away from all enemy models."
+          }
+        },
+        {
+          "name": "C'tan Shard",
+          "characteristics": {
+            "Description": "This model cannot be given Enhancements."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Crackling tendrils",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Seismic assault",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Assault, Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Canoptek Spyder": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Automaton claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fabricator Claw Array (Aura)",
+          "characteristics": {
+            "Description": "While a friendly NECRONS VEHICLE unit is within 6\" of the bearer, models in that unit have the Feel No Pain 6+ ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Particle beamer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Canoptek Scarab Swarm": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Feeder mandibles",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "5+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Ophydian Destroyer": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Ophydian hyperphase weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Tomb Blade": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Twin gauss blaster",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Lethal Hits, Twin-linked"
+          }
+        },
+        {
+          "name": "Particle beamer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Devastating Wounds"
+          }
+        },
+        {
+          "name": "Twin tesla carbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault, Sustained Hits 2, Twin-linked"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Shadowloom",
+          "characteristics": {
+            "Description": "The bearer has the Stealth ability."
+          }
+        },
+        {
+          "name": "Nebuloscope",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by the bearer have the [IGNORES COVER] ability."
+          }
+        },
+        {
+          "name": "Shieldvanes",
+          "characteristics": {
+            "Description": "The bearer has a Save characteristic of 3+ and a Move characteristic of 8\"."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Tomb Blade",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Triarch Praetorian": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Rod of covenant",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Voidblade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Rod of covenant",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Particle caster",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Wraith w/ claws and beamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Wraith w/ claws and particle caster": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Wraith w/ claws": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Wraith w/ coils": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Wraith w/ coils and beamer": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Wraith w/ coils and particle caster": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Annihilation Barge": {
+    "cost": {
+      "pts": "105",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Annihilation Barge",
+          "characteristics": {
+            "M": "10\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "9",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Malevolent Arcing",
+          "characteristics": {
+            "Description": "In your Shooting phase, each time you select a target for this model’s twin tesla destructor, roll one D6 for the target unit and one D6 for every other enemy unit within 3\" of the target unit. On a 5+, the unit being rolled for is struck by arcing energies; after resolving all of this model’s attacks against the target unit, each unit struck by arcing energies suffers D3 mortal wounds."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin tesla destructor",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Sustained Hits 2, Twin-linked"
+          }
+        },
+        {
+          "name": "Gauss cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "Tesla cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Doomsday Ark": {
+    "cost": {
+      "pts": "200",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Overwhelming Obliteration",
+          "characteristics": {
+            "Description": "In your Movement phase, if this model Remains Stationary, until the end of the turn, its doomsday cannon has the [DEVASTATING WOUNDS] ability."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Doomsday Ark",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Doomsday cannon",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "D6+1",
+            "BS": "3+",
+            "S": "18",
+            "AP": "-4",
+            "D": "4",
+            "Keywords": "Blast, Heavy"
+          }
+        },
+        {
+          "name": "Gauss flayer array",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "5",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Lethal Hits, Rapid Fire 5"
+          }
+        }
+      ]
+    }
+  },
+  "Lokhust Destroyer": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Gauss cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Destroyer w/ enmitic exterminator": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Enmitic exterminator",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy, Rapid Fire 6, Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Destroyer w/ gauss destructor": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Gauss destructor",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "Heavy, Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Canoptek Doomstalker": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Canoptek Doomstalker",
+          "characteristics": {
+            "M": "8\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "12",
+            "LD": "8+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-4 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Sentinel Construct",
+          "characteristics": {
+            "Description": "Each time you target this unit with the Fire Overwatch Stratagem, while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Doomsday blaster",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+1",
+            "BS": "4+",
+            "S": "14",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Heavy"
+          }
+        },
+        {
+          "name": "Twin gauss flayer",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Lethal Hits, Rapid Fire 1, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Doomstalker limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ghost Ark": {
+    "cost": {
+      "pts": "115",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Repair Barge",
+          "characteristics": {
+            "Description": "Once per turn, just after an enemy unit finishes making its attacks, if one or more friendly NECRON WARRIORS units within 3\" of this model lost one or more wounds as a result of those attacks, this model can use this ability. If it does, select one of those NECRON WARRIORS units; that unit’s Reanimation Protocols activate. The same NECRON WARRIORS unit cannot be selected for this ability more than once per turn."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Ghost Ark",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 10 NECRON WARRIOR models and 1 NECRONS INFANTRY CHARACTER model."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Ghost Ark",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gauss flayer array",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "5",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Lethal Hits, Rapid Fire 5"
+          }
+        }
+      ]
+    }
+  },
+  "Night Scythe": {
+    "cost": {
+      "pts": "145"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Night Scythe",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "12",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invasion Beams",
+          "characteristics": {
+            "Description": "At the end of the Fight phase, if there are no models currently embarked within this TRANSPORT, you can select one friendly NECRONS INFANTRY unit wholly within 6\" of this TRANSPORT. Unless that unit is within Engagement Range of one or more enemy units, it can embark within this TRANSPORT."
+          }
+        },
+        {
+          "name": "Damaged: 1-4 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Quantum Invader",
+          "characteristics": {
+            "Description": "This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Night Scythe",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 1 NECRONS INFANTRY unit."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin tesla destructor",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Sustained Hits 2, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Doom Scythe": {
+    "cost": {
+      "pts": "230"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Doom Scythe",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "12",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Atavistic Instigation",
+          "characteristics": {
+            "Description": "Each time this model targets an enemy unit with its heavy death ray, your opponent must declare if that unit will stand firm or duck for cover:\n■ If it stands firm, when resolving attacks against that unit this phase, a successful unmodified Hit roll of 5+ scores a Critical Hit.\n■ If it ducks for cover, until the start of your next Shooting phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Damaged: 1-4 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy death ray",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Twin tesla destructor",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Sustained Hits 2, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Obelisk": {
+    "cost": {
+      "pts": "300",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Obelisk",
+          "characteristics": {
+            "M": "8\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-8 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-8 wounds remaining, subtract 4 from its Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Gravitic Pulse",
+          "characteristics": {
+            "Description": "At the start of your opponent’s Movement phase, you can select one enemy unit within 18\" of and visible to this model. Until the end of the turn, halve the Move characteristic of models in that unit and halve Advance and Charge rolls made for that unit. In addition, if that unit can FLY, until the start of your next Movement phase, roll one D6 each time that unit ends any type of move: on a 4+, that unit suffers D3 mortal wounds."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured bulk",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Tesla sphere",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-FLY 4+, Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Tesseract Vault": {
+    "cost": {
+      "pts": "425",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tesseract Vault",
+          "characteristics": {
+            "M": "8\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-8 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-8 wounds remaining, subtract 4 from its Objective Control characteristic and you can only select one of the C'tan Powers weapons in your Shooting phase, instead of two."
+          }
+        },
+        {
+          "name": "Powers of the C’tan",
+          "characteristics": {
+            "Description": "In your Shooting phase, when this model is selected to shoot, first select up to 2 different C’tan Powers weapons. Until the end of the phase, this model is equipped with those weapons in addition to its other weapons (this model cannot make attacks with any other C’tan Powers weapon you did not select in this way this phase)."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured bulk",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "C'tan Powers": [
+        {
+          "name": "Cosmic fire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Ignores Cover, Devastating Wounds, Torrent"
+          }
+        },
+        {
+          "name": "Time's arrow",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "3",
+            "AP": "-2",
+            "D": "6",
+            "Keywords": "Anti-CHARACTER 4+, Devastating Wounds, Precision"
+          }
+        },
+        {
+          "name": "Antimatter meteor",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Devastating Wounds, Indirect Fire"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Tesla sphere",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Monolith": {
+    "cost": {
+      "pts": "400",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Damaged: 1-7 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, subtract 4 from its Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Eternity Gate",
+          "characteristics": {
+            "Description": "In the Reinforcements step of your Movement phase, you can select one NECRONS INFANTRY unit from your army that is either in Reserves or on the battlefield (if you select the latter, remove that unit from the battlefield and place it into Reserves). That unit is then set up anywhere on the battlefield that is wholly within 6\" of this model and not within Engagement Range of any enemy models. That unit cannot declare a charge this turn."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Monolith",
+          "characteristics": {
+            "M": "8\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "22",
+            "LD": "7+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Particle whip",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3D6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Devastating Wounds"
+          }
+        },
+        {
+          "name": "Death ray",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Gauss flux arc",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Lethal Hits, Rapid Fire 3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Portal of exile",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Szarekh": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Szarekh",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Sceptre of Eternal Glory",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Staff of Stars",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "12",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Indirect Fire"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Weapons of the Final Triarch",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Triarchal Menhir": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Triarchal Menhir",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Triarchal Menhirs",
+          "characteristics": {
+            "Description": "If this unit’s Szarekh model is destroyed, all of this unit’s remaining Triarchal Menhir models are also destroyed."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Annihilator beam",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "14",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured bulk",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Convergence of Dominion Starstele": {
+    "cost": {
+      "pts": "60"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Transdimensional abductor",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Canoptek Tomb Stalker [Legends]": {
+    "cost": {
+      "pts": "130"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Canoptek Tomb Stalker",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "9",
+            "LD": "8+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Snaking Ambush",
+          "characteristics": {
+            "Description": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already used that Stratagem on a different unit this phase."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gauss slicers",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "8",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Tomb Stalker claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Canoptek Tomb Sentinel [Legends]": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Aggressor Guardian",
+          "characteristics": {
+            "Description": "Each time an attack targets this model, if this model is within range of an objective marker, worsen the Armour Penetration characteristic of that attack by 1. In addition, each time this model makes an attack that targets a unit within range of an objective marker, improve the Armour Penetration characteristic of that attack by 1."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Canoptek Tomb Sentinel",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "9",
+            "LD": "8+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Exile cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+1",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Tomb Sentinel claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Canoptek Acanthrite": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Cutting beam",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Voidblade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Tesseract Ark [Legends]": {
+    "cost": {
+      "pts": "130"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tesseract Ark",
+          "characteristics": {
+            "M": "9\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "Models in this unit have a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Gravitational Field",
+          "characteristics": {
+            "Description": "Each time an enemy unit selects this model as the target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other reductions to that Charge roll)."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Tesseract singularity chamber - particle",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "➤ Tesseract singularity chamber - seismic lash",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Gauss cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "Particle beamer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Devastating Wounds"
+          }
+        },
+        {
+          "name": "Tesla cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Seraptek Heavy Construct": {
+    "cost": {
+      "pts": "540"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Seraptek Heavy Construct",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "3+",
+            "W": "24",
+            "LD": "7+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Terrifying Monstrosity",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Damaged: 1-9 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-9 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Titanic forelimbs - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "5",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Titanic forelimbs - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Singularity generator",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "4",
+            "Keywords": "Blast, Devastating Wounds"
+          }
+        },
+        {
+          "name": "Synaptic obliterator",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "8",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 2"
+          }
+        },
+        {
+          "name": "Transdimensional projector",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "24",
+            "AP": "-4",
+            "D": "D6+4",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Gauss Pylon [Legends]": {
+    "cost": {
+      "pts": "210"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Gauss Pylon",
+          "characteristics": {
+            "M": "-",
+            "T": "12",
+            "SV": "3+",
+            "W": "22",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Phase Shift Generator (Aura)",
+          "characteristics": {
+            "Description": "While a friendly NECRONS unit is within 3\" of this Fortification, models in that unit have a 5+ invulnerable save against ranged attacks."
+          }
+        },
+        {
+          "name": "Phase-shifted Cover",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this Fortification, that model has the Benefit of Cover against that attack."
+          }
+        },
+        {
+          "name": "Damaged: 1-7 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gauss annihilator",
+          "characteristics": {
+            "Range": "120\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+6",
+            "Keywords": "Anti-FLY 2+, Lethal Hits"
+          }
+        },
+        {
+          "name": "Tesla arc",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "6",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Sentry Pylon [Legends]": {
+    "cost": {
+      "pts": "120"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sentry Pylon",
+          "characteristics": {
+            "M": "-",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Teleportation Matrix",
+          "characteristics": {
+            "Description": "Once per battle, at the end of your opponent’s turn, if this FORTIFICATION is not within Engagement Range of one or more enemy units, you can remove it from the battlefield. In the Reinforcements step of your next Movement phase, set it up anywhere on the battlefield that is more than 9\" horizontally away from all enemy models. If the battle ends and this FORTIFICATION is not on the battlefield, it is destroyed."
+          }
+        },
+        {
+          "name": "Phase-shifted Cover",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to a model, if that model is not fully visible to every model in the attacking unit because of this FORTIFICATION, that model has the Benefit of Cover against that attack."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Focused death ray",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Sustained Hits 2"
+          }
+        },
+        {
+          "name": "Gauss exterminator",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "14",
+            "AP": "-3",
+            "D": "6",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "Heat cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 4"
+          }
+        }
+      ]
+    }
+  },
+  "Night Shroud [Legends]": {
+    "cost": {
+      "pts": "140"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Night Shroud",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Death Sphere Bombardment",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound."
+          }
+        },
+        {
+          "name": "Damaged: 1-5 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin tesla destructor",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Sustained Hits 2, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Overlord with Translocation Shroud": {
+    "cost": {
+      "pts": "85"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Overlord with Translocation Shroud",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Translocation Shroud",
+          "characteristics": {
+            "Description": "Each time this model's unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit. In addition, each time a model in that unit makes a Normal, Advance or Fall Back move, until that move is finished, it can move horizontally through models and terrain features (it cannot finish a move on top of another model or its base)."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ LYCHGUARD\n■ NECRON WARRIORS"
+          }
+        }
+      ]
+    }
+  }
+}
