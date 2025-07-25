@@ -1,0 +1,3028 @@
+{
+  "Ahriman": {
+    "cost": {
+      "pts": "100",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ahriman",
+          "characteristics": {
+            "M": "10\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Scryer of Fates (Psychic)",
+          "characteristics": {
+            "Description": "if your army includes this model, after both players have deployed their armies, you can select up to 3 ^^**Thousand Sons^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves."
+          }
+        },
+        {
+          "name": "Arch-Sorcerer of Tzeentch (Psychic)",
+          "characteristics": {
+            "Description": "Each time this model attempts a Ritual, add 1 to the Psychic test result."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: ^^**Rubric Marines, Tzaangor Enlightened^^**"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Transmogrifying Blast",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+1",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Blast, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Black Staff of Ahriman",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Land Raider": {
+    "cost": {
+      "pts": "240"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Land Raider",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Assault Ramp",
+          "characteristics": {
+            "Description": "Each time a unit disembarks from this ^^**Transport^^** after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Chaos Land Raider",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 ^^**Thousand Sons Infantry^^** models. Each ^^**Terminator^^** model takes up the space of 2 models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Soulshatter lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured tracks",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Predator Annihilator": {
+    "cost": {
+      "pts": "130",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Predator Annihilator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Ensorcelled Annihilation",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a ^^**Monster^^** or ^^**Vehicle^^** unit that was hit by one or more Psychic attacks made by a ^^**Thousand Sons Psyker^^** unit from your army this turn, you can re-roll the Hit roll and you can re-roll the Damage roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Predator twin lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Predator Destructor": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Predator Destructor",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Ensorcelled Destruction",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a unit (excluding ^^**Monsters^^** and ^^**Vehicles^^**) that was hit by one or more Psychic attacks made by a ^^**Thousand Sons Psyker^^** unit from your army this turn, improve the Strength and Armour Penetration characteristic of that attack by 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Predator autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Rhino": {
+    "cost": {
+      "pts": "90",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Rhino",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sorcerous Support",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this ^^**Transport^^** this turn makes a Psychic attack that targets an enemy unit, add 1 to the Hit roll and add 1 to the Wound roll."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Chaos Rhino",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 ^^**Thousand Sons Infantry^^** models (excluding ^^**Terminator^^** models)."
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Spawn": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Hideous Mutations",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "D6+2",
+            "WS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Vindicator": {
+    "cost": {
+      "pts": "185",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Siege Shield",
+          "characteristics": {
+            "Description": "When making ranged attacks with its demolisher cannon, this model can target enemy units within Engagement Range of it (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Chaos Vindicator",
+          "characteristics": {
+            "M": "9\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Demolisher cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Defiler": {
+    "cost": {
+      "pts": "165",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Defiler",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Scuttling Walker",
+          "characteristics": {
+            "Description": "Each time this model makes a Normal, Advance or Fall Back move, it can move through friendly ^^**Monster^^** and ^^**Vehicle^^** models and sections of terrain that are 4\" or less in height."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Destroyer of Futures",
+          "characteristics": {
+            "Description": "Each time you target this model with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ when resolving that Stratagem. For each of those attacks that targets an enemy unit within 9\" of a ^^**Thousand Sons Psyker^^** unit from your army, a hit is scored on an unmodified Hit roll of 4+ instead."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Defiler cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Reaper autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Twin heavy flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Defiler claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "16",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Defiler scourge",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Exalted Sorcerer": {
+    "cost": {
+      "pts": "80",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Exalted Sorcerer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Arcane Shield (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Rebind Rubricae (Psychic)",
+          "characteristics": {
+            "Description": "In your Command phase, if this model is leading a unit, you can roll one D6: on a 1, that unit suffers D3 mortal wounds; on a 2-5, you can return 1 destroyed Bodyguard model to that unit; on a 6, you can return up to 2 destroyed Bodyguard models to that unit."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: ^^**Rubric Marines^^**"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Astral Blast",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Blast, Devastating Wounds, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Prosperine khopesh",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Exalted Sorcerer on Disc of Tzeentch": {
+    "cost": {
+      "pts": "100",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Exalted Sorcerer on Disc of Tzeentch",
+          "characteristics": {
+            "M": "10\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Arcane Shield (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, that unit can only be selected as the target of a ranged attack if the attacking model is within 18\"."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Binding Tendrils (Psychic)",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy ^^**Infantry^^** unit hit by one or more of those attacks made with Arcane Fire. Until the start of your next turn, that unit is ensnared. While a unit is ensnared, subtract 2\" from its Move characteristic and subtract 2 from Charge rolls made for it."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: ^^**Rubric Marines, Tzaangor Enlightened^^**"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Arcane Fire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Ignores Cover, Psychic, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Prosperine khopesh",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Forgefiend": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Forgefiend",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Blazing Salvos",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit that was hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Forgefiend claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Forgefiend jaws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "7",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Helbrute": {
+    "cost": {
+      "pts": "110",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Helbrute",
+          "characteristics": {
+            "M": "8\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Terrifying Assault",
+          "characteristics": {
+            "Description": "In your Shooting phase and the Fight phase, after this model has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test, subtracting 1 if that unit is within 9\" of one or more ^^**Thousand Sons Psyker^^** units from your army."
+          }
+        },
+        {
+          "name": "Devoted to Destruction",
+          "characteristics": {
+            "Description": "If this model is equipped with 2 melee weapons in addition to its close combat weapon, add 2 to the Attacks characteristic of those two weapons."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "Twin autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Helbrute plasma cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Hazardous"
+          }
+        },
+        {
+          "name": "➤ Missile launcher - frag",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Missile launcher - krak",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Helbrute hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "4+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power scourge",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Heldrake": {
+    "cost": {
+      "pts": "215",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Flame-wreathed",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal move, select one enemy unit it moved over during that move. Until the end of the turn, models in that unit cannot have the Benefit of Cover."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Heldrake",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Heldrake claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-FLY 2+, Devastating Wounds"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Baleflamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Infernal Master": {
+    "cost": {
+      "pts": "85",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Infernal Master",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Malefic Maelstrom (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+          }
+        },
+        {
+          "name": "Glimpse of Eternity (Psychic)",
+          "characteristics": {
+            "Description": "Once per turn, you can change the result of one Hit roll, one Wound roll or one saving throw made for this model to an unmodified 6."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: ^^**Rubric Marines^^**"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Fires of the Abyss - witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Psychic, Torrent"
+          }
+        },
+        {
+          "name": "➤ Fires of the Abyss - focused witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Hazardous, Psychic, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Magnus the Red": {
+    "cost": {
+      "pts": "420",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Magnus the Red",
+          "characteristics": {
+            "M": "14\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "16",
+            "LD": "5+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-6 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-6 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Unearthly Power",
+          "characteristics": {
+            "Description": "At the start of the battle round, select one of the abilities in the Crimson King section. Until the start of the next battle round, this model has that ability."
+          }
+        },
+        {
+          "name": "Lord of the Planet of the Sorcerers (Psychic)",
+          "characteristics": {
+            "Description": "This model can attempt up to 2 Rituals per turn instead of one, and each time this model attempts a Ritual, add 2 to the Psychic test result."
+          }
+        }
+      ],
+      "Crimson King": [
+        {
+          "name": "Impossible Form (Psychic)",
+          "characteristics": {
+            "Effect": "Each time an attack is made against this ^^**Psyker^^** (excluding Psychic Attacks), subtract 1 from the Damage characteristic of that attack."
+          }
+        },
+        {
+          "name": "Treason of Tzeentch (Psychic)",
+          "characteristics": {
+            "Effect": "At the start of your opponent’s Shooting phase, select one enemy unit within 24\" of this ^^**Psyker^^**. Until the end of the phase, ranged weapons equipped by models in that unit have the [HAZARDOUS] ability."
+          }
+        },
+        {
+          "name": "Time Flux (Aura, Psychic)",
+          "characteristics": {
+            "Effect": "While a friendly ^^**Thousand Sons^^** unit is within 6\" of this ^^**Psyker^^**, add 2\" to the Move characteristic of models in that unit."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gaze of Magnus",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3D3",
+            "BS": "2+",
+            "S": "11",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        },
+        {
+          "name": "Tzeentch's Firestorm",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Ignores Cover, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Blade of Magnus - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "16",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        },
+        {
+          "name": "➤ Blade of Magnus - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "14",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Maulerfiend": {
+    "cost": {
+      "pts": "130",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Maulerfiend",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Snarling Protector",
+          "characteristics": {
+            "Description": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem in this phase. In addition, each time this model declares a charge that targets an enemy unit within Engagement Range of one or more ^^**Thousand Sons Psyker^^** units from your army, you can re-roll the Charge roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Maulerfiend fists",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Lasher tendrils",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Magma cutter",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Mutalith Vortex Beast": {
+    "cost": {
+      "pts": "160",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Mutalith Vortex Beast",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "4+",
+            "W": "13",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Mutating Vortex (Aura)",
+          "characteristics": {
+            "Description": "At the end of your Movement phase, roll one D6 for each enemy unit within 6\" of this model: on a 2-3, that unit suffers 1 mortal wound; on a 4-5, that unit suffers D3 mortal wounds; on a 6, that unit suffers D6 mortal wounds. Each enemy unit within range of this ability must then take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Immaterial Flare (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**Thousand Sons Psyker^^** unit is within 6\" of this model, each time that unit Channels the Warp, add 1 to the Psychic test result. This is not cumulative with any other modifiers to the Psychic test result."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Betentacled maw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "15",
+            "WS": "3+",
+            "S": "7",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Mutalith claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Warp vortex - blast",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Warp vortex - beam",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "18",
+            "AP": "-3",
+            "D": "D6+6",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "➤ Warp vortex - torrent",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Aspiring Sorcerer": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Inferno bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Warpflame pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Pistol, Torrent"
+          }
+        },
+        {
+          "name": "Malefic Curse",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-3",
+            "D": "1",
+            "Keywords": "Anti-INFANTRY 4+, Devastating Wounds, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Aspiring Sorcerer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Rubric Marine w/ inferno boltgun": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Inferno boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Rubric Marine w/ warpflamer": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Warpflamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Rubric Marine w/ soulreaper cannon": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Soulreaper cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Scarab Occult Sorcerer": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        },
+        {
+          "name": "Prosperine khopesh",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Malefic Curse",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-3",
+            "D": "1",
+            "Keywords": "Anti-INFANTRY 4+, Devastating Wounds, Psychic"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Scarab Occult Sorcerer",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Scarab Occult Terminator": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Inferno combi-bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Prosperine khopesh",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Scarab Occult Terminator w/ heavy warpflamer": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Prosperine khopesh",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Scarab Occult Terminator w/ soulreaper cannon": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Prosperine khopesh",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Soulreaper cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Sorcerer": {
+    "cost": {
+      "pts": "75",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: ^^**Rubric Marines^^**"
+          }
+        },
+        {
+          "name": "Twisted Sorceries (Psychic)",
+          "characteristics": {
+            "Description": "Once per battle, in your Shooting phase or the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength and Attacks characteristic of Psychic weapons equipped by this model by 3."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sorcerer",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Pandaemonic Delusion",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Psychic, Sustained Hits 3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Prosperine khopesh",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Sorcerer in Terminator Armour": {
+    "cost": {
+      "pts": "85",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: ^^**Scarab Occult Terminators^^**"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Marked by Fate (Psychic)",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model's unit has shot, select one enemy unit hit by one or more of those attacks made with a Psychic weapon. Until the end of the phase, each time a friendly ^^**Thousand Sons^^** model makes an attack that targets that enemy unit, add 1 to the Hit roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sorcerer in Terminator Armour",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gaze of Hate",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Anti-MONSTER 4+, Anti-VEHICLE 4+, Devastating Wounds, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Daemon Prince of Tzeentch": {
+    "cost": {
+      "pts": "180",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Spirit Snare",
+          "characteristics": {
+            "Description": "Each time a friendly ^^**Thousand Sons Psyker^^** model with the Cabal of Sorcerers ability is destroyed while within 9\" of one or more models with this ability, select one of those models with this ability: until the end of the battle, each time the selected model attempts a Ritual, add 1 to the Psychic test result (to a maximum of +2)."
+          }
+        },
+        {
+          "name": "Servile Pawns",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly ^^**Thousand Sons Infantry^^** units, this model has the Lone Operative ability."
+          }
+        },
+        {
+          "name": "Glamour of Tzeentch (Aura, Psychic)",
+          "characteristics": {
+            "Description": "While a friendly ^^**Thousand Sons Infantry^^** unit is within 6\" of this model, models in that unit have the Stealth ability."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Daemon Prince of Tzeentch",
+          "characteristics": {
+            "M": "9\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Infernal cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Dark Blessing",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "9",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Psychic, Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Hellforged weapons - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        },
+        {
+          "name": "➤ Hellforged weapons - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Daemon Prince of Tzeentch with wings": {
+    "cost": {
+      "pts": "170",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Aetherstride (Psychic)",
+          "characteristics": {
+            "Description": "In your Movement phase, when this model is set up on the battlefield using the Deep Strike ability, it can perform an aetherstride. If it does:\n- It can be set up anywhere on the battlefield more than 6\" horizontally away from all enemy units.\n- Until the end of the turn, its Dark Blessing has the [Sustained Hits D3] ability.\n- Until the end of the turn, it is not eligible to declare a charge."
+          }
+        },
+        {
+          "name": "Hunter of Souls",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a ^^**Character^^** unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1 (if that attack targets a ^^**Psyker Character^^** unit, you can re-roll the Hit roll and you can re-roll the Wound roll instead). Each time this model destroys a ^^**Character^^** unit, this model regains up to D3 lost wounds (if that ^^**Character^^** unit was a ^^**Psyker^^**, this model regains up to 3 lost wounds instead)."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Daemon Prince of Tzeentch with wings",
+          "characteristics": {
+            "M": "13\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Infernal cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Dark Blessing",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "9",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Psychic, Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Hellforged weapons - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        },
+        {
+          "name": "➤ Hellforged weapons - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Divining spear Enlightened": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Pistol and chainsword Enlightened": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Aviarch": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tzaangor Shaman": {
+    "cost": {
+      "pts": "55",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Sacrificial Blessing",
+          "characteristics": {
+            "Description": "While this model is leading a unit, in your Shooting phase and the Fight phase, each time that unit is selected to shoot or fight, this model can use this ability. If it does, select one Bodyguard model in that unit; that Bodyguard model is destroyed and, until the end of the phase, add D3 to the Attacks and Strength characteristics of Psychic weapons equipped by this model."
+          }
+        },
+        {
+          "name": "Bestial Prophet",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units: ^^**Tzaangor Enlightened, Tzaangors^^**"
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Tzaangor Shaman",
+          "characteristics": {
+            "M": "10\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "4",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Force stave",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Baleful Devolution",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "9",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Devastating Wounds, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Tzaangor w/ Tzaangor blades": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Tzaangor w/ pistol and chainsword": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Twistbray": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hellblade [Legends]": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hellblade",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Interceptor",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hell Talon [Legends]": {
+    "cost": {
+      "pts": "140"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Bomb Rack",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal move, you can select one enemy unit it moved across during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Hell Talon",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Sorcerer on Disc of Tzeentch [Legends]": {
+    "cost": {
+      "pts": "80",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- RUBRIC MARINES"
+          }
+        },
+        {
+          "name": "Flames of Change (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability."
+          }
+        },
+        {
+          "name": "Altered Reality (Psychic)",
+          "characteristics": {
+            "Description": "Once per battle round, after a Hit roll, a Wound roll or a saving throw is made for this model, you can change the result of that roll to a 6."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sorcerer on Disc of Tzeentch [Legends]",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Infernal Gaze - witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        },
+        {
+          "name": "➤ Infernal Gaze - focused witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Devastating Wounds, Hazardous, Psychic"
+          }
+        },
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Combi-bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        },
+        {
+          "name": "Combi-weapon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        },
+        {
+          "name": "Accursed weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Astartes chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Lord on Disc of Tzeentch [Legends]": {
+    "cost": {
+      "pts": "100"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Lord on Disc of Tzeentch",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n■ CHOSEN\n■ LEGIONARIES\n■ RUBRIC MARINES"
+          }
+        },
+        {
+          "name": "Lord of Fate",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability against mortal wounds."
+          }
+        },
+        {
+          "name": "Lord of Chaos",
+          "characteristics": {
+            "Description": "Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Astartes chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Accursed weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Paired accursed weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Accursed weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma pistol - supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        },
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Combi-bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        },
+        {
+          "name": "Combi-weapon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-INFANTRY 4+, Devastating Wounds, Rapid Fire 1"
+          }
+        }
+      ]
+    }
+  },
+  "Sekhetar Robot w/ pyreflux meltagun": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Pyreflux meltagun",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        }
+      ]
+    }
+  },
+  "Sekhetar Robot w/ warpflame projector and claw": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Warpflame projector",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D3",
+            "BS": "N/A",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "10",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Enlightened": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Kairos Fateweaver": {
+    "cost": {
+      "pts": "260",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kairos Fateweaver",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "6+",
+            "W": "20",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "One Head Looks Forward",
+          "characteristics": {
+            "Description": "At the end of your Command phase, if this model is on the battlefield, take a Leadership test for this model; if that test is passed, you gain 1CP."
+          }
+        },
+        {
+          "name": "One Head Looks Back (Aura)",
+          "characteristics": {
+            "Description": "Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP."
+          }
+        },
+        {
+          "name": "Damaged: 1-7 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Infernal Gateway - witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Blast, Indirect Fire, Psychic"
+          }
+        },
+        {
+          "name": "➤ Infernal Gateway - focused witchfire",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3+6",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-3",
+            "D": "D3",
+            "Keywords": "Blast, Hazardous, Indirect Fire, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Staff of Tomorrow",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Lord of Change": {
+    "cost": {
+      "pts": "250",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lord of Change",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "6+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Damaged: 1-7 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Daemon Lord of Tzeentch (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ^^**Scintillating Legions^^** unit is within 6\" of this model, each time a model in that unit makes a ranged attack, add 1 to the Strength characteristic of that attack."
+          }
+        },
+        {
+          "name": "Master of Magicks (Aura)",
+          "characteristics": {
+            "Description": "In your Shooting phase, select one of the following abilities: [Ignores Cover], [Lethal Hits], [Sustained Hits D3]. Until the end of the phase, this model's Bolt of Change has that ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Bolt of Change - witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "9",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Psychic"
+          }
+        },
+        {
+          "name": "➤ Bolt of Change - focused witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "9",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Hazardous, Psychic"
+          }
+        },
+        {
+          "name": "Rod of sorcery",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Staff of Tzeentch",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Psychic"
+          }
+        },
+        {
+          "name": "Baleful sword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Pyrocaster": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Flamer mouths",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flickering flames",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Psychic, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Flamer": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Flamer mouths",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flickering flames",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Psychic, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Screamer": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Lamprey bite",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-MONSTER 4+, Anti-VEHICLE 4+"
+          }
+        }
+      ]
+    }
+  },
+  "Pink Horror": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Coruscating pink flames",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Pink claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Pink Horror",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "7+",
+            "W": "1",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Blue Horror": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Blue Horror",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "8+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Coruscating Blue flames",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol, Psychic"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blue claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "5+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  }
+}

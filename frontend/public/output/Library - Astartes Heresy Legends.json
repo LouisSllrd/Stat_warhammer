@@ -1,0 +1,2680 @@
+{
+  "Kratos [Legends]": {
+    "cost": {
+      "pts": "265"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kratos",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Line-breaker",
+          "characteristics": {
+            "Description": "When making ranged attacks, this model can target enemy units within Engagement Range of it with Blast weapons (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Volkite caliver",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "➤ Kratos battlecannon - AP",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "18",
+            "AP": "-4",
+            "D": "D6+3",
+            "Keywords": "Heavy"
+          }
+        },
+        {
+          "name": "➤ Kratos battlecannon - HE",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Melta blast-gun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "Volkite cardanelle",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "9",
+            "BS": "3+",
+            "S": "9",
+            "AP": "0",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Havoc launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Twin boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Volkite culverin",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Deredeo Dreadnought [Legends]": {
+    "cost": {
+      "pts": "170"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deredeo Dreadnought",
+          "characteristics": {
+            "M": "6\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Deredeo Strike",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a unit that is not Below Half-strength, you can re-roll the Hit roll."
+          }
+        },
+        {
+          "name": "Invunerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Aiolos missile launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Boreas air defence missiles",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Anti-FLY 2+"
+          }
+        },
+        {
+          "name": "Anvilus autocannon battery",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Arachnus heavy lascannon battery",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Volkite falconet battery",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "9",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "➤ Hellfire plasma carronade - standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Hellfire plasma carronade - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Hazardous"
+          }
+        }
+      ]
+    }
+  },
+  "Relic Contemptor Dreadnought [Legends]": {
+    "cost": {
+      "pts": "180"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Relic Contemptor Dreadnought",
+          "characteristics": {
+            "M": "6\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Even In Death I Serve",
+          "characteristics": {
+            "Description": "The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Cyclone missile launcher - frag",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Cyclone missile launcher - krak",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Heavy plasma cannon - standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Heavy plasma cannon - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Hazardous"
+          }
+        },
+        {
+          "name": "Conversion beam cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Conversion, Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Kheres assault cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Combi-bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        },
+        {
+          "name": "➤ Plasma blaster - standard",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Plasma blaster - supercharge",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous"
+          }
+        },
+        {
+          "name": "Graviton blaster",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-VEHICLE 2+"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Dreadnought chainfist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-VEHICLE 3+"
+          }
+        },
+        {
+          "name": "Dreadnought combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Leviathan Dreadnought [Legends]": {
+    "cost": {
+      "pts": "215"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Leviathan Dreadnought",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Duty Eternal",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Grav-flux bombard",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2D3",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-VEHICLE 2+, Blast"
+          }
+        },
+        {
+          "name": "Cyclonic melta-lance",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "Storm cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Twin volkite caliver",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Leviathan siege claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Leviathan siege drill",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-VEHICLE 3+"
+          }
+        }
+      ]
+    }
+  },
+  "Javelin Attack Speeder [Legends]": {
+    "cost": {
+      "pts": "110"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Javelin Attack Speeder",
+          "characteristics": {
+            "M": "14\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "9",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fire and Redeploy",
+          "characteristics": {
+            "Description": "In your Shooting phase, each time this model has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to D6\". If it does, until the end of the turn, this model is not eligible to declare a charge."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Javelin missile launcher - frag",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Javelin missile launcher - krak",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Deathstorm Drop Pod [Legends]": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathstorm Drop Pod",
+          "characteristics": {
+            "M": "-",
+            "T": "7",
+            "SV": "3+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Deathstorm Assault",
+          "characteristics": {
+            "Description": "This model must start the battle in Reserves, but it is not counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Deathstorm cannon array",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "12",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        },
+        {
+          "name": "Deathstorm missile array",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Land Raider Proteus [Legends]": {
+    "cost": {
+      "pts": "250"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Land Raider Proteus",
+          "characteristics": {
+            "M": "12\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Land Raider Proteus",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+          }
+        },
+        {
+          "name": "Land Raider Proteus (Explorator augury web)",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 6 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Explorator Augury Web",
+          "characteristics": {
+            "Description": "Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of the bearer, but the bearer must halve its Transport Capacity."
+          }
+        }
+      ]
+    }
+  },
+  "Land Raider Achilles [Legends]": {
+    "cost": {
+      "pts": "285"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Land Raider Achilles",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "6+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Land Raider Achilles",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Quad launcher - shatter shells",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Quad launcher - thunderfire shells",
+          "characteristics": {
+            "Range": "60\"",
+            "A": "D6+4",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        },
+        {
+          "name": "Twin multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Sicaran Battle Tank [Legends]": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sicaran Battle Tank",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Armoured Spearhead",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets an enemy unit, re-roll a Hit roll of 1 and, if that unit is within range of an objective marker you do not control, you can re-roll the Hit roll instead."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Herakles-pattern autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ]
+    }
+  },
+  "Sicaran Arcus [Legends]": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sicaran Arcus",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Specialised Weapon System",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets the enemy unit you selected for the Oath of Moment ability, that attack has the [IGNORES COVER] ability and can ignore the penalty to their Hit rolls when making attacks with Indirect Fire weapons against targets that are not visible to them."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Arcus multi-launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Sicaran Venator [Legends]": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sicaran Venator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Ferocious Assault",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets the closest eligible MONSTER or VEHICLE unit, add 1 to the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Venator neutron laser",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D3+3",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Sicaran Punisher [Legends]": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sicaran Punisher",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rotating Death",
+          "characteristics": {
+            "Description": "This model’s Punisher rotary cannon has the [SUSTAINED HITS 1] ability when targeting INFANTRY units."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Punisher rotary cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "18",
+            "BS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Sicaran Omega [Legends]": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sicaran Omega",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Overwhelming Short-range Firepower",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets the closest eligible enemy unit, re-roll a Hit roll of 1 and re-roll a Wound roll of 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Omega plasma array - standard",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Omega plasma array - supercharge",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Hazardous"
+          }
+        }
+      ]
+    }
+  },
+  "Rapier Carrier [Legends]": {
+    "cost": {
+      "pts": "100"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Rapier Carrier",
+          "characteristics": {
+            "M": "3\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Powerful Volley",
+          "characteristics": {
+            "Description": "Each time this model shoots in your Shooting phase, provided it Remained Stationary this turn, all [HEAVY] weapons equipped by models in this unit have the [LETHAL HITS] ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Boltgun",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Graviton cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-VEHICLE 2+, Blast, Heavy"
+          }
+        },
+        {
+          "name": "Laser destroyer",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        },
+        {
+          "name": "Quad heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Heavy, Twin-linked, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Quad launcher - shatter shells",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Heavy"
+          }
+        },
+        {
+          "name": "➤ Quad launcher - thunderfire shells",
+          "characteristics": {
+            "Range": "60\"",
+            "A": "D6+4",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy, Indirect Fire"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Whirlwind Scorpius [Legends]": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Whirlwind Scorpius",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Pinning Bombardment",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if one or more of those attacks made with its Scorpius multi-launcher scored a hit against an enemy INFANTRY unit, that unit must take a Battle-shock test."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Scorpius multi-launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2D3+3",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Vindicator Laser Destroyer [Legends]": {
+    "cost": {
+      "pts": "175"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Vindicator Laser Destroyer",
+          "characteristics": {
+            "M": "9\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Annihilator",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a MONSTER or VEHICLE unit, re-roll a Damage roll of 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Laservolley cannon - overcharge fire",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "D6+3",
+            "Keywords": "Hazardous"
+          }
+        },
+        {
+          "name": "➤ Laservolley cannon - volley fire",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D3+3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Dreadnought Drop Pod [Legends]": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Dreadnought Drop Pod",
+          "characteristics": {
+            "M": "-",
+            "T": "7",
+            "SV": "3+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Drop Pod Assault",
+          "characteristics": {
+            "Description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model must immediately disembark after it has been set up on the battlefield, and they must be set up more than 9\" away from all enemy models. After this model has been set up on the battlefield, no units can embark within it."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Dreadnought Drop Pod",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 1 Dreadnought model."
+          }
+        }
+      ]
+    }
+  },
+  "Terrax-pattern Termite [Legends]": {
+    "cost": {
+      "pts": "200"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Terrax-pattern Termite",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Termite Assault",
+          "characteristics": {
+            "Description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Terrax-pattern Termite",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 <FACTION> INFANTRY models. It cannot transport JUMP PACK, WULFEN, PHOBOS, GRAVIS, CENTURION, TERMINATOR, OBLITERATOR, POSSESSED or TACTICUS models (excluding TACTICUS CHARACTER models that began the battle attached to a non-TACTICUS unit)."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Termite drill",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "14",
+            "AP": "-2",
+            "D": "D3+3",
+            "Keywords": "Anti-VEHICLE 3+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Terrax melta cutter",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "5",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "Twin volkite charger",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Xiphon Interceptor [Legends]": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Xiphon Interceptor",
+          "characteristics": {
+            "M": "20+",
+            "T": "9",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Interceptor",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Xiphon missile battery",
+          "characteristics": {
+            "Range": "60\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Anti-FLY 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Storm Eagle Gunship [Legends]": {
+    "cost": {
+      "pts": "255"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Storm Eagle Gunship",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Armoured Resilience",
+          "characteristics": {
+            "Description": "Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Storm Eagle Gunship",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 22 <FACTION> INFANTRY models and 1 DREADNOUGHT model. Each JUMP PACK, WULFEN, GRAVIS, TERMINATOR or POSSESSED model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Vengeance launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Twin multi-melta",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Typhoon missile launcher - frag",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Typhoon missile launcher - krak",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin hellstrike launcher",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Anti-FLY 2+, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Fire Raptor Gunship [Legends]": {
+    "cost": {
+      "pts": "290"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Fire Raptor Gunship",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Strafing Run",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a unit that cannot FLY, add 1 to the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin avenger bolt cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "10",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "Quad heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Twin-linked, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Twin hellstrike launcher",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Anti-FLY 2+, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Typhon [Legends]": {
+    "cost": {
+      "pts": "385"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Typhon",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sunderer of Fortresses",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a VEHICLE, improve the Strength and Damage characteristic of that attack by 1 (if that attack targets a FORTIFICATION unit, improve the Strength and Damage characteristics of that attack by 2 instead)."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Dreadhammer siege cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+6",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Cerberus [Legends]": {
+    "cost": {
+      "pts": "285"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cerberus",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Atomantic Arc-reactor",
+          "characteristics": {
+            "Description": "Each time this unit shoots its Cerberus neutron pulse array in your Shooting phase, provided it Remained Stationary this turn, that weapon has the [LETHAL HITS] ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Cerberus neutron pulse array",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+3",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Spartan [Legends]": {
+    "cost": {
+      "pts": "315"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Spartan",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "18",
+            "LD": "6+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Spartan",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 28 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, TERMINATOR or POSSESSED model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Quad lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Laser destroyer",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Fellblade [Legends]": {
+    "cost": {
+      "pts": "535"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Fellblade",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "6+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rolling Fortress",
+          "characteristics": {
+            "Description": "Each time a ranged attack is allocated to a model from your army, if that model is not fully visible to every model in the attacking unit because of this Fellblade model, that model has the Benefit of Cover against that attack."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Demolisher cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Fellblade accelerator cannon - AP shells",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Fellblade accelerator cannon - HE shells",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Quad lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Laser destroyer",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Falchion [Legends]": {
+    "cost": {
+      "pts": "515"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Falchion",
+          "characteristics": {
+            "M": "9\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "24",
+            "LD": "6+",
+            "OC": "8"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Titan-killer",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack with its twin Falchion volcano cannon that targets a MONSTER or VEHICLE unit, that attack has the [DEVASTATING WOUNDS] ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin Falchion volcano cannon",
+          "characteristics": {
+            "Range": "120\"",
+            "A": "D3+1",
+            "BS": "3+",
+            "S": "24",
+            "AP": "-5",
+            "D": "12",
+            "Keywords": "Blast, Twin-linked"
+          }
+        },
+        {
+          "name": "Quad lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Laser destroyer",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Mastodon [Legends]": {
+    "cost": {
+      "pts": "610"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Damaged: 1-10 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-10 wounds remaining, subtract 6 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Inviolable Transport",
+          "characteristics": {
+            "Description": "Once per battle round, when an attack is allocated to this model, you can change the Damage characteristic of that attack to 0."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Mastodon",
+          "characteristics": {
+            "M": "9\"",
+            "T": "14",
+            "SV": "2+",
+            "W": "30",
+            "LD": "6+",
+            "OC": "12"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Mastodon",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 45 <FACTION> INFANTRY models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each CENTURION or OBLITERATOR model takes up the space of 3 models. This model can also transport up to 2 DREADNOUGHT or HELBRUTE models (these models take up the space of a number of models equal to their Wounds characteristic e.g. A DREADNOUGHT with a Wounds characteristic of 8 would take up the space of 8  models)."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Siege melta array",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2"
+          }
+        },
+        {
+          "name": "Skyreaper battery",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "8",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-FLY 4+"
+          }
+        }
+      ]
+    }
+  },
+  "Sokar-pattern Stormbird [Legends]": {
+    "cost": {
+      "pts": "1100"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Damaged: 1-13 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-13 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks"
+          }
+        },
+        {
+          "name": "Aerial Assault",
+          "characteristics": {
+            "Description": "Each time a unit with the Deep Strike ability disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sokar-pattern Stormbird",
+          "characteristics": {
+            "M": "20\"+",
+            "T": "13",
+            "SV": "2+",
+            "W": "40",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Sokar-pattern Stormbird",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 55 <FACTION> Infantry or <FACTION> MOUNTED models. Each JUMP PACK, WULFEN, GRAVIS, POSSESSED or TERMINATOR model takes up the space of 2 models and each MOUNTED, CENTURION or OBLITERATOR model takes up the space of 3 models. This model can also transport up to 1 RHINO model (this model – and any models embarked within it – take up the space of 25 models)."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "9",
+            "WS": "4+",
+            "S": "9",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hellstrike missile battery",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Anti-FLY 3+"
+          }
+        }
+      ]
+    }
+  },
+  "Tarantula Sentry Battery [Legends]": {
+    "cost": {
+      "pts": "45"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tarantula Sentry Battery",
+          "characteristics": {
+            "M": "-",
+            "T": "6",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sentinel Protocols",
+          "characteristics": {
+            "Description": "Each time you select this unit for the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 4+ when resolving that Stratagem."
+          }
+        }
+      ]
+    }
+  },
+  "Decimator [Legends]": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Decimator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Infernal Regeneration",
+          "characteristics": {
+            "Description": "The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Decimator butcher cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Decimator conversion beamer",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Conversion, Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Soulburner petard",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-INFANTRY 3+, Devastating Wounds, Hazardous"
+          }
+        },
+        {
+          "name": "Storm laser",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "8",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Decimator claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin decimator claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Greater Blight Drone [Legends]": {
+    "cost": {
+      "pts": "150"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Greater Blight Drone",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Hovering Death",
+          "characteristics": {
+            "Description": "This model is eligible to shoot and declare a charge in a turn in which it Fell Back."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bile maw",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "Blightreaper cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        },
+        {
+          "name": "Greater plague probe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Dreadclaw Drop Pod [Legends]": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Dreadclaw Drop Pod",
+          "characteristics": {
+            "M": "12\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "9",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Dreadclaw Drop Pod",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 12 HERETIC ASTARTES INFANTRY models. Each JUMP PACK, POSSESSED and TERMINATOR model takes up the space of 2 models. Each OBLITERATOR model takes up the space of 3 models. This model can instead transport 1 HELBRUTE or DREADNOUGHT model."
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Dreadclaw Assault",
+          "characteristics": {
+            "Description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blade struts",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "4+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Blood Slaughterer [Legends]": {
+    "cost": {
+      "pts": "160"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Blood Slaughterer",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Scuttling Gait",
+          "characteristics": {
+            "Description": "Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Impaler harpoon",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-MONSTER 2+, Anti-VEHICLE 2+, Impaled"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Slaughter blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Twin slaughter blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Greater Brass Scorpion [Legends]": {
+    "cost": {
+      "pts": "560"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Runes of the Blood God",
+          "characteristics": {
+            "Description": "This model has the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks."
+          }
+        },
+        {
+          "name": "Damaged: 1-9 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-9 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Greater Brass Scorpion",
+          "characteristics": {
+            "M": "12\"",
+            "T": "12",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Demolisher cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Hellmaw flame cannons",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "8",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Scorpion cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "15",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Hellcrusher claws - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Hellcrusher claws - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "18",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Kytan Ravager [Legends]": {
+    "cost": {
+      "pts": "425"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Damaged: 1-8 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-8 wounds remaining, subtract 5 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Bloodlust",
+          "characteristics": {
+            "Description": "Each time this model makes a Charge move, until the end of the turn, its melee weapons have the [SUSTAINED HITS 1] ability. In addition, once per battle, this model is eligible to declare a charge in a turn in which it Advanced."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Kytan Ravager",
+          "characteristics": {
+            "M": "10\"",
+            "T": "12",
+            "SV": "3+",
+            "W": "24",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Kytan cleaver - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Kytan cleaver - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Kytan gatling cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "18",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Kharybdis Assault Claw [Legends]": {
+    "cost": {
+      "pts": "325"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Kharybdis Assault",
+          "characteristics": {
+            "Description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models."
+          }
+        },
+        {
+          "name": "Damaged: 1-7 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-7 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Kharybdis Assault Claw",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "20",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Kharybdis Assault Claw",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 22 HERETIC ASTARTES INFANTRY models. Each JUMP PACK, POSSESSED and TERMINATOR model takes up the space of 2 models. Each OBLITERATOR model takes up the space of 3 models. This model can instead transport 1 HELBRUTE or DREADNOUGHT model."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blade struts",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Melta array",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "12",
+            "AP": "-4",
+            "D": "D6+2",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Kharybdis storm launcher - frag",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Kharybdis storm launcher - krak",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Chaos Thunderhawk [Legends]": {
+    "cost": {
+      "pts": "840"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chaos Thunderhawk",
+          "characteristics": {
+            "M": "20\"+",
+            "T": "12",
+            "SV": "2+",
+            "W": "30",
+            "LD": "6+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-10 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-10 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Aerial Assault",
+          "characteristics": {
+            "Description": "Each time a unit with the Deep Strike ability disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn."
+          }
+        },
+        {
+          "name": "Thunderhawk cluster bombs",
+          "characteristics": {
+            "Description": "Each time the bearer ends a Normal move, you can select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Chaos Thunderhawk",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 30 <FACTION> INFANTRY or <FACTION> MOUNTED models. Each JUMP PACK, POSSESSED and TERMINATOR model takes up the space of 2 models. Each OBLITERATOR model takes up the space of 3 models. Each MOUNTED model takes up the space of 4 models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hellstrike missile array",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-FLY 3+"
+          }
+        },
+        {
+          "name": "Thunderhawk heavy cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+6",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Turbo-laser destructor",
+          "characteristics": {
+            "Range": "96\"",
+            "A": "D3+1",
+            "BS": "3+",
+            "S": "20",
+            "AP": "-4",
+            "D": "D6+6",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  }
+}

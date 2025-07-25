@@ -1,0 +1,76 @@
+{
+  "Kayvaan Shrike": {
+    "cost": {
+      "pts": "100"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Kayvaan Shrike",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Trifold Path of Shadow",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models  in this unit cannot be targeted by ranged attacks unless the attacking model is within 12\"."
+          }
+        },
+        {
+          "name": "Echo of the Ravenspire",
+          "characteristics": {
+            "Description": "At the end of your opponent’s turn, if this model’s unit is not within Engagement Range of any enemy models, you can remove it from the battlefield and place it into Strategic Reserves."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessors with Jump Packs\n■ Vanguard Veteran Squad with Jump Packs"
+          }
+        },
+        {
+          "name": "Inspiring Commander",
+          "characteristics": {
+            "Description": "If you include this model in your army, until the end of the battle, non-Character models in Assault\nIntercessors with Jump Packs units from your army have an Objective Control characteristic of 2 while they are not Battle-shocked."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Blackout",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Pistol, Precision"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Raven's Talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Precision, Twin-linked"
+          }
+        }
+      ]
+    }
+  }
+}

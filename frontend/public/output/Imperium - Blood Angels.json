@@ -1,0 +1,1536 @@
+{
+  "Astorath": {
+    "cost": {
+      "pts": "95",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Astorath",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "5",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Redeemer of the Lost",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+          }
+        },
+        {
+          "name": "Mass of Doom",
+          "characteristics": {
+            "Description": "Each time this model’s unit makes a Charge move, until the end of the turn, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n\n■ Death Company Marines with Jump Packs"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Executioner's Axe",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Baal Predator": {
+    "cost": {
+      "pts": "125",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Baal Predator",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "11",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Overcharged Engines",
+          "characteristics": {
+            "Description": "You can re-roll Advance rolls made for this model."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Assault, Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Assault, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Baal Flamestorm Cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Assault, Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Twin Assault Cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault, Devastating wounds, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Brother Corbulo [Legends]": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Brother Corbulo",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sanguinary Priest",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability."
+          }
+        },
+        {
+          "name": "The Red Grail",
+          "characteristics": {
+            "Description": "While this model is leading a unit, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Squad\n■ Assault Intercessor Squad\n■ Sternguard Veteran Squad\n■ Devastator Squad\n■ Tactical Squad\n■ Vanguard Veteran Squad"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Heaven's Teeth",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Captain Tycho [Legends]": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Captain Tycho",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Gifted Commander",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time that unit is selected to shoot, select one of the following abilities to apply to ranged weapons equipped by models in that unit until the end of the phase:\n\n\n■ [ASSAULT]\n■ [HEAVY]\n■ [RAPID FIRE 1]"
+          }
+        },
+        {
+          "name": "Embittered",
+          "characteristics": {
+            "Description": "The first time an attack is allocated to this model, after the attacking unit has finished making its attacks, until the end of the battle, change the Attacks characteristic of this model’s Dead Man’s Hand to 12"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Squad\n■ Command Squad\n■ Assault Intercessor Squad\n■ Sternguard Veteran Squad\n■ Company Heroes\n■ Tactical Squad\n■ Vanguard Veteran Squad"
+          }
+        },
+        {
+          "name": "Tycho",
+          "characteristics": {
+            "Description": "Your army cannot contain both Captain Tycho and Tycho the Lost."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Blood Song",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Infantry 4+, Devastating Wounds, Melta 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Dead Man's Hand",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Tycho the Lost [Legends]": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tycho the Lost",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Forlorn Hero",
+          "characteristics": {
+            "Description": "While this model is leading a unit, that unit is  eligible to declare a charge in a turn in which it Advanced"
+          }
+        },
+        {
+          "name": "Death Visions of Sanguinius",
+          "characteristics": {
+            "Description": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy Warlord: on a 2-3, that enemy unit suffers 3 mortal wounds; on a 4-5, that enemy unit suffers D3+3 mortal wounds; on a 6+, that enemy unit suffers D6+3 mortal wounds."
+          }
+        },
+        {
+          "name": "Tycho",
+          "characteristics": {
+            "Description": "Your army cannot contain both Captain Tycho and Tycho the Lost."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n\n■ Death Company Marines"
+          }
+        }
+      ]
+    }
+  },
+  "Chief Librarian Mephiston": {
+    "cost": {
+      "pts": "120",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Chief Librarian Mephiston",
+          "characteristics": {
+            "M": "7\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "The Quickening [Psychic]",
+          "characteristics": {
+            "Description": "This model is eligible to declare a charge in a turn which it Advanced."
+          }
+        },
+        {
+          "name": "Transfixing Gaze [Aura, Psychic]",
+          "characteristics": {
+            "Description": "While an enemy unit is within 6\" of this model, each time that unit is selected to Fall Back, it must take a Leadership test. If that test is failed, that unit must Remain Stationary this phase instead."
+          }
+        },
+        {
+          "name": "Invulnerable Save 5+",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma Pistol - Standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma Pistol - Supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        },
+        {
+          "name": "➤ Fury of the Ancients - Witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Pistol, Psychic, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Fury of the Ancients - Focused Witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Hazardous, Pistol, Psychic, Sustained Hits 3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Vitarus",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-3",
+            "D": "D3",
+            "Keywords": "Lethal Hits, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Commander Dante": {
+    "cost": {
+      "pts": "120",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Commander Dante",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Death Mask of Sanguinius",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, each enemy unit within 6\" of this model must take a Battle-shock test, subtracting 1 from that test when they do"
+          }
+        },
+        {
+          "name": "Lord Regent of the Imperium Nihilus",
+          "characteristics": {
+            "Description": "While this model is leading a unit, add 1 to Advance and Charge rolls made for that unit and each time a model in that unit makes an attack, add 1 to the Hit roll."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Squad with Jump Packs\n■ Sanguinary Guard\n■ Vanguard Veteran Squad with Jump Packs\n■ Assault Intercessors with Jump Packs"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Perdition",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "9",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 2, Pistol, Sustained Hits D3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Axe Mortalis",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ]
+    }
+  },
+  "Death Company Dreadnought with Magna-Grapple [Legends]": {
+    "cost": {
+      "pts": "145"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Death Company Dreadnought",
+          "characteristics": {
+            "M": "8\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Frenzied Reprisal",
+          "characteristics": {
+            "Description": "Each time an enemy unit targets this model, after that unit has finished making its attacks, this model can either shoot as if it were your Shooting phase or fight as if it were the Fight phase."
+          }
+        },
+        {
+          "name": "Magna-grapple",
+          "characteristics": {
+            "Description": "Add 2 to Charge rolls made for the bearer if one or more of the targets of that charge is a MOSNTER or VEHICLE unit."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ]
+    }
+  },
+  "Death Company Intercessor": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Intercessor w/ melee weapon": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Intercessor w/ alternate pistol": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Company Marine": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Thunder Hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Death Company Marine w/ alternate weapons": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Astartes Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Death Company Marine w/ Eviscerator": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Company Marine w/ Power Weapon/Fist": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Company Marine w/Plasma Pistol": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Furioso Dreadnought [Legends]": {
+    "cost": {
+      "pts": "150"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Furioso Dreadnought",
+          "characteristics": {
+            "M": "6\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Wrathful Rampage",
+          "characteristics": {
+            "Description": "Each time this model is selected to fight, you can select one enemy unit within Engagement Range  of it and roll one D6, adding 2 to the result if this model made a Charge move this turn: on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6+, that enemy unit suffers 3 mortal wounds."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Frag Cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Rapid Fire D6"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Furioso Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Gabriel Seth [Legends]": {
+    "cost": {
+      "pts": "90"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Gabriel Seth",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Lord of Slaughter",
+          "characteristics": {
+            "Description": "While this model is leading a unit, that unit is eligible to declare a charge in a turn in which it Advanced"
+          }
+        },
+        {
+          "name": "Whirlwind of Rage",
+          "characteristics": {
+            "Description": "Each time this model fights, until that fight is resolved, add 1 to the Attacks characteristic of this model’s Blood Reaver for every 5 enemy models within 6\" of this model."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Squad\n■ Command Squad\n■ Tactical Squad\n■ Vanguard Veteran Squad\n■ Assault Intercessor Squad\n■ Company Heroes\n■ Sternguard Veteran Squad\n■ Bladeguard Veteran Squad"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blood Reaver",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Lemartes": {
+    "cost": {
+      "pts": "100",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lemartes",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Guardian of the Lost",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time an attack is allocated to a model in that unit, subtract 1 from the Damage characteristic of that attack."
+          }
+        },
+        {
+          "name": "Fury Unbound",
+          "characteristics": {
+            "Description": "While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n\n■ Death Company Marines with Jump Packs"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "The Blood Crozius",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lethal Hits"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Absolvor Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Librarian Dreadnought [Legends]": {
+    "cost": {
+      "pts": "170"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Librarian Dreadnought",
+          "characteristics": {
+            "M": "8\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "6+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Shield of Sanguinius (Aura, Psychic)",
+          "characteristics": {
+            "Description": "While a friendly Adeptus Astartes unit is within 6\" of this model, models in that unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks."
+          }
+        },
+        {
+          "name": "Wings of Sanguinius (Psychic)",
+          "characteristics": {
+            "Description": "Once per turn, at the end of your Movement phase, one Psyker from your army with this ability can use it. If it does, roll one D6: on a 1, that Psyker suffers D3 mortal wounds; on a 2+, select one friendly Adeptus Astartes Infantry unit within 12\" of that Psyker and remove the selected unit from the battlefield, then set it up again anywhere on the battlefield that is more than 9\"\nhorizontally away from all enemy models."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Blood Lance - Focused Witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+3",
+            "Keywords": "Hazardous, Psychic, Sustained Hits D3"
+          }
+        },
+        {
+          "name": "➤ Blood Lance - Witchfire",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Psychic, Sustained Hits D3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Furioso Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Furioso Force Halberd",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-3",
+            "D": "D6+3",
+            "Keywords": "Extra Attacks, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Sanguinary Guard": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Encarmine Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Encarmine Spear",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Lance"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Angelus Boltgun",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sanguinary Guard",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Sanguinary Priest": {
+    "cost": {
+      "pts": "75",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sanguinary Priest",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sanguinary Priest",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability"
+          }
+        },
+        {
+          "name": "Blood Chalice",
+          "characteristics": {
+            "Description": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Desolation Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Intercessor Squad\n\n■ Devastator Squad\n■ Tactical Squad\n■ Assault Intercessor Squad\n■ Sternguard Veteran Squad\n\nYou can attach this model to one of the above units, even if one Captain, Chapter Master or Lieutenant model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Astartes Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "The Sanguinor": {
+    "cost": {
+      "pts": "140"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "The Sanguinor",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "2+",
+            "W": "7",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Aura of Fervour (Aura)",
+          "characteristics": {
+            "Description": "While a friendly Adeptus Astartes unit is within 6\" of this model, you can re-roll Battle-shock and Leadership tests taken for that unit"
+          }
+        },
+        {
+          "name": "Miraculous Savior",
+          "characteristics": {
+            "Description": "Once per battle, at the end of your opponent’s Charge phase, if this model is still in Reserves, you can select one enemy unit  that made a Charge move this phase. Set this model up on the battlefield within Engagement Range of that enemy unit."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Encarmine Broadsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Sanguinary Priest with Jump Pack [Legends]": {
+    "cost": {
+      "pts": "100"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sanguinary Priest with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sanguinary Priest",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability"
+          }
+        },
+        {
+          "name": "Blood Chalice",
+          "characteristics": {
+            "Description": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Squad with Jump Packs\n■ Vanguard Veteran Squad with Jump packs\n■ Assault Intercessors with Jump Packs\n\nYou can attach this model to one of the above units, even if one Captain, Chapter Master or Lieutenant model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Astartes Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Sanguinary Priest on Bike [Legends]": {
+    "cost": {
+      "pts": "135"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Blood Chalice",
+          "characteristics": {
+            "Description": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Bike Squad\n■ Outrider Squad"
+          }
+        },
+        {
+          "name": "Sanguinary Priest",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Sanguinary Priest on Bike",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Combi-weapon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-infantry 4+, Devastating Wounds, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Grav-pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-vehicle 2+, Pistol"
+          }
+        },
+        {
+          "name": "Inferno Pistol",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-4",
+            "D": "D3",
+            "Keywords": "Melta 2, Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma Pistol - Standard",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "➤ Plasma Pistol - Supercharge",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Hazardous, Pistol"
+          }
+        },
+        {
+          "name": "Storm Bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Blood Angels Captain": {
+    "cost": {
+      "pts": "80",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Blood Angels Captain",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Company Heroes\n■ Tactical Squad"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Death Company Captain": {
+    "cost": {
+      "pts": "70",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Death Company Captain",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Death Company Marines\n■ Death Company Marines with Bolt Rifles"
+          }
+        },
+        {
+          "name": "Forlorn Hero",
+          "characteristics": {
+            "Description": "While this model is leading a unit, unless that unit starts the battle embarked within a Transport, models in that unit have the Scouts 6\" ability"
+          }
+        },
+        {
+          "name": "Death Vision of Sanguinius",
+          "characteristics": {
+            "Description": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy Warlord. On a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+ that enemy unit suffers D3+3 mortal wounds."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Master-crafted Chainsword",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "7",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Death Company Captain with Jump Pack": {
+    "cost": {
+      "pts": "75",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Death Vision of Sanguinius",
+          "characteristics": {
+            "Description": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy Warlord. On a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+ that enemy unit suffers D3+3 mortal wounds."
+          }
+        },
+        {
+          "name": "Lost to Fury",
+          "characteristics": {
+            "Description": "When this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Death Company Marines with Jump Packs"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Death Company Captain with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Death Company Marine w/Bolt Rifle": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Company Marine w/Eviscerator": {
+    "cost": {},
+    "profiles": {}
+  },
+  "Death Company Dreadnought": {
+    "cost": {
+      "pts": "160",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Death Company Dreadnought",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "12",
+            "LD": "6+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Driven by Fury",
+          "characteristics": {
+            "Description": "In your opponent's Shooting phase, each time an enemy unit has shot, if this model was hit by one or more of those attacks, it can make a Driven by Fury move. To do so, roll one D6 and add 2 to the roll; this model moves a number of inches up to the result, but must finish as close as possible to the closest enemy unit [excluding Aircraft]. A model cannot make a Driven by Fury move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Driven by Fury move per phase."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blood Fists",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Blood Talons - Strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Blood Talons - Sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Blood Fist Bolt Rifles",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  }
+}

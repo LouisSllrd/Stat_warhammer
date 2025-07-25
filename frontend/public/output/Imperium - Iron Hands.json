@@ -1,0 +1,94 @@
+{
+  "Iron Father Feirros": {
+    "cost": {
+      "pts": "95"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Iron Father Ferrios",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Rites of Tempering",
+          "characteristics": {
+            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability"
+          }
+        },
+        {
+          "name": "Iron Father",
+          "characteristics": {
+            "Description": "While this model is within 3\" of one or more friendly Adeptus Astartes Vehicle units, it has the Lone Operative ability."
+          }
+        },
+        {
+          "name": "Master of the Forge",
+          "characteristics": {
+            "Description": "In your Command phase, select one friendly Adeptus Astartes Vehicle model within 3\" of this model. That model regains up to 3 lost wounds and, until the start of your next Command phase, each time that Vehicle model makes an attack, add 1 to the Hit roll. You cannot select a unit for this ability that has already been selected for the Blessing of the Omnissiah ability this phase, and vice versa."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Aggressor Squad\n■ Eradicator Squad\n■ Heavy Intercessor Squad"
+          }
+        },
+        {
+          "name": "Inspiring Commander",
+          "characteristics": {
+            "Description": "If you include this model in your army, until the end of the battle, non-Character models in Heavy\nIntercessor Squad units from your army have an Objective Control characteristic of 3 while they are\nnot Battle-shocked."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Gorgon's Wrath",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Harrowhand",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Medusan Manipuli",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3016 @@
+{
+  "Winged Hive Tyrant": {
+    "cost": {
+      "pts": "170",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Winged Hive Tyrant",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Paroxysm (Psychic)",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, you can select one enemy unit within 12\" of and visible to this model and roll one D6: on a 1, this Psyker suffers D3 mortal wounds; on a 2+, until the end of the phase, subtract 1 from the Attacks characteristic of weapons equipped by models in that unit."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Tyrant talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hive Tyrant": {
+    "cost": {
+      "pts": "195",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- TYRANT GUARD"
+          }
+        },
+        {
+          "name": "Onslaught (Aura, Psychic)",
+          "characteristics": {
+            "Description": "While a friendly TYRANIDS unit is within 6\" of this model, ranged weapons equipped by models in that unit have the [ASSAULT] and [LETHAL HITS] abilities."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Hive Tyrant",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ]
+    }
+  },
+  "Tervigon": {
+    "cost": {
+      "pts": "175"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tervigon",
+          "characteristics": {
+            "M": "8\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "16",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Spawn Termagants",
+          "characteristics": {
+            "Description": "In your Command phase, you can select one friendly TERMAGANTS unit within 6\" of this model and return up to D3+3 destroyed TERMAGANT models to that unit. A TERMAGANTS unit cannot be selected for this ability more than once per phase."
+          }
+        },
+        {
+          "name": "Brood Progenitor (Aura, Psychic)",
+          "characteristics": {
+            "Description": "While a friendly TERMAGANTS unit is within 6\" of this model, ranged weapons equipped by models in that unit have the [LETHAL HITS] ability."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Massive scything talons - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Massive scything talons - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Massive crushing claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "The Swarmlord": {
+    "cost": {
+      "pts": "0",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "The Swarmlord",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Hive Commander",
+          "characteristics": {
+            "Description": "At the start of your Command phase, if this model is on the battlefield, you gain 1CP"
+          }
+        },
+        {
+          "name": "Malign Presence (Aura)",
+          "characteristics": {
+            "Description": "If this model is your Warlord, each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP."
+          }
+        },
+        {
+          "name": "Domination of the Hive Mind (Aura)",
+          "characteristics": {
+            "Description": "While a friendly TYRANIDS unit is within 9\" of this model, that unit is within your army’s Synapse Range."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n■ TYRANT GUARD"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Bone Sabres",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Synaptic Pulse",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Psychic, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Broodlord": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Broodlord",
+          "characteristics": {
+            "M": "8\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Vicious Insight",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+          }
+        },
+        {
+          "name": "Hypnotic Gaze (Psychic)",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model. Until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- GENESTEALERS"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Broodlord Claws and Talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Winged Tyranid Prime": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Alpha Warrior",
+          "characteristics": {
+            "Description": "While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability."
+          }
+        },
+        {
+          "name": "Death Blow",
+          "characteristics": {
+            "Description": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- GARGOYLES\n- TYRANID WARRIORS WITH MELEE BIO-WEAPONS\n- TYRANID WARRIORS WITH RANGED BIO-WEAPONS"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Winged Tyranid Prime",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Prime talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Old One Eye": {
+    "cost": {
+      "pts": "150"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Old One Eye",
+          "characteristics": {
+            "M": "8\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "9",
+            "LD": "8+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Alpha Leader",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, you can re-roll the Hit roll."
+          }
+        },
+        {
+          "name": "Unstoppable Monster",
+          "characteristics": {
+            "Description": "At the start of each player’s Command phase, this model regains up to D3 lost wounds."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit:\n- CARNIFEXES"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Old One Eye’s claws and talons - Strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Old One Eye’s claws and talons - Sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Tyranid Prime": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tyranid Prime",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Tyranid Warrior": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tyranid Warrior",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "2"
+          }
+        }
+      ]
+    }
+  },
+  "Termagants": {
+    "cost": {
+      "pts": "0"
+    },
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Fleshborer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "Termagant spinefist",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault, Pistol, Twin-linked"
+          }
+        },
+        {
+          "name": "Termagant devourer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Termagant w/ Shardlauncher": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Shardlauncher",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Termagant w/ Spike rifle": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Spike rifle",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Termagant w/ Strangleweb": {
+    "cost": {},
+    "profiles": {
+      "Ranged Weapons": [
+        {
+          "name": "Strangleweb",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault, Devastating Wounds, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Hormagaunts": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hormagaunts",
+          "characteristics": {
+            "M": "10\"",
+            "T": "3",
+            "SV": "5+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Hormagaunt talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Gargoyles": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Gargoyles",
+          "characteristics": {
+            "M": "12\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blinding venom",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Fleshborer",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Toxicrene": {
+    "cost": {
+      "pts": "150"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Toxicrene",
+          "characteristics": {
+            "M": "8\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "14",
+            "LD": "8+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Grasping Tendrils",
+          "characteristics": {
+            "Description": "Each time an enemy unit (excluding Titanic units) within Engagement Range of one or more units from your army with this ability is selected to Fall Back, you can roll one D6: on a 3+, that enemy unit must Remain Stationary instead."
+          }
+        },
+        {
+          "name": "Hypertoxic Miasma (Aura)",
+          "characteristics": {
+            "Description": "At the end of your Movement phase, roll one D6 for each enemy unit within 6\" of this model: on a 2-3, that unit suffers 1 mortal wound; on a 4-5, that unit suffers D3 mortal wounds; on a 6, that unit suffers D6 mortal wounds."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Massive toxic lashes",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-infantry 2+"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Massive toxic lashes",
+          "characteristics": {
+            "Range": "9\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-infantry 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Tyrant Guard": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tyrant Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "8",
+            "SV": "3+",
+            "W": "4",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Scything talons and rending claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Bone cleaver, lash whip and rending claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Crushing claws and rending claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Neurotyrant": {
+    "cost": {
+      "pts": "105"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neurotyrant",
+          "characteristics": {
+            "M": "6\"",
+            "T": "8",
+            "SV": "4+",
+            "W": "9",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Node Lash (Psychic)",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll. If the target is Battle-shocked, add 1 to the Wound roll as well."
+          }
+        },
+        {
+          "name": "Psychic Terror (Psychic)",
+          "characteristics": {
+            "Description": "If one or more Neurotyrants from your army are on the battlefield when you unleash the Shadow in the Warp, subtract 1 from the Battle-shock test each enemy unit on the battlefield must take as a result."
+          }
+        },
+        {
+          "name": "Synaptic Relays",
+          "characteristics": {
+            "Description": "In your Command phase, you can select up to two friendly Tyranids units within 18\" of this model’s unit. Until the start of your next Command phase, the selected units are always considered to be within Synapse Range of your army."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n- NEUROGAUNT\n- TYRANT GUARD\n- ZOANTHROPES"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Neurotyrant claws and lashes",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Psychic scream",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Psychic, Torrent"
+          }
+        }
+      ]
+    }
+  },
+  "Lictor": {
+    "cost": {
+      "pts": "60"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Lictor",
+          "characteristics": {
+            "M": "8\"",
+            "T": "6",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Pheromone Trail",
+          "characteristics": {
+            "Description": "Once per battle round, you can target one model with this ability with the Rapid Ingress Stratagem for 0CP."
+          }
+        }
+      ]
+    }
+  },
+  "Deathleaper": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Deathleaper",
+          "characteristics": {
+            "M": "8\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "7",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Fear of the Unseen (Aura)",
+          "characteristics": {
+            "Description": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1. In addition, in the Battle-shock step of your opponent’s Command phase, if such an enemy unit is below its Starting Strength, it must take a Battle-shock test."
+          }
+        },
+        {
+          "name": "Hunter Organism",
+          "characteristics": {
+            "Description": "This model cannot be your Warlord"
+          }
+        }
+      ]
+    }
+  },
+  "Maleceptor": {
+    "cost": {
+      "pts": "170"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Maleceptor",
+          "characteristics": {
+            "M": "8\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Encephalic Diffusion (Aura, Psychic)",
+          "characteristics": {
+            "Description": "While an enemy unit is within 6\" of this model, each time a model in that unit makes an attack, subtract 1 from the Hit roll, and, if that enemy unit is Below Half-strength, subtract 1 from the Wound roll as well."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Massive scything talons - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Massive scything talons - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Psychic overload",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Pyrovore": {
+    "cost": {
+      "pts": "0",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Pyrovores",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "5",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Flamespurt",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+1",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Haruspex": {
+    "cost": {
+      "pts": "125"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Haruspex",
+          "characteristics": {
+            "M": "8\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "14",
+            "LD": "8+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Grisly Spectacle",
+          "characteristics": {
+            "Description": "Each time this model is selected to fight, after resolving its attacks, if one or more enemy units were destroyed by those attacks, each enemy unit within 6\" of this model must take a Battle-shock test."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Grasping tongue",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "Precision"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Ravenous maw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "14",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Shovelling claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Venomthrope": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Toxic lashes",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-Infantry 2+"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Venomthropes",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "3",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Von Ryan's Leaper": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Leaper's talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Von Ryan's Leaper",
+          "characteristics": {
+            "M": "10\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "3",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Neurogaunt Nodebeast": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neurogaunt Nodebeast",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Neurogaunt": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neurogaunt",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "6+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Neurothrope": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neurothrope",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Zoanthrope": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Zoanthrope",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "5+",
+            "W": "3",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Ripper Swarm": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ripper Swarm",
+          "characteristics": {
+            "M": "6\"",
+            "T": "2",
+            "SV": "6+",
+            "W": "4",
+            "LD": "8+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chitinous claws and teeth",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "5+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Spinemaw",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "4",
+            "BS": "5+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Parasite of Mortrex": {
+    "cost": {
+      "pts": "80"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Parasitic Infection",
+          "characteristics": {
+            "Description": "Each time an INFANTRY model is destroyed by an attack made with this model’s barbed ovipositor, after this model has finished making its attacks, you can add one new RIPPER SWARMS unit to your army consisting of D3 models and set it up within 3\" of this model. If you do, that RIPPER SWARMS unit can be set up within Engagement Range of the destroyed model’s unit (but not within Engagement Range of any other enemy units)."
+          }
+        },
+        {
+          "name": "It Itches!",
+          "characteristics": {
+            "Description": "At the start of the Fight phase, select one enemy unit within Engagement Range of this model. That enemy unit must take a Battle-shock test."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Parasite of Mortrex",
+          "characteristics": {
+            "M": "12\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "5",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Barbed ovipositor",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "2+",
+            "S": "3",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-infantry 3+, Extra Attacks"
+          }
+        },
+        {
+          "name": "Clawed limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Mawloc": {
+    "cost": {
+      "pts": "145"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Terror from the Deep",
+          "characteristics": {
+            "Description": "Each time this unit is set up on the battlefield using the Deep Strike ability, roll one D6 for each enemy unit within 12\" of this model: on a 2-4, that unit suffers D3 mortal wounds; on a 5+, that unit suffers 3 mortal wounds and must take a Battle-shock test."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Mawloc",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "8+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Distendible jaw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "3",
+            "Keywords": "Anti-infantry 4+, Devastating Wounds, Extra Attacks"
+          }
+        },
+        {
+          "name": "Mawloc scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "16",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Trygon": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Subterranean Tunnels",
+          "characteristics": {
+            "Description": "In your Movement phase, when this model is set up on the battlefield using the Deep Strike ability, it can use a subterranean tunnel. If it does, this model can be set up anywhere on the battlefield that is more than 6\" horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Trygon",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "8+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bio-electric pulse",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Trygon scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Mucolid Spore": {
+    "cost": {
+      "pts": "30"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Mucolid Spore",
+          "characteristics": {
+            "M": "4\"",
+            "T": "4",
+            "SV": "7+",
+            "W": "3",
+            "LD": "8+",
+            "OC": "0"
+          }
+        }
+      ]
+    }
+  },
+  "Spore Mine": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Spore Mine",
+          "characteristics": {
+            "M": "4\"",
+            "T": "1",
+            "SV": "7+",
+            "W": "1",
+            "LD": "8+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Floating Death",
+          "characteristics": {
+            "Description": "Each time this unit or an enemy unit ends a move, for each model in this unit that is within 3\" of one or more enemy units, select one of those enemy units. That model in this unit is destroyed, then roll one D6: on a 2-5, that enemy unit suffers 1 mortal wound; on a 6, that enemy unit suffers D3 mortal wounds."
+          }
+        }
+      ]
+    }
+  },
+  "Exocrine": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Symbiotic Targeting",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly TYRANIDS model makes an attack that targets that unit, re-roll a Hit roll of 1."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Exocrine",
+          "characteristics": {
+            "M": "8\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "14",
+            "LD": "8+",
+            "OC": "4"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bio-plasmic cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Heavy"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Powerful limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "7",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Biovore": {
+    "cost": {
+      "pts": "50"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Biovore",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "5",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Spore mine launcher",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Devastating Wounds, Heavy, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Carnifex": {
+    "cost": {
+      "pts": "115"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Carnifex",
+          "characteristics": {
+            "M": "8\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "8",
+            "LD": "8+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chitinous claws and teeth",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Carnifex scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Carnifex extra scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy venom cannon",
+          "characteristics": {
+            "Range": "36",
+            "A": "D3",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Stranglethorn cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+1",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Bio-plasma",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Assault, Blast"
+          }
+        },
+        {
+          "name": "Spine banks",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ]
+    }
+  },
+  "Screamer-killer": {
+    "cost": {
+      "pts": "135",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Screamer-killer",
+          "characteristics": {
+            "M": "8\"",
+            "T": "9",
+            "SV": "2+",
+            "W": "10",
+            "LD": "8+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Death Scream",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one unit hit by one or more of those attacks. That unit must take a Battle-shock test, subtracting 1 from that test."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bio-plasmic scream",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+3",
+            "BS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Assault, Blast"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Screamer-killer talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hive Guard w/ shockcannon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hive Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "4",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Shockcannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Anti-Vehicle 2+"
+          }
+        }
+      ]
+    }
+  },
+  "Hive Guard w/ impaler cannon": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hive Guard",
+          "characteristics": {
+            "M": "6\"",
+            "T": "7",
+            "SV": "3+",
+            "W": "4",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Impaler cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Heavy, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Tyrannofex": {
+    "cost": {
+      "pts": "200",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tyrannofex",
+          "characteristics": {
+            "M": "9\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "16",
+            "LD": "8+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Resilient Organism",
+          "characteristics": {
+            "Description": "Once per battle, when an attack is allocated to this model, you can change the Damage characteristic of that attack to 0."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Powerful limbs",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Fleshborer hive",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "20",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Heavy, Sustained Hits 1, Twin-linked"
+          }
+        },
+        {
+          "name": "Acid spray",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D6+6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Torrent"
+          }
+        },
+        {
+          "name": "Rupture cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "18",
+            "AP": "-4",
+            "D": "D6+6",
+            "Keywords": "Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Tyrannocyte": {
+    "cost": {
+      "pts": "105"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Tyrannocyte",
+          "characteristics": {
+            "M": "8\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "8+",
+            "OC": "2"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Aerial Seeding",
+          "characteristics": {
+            "Description": "This model must start the battle in Reserves, but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. Any units embarked within this model must immediately disembark after it has been set up on the battlefield, and they must be set up more than 9\" away from all enemy models. After this model has been set up on the battlefield, no units can embark within it."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Tyrannocyte",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 20 TYRANIDS INFANTRY models, or 1 TYRANIDS MONSTER model with a Wounds characteristic of 12 or less. Each INFANTRY model with a Wounds characteristic of more than 1 takes up the space of 3 models."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Flensing Whips",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Tyrannocyte Bio-weapons",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "5",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hive Crone": {
+    "cost": {
+      "pts": "200"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Hive Crone",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "12",
+            "LD": "8+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Airborne Predator",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Drool cannon",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Torrent"
+          }
+        },
+        {
+          "name": "Tentaclids",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "7",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Anti-vehicle 4+, Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Thorax spur",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Anti-fly 2+, Extra Attacks"
+          }
+        }
+      ]
+    }
+  },
+  "Harpy": {
+    "cost": {
+      "pts": "215"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Spore Mine Cysts",
+          "characteristics": {
+            "Description": "Each time this model ends a Normal move, you can do one of the following:\n- Select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound.\n- Add a new SPORE MINES unit containing D3 models to your army and set it up anywhere on the battlefield that is within 6\" of this model and more than 9\" horizontally away from all enemy units. You cannot select this option for more than one model per turn."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Harpy",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "12",
+            "LD": "8+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin stranglethorn cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+1",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Twin-linked"
+          }
+        },
+        {
+          "name": "Twin heavy venom cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Sporocyst": {
+    "cost": {
+      "pts": "145"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sporocyst",
+          "characteristics": {
+            "M": "-",
+            "T": "10",
+            "SV": "3+",
+            "W": "10",
+            "LD": "8+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Seed Mucolids",
+          "characteristics": {
+            "Description": "Once per turn, in your shooting phase, when selected to shoot, one unit with this ability can use it instead of making any attacks with it's ranged weapons. If it does, you can add one new MUCOLID SPORES containing 1 model to your army and set it up anywhere on the battlefield that is wholly within 18\" of this model and more than 9\" horizontally away from all enemy units."
+          }
+        },
+        {
+          "name": "Hive Defences",
+          "characteristics": {
+            "Description": "You can target this model with the Fire Overwatch stratagem for 0CP, and can do so even if you have already targeted a different unit with that stratagem this turn. This model can only be targeted with that Stratagem once per turn"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Flensing whips",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Sporocyst bio-weapon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "10",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Hive Defences"
+          }
+        }
+      ]
+    }
+  },
+  "Psychophage": {
+    "cost": {
+      "pts": "110",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Psychophage",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "8+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Bio-stimulus",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly **^^Tyranids^^** unit makes a melee attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn."
+          }
+        },
+        {
+          "name": "Feeding Frenzy",
+          "characteristics": {
+            "Description": "Each time this model makes a melee attack that targets a unit that is below its Starting Strength, add 1 to the Hit roll. If that target is also Below Half strength, add 1 to the Wound roll as well."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Psychoclastic torrent",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Talons and betentacled maw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Psyker 4+, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Barbgaunt": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Barbgaunt",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Barblauncher",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Chitinous claws and teeth",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "1",
+            "WS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Barbed Hierodule [Legends]": {
+    "cost": {
+      "pts": "340"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Barbed Hierodule",
+          "characteristics": {
+            "M": "8\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "18",
+            "LD": "8+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Overgrown Barbs",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit (excluding Titanic units) that was hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bio-cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Hierodule scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-2",
+            "D": "D3+3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Scythed Hierodule [Legends]": {
+    "cost": {
+      "pts": "330"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Scythed Hierodule",
+          "characteristics": {
+            "M": "12\"",
+            "T": "12",
+            "SV": "2+",
+            "W": "18",
+            "LD": "8+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Irresistible Force",
+          "characteristics": {
+            "Description": "This model is eligible to declare a charge in a turn in which it Fell Back."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bio-acid spray",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3D6",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Hierodule scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-2",
+            "D": "D3+3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Harridan": {
+    "cost": {
+      "pts": "610"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Harridan",
+          "characteristics": {
+            "M": "20+\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "30",
+            "LD": "8+",
+            "OC": "0"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Damaged: 1-10 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-10 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Frenzied Metabolism",
+          "characteristics": {
+            "Description": "Each time this model is selected to shoot, you can use this ability. If you do, until the end of the phase, each time this model makes an attack, add 1 to the Wound roll. After resolving those attacks, roll one D6: on a 2+, this model suffers D3 mortal wounds."
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Harridan",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 20 GARGOYLES models and 1 WINGED TYRANID PRIME model."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Dire bio-cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+6",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Gargantuan scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Hierophant": {
+    "cost": {
+      "pts": "810"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Damaged: 1-10 wounds remaining",
+          "characteristics": {
+            "Description": "While this model has 1-10 wounds remaining, subtract 6 from this model’s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Apex-beast",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a unit that is Battle-shocked, add 1 to the Hit roll."
+          }
+        },
+        {
+          "name": "Stalking Forward",
+          "characteristics": {
+            "Description": "Each time this model makes a Normal, Advance or Fall Back move, it can move over models (excluding TITANIC models) and terrain features that are 4\" or less in height as if they were not there."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Hierophant",
+          "characteristics": {
+            "M": "12\"",
+            "T": "14",
+            "SV": "2+",
+            "W": "30",
+            "LD": "8+",
+            "OC": "12"
+          }
+        }
+      ],
+      "Transport": [
+        {
+          "name": "Hierophant",
+          "characteristics": {
+            "Capacity": "This model has a transport capacity of 20 TYRANIDS INFANTRY models. Each model with a Wounds characteristic of more than 1 takes up the space of 3 models. This model cannot transport models that can FLY."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bio-plasma torrent",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "3D6",
+            "BS": "N/A",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Assault, Torrent"
+          }
+        },
+        {
+          "name": "Dire bio-cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+6",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Lashwhip pods",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Extra Attacks"
+          }
+        },
+        {
+          "name": "Titanic scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "20",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Genestealer": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Genestealers",
+          "characteristics": {
+            "M": "8\"",
+            "T": "4",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Genestealers claws and talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Ravener": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravener",
+          "characteristics": {
+            "M": "10\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "3",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ]
+    }
+  },
+  "Dimachaeron [Legends]": {
+    "cost": {
+      "pts": "200",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Dimachaeron",
+          "characteristics": {
+            "M": "12\"",
+            "T": "10",
+            "SV": "3+",
+            "W": "16",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Digestion Spine",
+          "characteristics": {
+            "Description": "Each time this model fights, after it has resolved its attacks, if one or more enemy models (excluding Vehicle models) were destroyed as the result of those attacks, this model regains up to D3 mortal wounds."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Massive scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "3",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Sky-slasher swarm": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Claws and teeth",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "5+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Sky-slasher swarm w/ spinemaws": {
+    "cost": {},
+    "profiles": {
+      "Melee Weapons": [
+        {
+          "name": "Claws and teeth",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "5+",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Spinemaws",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "4",
+            "BS": "5+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Malanthrope [Legends]": {
+    "cost": {
+      "pts": "75"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Malanthrope",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "10",
+            "LD": "7+",
+            "OC": "3"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Enhanced Toxic Miasma",
+          "characteristics": {
+            "Description": "While this model is leading a unit, the range of that unit's Foul Spores Aura ability is increased to 9\"."
+          }
+        },
+        {
+          "name": "Prey Adaptation",
+          "characteristics": {
+            "Description": "Each time this model's unit is selected to fight, select one of the following abilities to apply to all melee weapons equipped by models in that unit until the end of the phase:\n- **[SUSTAINED HITS 1]**\n- **[LANCE]**\n- **[LETHAL HITS]**"
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following unit: \n- **^^Venomthropes^^**"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Grasping tail",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "4",
+            "S": "5",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Neurolictor": {
+    "cost": {
+      "pts": "80",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Neurolictor",
+          "characteristics": {
+            "M": "8\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "7",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Feeder Tendrils",
+          "characteristics": {
+            "Description": "Each time this model destroys an enemy CHARACTER model, you gain 1CP"
+          }
+        },
+        {
+          "name": "Neural Disruption",
+          "characteristics": {
+            "Description": "In your Command phase, select one enemy unit within 12\" of this model. That unit must take a Battle-shock test"
+          }
+        },
+        {
+          "name": "Psychological Saboteur (Aura)",
+          "characteristics": {
+            "Description": "While an enemy unit is with 12\" of this model, if that unit is Battle-shocked:\n\n- Each time a model in that unit makes an attack, subtract 1 from the Hit roll\n- Each time a friendly TYRANIDS model makes an attack that targets that unit, add 1 to the Wound roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Piercing claws and talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Precision"
+          }
+        }
+      ]
+    }
+  },
+  "Norn Assimilator": {
+    "cost": {
+      "pts": "275",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Abilities": [
+        {
+          "name": "Singular Purpose",
+          "characteristics": {
+            "Description": "At the start of the First battle round, select one of the following: \n\n- Select one enemy unit. Until the end of the battle, each time this model makes an attack that targets that unit you can re-roll the Hit roll and you can re-roll the Wound roll\n\n\n-Select one objective marker. Until the end of the battle, while this model is within range of that objective marker, it has the Feel No Pain 5+ ability and an Objective Control characteristic of 15."
+          }
+        },
+        {
+          "name": "Harpoon Barbs",
+          "characteristics": {
+            "Description": "Once per turn, when an enemy unit within Engagement Range of this unit is chosen to Fall Back, roll one D6; on a 2+, that unit suffers D6 mortal wounds."
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Norn Assimilator",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "16",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Monstrous scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Toxinjecter Harpoon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Extra Attacks"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Toxinjecter Harpoon",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "Harpooned"
+          }
+        }
+      ]
+    }
+  },
+  "Norn Emissary": {
+    "cost": {
+      "pts": "260",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Norn Emissary",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "2+",
+            "W": "16",
+            "LD": "7+",
+            "OC": "5"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Singular Purpose",
+          "characteristics": {
+            "Description": "At the start of the first battle round, select one of the following: \n\n- Select one enemy unit. Until the end of the battle, each time this model makes an attack that targets that unit you can re-roll the Hit roll and you can re-roll the Wound roll\n\n-Select one objective marker. Until the end of the battle, while this model is within range of that objective marker, it has the Feel No Pain 5+ ability and an Objective Control characteristic of 15."
+          }
+        },
+        {
+          "name": "Unnatural Resistance",
+          "characteristics": {
+            "Description": "This model has the Feel No Pain 4+ ability against Mortal Wounds."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Monstrous rending claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "7",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Extra Attacks"
+          }
+        },
+        {
+          "name": "Monstrous scything talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Psychic tendril - neuroparasite",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Precision, Psychic"
+          }
+        },
+        {
+          "name": "➤ Psychic tendril - neurolance",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "2+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6",
+            "Keywords": "Melta 2, Psychic"
+          }
+        },
+        {
+          "name": "➤ Psychic tendril - neuroblast",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "2+",
+            "S": "6",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Blast, Psychic"
+          }
+        }
+      ]
+    }
+  },
+  "Ravener Prime": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravener Prime",
+          "characteristics": {
+            "M": "10\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "6",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Prime claws and talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Anti-Monster 5+, Anti-Vehicle 5+, Twin-linked"
+          }
+        }
+      ]
+    }
+  },
+  "Ravener w/ Venom bolt": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Ravener",
+          "characteristics": {
+            "M": "10\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "3",
+            "LD": "8+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Venom bolt",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Assault, Ignores Cover, Torrent"
+          }
+        }
+      ]
+    }
+  }
+}

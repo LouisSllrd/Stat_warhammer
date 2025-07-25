@@ -1,0 +1,1564 @@
+{
+  "Canis Rex": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Canis Rex",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "5+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Chainbreaker",
+          "characteristics": {
+            "Description": "Each time this model makes an attack, an unmodified successful Hit roll of 5+ scores a Critical Hit."
+          }
+        },
+        {
+          "name": "Legendary Freeblade",
+          "characteristics": {
+            "Description": "Once per turn, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Chainbreaker las-impulsor - high intensity",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "2+",
+            "S": "14",
+            "AP": "-3",
+            "D": "4",
+            "Keywords": "Blast, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Chainbreaker las-impulsor - low intensity",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "2+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Chainbreaker multi-laser",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "2+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Freedom's Hand - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "20",
+            "AP": "-3",
+            "D": "9",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Freedom's Hand - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ]
+    }
+  },
+  "Sir Hekhtur": {
+    "cost": {},
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Sir Hekhtur",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "4+",
+            "W": "3",
+            "LD": "5+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Using Sir Hekhtur",
+          "characteristics": {
+            "Description": "When your Canis Rex model is destroyed, Sir Hekhtur is treated as a model disembarking from a destroyed TRANSPORT – set him up within 3\" of your Canis Rex model before it is removed. Sir Hekhtur then uses the profile, wargear, abilities and keywords shown on this side of the card, but cannot be selected as the target of any of your Stratagems other than Core Stratagems. Your Canis Rex unit is not considered to be destroyed until Sir Hekhtur is also destroyed."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "2+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Hekhtur's pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Pistol"
+          }
+        }
+      ]
+    }
+  },
+  "Armiger Warglaive": {
+    "cost": {
+      "pts": "140",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Armiger Warglaive",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Impetuous Glory",
+          "characteristics": {
+            "Description": "Each time this model makes a Charge move, until the end of the turn, melee weapons equipped by this model have the [SUSTAINED HITS 1] ability."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Reaper chain-cleaver - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "10",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Reaper chain-cleaver - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "8",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Thermal spear",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-4",
+            "D": "D6",
+            "Keywords": "Melta 4"
+          }
+        }
+      ]
+    }
+  },
+  "Armiger Helverin": {
+    "cost": {
+      "pts": "130",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Armiger Helverin",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Skyfire Protocols",
+          "characteristics": {
+            "Description": "While this model is either wholly within your deployment zone or within range of an objective marker you control, its Armiger autocannons have the [ANTI-FLY 2+] ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Armiger autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Paladin": {
+    "cost": {
+      "pts": "345",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Paladin",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Seasoned Noble",
+          "characteristics": {
+            "Description": "Once per phase, you can re-roll one Hit roll, one Wound roll or one saving throw made for this model."
+          }
+        },
+        {
+          "name": "Paladin’s Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, its weapons have the [LETHAL HITS] and [LANCE] abilities."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Questoris heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Rapid Fire 3"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Errant": {
+    "cost": {
+      "pts": "345",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Errant",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Aggressive Assault",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack against the closest eligible target, add 1 to the Hit roll."
+          }
+        },
+        {
+          "name": "Errant's Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, you can re-roll Advance rolls made for that model and its ranged weapons have the [ASSAULT] ability."
+          }
+        }
+      ]
+    }
+  },
+  "Knight Gallant": {
+    "cost": {
+      "pts": "345",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Gallant",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Martial Pride",
+          "characteristics": {
+            "Description": "Each time a melee attack targets this model, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Gallant's Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, you can re-roll Charge rolls made for that model and each time that model makes a melee attack, you can re-roll the Hit roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Reaper chainsword - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "18",
+            "WS": "2+",
+            "S": "9",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Reaper chainsword - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "14",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Thunderstrike gauntlet - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "20",
+            "AP": "-3",
+            "D": "8",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Thunderstrike gauntlet - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Warden": {
+    "cost": {
+      "pts": "365",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Warden",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Thin Their Ranks",
+          "characteristics": {
+            "Description": "Each time this model makes a ranged attack that targets an enemy unit (excluding MONSTERS and VEHICLES), that attack has the [DEVASTATING WOUNDS] ability."
+          }
+        },
+        {
+          "name": "Warden's Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, each time an attack is allocated to that model, subtract 1 from the Damage characteristic of that attack."
+          }
+        }
+      ]
+    }
+  },
+  "Knight Crusader": {
+    "cost": {
+      "pts": "365",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Crusader",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Punishing Salvoes",
+          "characteristics": {
+            "Description": "In your Movement phase, if this model Remains Stationary, until the start of your next Movement phase, this model’s ranged weapons have the [SUSTAINED HITS 1] ability."
+          }
+        },
+        {
+          "name": "Crusader's Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, each time that model makes a ranged attack, add 1 to the Hit roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Titanic feet",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Preceptor": {
+    "cost": {
+      "pts": "335",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Preceptor",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Exemplar of the Code",
+          "characteristics": {
+            "Description": "At the start of the battle, select one unit from your opponent’s army. Each time this model makes an attack that targets that unit, you can re-roll the Hit roll."
+          }
+        },
+        {
+          "name": "Mentor (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, improve that model’s Leadership characteristic by 1 and improve that model’s Objective Control characteristic by 2."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Las-impulsor - high intensity",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "4",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Las-impulsor - low intensity",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "Preceptor multi-laser",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Castellan": {
+    "cost": {
+      "pts": "395",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Castellan",
+          "characteristics": {
+            "M": "8\"",
+            "T": "12",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Ion Aegis (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ARMIGER model is within 6\" of this model, that ARMIGER models has the Benefits of Cover."
+          }
+        },
+        {
+          "name": "Titan Hunter",
+          "characteristics": {
+            "Description": "Each time a ranged attack made by this model is allocated to a MONSTER or VEHICLE model, re-roll a Damage roll of 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Plasma decimator - standard",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Plasma decimator - supercharge",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "Blast, Hazardous"
+          }
+        },
+        {
+          "name": "Volcano lance",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "18",
+            "AP": "-5",
+            "D": "D6+8",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Knight Valiant": {
+    "cost": {
+      "pts": "395",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Knight Valiant",
+          "characteristics": {
+            "M": "8\"",
+            "T": "12",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Ion Aegis (Aura)",
+          "characteristics": {
+            "Description": "While a friendly ARMIGER model is within 6\" of this model, that ARMIGER models has the Benefits of Cover."
+          }
+        },
+        {
+          "name": "Overwhelming Firestorm",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by this model this phase. That unit must take a Battle-shock test."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Conflagration cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3D6",
+            "BS": "N/A",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Thundercoil harpoon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "24",
+            "AP": "-6",
+            "D": "12",
+            "Keywords": "Anti-Monster 4+, Anti-Vehicle 4+, Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Acastus Knight Asterius": {
+    "cost": {
+      "pts": "765"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Acastus Knight Asterius",
+          "characteristics": {
+            "M": "8\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "30",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Sunderer of Fortresses",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a VEHICLE, improve the Strength and Damage characteristics of that attack by 1. If that attack targets a FORTIFICATION, improve the Strength and Damage characteristics of that attack by 2 instead."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin conversion beam cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-2",
+            "D": "6",
+            "Keywords": "Conversion, Twin-linked, Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Asterius volkite culverin",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Karacnos mortar battery",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+3",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Infantry 2+, Blast, Ignores Cover, Indirect Fire"
+          }
+        }
+      ]
+    }
+  },
+  "Acastus Knight Porphyrion": {
+    "cost": {
+      "pts": "700",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Acastus Knight Porphyrion",
+          "characteristics": {
+            "M": "8\"",
+            "T": "13",
+            "SV": "2+",
+            "W": "30",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Bastion of Firepower",
+          "characteristics": {
+            "Description": "Each time this model Remains Stationary, until the end of the turn, ranged weapons equipped by this model have the [LETHAL HITS] ability."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin magna lascannon",
+          "characteristics": {
+            "Range": "72\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "18",
+            "AP": "-4",
+            "D": "D6+6",
+            "Keywords": "Blast, Twin-linked"
+          }
+        },
+        {
+          "name": "Acastus autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Acastus autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Lascannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Acastus ironstorm missile pod",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "D6+6",
+            "BS": "3+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast, Heavy, Indirect Fire"
+          }
+        },
+        {
+          "name": "Helios defence missiles",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "D6",
+            "Keywords": "Anti-Fly 2+, Heavy"
+          }
+        }
+      ]
+    }
+  },
+  "Cerastus Knight Lancer": {
+    "cost": {
+      "pts": "365",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cerastus Knight Lancer",
+          "characteristics": {
+            "M": "14\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Shock Charge",
+          "characteristics": {
+            "Description": "You can target this model with the Tank Shock Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+          }
+        },
+        {
+          "name": "Invulnerable Save (4+)",
+          "characteristics": {
+            "Description": "This model has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Lancer’s Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, it is eligible to declare a charge in a turn in which it Advanced."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Cerastus shock lance - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "20",
+            "AP": "-3",
+            "D": "8",
+            "Keywords": "Lance"
+          }
+        },
+        {
+          "name": "➤ Cerastus shock lance - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "2+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Cerastus shock lance",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "6",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Assault, Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Cerastus Knight Castigator": {
+    "cost": {
+      "pts": "365",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cerastus Knight Castigator",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Storm of Bolts",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one unit (excluding MONSTERS and VEHICLES) hit by one or more of those attacks. Until the start of your next turn, while this model is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll."
+          }
+        },
+        {
+          "name": "Castigator’s Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, its ranged weapons have the [SUSTAINED HITS 1] ability and the Armour Penetration characteristic of its ranged weapons is improved by 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Castigator bolt cannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "18",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Tempest warblade - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Tempest warblade - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Cerastus Knight Acheron": {
+    "cost": {
+      "pts": "365",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cerastus Knight Acheron",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Searing Flames",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks made with an Acheron flame cannon. Until the end of the phase, that enemy unit cannot have the Benefit of Cover."
+          }
+        },
+        {
+          "name": "Cerastus Knight Acheron",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save against ranged attacks only."
+          }
+        },
+        {
+          "name": "Acheron’s Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, at the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test, subtracting 1 from the result when they do."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Twin heavy bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1, Twin-linked"
+          }
+        },
+        {
+          "name": "Acheron flame cannon",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2D6",
+            "BS": "N/A",
+            "S": "8",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Torrent, Ignores Cover"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Reaper chainfist - strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-4",
+            "D": "6",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "➤ Reaper chainfist - sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "9",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  },
+  "Cerastus Knight Atrapos": {
+    "cost": {
+      "pts": "365",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Cerastus Knight Atrapos",
+          "characteristics": {
+            "M": "12\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "28",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Macro-extinction Protocols",
+          "characteristics": {
+            "Description": "Each time this model makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll. If that target is TITANIC or TOWERING, add 1 to the Wound roll as well."
+          }
+        },
+        {
+          "name": "Invulnerable Save (5+)",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Atrapos’ Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, each time that model makes an attack that targets a TITANIC or TOWERING model, you can re-roll the Hit roll and you can re-roll the Wound roll."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "➤ Atrapos lascutter - high intensity (melee)",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "4",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Atrapos lascutter - low intensity (melee)",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "12",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "➤ Atrapos lascutter - high intensity (ranged)",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "14",
+            "AP": "-3",
+            "D": "4",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Atrapos lascutter - low intensity (ranged)",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "2D6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "➤ Graviton singularity cannon - singularity",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Blast, Devastating Wounds, Hazardous"
+          }
+        },
+        {
+          "name": "➤ Graviton singularity cannon - contained",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "3+",
+            "S": "16",
+            "AP": "-4",
+            "D": "D6+1",
+            "Keywords": "Blast"
+          }
+        }
+      ]
+    }
+  },
+  "Questoris Knight Magaera": {
+    "cost": {
+      "pts": "355",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Questoris Knight Magaera",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "+6",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Repair Auto-simulacra",
+          "characteristics": {
+            "Description": "At the end of your Command phase, this model regains up to D3 lost wounds."
+          }
+        },
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Magaera’s Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, each time that model makes a ranged attack that targets the closest eligible target, improve the Strength and Armour Penetration characteristics of that attack by 1."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Phased plasma-fusil",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "8",
+            "AP": "-3",
+            "D": "2",
+            "Keywords": "Rapid Fire 2"
+          }
+        },
+        {
+          "name": "Lightning cannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "12",
+            "BS": "3+",
+            "S": "9",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Sustained Hits 2"
+          }
+        }
+      ]
+    }
+  },
+  "Questoris Knight Styrix": {
+    "cost": {
+      "pts": "355",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Questoris Knight Styrix",
+          "characteristics": {
+            "M": "10\"",
+            "T": "11",
+            "SV": "3+",
+            "W": "26",
+            "LD": "6+",
+            "OC": "10"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Grav-pinned",
+          "characteristics": {
+            "Description": "In your Shooting phase, after this model has shot, if an enemy INFANTRY unit was hit by one or more of those attacks made with a graviton crusher, until the end of your opponent’s next turn, that enemy unit is grav-pinned. While a unit is grav-pinned, subtract 2 from that unit’s Move characteristic and subtract 2 from Charge rolls made for that unit."
+          }
+        },
+        {
+          "name": "Styrix’s Duty (Bondsman)",
+          "characteristics": {
+            "Description": "While a model is affected by this ability, each time that model is selected to shoot or fight, after it has resolved all of its attacks, select one enemy unit hit by one or more of those attacks; that unit must take a Battle-shock test, subtracting one from the test when doing so."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Graviton crusher",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "6",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 2+, Blast"
+          }
+        },
+        {
+          "name": "Volkite chierovile",
+          "characteristics": {
+            "Range": "30\"",
+            "A": "12",
+            "BS": "3+",
+            "S": "12",
+            "AP": "0",
+            "D": "3",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ]
+    }
+  },
+  "Armiger Moirax": {
+    "cost": {
+      "pts": "150",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
+    },
+    "profiles": {
+      "Unit": [
+        {
+          "name": "Armiger Moirax",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "14",
+            "LD": "7+",
+            "OC": "6"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Protection Protocols",
+          "characteristics": {
+            "Description": "You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Volkite veuglaire",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Graviton pulsar",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D6",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 2+, Blast"
+          }
+        },
+        {
+          "name": "Lightning lock",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "6",
+            "BS": "3+",
+            "S": "8",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 2"
+          }
+        },
+        {
+          "name": "Conversion beam cannon",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Conversion, Sustained Hits D3"
+          }
+        },
+        {
+          "name": "Rad cleanser",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "2",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Anti-Infantry 2+, Ignores Cover, Torrent"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Siege claw",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "D6+2",
+            "Keywords": "-"
+          }
+        }
+      ]
+    }
+  }
+}
