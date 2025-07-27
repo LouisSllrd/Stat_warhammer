@@ -38,7 +38,7 @@ const Accueil = () => {
 
       <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Connexion</h2>
       <p>
-        La connexion est requise pour sauvegarder vos listes personnelles et accéder au mode "Simulations personnalisées". Vous pouvez vous connecter avec un compte Google.
+La connexion est nécessaire pour créer et gérer vos profils personnels. Elle permet de générer un identifiant et un mot de passe associés à une base de données que vous créez vous-même. Votre adresse e-mail n'est communiquée à personne. Le compte sert uniquement à créer un identifiant et un mot de passe pour gérer l'accès aux données, assurant ainsi que chacun ait accès à ses propres fiches d'unités.
       </p>
 
       <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Remarques</h2>

@@ -372,7 +372,15 @@ function MultiSimulateur() {
         <p><strong>Unité :</strong> {results.unit_descr}</p>
         <p><strong>Moyenne :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit}, soit {results.relative_damages.toFixed(0)}% de la force initiale</p>
         <p><strong>Écart-type :</strong> {results.std.toFixed(1)}</p>
-
+        <p> <strong>Probabilité de tuer l'unité ennemie :</strong> <strong style={{
+          color:
+          results.proba_unit_killed < 30 ? "red" :
+          results.proba_unit_killed < 60 ? "orange" :
+          results.proba_unit_killed < 80 ? "gold" :
+            "green"
+        }}>
+          {results.proba_unit_killed.toFixed(0)}%
+        </strong>  </p>
         <div style={{ display: "flex", gap: 24, marginTop: 24 }}>
           {/* Graphiques */}
           <div style={{ display: "flex", gap: 24, marginTop: 24 }}>

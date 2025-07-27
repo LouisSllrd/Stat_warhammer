@@ -17,7 +17,8 @@ import SimulationEnJeuMobile from "./components_mobile/JeuMobile";
 import UnitesAdversesPage from "./components/ListeAdverse";
 import UnitesAdversesPageMobile from "./components_mobile/ListeAdverseMobile";
 
-import SimulationDatasheets from "./components/SimulationDatasheets"
+import SimulationDatasheets from "./components/SimulationDatasheets";
+import SimulationDatasheetsMobile from "./components_mobile/SimulationDatasheetsMobile";
 
 import Accueil from "./components/Accueil";
 import AccueilMobile from "./components_mobile/AccueilMobile";
@@ -122,7 +123,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
                 <button onClick={() => setPage("simulateur")}>Unité Mono Profil</button>
                 <button onClick={() => setPage("multi-profiles")}>Unité Multi Profils</button>
                 <button onClick={() => setPage("compare")}>Comparateur</button>
-                {/*<button onClick={() => setPage("simulateur-datasheets")}>Simulateur datasheets</button>*/}
+                <button onClick={() => setPage("simulateur-datasheets")}>Profils Pré-définis</button>
               </div>
 
               {user && (
@@ -210,11 +211,13 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
                   Simulations génériques :
                 </strong>
 
-                {["simulateur", "multi-profiles", "compare"].map((page, idx) => {
+                {["simulateur", "multi-profiles", "compare", "simulateur-datasheets"].map((page, idx) => {
                   const labels = {
                     simulateur: "Unité Mono Profil",
                     "multi-profiles": "Unité Multi Profils",
                     compare: "Comparateur",
+                    "simulateur-datasheets": "Profils Pré-définis",
+                    
                   };
                   return (
                     <button
@@ -447,7 +450,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
           {page === "simulateur" && (isMobile ? <SimulateurMobile /> : <Simulateur />)}
           {page === "multi-profiles" && (isMobile ? <MultiSimulateurMobile /> : <MultiSimulateur />)}
           {page === "compare" && (isMobile ? <CompareMobile /> : <Compare />)}
-          {/*{page === "simulateur-datasheets" && (isMobile ? <SimulationDatasheets /> : <SimulationDatasheets />)}*/}
+          {page === "simulateur-datasheets" && (isMobile ? <SimulationDatasheetsMobile /> : <SimulationDatasheets />)}
           {page === "mes-listes" && user && (isMobile ? <MesListesMobile user={user} /> : <MesListes user={user} />)}
           {page === "unites-adverses" && user && (isMobile ? <UnitesAdversesPageMobile user={user} /> : <UnitesAdversesPage user={user} />)}
           {page === "jeu" && user && (isMobile ? <SimulationEnJeuMobile user={user} /> : <SimulationEnJeu user={user} />)}
