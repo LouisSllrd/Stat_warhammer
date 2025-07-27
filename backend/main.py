@@ -312,7 +312,7 @@ def damage_simulation(params):
         unit = "figurines"
         relative_damage = mean/params["Nb_of_models"]*100
         initial_force = params["Nb_of_models"]
-        if relative_damage >=50:
+        if relative_damage >=90:
             proba_default_killed = 100
         else:
             proba_default_killed = 0
@@ -405,7 +405,7 @@ def multi_profile_sim(params_attackers, params_defenser):
         unit = "figurines"
         relative_damage = mean/params_defenser["Nb_of_models"]*100
         initial_force = params_defenser["Nb_of_models"]
-        if relative_damage >=70:
+        if relative_damage >=90:
             proba_default_killed = 100
         else:
             proba_default_killed = 0
