@@ -1,7 +1,7 @@
 import React from 'react';
 
 const fieldLabels = {
-  Nb_weapons: "Nombre d'attaques",
+  Nb_weapons: "Nombre d'armes",
   Attacks: "Attaques",
   CT: "CC/CT",
   Strength: "Force",

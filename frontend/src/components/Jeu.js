@@ -28,6 +28,7 @@ function SimulationEnJeu() {
   const [loading, setLoading] = useState(null);
 
 
+
   const [visibleProfiles, setVisibleProfiles] = useState({});
 const [selectedProfiles, setSelectedProfiles] = useState({});
 const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
