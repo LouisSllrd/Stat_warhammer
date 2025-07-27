@@ -21,6 +21,13 @@ const AccueilMobile = () => {
         <li>
           <strong>Comparateur :</strong> Comparez deux profils d'attaques sur une sélection variée de profils cibles afin de choisir le profil d'attaque qui correspond le mieux au rôle que vous souhaitez donner à votre unité (anti infanterie, anti char, etc.).
         </li>
+        <li>
+          <strong>Profils Pré-définis :</strong> Simulez une attaque d'un profil d'attaque contre un profil de défense provenants d'une base de données de profils pré-définis pour Warhammer 40k 10e édition. Les données utilisées pour les profils d'unités pré-définis dans cette page sont issues du projet open source BSData/wh40k-10e —&nbsp;
+        <a href="https://github.com/BSData/wh40k-10e" target="_blank" rel="noopener noreferrer">
+          https://github.com/BSData/wh40k-10e
+        </a>
+        , sous licence MIT.
+        </li>
       </ul>
 
       <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F"  }}> Simulations personnalisées (connexion requise)</h2>
