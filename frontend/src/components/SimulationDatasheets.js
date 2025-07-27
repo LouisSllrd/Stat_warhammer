@@ -396,7 +396,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
       parsedDefenderProfile.Save_invu = String(parsedDefenderProfile.Save_invu);
       parsedDefenderProfile.Fnp = String(parsedDefenderProfile.Fnp);
 
-      const res = await axios.post("http://127.0.0.1:8000/multi_profile_simulate", {
+      const res = await axios.post("https://statwarhammer-production-871f.up.railway.app/multi_profile_simulate", {
         attackers_params: parsedAttackProfiles,
         defenser_params: parsedDefenderProfile,
       });
