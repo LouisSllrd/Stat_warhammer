@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip,
@@ -11,6 +12,8 @@ import AttackProfileCard from "./AttackProfileCard";
 import DefenseProfileCard from "./DefenseProfileCard";
 
 function SimulationDatasheets() {
+
+  const { t } = useTranslation();
   const [availableDatasheets, setAvailableDatasheets] = useState([]);
   const [selectedListeId, setSelectedListeId] = useState("");
   const [selectedListe, setSelectedListe] = useState(null);
@@ -196,13 +199,13 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
     );
   
     if (weaponProfiles.length === 0) {
-      alert(`⚠️ L’unité "${unit.nom}" ne possède aucun profil d’arme valide. Un profil par défaut sera utilisé.`);
+      alert(`${t("datasheets.alert_unit")} ${unit.nom}${t("datasheets.alert_no_weapon")}`);
     
       setSelectedUnite({
         ...unit,
         profils: [
           {
-            name: "Attaque générique",
+            name: t("datasheets.generic_attack"),
             Nb_weapons: 1,
             Attacks: "1",
             CT: "4",
@@ -247,7 +250,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
         name: p.name,
         Nb_weapons: 1,
         Attacks: c.A || "",
-        CT: isMelee ? (c.WS || "Torrent").replace("+", "") : (c.BS || "Torrent").replace("+", ""),
+        CT: isMelee ? (c.WS || "Torrent").replace("+", "").replace("N/A", "Torrent") : (c.BS || "Torrent").replace("+", "").replace("N/A", "Torrent"),
         Strength: c.S || "",
         PA: c.AP || "",
         Damage: c.D || "",
@@ -285,7 +288,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
     );
   
     if (possibleDefensiveProfiles.length === 0) {
-      alert(`⚠️ L’unité "${unit.nom}" ne possède aucun profil défensif valide. Un profil par défaut sera utilisé.`);
+      alert(`${t("datasheets.alert_unit")} ${unit.nom}${t("datasheets.alert_no_defense")}`);
     
       const profileFormatted = {
         Save: "4",
@@ -344,27 +347,32 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
     setDefenderParams({ profils: [profileFormatted] });
   }, [selectedDefenseUniteNom, selectedDefenseListe]);
   
-  // Initialise les profils visibles et sélectionnés
-  useEffect(() => {
-    if (!selectedUnite) return;
-
-    const initVisible = {};
-    const initSelected = {};
-
-    selectedUnite.profils.forEach((_, i) => {
-      initVisible[i] = false;
-      initSelected[i] = true;
-    });
-
-    setVisibleProfiles(initVisible);
-    setSelectedProfiles(initSelected);
-  }, [selectedUnite]);
-
-  const handleAttackProfileChange = (updatedProfile, index) => {
-    const updatedProfils = [...selectedUnite.profils];
-    updatedProfils[index] = updatedProfile;
-    setSelectedUnite({ ...selectedUnite, profils: updatedProfils });
-  };
+    // Initialise les profils visibles et sélectionnés
+    useEffect(() => {
+      if (!selectedUnite) return;
+    
+      const initVisible = {};
+      const initSelected = {};
+    
+      selectedUnite.profils.forEach((_, i) => {
+        initVisible[i] = false;
+        initSelected[i] = true;
+      });
+    
+      setVisibleProfiles(initVisible);
+      setSelectedProfiles(initSelected);
+    }, [selectedUniteNom]); 
+    
+  
+    const handleAttackProfileChange = (updatedProfile, index) => {
+      const updatedProfils = [...selectedUnite.profils];
+      updatedProfils[index] = updatedProfile;
+    
+      setSelectedUnite((prev) => ({
+        ...prev,
+        profils: updatedProfils,
+      }));
+    };
 
   const handleDefenderChange = (newProfile) => {
     setDefenderParams({ ...defenderParams, ...newProfile });
@@ -384,6 +392,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
             parsedParams[key] = Number(parsedParams[key]);
           }
         });
+        console.log("CT :", parsedParams.CT)
         parsedParams.Sustained_hit = String(parsedParams.Sustained_hit);
         parsedParams.Re_roll_hit = String(parsedParams.Re_roll_hit);
         parsedParams.Re_roll_wound = String(parsedParams.Re_roll_wound);
@@ -413,17 +422,17 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
 
   return (
     <div style={{ padding: 32, fontFamily: "Segoe UI, sans-serif", background: "#DCFEFF", minHeight: "100vh" }}>
-      <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32, textAlign: "center", color: "#2d3748" }}> Simulateur Profils Pré-définis</h1>
+      <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32, textAlign: "center", color: "#2d3748" }}> {t("accueil.generic.predef_title")}</h1>
       <div style={{ display: "flex", gap: 24, alignItems: "flex-start", marginTop: 24, flexWrap: "wrap" }}>
       
       {/* Profils d'attaque */}
       <div style={{ flex: 1, minWidth: 320 }}>
-      <h2 style={{ fontSize: 20, marginBottom: 12 }}>⚔️ Profils d’attaque</h2>
+      <h2 style={{ fontSize: 20, marginBottom: 12 }}>⚔️ {t("multi.attack_profiles")}</h2>
       <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 24 }}>
   {/* Sélection du fichier JSON */}
   <div style={{ display: "flex", flexDirection: "column" }}>
     <label style={{ fontWeight: "bold", marginBottom: 4 }}>
-      Choisir une faction :
+      {t("datasheets.choose_faction")} :
     </label>
     <select
       value={selectedListeId}
@@ -439,7 +448,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
         backgroundColor: "#fff"
       }}
     >
-      <option value="">-- Choisir une faction --</option>
+      <option value="">-- {t("datasheets.choose_faction")} --</option>
       {availableDatasheets.map((file) => (
         <option key={file} value={file}>
           {file.replace(".json", "")}
@@ -452,7 +461,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
   {selectedListe && (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <label style={{ fontWeight: "bold", marginBottom: 4 }}>
-        Choisir une unité attaquant:
+      {t("datasheets.choose_attacker_unit")}:
       </label>
       <select
         value={selectedUniteNom}
@@ -464,7 +473,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
           backgroundColor: "#fff"
         }}
       >
-        <option value="">-- Choisir une unité attaquant --</option>
+        <option value="">-- {t("datasheets.choose_attacker_unit")} --</option>
         {selectedListe.unites.map((u, idx) => (
           <option key={idx} value={u.nom}>
             {u.nom}
@@ -514,8 +523,8 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
                     }}
                   >
                     {visibleProfiles[i]
-                      ? `Cacher ${profil.name || `Profil ${i + 1}`}`
-                      : `Afficher ${profil.name || `Profil ${i + 1}`}`}
+                      ? `${t("datasheets.hide")} ${profil.name || `${t("datasheets.profil")} ${i + 1}`}`
+                      : `${t("datasheets.show")} ${profil.name || `${t("datasheets.profil")} ${i + 1}`}`}
                   </button>
   
                   <label style={{ display: "flex", alignItems: "center", fontSize: 14 }}>
@@ -530,7 +539,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
                       }
                       style={{ transform: "scale(2)", marginRight: 8 }}
                     />
-                    Inclure dans le calcul
+                    {t("datasheets.include")}
                   </label>
                   </div>
                 </div>
@@ -552,13 +561,13 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
       )}
       </div>
       <div style={{ flex: 1, minWidth: 320 }}>
-      <h2 style={{ fontSize: 20, marginBottom: 12 }}>🛡️ Défenseur</h2>
+      <h2 style={{ fontSize: 20, marginBottom: 12 }}>🛡️ {t("simulateur.defender")}</h2>
     
       <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 24 }}>
   {/* Sélection du fichier JSON pour le défenseur */}
   <div style={{ display: "flex", flexDirection: "column" }}>
     <label style={{ fontWeight: "bold", marginBottom: 4 }}>
-      Choisir une faction :
+    {t("datasheets.choose_faction")} :
     </label>
     <select
       value={selectedDefenseListeId}
@@ -574,7 +583,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
         backgroundColor: "#fff"
       }}
     >
-      <option value="">-- Choisir une faction --</option>
+      <option value="">-- {t("datasheets.choose_faction")} --</option>
       {availableDatasheets.map((file) => (
         <option key={file} value={file}>
           {file.replace(".json", "")}
@@ -587,7 +596,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
   {selectedDefenseListe && (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <label style={{ fontWeight: "bold", marginBottom: 4 }}>
-        Choisir une unité défenseur :
+      {t("datasheets.choose_defender_unit")} :
       </label>
       <select
         value={selectedDefenseUniteNom}
@@ -599,7 +608,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
           backgroundColor: "#fff"
         }}
       >
-        <option value="">-- Choisir une unité --</option>
+        <option value="">-- {t("datasheets.choose_defender_unit")} --</option>
         {selectedDefenseListe.unites.map((u, idx) => (
           <option key={idx} value={u.nom}>
             {u.nom}
@@ -648,7 +657,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
         alignSelf: "flex-start",
       }}
     >
-      {visibleDefenseProfile ? "Cacher Profil Défensif" : "Afficher Profil Défensif"}
+      {visibleDefenseProfile ? t("datasheets.hide_defense_profile") : t("datasheets.show_defense_profile")}
     </button>
 
     {visibleDefenseProfile && (
@@ -681,7 +690,7 @@ style={{
   cursor: "pointer",
 }}
 >
-{loading ? "Simulation en cours..." : "Lancer la simulation"}
+{loading ? t("simulateur.simulation_en_cours") : t("simulateur.lancer")}
 </button>
       </div>
 
@@ -711,11 +720,18 @@ style={{
           marginTop: 24,
         }}
       >
-        <h2 style={{ fontSize: 22, fontWeight: "bold", marginBottom: 8 }}>📊 Résultats</h2>
-        <p><strong>Unité :</strong> {results.unit_descr}</p>
-        <p><strong>Moyenne :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit}, soit {results.relative_damages.toFixed(0)}% de la force initiale</p>
-        <p><strong>Écart-type :</strong> {results.std.toFixed(1)}</p>
-        <p> <strong>Probabilité de tuer l'unité ennemie :</strong> <strong style={{
+        <h2 style={{ fontSize: 22, fontWeight: "bold", marginBottom: 8 }}>{t("simulateur.resultats")}</h2>
+        <p><strong>{t("simulateur.unite_mesure")} :</strong> {results.unit_descr === "Nombre de PV perdus"
+                                    ? t("simulateur.unit_PV")
+                                    : t("simulateur.unit_figs")}
+              </p>
+        <p><strong>{t("simulateur.moyenne")} :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit === "PV"
+                                    ? t("simulateur.defenseur.PV")
+                                    : t("simulateur.figs")}, {t("simulateur.soit")}{" "}
+                {results.relative_damages.toFixed(0)}% {t("simulateur.de_force_init")}
+              </p>
+        <p><strong>{t("simulateur.ecart_type")} :</strong> {results.std.toFixed(1)}</p>
+        <p> <strong>{t("simulateur.proba_tuer")} :</strong> <strong style={{
           color:
           results.proba_unit_killed < 30 ? "red" :
           results.proba_unit_killed < 60 ? "orange" :
@@ -729,7 +745,7 @@ style={{
           <div style={{ display: "flex", gap: 24, marginTop: 24 }}>
                 <div>
                   <h3 style={{ fontWeight: "bold", marginBottom: 12 }}>
-                    Distribution
+                  {t("simulateur.distribution")}
                   </h3>
                   <BarChart width={350} height={300} data={results.histogram_data}>
                     <XAxis
@@ -763,7 +779,7 @@ style={{
 
                 <div>
                   <h3 style={{ fontWeight: "bold", marginBottom: 12 }}>
-                    Probabilité d'atteindre un seuil de dégâts
+                  {t("simulateur.probabilite_seuil")}
                   </h3>
                   <LineChart width={350} height={300} data={results.cumulative_data}>
                     <CartesianGrid stroke="#ccc" />
@@ -804,7 +820,7 @@ style={{
 
         {results.results_catalogue && (
           <div style={{ marginTop: 48 }}>
-            <h3 style={{ fontSize: 18, fontWeight: "bold", marginBottom: 12 }}>🆚 Comparaison avec unités classiques</h3>
+            <h3 style={{ fontSize: 18, fontWeight: "bold", marginBottom: 12 }}>{t("simulateur.comparaison_unites")}</h3>
             <table
               style={{
                 width: "100%",
@@ -817,17 +833,20 @@ style={{
             >
               <thead style={{ backgroundColor: "#ebf8ff" }}>
                 <tr>
-                  <th style={cellStyle}>Unité</th>
-                  <th style={cellStyle}>Moyenne</th>
-                  <th style={cellStyle}>Écart-type</th>
-                  <th style={cellStyle}>Force initiale</th>
-                  <th style={cellStyle}>Dégâts relatifs</th>
-                </tr>
+                        <th style={cellStyle}>{t("simulateur.unit")}</th>
+                        <th style={cellStyle}>{t("simulateur.moyenne")}</th>
+                        <th style={cellStyle}>{t("simulateur.ecart_type")}</th>
+                        <th style={cellStyle}>{t("simulateur.force_initiale")}</th>
+                        <th style={cellStyle}>{t("simulateur.degats_relatifs")}</th>
+                      </tr>
               </thead>
               <tbody>
                 {Object.entries(results.results_catalogue).map(([unitName, stats]) => (
                   <tr key={unitName}>
-                    <td style={cellStyle}>{unitName} {stats.unit ? `(${stats.unit})` : ""}</td>
+                    <td style={cellStyle}>{unitName} {stats.unit ? `(${t("simulateur.en")} ${stats.unit === "PV"
+                                    ? t("simulateur.defenseur.PV")
+                                    : t("simulateur.figs")})` : ""}
+                            </td>
                     <td style={cellStyle}>{stats.mean.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.std.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.initial_force}</td>
@@ -895,46 +914,52 @@ style={{
         ✕
       </button>
 
-      <h2 style={{ marginBottom: 12 }}>⚠️ Remarques</h2>
+      <h2 style={{ marginBottom: 12 }}>{t("datasheets.welcome.title")}</h2>
 
       <p>
-        Les données utilisées pour les profils d'unités pré-définis dans cette page sont issues du projet open source :
+        {t("datasheets.welcome.source_notice")}
         <br />
-        <strong>BSData/wh40k-10e</strong> —&nbsp;
-        <a href="https://github.com/BSData/wh40k-10e" target="_blank" rel="noopener noreferrer">
-          https://github.com/BSData/wh40k-10e
+        <strong>{t("datasheets.welcome.source_name")}</strong> —&nbsp;
+        <a
+          href={t("datasheets.welcome.source_url")}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("datasheets.welcome.source_url")}
         </a>
-        , sous licence MIT.
+        , {t("datasheets.welcome.license")}
       </p>
 
       <p>
-        <strong>Certains profils peuvent être incomplets ou non définis.</strong>
+        <strong>{t("datasheets.welcome.incomplete_profiles")}</strong>
       </p>
 
       <p>
-        <strong>Paramètres pré-définis attaquant :</strong><br />
-        Attaques, CT/CC, Force, PA, Dégâts, Touches létales, Touches soutenues, Blessures dévastatrices, Déflagration, Melta
+        <strong>{t("datasheets.welcome.attacker_preset")}</strong>
+        <br />
+        {t("datasheets.welcome.attacker_details")}
       </p>
 
       <p style={{ marginTop: 16 }}>
-        <strong>Paramètres pré-définis défenseur :</strong><br />
-        Endurance, PV, Sauvegarde, Sauvegarde Invulnérable
+        <strong>{t("datasheets.welcome.defender_preset")}</strong>
+        <br />
+        {t("datasheets.welcome.defender_details")}
       </p>
 
       <button
-          onClick={() => setShowWelcome(false)}
-          style={{
-            padding: "10px 20px",
-            backgroundColor: "#e0e0e0",
-            color: "#333",
-            border: "none",
-            borderRadius: 5,
-            fontWeight: "bold",
-            cursor: "pointer",
-          }}
-        >
-          Continuer vers la page 
-        </button>
+        onClick={() => setShowWelcome(false)}
+        style={{
+          padding: "10px 20px",
+          backgroundColor: "#e0e0e0",
+          color: "#333",
+          border: "none",
+          borderRadius: 5,
+          fontWeight: "bold",
+          cursor: "pointer"
+        }}
+      >
+        {t("datasheets.welcome.continue_button")}
+      </button>
     </div>
   </div>
 )}

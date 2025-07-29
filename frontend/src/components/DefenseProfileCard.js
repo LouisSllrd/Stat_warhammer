@@ -1,18 +1,5 @@
 import React from 'react';
-
-const fieldLabels = {
-  Toughness: "Endurance",
-  Save: "Save",
-  Save_invu: "Sauvegarde invulnérable",
-  PV: "PV par modèle",
-  Nb_of_models: "Nombre de figurines",
-  Fnp: "Insensible à la douleur (FNP)",
-  Modif_hit_def: "Modificateur de touche",
-  Modif_wound_def: "Modificateur de blessure",
-  Halve_damage: "Divise les dégâts par 2",
-  Reduce_damage_1: "Réduit les dégâts de 1",
-  Cover: "Couvert"
-};
+import { useTranslation } from "react-i18next";
 
 const optionsMap = {
   Toughness: Array.from({ length: 14 }, (_, i) => i + 1),
@@ -36,7 +23,46 @@ const defaultFieldsToEdit = [
   "Modif_wound_def", "Halve_damage", "Reduce_damage_1", "Cover"
 ];
 
+
+function useFieldLabels(t) {
+  return {
+    Nb_weapons: t("simulateur.attaquant.nb_weapons"),
+    Attacks: t("simulateur.attaquant.attacks"),
+    CT: t("simulateur.attaquant.CT"),
+    Strength: t("simulateur.attaquant.Strength"),
+    PA: t("simulateur.attaquant.PA"),
+    Damage: t("simulateur.attaquant.Damage"),
+    Sustained_hit: t("simulateur.attaquant.Sustained_hit"),
+    Lethal_hit: t("simulateur.attaquant.Lethal_hit"),
+    Deva_wound: t("simulateur.attaquant.Deva_wound"),
+    Blast: t("simulateur.attaquant.Blast"),
+    Melta: t("simulateur.attaquant.Melta"),
+    Modif_hit_att: t("simulateur.attaquant.Modif_hit_att"),
+    Modif_wound_att: t("simulateur.attaquant.Modif_wound_att"),
+    Re_roll_hit: t("simulateur.attaquant.Re_roll_hit"),
+    Re_roll_wound: t("simulateur.attaquant.Re_roll_wound"),
+    Crit_on_X_to_hit: t("simulateur.attaquant.Crit_on_X_to_hit"),
+    Crit_on_X_to_wound: t("simulateur.attaquant.Crit_on_X_to_wound"),
+  
+    Toughness: t("simulateur.defenseur.Toughness"),
+    Save: t("simulateur.defenseur.Save"),
+    Save_invu: t("simulateur.defenseur.Save_invu"),
+    PV: t("simulateur.defenseur.PV"),
+    Nb_of_models: t("simulateur.defenseur.Nb_of_models"),
+    Cover: t("simulateur.defenseur.Cover"),
+    Fnp: t("simulateur.defenseur.Fnp"),
+    Modif_hit_def: t("simulateur.defenseur.Modif_hit_def"),
+    Modif_wound_def: t("simulateur.defenseur.Modif_wound_def"),
+    Halve_damage: t("simulateur.defenseur.Halve_damage"),
+    Reduce_damage_1: t("simulateur.defenseur.Reduce_damage_1"),
+  };
+}
+
 const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToEdit, title = "Profil Défensif" }) => {
+  
+  const { t } = useTranslation();
+  const fieldLabels = useFieldLabels(t);
+  
   const handleChange = (e) => {
     if (!e || !e.target) return;
     const { name, type, checked, value } = e.target;

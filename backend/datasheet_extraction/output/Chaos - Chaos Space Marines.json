@@ -289,7 +289,7 @@
   },
   "Heretic Astartes Daemon Prince": {
     "cost": {
-      "pts": "165"
+      "pts": "180"
     },
     "profiles": {
       "Unit": [
@@ -328,74 +328,6 @@
           "name": "Lord of Chaos",
           "characteristics": {
             "Description": "While this model is within 3\" of one or more friendly ^^**Heretic Astartes Infantry^^** units, this model has the Lone Operative ability."
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Infernal cannon",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "3",
-            "BS": "2+",
-            "S": "5",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "➤ Hellforged weapons - strike",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "6",
-            "WS": "2+",
-            "S": "8",
-            "AP": "-2",
-            "D": "3",
-            "Keywords": "-"
-          }
-        },
-        {
-          "name": "➤ Hellforged weapons - sweep",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "14",
-            "WS": "2+",
-            "S": "6",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Heretic Astartes Daemon Prince with wings": {
-    "cost": {
-      "pts": "180"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Heretic Astartes Daemon Prince",
-          "characteristics": {
-            "M": "12\"",
-            "T": "9",
-            "SV": "2+",
-            "W": "10",
-            "LD": "6+",
-            "OC": "3"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "This model has a 4+ invulnerable save."
           }
         },
         {
@@ -731,7 +663,11 @@
   },
   "Chaos Lord": {
     "cost": {
-      "pts": "90"
+      "pts": "80",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
     },
     "profiles": {
       "Abilities": [
@@ -752,6 +688,12 @@
           "characteristics": {
             "Description": "Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, improve the Strength, Attacks, Armour\nPenetration and Damage characteristics of melee weapons equipped by this model by 1."
           }
+        },
+        {
+          "name": "Cruel Hunter",
+          "characteristics": {
+            "Description": "While this model is leading a unit, each time that unit Piles In or Consolidates, each model in that unit can move up to 6\" instead of up to 3\"."
+          }
         }
       ],
       "Unit": [
@@ -759,6 +701,17 @@
           "name": "Chaos Lord",
           "characteristics": {
             "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Chaos Lord with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
             "T": "4",
             "SV": "3+",
             "W": "5",
@@ -815,6 +768,18 @@
             "D": "2",
             "Keywords": "-"
           }
+        },
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
         }
       ],
       "Ranged Weapons": [
@@ -840,6 +805,18 @@
             "AP": "-3",
             "D": "2",
             "Keywords": "Hazardous, Pistol"
+          }
+        },
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
           }
         }
       ]
@@ -1748,25 +1725,7 @@
       ]
     }
   },
-  "Legionary w/ boltgun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Legionary w/ chainsword": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Legionary w/ heavy melee weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Legionary w/ balefire tome": {
+  "Legionary": {
     "cost": {
       "pts": "0"
     },
@@ -1783,16 +1742,7 @@
             "D": "1",
             "Keywords": "Psychic"
           }
-        }
-      ]
-    }
-  },
-  "Legionary w/ other weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Flamer",
           "characteristics": {
@@ -1889,6 +1839,28 @@
             "Keywords": "Heavy"
           }
         }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Nostraman chainglaive",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "8",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Voice eater",
+          "characteristics": {
+            "Description": "Enemy units (excluding MONSTERS and VEHICLES) cannot be targeted with Stratagems while they are within Engagement Range of the bearer’s unit."
+          }
+        }
       ]
     }
   },
@@ -1925,7 +1897,7 @@
       ]
     }
   },
-  "Cultist w/ autopistol and brutal assault weapon": {
+  "Cultist": {
     "cost": {
       "pts": "0"
     },
@@ -1941,6 +1913,54 @@
             "AP": "0",
             "D": "1",
             "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "➤ Cultist grenade launcher - frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Cultist grenade launcher - krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "5+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Heavy, Rapid Fire 3"
           }
         }
       ]
@@ -2162,49 +2182,7 @@
       ]
     }
   },
-  "Chosen w/ boltgun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Chosen w/ boltgun and plasma pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Chosen w/ combi-weapon and bolt pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Chosen w/ paired accursed weapons and plasma pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Chosen w/ power fist and bolt pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Chosen w/ combi-weapon and plasma pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Chosen w/ paired accursed weapons and bolt pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Chosen w/ power fist and plasma pistol": {
+  "Chosen": {
     "cost": {
       "pts": "0"
     },
@@ -2278,19 +2256,7 @@
     },
     "profiles": {}
   },
-  "Biker w/ combi-bolter and bolt pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Biker w/ combi-bolter and chainsword": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Biker w/ flamer": {
+  "Biker": {
     "cost": {
       "pts": "0"
     },
@@ -2307,16 +2273,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
           }
-        }
-      ]
-    }
-  },
-  "Biker w/ meltagun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Meltagun",
           "characteristics": {
@@ -2332,18 +2289,6 @@
       ]
     }
   },
-  "Biker w/ plasma gun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Biker w/ combi-weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
   "Raptor Champion": {
     "cost": {
       "pts": "0"
@@ -2351,30 +2296,6 @@
     "profiles": {}
   },
   "Raptor": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Raptor w/ plasma pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Raptor w/ flamer": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Raptor w/ meltagun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Raptor w/ plasma gun": {
     "cost": {
       "pts": "0"
     },
@@ -2407,7 +2328,7 @@
     },
     "profiles": {}
   },
-  "Havoc w/ autocannon": {
+  "Havoc": {
     "cost": {
       "pts": "0"
     },
@@ -2424,16 +2345,7 @@
             "D": "3",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Havoc w/ lascannon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Havoc lascannon",
           "characteristics": {
@@ -2445,16 +2357,7 @@
             "D": "D6+1",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Havoc w/ missile launcher": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Havoc missile launcher - frag",
           "characteristics": {
@@ -2478,16 +2381,7 @@
             "D": "D6",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Havoc w/ reaper chaincannon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Havoc reaper chaincannon",
           "characteristics": {
@@ -2499,16 +2393,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Havoc w/ heavy bolter": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Havoc heavy bolter",
           "characteristics": {
@@ -2780,7 +2665,7 @@
       ]
     }
   },
-  "Guardsman w/ lasgun": {
+  "Guardsman": {
     "cost": {
       "pts": "0"
     },
@@ -2797,16 +2682,7 @@
             "D": "1",
             "Keywords": "Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ flamer": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Flamer",
           "characteristics": {
@@ -2818,16 +2694,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ plasma gun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma gun - standard",
           "characteristics": {
@@ -2851,16 +2718,7 @@
             "D": "2",
             "Keywords": "Hazardous, Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ meltagun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Meltagun",
           "characteristics": {
@@ -2872,16 +2730,7 @@
             "D": "D6",
             "Keywords": "Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ Cultist sniper rifle": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Cultist sniper rifle",
           "characteristics": {
@@ -2893,16 +2742,7 @@
             "D": "2",
             "Keywords": "Heavy, Precision"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ Cultist grenade launcher": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Cultist grenade launcher - frag",
           "characteristics": {
@@ -3006,6 +2846,18 @@
             "D": "1",
             "Keywords": "Pistol"
           }
+        },
+        {
+          "name": "Corrupted stave",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
         }
       ],
       "Melee Weapons": [
@@ -3020,16 +2872,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Beastman w/ great weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Great weapon",
           "characteristics": {
@@ -3041,30 +2884,7 @@
             "D": "2",
             "Keywords": "-"
           }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Autopistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        }
-      ]
-    }
-  },
-  "Beastman w/ corrupted stave": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Corrupted stave",
           "characteristics": {
@@ -3075,32 +2895,6 @@
             "AP": "-1",
             "D": "D3",
             "Keywords": "Devastating Wounds, Psychic"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Corrupted stave",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "D3",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Devastating Wounds, Psychic"
-          }
-        },
-        {
-          "name": "Autopistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
           }
         }
       ]
@@ -4025,15 +3819,7 @@
     },
     "profiles": {}
   },
-  "Berzerker w/ chainblade and plasma pistol": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Berzerker w/ eviscerator and plasma pistol": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Berzerker w/ eviscerator and bolt pistol": {
+  "Berzerker": {
     "cost": {},
     "profiles": {}
   },
@@ -4109,7 +3895,7 @@
       ]
     }
   },
-  "Rubric Marine w/ inferno boltgun": {
+  "Rubric Marine": {
     "cost": {
       "pts": "0"
     },
@@ -4126,30 +3912,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Rubric Marine w/ warpflamer": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Warpflamer",
           "characteristics": {
@@ -4161,44 +3924,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Rubric Marine w/ soulreaper cannon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Soulreaper cannon",
           "characteristics": {
@@ -4209,6 +3935,20 @@
             "AP": "-2",
             "D": "1",
             "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
           }
         }
       ]
@@ -4249,19 +3989,7 @@
       ]
     }
   },
-  "Plague Marine w/ bubotic weapons": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Plague Marine w/ heavy plague weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Plague Marine w/ blight launcher": {
+  "Plague Marine": {
     "cost": {
       "pts": "0"
     },
@@ -4278,22 +4006,7 @@
             "D": "2",
             "Keywords": "Blast, Lethal Hits"
           }
-        }
-      ]
-    }
-  },
-  "Plague Marine w/ boltgun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Plague Marine w/ plague spewer": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Plague spewer",
           "characteristics": {
@@ -4305,31 +4018,7 @@
             "D": "1",
             "Keywords": "Anti-INFANTRY 2+, Ignores Cover, Torrent"
           }
-        }
-      ]
-    }
-  },
-  "Plague Marine w/ icon of despair": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Icon of Despair",
-          "characteristics": {
-            "Description": "While an enemy unit is within 6\" of the bearer, worsen the Leadership characteristic of models in that unit by 1."
-          }
-        }
-      ]
-    }
-  },
-  "Plague Marine w/ meltagun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Meltagun",
           "characteristics": {
@@ -4341,16 +4030,7 @@
             "D": "D6",
             "Keywords": "Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Plague Marine w/ plague belcher": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Plague belcher",
           "characteristics": {
@@ -4363,14 +4043,16 @@
             "Keywords": "Anti-INFANTRY 4+, Ignores Cover, Torrent"
           }
         }
+      ],
+      "Abilities": [
+        {
+          "name": "Icon of Despair",
+          "characteristics": {
+            "Description": "While an enemy unit is within 6\" of the bearer, worsen the Leadership characteristic of models in that unit by 1."
+          }
+        }
       ]
     }
-  },
-  "Plague Marine w/ plasma gun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
   },
   "Hell Talon [Legends]": {
     "cost": {
@@ -5938,7 +5620,7 @@
       ]
     }
   },
-  "Nightmare Hulk w/ belly flamer": {
+  "Nightmare Hulk": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -5966,25 +5648,6 @@
             "AP": "0",
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
-          }
-        }
-      ]
-    }
-  },
-  "Nightmare Hulk": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Hideous mutations",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "4",
-            "WS": "4+",
-            "S": "6",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "-"
           }
         }
       ],
@@ -6323,7 +5986,7 @@
       ]
     }
   },
-  "Brute w/ Ogryn weapon": {
+  "Brute": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -6338,14 +6001,7 @@
             "D": "2",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Brute w/ power drill": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Ogryn power drill",
           "characteristics": {
@@ -7038,126 +6694,6 @@
       ]
     }
   },
-  "Chaos Lord with Jump Pack": {
-    "cost": {
-      "pts": "80",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Chaos Lord with Jump Pack",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "5",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "This model has a 4+ invulnerable save."
-          }
-        },
-        {
-          "name": "Leader",
-          "characteristics": {
-            "Description": "This model can be attached to the following units:\n■ RAPTORS"
-          }
-        },
-        {
-          "name": "Cruel Hunter",
-          "characteristics": {
-            "Description": "While this model is leading a unit, each time that unit Piles In or Consolidates, each model in that unit can move up to 6\" instead of up to 3\"."
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "➤ Plasma pistol - standard",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "2+",
-            "S": "7",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        },
-        {
-          "name": "➤ Plasma pistol - supercharge",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "2+",
-            "S": "8",
-            "AP": "-3",
-            "D": "2",
-            "Keywords": "Hazardous, Pistol"
-          }
-        },
-        {
-          "name": "Bolt pistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "2+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Accursed weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "6",
-            "WS": "2+",
-            "S": "5",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "-"
-          }
-        },
-        {
-          "name": "Power fist",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "5",
-            "WS": "2+",
-            "S": "8",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "-"
-          }
-        },
-        {
-          "name": "Twin lightning claws",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "6",
-            "WS": "2+",
-            "S": "5",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "Twin-linked"
-          }
-        }
-      ]
-    }
-  },
   "Cultist Firebrand": {
     "cost": {
       "pts": "45"
@@ -7226,87 +6762,6 @@
       ]
     }
   },
-  "Cultist w/ autogun and close combat weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Cultist w/ flamer": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Flamer",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "D6",
-            "BS": "N/A",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Ignores Cover, Torrent"
-          }
-        }
-      ]
-    }
-  },
-  "Cultist w/ cultist grenade launcher": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "➤ Cultist grenade launcher - frag",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "D3",
-            "BS": "4+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Blast"
-          }
-        },
-        {
-          "name": "➤ Cultist grenade launcher - krak",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "9",
-            "AP": "-2",
-            "D": "D3",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Cultist w/ heavy stubber": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Heavy stubber",
-          "characteristics": {
-            "Range": "36\"",
-            "A": "4",
-            "BS": "5+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Heavy, Rapid Fire 3"
-          }
-        }
-      ]
-    }
-  },
   "Visionary": {
     "cost": {},
     "profiles": {
@@ -7321,126 +6776,6 @@
             "AP": "-1",
             "D": "1",
             "Keywords": "Sustained Hits 1"
-          }
-        }
-      ]
-    }
-  },
-  "Legionary w/ heavy weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Heavy bolter",
-          "characteristics": {
-            "Range": "36\"",
-            "A": "3",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "Heavy, Sustained Hits 1"
-          }
-        },
-        {
-          "name": "➤ Missile launcher - frag",
-          "characteristics": {
-            "Range": "48\"",
-            "A": "D6",
-            "BS": "4+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Blast, Heavy"
-          }
-        },
-        {
-          "name": "➤ Missile launcher - krak",
-          "characteristics": {
-            "Range": "48\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "9",
-            "AP": "-2",
-            "D": "D6",
-            "Keywords": "Heavy"
-          }
-        }
-      ]
-    }
-  },
-  "Legionary w/ special weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Flamer",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "D6",
-            "BS": "N/A",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Ignores Cover, Torrent"
-          }
-        },
-        {
-          "name": "Meltagun",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "3+",
-            "S": "9",
-            "AP": "-4",
-            "D": "D6",
-            "Keywords": "Melta 2"
-          }
-        }
-      ]
-    }
-  },
-  "Legionary w/ accursed weapon": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Legionary w/ Nostraman chainglaive": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Nostraman chainglaive",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "4",
-            "WS": "3+",
-            "S": "8",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "Sustained Hits 1"
-          }
-        }
-      ]
-    }
-  },
-  "Legionary w/ paired accursed weapons": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Legionary w/ voice eater": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Voice eater",
-          "characteristics": {
-            "Description": "Enemy units (excluding MONSTERS and VEHICLES) cannot be targeted with Stratagems while they are within Engagement Range of the bearer’s unit."
           }
         }
       ]
@@ -7494,7 +6829,7 @@
       ]
     }
   },
-  "Noise Marine w/ sonic blaster": {
+  "Noise Marine": {
     "cost": {
       "pts": "0"
     },
@@ -7511,14 +6846,7 @@
             "OC": "1"
           }
         }
-      ]
-    }
-  },
-  "Noise Marine w/ blastmaster": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "➤ Blastmaster - varied frequency",
@@ -7542,19 +6870,6 @@
             "AP": "-2",
             "D": "3",
             "Keywords": "Ignores Cover"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Noise Marines",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
           }
         }
       ]

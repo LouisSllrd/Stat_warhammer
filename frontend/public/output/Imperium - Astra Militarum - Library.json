@@ -79,11 +79,7 @@
       ]
     }
   },
-  "Rough Rider w/ Hunting lance": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Rough Rider w/ Goad lance": {
+  "Rough Rider": {
     "cost": {},
     "profiles": {}
   },
@@ -410,61 +406,7 @@
       ]
     }
   },
-  "Cadian Veteran Guardsman w/ Regimental standard": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Cadian Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Cadian Veteran Guardsman w/ Chainsword": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Cadian Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Cadian Veteran Guardsman w/ Master vox": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Cadian Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Cadian Veteran Guardsman w/ Medi-pack": {
+  "Cadian Veteran Guardsman": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -486,11 +428,7 @@
     "cost": {},
     "profiles": {}
   },
-  "Jungle Fighter w/ Vox-caster": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Jungle Fighter w/ Flamer": {
+  "Jungle Fighter": {
     "cost": {},
     "profiles": {}
   },
@@ -626,34 +564,6 @@
     "cost": {},
     "profiles": {}
   },
-  "Death Korps Trooper w/ Death Korps medi-pack": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Death Korps Trooper w/ Vox-caster": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Death Korps Trooper w/ Flamer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Death Korps Trooper w/ Grenade launcher": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Death Korps Trooper w/ Long-las": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Death Korps Trooper w/ Meltagun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Death Korps Trooper w/ Plasma gun": {
-    "cost": {},
-    "profiles": {}
-  },
   "Death Korps Watchmaster": {
     "cost": {},
     "profiles": {}
@@ -754,7 +664,7 @@
       ]
     }
   },
-  "Ordnance Team w/ Malleus rocket launcher": {
+  "Ordnance Team": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -769,14 +679,7 @@
             "D": "1",
             "Keywords": "Blast, Heavy"
           }
-        }
-      ]
-    }
-  },
-  "Ordnance Team w/ Bombast field gun": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Bombast field gun",
           "characteristics": {
@@ -788,14 +691,7 @@
             "D": "2",
             "Keywords": "Blast, Heavy, Indirect Fire"
           }
-        }
-      ]
-    }
-  },
-  "Ordnance Team w/ Heavy lascannon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Heavy lascannon",
           "characteristics": {
@@ -865,7 +761,7 @@
       ]
     }
   },
-  "Tanith Ghost w/ Corbec's hot-shot lascarbine": {
+  "Tanith Ghost": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -893,27 +789,7 @@
             "D": "1",
             "Keywords": "Assault"
           }
-        }
-      ]
-    }
-  },
-  "Tanith Ghost w/ Larkin's long-las": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Tanith Ghost",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "2",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Larkin's long-las",
           "characteristics": {
@@ -925,27 +801,7 @@
             "D": "4",
             "Keywords": "Heavy, Precision"
           }
-        }
-      ]
-    }
-  },
-  "Tanith Ghost w/ Mkoll's Straight Silver Knife": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Tanith Ghost",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "2",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Lascarbine",
           "characteristics": {
@@ -956,6 +812,30 @@
             "AP": "0",
             "D": "1",
             "Keywords": "Assault"
+          }
+        },
+        {
+          "name": "Rawne's lascarbine",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "3+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Bragg's autocannon",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "4",
+            "BS": "5+",
+            "S": "9",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "Heavy"
           }
         }
       ],
@@ -975,89 +855,23 @@
       ]
     }
   },
-  "Tanith Ghost w/ Rawne's lascarbine": {
+  "Heavy Weapons Team": {
     "cost": {},
     "profiles": {
       "Unit": [
         {
-          "name": "Tanith Ghost",
+          "name": "Heavy Weapons Team",
           "characteristics": {
             "M": "6\"",
             "T": "3",
-            "SV": "5+",
+            "SV": "4+",
             "W": "2",
             "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Rawne's lascarbine",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "3",
-            "BS": "3+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Assault, Sustained Hits 1"
+            "OC": "2"
           }
         }
       ]
     }
-  },
-  "Tanith Ghost w/ Bragg's autocannon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Bragg's autocannon",
-          "characteristics": {
-            "Range": "48\"",
-            "A": "4",
-            "BS": "5+",
-            "S": "9",
-            "AP": "-1",
-            "D": "3",
-            "Keywords": "Heavy"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Tanith Ghost",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "2",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Heavy Weapons Team w/ Heavy bolter": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Heavy Weapons Team w/ Mortar": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Heavy Weapons Team w/ Missile launcher": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Heavy Weapons Team w/ Lascannon": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Heavy Weapons Team w/ Autocannon": {
-    "cost": {},
-    "profiles": {}
   },
   "Hellhammer": {
     "cost": {
@@ -1295,10 +1109,6 @@
   },
   "Kasrkin Trooper": {
     "cost": {},
-    "profiles": {}
-  },
-  "Kasrkin Trooper w/ Hot-shot marksman rifle": {
-    "cost": {},
     "profiles": {
       "Ranged Weapons": [
         {
@@ -1312,27 +1122,7 @@
             "D": "3",
             "Keywords": "Heavy, Precision"
           }
-        }
-      ]
-    }
-  },
-  "Kasrkin Trooper w/ Hot-shot laspistol and melta mine": {
-    "cost": {},
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Melta mine",
-          "characteristics": {
-            "Description": "Once per battle, at the start of any phase, you can select one enemy unit within 3\" of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a **^^Vehicle^^** unit."
-          }
-        }
-      ]
-    }
-  },
-  "Kasrkin Trooper w/ Vox-caster": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Hot-shot lasgun",
           "characteristics": {
@@ -1345,28 +1135,16 @@
             "Keywords": "Rapid Fire 1"
           }
         }
+      ],
+      "Abilities": [
+        {
+          "name": "Melta mine",
+          "characteristics": {
+            "Description": "Once per battle, at the start of any phase, you can select one enemy unit within 3\" of the bearer and roll one D6: on a 2+, that enemy unit suffers D3 mortal wounds, or 2D3 mortal wounds instead if it is a **^^Vehicle^^** unit."
+          }
+        }
       ]
     }
-  },
-  "Kasrkin Trooper w/ Flamer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Kasrkin Trooper w/ Plasma gun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Kasrkin Trooper w/ Hot-shot volley gun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Kasrkin Trooper w/ Meltagun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Kasrkin Trooper w/ Grenade launcher": {
-    "cost": {},
-    "profiles": {}
   },
   "Kasrkin Sergeant": {
     "cost": {},
@@ -1641,18 +1419,6 @@
   },
   "Tempestus Scion": {
     "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Scion w/ Regimental Standard": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Scion w/ Master Vox": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Scion w/ Medi-pack": {
-    "cost": {},
     "profiles": {
       "Abilities": [
         {
@@ -1704,7 +1470,7 @@
       ]
     }
   },
-  "Munitorum Servitor w/ Servitor's Servo Arm": {
+  "Munitorum Servitor": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -1720,12 +1486,7 @@
             "Keywords": "-"
           }
         }
-      ]
-    }
-  },
-  "Munitorum Servitor w/ Special Weapon": {
-    "cost": {},
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "Heavy bolter",
@@ -2692,30 +2453,6 @@
       ]
     }
   },
-  "Tempestus Scion w/ Vox-caster": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Scion w/ Flamer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Scion w/ Grenade launcher": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Scion w/ Hot-shot volley gun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Scion w/ Meltagun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Scion w/ Plasma gun": {
-    "cost": {},
-    "profiles": {}
-  },
   "Tempestor": {
     "cost": {},
     "profiles": {}
@@ -2876,10 +2613,6 @@
     "cost": {},
     "profiles": {}
   },
-  "Shock Trooper w/ Vox Caster": {
-    "cost": {},
-    "profiles": {}
-  },
   "Shock Trooper Sergeant": {
     "cost": {},
     "profiles": {
@@ -2898,10 +2631,6 @@
         }
       ]
     }
-  },
-  "Jungle Fighter": {
-    "cost": {},
-    "profiles": {}
   },
   "Ridemaster": {
     "cost": {},
@@ -4005,7 +3734,7 @@
       ]
     }
   },
-  "Tarantula w/ twin heavy bolter": {
+  "Tarantula": {
     "cost": {
       "pts": "40"
     },
@@ -4022,16 +3751,7 @@
             "D": "2",
             "Keywords": "Sustained Hits 1, Twin-linked"
           }
-        }
-      ]
-    }
-  },
-  "Tarantula w/ twin lascannon": {
-    "cost": {
-      "pts": "40"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Twin lascannon",
           "characteristics": {
@@ -4338,32 +4058,6 @@
   },
   "Grenadier": {
     "cost": {},
-    "profiles": {}
-  },
-  "Heavy Weapons Team": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Heavy Weapons Team",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "4+",
-            "W": "2",
-            "LD": "7+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Grenadier w/ Grenade launcher": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grenadier w/ Heavy stubber": {
-    "cost": {},
     "profiles": {
       "Ranged Weapons": [
         {
@@ -4380,22 +4074,6 @@
         }
       ]
     }
-  },
-  "Grenadier w/ Meltagun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grenadier w/ Plasma gun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grenadier w/ Sniper rifle": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grenadier w/ Flamer": {
-    "cost": {},
-    "profiles": {}
   },
   "Grenadier Sergeant": {
     "cost": {},
@@ -5705,18 +5383,6 @@
   },
   "Tempestus Aquilon": {
     "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Aquilon w/ 2 Hot-shot laspistols": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Aquilon w/ 1 Hot-shot laspistol": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tempestus Aquilon w/ Hot-shot long-las": {
-    "cost": {},
     "profiles": {
       "Ranged Weapons": [
         {
@@ -5730,14 +5396,7 @@
             "D": "3",
             "Keywords": "Heavy, Precision"
           }
-        }
-      ]
-    }
-  },
-  "Tempestus Aquilon w/ Special weapon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma carbine - standard",
           "characteristics": {
@@ -5864,7 +5523,7 @@
       ]
     }
   },
-  "Ratling w/ tankstopper rifle": {
+  "Ratling": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -5954,7 +5613,7 @@
       ]
     }
   },
-  "Veteran Guardsman w/ Alchemyk counteragents": {
+  "Veteran Guardsman": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -5983,42 +5642,6 @@
             "Description": "Once per battle, when issuing an Order, the Lord Commissar can issue one additional Order.\n\n\nDesigner's Note: Place a Servo-scribes token next to the unit, removing it when this ability has been used."
           }
         }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Boltgun": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Chainsword": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
       ],
       "Melee Weapons": [
         {
@@ -6031,42 +5654,6 @@
             "AP": "0",
             "D": "1",
             "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Master vox": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Regimental standard": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
           }
         }
       ]
@@ -6145,150 +5732,6 @@
             "AP": "-1",
             "D": "1",
             "Keywords": "Extra Attacks"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Medi-pack": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Flamer": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Grenade launcher": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Heavy flamer": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Meltagun": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Plasma gun": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Veteran Guardsman w/ Sniper rifle": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Veteran Guardsman",
-          "characteristics": {
-            "M": "6\"",
-            "T": "3",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
           }
         }
       ]
@@ -6456,18 +5899,6 @@
   },
   "Krieg Combat Engineer": {
     "cost": {},
-    "profiles": {}
-  },
-  "Krieg Combat Engineer w/ Flamer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Krieg Combat Engineer w/ Combat shotgun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Krieg Combat Engineer w/ Remote mine": {
-    "cost": {},
     "profiles": {
       "Abilities": [
         {
@@ -6498,7 +5929,7 @@
       ]
     }
   },
-  "Heavy Weapons Gunners w/ Krieg heavy flamer": {
+  "Heavy Weapons Gunners": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -6513,14 +5944,7 @@
             "D": "2",
             "Keywords": "Ignores Cover, Torrent"
           }
-        }
-      ]
-    }
-  },
-  "Heavy Weapons Gunners w/ Twin Krieg heavy stubber": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Twin Krieg heavy stubber",
           "characteristics": {
@@ -6535,10 +5959,6 @@
         }
       ]
     }
-  },
-  "Heavy Weapons Gunners w/ Lascannon": {
-    "cost": {},
-    "profiles": {}
   },
   "Fire Coordinator": {
     "cost": {},
@@ -6746,6 +6166,34 @@
           }
         }
       ],
+      "Ranged Weapons": [
+        {
+          "name": "Demolitions",
+          "characteristics": {
+            "Range": "6\"",
+            "A": "D6",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Blast, One Shot"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Dirk",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "3",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Precision"
+          }
+        }
+      ],
       "Abilities": [
         {
           "name": "Regimental Banner",
@@ -6755,21 +6203,5 @@
         }
       ]
     }
-  },
-  "Shock Trooper w/ Flamer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Shock Trooper w/ Grenade Launcher": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Shock Trooper w/ Meltagun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Shock Trooper w/ Plasma Gun": {
-    "cost": {},
-    "profiles": {}
   }
 }

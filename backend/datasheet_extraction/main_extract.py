@@ -2,26 +2,39 @@ import os
 import json
 import requests
 from lxml import etree
+import re
+
+def get_base_unit_name(name):
+    """
+    Extrait le nom de base de l’unité en supprimant les suffixes 'with ...' ou 'w/ ...'
+    """
+    return re.split(r"\s+(with|w/)\s+", name, flags=re.IGNORECASE)[0].strip()
+
 
 NS = {"bs": "http://www.battlescribe.net/schema/catalogueSchema"}
 GITHUB_API_URL = "https://api.github.com/repos/BSData/wh40k-10e/contents"
 GITHUB_RAW_BASE = "https://raw.githubusercontent.com/BSData/wh40k-10e/main"
 OUTPUT_FOLDER = "output"
 
-def extract_profiles(element):
+def extract_profiles_recursive(element):
     profiles_data = {}
+
     for profile in element.findall(".//bs:profile", namespaces=NS):
         profile_name = profile.get("name")
         profile_type = profile.get("typeName")
+
         characteristics = {
             char.get("name"): char.text
             for char in profile.findall(".//bs:characteristic", namespaces=NS)
         }
+
         profiles_data.setdefault(profile_type, []).append({
             "name": profile_name,
             "characteristics": characteristics
         })
+
     return profiles_data
+
 
 def merge_profiles(base, additional):
     for profile_type, new_profiles in additional.items():
@@ -47,10 +60,13 @@ def extract_unit_data(entry):
         value = cost.get("value")
         if name and value:
             unit_data["cost"][name] = value
-    unit_profiles = extract_profiles(entry)
+    unit_profiles = extract_profiles_recursive(entry)
+
     child_entries = entry.findall(".//bs:selectionEntry", namespaces=NS)
+
     for child in child_entries:
-        child_profiles = extract_profiles(child)
+        child_profiles = extract_profiles_recursive(child)
+
         merge_profiles(unit_profiles, child_profiles)
     unit_data["profiles"] = unit_profiles
     return unit_name, unit_data
@@ -62,15 +78,30 @@ def extract_units_from_content(cat_content_bytes):
         print("[❌] Erreur de parsing du contenu XML")
         return {}
 
-    units_data = {}
+    unit_groups = {}
+
     for entry in tree.findall(".//bs:selectionEntry", namespaces=NS):
         if entry.get("type") == "model":
             name, data = extract_unit_data(entry)
-            if name:
-                units_data[name] = data
+            if not name:
+                continue
 
-    print(f"[✅] {len(units_data)} unités extraites depuis le contenu")
-    return units_data
+            base_name = get_base_unit_name(name)
+            if base_name not in unit_groups:
+                unit_groups[base_name] = {
+                    "cost": {},
+                    "profiles": {}
+                }
+
+            # Merge costs
+            unit_groups[base_name]["cost"].update(data["cost"])
+
+            # Merge profiles
+            merge_profiles(unit_groups[base_name]["profiles"], data["profiles"])
+
+    print(f"[✅] {len(unit_groups)} unités fusionnées depuis le contenu")
+    return unit_groups
+
 
 def list_cat_files(path=""):
     """Liste tous les fichiers .cat dans le repo (non récursif pour l'instant)"""

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import AttackProfileCard from "./AttackProfileCardMobile";
 import DefenderForm from "./DefenderFormMobile";
 import axios from "axios";
@@ -148,6 +149,7 @@ const profileVariants = {
 
 
 function MultiSimulateurMobile() {
+  const { t } = useTranslation();
   const [numProfiles, setNumProfiles] = useState(2);
   const [attackProfiles, setAttackProfiles] = useState([
     { id: crypto.randomUUID(), ...defaultAttackProfile },
@@ -277,10 +279,10 @@ function MultiSimulateurMobile() {
 
   return (
     <div style={{ padding: 16, fontFamily: "Segoe UI, sans-serif", background: "#DCFEFF", minHeight: "100vh" }}>
-  <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32, textAlign: "center", color: "#2d3748" }}> Simulateur Multi-Profils</h1>
+  <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32, textAlign: "center", color: "#2d3748" }}>  {t("accueil.generic.multi_title")}</h1>
 
   <div style={{ marginBottom: 16 }}>
-    <label htmlFor="numProfiles" style={{ fontWeight: 600 }}>Nombre de profils d'attaque :</label>
+    <label htmlFor="numProfiles" style={{ fontWeight: 600 }}> {t("multi.nb_profils")} :</label>
     <select
       id="numProfiles"
       value={numProfiles}
@@ -314,7 +316,7 @@ function MultiSimulateurMobile() {
 
     {/* Profils d'attaque */}
     <div style={{ flex: 1, minWidth: "100%" }}>
-  <h2 style={{ fontSize: 20, marginBottom: 12 }}>⚔️ Profils d'attaque</h2>
+  <h2 style={{ fontSize: 20, marginBottom: 12 }}>⚔️ {t("multi.attack_profiles")}</h2>
   
     
     <motion.div
@@ -361,7 +363,7 @@ function MultiSimulateurMobile() {
             onMouseOver={(e) => (e.target.style.backgroundColor = "#2c5282")}
             onMouseOut={(e) => (e.target.style.backgroundColor = "#2b6cb0")}
           >
-            {visibleProfiles[i] ? `Cacher Profil ${i + 1}` : `Afficher Profil ${i + 1}`}
+            {visibleProfiles[i] ? `${t("multi.hide_profile")} ${i + 1}` : `${t("multi.show_profile")} ${i + 1}`}
           </button>
           {visibleProfiles[i] && (
             <AttackProfileCard
@@ -382,7 +384,7 @@ function MultiSimulateurMobile() {
 
     {/* Défenseur */}
     <div style={{ flex: 1, minWidth: "100%" }}>
-      <h2 style={{ fontSize: 20, marginBottom: 12 }}>🛡️ Défenseur</h2>
+      <h2 style={{ fontSize: 20, marginBottom: 12 }}>🛡️ {t("simulateur.defender")}</h2>
       <div
         style={{
           background: "#ffffff",
@@ -408,7 +410,7 @@ function MultiSimulateurMobile() {
             transition: "background-color 0.3s"
           }}
         >
-          {loading ? "Calcul..." : "🚀 Lancer la Simulation"}
+          {loading ? t("simulateur.simulation_en_cours") : t("simulateur.lancer")}
         </button>
       </div>
     </div>
@@ -418,13 +420,15 @@ function MultiSimulateurMobile() {
   {results && (
     <Modal onClose={() => setResults(null)}>
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-      <h2 style={{ fontSize: 22, fontWeight: "bold" }}>📊 Résultats :</h2>
+      <h2 style={{ fontSize: 22, fontWeight: "bold" }}>{t("simulateur.resultats")}</h2>
     </div>
 
     {/* Résumé */}
     <div style={{ marginBottom: 24 }}>
       <p>
-        ➢ En moyenne : <strong>{results.mean.toFixed(1)}</strong> {"(±"} {results.std.toFixed(0)} {")"} {results.unit} , soit {results.relative_damages.toFixed(0)}% de la force initiale
+        ➢ {t("simulateur.moyenne")} : <strong>{results.mean.toFixed(1)}</strong> {"(±"} {results.std.toFixed(0)} {")"} {results.unit === "PV"
+                                    ? t("simulateur.defenseur.PV")
+                                    : t("simulateur.figs")} , {t("simulateur.soit")}  {results.relative_damages.toFixed(0)}% {t("simulateur.de_force_init")}
       </p>
       <p>
         ➢ <strong style={{
@@ -435,7 +439,7 @@ function MultiSimulateurMobile() {
             "green"
         }}>
           {results.proba_unit_killed.toFixed(0)}%
-        </strong> {"de chance de tuer l'unité ennemie"} 
+        </strong> {t("simulateur.de_chance_tuer_ennemi")}
       </p>
     </div>
     <button
@@ -449,21 +453,24 @@ function MultiSimulateurMobile() {
         cursor: "pointer",
       }}
     >
-      {showFullResults ? "➖ Afficher Moins" : "➕ Afficher Plus"}
+              {showFullResults ? t("simulateur.afficher_moins") : t("simulateur.afficher_plus")}
     </button>
 
 
     {/* Affichage complet */}
     {showFullResults && (
       <div>
+        <p><strong>{t("simulateur.unite_mesure")} :</strong> {results.unit_descr === "Nombre de PV perdus"
+                                    ? t("simulateur.unit_PV")
+                                    : t("simulateur.unit_figs")}
+              </p>
+        <p><strong>{t("simulateur.moyenne")} :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit === "PV"
+                                    ? t("simulateur.defenseur.PV")
+                                    : t("simulateur.figs")}, {t("simulateur.soit")}{" "}
+                {results.relative_damages.toFixed(0)}% {t("simulateur.de_force_init")}
+              </p>
         <p>
-          <strong>Unité de mesure :</strong> {results.unit_descr}
-        </p>
-        <p>
-          <strong>Moyenne :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit}
-        </p>
-        <p>
-          <strong>Écart-type :</strong> {results.std.toFixed(1)}
+          <strong>{t("simulateur.ecart_type")} :</strong> {results.std.toFixed(1)}
         </p>
 
         {/* Graphiques */}
@@ -472,7 +479,7 @@ function MultiSimulateurMobile() {
           {/* Distribution */}
           <div style={{ flex: "1 1 0", minWidth: 350 }}>
             <h4 style={{ fontWeight: "bold", marginBottom: 12 }}>
-              Distribution
+            {t("simulateur.distribution")}
             </h4>
             <BarChart width={400} height={300} data={results.histogram_data}>
               <XAxis dataKey="value" />
@@ -485,7 +492,7 @@ function MultiSimulateurMobile() {
           {/* Courbe cumulative */}
           <div style={{ flex: "1 1 0", minWidth: 350 }}>
             <h4 style={{ fontWeight: "bold", marginBottom: 12 }}>
-              Probabilité d'atteindre un seuil
+            {t("simulateur.probabilite_seuil")}
             </h4>
             <LineChart width={400} height={300} data={results.cumulative_data}>
               <CartesianGrid stroke="#ccc" />
@@ -525,22 +532,25 @@ function MultiSimulateurMobile() {
         {results.results_catalogue && (
           <div style={{ marginTop: 32 }}>
             <h4 style={{ fontSize: 16, fontWeight: "bold", marginBottom: 12 }}>
-              Comparaison avec unités classiques
+            {t("simulateur.comparaison_unites")}
             </h4>
             <table style={{ width: "100%", borderCollapse: "collapse", backgroundColor: "#fefefe" }}>
               <thead style={{ backgroundColor: "#ebf8ff" }}>
                 <tr>
-                  <th style={cellStyle}>Unité</th>
-                  <th style={cellStyle}>Moyenne</th>
-                  <th style={cellStyle}>Écart-type</th>
-                  <th style={cellStyle}>Force initiale</th>
-                  <th style={cellStyle}>Dégâts relatifs</th>
+                        <th style={cellStyle}>{t("simulateur.unit")}</th>
+                        <th style={cellStyle}>{t("simulateur.moyenne")}</th>
+                        <th style={cellStyle}>{t("simulateur.ecart_type")}</th>
+                        <th style={cellStyle}>{t("simulateur.force_initiale")}</th>
+                        <th style={cellStyle}>{t("simulateur.degats_relatifs")}</th>
                 </tr>
               </thead>
               <tbody>
                 {Object.entries(results.results_catalogue).map(([unitName, stats]) => (
                   <tr key={unitName}>
-                    <td style={cellStyle}>{unitName} {stats.unit ? `(en ${stats.unit})` : ""}</td>
+                    <td style={cellStyle}>{unitName} {stats.unit ? `(${t("simulateur.en")} ${stats.unit === "PV"
+                                    ? t("simulateur.defenseur.PV")
+                                    : t("simulateur.figs")})` : ""}
+                            </td>
                     <td style={cellStyle}>{stats.mean.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.std.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.initial_force}</td>

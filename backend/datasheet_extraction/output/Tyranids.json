@@ -492,7 +492,7 @@
       ]
     }
   },
-  "Termagant w/ Shardlauncher": {
+  "Termagant": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -507,14 +507,7 @@
             "D": "1",
             "Keywords": "Blast, Heavy"
           }
-        }
-      ]
-    }
-  },
-  "Termagant w/ Spike rifle": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Spike rifle",
           "characteristics": {
@@ -526,14 +519,7 @@
             "D": "1",
             "Keywords": "Heavy"
           }
-        }
-      ]
-    }
-  },
-  "Termagant w/ Strangleweb": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Strangleweb",
           "characteristics": {
@@ -1719,7 +1705,7 @@
       ]
     }
   },
-  "Hive Guard w/ shockcannon": {
+  "Hive Guard": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -1747,27 +1733,7 @@
             "D": "3",
             "Keywords": "Anti-Vehicle 2+"
           }
-        }
-      ]
-    }
-  },
-  "Hive Guard w/ impaler cannon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Hive Guard",
-          "characteristics": {
-            "M": "6\"",
-            "T": "7",
-            "SV": "3+",
-            "W": "4",
-            "LD": "8+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Impaler cannon",
           "characteristics": {
@@ -2546,6 +2512,17 @@
     "profiles": {
       "Unit": [
         {
+          "name": "Raveners",
+          "characteristics": {
+            "M": "10\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "3",
+            "LD": "8+",
+            "OC": "1"
+          }
+        },
+        {
           "name": "Ravener",
           "characteristics": {
             "M": "10\"",
@@ -2554,6 +2531,34 @@
             "W": "3",
             "LD": "8+",
             "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Ravener claws and talons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Venom bolt",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+3",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Assault, Ignores Cover, Torrent"
           }
         }
       ]
@@ -2606,25 +2611,6 @@
     }
   },
   "Sky-slasher swarm": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Claws and teeth",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "6",
-            "WS": "5+",
-            "S": "2",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Sustained Hits 1"
-          }
-        }
-      ]
-    }
-  },
-  "Sky-slasher swarm w/ spinemaws": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -2976,38 +2962,6 @@
             "AP": "-2",
             "D": "2",
             "Keywords": "Anti-Monster 5+, Anti-Vehicle 5+, Twin-linked"
-          }
-        }
-      ]
-    }
-  },
-  "Ravener w/ Venom bolt": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Ravener",
-          "characteristics": {
-            "M": "10\"",
-            "T": "5",
-            "SV": "4+",
-            "W": "3",
-            "LD": "8+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Venom bolt",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "D6+3",
-            "BS": "N/A",
-            "S": "6",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Assault, Ignores Cover, Torrent"
           }
         }
       ]

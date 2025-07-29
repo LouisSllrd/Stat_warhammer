@@ -973,7 +973,7 @@
       ]
     }
   },
-  "Wolf Guard w/ boltgun": {
+  "Wolf Guard": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -988,102 +988,12 @@
             "OC": "1"
           }
         }
-      ]
-    }
-  },
-  "Wolf Guard w/ combi-weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Wolf Guard",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "5+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Wolf Guard w/ plasma pistol": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Wolf Guard",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "5+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Wolf Guard w/ storm bolter": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Wolf Guard",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "5+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Wolf Guard w/ storm shield": {
-    "cost": {},
-    "profiles": {
+      ],
       "Abilities": [
         {
           "name": "Storm Shield",
           "characteristics": {
             "Description": "The bearer has a 4+ invulnerable save."
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Wolf Guard",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "5+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Wolf Guard w/ bolt pistol": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Wolf Guard",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "5+",
-            "OC": "1"
           }
         }
       ]
@@ -1295,6 +1205,18 @@
     "profiles": {
       "Melee Weapons": [
         {
+          "name": "Wulfen Weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
           "name": "Thunder Hammer",
           "characteristics": {
             "Range": "Melee",
@@ -1321,6 +1243,18 @@
         }
       ],
       "Melee Weapons": [
+        {
+          "name": "Wulfen Weapons",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
         {
           "name": "Thunder Hammer",
           "characteristics": {
@@ -1448,19 +1382,7 @@
       ]
     }
   },
-  "Thunderwolf w/ plasma pistol": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Thunderwolf w/ boltgun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Thunderwolf w/ storm shield": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Thunderwolf w/ bolt pistol": {
+  "Thunderwolf": {
     "cost": {},
     "profiles": {}
   },
@@ -1519,97 +1441,7 @@
       ]
     }
   },
-  "Skyclaw w/ plasma pistol": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Skyclaws",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Skyclaw w/ flamer": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Skyclaws",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Skyclaw w/ grav-gun": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Skyclaws",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Skyclaw w/ plasma gun": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Skyclaws",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Skyclaw w/ meltagun": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Skyclaws",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Long Fang w/ boltgun": {
+  "Long Fang": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -1624,12 +1456,7 @@
             "OC": "1"
           }
         }
-      ]
-    }
-  },
-  "Long Fang w/ lascannon": {
-    "cost": {},
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "Lascannon",
@@ -1642,27 +1469,7 @@
             "D": "D6+1",
             "Keywords": "Heavy"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Long Fangs",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Long Fang w/ heavy bolter": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Heavy bolter",
           "characteristics": {
@@ -1674,27 +1481,7 @@
             "D": "2",
             "Keywords": "Heavy, Sustained Hits 1"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Long Fangs",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Long Fang w/ grav-cannon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Grav-cannon",
           "characteristics": {
@@ -1706,27 +1493,7 @@
             "D": "3",
             "Keywords": "Anti-VEHICLE 2+, Heavy"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Long Fangs",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Long Fang w/ missile launcher": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Missile launcher - frag",
           "characteristics": {
@@ -1750,27 +1517,7 @@
             "D": "D6",
             "Keywords": "Heavy"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Long Fangs",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Long Fang w/ plasma cannon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma cannon - standard",
           "characteristics": {
@@ -1794,27 +1541,7 @@
             "D": "2",
             "Keywords": "Blast, Hazardous, Heavy"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Long Fangs",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Long Fang w/ multi-melta": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Multi-melta",
           "characteristics": {
@@ -1826,27 +1553,7 @@
             "D": "D6",
             "Keywords": "Heavy, Melta 2"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Long Fangs",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Long Fang w/ heavy flamer": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Heavy flamer",
           "characteristics": {
@@ -1857,19 +1564,6 @@
             "AP": "-1",
             "D": "1",
             "Keywords": "Heavy, Ignores Cover, Torrent"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Long Fangs",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
           }
         }
       ]
@@ -2091,7 +1785,7 @@
       ]
     }
   },
-  "Wolf Guard Pack Leader with Jump Pack [Legends]": {
+  "Wolf Guard Pack Leader": {
     "cost": {
       "pts": "35"
     },
@@ -2435,7 +2129,7 @@
       ]
     }
   },
-  "Wolf Scout w/ boltgun": {
+  "Wolf Scout": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -2450,12 +2144,7 @@
             "OC": "1"
           }
         }
-      ]
-    }
-  },
-  "Wolf Scout w/ shotgun": {
-    "cost": {},
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "Astartes shotgun",
@@ -2470,24 +2159,6 @@
           }
         }
       ],
-      "Unit": [
-        {
-          "name": "Wolf Scouts",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Wolf Scout w/ combat knife": {
-    "cost": {},
-    "profiles": {
       "Melee Weapons": [
         {
           "name": "Combat knife",
@@ -2499,73 +2170,6 @@
             "AP": "-1",
             "D": "1",
             "Keywords": "-"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Wolf Scouts",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Wolf Scout w/ special weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Wolf Scouts",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Wolf Scout w/ power weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Wolf Scouts",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Wolf Scout w/ plasma pistol": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Wolf Scouts",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
           }
         }
       ]

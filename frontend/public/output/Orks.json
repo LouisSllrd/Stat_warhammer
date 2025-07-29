@@ -91,7 +91,7 @@
       ]
     }
   },
-  "Beast Snagga Boy w/ Thump gun": {
+  "Beast Snagga Boy": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -122,24 +122,6 @@
           }
         }
       ],
-      "Unit": [
-        {
-          "name": "Beast Snagga Boy",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Beast Snagga Boy": {
-    "cost": {},
-    "profiles": {
       "Unit": [
         {
           "name": "Beast Snagga Boy",
@@ -373,9 +355,13 @@
       ]
     }
   },
-  "Big Mek with Kustom Force Field [Legends]": {
+  "Big Mek": {
     "cost": {
-      "pts": "55"
+      "pts": "70",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
     },
     "profiles": {
       "Unit": [
@@ -386,6 +372,28 @@
             "T": "5",
             "SV": "4+",
             "W": "4",
+            "LD": "7+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Big Mek with Shokk Attack Gun",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "5",
+            "LD": "7+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Big Mek",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "3+",
+            "W": "6",
             "LD": "7+",
             "OC": "1"
           }
@@ -415,38 +423,6 @@
           "characteristics": {
             "Description": "Once per battle, the bearer can overcharge its kustom force field one additional time.\nDesigner’s Note: Place a Grot Helper token next to the bearer, removing it once this ability has been used."
           }
-        }
-      ]
-    }
-  },
-  "Big Mek with Shokk Attack Gun": {
-    "cost": {
-      "pts": "85",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Big Mek with Shokk Attack Gun",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "4+",
-            "W": "5",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "More Dakka",
-          "characteristics": {
-            "Description": "While this model is leading a unit, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1."
-          }
         },
         {
           "name": "Deranged Snotling Assault",
@@ -455,15 +431,43 @@
           }
         },
         {
-          "name": "Leader",
-          "characteristics": {
-            "Description": "This model can be attached to the following units:\n- BOYZ\n- LOOTAZ\n- MEK GUNZ\n- NOBZ"
-          }
-        },
-        {
           "name": "Grot Assistant",
           "characteristics": {
             "Description": "Once per battle, after rolling to determine how many attacks the bearer’s shokk attack gun makes, you can re-roll that dice.\n\n**Designer’s Note:** *Place a Grot Assistant token next to the bearer, removing it once this ability has been used.*"
+          }
+        },
+        {
+          "name": "Shokk-boosta",
+          "characteristics": {
+            "Description": "You can re-roll Advance rolls made for this model's unit. In addition, each time this model's unit makes a Normal, Advance or Fall Back move, models in that unit can move through models and terrain features. When doing so, they can move within Engagement Range of such models but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Drilla",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-3",
+            "D": "3",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Traktor blasta",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "5+",
+            "S": "10",
+            "AP": "-2",
+            "D": "D6+1",
+            "Keywords": "Anti-Fly 3+, Devastating Wounds"
           }
         }
       ]
@@ -719,61 +723,7 @@
       ]
     }
   },
-  "Boy w/ Slugga and choppa": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Boy",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Boy w/ Shoota and close combat weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Boy",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Boy w/ Big shoota and close combat weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Boy",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Boy w/ Rokkit launcha and close combat weapon": {
+  "Boy": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -794,6 +744,30 @@
   "Boss Nob": {
     "cost": {},
     "profiles": {
+      "Unit": [
+        {
+          "name": "Boss Nob",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "5+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "2"
+          }
+        },
+        {
+          "name": "Tankbusta",
+          "characteristics": {
+            "M": "6\"",
+            "T": "5",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
       "Ranged Weapons": [
         {
           "name": "Rokkit pistol",
@@ -1031,10 +1005,6 @@
     }
   },
   "Deffkopta": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Deffkopta w/ Kustom mega-blasta": {
     "cost": {},
     "profiles": {}
   },
@@ -1412,7 +1382,7 @@
       ]
     }
   },
-  "Killa Kan w/ Kan shoota": {
+  "Killa Kan": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -1431,19 +1401,7 @@
       ]
     }
   },
-  "Killa Kan w/ Grotzooka": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Killa Kan w/ Rokkit launcha": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Killa Kan w/ Skorcha": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Kommandos w/ Slugga and choppa": {
+  "Kommandos": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -1458,30 +1416,7 @@
             "OC": "1"
           }
         }
-      ]
-    }
-  },
-  "Kommandos w/ Kustom shoota": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kommandos",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Kommandos w/ Breacha ram": {
-    "cost": {},
-    "profiles": {
+      ],
       "Melee Weapons": [
         {
           "name": "Breacha ram",
@@ -1493,55 +1428,6 @@
             "AP": "-2",
             "D": "2",
             "Keywords": "-"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Kommandos",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Kommandos w/ Burna": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kommandos",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Kommandos w/ Rokkit launcha": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kommandos",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "5+",
-            "W": "1",
-            "LD": "7+",
-            "OC": "1"
           }
         }
       ]
@@ -1659,27 +1545,7 @@
       ]
     }
   },
-  "Meganob w/ Kustom shoota and power klaw": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Meganob w/ Kombi-weapon and power klaw": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Meganob w/ Kombi-weapon and killsaw": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Meganob w/ Kustom shoota and killsaw": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Meganob w/ Killsaw and power klaw": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Meganob w/ Twin killsaw": {
+  "Meganob": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -1836,7 +1702,7 @@
       ]
     }
   },
-  "Mek Gun w/ Smasha gun": {
+  "Mek Gun": {
     "cost": {
       "pts": "50"
     },
@@ -1853,16 +1719,7 @@
             "D": "3",
             "Keywords": "Blast"
           }
-        }
-      ]
-    }
-  },
-  "Mek Gun w/ Bubblechukka": {
-    "cost": {
-      "pts": "50"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "1-2 Bubblechukka - big bubble",
           "characteristics": {
@@ -1898,16 +1755,7 @@
             "D": "D6+3",
             "Keywords": "Blast, Bubblechukka"
           }
-        }
-      ]
-    }
-  },
-  "Mek Gun w/ Kustom mega-kannon": {
-    "cost": {
-      "pts": "50"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Kustom mega-kannon",
           "characteristics": {
@@ -1919,16 +1767,7 @@
             "D": "D6",
             "Keywords": "Blast, Hazardous"
           }
-        }
-      ]
-    }
-  },
-  "Mek Gun w/ Traktor kannon": {
-    "cost": {
-      "pts": "50"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Traktor kannon",
           "characteristics": {
@@ -2096,7 +1935,7 @@
       ]
     }
   },
-  "Nob with Waaagh! Banner [Legends]": {
+  "Nob": {
     "cost": {
       "pts": "70"
     },
@@ -2149,18 +1988,6 @@
         }
       ]
     }
-  },
-  "Nob w/ Slugga and big choppa": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Nob w/ Slugga and power klaw": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Nob w/ Kombi-weapon": {
-    "cost": {},
-    "profiles": {}
   },
   "Painboss": {
     "cost": {
@@ -2508,43 +2335,7 @@
       ]
     }
   },
-  "Tankbusta w/ Rokkit launcha": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Tankbusta",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "4+",
-            "W": "2",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Tankbusta w/ Two rokkit launchas": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Tankbusta",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "4+",
-            "W": "2",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Tankbusta w/ Pulsa rokkit": {
+  "Tankbusta": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -2611,42 +2402,6 @@
     }
   },
   "Warbiker": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Warbiker",
-          "characteristics": {
-            "M": "12\"",
-            "T": "6",
-            "SV": "4+",
-            "W": "3",
-            "LD": "7+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Warbiker w/ Slugga": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Warbiker",
-          "characteristics": {
-            "M": "12\"",
-            "T": "6",
-            "SV": "4+",
-            "W": "3",
-            "LD": "7+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Warbiker w/ Choppa": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -3138,27 +2893,7 @@
       ]
     }
   },
-  "Grot Tank w/ Grot tank shoota": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grot Tank w/ Grotzooka": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grot Tank w/ Kustom mega-blasta": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grot Tank w/ Rokkit launcha": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grot Tank w/ Skorcha": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grot Tank w/ additional weapon": {
+  "Grot Tank": {
     "cost": {},
     "profiles": {}
   },
@@ -3885,31 +3620,19 @@
     },
     "profiles": {}
   },
-  "Wartrakks w/ Twin big shoota": {
+  "Wartrakks": {
     "cost": {
       "pts": "50"
     },
     "profiles": {}
   },
-  "Wartrakks w/ Rack of rokkits": {
-    "cost": {
-      "pts": "50"
-    },
-    "profiles": {}
-  },
-  "Warbuggies w/ Twin big shoota": {
+  "Warbuggies": {
     "cost": {
       "pts": "40"
     },
     "profiles": {}
   },
-  "Warbuggies w/ Rack of rokkits": {
-    "cost": {
-      "pts": "40"
-    },
-    "profiles": {}
-  },
-  "Big Gunz w/ Kannon": {
+  "Big Gunz": {
     "cost": {
       "pts": "20"
     },
@@ -3938,16 +3661,7 @@
             "D": "D6",
             "Keywords": "Heavy"
           }
-        }
-      ]
-    }
-  },
-  "Big Gunz w/ Lobba": {
-    "cost": {
-      "pts": "20"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Lobba",
           "characteristics": {
@@ -3959,16 +3673,7 @@
             "D": "1",
             "Keywords": "Blast, Heavy, Indirect Fire"
           }
-        }
-      ]
-    }
-  },
-  "Big Gunz w/ Zzap gun": {
-    "cost": {
-      "pts": "20"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Zzap gun",
           "characteristics": {
@@ -3984,7 +3689,7 @@
       ]
     }
   },
-  "Deffkoptas with Big Shootas": {
+  "Deffkoptas": {
     "cost": {},
     "profiles": {}
   },
@@ -4528,78 +4233,6 @@
       ]
     }
   },
-  "Big Mek": {
-    "cost": {
-      "pts": "70",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Big Mek",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "3+",
-            "W": "6",
-            "LD": "7+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "More Dakka",
-          "characteristics": {
-            "Description": "While this model is leading a unit, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1."
-          }
-        },
-        {
-          "name": "Shokk-boosta",
-          "characteristics": {
-            "Description": "You can re-roll Advance rolls made for this model's unit. In addition, each time this model's unit makes a Normal, Advance or Fall Back move, models in that unit can move through models and terrain features. When doing so, they can move within Engagement Range of such models but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed."
-          }
-        },
-        {
-          "name": "Leader",
-          "characteristics": {
-            "Description": "This model can be attached to the following units:\n- BOYZ\n- LOOTAS\n- MEK GUNZ\n- NOBZ"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Drilla",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "3+",
-            "S": "12",
-            "AP": "-3",
-            "D": "3",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Traktor blasta",
-          "characteristics": {
-            "Range": "36\"",
-            "A": "1",
-            "BS": "5+",
-            "S": "10",
-            "AP": "-2",
-            "D": "D6+1",
-            "Keywords": "Anti-Fly 3+, Devastating Wounds"
-          }
-        }
-      ]
-    }
-  },
   "Burna Boy": {
     "cost": {},
     "profiles": {
@@ -4836,10 +4469,6 @@
   },
   "Breaka Boy": {
     "cost": {},
-    "profiles": {}
-  },
-  "Breaka Boy w/ Tankhammer": {
-    "cost": {},
     "profiles": {
       "Melee Weapons": [
         {
@@ -4853,14 +4482,7 @@
             "D": "3",
             "Keywords": "Anti-Monster 4+, Anti-Vehicle 4+, Devastating Wounds, Hazardous"
           }
-        }
-      ]
-    }
-  },
-  "Breaka Boy w/ Knucklebustas": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Knucklebustas",
           "characteristics": {

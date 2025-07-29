@@ -100,7 +100,7 @@
       ]
     }
   },
-  "Cultist w/ autopistol and brutal assault weapon": {
+  "Cultist": {
     "cost": {
       "pts": "0"
     },
@@ -116,6 +116,54 @@
             "AP": "0",
             "D": "1",
             "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Flamer",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "➤ Cultist grenade launcher - frag",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Blast"
+          }
+        },
+        {
+          "name": "➤ Cultist grenade launcher - krak",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "9",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Heavy stubber",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "5+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Heavy, Rapid Fire 3"
           }
         }
       ]
@@ -370,7 +418,7 @@
       ]
     }
   },
-  "Guardsman w/ lasgun": {
+  "Guardsman": {
     "cost": {
       "pts": "0"
     },
@@ -387,16 +435,7 @@
             "D": "1",
             "Keywords": "Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ flamer": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Flamer",
           "characteristics": {
@@ -408,16 +447,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ plasma gun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma gun - standard",
           "characteristics": {
@@ -441,16 +471,7 @@
             "D": "2",
             "Keywords": "Hazardous, Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ meltagun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Meltagun",
           "characteristics": {
@@ -462,16 +483,7 @@
             "D": "D6",
             "Keywords": "Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ Cultist sniper rifle": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Cultist sniper rifle",
           "characteristics": {
@@ -483,16 +495,7 @@
             "D": "2",
             "Keywords": "Heavy, Precision"
           }
-        }
-      ]
-    }
-  },
-  "Guardsman w/ Cultist grenade launcher": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Cultist grenade launcher - frag",
           "characteristics": {
@@ -596,6 +599,18 @@
             "D": "1",
             "Keywords": "Pistol"
           }
+        },
+        {
+          "name": "Corrupted stave",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Psychic"
+          }
         }
       ],
       "Melee Weapons": [
@@ -610,16 +625,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Beastman w/ great weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Great weapon",
           "characteristics": {
@@ -631,30 +637,7 @@
             "D": "2",
             "Keywords": "-"
           }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Autopistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        }
-      ]
-    }
-  },
-  "Beastman w/ corrupted stave": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Corrupted stave",
           "characteristics": {
@@ -665,32 +648,6 @@
             "AP": "-1",
             "D": "D3",
             "Keywords": "Devastating Wounds, Psychic"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Corrupted stave",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "D3",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Devastating Wounds, Psychic"
-          }
-        },
-        {
-          "name": "Autopistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
           }
         }
       ]
@@ -849,87 +806,6 @@
             "AP": "0",
             "D": "1",
             "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Cultist w/ autogun and close combat weapon": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Cultist w/ flamer": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Flamer",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "D6",
-            "BS": "N/A",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Ignores Cover, Torrent"
-          }
-        }
-      ]
-    }
-  },
-  "Cultist w/ cultist grenade launcher": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "➤ Cultist grenade launcher - frag",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "D3",
-            "BS": "4+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Blast"
-          }
-        },
-        {
-          "name": "➤ Cultist grenade launcher - krak",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "9",
-            "AP": "-2",
-            "D": "D3",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Cultist w/ heavy stubber": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Heavy stubber",
-          "characteristics": {
-            "Range": "36\"",
-            "A": "4",
-            "BS": "5+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Heavy, Rapid Fire 3"
           }
         }
       ]
@@ -1250,7 +1126,7 @@
       ]
     }
   },
-  "Brute w/ Ogryn weapon": {
+  "Brute": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -1265,14 +1141,7 @@
             "D": "2",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Brute w/ power drill": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Ogryn power drill",
           "characteristics": {
@@ -1431,7 +1300,7 @@
       ]
     }
   },
-  "Nightmare Hulk w/ belly flamer": {
+  "Nightmare Hulk": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -1459,25 +1328,6 @@
             "AP": "0",
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
-          }
-        }
-      ]
-    }
-  },
-  "Nightmare Hulk": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Hideous mutations",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "4",
-            "WS": "4+",
-            "S": "6",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "-"
           }
         }
       ],

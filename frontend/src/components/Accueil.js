@@ -1,182 +1,163 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Accueil = () => {
+  const { t } = useTranslation();
+
   return (
     <div style={{ maxWidth: 900, margin: "0 auto", padding: 20, lineHeight: 1.7 }}>
-      <h1 style={{ fontSize: 28, marginBottom: 20 }}> Bienvenue sur la plateforme StatWarhammer40k pour ordinateur !</h1>
+      <h1 style={{ fontSize: 28, marginBottom: 20 }}>{t("title_welcome")}</h1>
 
-      <p>
-        Cette plateforme vous permet de réaliser des simulations de dégâts pour vos unités Warhammer 40k contre divers cibles. 
-        Que vous soyez en train de construire votre liste d'armée ou en pleine partie, vous pouvez rapidement estimer les dégâts potentiels que peut infliger une unité contre une cible spécifique. Cette plateforme possède un affichage adaptatif suivant si elle est ouverte sur oridnateur ou sur téléphone, pour simplifier son usage dans tous les cas d'utilisation. 
-      </p>
+      <p>{t("accueil.intro")}</p>
 
-      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Simulations génériques </h2>
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}>
+        {t("accueil.section_generic")}
+      </h2>
       <ul>
+        <li><strong>{t("accueil.generic.mono_title")}</strong> {t("accueil.generic.mono_text")}</li>
+        <li><strong>{t("accueil.generic.multi_title")}</strong> {t("accueil.generic.multi_text")}</li>
+        <li><strong>{t("accueil.generic.comparateur_title")}</strong> {t("accueil.generic.comparateur_text")}</li>
         <li>
-          <strong>Unité Mono Profil :</strong> Simulez une attaque d'un profil d'attaque contre un profil de défense.
-        </li>
-        <li>
-          <strong>Unité Multi Profils :</strong> Simulez une attaque d'une unité contenant plusieurs profils d'attaques différents(ex : leader et son unité garde du corps, une unité avec des armes spéciales, etc.).
-        </li>
-        <li>
-          <strong>Comparateur :</strong> Comparez deux profils d'attaques sur une sélection variée de profils cibles afin de choisir le profil d'attaque qui correspond le mieux au rôle que vous souhaitez donner à votre unité (anti infanterie, anti char, etc.).
-        </li>
-        <li>
-          <strong>Profils Pré-définis :</strong> Simulez une attaque d'un profil d'attaque contre un profil de défense provenants d'une base de données de profils pré-définis pour Warhammer 40k 10e édition. Les données utilisées pour les profils d'unités pré-définis dans cette page sont issues du projet open source BSData/wh40k-10e —&nbsp;
-        <a href="https://github.com/BSData/wh40k-10e" target="_blank" rel="noopener noreferrer">
-          https://github.com/BSData/wh40k-10e
-        </a>
-        , sous licence MIT.
+          <strong>{t("accueil.generic.predef_title")}</strong> {t("accueil.generic.predef_text")} <a href="https://github.com/BSData/wh40k-10e" target="_blank" rel="noopener noreferrer">https://github.com/BSData/wh40k-10e</a>, {t("accueil.generic.license_text")}
         </li>
       </ul>
 
-      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Simulations personnalisées (connexion requise)</h2>
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}>
+        {t("accueil.section_custom")}
+      </h2>
       <ul>
-        <li>
-          <strong>Mes Listes :</strong> Enregistrez et gérez vos listes personnelles de profils d'attaque pour les retrouver rapidement lors d'une simulation de dégâts pendant vos parties. 
-        </li>
-        <li>
-          <strong>Unités Adverses :</strong> Préparez des listes de profils ennemis courants afin de gagner du temps pendant la simulation de dégât lors de la partie.
-        </li>
-        <li>
-          <strong>Calcul En Jeu :</strong> Simulez rapidement une attaque d'une unité d'une de vos liste contre une unité défensive prédéfinie. 
-        </li>
+        <li><strong>{t("accueil.custom.listes_title")}</strong> {t("accueil.custom.listes_text")}</li>
+        <li><strong>{t("accueil.custom.adverses_title")}</strong> {t("accueil.custom.adverses_text")}</li>
+        <li><strong>{t("accueil.custom.calcul_title")}</strong> {t("accueil.custom.calcul_text")}</li>
       </ul>
 
-      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Connexion</h2>
-      <p>
-La connexion est nécessaire pour créer et gérer vos profils personnels. Elle permet de générer un identifiant et un mot de passe associés à une base de données que vous créez vous-même. Votre adresse e-mail n'est communiquée à personne. Le compte sert uniquement à créer un identifiant et un mot de passe pour gérer l'accès aux données, assurant ainsi que chacun ait accès à ses propres fiches d'unités.
-      </p>
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}>
+        {t("accueil.section_connexion")}
+      </h2>
+      <p>{t("accueil.connexion")}</p>
 
-      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Remarques</h2>
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}>
+        {t("accueil.section_remarques")}
+      </h2>
       <ul>
-        <li>
-          Les paramètres "Attaques" et "Dégâts" oeuvent être définis avec des valeurs aléatoires comprenant des D6 ou D3 dans le profil. Il suffit d'écrire un texte de la forme "XD6+Y" ou "XD3+Y".
-        </li>
-        <li>
-          Le calcul en arrière-plan est une simulation de 1000 séquences d'attaques. Pour chaque séquence, on simule une suite de lancers de dés comprenant les jets pour toucher, blesser, sauvegarder, et éventuels insensibles à la douleur. On obtiens ainsi une liste de 1000 résultats. On peut ensuite calculer la moyenne et l'écart-type des valeurs de cet échantillon. 
-        </li>
+        <li>{t("accueil.remarque.formats")}</li>
+        <li>{t("accueil.remarque.calcul")}</li>
       </ul>
 
-
-      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Faire un don</h2>
-      <p >
-      Ce site est entièrement gratuit, mais son hébergement a un coût pour son développeur.
-              Ce projet ne peut vivre sans des dons de la communauté, et sera forcé de fermer sans un soutien régulier.
-              Si tu veux soutenir le projet, tu peux faire un don !
-      </p>
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}>
+        {t("accueil.section_don")}
+      </h2>
+      <p>{t("accueil.don_text")}</p>
 
       <a
-                href="https://ko-fi.com/statwargame40k" // ← remplace par ton vrai lien
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  marginTop: 10,
-                  padding: "10px 20px",
-                  backgroundColor: "#89B5FF",
-                  color: "white",
-                  borderRadius: 5,
-                  textDecoration: "none",
-                }}
-              >
-                Faire un don 
-              </a>
+        href="https://ko-fi.com/statwargame40k"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: "inline-block",
+          marginTop: 10,
+          padding: "10px 20px",
+          backgroundColor: "#89B5FF",
+          color: "white",
+          borderRadius: 5,
+          textDecoration: "none",
+        }}
+      >
+        {t("accueil.don_button")}
+      </a>
 
+      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}>
+        {t("accueil.section_contact")}
+      </h2>
+      <p>{t("accueil.contact_text")}</p>
 
-      <h2 style={{ marginTop: 30, fontSize: 22, color: "#FFB14F" }}> Contacter le développeur</h2>
-      <p >
-      N'hésitez pas à m'envoyer un message si vous avez des remarques, questions, ou erreurs à signaler lors de votre utilisation de la plateforme ! Vous pouvez utiliser la boîte ci-dessous pour me contacter directement.
-      </p>
+      {/* Formulaire inchangé */}
+      <form
+        action="https://formspree.io/f/xkgznqao"
+        method="POST"
+        style={{
+          maxWidth: "500px",
+          margin: "2rem auto",
+          padding: "2rem",
+          backgroundColor: "#f9f9f9",
+          borderRadius: "12px",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+        }}
+      >
+        <h2 style={{ textAlign: "center", marginBottom: "1rem", color: "#333" }}>
+          Contact
+        </h2>
 
+        <label style={{ display: "flex", flexDirection: "column", fontWeight: "bold" }}>
+          {t("accueil.Name")} :
+          <input
+            type="text"
+            name="name"
+            required
+            style={{
+              padding: "10px",
+              borderRadius: "8px",
+              border: "1px solid #ccc",
+              marginTop: "0.5rem",
+            }}
+          />
+        </label>
 
-              <form
-  action="https://formspree.io/f/xkgznqao"
-  method="POST"
-  style={{
-    maxWidth: "500px",
-    margin: "2rem auto",
-    padding: "2rem",
-    backgroundColor: "#f9f9f9",
-    borderRadius: "12px",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-    display: "flex",
-    flexDirection: "column",
-    gap: "1rem",
-  }}
->
-  <h2 style={{ textAlign: "center", marginBottom: "1rem", color: "#333" }}>
-    Contact
-  </h2>
+        <label style={{ display: "flex", flexDirection: "column", fontWeight: "bold" }}>
+          Email :
+          <input
+            type="email"
+            name="email"
+            required
+            style={{
+              padding: "10px",
+              borderRadius: "8px",
+              border: "1px solid #ccc",
+              marginTop: "0.5rem",
+            }}
+          />
+        </label>
 
-  <label style={{ display: "flex", flexDirection: "column", fontWeight: "bold" }}>
-    Nom :
-    <input
-      type="text"
-      name="name"
-      required
-      style={{
-        padding: "10px",
-        borderRadius: "8px",
-        border: "1px solid #ccc",
-        marginTop: "0.5rem",
-      }}
-    />
-  </label>
+        <label style={{ display: "flex", flexDirection: "column", fontWeight: "bold" }}>
+          Message :
+          <textarea
+            name="message"
+            required
+            rows={5}
+            style={{
+              padding: "10px",
+              borderRadius: "8px",
+              border: "1px solid #ccc",
+              marginTop: "0.5rem",
+              resize: "vertical",
+            }}
+          />
+        </label>
 
-  <label style={{ display: "flex", flexDirection: "column", fontWeight: "bold" }}>
-    Email :
-    <input
-      type="email"
-      name="email"
-      required
-      style={{
-        padding: "10px",
-        borderRadius: "8px",
-        border: "1px solid #ccc",
-        marginTop: "0.5rem",
-      }}
-    />
-  </label>
-
-  <label style={{ display: "flex", flexDirection: "column", fontWeight: "bold" }}>
-    Message :
-    <textarea
-      name="message"
-      required
-      rows={5}
-      style={{
-        padding: "10px",
-        borderRadius: "8px",
-        border: "1px solid #ccc",
-        marginTop: "0.5rem",
-        resize: "vertical",
-      }}
-    />
-  </label>
-
-  <button
-    type="submit"
-    style={{
-      backgroundColor: "#2b6cb0",
-      color: "#fff",
-      padding: "12px",
-      border: "none",
-      borderRadius: "8px",
-      cursor: "pointer",
-      fontWeight: "bold",
-      transition: "background-color 0.3s",
-    }}
-    onMouseOver={(e) => (e.target.style.backgroundColor = "#2c5282")}
-    onMouseOut={(e) => (e.target.style.backgroundColor = "#2b6cb0")}
-  >
-    Envoyer
-  </button>
-</form>
-
-
+        <button
+          type="submit"
+          style={{
+            backgroundColor: "#2b6cb0",
+            color: "#fff",
+            padding: "12px",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+            fontWeight: "bold",
+            transition: "background-color 0.3s",
+          }}
+          onMouseOver={(e) => (e.target.style.backgroundColor = "#2c5282")}
+          onMouseOut={(e) => (e.target.style.backgroundColor = "#2b6cb0")}
+        >
+          {t("accueil.Send")}
+        </button>
+      </form>
     </div>
   );
 };
 
 export default Accueil;
+

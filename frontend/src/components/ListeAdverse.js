@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import DefenseProfileCard from "./DefenseProfileCard";
 import {
   collection,
@@ -17,6 +18,7 @@ import { where } from "firebase/firestore";
 
 
 export default function UnitesAdversesPage() {
+  const { t } = useTranslation();
   const [unites, setUnites] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const [unitName, setUnitName] = useState("");
@@ -128,7 +130,7 @@ const handleAddPredefinedUnits = async () => {
   }
 
   if (invalidUnits.length > 0) {
-    alert(`⚠️ Les unités suivantes ne possèdent pas de profil défensif valide et n'ont pas été ajoutées :\n\n- ${invalidUnits.join("\n- ")}`);
+    alert(`${t("unites_adv.alerts.invalid_profile")} \n\n- ${invalidUnits.join("\n- ")}`);
   }
 
   setSelectedDefenseUnite(null);
@@ -271,7 +273,7 @@ useEffect(() => {
   // Créer ou modifier une unité
   const handleSaveUnit = async () => {
     if (!unitName.trim()) {
-      alert("Merci de saisir un nom d'unité.");
+      alert(t("unites_adv.alerts.missing_name"));
       return;
     }
 
@@ -297,7 +299,7 @@ useEffect(() => {
       setEditUnitId(null);
     } catch (error) {
       console.error("Erreur lors de la sauvegarde :", error);
-      alert("Erreur lors de la sauvegarde.");
+      alert(t("unites_adv.alerts.save_error"));
     }
   };
 
@@ -312,7 +314,7 @@ useEffect(() => {
       {/* Titre centré */}
       <div style={{ textAlign: "center", padding: "32px 0" }}>
         <h1 style={{ fontSize: 32, fontWeight: 700, color: "#2d3748", margin: 0 }}>
-          Unités cibles
+          {t("unites_adv.title")}
         </h1>
       </div>
 
@@ -330,7 +332,7 @@ useEffect(() => {
       marginRight: 20,
     }}
   >
-    ➕ Ajouter une unité manuellement
+    {t("unites_adv.add_manual_unit")}
   </button>
 
   <button
@@ -346,12 +348,12 @@ useEffect(() => {
       width: "20%",
     }}
   >
-    ➕ Ajouter une unité pré-définie
+    {t("unites_adv.add_predefined_unit")}
   </button>
 </div>
 
       {unites.length === 0 ? (
-        <p>Aucune unité adverse pour l'instant.</p>
+        <p>{t("unites_adv.no_units")}</p>
       ) : (
         <table style={{
           width: "95%",
@@ -365,9 +367,9 @@ useEffect(() => {
         }}>
           <thead style={{ backgroundColor: "#FFECE6" }}>
             <tr>
-              <th style={styles.th}>Unités</th>
-              <th style={styles.th}>Profils défensifs</th>
-              <th colSpan={2} style={styles.th}>Actions</th>
+              <th style={styles.th}>{t("unites_adv.table.unit_name")}</th>
+              <th style={styles.th}>{t("unites_adv.table.defense_profiles")}</th>
+              <th colSpan={2} style={styles.th}>{t("unites_adv.table.actions")}</th>
             </tr>
           </thead>
           <tbody>
@@ -378,9 +380,9 @@ useEffect(() => {
                   <ul style={{ paddingLeft: 16, margin: 0 }}>
                     {(unit.profils || []).map((p, i) => (
                       <li key={i} style={{ listStyleType: "none" }}>
-                        Endurance: {p.Toughness}, Save: {p.Save}+, PV: {p.PV}, Nb modèles:{" "}
+                        {t("unites_adv.profile.toughness")}: {p.Toughness}, {t("unites_adv.profile.save")}: {p.Save}+, {t("unites_adv.profile.pv")}: {p.PV}, {t("unites_adv.profile.nb_models")}{": "}
                         {p.Nb_of_models}
-                        {p.Save_invu && p.Save_invu !== "N/A" ? `, Save invu: ${p.Save_invu}+` : ""}
+                        {p.Save_invu && p.Save_invu !== "N/A" ? `, ${t("unites_adv.profile.invu_save")}: ${p.Save_invu}+` : ""}
                       </li>
                     ))}
                   </ul>
@@ -393,7 +395,7 @@ useEffect(() => {
                           border: "none",
                           borderRadius: 4,
                           cursor: "pointer",
-                        }}> ✏️ Modifier</button>
+                        }}> {t("unites_adv.table.edit")}</button>
                   </td>
                 <td style={styles.td}>
                   <button
@@ -407,7 +409,7 @@ useEffect(() => {
                       cursor: "pointer",
                     }}
                   >
-                    🗑️ Supprimer
+                    {t("unites_adv.table.delete")}
                   </button>
                 </td>
               </tr>
@@ -433,10 +435,10 @@ useEffect(() => {
             style={styles.overlay}
           >
             <div style={styles.modal}>
-              <h2>{editUnitId ? "Modifier l'unité adverse" : "Ajouter une unité adverse"}</h2>
+              <h2>{editUnitId ? t("unites_adv.modal.edit_title") : t("unites_adv.modal.create_title")}</h2>
               <input
                 type="text"
-                placeholder="Nom de l'unité"
+                placeholder={t("unites_adv.modal.unit_name_placeholder")}
                 value={unitName}
                 onChange={(e) => setUnitName(e.target.value)}
                 style={styles.input}
@@ -447,19 +449,19 @@ useEffect(() => {
                   key={index}
                   profile={profile}
                   onChange={(newProfile) => handleProfileChange(index, newProfile)}
-                  title={`Profil défensif #${index + 1}`}
+                  title={`${t("unites_adv.table.defense_profiles")} `}
                 />
               ))}
 
               <div style={{ marginTop: 20 }}>
                 <button onClick={handleSaveUnit} style={styles.buttonSecondary}>
-                  {editUnitId ? "✅ Sauvegarder" : "✅ Créer l'unité"}
+                  {editUnitId ? t("unites_adv.modal.update") : t("unites_adv.modal.save")}
                 </button>
                 <button
                   onClick={() => setOpenModal(false)}
                   style={{ ...styles.buttonSecondary, marginLeft: 10 }}
                 >
-                  ❌ Annuler
+                  {t("unites_adv.modal.cancel")}
                 </button>
               </div>
             </div>
@@ -500,7 +502,7 @@ useEffect(() => {
         }}
       >
         <h2 style={{ marginBottom: "20px" }}>
-          Ajouter depuis une armée pré-définie
+          {t("unites_adv.predefined_modal.title")}
         </h2>
 
         <select
@@ -517,7 +519,7 @@ useEffect(() => {
             border: "1px solid #ccc",
           }}
         >
-          <option value="">-- Choisir une armée --</option>
+          <option value="">{t("unites_adv.predefined_modal.select_army")}</option>
           {availableDatasheets.map((file) => (
             <option key={file} value={file}>
               {file.replace(".json", "")}
@@ -525,7 +527,7 @@ useEffect(() => {
           ))}
         </select>
 
-        <h3>Unités disponibles :</h3>
+        <h3>{t("unites_adv.predefined_modal.available_units")}</h3>
         <div
           style={{
             maxHeight: "200px",
@@ -538,7 +540,7 @@ useEffect(() => {
         >
           {unitOptions.length === 0 ? (
             <p style={{ fontStyle: "italic", color: "#777" }}>
-              Aucune unité à afficher
+              {t("unites_adv.predefined_modal.no_units_to_display")}
             </p>
           ) : (
             [...unitOptions]
@@ -573,7 +575,7 @@ useEffect(() => {
               marginRight: "10px",
             }}
           >
-            Ajouter les unités
+            {t("unites_adv.predefined_modal.add_selected_units")}
           </button>
           <button
             onClick={() => {
@@ -591,7 +593,7 @@ useEffect(() => {
               cursor: "pointer",
             }}
           >
-            Annuler
+            {t("unites_adv.predefined_modal.cancel")}
           </button>
         </div>
       </div>

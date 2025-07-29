@@ -935,6 +935,17 @@
             "LD": "6+",
             "OC": "1"
           }
+        },
+        {
+          "name": "Overlord with Translocation Shroud",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "6",
+            "LD": "6+",
+            "OC": "1"
+          }
         }
       ],
       "Abilities": [
@@ -954,6 +965,12 @@
           "name": "Leader",
           "characteristics": {
             "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ LYCHGUARD\n■ NECRON WARRIORS"
+          }
+        },
+        {
+          "name": "Translocation Shroud",
+          "characteristics": {
+            "Description": "Each time this model's unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit. In addition, each time a model in that unit makes a Normal, Advance or Fall Back move, until that move is finished, it can move horizontally through models and terrain features (it cannot finish a move on top of another model or its base)."
           }
         }
       ],
@@ -1285,7 +1302,7 @@
       ]
     }
   },
-  "Warrior w/ gauss flayer": {
+  "Warrior": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -1300,14 +1317,7 @@
             "D": "1",
             "Keywords": "Lethal Hits, Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Warrior w/ gauss reaper": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Gauss reaper",
           "characteristics": {
@@ -2277,27 +2287,7 @@
       ]
     }
   },
-  "Wraith w/ claws and beamer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Wraith w/ claws and particle caster": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Wraith w/ claws": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Wraith w/ coils": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Wraith w/ coils and beamer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Wraith w/ coils and particle caster": {
+  "Wraith": {
     "cost": {},
     "profiles": {}
   },
@@ -2480,7 +2470,7 @@
       ]
     }
   },
-  "Destroyer w/ enmitic exterminator": {
+  "Destroyer": {
     "cost": {
       "pts": "55",
       "Crusade Points": "0",
@@ -2501,20 +2491,7 @@
             "D": "1",
             "Keywords": "Heavy, Rapid Fire 6, Sustained Hits 1"
           }
-        }
-      ]
-    }
-  },
-  "Destroyer w/ gauss destructor": {
-    "cost": {
-      "pts": "55",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Gauss destructor",
           "characteristics": {
@@ -3739,46 +3716,6 @@
             "AP": "0",
             "D": "2",
             "Keywords": "Sustained Hits 2, Twin-linked"
-          }
-        }
-      ]
-    }
-  },
-  "Overlord with Translocation Shroud": {
-    "cost": {
-      "pts": "85"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Overlord with Translocation Shroud",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "6",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Translocation Shroud",
-          "characteristics": {
-            "Description": "Each time this model's unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in that unit. In addition, each time a model in that unit makes a Normal, Advance or Fall Back move, until that move is finished, it can move horizontally through models and terrain features (it cannot finish a move on top of another model or its base)."
-          }
-        },
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "This model has a 4+ invulnerable save."
-          }
-        },
-        {
-          "name": "Leader",
-          "characteristics": {
-            "Description": "This model can be attached to the following units:\n■ IMMORTALS\n■ LYCHGUARD\n■ NECRON WARRIORS"
           }
         }
       ]

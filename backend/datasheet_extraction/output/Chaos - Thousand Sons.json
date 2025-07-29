@@ -1334,7 +1334,7 @@
       ]
     }
   },
-  "Rubric Marine w/ inferno boltgun": {
+  "Rubric Marine": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -1349,28 +1349,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Rubric Marine w/ warpflamer": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Warpflamer",
           "characteristics": {
@@ -1382,42 +1361,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Rubric Marine w/ soulreaper cannon": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Soulreaper cannon",
           "characteristics": {
@@ -1428,6 +1372,20 @@
             "AP": "-2",
             "D": "1",
             "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
           }
         }
       ]
@@ -1508,61 +1466,7 @@
             "D": "1",
             "Keywords": "Rapid Fire 2"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Prosperine khopesh",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "5",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Scarab Occult Terminator w/ heavy warpflamer": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Prosperine khopesh",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "5",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Scarab Occult Terminator w/ soulreaper cannon": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Prosperine khopesh",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "5",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Soulreaper cannon",
           "characteristics": {
@@ -1573,6 +1477,20 @@
             "AP": "-2",
             "D": "1",
             "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Prosperine khopesh",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
           }
         }
       ]
@@ -1710,7 +1628,7 @@
   },
   "Daemon Prince of Tzeentch": {
     "cost": {
-      "pts": "180",
+      "pts": "170",
       "Crusade Points": "0",
       "Crusade: Battle Honours": "0",
       "Crusade: Experience": "0",
@@ -1741,90 +1659,6 @@
           "characteristics": {
             "Description": "While a friendly ^^**Thousand Sons Infantry^^** unit is within 6\" of this model, models in that unit have the Stealth ability."
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Daemon Prince of Tzeentch",
-          "characteristics": {
-            "M": "9\"",
-            "T": "10",
-            "SV": "2+",
-            "W": "10",
-            "LD": "6+",
-            "OC": "3"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Infernal cannon",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "3",
-            "BS": "2+",
-            "S": "5",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "-"
-          }
-        },
-        {
-          "name": "Dark Blessing",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "9",
-            "BS": "2+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Ignores Cover, Psychic, Sustained Hits 1"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "➤ Hellforged weapons - strike",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "6",
-            "WS": "2+",
-            "S": "8",
-            "AP": "-2",
-            "D": "3",
-            "Keywords": "Devastating Wounds, Psychic"
-          }
-        },
-        {
-          "name": "➤ Hellforged weapons - sweep",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "12",
-            "WS": "2+",
-            "S": "6",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Devastating Wounds, Psychic"
-          }
-        }
-      ]
-    }
-  },
-  "Daemon Prince of Tzeentch with wings": {
-    "cost": {
-      "pts": "170",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
-    },
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "This model has a 4+ invulnerable save."
-          }
         },
         {
           "name": "Aetherstride (Psychic)",
@@ -1840,6 +1674,17 @@
         }
       ],
       "Unit": [
+        {
+          "name": "Daemon Prince of Tzeentch",
+          "characteristics": {
+            "M": "9\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        },
         {
           "name": "Daemon Prince of Tzeentch with wings",
           "characteristics": {
@@ -1996,11 +1841,7 @@
       ]
     }
   },
-  "Tzaangor w/ Tzaangor blades": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Tzaangor w/ pistol and chainsword": {
+  "Tzaangor": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -2586,7 +2427,7 @@
       ]
     }
   },
-  "Sekhetar Robot w/ pyreflux meltagun": {
+  "Sekhetar Robot": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -2601,14 +2442,7 @@
             "D": "D6",
             "Keywords": "Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Sekhetar Robot w/ warpflame projector and claw": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Warpflame projector",
           "characteristics": {

@@ -1,0 +1,316 @@
+{
+    "title_welcome": "Welcome to the StatWarhammer40k platform for desktop!",
+  
+    "accueil": {
+      "intro": "This platform allows you to simulate damage for your Warhammer 40k units against various targets. Whether you're building your army list or mid-game, you can quickly estimate the potential damage a unit can deal to a specific target. The platform adapts its layout depending on whether it is opened on a computer or a phone, making it easy to use in any situation.",
+  
+      "section_generic": "Generic Simulations",
+      "generic": {
+        "mono_title": "Single Profile Unit:",
+        "mono_text": "Simulate an attack from one attack profile against one defense profile.",
+        "multi_title": "Multi Profile Unit:",
+        "multi_text": "Simulate an attack from a unit containing multiple different attack profiles (e.g., a leader with bodyguards, a unit with special weapons, etc.).",
+        "comparateur_title": "Comparator:",
+        "comparateur_text": "Compare two attack profiles on a variety of target profiles to find the best profile for the role you want to give your unit (anti-infantry, anti-tank, etc.).",
+        "predef_title": "Predefined Profiles:",
+        "predef_text": "Simulate an attack from an attack profile against a defense profile taken from a predefined database of Warhammer 40k 10th edition unit profiles. The data used for predefined units on this page comes from the open-source project BSData/wh40k-10e —",
+        "license_text": "under MIT license."
+      },
+  
+      "section_custom": "Custom Simulations (login required)",
+      "custom": {
+        "listes_title": "My Lists:",
+        "listes_text": "Save and manage your personal attack profile lists so you can quickly access them during your games.",
+        "adverses_title": "Enemy Units:",
+        "adverses_text": "Prepare lists of common enemy profiles to save time during in-game simulations.",
+        "calcul_title": "In-Game Calculation:",
+        "calcul_text": "Quickly simulate an attack from a unit in your list against a predefined defensive unit."
+      },
+  
+      "section_connexion": "Login",
+      "connexion": "Login is required to create and manage your personal profiles. It generates a username and password linked to a database that you create yourself. Your email address is not shared with anyone. The account only serves to generate login credentials to manage data access, ensuring that each user can access their own unit profiles only.",
+  
+      "section_remarques": "Notes",
+      "remarque": {
+        "formats": "The \"Attacks\" and \"Damage\" fields can include random values using D6 or D3 in the profile. Just write text like \"XD6+Y\" or \"XD3+Y\".",
+        "calcul": "The background calculation is a simulation of 1000 attack sequences. Each sequence simulates a series of dice rolls including hits, wounds, saves, and potential Feel No Pain rolls. This gives a list of 1000 results, from which the average and standard deviation can be calculated."
+      },
+  
+      "section_don": "Donate",
+      "don_text": "This site is completely free to use, but hosting it comes at a cost for the developer. The project cannot continue without community donations and will be forced to shut down without regular support. If you want to support the project, you can make a donation!",
+      "don_button": "Donate",
+  
+      "section_contact": "Contact the Developer",
+      "contact_text": "Feel free to send me a message if you have feedback, questions, or want to report any issues while using the platform! You can use the box below to contact me directly.",
+      "Name": "Name",
+      "Send": "Send"
+    },
+    "app": {
+        "nav": {
+          "accueil": "Home",
+          "simulateur": "Single Profile Unit",
+          "multi": "Multi Profile Unit",
+          "compare": "Comparator",
+          "datasheets": "Predefined Profiles",
+          "mes_listes": "My Lists",
+          "adversaires": "Opponent Units",
+          "jeu": "In-Game Calculation",
+          "connexion": "Login",
+          "deconnexion": "Logout",
+          "connecte_en_tant_que": "Connected: ",
+          "simulations_generiques": "Generic Simulations:",
+          "simulations_perso": "Custom Simulations:",
+          "infos_connexion": "Connection Information:"
+        },
+        "welcome": {
+          "title": "Welcome!",
+          "subtitle": "Thank you for logging into <1>StatWarhammer40k</1>!",
+          "free": "⚠️ This site is completely <1>free</1>, but hosting costs money.",
+          "donation_important": "This project <1>cannot survive without donations</1> from the community and will be forced to shut down without regular support.",
+          "support": "If you'd like to support the project, you can donate!",
+          "donate": "Donate",
+          "continue": "Continue to the site"
+        },
+        "loading": {
+          "user": "Loading user..."
+        }
+      },
+      "simulateur": {
+    "titre": "Single-Profile Simulator",
+    "attacker": "Attacker",
+    "defender": "Defender",
+    "lancer": "🚀 Launch Simulation",
+    "simulation_en_cours": "Simulation in progress...",
+    "resultats": "📊 Results",
+    "unite_mesure": "Unit of measurement",
+    "unit_PV": "Number of wounds lost",
+    "unit_figs": "Number of models killed",
+    "figs": "models",
+    "soit": "or",
+    "de_force_init": "of the initial strength",
+    "moyenne": "Mean",
+    "ecart_type": "Standard deviation",
+    "proba_tuer": "Probability of killing the enemy unit",
+    "distribution": "Damage Distribution",
+    "probabilite_seuil": "Probability of reaching a damage threshold",
+    "comparaison_unites": "Comparison with standard units",
+    "unit": "Unit",
+    "force_initiale": "Initial strength",
+    "degats_relatifs": "Damage relative to initial strength",
+    "en": "in",
+    "afficher_plus": "➕ Display More",
+    "afficher_moins": "➖ Display Less",
+    "de_chance_tuer_ennemi": "probability to kill the ennemy unit",
+
+    "attaquant": {
+      "nb_weapons": "Number of weapons",
+      "attacks": "Attacks",
+      "CT": "WS/BS",
+      "Strength": "Strength",
+      "PA": "Armor Penetration (AP)",
+      "Damage": "Damage",
+      "Sustained_hit": "Sustained Hits",
+      "Lethal_hit": "Lethal Hits",
+      "Deva_wound": "Devastating Wounds",
+      "Blast": "Blast",
+      "Melta": "Melta X",
+      "Modif_hit_att": "Hit modifier",
+      "Modif_wound_att": "Wound modifier",
+      "Re_roll_hit": "Hit re-roll",
+      "Re_roll_wound": "Wound re-roll",
+      "Crit_on_X_to_hit": "Critical on X+ to hit",
+      "Crit_on_X_to_wound": "Critical on X+ to wound"
+    },
+
+    "defenseur": {
+      "Toughness": "Toughness",
+      "Save": "Armor Save",
+      "Save_invu": "Invulnerable Save",
+      "PV": "Wounds per model",
+      "Nb_of_models": "Number of models",
+      "Cover": "Cover",
+      "Fnp": "Feel No Pain (FNP)",
+      "Modif_hit_def": "Hit modifier",
+      "Modif_wound_def": "Wound modifier",
+      "Halve_damage": "Halves damage",
+      "Reduce_damage_1": "Reduces damage by 1"
+    },
+
+    "re_roll": {
+        "Re_roll_1_to_hit": "Reroll 1s to hit",
+        "Re_roll_failed_roll_to_hit": "Reroll failed hits",
+        "Re_roll_non_critical_roll_to_hit": "Reroll non-critical hits (fishing)",
+        "Re_roll_1_to_wound": "Reroll 1s to wound",
+        "Re_roll_failed_roll_to_wound": "Reroll failed wounds",
+        "Re_roll_non_critical_roll_to_wound": "Reroll non-critical wounds (fishing)"
+    }
+  },
+  
+  "multi": {
+  "nb_profils": "Number of attack profiles",
+  "attack_profiles": "Attack profiles",
+  "hide_profile": "Hide Profile",
+  "show_profile": "Show Profile"
+},
+"attack_profile": {
+    "title": "Attack's Profile"
+},
+"compare": {
+  "lancer_comparaison": "🆚 Launch Comparison",
+  "resultats": "Results on standard units",
+  "arme_plus_efficace": "Most effective weapon",
+    "identiques": "same"
+},
+"datasheets": {
+  "alert_unit": "⚠️ The unit ",
+  "alert_no_weapon": "has no valid weapon profile. A default profile will be used.",
+  "generic_attack": "Generic attack",
+  "alert_no_defense": "has no valid defensive profile. A default profile will be used.",
+  "choose_faction": "Choose a faction",
+  "choose_attacker_unit": "Choose an attacking unit",
+  "hide": "Hide",
+  "show": "Show",
+  "profil": "Profile",
+  "include": "Include in calculation",
+  "choose_defender_unit": "Choose a defending unit",
+  "hide_defense_profile": "Hide Defensive Profile",
+  "show_defense_profile": "Show Defensive Profile",
+  "welcome": {
+    "title": "⚠️ Notes",
+    "source_notice": "The data used for predefined unit profiles on this page comes from the open source project:",
+    "source_name": "BSData/wh40k-10e",
+    "source_url": "https://github.com/BSData/wh40k-10e",
+    "license": "under MIT license.",
+    "incomplete_profiles": "Some profiles may be incomplete or undefined.",
+    "attacker_preset": "Predefined attacker parameters:",
+    "attacker_details": "Attacks, BS/WS, Strength, AP, Damage, Lethal Hits, Sustained Hits, Devastating Wounds, Blast, Melta",
+    "defender_preset": "Predefined defender parameters:",
+    "defender_details": "Toughness, Wounds, Save, Invulnerable Save",
+    "continue_button": "Continue to the page"
+  }
+},
+
+"mes_listes": {
+    "titles": {
+      "pageTitle": "My Lists",
+      "listContent": "List Content",
+      "createList": "Create a New List",
+      "editList": "Edit List",
+      "createUnit": "Create a New Unit",
+      "editUnit": "Edit Unit",
+      "editOrAddUnit": "Edit or add a unit to modify it here",
+      "addedUnits": "Added Units"
+    },
+    "buttons": {
+      "createList": "➕ Create a New List",
+      "addUnit": "➕ Add a Unit",
+      "deleteList": "🗑️ Delete List",
+      "edit": "✏️ Edit",
+      "delete": "🗑️ Delete",
+      "deleteProfile": "Delete this Profile",
+      "addAttackProfile": "+ Add Attack Profile",
+      "save": "✅ Save",
+      "saving": "Saving...",
+      "cancel": "❌ Cancel"
+    },
+    "placeholders": {
+      "selectList": "Select a list",
+      "unitName": "Unit Name",
+      "profileName": "Profile Name",
+      "listName": "List Name"
+    },
+    "labels": {
+      "units": "Units",
+      "profiles": "Profiles",
+      "profile": "Profile",
+      "actions": "Actions",
+      "F": "S", 
+      "PA": "AP",
+      "noUnits": "No units available",
+      "noProfile": "No profile",
+      "showProfile": "Show",
+      "hideProfile": "Hide",
+      "confirmDeleteList": "Delete list",
+      "listUpdated": "✅ List updated in Firestore",
+      "unitUpdated": "✅ Unit added/edited in Firestore",
+      "unitDeleted": "✅ Unit deleted from Firestore",
+      "listDeleted": "✅ List deleted from Firestore"
+    },
+    "errors": {
+      "invalidList": "❌ Invalid list:",
+      "updateError": "❌ Error during update:",
+      "deleteError": "❌ Error during deletion:"
+    }
+  },
+
+  "unites_adv": {
+  "title": "Opponent Units",
+  "add_manual_unit": "➕ Add a unit manually",
+  "add_predefined_unit": "➕ Add a predefined unit",
+  "no_units": "No enemy units for now.",
+  "table": {
+    "unit_name": "Units",
+    "defense_profiles": "Defensive Profiles",
+    "actions": "Actions",
+    "edit": "✏️ Edit",
+    "delete": "🗑️ Delete"
+  },
+  "modal": {
+    "create_title": "Add an enemy unit",
+    "edit_title": "Edit enemy unit",
+    "unit_name_placeholder": "Unit name",
+    "save": "✅ Create unit",
+    "update": "✅ Save",
+    "cancel": "❌ Cancel"
+  },
+  "predefined_modal": {
+    "title": "Add from a predefined army",
+    "select_army": "-- Select a faction --",
+    "available_units": "Available units:",
+    "no_units_to_display": "No units to display",
+    "add_selected_units": "Add selected units",
+    "cancel": "Cancel"
+  },
+  "alerts": {
+    "invalid_profile": "⚠️ The following units do not have a valid defensive profile and were not added:",
+    "missing_name": "Please enter a unit name.",
+    "load_error": "Failed to load this file.",
+    "save_error": "Error while saving.",
+    "delete_error": "Error while deleting."
+  },
+  "profile": {
+    "toughness": "Toughness",
+    "save": "Save",
+    "pv": "Wounds",
+    "nb_models": "Number of models",
+    "invu_save": "Invulnerable Save"
+  }
+},
+"jeu": {
+  "title": "In-Game Simulation",
+  "select": "Select a list",
+  "select_unit": "Select a unit",
+  "select_defensive_unit": "Select a target unit"
+},
+   
+"auth": {
+    "title_login": "Login",
+    "title_register": "Register",
+    "email_placeholder": "Email",
+    "password_placeholder": "Password",
+    "button_login": "Log in",
+    "button_register": "Create account",
+    "toggle_to_login": "Already have an account?",
+    "toggle_to_register": "Don't have an account yet?",
+    "switch_to_login": "Log in",
+    "switch_to_register": "Sign up",
+    "info_register": "Creating an account allows you to access all exclusive features and securely save your data. It is required to create your own custom attacker and defender profiles. It also gives access to the damage simulator optimized for fast in-game use.",
+    "info_login": "Log in to access your personalized lists and the optimized damage simulator for your matches.",
+    "alerts": {
+    "account_created": "Account created!",
+    "logged_in": "Logged in!",
+    "error": "An error occurred:"
+    }
+}
+  }
+  

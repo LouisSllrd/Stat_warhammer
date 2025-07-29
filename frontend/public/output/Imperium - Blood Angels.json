@@ -497,9 +497,14 @@
       ]
     }
   },
-  "Death Company Dreadnought with Magna-Grapple [Legends]": {
+  "Death Company Dreadnought": {
     "cost": {
-      "pts": "145"
+      "pts": "160",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
     },
     "profiles": {
       "Unit": [
@@ -527,6 +532,12 @@
           "characteristics": {
             "Description": "Add 2 to Charge rolls made for the bearer if one or more of the targets of that charge is a MOSNTER or VEHICLE unit."
           }
+        },
+        {
+          "name": "Driven by Fury",
+          "characteristics": {
+            "Description": "In your opponent's Shooting phase, each time an enemy unit has shot, if this model was hit by one or more of those attacks, it can make a Driven by Fury move. To do so, roll one D6 and add 2 to the roll; this model moves a number of inches up to the result, but must finish as close as possible to the closest enemy unit [excluding Aircraft]. A model cannot make a Driven by Fury move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Driven by Fury move per phase."
+          }
         }
       ],
       "Ranged Weapons": [
@@ -541,6 +552,56 @@
             "D": "1",
             "Keywords": "Rapid Fire 2"
           }
+        },
+        {
+          "name": "Blood Fist Bolt Rifles",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Blood Fists",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Blood Talons - Strike",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "6",
+            "WS": "3+",
+            "S": "12",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Twin-linked"
+          }
+        },
+        {
+          "name": "➤ Blood Talons - Sweep",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "10",
+            "WS": "3+",
+            "S": "7",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-linked"
+          }
         }
       ]
     }
@@ -549,11 +610,7 @@
     "cost": {},
     "profiles": {}
   },
-  "Intercessor w/ melee weapon": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Intercessor w/ alternate pistol": {
+  "Intercessor": {
     "cost": {},
     "profiles": {}
   },
@@ -572,28 +629,7 @@
             "D": "2",
             "Keywords": "Devastating Wounds"
           }
-        }
-      ]
-    }
-  },
-  "Death Company Marine w/ alternate weapons": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Heavy Bolt Pistol",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "1",
-            "BS": "3+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        }
-      ],
-      "Melee Weapons": [
+        },
         {
           "name": "Astartes Chainsword",
           "characteristics": {
@@ -602,6 +638,18 @@
             "WS": "3+",
             "S": "4",
             "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Close Combat Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
             "D": "1",
             "Keywords": "-"
           }
@@ -618,16 +666,34 @@
             "Keywords": "-"
           }
         }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Rifle",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Assault, Heavy"
+          }
+        },
+        {
+          "name": "Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
       ]
     }
-  },
-  "Death Company Marine w/ Eviscerator": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Death Company Marine w/ Power Weapon/Fist": {
-    "cost": {},
-    "profiles": {}
   },
   "Death Company Marine w/Plasma Pistol": {
     "cost": {},
@@ -962,7 +1028,7 @@
   },
   "Sanguinary Priest": {
     "cost": {
-      "pts": "75",
+      "pts": "100",
       "Crusade Points": "0",
       "Crusade: Battle Honours": "0",
       "Crusade: Experience": "0",
@@ -975,6 +1041,17 @@
           "name": "Sanguinary Priest",
           "characteristics": {
             "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Sanguinary Priest with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
             "T": "4",
             "SV": "3+",
             "W": "4",
@@ -1062,60 +1139,6 @@
             "AP": "-3",
             "D": "2",
             "Keywords": "Devastating Wounds"
-          }
-        }
-      ]
-    }
-  },
-  "Sanguinary Priest with Jump Pack [Legends]": {
-    "cost": {
-      "pts": "100"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Sanguinary Priest with Jump Pack",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "4",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Sanguinary Priest",
-          "characteristics": {
-            "Description": "While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability"
-          }
-        },
-        {
-          "name": "Blood Chalice",
-          "characteristics": {
-            "Description": "While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
-          }
-        },
-        {
-          "name": "Leader",
-          "characteristics": {
-            "Description": "This model can be attached to the following units:\n\n■ Assault Squad with Jump Packs\n■ Vanguard Veteran Squad with Jump packs\n■ Assault Intercessors with Jump Packs\n\nYou can attach this model to one of the above units, even if one Captain, Chapter Master or Lieutenant model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Astartes Chainsword",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "5",
-            "WS": "2+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "-"
           }
         }
       ]
@@ -1311,11 +1334,12 @@
   },
   "Death Company Captain": {
     "cost": {
-      "pts": "70",
+      "pts": "75",
       "Crusade Points": "0",
       "Crusade: Battle Honours": "0",
       "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
+      "Crusade: Weapon Modifications": "0",
+      "Honour Points": "0"
     },
     "profiles": {
       "Unit": [
@@ -1323,6 +1347,17 @@
           "name": "Death Company Captain",
           "characteristics": {
             "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Death Company Captain with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
             "T": "4",
             "SV": "3+",
             "W": "5",
@@ -1348,6 +1383,12 @@
           "name": "Death Vision of Sanguinius",
           "characteristics": {
             "Description": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy Warlord. On a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+ that enemy unit suffers D3+3 mortal wounds."
+          }
+        },
+        {
+          "name": "Lost to Fury",
+          "characteristics": {
+            "Description": "When this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability"
           }
         }
       ],
@@ -1381,65 +1422,6 @@
       ]
     }
   },
-  "Death Company Captain with Jump Pack": {
-    "cost": {
-      "pts": "75",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0",
-      "Honour Points": "0"
-    },
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Death Vision of Sanguinius",
-          "characteristics": {
-            "Description": "If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy Warlord. On a 2-3, that enemy unit suffers D3 mortal wounds; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+ that enemy unit suffers D3+3 mortal wounds."
-          }
-        },
-        {
-          "name": "Lost to Fury",
-          "characteristics": {
-            "Description": "When this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability"
-          }
-        },
-        {
-          "name": "Leader",
-          "characteristics": {
-            "Description": "This model can be attached to the following units:\n\n■ Death Company Marines with Jump Packs"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Death Company Captain with Jump Pack",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "5",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Heavy Bolt Pistol",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "1",
-            "BS": "2+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
   "Death Company Marine w/Bolt Rifle": {
     "cost": {},
     "profiles": {}
@@ -1447,90 +1429,5 @@
   "Death Company Marine w/Eviscerator": {
     "cost": {},
     "profiles": {}
-  },
-  "Death Company Dreadnought": {
-    "cost": {
-      "pts": "160",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0",
-      "Honour Points": "0"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Death Company Dreadnought",
-          "characteristics": {
-            "M": "8\"",
-            "T": "10",
-            "SV": "2+",
-            "W": "12",
-            "LD": "6+",
-            "OC": "4"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Driven by Fury",
-          "characteristics": {
-            "Description": "In your opponent's Shooting phase, each time an enemy unit has shot, if this model was hit by one or more of those attacks, it can make a Driven by Fury move. To do so, roll one D6 and add 2 to the roll; this model moves a number of inches up to the result, but must finish as close as possible to the closest enemy unit [excluding Aircraft]. A model cannot make a Driven by Fury move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Driven by Fury move per phase."
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Blood Fists",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "6",
-            "WS": "3+",
-            "S": "12",
-            "AP": "-2",
-            "D": "3",
-            "Keywords": "Twin-linked"
-          }
-        },
-        {
-          "name": "➤ Blood Talons - Strike",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "6",
-            "WS": "3+",
-            "S": "12",
-            "AP": "-2",
-            "D": "3",
-            "Keywords": "Twin-linked"
-          }
-        },
-        {
-          "name": "➤ Blood Talons - Sweep",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "10",
-            "WS": "3+",
-            "S": "7",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "Twin-linked"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Blood Fist Bolt Rifles",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "4",
-            "BS": "3+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Twin-linked"
-          }
-        }
-      ]
-    }
   }
 }

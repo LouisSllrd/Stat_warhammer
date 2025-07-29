@@ -212,14 +212,15 @@
       ]
     }
   },
-  "Captain with Jump Pack": {
+  "Captain": {
     "cost": {
-      "pts": "75",
+      "pts": "0",
       "Crusade Points": "0",
       "Crusade: Battle Honours": "0",
       "Crusade: Experience": "0",
       "Crusade: Weapon Modifications": "0",
-      "Honour Points": "0"
+      "Honour Points": "0",
+      "pl": "0"
     },
     "profiles": {
       "Unit": [
@@ -227,6 +228,17 @@
           "name": "Captain with Jump Pack",
           "characteristics": {
             "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "5",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Captain",
+          "characteristics": {
+            "M": "6\"",
             "T": "4",
             "SV": "3+",
             "W": "5",
@@ -246,6 +258,50 @@
           "name": "Leader",
           "characteristics": {
             "Description": "This model can be attached to the following units:\n\n■ Assault Intercessors with Jump Packs\n■ Vanguard Veteran Squad with Jump Packs"
+          }
+        },
+        {
+          "name": "Relic Shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 6."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Heavy Bolt Pistol",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "[PISTOL]"
+          }
+        },
+        {
+          "name": "Neo-volkite Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "5",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Pistol"
           }
         }
       ]
@@ -270,24 +326,6 @@
     }
   },
   "Intercessor": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Intercessor Squad",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Intercessor w/ Grenade Launcher": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -355,6 +393,17 @@
             "LD": "6+",
             "OC": "2"
           }
+        },
+        {
+          "name": "Assault Intercessor Sergeant with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
         }
       ]
     }
@@ -372,6 +421,17 @@
             "W": "2",
             "LD": "6+",
             "OC": "2"
+          }
+        },
+        {
+          "name": "Assault Intercessors with Jump Packs",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
           }
         }
       ]
@@ -687,7 +747,7 @@
       ]
     }
   },
-  "Scouts w/ Boltgun": {
+  "Scouts": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -700,6 +760,34 @@
             "W": "2",
             "LD": "6+",
             "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Astartes Shotgun",
+          "characteristics": {
+            "Range": "18\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Assault"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Combat Knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "-"
           }
         }
       ]
@@ -751,91 +839,22 @@
       ]
     }
   },
-  "Scouts w/ Astartes Shotgun": {
+  "Scout": {
     "cost": {},
     "profiles": {
-      "Ranged Weapons": [
+      "Unit": [
         {
-          "name": "Astartes Shotgun",
+          "name": "Scout Squad",
           "characteristics": {
-            "Range": "18\"",
-            "A": "2",
-            "BS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Assault"
+            "M": "6\"",
+            "T": "4",
+            "SV": "4+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
           }
         }
       ],
-      "Unit": [
-        {
-          "name": "Scout Squad",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Scouts w/ Combat Knife": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Combat Knife",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Scout Squad",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Scout w/ Heavy Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Scout Squad",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Scout w/ Scout Sniper Rifle": {
-    "cost": {},
-    "profiles": {
       "Ranged Weapons": [
         {
           "name": "Scout Sniper Rifle",
@@ -847,19 +866,6 @@
             "AP": "-2",
             "D": "2",
             "Keywords": "Heavy, Precision"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Scout Squad",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
           }
         }
       ]
@@ -915,7 +921,7 @@
       ]
     }
   },
-  "Scout Sniper w/ Missile Launcher": {
+  "Scout Sniper": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -997,7 +1003,7 @@
       ]
     }
   },
-  "Vanguard Veterans with Jump Packs": {
+  "Vanguard Veterans": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -1012,75 +1018,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Storm Shield",
-          "characteristics": {
-            "Description": "The bearer has a 4+ invulnerable save"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Bolt Pistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Vanguard Veterans with Jump Packs",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Vanguard Veteran Sergeant with Jump Pack": {
-    "cost": {},
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Storm Shield",
-          "characteristics": {
-            "Description": "The bearer has a 4+ invulnerable save"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Vanguard Veteran Sergeant with Jump Pack",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Vanguard Veterans": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Heirloom Weapon",
           "characteristics": {
@@ -1104,18 +1042,6 @@
       ],
       "Ranged Weapons": [
         {
-          "name": "Grav-pistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "3+",
-            "S": "4",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "Anti-Vehicle 2+, Pistol"
-          }
-        },
-        {
           "name": "Bolt Pistol",
           "characteristics": {
             "Range": "12\"",
@@ -1126,9 +1052,32 @@
             "D": "1",
             "Keywords": "Pistol"
           }
+        },
+        {
+          "name": "Grav-pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Anti-Vehicle 2+, Pistol"
+          }
         }
       ],
       "Unit": [
+        {
+          "name": "Vanguard Veterans with Jump Packs",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
         {
           "name": "Vanguard Veterans",
           "characteristics": {
@@ -1156,6 +1105,17 @@
       ],
       "Unit": [
         {
+          "name": "Vanguard Veteran Sergeant with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
+        {
           "name": "Vanguard Veteran Sergeant",
           "characteristics": {
             "M": "6\"",
@@ -1169,7 +1129,7 @@
       ]
     }
   },
-  "Sternguard Veteran w/ Bolt Rifle": {
+  "Sternguard Veteran": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -1195,6 +1155,30 @@
             "AP": "-1",
             "D": "1",
             "Keywords": "Assault, Devastating Wounds, Heavy, Rapid Fire 1"
+          }
+        },
+        {
+          "name": "Sternguard Heavy Bolter",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "3",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Devastating Wounds, Heavy, Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Pyrecannon",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6+1",
+            "BS": "N/A",
+            "S": "6",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Ignores Cover, Torrent"
           }
         }
       ],
@@ -1285,68 +1269,6 @@
       "Unit": [
         {
           "name": "Sternguard Veteran Sergeant",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Sternguard Veteran w/ Special Weapon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Sternguard Heavy Bolter",
-          "characteristics": {
-            "Range": "36\"",
-            "A": "3",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "Devastating Wounds, Heavy, Sustained Hits 1"
-          }
-        },
-        {
-          "name": "Pyrecannon",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "D6+1",
-            "BS": "N/A",
-            "S": "6",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Ignores Cover, Torrent"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Sternguard Veteran Squad",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Sternguard Veteran w/ Combi-weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Sternguard Veteran Squad",
           "characteristics": {
             "M": "6\"",
             "T": "4",
@@ -1561,7 +1483,7 @@
       ]
     }
   },
-  "Assault Terminator w/ Thunder Hammer & Storm Shield": {
+  "Assault Terminator": {
     "cost": {},
     "profiles": {
       "Abilities": [
@@ -1583,14 +1505,7 @@
             "LD": "6+",
             "OC": "1"
           }
-        }
-      ]
-    }
-  },
-  "Assault Terminator w/ Twin Lightning Claws": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
+        },
         {
           "name": "Assault Terminator w/ Lightning Claws",
           "characteristics": {
@@ -1649,7 +1564,7 @@
       ]
     }
   },
-  "Terminator w/ Power Fist": {
+  "Terminator": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -1664,30 +1579,7 @@
             "OC": "1"
           }
         }
-      ]
-    }
-  },
-  "Terminator w/ Chain Fist": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Terminator Squad",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Terminator w/ Heavy Weapon": {
-    "cost": {},
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "➤ Cyclone Missile Launcher - Frag",
@@ -1725,19 +1617,6 @@
             "AP": "-2",
             "D": "2",
             "Keywords": "-"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Terminator Squad",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
           }
         }
       ]
@@ -1799,7 +1678,7 @@
       ]
     }
   },
-  "Relic Terminator w/ Power Fist": {
+  "Relic Terminator": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -1814,81 +1693,7 @@
             "D": "1",
             "Keywords": "Rapid Fire 2"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Relic Terminator Squad",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Relic Terminator w/ Twin Lightning Claws": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Relic Terminator Squad",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Relic Terminator w/ Power Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Relic Terminator Squad",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Relic Terminator w/ Chain Fist": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Relic Terminator Squad",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Relic Terminator w/ Heavy Weapon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Reaper Autocannon",
           "characteristics": {
@@ -2580,36 +2385,11 @@
             "LD": "6+",
             "OC": "1"
           }
-        }
-      ]
-    }
-  },
-  "Assault Marine w/ Eviscerator": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
+        },
         {
-          "name": "Assault Squad",
+          "name": "Assault Sergeant with Jump Pack",
           "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Assault Marine w/ Special Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Assault Squad",
-          "characteristics": {
-            "M": "6\"",
+            "M": "12\"",
             "T": "4",
             "SV": "3+",
             "W": "2",
@@ -2634,90 +2414,7 @@
             "LD": "6+",
             "OC": "1"
           }
-        }
-      ]
-    }
-  },
-  "Assault Sergeant with Jump Pack": {
-    "cost": {},
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Astartes Shield",
-          "characteristics": {
-            "Description": "The bearer has a 4+ invulnerable save."
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Twin Lightning Claws",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "5",
-            "WS": "3+",
-            "S": "4",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "Twin-linked"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Assault Sergeant with Jump Pack",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Assault Marine with Jump Pack w/ Eviscerator": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Assault Squad with Jump Packs",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Assault Marine with Jump Pack w/ Special Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Assault Squad with Jump Packs",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Assault Marine with Jump Pack": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
+        },
         {
           "name": "Assault Squad with Jump Packs",
           "characteristics": {
@@ -2852,7 +2549,7 @@
       ]
     }
   },
-  "Space Marine Bikers w/ Bolt Pistol": {
+  "Space Marine Bikers": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -2867,27 +2564,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Space Marine Biker",
-          "characteristics": {
-            "M": "12\"",
-            "T": "5",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Space Marine Bikers w/ Astartes Chainsword": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Astartes Chainsword",
           "characteristics": {
@@ -2916,25 +2593,7 @@
       ]
     }
   },
-  "Space Marine Bikers w/  Special Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Space Marine Biker",
-          "characteristics": {
-            "M": "12\"",
-            "T": "5",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Scout Biker w/ Astartes Grenade Launcher": {
+  "Scout Biker": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -2975,12 +2634,7 @@
             "OC": "2"
           }
         }
-      ]
-    }
-  },
-  "Scout Biker w/ Twin Boltgun": {
-    "cost": {},
-    "profiles": {
+      ],
       "Melee Weapons": [
         {
           "name": "Combat Knife",
@@ -2992,19 +2646,6 @@
             "AP": "0",
             "D": "1",
             "Keywords": "-"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Scout Bike Squad",
-          "characteristics": {
-            "M": "12\"",
-            "T": "5",
-            "SV": "4+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "2"
           }
         }
       ]
@@ -3674,43 +3315,7 @@
       ]
     }
   },
-  "Eradicator with Multi-melta": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Eradicator Squad",
-          "characteristics": {
-            "M": "5\"",
-            "T": "6",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Devastator Marine w/ Boltgun": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Devastator Squad",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Devastator Marine w/ Heavy Weapon": {
+  "Devastator Marine": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -5157,7 +4762,7 @@
   },
   "Lieutenant": {
     "cost": {
-      "pts": "65"
+      "pts": "70"
     },
     "profiles": {
       "Ranged Weapons": [
@@ -5198,6 +4803,24 @@
           "characteristics": {
             "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Company Heroes\n■ Hellblaster Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad\n\nYou can attach this model to a unit it can lead even if one Captain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
           }
+        },
+        {
+          "name": "Priority Objective Identified",
+          "characteristics": {
+            "Description": "At the start of the first battle round, if your army includes one or more models with this ability, you can select one objective marker on the battlefield. Until the end of the battle, while one or more models with this ability are on the battlefield, each time a friendly ADEPTUS ASTARTES model makes an attack that targets an enemy unit that is within range of that objective marker, re-roll a Wound roll of 1."
+          }
+        },
+        {
+          "name": "Evade and Survive",
+          "characteristics": {
+            "Description": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move"
+          }
+        },
+        {
+          "name": "Lone Survivor",
+          "characteristics": {
+            "Description": "This model cannot be selected to be your **^^Warlord^^**."
+          }
         }
       ],
       "Unit": [
@@ -5210,6 +4833,31 @@
             "W": "4",
             "LD": "6+",
             "OC": "1"
+          }
+        },
+        {
+          "name": "Lieutenant with Combi-weapon",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Paired Combat Blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Anti-Infantry 4+, Sustained Hits 1"
           }
         }
       ]
@@ -5341,7 +4989,7 @@
   },
   "Librarian": {
     "cost": {
-      "pts": "65"
+      "pts": "75"
     },
     "profiles": {
       "Unit": [
@@ -5368,6 +5016,12 @@
           "name": "Leader",
           "characteristics": {
             "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Desolation Squad\n■ Devastator Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+          }
+        },
+        {
+          "name": "Might of Heroes [Pyschic]",
+          "characteristics": {
+            "Description": "While this model is leading a unit, improve the Strength and Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
           }
         }
       ]
@@ -5441,43 +5095,9 @@
       ]
     }
   },
-  "Librarian with Jump Pack [Legends]": {
-    "cost": {
-      "pts": "75"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Librarian",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "4",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Might of Heroes [Pyschic]",
-          "characteristics": {
-            "Description": "While this model is leading a unit, improve the Strength and Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
-          }
-        },
-        {
-          "name": "Leader",
-          "characteristics": {
-            "Description": "This model can be attached to the following units:\n\n■ Assault Squad with Jump Packs\n■ Vanguard Veteran Squad with Jump Packs"
-          }
-        }
-      ]
-    }
-  },
   "Chaplain": {
     "cost": {
-      "pts": "60"
+      "pts": "75"
     },
     "profiles": {
       "Unit": [
@@ -5491,6 +5111,17 @@
             "LD": "5+",
             "OC": "1"
           }
+        },
+        {
+          "name": "Chaplain with Jump Pack",
+          "characteristics": {
+            "M": "12\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "5+",
+            "OC": "1"
+          }
         }
       ],
       "Abilities": [
@@ -5498,6 +5129,40 @@
           "name": "Leader",
           "characteristics": {
             "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad"
+          }
+        },
+        {
+          "name": "Exhortation of Rage",
+          "characteristics": {
+            "Description": "Each time this model’s unit is selected to fight, you can select one enemy unit within Engagement Range of this model’s unit and roll one D6: on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power Fist",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "2+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Bolt Pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
           }
         }
       ]
@@ -5566,68 +5231,6 @@
             "W": "5",
             "LD": "5+",
             "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Chaplain with Jump Pack": {
-    "cost": {
-      "pts": "75"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Chaplain with Jump Pack",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "4",
-            "LD": "5+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Exhortation of Rage",
-          "characteristics": {
-            "Description": "Each time this model’s unit is selected to fight, you can select one enemy unit within Engagement Range of this model’s unit and roll one D6: on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers 3 mortal wounds."
-          }
-        },
-        {
-          "name": "Leader",
-          "characteristics": {
-            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessors with Jump Packs\n■ Vanguard Veteran Squad with Jump Packs"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Power Fist",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "4",
-            "WS": "2+",
-            "S": "8",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Bolt Pistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
           }
         }
       ]
@@ -5708,27 +5311,7 @@
             "D": "3",
             "Keywords": "-"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Astartes Servitors",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "4+",
-            "W": "1",
-            "LD": "8+",
-            "OC": "0"
-          }
-        }
-      ]
-    }
-  },
-  "Astartes Servitor w/ Heavy Weapon": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Close Combat Weapon",
           "characteristics": {
@@ -5752,60 +5335,6 @@
             "W": "1",
             "LD": "8+",
             "OC": "0"
-          }
-        }
-      ]
-    }
-  },
-  "Lieutenant with Combi-weapon": {
-    "cost": {
-      "pts": "70"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Lieutenant with Combi-weapon",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "4",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Priority Objective Identified",
-          "characteristics": {
-            "Description": "At the start of the first battle round, if your army includes one or more models with this ability, you can select one objective marker on the battlefield. Until the end of the battle, while one or more models with this ability are on the battlefield, each time a friendly ADEPTUS ASTARTES model makes an attack that targets an enemy unit that is within range of that objective marker, re-roll a Wound roll of 1."
-          }
-        },
-        {
-          "name": "Evade and Survive",
-          "characteristics": {
-            "Description": "Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move"
-          }
-        },
-        {
-          "name": "Lone Survivor",
-          "characteristics": {
-            "Description": "This model cannot be selected to be your **^^Warlord^^**."
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Paired Combat Blades",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "5",
-            "WS": "2+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Anti-Infantry 4+, Sustained Hits 1"
           }
         }
       ]
@@ -5866,17 +5395,22 @@
     }
   },
   "Apothecary": {
-    "cost": {},
+    "cost": {
+      "pts": "50"
+    },
     "profiles": {
-      "Abilities": [
-        {
-          "name": "Narthecium",
-          "characteristics": {
-            "Description": "While this unit contains an Apothecary, in your Command phase, you can return 1 destroyed model (excluding Character models) to this unit"
-          }
-        }
-      ],
       "Unit": [
+        {
+          "name": "Primaris Apothecary",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
         {
           "name": "Command Squad",
           "characteristics": {
@@ -5886,6 +5420,54 @@
             "W": "3",
             "LD": "6+",
             "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Narthecium",
+          "characteristics": {
+            "Description": "While this model is leading a unit, in your Command phase, you can return 1 destroyed model (excluding Character models) to that unit."
+          }
+        },
+        {
+          "name": "Gene Seed Recovery",
+          "characteristics": {
+            "Description": "When this model’s Bodyguard unit is destroyed, roll one D6: on a 2+, you gain 1CP."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Desolation Squad\n■ Devastator Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Tactical Squad\n\nYou can attach this model to one of the above units even if one Captain, Chapter Master or Lieutenant model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close Combat Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Reductor Pistol",
+          "characteristics": {
+            "Range": "3\"",
+            "A": "1",
+            "BS": "3+",
+            "S": "4",
+            "AP": "-4",
+            "D": "2",
+            "Keywords": "Pistol"
           }
         }
       ]
@@ -5950,8 +5532,74 @@
     }
   },
   "Ancient": {
-    "cost": {},
+    "cost": {
+      "pts": "50"
+    },
     "profiles": {
+      "Unit": [
+        {
+          "name": "Primaris Ancient",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Company Heroes",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Unbreakable Duty",
+          "characteristics": {
+            "Description": "While this model is within range of an objective marker and/or within 6\" of the centre of the battlefield, this model has the Feel No Pain 4+ ability."
+          }
+        },
+        {
+          "name": "Leader",
+          "characteristics": {
+            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Devastator Squad\n■ Hellblaster Squad\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Desolation Squad\n■ Tactical Squad\n\nYou can attach this model to one of the above units even if one Captain, Chapter Master or Lieutenant model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close Combat Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
       "Ranged Weapons": [
         {
           "name": "Bolt Rifle",
@@ -5963,33 +5611,6 @@
             "AP": "-1",
             "D": "1",
             "Keywords": "-"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Close Combat Weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "5",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Company Heroes",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "4",
-            "LD": "6+",
-            "OC": "1"
           }
         }
       ]
@@ -6176,6 +5797,18 @@
     "profiles": {
       "Melee Weapons": [
         {
+          "name": "Champion's Blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Precision"
+          }
+        },
+        {
           "name": "Master-crafted Power Weapon",
           "characteristics": {
             "Range": "Melee",
@@ -6188,7 +5821,32 @@
           }
         }
       ],
+      "Abilities": [
+        {
+          "name": "Astartes Shield",
+          "characteristics": {
+            "Description": "The bearer has a 4+ invulnerable save."
+          }
+        },
+        {
+          "name": "Honour or Death",
+          "characteristics": {
+            "Description": "While this unit contains a Company Champion, add 1 to Advance and Charge rolls made for this unit and you can target this unit with the Heroic  Intervention Stratagem for 0CP, even if you have already used that Stratagem on a different unit this phase."
+          }
+        }
+      ],
       "Unit": [
+        {
+          "name": "Command Squad",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
         {
           "name": "Company Heroes",
           "characteristics": {
@@ -6342,79 +6000,6 @@
             "AP": "-2",
             "D": "2",
             "Keywords": "Devastating Wounds, Precision"
-          }
-        }
-      ]
-    }
-  },
-  "Captain": {
-    "cost": {
-      "pts": "0",
-      "pl": "0"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Captain",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "5",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Leader",
-          "characteristics": {
-            "Description": "This model can be attached to the following units:\n\n■ Assault Intercessor Squad\n■ Bladeguard Veteran Squad*\n■ Hellblaster Squad*\n■ Infernus Squad\n■ Intercessor Squad\n■ Sternguard Veteran Squad\n■ Company Heroes\n■ Tactical Squad\n\n* This model cannot be attached to a Bladeguard Veteran Squad unless it is equipped with a relic shield, and cannot be attached to a Hellblaster Squad unless it is equipped with a plasma pistol."
-          }
-        },
-        {
-          "name": "Relic Shield",
-          "characteristics": {
-            "Description": "The bearer has a Wounds characteristic of 6."
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Heavy Bolt Pistol",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "1",
-            "BS": "2+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        },
-        {
-          "name": "Heavy Bolt Pistol",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "1",
-            "BS": "2+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "[PISTOL]"
-          }
-        },
-        {
-          "name": "Neo-volkite Pistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "2+",
-            "S": "5",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Devastating Wounds, Pistol"
           }
         }
       ]
@@ -8120,61 +7705,7 @@
       ]
     }
   },
-  "Assault Intercessor Sergeant with Jump Pack": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Assault Intercessor Sergeant with Jump Pack",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Assault Intercessors with Jump Pack": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Assault Intercessors with Jump Packs",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Assault Intercessors with Jump Pack w/ Plasma Pistol": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Assault Intercessors with Jump Packs",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Company Veteran w/ Bolt Rifle": {
+  "Company Veteran": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -8203,27 +7734,7 @@
             "D": "2",
             "Keywords": "Devastating Wounds, Rapid Fire 1"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Company Heroes",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "4",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Company Veteran w/ Heavy Bolter": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Master-crafted Heavy Bolter",
           "characteristics": {
@@ -8234,20 +7745,6 @@
             "AP": "-1",
             "D": "3",
             "Keywords": "Heavy, Sustained Hits 2"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Close Combat Weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "5",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
           }
         }
       ],

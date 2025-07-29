@@ -257,7 +257,7 @@
   },
   "Daemon Prince of Khorne": {
     "cost": {
-      "pts": "200",
+      "pts": "180",
       "Crusade Points": "0",
       "Crusade: Battle Honours": "0",
       "Crusade: Experience": "0",
@@ -288,78 +288,6 @@
           "characteristics": {
             "Description": "Once per battle round, one model from your army with this ability can use it when a friendly ^^**World Eaters^^** unit within 12\" of this model is targeted with a Stratagem. If it does, reduce the CP cost of that Stratagem by 1CP."
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Daemon Prince of Khorne",
-          "characteristics": {
-            "M": "10\"",
-            "T": "10",
-            "SV": "2+",
-            "W": "10",
-            "LD": "6+",
-            "OC": "3"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Infernal cannon",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "3",
-            "BS": "3+",
-            "S": "5",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "Rapid Fire 1"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "➤ Hellforged weapons - strike",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "8",
-            "WS": "2+",
-            "S": "8",
-            "AP": "-2",
-            "D": "3",
-            "Keywords": "-"
-          }
-        },
-        {
-          "name": "➤ Hellforged weapons - sweep",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "16",
-            "WS": "2+",
-            "S": "6",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Daemon Prince of Khorne with wings": {
-    "cost": {
-      "pts": "180",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
-    },
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "This model has a 4+ invulnerable save."
-          }
         },
         {
           "name": "Bloodied Terror",
@@ -375,6 +303,17 @@
         }
       ],
       "Unit": [
+        {
+          "name": "Daemon Prince of Khorne",
+          "characteristics": {
+            "M": "10\"",
+            "T": "10",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        },
         {
           "name": "Daemon Prince of Khorne with wings",
           "characteristics": {
@@ -603,24 +542,6 @@
     },
     "profiles": {}
   },
-  "Khorne Berzerker w/ eviscerator and bolt pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Khorne Berzerker w/ eviscerator and plasma pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
-  "Khorne Berzerker w/ chainblade and plasma pistol": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
   "Terminator Champion": {
     "cost": {
       "pts": "0"
@@ -696,13 +617,13 @@
     },
     "profiles": {}
   },
-  "Jakhal w/ mauler chainblade": {
+  "Jakhal": {
     "cost": {
       "pts": "0"
     },
     "profiles": {}
   },
-  "Dishonoured w/ skullsmasher and mangler": {
+  "Dishonoured": {
     "cost": {
       "pts": "0"
     },
@@ -719,16 +640,7 @@
             "D": "2",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Dishonoured w/ paired manglers": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Paired manglers",
           "characteristics": {
@@ -1721,17 +1633,11 @@
       ]
     }
   },
-  "Jakhal": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {}
-  },
   "Blood Herald": {
     "cost": {},
     "profiles": {}
   },
-  "Goremonger w/ blood harpoon": {
+  "Goremonger": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -1749,14 +1655,6 @@
         }
       ]
     }
-  },
-  "Goremonger w/ 2 pistols": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Goremonger w/ chainblade": {
-    "cost": {},
-    "profiles": {}
   },
   "Slaughterbound": {
     "cost": {

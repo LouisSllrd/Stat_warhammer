@@ -1,24 +1,6 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
-const fieldLabels = {
-  Nb_weapons: "Nombre d'armes",
-  Attacks: "Attaques",
-  CT: "CC/CT",
-  Strength: "Force",
-  PA: "PA",
-  Damage: "Dégâts",
-  Sustained_hit: "Touches soutenues",
-  Lethal_hit: "Touches fatales",
-  Deva_wound: "Blessures dévastatrices",
-  Blast: "Déflagration",
-  Melta: "Melta X",
-  Modif_hit_att: "Modif touche",
-  Modif_wound_att: "Modif blessure",
-  Re_roll_hit: "Relance des touches",
-  Re_roll_wound: "Relance des blessures",
-  Crit_on_X_to_hit: "Critique en touche sur X+",
-  Crit_on_X_to_wound: "Critique en blessure sur X+"
-};
 
 const optionsMap = {
   Nb_weapons: Array.from({ length: 20 }, (_, i) => i + 1),
@@ -47,7 +29,30 @@ const defaultFieldsToEdit = [
   "Crit_on_X_to_hit", "Crit_on_X_to_wound"
 ];
 
-const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToEdit, title = "Profil de l'attaque" }) => {
+function useFieldLabels(t) {
+  return {
+    Nb_weapons: t("simulateur.attaquant.nb_weapons"),
+    Attacks: t("simulateur.attaquant.attacks"),
+    CT: t("simulateur.attaquant.CT"),
+    Strength: t("simulateur.attaquant.Strength"),
+    PA: t("simulateur.attaquant.PA"),
+    Damage: t("simulateur.attaquant.Damage"),
+    Sustained_hit: t("simulateur.attaquant.Sustained_hit"),
+    Lethal_hit: t("simulateur.attaquant.Lethal_hit"),
+    Deva_wound: t("simulateur.attaquant.Deva_wound"),
+    Blast: t("simulateur.attaquant.Blast"),
+    Melta: t("simulateur.attaquant.Melta"),
+    Modif_hit_att: t("simulateur.attaquant.Modif_hit_att"),
+    Modif_wound_att: t("simulateur.attaquant.Modif_wound_att"),
+    Re_roll_hit: t("simulateur.attaquant.Re_roll_hit"),
+    Re_roll_wound: t("simulateur.attaquant.Re_roll_wound"),
+    Crit_on_X_to_hit: t("simulateur.attaquant.Crit_on_X_to_hit"),
+    Crit_on_X_to_wound: t("simulateur.attaquant.Crit_on_X_to_wound"),
+  };
+}
+const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToEdit }) => {
+  const { t } = useTranslation();
+  const fieldLabels = useFieldLabels(t);
   const handleChange = (e) => {
     const { name, type, checked, value } = e.target;
     let val = type === "checkbox" ? checked : value;
@@ -79,8 +84,16 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
       key === "Crit_on_X_to_wound" ||
       key === "Fnp_X"
     ) return `${val}+`;
-    return val;
+    if (key === "Re_roll_hit" && val === "Relance des 1") return t("simulateur.re_roll.Re_roll_1_to_hit");
+    if (key === "Re_roll_hit" && val === "Relance des touches ratées") return t("simulateur.re_roll.Re_roll_failed_roll_to_hit");
+    if (key === "Re_roll_hit" && val === "Relance des touches non critiques (pêcher)") return t("simulateur.re_roll.Re_roll_non_critical_roll_to_hit");
+
+    if (key === "Re_roll_wound" && val === "Relance des 1") return t("simulateur.re_roll.Re_roll_1_to_wound");
+    if (key === "Re_roll_wound" && val === "Relance des blessures ratées") return t("simulateur.re_roll.Re_roll_failed_roll_to_wound");
+    if (key === "Re_roll_wound" && val === "Relance des blessures non critiques (pêcher)") return t("simulateur.re_roll.Re_roll_non_critical_roll_to_wound");
+    return `${val}`;
   };
+  
 
   return (
     <div style={{
@@ -93,7 +106,7 @@ const EditableAttackProfileCard = ({ profile, onChange, fieldsToEdit = defaultFi
       width: '100%', // ➜ prend 100% de la largeur disponible
       boxSizing: 'border-box', // ➜ évite les débordements à cause du padding
     }}>
-      <h3 style={{ marginBottom: 12 }}>{title}</h3>
+      <h3 style={{ marginBottom: 12 }}> {t("attack_profile.title")}</h3>
       {fieldsToEdit.map((key) => {
         const value = profile[key];
   

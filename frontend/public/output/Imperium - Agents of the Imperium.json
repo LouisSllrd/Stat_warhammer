@@ -49,18 +49,6 @@
       ],
       "Ranged Weapons": [
         {
-          "name": "Exitus rifle",
-          "characteristics": {
-            "Range": "48\"",
-            "A": "1",
-            "BS": "2+",
-            "S": "8",
-            "AP": "-3",
-            "D": "D3+3",
-            "Keywords": "Devastating Wounds, Heavy, Ignores Cover, Precision"
-          }
-        },
-        {
           "name": "Exitus pistol",
           "characteristics": {
             "Range": "12\"",
@@ -70,6 +58,18 @@
             "AP": "-2",
             "D": "3",
             "Keywords": "Devastating Wounds, Ignores Cover, Pistol, Precision"
+          }
+        },
+        {
+          "name": "Exitus rifle",
+          "characteristics": {
+            "Range": "48\"",
+            "A": "1",
+            "BS": "2+",
+            "S": "8",
+            "AP": "-3",
+            "D": "D3+3",
+            "Keywords": "Devastating Wounds, Heavy, Ignores Cover, Precision"
           }
         }
       ],
@@ -143,20 +143,6 @@
           }
         }
       ],
-      "Ranged Weapons": [
-        {
-          "name": "Animus speculum",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "3",
-            "BS": "2+",
-            "S": "5",
-            "AP": "-2",
-            "D": "D3",
-            "Keywords": "Anti-PSYKER 2+, Assault, Precision, Psychic Assassin"
-          }
-        }
-      ],
       "Melee Weapons": [
         {
           "name": "Life-draining touch",
@@ -168,6 +154,20 @@
             "AP": "-2",
             "D": "2",
             "Keywords": "Anti-PSYKER 2+, Devastating Wounds, Precision"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Animus speculum",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "3",
+            "BS": "2+",
+            "S": "5",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Anti-PSYKER 2+, Assault, Precision, Psychic Assassin"
           }
         }
       ]
@@ -378,7 +378,46 @@
   "Death Cult Assassin": {
     "cost": {},
     "profiles": {
+      "Unit": [
+        {
+          "name": "Death Cult Assassin",
+          "characteristics": {
+            "M": "6\"",
+            "T": "3",
+            "SV": "4+",
+            "W": "2",
+            "LD": "7+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Dartmask",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "2",
+            "AP": "-1",
+            "D": "D3",
+            "Keywords": "Anti-INFANTRY 2+, Pistol, Precision"
+          }
+        }
+      ],
       "Melee Weapons": [
+        {
+          "name": "Death Cult power blade",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "2+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Precision"
+          }
+        },
         {
           "name": "Death Cult blades",
           "characteristics": {
@@ -505,14 +544,7 @@
             "D": "1",
             "Keywords": "Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Voidsman w/ rotor cannon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Voidsman rotor cannon",
           "characteristics": {
@@ -531,32 +563,6 @@
   "Navis Sergeant-at-Arms": {
     "cost": {},
     "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Autopistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        },
-        {
-          "name": "Bolt pistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        }
-      ],
       "Melee Weapons": [
         {
           "name": "Chainsword",
@@ -582,10 +588,36 @@
             "Keywords": "-"
           }
         }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Autopistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "3",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        },
+        {
+          "name": "Bolt pistol",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Pistol"
+          }
+        }
       ]
     }
   },
-  "Navis Armsman w/ heavy shotgun": {
+  "Navis Armsman": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -600,22 +632,7 @@
             "D": "1",
             "Keywords": "Assault"
           }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Endurant shield",
-          "characteristics": {
-            "Description": "The bearer has a 4+ invulnerable save."
-          }
-        }
-      ]
-    }
-  },
-  "Navis Armsman w/ special weapon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Navis las-volley",
           "characteristics": {
@@ -663,14 +680,7 @@
             "D": "2",
             "Keywords": "Hazardous, Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Navis Armsman w/ power weapon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Autopistol",
           "characteristics": {
@@ -681,6 +691,14 @@
             "AP": "0",
             "D": "1",
             "Keywords": "Pistol"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Endurant shield",
+          "characteristics": {
+            "Description": "The bearer has a 4+ invulnerable save."
           }
         }
       ],
@@ -696,32 +714,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Navis Armsman": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Navis Armsman w/ chainfist": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Autopistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
-        }
-      ],
-      "Melee Weapons": [
+        },
         {
           "name": "Chainfist",
           "characteristics": {
@@ -749,7 +742,7 @@
     "cost": {},
     "profiles": {}
   },
-  "Exaction Vigilant w/ medi-kit": {
+  "Exaction Vigilant": {
     "cost": {},
     "profiles": {
       "Abilities": [
@@ -758,13 +751,14 @@
           "characteristics": {
             "Description": "At the start of your Command phase, if the bearer's unit is below its Starting Strength, you can return up to D3 destroyed Exaction Vigilants to this unit."
           }
+        },
+        {
+          "name": "Soulguilt scanner",
+          "characteristics": {
+            "Description": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability."
+          }
         }
-      ]
-    }
-  },
-  "Exaction Vigilant w/ excruciator maul": {
-    "cost": {},
-    "profiles": {
+      ],
       "Melee Weapons": [
         {
           "name": "Excruciator maul",
@@ -778,29 +772,7 @@
             "Keywords": "-"
           }
         }
-      ]
-    }
-  },
-  "Exaction Vigilant w/ soulguilt scanner": {
-    "cost": {},
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Soulguilt scanner",
-          "characteristics": {
-            "Description": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability."
-          }
-        }
-      ]
-    }
-  },
-  "Exaction Vigilant w/ shotgun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Exaction Vigilant w/ grenade launcher": {
-    "cost": {},
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "➤ Arbites grenade launcher - frag",
@@ -825,14 +797,7 @@
             "D": "D3",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Exaction Vigilant w/ executioner shotgun": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Executioner shotgun",
           "characteristics": {
@@ -844,14 +809,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Precision"
           }
-        }
-      ]
-    }
-  },
-  "Exaction Vigilant w/ heavy stubber": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Heavy stubber",
           "characteristics": {
@@ -863,14 +821,7 @@
             "D": "1",
             "Keywords": "Rapid Fire 3"
           }
-        }
-      ]
-    }
-  },
-  "Exaction Vigilant w/ webber": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Webber",
           "characteristics": {
@@ -909,11 +860,7 @@
     "cost": {},
     "profiles": {}
   },
-  "Vigilant w/ shotgun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Vigilant w/ grenade launcher": {
+  "Vigilant": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -940,14 +887,7 @@
             "D": "D3",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Vigilant w/ executioner shotgun": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Executioner shotgun",
           "characteristics": {
@@ -959,14 +899,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Precision"
           }
-        }
-      ]
-    }
-  },
-  "Vigilant w/ heavy stubber": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Heavy stubber",
           "characteristics": {
@@ -978,14 +911,7 @@
             "D": "1",
             "Keywords": "Rapid Fire 3"
           }
-        }
-      ]
-    }
-  },
-  "Vigilant w/ webber": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Webber",
           "characteristics": {
@@ -1381,6 +1307,32 @@
           }
         }
       ],
+      "Melee Weapons": [
+        {
+          "name": "Inquisitorial melee weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ],
       "Ranged Weapons": [
         {
           "name": "Bolt pistol",
@@ -1416,32 +1368,6 @@
             "AP": "-2",
             "D": "1",
             "Keywords": "Devastating Wounds, Psychic, Torrent"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Inquisitorial melee weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "5",
-            "WS": "3+",
-            "S": "4",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "-"
-          }
-        },
-        {
-          "name": "Force weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "4",
-            "WS": "3+",
-            "S": "5",
-            "AP": "-2",
-            "D": "D3",
-            "Keywords": "Psychic"
           }
         }
       ]
@@ -1727,11 +1653,7 @@
       ]
     }
   },
-  "Legionnaire w/ boltgun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Legionnaire w/ heavy weapon": {
+  "Legionnaire": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -1758,14 +1680,7 @@
             "D": "D6",
             "Keywords": "Heavy, Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Legionnaire w/ special weapon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma gun - standard",
           "characteristics": {
@@ -1865,6 +1780,32 @@
           }
         }
       ],
+      "Melee Weapons": [
+        {
+          "name": "Inquisitorial melee weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "4",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Force weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "D3",
+            "Keywords": "Psychic"
+          }
+        }
+      ],
       "Ranged Weapons": [
         {
           "name": "Storm bolter",
@@ -1912,32 +1853,6 @@
             "AP": "-2",
             "D": "1",
             "Keywords": "Devastating Wounds, Psychic, Torrent"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Inquisitorial melee weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "5",
-            "WS": "3+",
-            "S": "4",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "-"
-          }
-        },
-        {
-          "name": "Force weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "4",
-            "WS": "3+",
-            "S": "5",
-            "AP": "-2",
-            "D": "D3",
-            "Keywords": "Psychic"
           }
         }
       ]
@@ -2103,10 +2018,6 @@
   },
   "Agent": {
     "cost": {},
-    "profiles": {}
-  },
-  "Agent w/ plasma pistol": {
-    "cost": {},
     "profiles": {
       "Ranged Weapons": [
         {
@@ -2133,12 +2044,7 @@
             "Keywords": "Hazardous, Pistol"
           }
         }
-      ]
-    }
-  },
-  "Agent w/ eviscerator": {
-    "cost": {},
-    "profiles": {
+      ],
       "Melee Weapons": [
         {
           "name": "Eviscerator",
@@ -2151,14 +2057,7 @@
             "D": "2",
             "Keywords": "Devastating Wounds"
           }
-        }
-      ]
-    }
-  },
-  "Agent w/ mystic stave": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Mystic stave",
           "characteristics": {
@@ -2174,7 +2073,7 @@
       ]
     }
   },
-  "Servitor w/ heavy bolter": {
+  "Servitor": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -2189,14 +2088,7 @@
             "D": "2",
             "Keywords": "Heavy, Sustained Hits 1"
           }
-        }
-      ]
-    }
-  },
-  "Servitor w/ multi-melta": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Multi-melta",
           "characteristics": {
@@ -2208,14 +2100,7 @@
             "D": "D6",
             "Keywords": "Heavy, Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Servitor w/ plasma cannon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma cannon - standard",
           "characteristics": {
@@ -2248,10 +2133,6 @@
     "profiles": {}
   },
   "Terminator": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Terminator w/ heavy weapon": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -2291,12 +2172,7 @@
             "Keywords": "Psychic"
           }
         }
-      ]
-    }
-  },
-  "Terminator w/ narthecium": {
-    "cost": {},
-    "profiles": {
+      ],
       "Abilities": [
         {
           "name": "Narthecium",
@@ -2343,15 +2219,15 @@
       ],
       "Ranged Weapons": [
         {
-          "name": "Multi-laser",
+          "name": "Lasgun array",
           "characteristics": {
-            "Range": "36\"",
-            "A": "4",
+            "Range": "24\"",
+            "A": "6",
             "BS": "4+",
-            "S": "6",
+            "S": "3",
             "AP": "0",
             "D": "1",
-            "Keywords": "-"
+            "Keywords": "Rapid Fire 6"
           }
         },
         {
@@ -2379,15 +2255,15 @@
           }
         },
         {
-          "name": "Lasgun array",
+          "name": "Multi-laser",
           "characteristics": {
-            "Range": "24\"",
-            "A": "6",
+            "Range": "36\"",
+            "A": "4",
             "BS": "4+",
-            "S": "3",
+            "S": "6",
             "AP": "0",
             "D": "1",
-            "Keywords": "Rapid Fire 6"
+            "Keywords": "-"
           }
         }
       ]
@@ -2398,20 +2274,6 @@
       "pts": "75"
     },
     "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Storm bolter",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Rapid Fire 2"
-          }
-        }
-      ],
       "Transport": [
         {
           "name": "Imperial Rhino",
@@ -2438,6 +2300,20 @@
           "name": "Self-repair",
           "characteristics": {
             "Description": "At the start of your Command phase, this model regains 1 lost wound."
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Storm bolter",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "2",
+            "BS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Rapid Fire 2"
           }
         }
       ]
@@ -2562,10 +2438,6 @@
   },
   "Battle Sister": {
     "cost": {},
-    "profiles": {}
-  },
-  "Battle Sister w/ Simulacrum Imperialis": {
-    "cost": {},
     "profiles": {
       "Abilities": [
         {
@@ -2574,12 +2446,7 @@
             "Description": "Improve the Leadership characteristic of models in the bearer's unit by 1."
           }
         }
-      ]
-    }
-  },
-  "Battle Sister w/ Special or Heavy Weapon": {
-    "cost": {},
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "Ministorum heavy flamer",
@@ -2619,10 +2486,6 @@
         }
       ]
     }
-  },
-  "Battle Sister w/ Special Weapon": {
-    "cost": {},
-    "profiles": {}
   },
   "Sisters of Battle Immolator": {
     "cost": {
@@ -2755,46 +2618,6 @@
       "pts": "30"
     },
     "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Jokaero weapons - focused",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "10",
-            "AP": "-1",
-            "D": "3",
-            "Keywords": "-"
-          }
-        },
-        {
-          "name": "Jokaero weapons - scattered",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "D6",
-            "BS": "N/A",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Torrent"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "5+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ],
       "Abilities": [
         {
           "name": "Inconceivable Augmentation",
@@ -2837,6 +2660,46 @@
             "W": "2",
             "LD": "7+",
             "OC": "0"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "2",
+            "WS": "5+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
+          }
+        }
+      ],
+      "Ranged Weapons": [
+        {
+          "name": "Jokaero weapons - focused",
+          "characteristics": {
+            "Range": "24\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "10",
+            "AP": "-1",
+            "D": "3",
+            "Keywords": "-"
+          }
+        },
+        {
+          "name": "Jokaero weapons - scattered",
+          "characteristics": {
+            "Range": "12\"",
+            "A": "D6",
+            "BS": "N/A",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Torrent"
           }
         }
       ]
@@ -2889,6 +2752,20 @@
           "name": "Infernum Halo-launcher",
           "characteristics": {
             "Description": "The bearer has the SMOKE keyword."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Armoured hull",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "6",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
           }
         }
       ],
@@ -2953,121 +2830,33 @@
             "Keywords": "-"
           }
         }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Armoured hull",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "4+",
-            "S": "6",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
       ]
     }
   },
-  "Model w/ boltgun and power weapon": {
+  "Veteran": {
     "cost": {},
     "profiles": {}
   },
-  "Model w/ Deathwatch thunder hammer": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Deathwatch thunder hammer",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "4+",
-            "S": "10",
-            "AP": "-2",
-            "D": "3",
-            "Keywords": "Devastating Wounds"
-          }
-        }
-      ]
-    }
-  },
-  "Model w/ frag cannon and CCW": {
+  "Watch Sergeant": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
         {
-          "name": "Frag cannon",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "D3",
-            "BS": "4+",
-            "S": "7",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "Blast, Heavy, Rapid Fire D3"
-          }
-        }
-      ]
-    }
-  },
-  "Model w/ infernus heavy bolter and CCW": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Model w/ Astartes shield and boltgun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Model w/ Astartes shield and power weapon": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Model w/ stalker-pattern boltgun and CCW": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Stalker-pattern boltgun",
+          "name": "Combi-weapon",
           "characteristics": {
             "Range": "24\"",
             "A": "1",
-            "BS": "3+",
-            "S": "4",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "Heavy, Precision"
-          }
-        }
-      ]
-    }
-  },
-  "Model w/ Deathwatch shotgun and CCW": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Deathwatch shotgun",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "2",
-            "BS": "3+",
+            "BS": "4+",
             "S": "4",
             "AP": "0",
-            "D": "2",
-            "Keywords": "Assault"
+            "D": "1",
+            "Keywords": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1"
           }
         }
-      ]
-    }
-  },
-  "Model w/ Black Shield blades": {
-    "cost": {},
-    "profiles": {
+      ],
       "Melee Weapons": [
         {
-          "name": "Blackshield blades",
+          "name": "Xenophase blade",
           "characteristics": {
             "Range": "Melee",
             "A": "4",
@@ -3075,51 +2864,13 @@
             "S": "5",
             "AP": "-2",
             "D": "1",
-            "Keywords": "Twin-linked"
+            "Keywords": "Devastating Wounds"
           }
         }
       ]
     }
-  },
-  "Sgt w/ Astartes shield and xenophase blade": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Sgt w/ boltgun and xenophase blade": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Sgt w/ combi-weapon and power weapon": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Sgt w/ combi-weapon and xenophase blade": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Sgt w/ Astartes shield and combi-weapon": {
-    "cost": {},
-    "profiles": {}
   },
   "Deathwatch Terminator": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Deathwatch Terminator",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Deathwatch Terminator w/ Heavy Weapon": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -3150,6 +2901,40 @@
             "W": "3",
             "LD": "6+",
             "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Twin lightning claws",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-Linked"
+          }
+        },
+        {
+          "name": "Thunder hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Storm shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 4."
           }
         }
       ]
@@ -3183,27 +2968,7 @@
             "D": "1",
             "Keywords": "Assault, Heavy"
           }
-        }
-      ]
-    }
-  },
-  "Kill Team Intercessor w/ Special Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Intercessor",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Hand Flamer",
           "characteristics": {
@@ -3216,88 +2981,6 @@
             "Keywords": "Ignores Cover, Pistol, Torrent"
           }
         },
-        {
-          "name": "Bolt Rifle",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "3+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Assault, Heavy"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Intercessor w/ Melee Option": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Intercessor",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Bolt Rifle",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "3+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Assault, Heavy"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Intercessor w/ LV Ranged Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Intercessor",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Intercessor w/ Heavy Bolt Pistol": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Intercessor",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
         {
           "name": "Heavy bolt pistol",
           "characteristics": {
@@ -3357,42 +3040,6 @@
       ]
     }
   },
-  "Kill Team Intercessor w/ plasma pistol and incinerator": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Intercessor",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Intercessor w/ bolt pistol and incinerator": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Intercessor",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
   "Kill Team Heavy Intercessor": {
     "cost": {},
     "profiles": {
@@ -3408,27 +3055,7 @@
             "D": "1",
             "Keywords": "Assault, Heavy"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Kill Team Heavy Intercessor",
-          "characteristics": {
-            "M": "5\"",
-            "T": "6",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Heavy Intercessor w/ Heavy Bolter": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Heavy Bolter",
           "characteristics": {
@@ -3440,40 +3067,7 @@
             "D": "2",
             "Keywords": "Assault, Heavy, Sustained Hits 1"
           }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Kill Team Heavy Intercessor w/ Heavy Bolter",
-          "characteristics": {
-            "M": "5\"",
-            "T": "6",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Heavy Intercessor w/ power fists & flamestorm gauntlets": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Heavy Intercessor",
-          "characteristics": {
-            "M": "5\"",
-            "T": "6",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Flamestorm gauntlets",
           "characteristics": {
@@ -3485,41 +3079,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Torrent, Twin-Linked"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Power fists",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "4+",
-            "S": "8",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "Twin-Linked"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Heavy Intercessor w/ power fists & auto boltstorm gauntlets": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Heavy Intercessor",
-          "characteristics": {
-            "M": "5\"",
-            "T": "6",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Auto boltstorm gauntlets",
           "characteristics": {
@@ -3543,41 +3103,7 @@
             "D": "1",
             "Keywords": "Blast"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Power fists",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "4+",
-            "S": "8",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "Twin-Linked"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Heavy Intercessor w/ melta rifle": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Heavy Intercessor",
-          "characteristics": {
-            "M": "5\"",
-            "T": "6",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Melta rifle",
           "characteristics": {
@@ -3589,27 +3115,7 @@
             "D": "D6",
             "Keywords": "Heavy, Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Kill Team Heavy Intercessor w/ Multi-melta": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Heavy Intercessor",
-          "characteristics": {
-            "M": "5\"",
-            "T": "6",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Multi-melta",
           "characteristics": {
@@ -3621,35 +3127,7 @@
             "D": "D6",
             "Keywords": "Heavy, Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Kill Team Heavy Intercessor w/ jump pack & assault bolters": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Heavy Intercessor w/ jump pack",
-          "characteristics": {
-            "M": "10\"",
-            "T": "6",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Jump pack",
-          "characteristics": {
-            "Description": "The bearer has a Move characteristic of 10\" and can move over models and terrain features as if they were not there."
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Assault bolters",
           "characteristics": {
@@ -3661,35 +3139,7 @@
             "D": "2",
             "Keywords": "Assault, Pistol, Sustained Hits 2, Twin-Linked"
           }
-        }
-      ]
-    }
-  },
-  "Kill Team Heavy Intercessor w/ jump pack & plasma exterminators": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Heavy Intercessor w/ jump pack",
-          "characteristics": {
-            "M": "10\"",
-            "T": "6",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Jump pack",
-          "characteristics": {
-            "Description": "The bearer has a Move characteristic of 10\" and can move over models and terrain features as if they were not there."
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma exterminators - Standard",
           "characteristics": {
@@ -3712,6 +3162,63 @@
             "AP": "-3",
             "D": "3",
             "Keywords": "Assault, Hazardous, Pistol, Twin-Linked"
+          }
+        }
+      ],
+      "Unit": [
+        {
+          "name": "Kill Team Heavy Intercessor",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Kill Team Heavy Intercessor w/ Heavy Bolter",
+          "characteristics": {
+            "M": "5\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Kill Team Heavy Intercessor w/ jump pack",
+          "characteristics": {
+            "M": "10\"",
+            "T": "6",
+            "SV": "3+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Power fists",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Twin-Linked"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Jump pack",
+          "characteristics": {
+            "Description": "The bearer has a Move characteristic of 10\" and can move over models and terrain features as if they were not there."
           }
         }
       ]
@@ -4149,37 +3656,55 @@
           "characteristics": {
             "Description": "4+"
           }
-        }
-      ]
-    }
-  },
-  "Kill Team Terminator w/ Heavy Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
+        },
         {
-          "name": "Kill Team Terminator",
+          "name": "Storm shield",
           "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
+            "Description": "The bearer has a Wounds characteristic of 4."
           }
         }
       ],
-      "Abilities": [
+      "Melee Weapons": [
         {
-          "name": "Invulnerable Save",
+          "name": "Twin lightning claws",
           "characteristics": {
-            "Description": "4+"
+            "Range": "Melee",
+            "A": "5",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Twin-Linked"
+          }
+        },
+        {
+          "name": "Thunder hammer",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "4+",
+            "S": "8",
+            "AP": "-2",
+            "D": "2",
+            "Keywords": "Devastating Wounds"
+          }
+        },
+        {
+          "name": "Power weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
           }
         }
       ]
     }
   },
-  "Kill Team Veteran w/ Jump Pack": {
+  "Kill Team Veteran": {
     "cost": {},
     "profiles": {
       "Unit": [
@@ -4193,6 +3718,17 @@
             "LD": "6+",
             "OC": "1"
           }
+        },
+        {
+          "name": "Kill Team Veteran",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
         }
       ],
       "Abilities": [
@@ -4201,41 +3737,11 @@
           "characteristics": {
             "Description": "The bearer has a Move characteristic of 12\" and can move over models and terrain features as if they were not there."
           }
-        }
-      ]
-    }
-  },
-  "Kill Team Veteran": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
+        },
         {
-          "name": "Kill Team Veteran",
+          "name": "Astartes shield",
           "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "2"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Veteran w/ Deathwatch Thunder Hammer": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Veteran",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "2"
+            "Description": "The bearer has a 4+ invulnerable save."
           }
         }
       ],
@@ -4252,22 +3758,18 @@
             "Keywords": "Devastating Wounds"
           }
         }
-      ]
-    }
-  },
-  "Kill Team Veteran w/ Heavy Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
+      ],
+      "Ranged Weapons": [
         {
-          "name": "Kill Team Veteran",
+          "name": "Frag Cannon",
           "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "2"
+            "Range": "18\"",
+            "A": "D3",
+            "BS": "4+",
+            "S": "7",
+            "AP": "-1",
+            "D": "2",
+            "Keywords": "Blast, Heavy, Rapid Fire D3"
           }
         }
       ]
@@ -4281,6 +3783,17 @@
           "name": "Kill Team Infiltrator",
           "characteristics": {
             "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "1"
+          }
+        },
+        {
+          "name": "Kill Team Infiltrator w/ Jump pack",
+          "characteristics": {
+            "M": "12\"",
             "T": "4",
             "SV": "3+",
             "W": "2",
@@ -4301,49 +3814,7 @@
             "D": "1",
             "Keywords": "Heavy"
           }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Helix Gauntlet",
-          "characteristics": {
-            "Description": "Models in the bearer’s unit have the Feel No Pain 6+ ability."
-          }
         },
-        {
-          "name": "Infiltrator Comms Array",
-          "characteristics": {
-            "Description": "Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP."
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Infiltrator w/ jump pack": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Infiltrator w/ Jump pack",
-          "characteristics": {
-            "M": "12\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Jump pack",
-          "characteristics": {
-            "Description": "The bearer has a Move characteristic of 12\" and can move over models and terrain features as if they were not there."
-          }
-        }
-      ],
-      "Ranged Weapons": [
         {
           "name": "Accelerator autocannon",
           "characteristics": {
@@ -4355,27 +3826,7 @@
             "D": "2",
             "Keywords": "Heavy"
           }
-        }
-      ]
-    }
-  },
-  "Kill Team Infiltrator w/ occulus bolt carbine": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Infiltrator",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Occulus bolt carbine",
           "characteristics": {
@@ -4387,41 +3838,7 @@
             "D": "1",
             "Keywords": "Assault, Ignores Cover"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Paired combat blades",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Sustained Hits 1"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Infiltrator w/ combat knife": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Infiltrator",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
+        },
         {
           "name": "Special-issue bolt pistol",
           "characteristics": {
@@ -4445,53 +3862,7 @@
             "D": "1",
             "Keywords": "Precision"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Combat knife",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "4",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Precision"
-          }
         },
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Kill Team Infiltrator w/ Bolt sniper rifle": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Kill Team Infiltrator",
-          "characteristics": {
-            "M": "6\"",
-            "T": "4",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Ranged Weapons": [
         {
           "name": "Bolt sniper rifle",
           "characteristics": {
@@ -4515,17 +3886,63 @@
             "D": "D6",
             "Keywords": "Heavy"
           }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Helix Gauntlet",
+          "characteristics": {
+            "Description": "Models in the bearer’s unit have the Feel No Pain 6+ ability."
+          }
         },
         {
-          "name": "Bolt carbine",
+          "name": "Infiltrator Comms Array",
           "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "3+",
+            "Description": "Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          }
+        },
+        {
+          "name": "Jump pack",
+          "characteristics": {
+            "Description": "The bearer has a Move characteristic of 12\" and can move over models and terrain features as if they were not there."
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Paired combat blades",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "Sustained Hits 1"
+          }
+        },
+        {
+          "name": "Combat knife",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "4",
+            "WS": "3+",
             "S": "4",
             "AP": "0",
             "D": "1",
             "Keywords": "Precision"
+          }
+        },
+        {
+          "name": "Close combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "4",
+            "AP": "0",
+            "D": "1",
+            "Keywords": "-"
           }
         }
       ]
@@ -4828,7 +4245,7 @@
       ]
     }
   },
-  "Missionary w/ plasma gun": {
+  "Missionary": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -4883,34 +4300,7 @@
       ]
     }
   },
-  "Missionary w/ flamer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Sanctifier w/ hand flamer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Sanctifier w/ two hand flamers": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "3+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Sanctifier w/ simulacrum imperialis": {
+  "Sanctifier": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [

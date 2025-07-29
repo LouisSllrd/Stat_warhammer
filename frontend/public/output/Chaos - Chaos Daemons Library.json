@@ -874,7 +874,7 @@
   },
   "Daemon Prince of Chaos": {
     "cost": {
-      "pts": "190"
+      "pts": "180"
     },
     "profiles": {
       "Unit": [
@@ -883,6 +883,17 @@
           "characteristics": {
             "M": "8\"",
             "T": "10",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        },
+        {
+          "name": "Daemon Prince of Chaos with wings",
+          "characteristics": {
+            "M": "12\"",
+            "T": "9",
             "SV": "2+",
             "W": "10",
             "LD": "6+",
@@ -908,69 +919,7 @@
           "characteristics": {
             "Description": "This model has a 4+ invulnerable save."
           }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Infernal cannon",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "3",
-            "BS": "2+",
-            "S": "5",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "➤ Hellforged weapons - strike",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "6",
-            "WS": "2+",
-            "S": "8",
-            "AP": "-2",
-            "D": "3",
-            "Keywords": "-"
-          }
         },
-        {
-          "name": "➤ Hellforged weapons - sweep",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "14",
-            "WS": "2+",
-            "S": "6",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Daemon Prince of Chaos with wings": {
-    "cost": {
-      "pts": "180"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Daemon Prince of Chaos with wings",
-          "characteristics": {
-            "M": "12\"",
-            "T": "9",
-            "SV": "2+",
-            "W": "10",
-            "LD": "6+",
-            "OC": "3"
-          }
-        }
-      ],
-      "Abilities": [
         {
           "name": "Malefic Destruction",
           "characteristics": {
@@ -981,12 +930,6 @@
           "name": "Harbinger of Death",
           "characteristics": {
             "Description": "Each time this model is selected to fight, select one of the following abilities. Until the end of the phase, this model’s hellforged weapons have that ability:\n■ [LETHAL HITS]\n■ [PRECISION]\n■ [SUSTAINED HITS 1]"
-          }
-        },
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "This model has a 4+ invulnerable save."
           }
         }
       ],
