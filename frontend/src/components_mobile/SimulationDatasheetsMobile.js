@@ -477,7 +477,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
   };
   return (
     <div style={{ padding: 32, fontFamily: "Segoe UI, sans-serif", background: "#DCFEFF", minHeight: "100vh" }}>
-      <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32, textAlign: "center", color: "#2d3748" }}> Simulateur Profils Pré-définis</h1>
+      <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32, textAlign: "center", color: "#2d3748" }}> {t("accueil.generic.predef_title")}</h1>
       <div style={{ display: "flex", gap: 24, alignItems: "flex-start", marginTop: 24, flexWrap: "wrap", flexDirection: "row" }}>
       
       {/* Profils d'attaque */}
@@ -957,48 +957,52 @@ style={{
         ✕
       </button>
 
-      <h2 style={{ marginBottom: 12 }}>⚠️ Remarques</h2>
+      <h2 style={{ marginBottom: 12 }}>{t("datasheets.welcome.title")}</h2>
 
       <p>
-        Les données utilisées pour les profils d'unités pré-définis dans cette page sont issues du projet open source :
+        {t("datasheets.welcome.source_notice")}
         <br />
-        <strong>BSData/wh40k-10e</strong> —&nbsp;
-        <a href="https://github.com/BSData/wh40k-10e" target="_blank" rel="noopener noreferrer">
-          https://github.com/BSData/wh40k-10e
+        <strong>{t("datasheets.welcome.source_name")}</strong> —&nbsp;
+        <a
+          href={t("datasheets.welcome.source_url")}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("datasheets.welcome.source_url")}
         </a>
-        , sous licence MIT.
+        , {t("datasheets.welcome.license")}
       </p>
 
       <p>
-        <strong>Certains profils peuvent être incomplets ou non définis.</strong>
+        <strong>{t("datasheets.welcome.incomplete_profiles")}</strong>
       </p>
 
       <p>
-        <strong>Paramètres pré-définis attaquant :</strong><br />
-        Attaques, CT/CC, Force, PA, Dégâts, Touches létales, Touches soutenues, Blessures dévastatrices, Déflagration, Melta
+        <strong>{t("datasheets.welcome.attacker_preset")}</strong>
+        <br />
+        {t("datasheets.welcome.attacker_details")}
       </p>
 
       <p style={{ marginTop: 16 }}>
-        <strong>Paramètres pré-définis défenseur :</strong><br />
-        Endurance, PV, Sauvegarde, Sauvegarde Invulnérable
+        <strong>{t("datasheets.welcome.defender_preset")}</strong>
+        <br />
+        {t("datasheets.welcome.defender_details")}
       </p>
 
-
       <button
-          onClick={() => setShowWelcome(false)}
-          style={{
-            padding: "10px 20px",
-            backgroundColor: "#e0e0e0",
-            color: "#333",
-            border: "none",
-            borderRadius: 5,
-            fontWeight: "bold",
-            cursor: "pointer",
-          }}
-        >
-          Continuer vers la page 
-        </button>
-
+        onClick={() => setShowWelcome(false)}
+        style={{
+          padding: "10px 20px",
+          backgroundColor: "#e0e0e0",
+          color: "#333",
+          border: "none",
+          borderRadius: 5,
+          fontWeight: "bold",
+          cursor: "pointer"
+        }}
+      >
+        {t("datasheets.welcome.continue_button")}
+      </button>
     </div>
   </div>
 )}
