@@ -469,7 +469,7 @@
   },
   "Daemon Prince of Slaanesh": {
     "cost": {
-      "pts": "195",
+      "pts": "200",
       "Crusade Points": "0",
       "Crusade: Battle Honours": "0",
       "Crusade: Experience": "0",
@@ -482,6 +482,17 @@
           "characteristics": {
             "M": "10\"",
             "T": "10",
+            "SV": "2+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        },
+        {
+          "name": "Daemon Prince of Slaanesh with Wings",
+          "characteristics": {
+            "M": "14\"",
+            "T": "9",
             "SV": "2+",
             "W": "10",
             "LD": "6+",
@@ -513,38 +524,6 @@
           "characteristics": {
             "Description": "If this model is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. This model can fight after the attacking unit has finished making its attacks, and is then removed from play."
           }
-        }
-      ]
-    }
-  },
-  "Daemon Prince of Slaanesh with Wings": {
-    "cost": {
-      "pts": "200",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Daemon Prince of Slaanesh with Wings",
-          "characteristics": {
-            "M": "14\"",
-            "T": "9",
-            "SV": "2+",
-            "W": "10",
-            "LD": "6+",
-            "OC": "3"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "This model has a 4+ invulnerable save."
-          }
         },
         {
           "name": "Daemonic Destruction",
@@ -566,7 +545,9 @@
     "profiles": {}
   },
   "Tormentor": {
-    "cost": {},
+    "cost": {
+      "pts": "0"
+    },
     "profiles": {
       "Ranged Weapons": [
         {
@@ -580,16 +561,7 @@
             "D": "1",
             "Keywords": "Precision"
           }
-        }
-      ]
-    }
-  },
-  "Tormentor w/ plasma gun": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma gun - standard",
           "characteristics": {
@@ -613,14 +585,7 @@
             "D": "2",
             "Keywords": "Hazardous, Precision, Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Tormentor w/ meltagun": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Meltagun",
           "characteristics": {
@@ -892,7 +857,7 @@
       ]
     }
   },
-  "Noise Marine w/ sonic blaster": {
+  "Noise Marine": {
     "cost": {
       "pts": "0"
     },
@@ -909,14 +874,7 @@
             "OC": "1"
           }
         }
-      ]
-    }
-  },
-  "Noise Marine w/ blastmaster": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "➤ Blastmaster - varied frequency",
@@ -940,19 +898,6 @@
             "AP": "-2",
             "D": "3",
             "Keywords": "Ignores Cover"
-          }
-        }
-      ],
-      "Unit": [
-        {
-          "name": "Noise Marines",
-          "characteristics": {
-            "M": "6\"",
-            "T": "5",
-            "SV": "3+",
-            "W": "2",
-            "LD": "6+",
-            "OC": "1"
           }
         }
       ]

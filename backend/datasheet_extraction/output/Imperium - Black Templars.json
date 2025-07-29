@@ -153,6 +153,18 @@
     "profiles": {
       "Melee Weapons": [
         {
+          "name": "Power Weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "-"
+          }
+        },
+        {
           "name": "Thunder Hammer",
           "characteristics": {
             "Range": "Melee",
@@ -166,6 +178,17 @@
         }
       ],
       "Unit": [
+        {
+          "name": "Primaris Sword Brother",
+          "characteristics": {
+            "M": "6\"",
+            "T": "4",
+            "SV": "3+",
+            "W": "2",
+            "LD": "6+",
+            "OC": "2"
+          }
+        },
         {
           "name": "Primaris Sword Brethren",
           "characteristics": {

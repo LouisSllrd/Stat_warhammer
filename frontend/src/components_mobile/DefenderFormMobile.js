@@ -1,18 +1,5 @@
 import React from "react";
-
-const fieldLabels = {
-  Toughness: "Endurance",
-  Save: "Sauvegarde d'armure",
-  Save_invu: "Sauvegarde invulnérable",
-  PV: "PV par figurine",
-  Nb_of_models: "Nombre de figurines",
-  Cover: "Couvert",
-  Fnp: "Insensible à la douleur (FNP)",
-  Modif_hit_def: "Modificateur de touche",
-  Modif_wound_def: "Modificateur de blessure",
-  Halve_damage: "Divise les dégâts par 2",
-  Reduce_damage_1: "Réduit les dégâts de 1"
-};
+import { useTranslation } from "react-i18next";
 
 const defaultParams = {
   Toughness: 4,
@@ -38,8 +25,26 @@ const optionsMap = {
   Modif_hit_def: [0,-1,-2],
   Modif_wound_def: [0, -1],
 };
+function useFieldLabels(t) {
+  return {
+    Toughness: t("simulateur.defenseur.Toughness"),
+    Save: t("simulateur.defenseur.Save"),
+    Save_invu: t("simulateur.defenseur.Save_invu"),
+    PV: t("simulateur.defenseur.PV"),
+    Nb_of_models: t("simulateur.defenseur.Nb_of_models"),
+    Cover: t("simulateur.defenseur.Cover"),
+    Fnp: t("simulateur.defenseur.Fnp"),
+    Modif_hit_def: t("simulateur.defenseur.Modif_hit_def"),
+    Modif_wound_def: t("simulateur.defenseur.Modif_wound_def"),
+    Halve_damage: t("simulateur.defenseur.Halve_damage"),
+    Reduce_damage_1: t("simulateur.defenseur.Reduce_damage_1"),
+  };
+}
+
 
 const DefenderForm = ({ params, setParams }) => {
+  const { t } = useTranslation();
+  const fieldLabels = useFieldLabels(t);
   const handleChange = (e) => {
     const { name, type, value, checked } = e.target;
     

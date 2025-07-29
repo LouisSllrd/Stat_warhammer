@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import AttackProfileCard from "./AttackProfileCardMobile";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -12,6 +13,7 @@ export default function ListeModal({
   onAddUnite,
   title,
 }) {
+  const { t } = useTranslation();
   const [unitName, setUnitName] = useState("");
   const [attackProfiles, setAttackProfiles] = useState([{}]);
   const [showAddUnit, setShowAddUnit] = useState(false);
@@ -139,7 +141,7 @@ export default function ListeModal({
 
         <input
           type="text"
-          placeholder="Nom de la liste"
+          placeholder={t("mes_listes.placeholders.listName")}
           value={tempListe.nom}
           onChange={(e) =>
             setTempListe((prev) => ({ ...prev, nom: e.target.value }))
@@ -148,7 +150,7 @@ export default function ListeModal({
         />
 
         <button style={styles.buttonPrimary} onClick={handleAddUnit}>
-          + Ajouter une unité
+        {t("mes_listes.buttons.addUnit")}
         </button>
 
         {tempListe.unites.length > 0 && (
@@ -157,7 +159,7 @@ export default function ListeModal({
             marginTop: 12,
             borderRadius: 8,
             backgroundColor: '#fefefe', }}>
-            <h3 style={styles.subtitle}>Unités ajoutées :</h3>
+            <h3 style={styles.subtitle}>{t("mes_listes.titles.addedUnits")} :</h3>
             <table style={{
               width: "100%",
               borderCollapse: "collapse",
@@ -168,8 +170,8 @@ export default function ListeModal({
             }}>
               <thead  style={{ backgroundColor: "#ebf8ff" }}>
                 <tr>
-                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>Unités</th>
-                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>Profils</th>
+                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>{t("mes_listes.labels.units")}</th>
+                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>{t("mes_listes.labels.profiles")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -182,8 +184,8 @@ export default function ListeModal({
                         {(Array.isArray(unit.profils) ? unit.profils : []).map(
                           (p, i) => (
                             <li key={i}>
-                              <em>{p.nom || `Profil ${i + 1}`}</em>{` (A: ${p.Attacks ?? "?"}, CC/CT: ${p.CT ?? "?"}+, F: ${p.Strength ?? "?"}, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"})`}
-                            </li>
+                            <em>{p.nom || `${t("mes_listes.labels.profile")} ${i + 1}`}</em>{` (A: ${p.Attacks ?? "?"}, ${t("simulateur.attaquant.CT")}: ${p.CT ?? "?"}+, ${t("mes_listes.labels.F")}: ${p.Strength ?? "?"}, ${t("mes_listes.labels.PA")}: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"})`}
+                          </li>
                           )
                         )}
                         </ol>
@@ -209,10 +211,10 @@ export default function ListeModal({
             type: "spring",
             stiffness: 70,
           }} style={styles.subModal}>
-            <h3 style={styles.subtitle}>Créer une unité</h3>
-            <input
-              type="text"
-              placeholder="Nom de l'unité"
+          <h3 style={styles.subtitle}>{t("mes_listes.titles.createUnit")}</h3>
+          <input
+            type="text"
+            placeholder={t("mes_listes.placeholders.unitName")}
               value={unitName}
               onChange={(e) => setUnitName(e.target.value)}
               style={styles.input}
@@ -225,9 +227,9 @@ export default function ListeModal({
                   style={styles.buttonToggle}
                 >
                   {visibleProfiles.includes(index)
-                    ? `Cacher ${profile.nom || `Profil ${index + 1}`}`
-                    : `Afficher ${profile.nom || `Profil ${index + 1}`}`}
-                </button>
+                ? `${t("mes_listes.labels.hideProfile")} ${profile.nom || `${t("mes_listes.labels.profile")} ${index + 1}`}`
+                : `${t("mes_listes.labels.showProfile")} ${profile.nom || `${t("mes_listes.labels.profile")} ${index + 1}`}`}
+            </button>
                 {attackProfiles.length > 1 && (
                   <button
                     onClick={() => {
@@ -240,7 +242,7 @@ export default function ListeModal({
                     }}
                     style={{... styles.buttonDelete, marginLeft: 10}}
                   >
-                    Supprimer ce profil
+                {t("mes_listes.buttons.deleteProfile")}
                   </button>
                 )}
 
@@ -248,7 +250,7 @@ export default function ListeModal({
                   <>
                     <input
                       type="text"
-                      placeholder={`Nom du profil ${index + 1}`}
+                  placeholder={`${t("mes_listes.placeholders.profileName")} ${index + 1}`}
                       value={profile.nom || ""}
                       onChange={(e) =>
                         handleProfileChange(index, {
@@ -281,18 +283,18 @@ export default function ListeModal({
               }}
               style={styles.buttonPrimary}
             >
-              + Ajouter un profil d'attaque
+            {t("mes_listes.buttons.addAttackProfile")}
             </button>
 
             <div style={{ marginTop: 16 }}>
               <button onClick={handleCreateUnit} style={styles.buttonSecondary}>
-                ✅ Sauvegarder l'unité
+              {t("mes_listes.buttons.save")}
               </button>
               <button
                 onClick={() => setShowAddUnit(false)}
                 style={{... styles.buttonSecondary, marginLeft: 10}}
               >
-                ❌ Annuler
+                {t("mes_listes.buttons.cancel")}
               </button>
             </div>
             </motion.div>
@@ -301,10 +303,10 @@ export default function ListeModal({
 
         <div style={{ marginTop: 20 }}>
           <button onClick={handleSaveList} style={styles.buttonSecondary}>
-          {loading ? "Sauvegarde en cours..." : "✅ Sauvegarder"}
+          {loading ? t("mes_listes.buttons.saving") : t("mes_listes.buttons.save")}
           </button>
           <button onClick={onClose} style={{... styles.buttonSecondary, marginLeft: 10}}>
-            ❌ Annuler
+          {t("mes_listes.buttons.cancel")}
           </button>
         </div>
       </div>

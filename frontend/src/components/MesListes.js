@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   collection,
   query,
@@ -18,6 +19,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 
 function MesListes() {
+
+  const { t } = useTranslation();
   const [listes, setListes] = useState([]);
   const [selectedListeId, setSelectedListeId] = useState("");
   const [selectedListe, setSelectedListe] = useState(null);
@@ -125,7 +128,7 @@ function MesListes() {
   const handleModifierListe = async (newListe) => {
     setLoading(true);
     if (!newListe || !newListe.nom || !Array.isArray(newListe.unites)) {
-      console.error("❌ Liste invalide :", newListe);
+      console.error(t("mes_listes.errors.invalidList"), newListe);
       return;
     }
   
@@ -140,9 +143,9 @@ function MesListes() {
       setTempListe({ nom: "", unites: [] });
   
       fetchListe(selectedListe.id);
-      console.log("✅ Liste mise à jour dans Firestore");
+      console.log(t("mes_listes.labels.listUpdated"));
     } catch (error) {
-      console.error("❌ Erreur lors de la mise à jour Firestore :", error);
+      console.error(t("mes_listes.labels.updateError"), error);
     }
     setLoading(false);
   };
@@ -186,9 +189,9 @@ function MesListes() {
       await updateDoc(docRef, {
         unites: updatedUnits,
       });
-      console.log("✅ Unité supprimée dans Firestore");
+      console.log(t("mes_listes.labels.unitDeleted"));
     } catch (error) {
-      console.error("❌ Erreur lors de la suppression dans Firestore :", error);
+      console.error(t("mes_listes.labels.deleteError"), error);
     }
   };
   
@@ -197,7 +200,7 @@ function MesListes() {
   const handleDeleteListe = async () => {
     if (!selectedListe || !selectedListe.id) return;
   
-    const confirmDelete = window.confirm(`Supprimer la liste "${selectedListe.nom}" ?`);
+    const confirmDelete = window.confirm(`${t("mes_listes.labels.confirmDeleteList")}${selectedListe.nom}" ?`);
     if (!confirmDelete) return;
   
     try {
@@ -290,7 +293,7 @@ function MesListes() {
       {/* Titre centré */}
       <div style={{ textAlign: "center", padding: "32px 0" }}>
         <h1 style={{ fontSize: 32, fontWeight: 700, color: "#2d3748", margin: 0 }}>
-          Mes listes
+          {t("mes_listes.titles.pageTitle")}
         </h1>
       </div>
   
@@ -314,7 +317,7 @@ function MesListes() {
             cursor: "pointer",
           }}
         >
-          ➕ Créer une nouvelle liste
+          {t("mes_listes.buttons.createList")}
         </button>
   
         <select
@@ -351,7 +354,7 @@ function MesListes() {
             maxWidth: "100%",
           }}
         >
-          <option value="">Sélectionner une liste</option>
+          <option value="">{t("mes_listes.placeholders.selectList")}</option>
           {listes.map((l) => (
             <option key={l.id} value={l.id}>
               {l.nom}
@@ -381,7 +384,7 @@ function MesListes() {
           flexDirection: "column",
           gap: 16, }}>
           <h3 style={{ fontSize: 20, marginBottom: 12 }}>
-            Contenu de la liste <span style={{ fontWeight: "bold" }}>{selectedListe.nom}</span>
+            {t("mes_listes.titles.listContent")} <span style={{ fontWeight: "bold" }}>{selectedListe.nom}</span>
           </h3>
   
           <table
@@ -396,10 +399,10 @@ function MesListes() {
           >
             <thead style={{ backgroundColor: "#ebf8ff" }}>
               <tr>
-                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>Unités</th>
-                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>Profils</th>
+                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>{t("mes_listes.labels.units")}</th>
+                <th style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>{t("mes_listes.labels.profiles")}</th>
                 <th colSpan={2} style={{ padding: 12, textAlign: "center", border: "1px solid #ddd" }}>
-                  Actions
+                  {t("mes_listes.labels.actions")}
                 </th>
               </tr>
             </thead>
@@ -414,13 +417,13 @@ function MesListes() {
                           <ol>
                           {u.profils.map((p, i) => (
                             <li key={i}>
-                              <em>{p.nom || `Profil ${i + 1}`}</em>{` (A: ${p.Attacks ?? "?"}, CC/CT: ${p.CT ?? "?"}+, F: ${p.Strength ?? "?"}, PA: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"})`}
+                              <em>{p.nom || `${t("mes_listes.labels.profile")} ${i + 1}`}</em>{` (A: ${p.Attacks ?? "?"}, ${t("simulateur.attaquant.CT")}: ${p.CT ?? "?"}+, ${t("mes_listes.labels.F")}: ${p.Strength ?? "?"}, ${t("mes_listes.labels.PA")}: ${p.PA ?? "?"}, D: ${p.Damage ?? "?"})`}
                             </li>
                           ))}
                         </ol>
                         
                         ) : (
-                          <li>Aucun profil</li>
+                          <li>{t("mes_listes.labels.noProfile")}</li>
                         )}
                       </ul>
                     </td>
@@ -436,7 +439,7 @@ function MesListes() {
                           cursor: "pointer",
                         }}
                       >
-                        ✏️ Modifier
+                        {t("mes_listes.buttons.edit")}
                       </button>
                     </td>
                     <td style={cellStyle}>
@@ -451,7 +454,7 @@ function MesListes() {
                           cursor: "pointer",
                         }}
                       >
-                        🗑️ Supprimer
+                        {t("mes_listes.buttons.delete")}
                       </button>
                     </td>
                   </tr>
@@ -459,7 +462,7 @@ function MesListes() {
               ) : (
                 <tr>
                   <td colSpan={4} style={{ padding: 12, textAlign: "center" }}>
-                    Aucune unité disponible
+                    {t("mes_listes.labels.noUnits")}
                   </td>
                 </tr>
               )}
@@ -478,7 +481,7 @@ function MesListes() {
                 cursor: "pointer",
               }}
             >
-              ➕ Ajouter une unité
+              {t("mes_listes.buttons.addUnit")}
             </button>
   
             <button
@@ -492,7 +495,7 @@ function MesListes() {
                 cursor: "pointer",
               }}
             >
-              🗑️ Supprimer la liste
+              {t("mes_listes.buttons.deleteList")}
             </button>
           </div>
         </motion.div>
@@ -519,7 +522,7 @@ function MesListes() {
         onSave={handleCreateListe}
         tempListe={tempListe}
         setTempListe={setTempListe}
-        title="Créer une nouvelle liste"
+        title={t("mes_listes.titles.createList")}
       />
     )}
 
@@ -530,7 +533,7 @@ function MesListes() {
         onSave={handleModifierListe}
         tempListe={tempListe}
         setTempListe={setTempListe}
-        title="Modifier la liste"
+        title={t("mes_listes.titles.editList")}
       />
     )}
 
@@ -550,13 +553,13 @@ function MesListes() {
         flex: 1, display: "flex", flexDirection: "column", gap: 16,
         backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
       }}>
-        <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>{isEditMode ? "Modifier l'unité" : "Créer une nouvelle unité"}</h3>
+        <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>{isEditMode ? t("mes_listes.titles.editUnit") : t("mes_listes.titles.createUnit")}</h3>
 
         <input
           type="text"
           value={editUnitName}
           onChange={(e) => setEditUnitName(e.target.value)}
-          placeholder="Nom de l'unité"
+          placeholder={t("mes_listes.placeholders.unitName")}
           style={styles.input}
         />
 
@@ -570,8 +573,8 @@ function MesListes() {
               style={styles.buttonToggle}
             >
               {visibleProfiles.includes(index)
-                ? `Cacher ${profile.nom || `Profil ${index + 1}`}`
-                : `Afficher ${profile.nom || `Profil ${index + 1}`}`}
+                ? `${t("mes_listes.labels.hideProfile")} ${profile.nom || `${t("mes_listes.labels.profile")} ${index + 1}`}`
+                : `${t("mes_listes.labels.showProfile")} ${profile.nom || `${t("mes_listes.labels.profile")} ${index + 1}`}`}
             </button>
 
             {editAttackProfiles.length > 1 && (
@@ -583,7 +586,7 @@ function MesListes() {
                 }}
                 style={{... styles.buttonDelete, marginLeft: 10}}
               >
-                Supprimer ce profil
+                {t("mes_listes.buttons.deleteProfile")}
               </button>
             )}
 
@@ -600,7 +603,7 @@ function MesListes() {
                     };
                     setEditAttackProfiles(updatedProfiles);
                   }}
-                  placeholder={`Nom du profil ${index + 1}`}
+                  placeholder={`${t("mes_listes.placeholders.profileName")} ${index + 1}`}
                   style={styles.input}
                 />
 
@@ -628,24 +631,24 @@ function MesListes() {
           }
           style={styles.buttonPrimary}
         >
-          + Ajouter un profil d'attaque
+          {t("mes_listes.buttons.addAttackProfile")}
         </button>
 
         <div>
           <button onClick={handleSaveEditedUnit} style={styles.buttonSecondary}> 
-          {loading ? "Sauvegarde en cours..." : "✅ Sauvegarder"}
+          {loading ? t("mes_listes.buttons.saving") : t("mes_listes.buttons.save")}
           </button>
           <button
             onClick={() => setShowEditUnitModal(false)}
             style={{... styles.buttonSecondary, marginLeft: 10}}
           >
-            ❌ Annuler
+            {t("mes_listes.buttons.cancel")}
           </button>
         </div>
         </motion.div>
       ) : (
         <div style={{ height: "100%", border: "2px dashed #ccc", borderRadius: 8, padding: 20, color: "#aaa" }}>
-          Modifiez ou ajoutez une unité pour l’éditer ici
+          {t("mes_listes.titles.editOrAddUnit")}
         </div>
     )}
     </AnimatePresence>

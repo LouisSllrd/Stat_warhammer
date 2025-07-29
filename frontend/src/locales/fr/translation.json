@@ -1,0 +1,320 @@
+
+    {
+        "title_welcome": "Bienvenue sur la plateforme StatWarhammer40k pour ordinateur !",
+      
+        "accueil": {
+          "intro": "Cette plateforme vous permet de réaliser des simulations de dégâts pour vos unités Warhammer 40k contre divers cibles. Que vous soyez en train de construire votre liste d'armée ou en pleine partie, vous pouvez rapidement estimer les dégâts potentiels que peut infliger une unité contre une cible spécifique. Cette plateforme possède un affichage adaptatif suivant si elle est ouverte sur oridnateur ou sur téléphone, pour simplifier son usage dans tous les cas d'utilisation.",
+      
+          "section_generic": "Simulations génériques",
+          "generic": {
+            "mono_title": "Unité Mono Profil :",
+            "mono_text": "Simulez une attaque d'un profil d'attaque contre un profil de défense.",
+            "multi_title": "Unité Multi Profils :",
+            "multi_text": "Simulez une attaque d'une unité contenant plusieurs profils d'attaques différents(ex : leader et son unité garde du corps, une unité avec des armes spéciales, etc.).",
+            "comparateur_title": "Comparateur :",
+            "comparateur_text": "Comparez deux profils d'attaques sur une sélection variée de profils cibles afin de choisir le profil d'attaque qui correspond le mieux au rôle que vous souhaitez donner à votre unité (anti infanterie, anti char, etc.).",
+            "predef_title": "Profils Pré-définis :",
+            "predef_text": "Simulez une attaque d'un profil d'attaque contre un profil de défense provenants d'une base de données de profils pré-définis pour Warhammer 40k 10e édition. Les données utilisées pour les profils d'unités pré-définis dans cette page sont issues du projet open source BSData/wh40k-10e —",
+            "license_text": "sous licence MIT."
+          },
+      
+          "section_custom": "Simulations personnalisées (connexion requise)",
+          "custom": {
+            "listes_title": "Mes Listes :",
+            "listes_text": "Enregistrez et gérez vos listes personnelles de profils d'attaque pour les retrouver rapidement lors d'une simulation de dégâts pendant vos parties.",
+            "adverses_title": "Unités Adverses :",
+            "adverses_text": "Préparez des listes de profils ennemis courants afin de gagner du temps pendant la simulation de dégât lors de la partie.",
+            "calcul_title": "Calcul En Jeu :",
+            "calcul_text": "Simulez rapidement une attaque d'une unité d'une de vos liste contre une unité défensive prédéfinie."
+          },
+      
+          "section_connexion": "Connexion",
+          "connexion": "La connexion est nécessaire pour créer et gérer vos profils personnels. Elle permet de générer un identifiant et un mot de passe associés à une base de données que vous créez vous-même. Votre adresse e-mail n'est communiquée à personne. Le compte sert uniquement à créer un identifiant et un mot de passe pour gérer l'accès aux données, assurant ainsi que chacun ait accès à ses propres fiches d'unités.",
+      
+          "section_remarques": "Remarques",
+          "remarque": {
+            "formats": "Les paramètres \"Attaques\" et \"Dégâts\" oeuvent être définis avec des valeurs aléatoires comprenant des D6 ou D3 dans le profil. Il suffit d'écrire un texte de la forme \"XD6+Y\" ou \"XD3+Y\".",
+            "calcul": "Le calcul en arrière-plan est une simulation de 1000 séquences d'attaques. Pour chaque séquence, on simule une suite de lancers de dés comprenant les jets pour toucher, blesser, sauvegarder, et éventuels insensibles à la douleur. On obtiens ainsi une liste de 1000 résultats. On peut ensuite calculer la moyenne et l'écart-type des valeurs de cet échantillon."
+          },
+      
+          "section_don": "Faire un don",
+          "don_text": "Ce site est entièrement gratuit, mais son hébergement a un coût pour son développeur. Ce projet ne peut vivre sans des dons de la communauté, et sera forcé de fermer sans un soutien régulier. Si tu veux soutenir le projet, tu peux faire un don !",
+          "don_button": "Faire un don",
+      
+          "section_contact": "Contacter le développeur",
+          "contact_text": "N'hésitez pas à m'envoyer un message si vous avez des remarques, questions, ou erreurs à signaler lors de votre utilisation de la plateforme ! Vous pouvez utiliser la boîte ci-dessous pour me contacter directement.",
+          "contact": "Contact",
+          "Name": "Nom",
+            "Send": "Envoyer"
+
+        },
+        "app": {
+            "nav": {
+              "accueil": "Accueil",
+              "simulateur": "Unité Mono Profil",
+              "multi": "Unité Multi Profils",
+              "compare": "Comparateur",
+              "datasheets": "Profils Pré-définis",
+              "mes_listes": "Mes Listes",
+              "adversaires": "Unités Adverses",
+              "jeu": "Calcul En Jeu",
+              "connexion": "Connexion",
+              "deconnexion": "Déconnexion",
+              "connecte_en_tant_que": "Connecté : ",
+              "simulations_generiques": "Simulations génériques :",
+              "simulations_perso": "Simulations personnalisées :",
+              "infos_connexion": "Informations de connexion :"
+            },
+            "welcome": {
+              "title": "Bienvenue !",
+              "subtitle": "Merci de t'être connecté sur <1>StatWarhammer40k</1> !",
+              "free": "⚠️ Ce site est entièrement <1>gratuit</1>, mais son hébergement a un coût pour son développeur.",
+              "donation_important": "Ce projet <1>ne peut vivre sans des dons</1> de la communauté, et sera forcé de fermer sans un soutien régulier.",
+              "support": "Si tu veux soutenir le projet, tu peux faire un don !",
+              "donate": "Faire un don",
+              "continue": "Continuer vers le site"
+            },
+            "loading": {
+              "user": "Chargement utilisateur..."
+            }
+          },
+          "simulateur": {
+            "titre": "Simulateur Mono-Profil",
+            "attacker": "Attaquant",
+            "defender": "Défenseur",
+            "lancer": "🚀 Lancer la Simulation",
+            "simulation_en_cours": "Simulation en cours...",
+            "resultats": "📊 Résultats",
+            "unite_mesure": "Unité de mesure",
+            "unit_PV": "Nombre de PV perdus",
+            "unit_figs": "Nombre de figurines tuées",
+            "figs": "figs",
+            "soit": "soit",
+            "de_force_init": "de la force initiale",
+            "moyenne": "Moyenne",
+            "ecart_type": "Écart-type",
+            "proba_tuer": "Probabilité de tuer l'unité ennemie",
+            "distribution": "Répartition des dégâts",
+            "probabilite_seuil": "Probabilité d’atteindre un seuil de dégâts",
+            "comparaison_unites": "Comparaison avec unités classiques",
+            "unit": "Unité",
+            "force_initiale": "Force initiale",
+            "degats_relatifs": "Dégâts relatifs à la force initiale",
+            "en": "en",
+            "afficher_plus": "➕ Afficher Plus",
+            "afficher_moins": "➖ Afficher Moins",
+            "de_chance_tuer_ennemi": "de chance de tuer l'unité ennemie",
+        
+            "attaquant": {
+              "nb_weapons": "Nombre d'armes",
+              "attacks": "Attaques",
+              "CT": "CC/CT",
+              "Strength": "Force",
+              "PA": "Pénétration d'armure (PA)",
+              "Damage": "Dégâts",
+              "Sustained_hit": "Touches soutenues",
+              "Lethal_hit": "Touches fatales",
+              "Deva_wound": "Blessures dévastatrices",
+              "Blast": "Déflagration",
+              "Melta": "Melta X",
+              "Modif_hit_att": "Modificateur de touche",
+              "Modif_wound_att": "Modificateur de blessure",
+              "Re_roll_hit": "Relance des touches",
+              "Re_roll_wound": "Relance des blessures",
+              "Crit_on_X_to_hit": "Critique sur X+ en touche",
+              "Crit_on_X_to_wound": "Critique sur X+ en blessure"
+            },
+        
+            "defenseur": {
+              "Toughness": "Endurance",
+              "Save": "Sauvegarde d'armure",
+              "Save_invu": "Sauvegarde invulnérable",
+              "PV": "PV par figurine",
+              "Nb_of_models": "Nombre de figurines",
+              "Cover": "Couvert",
+              "Fnp": "Insensible à la douleur (FNP)",
+              "Modif_hit_def": "Modificateur de touche",
+              "Modif_wound_def": "Modificateur de blessure",
+              "Halve_damage": "Divise les dégâts par 2",
+              "Reduce_damage_1": "Réduit les dégâts de 1"
+            },
+
+            "re_roll": {
+                "Re_roll_1_to_hit": "Relance des 1",
+                "Re_roll_failed_roll_to_hit": "Relance des touches ratées",
+                "Re_roll_non_critical_roll_to_hit": "Relance des touches non critiques (pêcher)",
+                "Re_roll_1_to_wound": "Relance des 1",
+                "Re_roll_failed_roll_to_wound": "Relance des blessures ratées",
+                "Re_roll_non_critical_roll_to_wound":"Relance des blessures non critiques (pêcher)"
+            }
+          },
+          "multi": {
+            "nb_profils": "Nombre de profils d'attaque",
+            "attack_profiles": "Profils d'attaque",
+            "hide_profile": "Cacher Profil",
+            "show_profile": "Afficher Profil"
+          },
+          "attack_profile": {
+              "title": "Profil de l'attaque"
+          },
+          "compare":{
+            "lancer_comparaison": "🆚 Lancer la Comparaison",
+            "resultats": "Résultats sur des unités classiques",
+            "arme_plus_efficace": "Arme la plus efficace",
+            "identiques": "identiques"
+          },
+          "datasheets": {
+            "alert_unit": "⚠️ L’unité ",
+            "alert_no_weapon": "ne possède aucun profil d’arme valide. Un profil par défaut sera utilisé.",
+            "generic_attack": "Attaque générique",
+            "alert_no_defense": "ne possède aucun profil défensif valide. Un profil par défaut sera utilisé.",
+            "choose_faction": "Choisir une faction",
+            "choose_attacker_unit": "Choisir une unité attaquant",
+            "hide": "Cacher",
+            "show": "Afficher",
+            "profil": "Profil",
+            "include": "Inclure dans le calcul",
+            "choose_defender_unit": "Choisir une unité défenseur",
+            "hide_defense_profile": "Cacher Profil Défensif",
+            "show_defense_profile": "Afficher Profil Défensif",
+            "welcome": {
+                "title": "⚠️ Remarques",
+                "source_notice": "Les données utilisées pour les profils d'unités pré-définis dans cette page sont issues du projet open source :",
+                "source_name": "BSData/wh40k-10e",
+                "source_url": "https://github.com/BSData/wh40k-10e",
+                "license": "sous licence MIT.",
+                "incomplete_profiles": "Certains profils peuvent être incomplets ou non définis.",
+                "attacker_preset": "Paramètres pré-définis attaquant :",
+                "attacker_details": "Attaques, CT/CC, Force, PA, Dégâts, Touches létales, Touches soutenues, Blessures dévastatrices, Déflagration, Melta",
+                "defender_preset": "Paramètres pré-définis défenseur :",
+                "defender_details": "Endurance, PV, Sauvegarde, Sauvegarde Invulnérable",
+                "continue_button": "Continuer vers la page"
+            }
+          },
+
+          "mes_listes":{
+            "titles": {
+              "pageTitle": "Mes listes",
+              "listContent": "Contenu de la liste",
+              "createList": "Créer une nouvelle liste",
+              "editList": "Modifier la liste",
+              "createUnit": "Créer une nouvelle unité",
+              "editUnit": "Modifier l'unité",
+              "editOrAddUnit": "Modifiez ou ajoutez une unité pour l’éditer ici",
+              "addedUnits": "Unitées ajoutées"
+            },
+            "buttons": {
+              "createList": "➕ Créer une nouvelle liste",
+              "addUnit": "➕ Ajouter une unité",
+              "deleteList": "🗑️ Supprimer la liste",
+              "edit": "✏️ Modifier",
+              "delete": "🗑️ Supprimer",
+              "deleteProfile": "Supprimer ce profil",
+              "addAttackProfile": "+ Ajouter un profil d'attaque",
+              "save": "✅ Sauvegarder",
+              "saving": "Sauvegarde en cours...",
+              "cancel": "❌ Annuler"
+            },
+            "placeholders": {
+              "selectList": "Sélectionner une liste",
+              "unitName": "Nom de l'unité",
+              "profileName": "Nom du profil ",
+              "listName": "Nom de la liste"
+            },
+            "labels": {
+              "units": "Unités",
+              "profiles": "Profils",
+              "profile" : "Profil",
+              "actions": "Actions",
+              "F" : "F",
+              "PA" : "PA",
+              "noUnits": "Aucune unité disponible",
+              "noProfile": "Aucun profil",
+              "showProfile": "Afficher",
+              "hideProfile": "Cacher",
+              "confirmDeleteList": "Supprimer la liste ",
+              "listUpdated": "✅ Liste mise à jour dans Firestore",
+              "unitUpdated": "✅ Unité ajoutée/modifiée dans Firestore",
+              "unitDeleted": "✅ Unité supprimée dans Firestore",
+              "listDeleted": "✅ Liste supprimée de Firestore"
+            },
+            "errors": {
+              "invalidList": "❌ Liste invalide :",
+              "updateError": "❌ Erreur lors de la mise à jour :",
+              "deleteError": "❌ Erreur lors de la suppression :"
+            }
+          },
+
+          "unites_adv": {
+            "title": "Unités cibles",
+            "add_manual_unit": "➕ Ajouter une unité manuellement",
+            "add_predefined_unit": "➕ Ajouter une unité pré-définie",
+            "no_units": "Aucune unité adverse pour l'instant.",
+            "table": {
+              "unit_name": "Unités",
+              "defense_profiles": "Profils défensifs",
+              "actions": "Actions",
+              "edit": "✏️ Modifier",
+              "delete": "🗑️ Supprimer"
+            },
+            "modal": {
+              "create_title": "Ajouter une unité adverse",
+              "edit_title": "Modifier l'unité adverse",
+              "unit_name_placeholder": "Nom de l'unité",
+              "save": "✅ Créer l'unité",
+              "update": "✅ Sauvegarder",
+              "cancel": "❌ Annuler"
+            },
+            "predefined_modal": {
+              "title": "Ajouter depuis une armée pré-définie",
+              "select_army": "-- Choisir une faction --",
+              "available_units": "Unités disponibles :",
+              "no_units_to_display": "Aucune unité à afficher",
+              "add_selected_units": "Ajouter les unités",
+              "cancel": "Annuler"
+            },
+            "alerts": {
+              "invalid_profile": "⚠️ Les unités suivantes ne possèdent pas de profil défensif valide et n'ont pas été ajoutées :",
+              "missing_name": "Merci de saisir un nom d'unité.",
+              "load_error": "Impossible de charger ce fichier.",
+              "save_error": "Erreur lors de la sauvegarde.",
+              "delete_error": "Erreur lors de la suppression."
+            },
+            "profile": {
+              "toughness": "Endurance",
+              "save": "Save",
+              "pv": "PV",
+              "nb_models": "Nb modèles",
+              "invu_save": "Save invu"
+            }
+          },
+
+          "jeu": {
+            "title": "Simulation en Jeu",
+            "select": "Sélectionner une liste",
+            "select_unit": "Sélectionner une unité",
+            "select_defensive_unit": "Sélectionner une unité cible"
+          },
+          
+          "auth": {
+            "title_login": "Connexion",
+            "title_register": "Inscription",
+            "email_placeholder": "Email",
+            "password_placeholder": "Mot de passe",
+            "button_login": "Se connecter",
+            "button_register": "Créer un compte",
+            "toggle_to_login": "Déjà un compte ?",
+            "toggle_to_register": "Pas encore de compte ?",
+            "switch_to_login": "Connectez-vous",
+            "switch_to_register": "Inscrivez-vous",
+            "info_register": "Créer un compte vous permet d'accéder à toutes les fonctionnalités exclusives et de sauvegarder vos données en toute sécurité. La création d'un compte est nécessaire pour créer ses propres profils d'attaquant et de défenseur personnalisés. La création d'un compte vous donne également accès au simulateur de dégât optimisé pour être utilisé rapidement en pleine partie.",
+            "info_login": "Connectez-vous pour accéder à vos listes personnalisées et au simulateur de dégâts optimisé pour vos parties de jeu.",
+            "alerts": {
+            "account_created": "Compte créé !",
+            "logged_in": "Connecté !",
+            "error": "Une erreur est survenue :"
+            }
+        }
+                        
+      }
+      

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { auth } from "../firebaseConfig";
+import { useTranslation } from "react-i18next";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
 export default function Auth() {
+  const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isRegister, setIsRegister] = useState(false);
@@ -14,10 +16,10 @@ export default function Auth() {
     try {
       if (isRegister) {
         await createUserWithEmailAndPassword(auth, email, password);
-        alert("Compte créé !");
+        alert(t("auth.alerts.account_created"));
       } else {
         await signInWithEmailAndPassword(auth, email, password);
-        alert("Connecté !");
+        alert(t("auth.alerts.logged_in"));
       }
     } catch (err) {
       setError(err.message);
@@ -36,12 +38,12 @@ export default function Auth() {
       fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     }}>
       <h2 style={{ textAlign: "center", marginBottom: 24, color: "#333" }}>
-        {isRegister ? "Inscription" : "Connexion"}
+        {isRegister ? t("auth.title_register") : t("auth.title_login")}
       </h2>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="Email"
+          placeholder={t("auth.email_placeholder")}
           value={email}
           required
           onChange={(e) => setEmail(e.target.value)}
@@ -59,7 +61,7 @@ export default function Auth() {
         />
         <input
           type="password"
-          placeholder="Mot de passe"
+          placeholder={t("auth.password_placeholder")}
           value={password}
           required
           onChange={(e) => setPassword(e.target.value)}
@@ -103,7 +105,7 @@ export default function Auth() {
           onMouseEnter={e => e.currentTarget.style.backgroundColor = isRegister ? "#218838" : "#0056b3"}
           onMouseLeave={e => e.currentTarget.style.backgroundColor = isRegister ? "#28a745" : "#007bff"}
         >
-          {isRegister ? "Créer un compte" : "Se connecter"}
+          {isRegister ? t("auth.button_register") : t("auth.button_login")}
         </button>
       </form>
       <p style={{
@@ -113,7 +115,7 @@ export default function Auth() {
         color: "#555",
         userSelect: "none"
       }}>
-        {isRegister ? "Déjà un compte ?" : "Pas encore de compte ?"}{" "}
+        {isRegister ? t("auth.toggle_to_login") : t("auth.toggle_to_register")}{" "}
         <button
           onClick={() => setIsRegister(!isRegister)}
           style={{
@@ -129,7 +131,7 @@ export default function Auth() {
             userSelect: "text",
           }}
         >
-          {isRegister ? "Connectez-vous" : "Inscrivez-vous"}
+          {isRegister ?  t("auth.switch_to_login") : t("auth.switch_to_register")}
         </button>
       </p>
       <p style={{
@@ -142,8 +144,8 @@ export default function Auth() {
         userSelect: "none"
       }}>
         {isRegister
-          ? "Créer un compte vous permet d'accéder à toutes les fonctionnalités exclusives et de sauvegarder vos données en toute sécurité. La création d'un compte est nécessaire pour créer ses propres profils d'attaquant et de défenseur personnalisés. la création d'un compte vous donne également accès au simulateur de dégât optimisé pour être utilisé rapidement en pleine partie."
-          : "Connectez-vous pour accéder à vos listes personnalisées et au simulateur de dégâts optimisé pour vos parties de jeu."}
+          ? t("auth.info_register")
+          : t("auth.info_login")}
       </p>
     </div>
     </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { collection, query, where, onSnapshot, doc, getDoc } from "firebase/firestore";
 import { db, auth } from "../firebaseConfig";
 import AttackProfileCard from "./AttackProfileCardMobile";
@@ -12,6 +13,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 
 function SimulationEnJeuMobile() {
+  const { t } = useTranslation();
   const [listes, setListes] = useState([]);
   const [selectedListeId, setSelectedListeId] = useState("");
   const [selectedListe, setSelectedListe] = useState(null);
@@ -31,6 +33,7 @@ const [selectedProfiles, setSelectedProfiles] = useState({});
 const [visibleDefenseProfile, setVisibleDefenseProfile] = useState(false);
 
 const [showFullResults, setShowFullResults] = useState(false);
+const [loading, setLoading] = useState(null);
 
 const cellStyle = {
   border: "1px solid #ccc",
@@ -114,6 +117,7 @@ const cellStyle = {
     setResults(null);
   
     try {
+      setLoading(true);
       const profilsToSend = selectedUnite.profils.filter((_, i) => selectedProfiles[i]);
   
       const parsedAttackProfiles = profilsToSend.map((params) => {
@@ -147,6 +151,7 @@ const cellStyle = {
       });
   
       setResults(res.data);
+      setLoading(false);
     } catch (error) {
       console.error("Erreur lors de la simulation multiple :", error);
       alert("Erreur lors de la simulation. Veuillez vérifier la console pour plus d'informations.");
@@ -266,7 +271,7 @@ const cellStyle = {
       {/* Titre centré */}
       <div style={{ textAlign: "center", padding: "32px 0" }}>
         <h1 style={{ fontSize: 32, fontWeight: 700, color: "#2d3748", margin: 0 }}>
-          Calculateur En Jeu
+        {t("jeu.title")}
         </h1>
       </div>
 
@@ -282,9 +287,9 @@ const cellStyle = {
           flex: 1, width: "100%", display: "flex", flexDirection: "column", gap: 16,
           backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
         }}>
-        <h2 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>⚔️ Attaquant</h2>
+        <h2 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>⚔️ {t("simulateur.attacker")}</h2>
 
-        <label>Choisir une liste :</label>
+        <label>{t("mes_listes.placeholders.selectList")} :</label>
         <select
           value={selectedListeId}
           onChange={(e) => {
@@ -312,7 +317,7 @@ const cellStyle = {
             maxWidth: "100%",
           }}
         >
-          <option value="">-- Sélectionner --</option>
+          <option value="">-- {t("jeu.select")} --</option>
           {listes.map((liste) => (
             <option key={liste.id} value={liste.id}>
               {liste.nom}
@@ -335,7 +340,8 @@ const cellStyle = {
               }}
             >
             <br />
-            <label>Choisir une unité :</label>
+            <div style={{ marginBottom: "16px" }}>
+            <label>{t("jeu.select_unit")} :</label>
             <select
               value={selectedUniteNom}
               onChange={(e) => setSelectedUniteNom(e.target.value)}
@@ -362,13 +368,14 @@ const cellStyle = {
 
               }}
             >
-              <option value="">-- Sélectionner une unité --</option>
+              <option value="">-- {t("jeu.select_unit")} --</option>
               {selectedListe.unites.map((u, idx) => (
                 <option key={idx} value={u.nom}>
                   {u.nom}
                 </option>
               ))}
             </select>
+            </div>
 
             {selectedUnite && (
               <motion.div
@@ -422,8 +429,8 @@ const cellStyle = {
                         }}
                       >
                         {visibleProfiles[i]
-                          ? `Cacher ${profil.nom || `Profil ${i + 1}`}`
-                          : `Afficher ${profil.nom || `Profil ${i + 1}`}`}
+                          ? `${t("datasheets.hide")} ${profil.nom || `${t("datasheets.profil")} ${i + 1}`}`
+                          : `${t("datasheets.show")} ${profil.nom || `${t("datasheets.profil")} ${i + 1}`}`}
                       </button>
 
                       <label style={{ display: "flex", alignItems: "center", fontSize: 14 }}>
@@ -438,7 +445,7 @@ const cellStyle = {
                           }
                           style={{ transform: "scale(2)", marginRight: 8 }}
                         />
-                        Inclure dans le calcul
+                        {t("datasheets.include")}
                       </label>
                     </div>
                   </div>
@@ -470,9 +477,9 @@ const cellStyle = {
       flex: 1, width: "100%", display: "flex", flexDirection: "column", gap: 16,
       backgroundColor: "white", padding: 20, borderRadius: 12, boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
     }}>
-  <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>🛡️ Défenseur</h3>
-
-  <label>Choisir une unité cible :</label>
+    <h3 style={{ fontWeight: "bold", fontSize: 18, marginBottom: 8 }}>🛡️ {t("simulateur.defender")}</h3>
+  
+    <label>{t("jeu.select_defensive_unit")} :</label>
   <select
     value={enemyUnitName}
     style={{
@@ -497,7 +504,7 @@ const cellStyle = {
     }}
     onChange={(e) => setEnemyUnitName(e.target.value)}
   >
-    <option value="">-- Sélectionner une cible --</option>
+    <option value="">-- {t("jeu.select_defensive_unit")} --</option>
     {defenderUnits.map((unit) => (
       <option key={unit.id} value={unit.nom}>
         {unit.nom}
@@ -545,8 +552,9 @@ const cellStyle = {
         alignSelf: "flex-start",  
       }}
     >
-      {visibleDefenseProfile ? "Cacher Profil Défensif" : "Afficher Profil Défensif"}
-    </button>
+    {visibleDefenseProfile ? t("datasheets.hide_defense_profile") : t("datasheets.show_defense_profile")}
+  </button>
+
 
     {visibleDefenseProfile && (
       <DefenseProfileCard
@@ -574,7 +582,7 @@ const cellStyle = {
       fontSize: 16,
       transition: "background-color 0.3s"
     }}>
-    🚀 Lancer la simulation
+    {loading ? t("simulateur.simulation_en_cours") : t("simulateur.lancer")}
   </button>
 
   
@@ -589,14 +597,16 @@ const cellStyle = {
       {results && (
   <Modal onClose={() => setResults(null)}>
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-      <h2 style={{ fontSize: 22, fontWeight: "bold" }}>📊 Résultats :</h2>
+      <h2 style={{ fontSize: 22, fontWeight: "bold" }}>{t("simulateur.resultats")} :</h2>
     </div>
 
     {/* Résumé */}
     <div style={{ marginBottom: 24 }}>
       <p>
-        ➢ En moyenne : <strong>{results.mean.toFixed(1)}</strong> {"(±"} {results.std.toFixed(0)} {")"} {results.unit} , soit {results.relative_damages.toFixed(0)}% de la force initiale
-      </p>
+                ➢ {t("simulateur.moyenne")} : <strong>{results.mean.toFixed(1)}</strong> {"(±"} {results.std.toFixed(0)} {")"} {results.unit === "PV"
+                                    ? t("simulateur.defenseur.PV")
+                                    : t("simulateur.figs")} , {t("simulateur.soit")} {results.relative_damages.toFixed(0)}% {t("simulateur.de_force_init")}
+              </p>
       <p>
         ➢ <strong style={{
           color:
@@ -606,7 +616,7 @@ const cellStyle = {
             "green"
         }}>
           {results.proba_unit_killed.toFixed(0)}%
-        </strong> {"de chance de tuer l'unité ennemie"} 
+          </strong> {t("simulateur.de_chance_tuer_ennemi")}
       </p>
     </div>
     <button
@@ -620,21 +630,24 @@ const cellStyle = {
         cursor: "pointer",
       }}
     >
-      {showFullResults ? "➖ Afficher Moins" : "➕ Afficher Plus"}
-    </button>
+    {showFullResults ? t("simulateur.afficher_moins") : t("simulateur.afficher_plus")}
+  </button>
 
     {/* Affichage complet */}
     {showFullResults && (
       <div>
-        <p>
-          <strong>Unité de mesure :</strong> {results.unit_descr}
-        </p>
-        <p>
-          <strong>Moyenne :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit}
-        </p>
-        <p>
-          <strong>Écart-type :</strong> {results.std.toFixed(1)}
-        </p>
+        <p><strong>{t("simulateur.unite_mesure")} :</strong> {results.unit_descr === "Nombre de PV perdus"
+                                    ? t("simulateur.unit_PV")
+                                    : t("simulateur.unit_figs")}
+              </p>
+        <p><strong>{t("simulateur.moyenne")} :</strong> <strong>{results.mean.toFixed(1)}</strong> {results.unit === "PV"
+                                    ? t("simulateur.defenseur.PV")
+                                    : t("simulateur.figs")}, {t("simulateur.soit")}{" "}
+                {results.relative_damages.toFixed(0)}% {t("simulateur.de_force_init")}
+              </p>
+                <p>
+                  <strong>{t("simulateur.ecart_type")} :</strong> {results.std.toFixed(1)}
+                </p>
 
         {/* Graphiques */}
         <div style={{ display: "flex", gap: 32, marginTop: 24, flexWrap: "wrap" }}>
@@ -642,7 +655,7 @@ const cellStyle = {
           {/* Distribution */}
           <div style={{ flex: "1 1 0", minWidth: 350 }}>
             <h4 style={{ fontWeight: "bold", marginBottom: 12 }}>
-              Distribution
+            {t("simulateur.distribution")}
             </h4>
             <BarChart width={400} height={300} data={results.histogram_data}>
               <XAxis dataKey="value" />
@@ -655,7 +668,7 @@ const cellStyle = {
           {/* Courbe cumulative */}
           <div style={{ flex: "1 1 0", minWidth: 350 }}>
             <h4 style={{ fontWeight: "bold", marginBottom: 12 }}>
-              Probabilité d'atteindre un seuil
+            {t("simulateur.probabilite_seuil")}
             </h4>
             <LineChart width={400} height={300} data={results.cumulative_data}>
               <CartesianGrid stroke="#ccc" />
@@ -695,22 +708,25 @@ const cellStyle = {
         {results.results_catalogue && (
           <div style={{ marginTop: 32 }}>
             <h4 style={{ fontSize: 16, fontWeight: "bold", marginBottom: 12 }}>
-              Comparaison avec unités classiques
+            {t("simulateur.comparaison_unites")}
             </h4>
             <table style={{ width: "100%", borderCollapse: "collapse", backgroundColor: "#fefefe" }}>
               <thead style={{ backgroundColor: "#ebf8ff" }}>
                 <tr>
-                  <th style={cellStyle}>Unité</th>
-                  <th style={cellStyle}>Moyenne</th>
-                  <th style={cellStyle}>Écart-type</th>
-                  <th style={cellStyle}>Force initiale</th>
-                  <th style={cellStyle}>Dégâts relatifs</th>
-                </tr>
+                        <th style={cellStyle}>{t("simulateur.unit")}</th>
+                        <th style={cellStyle}>{t("simulateur.moyenne")}</th>
+                        <th style={cellStyle}>{t("simulateur.ecart_type")}</th>
+                        <th style={cellStyle}>{t("simulateur.force_initiale")}</th>
+                        <th style={cellStyle}>{t("simulateur.degats_relatifs")}</th>
+                      </tr>
               </thead>
               <tbody>
                 {Object.entries(results.results_catalogue).map(([unitName, stats]) => (
                   <tr key={unitName}>
-                    <td style={cellStyle}>{unitName} {stats.unit ? `(en ${stats.unit})` : ""}</td>
+                    <td style={cellStyle}>{unitName} {stats.unit ? `(${t("simulateur.en")} ${stats.unit === "PV"
+                                    ? t("simulateur.defenseur.PV")
+                                    : t("simulateur.figs")})` : ""}
+                            </td>
                     <td style={cellStyle}>{stats.mean.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.std.toFixed(1)}</td>
                     <td style={cellStyle}>{stats.initial_force}</td>

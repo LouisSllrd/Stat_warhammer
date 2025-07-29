@@ -32,6 +32,18 @@
           "characteristics": {
             "Description": "While a friendly ^^**Death Guard^^** unit is within 6\" of this model, each time a ranged attack targets that unit, models in that unit have the Benefit of Cover against that attack."
           }
+        },
+        {
+          "name": "Horrifying Visage",
+          "characteristics": {
+            "Description": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of it. That unit must take a Battle-shock test, subtracting 1 from that test."
+          }
+        },
+        {
+          "name": "Enfeebling Miasma (Aura)",
+          "characteristics": {
+            "Description": "While an enemy unit (excluding ^^*Monsters^^** and ^^**Vehicles^^**) is within 6\" of this model, each time that unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those Desperate Escape tests."
+          }
         }
       ],
       "Unit": [
@@ -45,36 +57,7 @@
             "LD": "6+",
             "OC": "3"
           }
-        }
-      ]
-    }
-  },
-  "Daemon Prince of Nurgle with wings": {
-    "cost": {
-      "pts": "195"
-    },
-    "profiles": {
-      "Abilities": [
-        {
-          "name": "Horrifying Visage",
-          "characteristics": {
-            "Description": "Each time this model ends a Charge move, select one enemy unit within Engagement Range of it. That unit must take a Battle-shock test, subtracting 1 from that test."
-          }
         },
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "This model has a 4+ invulnerable save."
-          }
-        },
-        {
-          "name": "Enfeebling Miasma (Aura)",
-          "characteristics": {
-            "Description": "While an enemy unit (excluding ^^*Monsters^^** and ^^**Vehicles^^**) is within 6\" of this model, each time that unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those Desperate Escape tests."
-          }
-        }
-      ],
-      "Unit": [
         {
           "name": "Death Guard Daemon Prince with wings",
           "characteristics": {
@@ -704,11 +687,7 @@
       ]
     }
   },
-  "Plague Marine w/ bubotic weapons": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Plague Marine w/ heavy plague weapon": {
+  "Plague Marine": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -724,28 +703,7 @@
             "Keywords": "Lethal Hits"
           }
         }
-      ]
-    }
-  },
-  "Plague Marine w/ blight launcher": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Plague Marine w/ boltgun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Plague Marine w/ plague spewer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Plague Marine w/ icon of despair": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Plague Marine w/ meltagun": {
-    "cost": {},
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "Meltagun",
@@ -758,18 +716,7 @@
             "D": "D6",
             "Keywords": "Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Plague Marine w/ plasma gun": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Plague Marine w/ plague belcher": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Plague belcher",
           "characteristics": {
@@ -787,10 +734,6 @@
   },
   "Cultist": {
     "cost": {},
-    "profiles": {}
-  },
-  "Cultist w/ flamer": {
-    "cost": {},
     "profiles": {
       "Ranged Weapons": [
         {
@@ -804,14 +747,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
           }
-        }
-      ]
-    }
-  },
-  "Cultist w/ heavy stubber": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Heavy stubber",
           "characteristics": {
@@ -823,14 +759,7 @@
             "D": "1",
             "Keywords": "Rapid Fire 3"
           }
-        }
-      ]
-    }
-  },
-  "Cultist w/ grenade launcher": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Grenade launcher - frag",
           "characteristics": {
@@ -1329,7 +1258,7 @@
       ]
     }
   },
-  "Blightlord Terminator w/ combi-bolter": {
+  "Blightlord Terminator": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -1344,17 +1273,20 @@
             "D": "1",
             "Keywords": "Lethal Hits, Rapid Fire 2"
           }
+        },
+        {
+          "name": "Reaper autocannon",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "4",
+            "BS": "3+",
+            "S": "7",
+            "AP": "-1",
+            "D": "1",
+            "Keywords": "Devastating Wounds, Sustained Hits 1"
+          }
         }
-      ]
-    }
-  },
-  "Blightlord Terminator w/ combi-weapon": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Blightlord Terminator w/ plague spewer and CCW": {
-    "cost": {},
-    "profiles": {
+      ],
       "Melee Weapons": [
         {
           "name": "Close combat weapon",
@@ -1367,14 +1299,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Blightlord Terminator w/ flail": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
+        },
         {
           "name": "Flail of corruption",
           "characteristics": {
@@ -1389,33 +1314,6 @@
         }
       ]
     }
-  },
-  "Blightlord Terminator w/ blight launcher": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Blightlord Terminator w/ reaper autocannon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Reaper autocannon",
-          "characteristics": {
-            "Range": "36\"",
-            "A": "4",
-            "BS": "3+",
-            "S": "7",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Devastating Wounds, Sustained Hits 1"
-          }
-        }
-      ]
-    }
-  },
-  "Blightlord Terminator w/ plague spewer and bubotic blade": {
-    "cost": {},
-    "profiles": {}
   },
   "Blightlord Champion": {
     "cost": {},
@@ -1532,12 +1430,27 @@
   },
   "Foetid Bloat-drone": {
     "cost": {
-      "pts": "90"
+      "pts": "100",
+      "Crusade Points": "0",
+      "Crusade: Battle Honours": "0",
+      "Crusade: Experience": "0",
+      "Crusade: Weapon Modifications": "0"
     },
     "profiles": {
       "Unit": [
         {
           "name": "Foetid Bloat-drone",
+          "characteristics": {
+            "M": "10\"",
+            "T": "9",
+            "SV": "3+",
+            "W": "10",
+            "LD": "6+",
+            "OC": "3"
+          }
+        },
+        {
+          "name": "Foetid Bloat-drone with heavy blight launcher",
           "characteristics": {
             "M": "10\"",
             "T": "9",
@@ -1559,6 +1472,12 @@
           "name": "Invulnerable Save",
           "characteristics": {
             "Description": "This model has a 5+ invulnerable save."
+          }
+        },
+        {
+          "name": "Explosive Blight",
+          "characteristics": {
+            "Description": "In your Shooting phase, each time this model makes an attack that destroys an enemy unit, before removing the last model in that unit from play, roll a D6, adding 1 to the result if that unit is Afflicted; on a 5+, each enemy unit within 6\" of that model is Afflicted until the start of your next turn."
           }
         }
       ],
@@ -1599,6 +1518,18 @@
             "AP": "-1",
             "D": "1",
             "Keywords": "Anti-INFANTRY 2+, Ignores Cover, Torrent"
+          }
+        },
+        {
+          "name": "Heavy blight launcher",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "D6+2",
+            "BS": "3+",
+            "S": "10",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Blast, Lethal Hits"
           }
         }
       ]
@@ -2498,7 +2429,7 @@
       ]
     }
   },
-  "Nightmare Hulk w/ belly flamer": {
+  "Nightmare Hulk": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -2526,25 +2457,6 @@
             "AP": "0",
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
-          }
-        }
-      ]
-    }
-  },
-  "Nightmare Hulk": {
-    "cost": {},
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Hideous mutations",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "4",
-            "WS": "4+",
-            "S": "6",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "-"
           }
         }
       ],
@@ -3350,72 +3262,6 @@
             "AP": "0",
             "D": "1",
             "Keywords": "Lethal Hits"
-          }
-        }
-      ]
-    }
-  },
-  "Foetid Bloat-drone with heavy blight launcher": {
-    "cost": {
-      "pts": "100",
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
-    },
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Foetid Bloat-drone with heavy blight launcher",
-          "characteristics": {
-            "M": "10\"",
-            "T": "9",
-            "SV": "3+",
-            "W": "10",
-            "LD": "6+",
-            "OC": "3"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Explosive Blight",
-          "characteristics": {
-            "Description": "In your Shooting phase, each time this model makes an attack that destroys an enemy unit, before removing the last model in that unit from play, roll a D6, adding 1 to the result if that unit is Afflicted; on a 5+, each enemy unit within 6\" of that model is Afflicted until the start of your next turn."
-          }
-        },
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "This model has a 5+ invulnerable save."
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Plague probe",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "6",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Lethal Hits"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Heavy blight launcher",
-          "characteristics": {
-            "Range": "36\"",
-            "A": "D6+2",
-            "BS": "3+",
-            "S": "10",
-            "AP": "-2",
-            "D": "3",
-            "Keywords": "Blast, Lethal Hits"
           }
         }
       ]

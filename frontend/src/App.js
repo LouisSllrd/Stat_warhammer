@@ -33,7 +33,12 @@ import { useIsMobile } from "./hooks/useIsMobile";
 
 import { motion, AnimatePresence } from "framer-motion";
 
+import "./i18n";
+import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
+
 function App() {
+  const { t } = useTranslation();
   const [page, setPage] = useState("accueil");
   const [user, setUser] = useState(null);
   const [loadingUser, setLoadingUser] = useState(true);
@@ -41,6 +46,12 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false); // <- état pour ouvrir/fermer le menu mobile
   const [showWelcomeModal, setShowWelcomeModal] = useState(false);
 const [hasShownWelcome, setHasShownWelcome] = useState(false);
+
+const { i18n } = useTranslation();
+
+const toggleLang = () => {
+  i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr");
+};
 
 
   useEffect(() => {
@@ -66,7 +77,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
   }, [hasShownWelcome]);
   
 
-  if (loadingUser) return <p>Chargement utilisateur...</p>;
+  if (loadingUser) return <p>{t("app.loading.user")}</p>;
 
   return (
     <ProfilesProvider>
@@ -84,6 +95,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
             zIndex: 1000, // ← pour que ça reste au-dessus du contenu
           }}
         >
+          
 
 
           {isMobile ? (
@@ -117,21 +129,21 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
 
             <>
               {/* NAVIGATION CLASSIQUE */}
-          <button onClick={() => setPage("accueil")}>Accueil</button>
+          <button onClick={() => setPage("accueil")}>{t("app.nav.accueil")}</button>
               <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-                <strong>Simulations génériques:</strong>
-                <button onClick={() => setPage("simulateur")}>Unité Mono Profil</button>
-                <button onClick={() => setPage("multi-profiles")}>Unité Multi Profils</button>
-                <button onClick={() => setPage("compare")}>Comparateur</button>
-                <button onClick={() => setPage("simulateur-datasheets")}>Profils Pré-définis</button>
+                <strong>{t("app.nav.simulations_generiques")}</strong>
+                <button onClick={() => setPage("simulateur")}>{t("app.nav.simulateur")}</button>
+                <button onClick={() => setPage("multi-profiles")}>{t("app.nav.multi")}</button>
+                <button onClick={() => setPage("compare")}>{t("app.nav.compare")}</button>
+                <button onClick={() => setPage("simulateur-datasheets")}>{t("app.nav.datasheets")}</button>
               </div>
 
               {user && (
                 <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-                  <strong>Simulations personnalisées :</strong>
-                  <button onClick={() => setPage("mes-listes")}>Mes Listes</button>
-                  <button onClick={() => setPage("unites-adverses")}>Unités Adverses</button>
-                  <button onClick={() => setPage("jeu")}>Calcul En Jeu</button>
+                  <strong>{t("app.nav.simulations_perso")}</strong>
+                  <button onClick={() => setPage("mes-listes")}>{t("app.nav.mes_listes")}</button>
+                  <button onClick={() => setPage("unites-adverses")}>{t("app.nav.adversaires")}</button>
+                  <button onClick={() => setPage("jeu")}>{t("app.nav.jeu")}</button>
                 </div>
               )}
             </>
@@ -142,14 +154,29 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
               <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
                 {user ? (
                   <>
-                    <strong>Connecté : {user.email}</strong>
-                    <button onClick={() => signOut(auth)}>Déconnexion</button>
+                    <strong>{t("app.nav.connecte_en_tant_que")} {user.email}</strong>
+                    <button onClick={() => signOut(auth)}>{t("app.nav.deconnexion")}</button>
                   </>
                 ) : (
-                  <button onClick={() => setPage("login")}>Connexion</button>
+                  <button onClick={() => setPage("login")}>{t("app.nav.connexion")}</button>
                 )}
               </div>
             )}
+
+            <button
+            onClick={toggleLang}
+            style={{
+              marginLeft: 10,
+              fontSize: "2rem",       // ↑ taille de la police
+              padding: "8px 16px",      // ↑ taille du bouton
+              border: "none",
+              borderRadius: 6,
+              cursor: "pointer",
+              backgroundColor: "#89B5FF" 
+            }}
+          >
+            {i18n.language === "fr" ? "🇬🇧" : "🇫🇷"}
+          </button>
 
         </nav>
         <AnimatePresence>
@@ -204,19 +231,19 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
                     onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#357ABD")}
                     onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#4a90e2")}
                   >
-                    Accueil
+                    {t("app.nav.accueil")}
                   </button>
 
                 <strong style={{ marginBottom: 12, fontSize: 18, borderBottom: "2px solid #5577cc", paddingBottom: 4 }}>
-                  Simulations génériques :
+                  {t("app.nav.simulations_generiques")}
                 </strong>
 
                 {["simulateur", "multi-profiles", "compare", "simulateur-datasheets"].map((page, idx) => {
                   const labels = {
-                    simulateur: "Unité Mono Profil",
-                    "multi-profiles": "Unité Multi Profils",
-                    compare: "Comparateur",
-                    "simulateur-datasheets": "Profils Pré-définis",
+                    simulateur: t("app.nav.simulateur"),
+                    "multi-profiles": t("app.nav.multi"),
+                    compare: t("app.nav.compare"),
+                    "simulateur-datasheets": t("app.nav.datasheets"),
                     
                   };
                   return (
@@ -256,14 +283,14 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
                         paddingBottom: 4,
                       }}
                     >
-                      Simulations personnalisées :
+                      {t("app.nav.simulations_perso")}
                     </strong>
 
                     {["mes-listes", "unites-adverses", "jeu"].map((page) => {
                       const labels = {
-                        "mes-listes": "Mes Listes",
-                        "unites-adverses": "Unités Adverses",
-                        jeu: "Calcul En Jeu",
+                        "mes-listes": t("app.nav.mes_listes"),
+                        "unites-adverses": t("app.nav.adversaires"),
+                        jeu: t("app.nav.jeu"),
                       };
                       return (
                         <button
@@ -302,12 +329,12 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
     paddingBottom: 4,
   }}
 >
-  Informations de connexion :
+  {t("app.nav.infos_connexion")}
 </strong>
 
 {user ? (
   <>
-    <p style={{ marginBottom: 10 }}>Connecté : <strong>{user.email}</strong></p>
+    <p style={{ marginBottom: 10 }}>{t("app.nav.connecte_en_tant_que")} <strong>{user.email}</strong></p>
     <button
       onClick={() => {
         signOut(auth);
@@ -327,7 +354,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
       onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#c53030")}
       onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#e53e3e")}
     >
-      Déconnexion
+      {t("app.nav.deconnexion")}
     </button>
   </>
 ) : (
@@ -350,7 +377,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
     onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#2f855a")}
     onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#38a169")}
   >
-    Connexion
+    {t("app.nav.connexion")}
   </button>
 )}
 
@@ -401,11 +428,27 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
         ✕
       </button>
 
-      <h2>Bienvenue !</h2>
-      <p>Merci de t'être connecté sur <strong>StatWarhammer40k</strong> !</p>
-      <p>⚠️ Ce site est entièrement <strong>gratuit</strong>, mais son hébergement a un coût pour son développeur.</p>
-      <p>Ce projet <strong>ne peut vivre sans des dons</strong> de la communauté, et sera forcé de fermer sans un soutien régulier.</p>
-      <p>Si tu veux soutenir le projet, tu peux faire un don ! </p>
+      <h2>{t("app.welcome.title")}</h2>
+      <p>
+            <Trans 
+        i18nKey="app.welcome.subtitle" 
+        components={[<></>, <strong />]} 
+      />
+      </p>
+      <p>
+            <Trans 
+        i18nKey="app.welcome.free" 
+        components={[<></>, <strong />]} 
+      />
+      </p>
+      <p>
+            <Trans 
+        i18nKey="app.welcome.donation_important" 
+        components={[<></>, <strong />]} 
+      />
+      </p>
+
+      <p>{t("app.welcome.support")}</p>
 
       {/* Boutons côte à côte */}
       <div style={{ marginTop: 20, display: "flex", justifyContent: "center", gap: 10 }}>
@@ -422,7 +465,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
             fontWeight: "bold",
           }}
         >
-          Faire un don
+          {t("app.welcome.donate")}
         </a>
         <button
           onClick={() => setShowWelcomeModal(false)}
@@ -436,7 +479,7 @@ const [hasShownWelcome, setHasShownWelcome] = useState(false);
             cursor: "pointer",
           }}
         >
-          Continuer vers le site 
+          {t("app.welcome.continue")}
         </button>
       </div>
     </div>

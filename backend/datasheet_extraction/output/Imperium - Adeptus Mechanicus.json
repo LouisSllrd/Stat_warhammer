@@ -929,41 +929,6 @@
             "Keywords": "Devastating Wounds"
           }
         }
-      ]
-    }
-  },
-  "Serberys Raider w/ data-tether": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Cavalry sabre & clawed limbs",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "4",
-            "WS": "4+",
-            "S": "4",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Galvanic carbine",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "3",
-            "BS": "4+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Devastating Wounds"
-          }
-        }
       ],
       "Abilities": [
         {
@@ -1447,7 +1412,7 @@
       ]
     }
   },
-  "Skitarii Ranger w/ transuranic arquebus": {
+  "Skitarii Ranger": {
     "cost": {
       "pts": "0"
     },
@@ -1464,16 +1429,7 @@
             "D": "D3",
             "Keywords": "Heavy, Precision"
           }
-        }
-      ]
-    }
-  },
-  "Skitarii Ranger w/ arc rifle": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Arc rifle",
           "characteristics": {
@@ -1485,16 +1441,7 @@
             "D": "D3",
             "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Skitarii Ranger w/ plasma caliver": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma caliver -  supercharge",
           "characteristics": {
@@ -1518,37 +1465,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Skitarii Ranger w/ galvanic rifle": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Galvanic rifle",
-          "characteristics": {
-            "Range": "30\"",
-            "A": "2",
-            "BS": "4+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Skitarii Ranger w/ data-tether": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Galvanic rifle",
           "characteristics": {
@@ -1568,30 +1485,7 @@
           "characteristics": {
             "Description": "Each time you select the bearer’s unit\nas the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
           }
-        }
-      ]
-    }
-  },
-  "Skitarii Ranger w/ omnispex": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Galvanic rifle",
-          "characteristics": {
-            "Range": "30\"",
-            "A": "2",
-            "BS": "4+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ],
-      "Abilities": [
+        },
         {
           "name": "Omnispex",
           "characteristics": {
@@ -1636,7 +1530,7 @@
       ]
     }
   },
-  "Skitarii Vanguard w/ transuranic arquebus": {
+  "Skitarii Vanguard": {
     "cost": {
       "pts": "0"
     },
@@ -1653,16 +1547,7 @@
             "D": "D3",
             "Keywords": "Heavy, Precision"
           }
-        }
-      ]
-    }
-  },
-  "Skitarii Vanguard w/ arc rifle": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Arc rifle",
           "characteristics": {
@@ -1674,16 +1559,7 @@
             "D": "D3",
             "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Skitarii Vanguard w/ plasma caliver": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma caliver -  supercharge",
           "characteristics": {
@@ -1707,37 +1583,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Skitarii Vanguard w/ radium carbine": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Radium carbine",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "3",
-            "BS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Anti-Infantry 4+"
-          }
-        }
-      ]
-    }
-  },
-  "Skitarii Vanguard w/ data-tether": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Radium carbine",
           "characteristics": {
@@ -1757,30 +1603,7 @@
           "characteristics": {
             "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
           }
-        }
-      ]
-    }
-  },
-  "Skitarii Vanguard w/ omnispex": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Radium carbine",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "3",
-            "BS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Anti-Infantry 4+"
-          }
-        }
-      ],
-      "Abilities": [
+        },
         {
           "name": "Omnispex",
           "characteristics": {
@@ -1926,7 +1749,7 @@
       ]
     }
   },
-  "Sydonian Dragoon with taser lance": {
+  "Sydonian Dragoon": {
     "cost": {
       "pts": "65",
       "Crusade Points": "0",
@@ -1946,6 +1769,18 @@
             "AP": "-1",
             "D": "2",
             "Keywords": "Ignores Cover, Pistol"
+          }
+        },
+        {
+          "name": "Radium jezzail",
+          "characteristics": {
+            "Range": "36\"",
+            "A": "1",
+            "BS": "4+",
+            "S": "5",
+            "AP": "-2",
+            "D": "3",
+            "Keywords": "Anti-Infantry 3+, Heavy, Precision"
           }
         }
       ],
@@ -2456,41 +2291,6 @@
             "Keywords": "Anti-Vehicle 4+, Devastating Wounds"
           }
         }
-      ]
-    }
-  },
-  "Secutarii Hoplite w/ data-tether": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Arc lance",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Lance"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Arc lance",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Anti-Vehicle 4+, Devastating Wounds"
-          }
-        }
       ],
       "Abilities": [
         {
@@ -2498,44 +2298,7 @@
           "characteristics": {
             "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
           }
-        }
-      ]
-    }
-  },
-  "Secutarii Hoplite w/ omnispex": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Melee Weapons": [
-        {
-          "name": "Arc lance",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "2",
-            "WS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Anti-Vehicle 4+, Devastating Wounds, Lance"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Arc lance",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Anti-Vehicle 4+, Devastating Wounds"
-          }
-        }
-      ],
-      "Abilities": [
+        },
         {
           "name": "Omnispex",
           "characteristics": {
@@ -2648,39 +2411,6 @@
             "Keywords": "-"
           }
         }
-      ]
-    }
-  },
-  "Secutarii Peltast w/ data-tether": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "➤ Galvanic caster - flechette",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "5",
-            "BS": "4+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Assault"
-          }
-        },
-        {
-          "name": "➤ Galvanic caster - hammershot",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Heavy"
-          }
-        }
       ],
       "Abilities": [
         {
@@ -2688,74 +2418,11 @@
           "characteristics": {
             "Description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "1",
-            "WS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Secutarii Peltast w/ omnispex": {
-    "cost": {
-      "pts": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "➤ Galvanic caster - flechette",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "5",
-            "BS": "4+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Assault"
-          }
         },
-        {
-          "name": "➤ Galvanic caster - hammershot",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "1",
-            "Keywords": "Heavy"
-          }
-        }
-      ],
-      "Abilities": [
         {
           "name": "Omnispex",
           "characteristics": {
             "Description": "Ranged weapons equipped by models in the bearer’s unit have the IGNORES COVER ability."
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Close combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "1",
-            "WS": "4+",
-            "S": "3",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "-"
           }
         }
       ]
@@ -2873,43 +2540,7 @@
       ]
     }
   },
-  "Sydonian Dragoon with radium jezzail": {
-    "cost": {
-      "Crusade Points": "0",
-      "Crusade: Battle Honours": "0",
-      "Crusade: Experience": "0",
-      "Crusade: Weapon Modifications": "0"
-    },
-    "profiles": {
-      "Ranged Weapons": [
-        {
-          "name": "Phosphor serpenta",
-          "characteristics": {
-            "Range": "18\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-1",
-            "D": "2",
-            "Keywords": "Ignores Cover, Pistol"
-          }
-        },
-        {
-          "name": "Radium jezzail",
-          "characteristics": {
-            "Range": "36\"",
-            "A": "1",
-            "BS": "4+",
-            "S": "5",
-            "AP": "-2",
-            "D": "3",
-            "Keywords": "Anti-Infantry 3+, Heavy, Precision"
-          }
-        }
-      ]
-    }
-  },
-  "Servitor with servo-arm": {
+  "Servitor": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -2925,12 +2556,7 @@
             "Keywords": "-"
           }
         }
-      ]
-    }
-  },
-  "Servitor with heavy bolter": {
-    "cost": {},
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "Heavy bolter",
@@ -2943,14 +2569,7 @@
             "D": "2",
             "Keywords": "Heavy, Sustained Hits 1"
           }
-        }
-      ]
-    }
-  },
-  "Servitor with multi-melta": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Multi-melta",
           "characteristics": {
@@ -2962,14 +2581,7 @@
             "D": "D6",
             "Keywords": "Heavy, Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Servitor with plasma cannon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma cannon - Standard",
           "characteristics": {
@@ -3043,7 +2655,7 @@
       ]
     }
   },
-  "Gun Servitor w/ heavy arc rifle": {
+  "Gun Servitor": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -3058,14 +2670,7 @@
             "D": "3",
             "Keywords": "Anti-VEHICLE 4+, Rapid Fire 1"
           }
-        }
-      ]
-    }
-  },
-  "Gun Servitor w/ heavy bolter": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Heavy bolter",
           "characteristics": {
@@ -3081,7 +2686,7 @@
       ]
     }
   },
-  "Combat Servitor w/ incendine igniter": {
+  "Combat Servitor": {
     "cost": {},
     "profiles": {
       "Ranged Weapons": [
@@ -3096,14 +2701,7 @@
             "D": "1",
             "Keywords": "Ignores Cover, Torrent"
           }
-        }
-      ]
-    }
-  },
-  "Combat Servitor w/ meltagun": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Meltagun",
           "characteristics": {
@@ -3115,14 +2713,7 @@
             "D": "D6",
             "Keywords": "Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Combat Servitor w/ phophor blaster": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Phosphor blaster",
           "characteristics": {

@@ -1121,66 +1121,6 @@
             "D": "1",
             "Keywords": "Pistol"
           }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Black Knight combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "5",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "Devastating Wounds"
-          }
-        }
-      ]
-    }
-  },
-  "Ravenwing Black Knight w/ Grenade Launcher": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Ravenwing Black Knight",
-          "characteristics": {
-            "M": "12\"",
-            "T": "5",
-            "SV": "3+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "2"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Black Knight combat weapon",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "5",
-            "AP": "-2",
-            "D": "1",
-            "Keywords": "Devastating Wounds"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Bolt Pistol",
-          "characteristics": {
-            "Range": "12\"",
-            "A": "1",
-            "BS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Pistol"
-          }
         },
         {
           "name": "➤ Astartes grenade launcher - frag",
@@ -1204,6 +1144,20 @@
             "AP": "-2",
             "D": "D3",
             "Keywords": "-"
+          }
+        }
+      ],
+      "Melee Weapons": [
+        {
+          "name": "Black Knight combat weapon",
+          "characteristics": {
+            "Range": "Melee",
+            "A": "3",
+            "WS": "3+",
+            "S": "5",
+            "AP": "-2",
+            "D": "1",
+            "Keywords": "Devastating Wounds"
           }
         }
       ]
@@ -1639,6 +1593,17 @@
             "LD": "6+",
             "OC": "1"
           }
+        },
+        {
+          "name": "Deathwing Command Terminator",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "3",
+            "LD": "6+",
+            "OC": "1"
+          }
         }
       ],
       "Ranged Weapons": [
@@ -1652,114 +1617,6 @@
             "AP": "0",
             "D": "1",
             "Keywords": "Rapid Fire 2"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Power Fist",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "3+",
-            "S": "8",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "-"
-          }
-        }
-      ]
-    }
-  },
-  "Deathwing Terminator w/ Chainfist": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Deathwing Command Terminator",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "4+"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Storm Bolter",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Rapid Fire 1"
-          }
-        }
-      ],
-      "Melee Weapons": [
-        {
-          "name": "Chainfist",
-          "characteristics": {
-            "Range": "Melee",
-            "A": "3",
-            "WS": "4+",
-            "S": "8",
-            "AP": "-2",
-            "D": "2",
-            "Keywords": "Anti-Vehicle 3+"
-          }
-        }
-      ]
-    }
-  },
-  "Deathwing Terminator w/ Heavy Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Deathwing Command Terminator",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "4+"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Storm Bolter",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Rapid Fire 1"
           }
         },
         {
@@ -1823,18 +1680,6 @@
           }
         },
         {
-          "name": "Storm Bolter",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Rapid Fire 1"
-          }
-        },
-        {
           "name": "➤ Cyclone Missile Launcher - Krak",
           "characteristics": {
             "Range": "36\"",
@@ -1870,6 +1715,14 @@
             "AP": "-2",
             "D": "2",
             "Keywords": "Anti-Vehicle 3+"
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "name": "Invulnerable Save",
+          "characteristics": {
+            "Description": "4+"
           }
         }
       ]
@@ -2339,6 +2192,17 @@
             "LD": "6+",
             "OC": "1"
           }
+        },
+        {
+          "name": "Deathwing Command Terminator w/ Shield",
+          "characteristics": {
+            "M": "5\"",
+            "T": "5",
+            "SV": "2+",
+            "W": "4",
+            "LD": "6+",
+            "OC": "1"
+          }
         }
       ],
       "Abilities": [
@@ -2346,6 +2210,12 @@
           "name": "Invulnerable Save",
           "characteristics": {
             "Description": "4+"
+          }
+        },
+        {
+          "name": "Storm Shield",
+          "characteristics": {
+            "Description": "The bearer has a Wounds characteristic of 4."
           }
         }
       ],
@@ -2375,49 +2245,7 @@
             "D": "2",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Deathwing Command Terminator w/ Power Weapon": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Deathwing Command Terminator",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "4+"
-          }
-        }
-      ],
-      "Ranged Weapons": [
-        {
-          "name": "Storm Bolter",
-          "characteristics": {
-            "Range": "24\"",
-            "A": "2",
-            "BS": "3+",
-            "S": "4",
-            "AP": "0",
-            "D": "1",
-            "Keywords": "Rapid Fire 2"
-          }
-        }
-      ],
-      "Melee Weapons": [
+        },
         {
           "name": "Power Weapon",
           "characteristics": {
@@ -2429,35 +2257,7 @@
             "D": "1",
             "Keywords": "-"
           }
-        }
-      ]
-    }
-  },
-  "Deathwing Command Terminator w/ Twin Claws": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Deathwing Command Terminator",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "3",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "4+"
-          }
-        }
-      ],
-      "Melee Weapons": [
+        },
         {
           "name": "Twin Lightning Claws",
           "characteristics": {
@@ -2469,41 +2269,7 @@
             "D": "1",
             "Keywords": "Twin-Linked"
           }
-        }
-      ]
-    }
-  },
-  "Deathwing Command Terminator w/ Hammer & Shield": {
-    "cost": {},
-    "profiles": {
-      "Unit": [
-        {
-          "name": "Deathwing Command Terminator w/ Shield",
-          "characteristics": {
-            "M": "5\"",
-            "T": "5",
-            "SV": "2+",
-            "W": "4",
-            "LD": "6+",
-            "OC": "1"
-          }
-        }
-      ],
-      "Abilities": [
-        {
-          "name": "Invulnerable Save",
-          "characteristics": {
-            "Description": "4+"
-          }
         },
-        {
-          "name": "Storm Shield",
-          "characteristics": {
-            "Description": "The bearer has a Wounds characteristic of 4."
-          }
-        }
-      ],
-      "Melee Weapons": [
         {
           "name": "Thunder Hammer",
           "characteristics": {

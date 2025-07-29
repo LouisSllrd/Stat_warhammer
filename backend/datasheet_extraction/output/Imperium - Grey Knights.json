@@ -433,10 +433,6 @@
   },
   "Terminator": {
     "cost": {},
-    "profiles": {}
-  },
-  "Terminator with Ancient's Banner": {
-    "cost": {},
     "profiles": {
       "Abilities": [
         {
@@ -444,14 +440,7 @@
           "characteristics": {
             "Description": "Add 1 to the Objective Control characteristic of models in the bearer’s unit."
           }
-        }
-      ]
-    }
-  },
-  "Terminator with Narthecium": {
-    "cost": {},
-    "profiles": {
-      "Abilities": [
+        },
         {
           "name": "Narthecium",
           "characteristics": {
@@ -460,10 +449,6 @@
         }
       ]
     }
-  },
-  "Terminator with Heavy Weapon": {
-    "cost": {},
-    "profiles": {}
   },
   "Justicar": {
     "cost": {},
@@ -1131,18 +1116,6 @@
     "cost": {},
     "profiles": {}
   },
-  "Interceptor w/ incinerator": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Interceptor w/ psilencer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Interceptor w/ psycannon": {
-    "cost": {},
-    "profiles": {}
-  },
   "Kaldor Draigo": {
     "cost": {
       "pts": "125"
@@ -1257,10 +1230,6 @@
   },
   "Paladin": {
     "cost": {},
-    "profiles": {}
-  },
-  "Paladin with Ancient's Banner": {
-    "cost": {},
     "profiles": {
       "Abilities": [
         {
@@ -1272,10 +1241,6 @@
       ]
     }
   },
-  "Paladin with Heavy Weapon": {
-    "cost": {},
-    "profiles": {}
-  },
   "Paragon": {
     "cost": {},
     "profiles": {}
@@ -1284,31 +1249,7 @@
     "cost": {},
     "profiles": {}
   },
-  "Purgator w/ incinerator": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Purgator w/ psilencer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Purgator w/ psycannon": {
-    "cost": {},
-    "profiles": {}
-  },
   "Purifier": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Purifier w/ incinerator": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Purifier w/ psilencer": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Purifier w/ psycannon": {
     "cost": {},
     "profiles": {}
   },
@@ -1316,7 +1257,7 @@
     "cost": {},
     "profiles": {}
   },
-  "Servitor with servo-arm": {
+  "Servitor": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [
@@ -1332,12 +1273,7 @@
             "Keywords": "-"
           }
         }
-      ]
-    }
-  },
-  "Servitor with heavy bolter": {
-    "cost": {},
-    "profiles": {
+      ],
       "Ranged Weapons": [
         {
           "name": "Heavy bolter",
@@ -1350,14 +1286,7 @@
             "D": "2",
             "Keywords": "Heavy, Sustained Hits 1"
           }
-        }
-      ]
-    }
-  },
-  "Servitor with multi-melta": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "Multi-melta",
           "characteristics": {
@@ -1369,14 +1298,7 @@
             "D": "D6",
             "Keywords": "Heavy, Melta 2"
           }
-        }
-      ]
-    }
-  },
-  "Servitor with plasma cannon": {
-    "cost": {},
-    "profiles": {
-      "Ranged Weapons": [
+        },
         {
           "name": "➤ Plasma cannon - standard",
           "characteristics": {
@@ -1405,10 +1327,6 @@
     }
   },
   "Grey Knight": {
-    "cost": {},
-    "profiles": {}
-  },
-  "Grey Knight with Heavy Weapon": {
     "cost": {},
     "profiles": {
       "Melee Weapons": [

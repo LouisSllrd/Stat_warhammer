@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import { motion, AnimatePresence } from "framer-motion";
 /*import { useContext } from "react";
@@ -40,25 +41,39 @@ const defender = {
   Reduce_damage_1: false
 };
 
-const fieldLabels = {
-  Nb_weapons: "Nombre d'armes",
-  Attacks: "Attaques",
-  CT: "CC/CT",
-  Strength: "Force",
-  PA: "Pénétration d'armure (PA)",
-  Damage: "Dégâts",
-  Sustained_hit: "Touches soutenues",
-  Lethal_hit: "Touches fatales",
-  Deva_wound: "Blessures dévastatrices",
-  Blast: "Déflagration",
-  Melta: "Melta X",
-  Modif_hit_att: "Modificateur de touche",
-  Modif_wound_att: "Modificateur de blessure",
-  Re_roll_hit: "Relance des touches",
-  Re_roll_wound: "Relance des blessures",
-  Crit_on_X_to_hit: "Critique sur X+ en touche",
-  Crit_on_X_to_wound: "Critique sur X+ en blessure",
-};
+function useFieldLabels(t) {
+  return {
+    Nb_weapons: t("simulateur.attaquant.nb_weapons"),
+    Attacks: t("simulateur.attaquant.attacks"),
+    CT: t("simulateur.attaquant.CT"),
+    Strength: t("simulateur.attaquant.Strength"),
+    PA: t("simulateur.attaquant.PA"),
+    Damage: t("simulateur.attaquant.Damage"),
+    Sustained_hit: t("simulateur.attaquant.Sustained_hit"),
+    Lethal_hit: t("simulateur.attaquant.Lethal_hit"),
+    Deva_wound: t("simulateur.attaquant.Deva_wound"),
+    Blast: t("simulateur.attaquant.Blast"),
+    Melta: t("simulateur.attaquant.Melta"),
+    Modif_hit_att: t("simulateur.attaquant.Modif_hit_att"),
+    Modif_wound_att: t("simulateur.attaquant.Modif_wound_att"),
+    Re_roll_hit: t("simulateur.attaquant.Re_roll_hit"),
+    Re_roll_wound: t("simulateur.attaquant.Re_roll_wound"),
+    Crit_on_X_to_hit: t("simulateur.attaquant.Crit_on_X_to_hit"),
+    Crit_on_X_to_wound: t("simulateur.attaquant.Crit_on_X_to_wound"),
+  
+    Toughness: t("simulateur.defenseur.Toughness"),
+    Save: t("simulateur.defenseur.Save"),
+    Save_invu: t("simulateur.defenseur.Save_invu"),
+    PV: t("simulateur.defenseur.PV"),
+    Nb_of_models: t("simulateur.defenseur.Nb_of_models"),
+    Cover: t("simulateur.defenseur.Cover"),
+    Fnp: t("simulateur.defenseur.Fnp"),
+    Modif_hit_def: t("simulateur.defenseur.Modif_hit_def"),
+    Modif_wound_def: t("simulateur.defenseur.Modif_wound_def"),
+    Halve_damage: t("simulateur.defenseur.Halve_damage"),
+    Reduce_damage_1: t("simulateur.defenseur.Reduce_damage_1"),
+  };
+}
 
 const attackerFields = Object.keys(defaultAttacker);
 
@@ -146,27 +161,38 @@ const optionsMap = {
 
 /*const saveOptions = [2, 3, 4, 5, 6, 7];*/
 
-// Fonction utilitaire pour formater l'affichage des options
-const optionLabel = (key, val) => {
-  if (key === "PA") return val === 0 ? "0" : `${val}`; // on laisse -1, -2 etc.
-  if (key === "Modif_hit_att" || key === "Modif_wound_att") return val > 0 ? `+${val}` : `${val}`;
-  if (
-    key === "CT" && val != "Torrent" ||
-    key === "Crit_on_X_to_hit" ||
-    key === "Crit_on_X_to_wound" ||
-    key === "Fnp_X"
-  ) return `${val}+`;
-  return `${val}`;
-};
 
 function CompareMobile() {
 
+  const { t } = useTranslation();
+  const fieldLabels = useFieldLabels(t);
     /*const { attacker1, setAttacker1, attacker2, setAttacker2 } = useContext(ProfilesContext);
     console.log("ProfilesContext values:", { attacker1, attacker2 });*/
   const [attacker1, setAttacker1] = useState(defaultAttacker);
   const [attacker2, setAttacker2] = useState(defaultAttacker);
   const [results, setResults] = useState(null);
   const [loading, setLoading] = useState(false);
+  const optionLabel = (key, val) => {
+    if (key === "PA") return val === 0 ? "0" : `${val}`;               // On laisse tel quel (ex: -1)
+    if (
+      key === "Modif_hit_att" || key === "Modif_wound_att" || key === "Modif_hit_def" || key === "Modif_wound_def"
+    ) return val > 0 ? `+${val}` : `${val}`;
+    if (
+      key === "CT" && val != "Torrent" ||
+      key === "Crit_on_X_to_hit" ||
+      key === "Crit_on_X_to_wound" ||
+      key === "Save_invu" && val != "N/A" ||
+      key === "Fnp" && val != "N/A"
+    ) return `${val}+`;
+    if (key === "Re_roll_hit" && val === "Relance des 1") return t("simulateur.re_roll.Re_roll_1_to_hit");
+    if (key === "Re_roll_hit" && val === "Relance des touches ratées") return t("simulateur.re_roll.Re_roll_failed_roll_to_hit");
+    if (key === "Re_roll_hit" && val === "Relance des touches non critiques (pêcher)") return t("simulateur.re_roll.Re_roll_non_critical_roll_to_hit");
+
+    if (key === "Re_roll_wound" && val === "Relance des 1") return t("simulateur.re_roll.Re_roll_1_to_wound");
+    if (key === "Re_roll_wound" && val === "Relance des blessures ratées") return t("simulateur.re_roll.Re_roll_failed_roll_to_wound");
+    if (key === "Re_roll_wound" && val === "Relance des blessures non critiques (pêcher)") return t("simulateur.re_roll.Re_roll_non_critical_roll_to_wound");
+    return `${val}`;
+  };
 
   // Fonction de changement qui cible le bon attaquant
   const handleChange = (e, setAttacker, attacker) => {
@@ -368,7 +394,7 @@ function CompareMobile() {
       color: "#2d3748",
     }}
   >
-    Comparateur de Profils
+   {t("accueil.generic.comparateur_title")}
   </h1>
 
   <div
@@ -411,7 +437,7 @@ function CompareMobile() {
         color: "orange",
       }}
     >
-      ⚔️ Attaquant 1
+      ⚔️ {t("simulateur.attacker")} 1
     </h3>
     {attackerFields.map((key) => renderField(key, attacker1, setAttacker1))}
   </div>
@@ -432,7 +458,7 @@ function CompareMobile() {
         color: "blue",
       }}
     >
-      ⚔️ Attaquant 2
+       ⚔️ {t("simulateur.attacker")} 2
     </h3>
     {attackerFields.map((key) => renderField(key, attacker2, setAttacker2))}
   </div>
@@ -469,7 +495,7 @@ function CompareMobile() {
           marginBottom: 20,
         }}
       >
-        {loading ? "Simulation en cours..." : "🆚 Lancer la Comparaison"}
+        {loading ? t("simulateur.simulation_en_cours") : t("compare.lancer_comparaison")}
       </button>
 
       <AnimatePresence>
@@ -484,7 +510,7 @@ function CompareMobile() {
                   overflowX: "auto"
                 }}
               >
-                Résultats sur des unités classiques
+                {t("compare.resultats")}
               </h3>
               <table
                 style={{
@@ -497,10 +523,10 @@ function CompareMobile() {
               >
                 <thead style={{ backgroundColor: "#ebf8ff" }}>
                   <tr>
-                    <th style={cellStyle}>Unité</th>
-                    <th style={cellStyle}>Moyenne arme 1</th>
-                    <th style={cellStyle}>Moyenne arme 2</th>
-                    <th style={cellStyle}>Arme la plus efficace</th>
+                    <th style={cellStyle}>{t("simulateur.unit")}</th>
+                    <th style={cellStyle}>{t("simulateur.moyenne")} {t("simulateur.attacker")} 1</th>
+                    <th style={cellStyle}>{t("simulateur.moyenne")} {t("simulateur.attacker")}  2</th>
+                    <th style={cellStyle}>{t("compare.arme_plus_efficace")}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -514,9 +540,10 @@ function CompareMobile() {
 
                     return (
                       <tr key={unitName}>
-                        <td style={cellStyle}>
-                          {unitName} {stats.unit ? `(en ${stats.unit})` : ""}
-                        </td>
+                        <td style={cellStyle}>{unitName} {stats.unit ? `(${t("simulateur.en")} ${stats.unit === "PV"
+                                    ? t("simulateur.defenseur.PV")
+                                    : t("simulateur.figs")})` : ""}
+                            </td>
                         <td style={cellStyle}>{mean1.toFixed(1)}</td>
                         <td style={cellStyle}>{mean2.toFixed(1)}</td>
                         <td
@@ -527,8 +554,8 @@ function CompareMobile() {
                           }}
                         >
                           {diff === 0
-                            ? "Identiques"
-                            : `${diff > 0 ? "Attaquant 2" : "Attaquant 1"} +${Math.abs(
+                            ? t("compare.identiques")
+                            : `${diff > 0 ? `${t("simulateur.attacker")} 2` : `${t("simulateur.attacker")} 1`} +${Math.abs(
                                 percentage
                               )}%`}
                         </td>
