@@ -412,6 +412,21 @@ const toggleLang = () => {
         textAlign: "center",
       }}
     >
+      <button
+            onClick={toggleLang}
+            style={{
+              position: "absolute",
+          top: 10,
+          left: 10,
+          border: "none",
+          background: "transparent",
+          fontSize: 18,
+          cursor: "pointer",
+            }}
+          >
+            {i18n.language === "fr" ? "🇬🇧" : "🇫🇷"}
+          </button>
+
       {/* Bouton de fermeture en haut */}
       <button
         onClick={() => setShowWelcomeModal(false)}
