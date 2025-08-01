@@ -281,7 +281,7 @@ const [showFullResults, setShowFullResults] = useState(false);
     
     if (key === "Modif_wound_def" && val === "-1 si F>E") return t("simulateur.defenseur.Minus_one_to_wound_if_SsE");
     return `${val}`;
-  };
+  }; 
 
   const renderField = (key) => {
     const def = defaultParams[key];
