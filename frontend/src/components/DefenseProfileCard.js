@@ -9,7 +9,7 @@ const optionsMap = {
   Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
   Fnp: ["N/A", "4", "5", "6"],
   Modif_hit_def: [0,-1,-2],
-  Modif_wound_def: [0,-1],
+  Modif_wound_def: ["0", "-1", "-1 si F>E"],
 };
 
 const booleanFields = new Set([
@@ -26,24 +26,6 @@ const defaultFieldsToEdit = [
 
 function useFieldLabels(t) {
   return {
-    Nb_weapons: t("simulateur.attaquant.nb_weapons"),
-    Attacks: t("simulateur.attaquant.attacks"),
-    CT: t("simulateur.attaquant.CT"),
-    Strength: t("simulateur.attaquant.Strength"),
-    PA: t("simulateur.attaquant.PA"),
-    Damage: t("simulateur.attaquant.Damage"),
-    Sustained_hit: t("simulateur.attaquant.Sustained_hit"),
-    Lethal_hit: t("simulateur.attaquant.Lethal_hit"),
-    Deva_wound: t("simulateur.attaquant.Deva_wound"),
-    Blast: t("simulateur.attaquant.Blast"),
-    Melta: t("simulateur.attaquant.Melta"),
-    Modif_hit_att: t("simulateur.attaquant.Modif_hit_att"),
-    Modif_wound_att: t("simulateur.attaquant.Modif_wound_att"),
-    Re_roll_hit: t("simulateur.attaquant.Re_roll_hit"),
-    Re_roll_wound: t("simulateur.attaquant.Re_roll_wound"),
-    Crit_on_X_to_hit: t("simulateur.attaquant.Crit_on_X_to_hit"),
-    Crit_on_X_to_wound: t("simulateur.attaquant.Crit_on_X_to_wound"),
-  
     Toughness: t("simulateur.defenseur.Toughness"),
     Save: t("simulateur.defenseur.Save"),
     Save_invu: t("simulateur.defenseur.Save_invu"),
@@ -74,6 +56,8 @@ const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToE
       // Si c'est "Save_invu" ET qu'on a "N/A", garde la string "N/A"
       if (value === "N/A") {
         val = "N/A";
+      } else if (name === "Modif_wound_def") {
+        val = value;
       } else {
         val = Number(value);
       }
@@ -83,6 +67,14 @@ const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToE
   
     const updatedProfile = { ...profile, [name]: val };
     onChange(updatedProfile);
+  };
+
+  const optionLabel = (key, val) => {
+    if (["Save", "Save_invu", "Fnp"].includes(key) && val != "N/A") {
+      return `${val}+`;
+    }
+    if (key === "Modif_wound_def" && val === "-1 si F>E") return t("simulateur.defenseur.Minus_one_to_wound_if_SsE");
+    return val;
   };
   
 
@@ -98,6 +90,8 @@ const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToE
       <h3 style={{ marginBottom: 12 }}>{title}</h3>
       {fieldsToEdit.map((key) => {
         const value = profile[key];
+
+        
 
         if (booleanFields.has(key)) {
           return (
@@ -123,8 +117,9 @@ const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToE
               <select name={key} value={value} onChange={handleChange} style={{ border: "1px solid #ccc", padding: 6, borderRadius: 4, width: "100%" }}>
                 {optionsMap[key].map((opt) => (
                   <option key={opt} value={opt}>
-                    {(key === "Save_invu" && opt !== "N/A") || key === "Save" ? `${opt}+` : opt}
-                  </option>
+                  {optionLabel(key, opt)}
+                </option>
+                
                 ))}
               </select>
             </div>

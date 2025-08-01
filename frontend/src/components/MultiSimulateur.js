@@ -44,7 +44,7 @@ const defaultDefender = {
   Cover: false,
   Fnp: "N/A",
   Modif_hit_def: 0,
-  Modif_wound_def: 0,
+  Modif_wound_def: "0",
   Halve_damage: false,
   Reduce_damage_1: false,
 };
@@ -184,7 +184,6 @@ function MultiSimulateur() {
         parsedParams.Sustained_hit = String(parsedParams.Sustained_hit);
         parsedParams.CT = String(parsedParams.CT);
         parsedParams.Nb_weapons = Number(parsedParams.Nb_weapons);
-        console.log("Nb_weapons : ", parsedParams.Nb_weapons);
         return parsedParams;
       });
   
@@ -200,6 +199,8 @@ function MultiSimulateur() {
         
         parsedDefenderProfile.Save_invu = String(parsedDefenderProfile.Save_invu)
         parsedDefenderProfile.Fnp = String(parsedDefenderProfile.Fnp)
+        parsedDefenderProfile.Modif_wound_def = String(parsedDefenderProfile.Modif_wound_def)
+        console.log("Modif_wound_def : ", parsedDefenderProfile.Modif_wound_def);
       });
   
       const res = await axios.post("https://statwarhammer-production-871f.up.railway.app/multi_profile_simulate", {

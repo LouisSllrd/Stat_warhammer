@@ -1,19 +1,5 @@
 import React from 'react';
-
-const fieldLabels = {
-  Toughness: "Endurance",
-  Save: "Save",
-  Save_invu: "Sauvegarde invulnérable",
-  PV: "PV par modèle",
-  Nb_of_models: "Nombre de figurines",
-  Fnp: "Insensible à la douleur (FNP)",
-  Modif_hit_def: "Modificateur de touche",
-  Modif_wound_def: "Modificateur de blessure",
-  Halve_damage: "Divise les dégâts par 2",
-  Reduce_damage_1: "Réduit les dégâts de 1",
-  Cover: "Couvert"
-};
-
+import { useTranslation } from "react-i18next";
 const optionsMap = {
   Toughness: Array.from({ length: 14 }, (_, i) => i + 1),
   Save: [2,3,4,5,6,7],
@@ -22,7 +8,7 @@ const optionsMap = {
   Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
   Fnp: ["N/A", "4", "5", "6"],
   Modif_hit_def: [0,-1,-2],
-  Modif_wound_def: [0,-1],
+  Modif_wound_def: ["0", "-1", "-1 si F>E"],
 };
 
 const booleanFields = new Set([
@@ -36,7 +22,26 @@ const defaultFieldsToEdit = [
   "Modif_wound_def", "Halve_damage", "Reduce_damage_1", "Cover"
 ];
 
+
+function useFieldLabels(t) {
+  return {
+    Toughness: t("simulateur.defenseur.Toughness"),
+    Save: t("simulateur.defenseur.Save"),
+    Save_invu: t("simulateur.defenseur.Save_invu"),
+    PV: t("simulateur.defenseur.PV"),
+    Nb_of_models: t("simulateur.defenseur.Nb_of_models"),
+    Cover: t("simulateur.defenseur.Cover"),
+    Fnp: t("simulateur.defenseur.Fnp"),
+    Modif_hit_def: t("simulateur.defenseur.Modif_hit_def"),
+    Modif_wound_def: t("simulateur.defenseur.Modif_wound_def"),
+    Halve_damage: t("simulateur.defenseur.Halve_damage"),
+    Reduce_damage_1: t("simulateur.defenseur.Reduce_damage_1"),
+  };
+}
+
 const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToEdit, title = "Profil Défensif" }) => {
+  const { t } = useTranslation();
+  const fieldLabels = useFieldLabels(t);
   const handleChange = (e) => {
     if (!e || !e.target) return;
     const { name, type, checked, value } = e.target;
@@ -48,6 +53,8 @@ const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToE
       // Si c'est "Save_invu" ET qu'on a "N/A", garde la string "N/A"
       if (value === "N/A") {
         val = "N/A";
+      } else if (name === "Modif_wound_def") {
+        val = value;
       } else {
         val = Number(value);
       }
@@ -59,6 +66,13 @@ const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToE
     onChange(updatedProfile);
   };
   
+  const optionLabel = (key, val) => {
+    if (["Save", "Save_invu", "Fnp"].includes(key) && val != "N/A") {
+      return `${val}+`;
+    }
+    if (key === "Modif_wound_def" && val === "-1 si F>E") return t("simulateur.defenseur.Minus_one_to_wound_if_SsE");
+    return val;
+  };
 
   return (
     <div style={{
@@ -97,8 +111,8 @@ const DefenseProfileCard = ({ profile, onChange, fieldsToEdit = defaultFieldsToE
               <select name={key} value={value} onChange={handleChange} style={{ border: "1px solid #ccc", padding: 6, borderRadius: 4, width: "100%" }}>
                 {optionsMap[key].map((opt) => (
                   <option key={opt} value={opt}>
-                    {(key === "Save_invu" && opt !== "N/A") || key === "Save" ? `${opt}+` : opt}
-                  </option>
+                  {optionLabel(key, opt)}
+                </option>
                 ))}
               </select>
             </div>

@@ -164,10 +164,16 @@ def damage_trial(params):
         Results_wound.append(D6())
 
     # On regarde les résultats du jet de blessure
+    Strength = convert(Strength)
+    if Modif_wound_def == "-1 si F>E" :
+        if Strength > Toughness :
+            Modif_wound_def = -1
+        else :
+            Modif_wound_def = 0
+    Modif_wound_def = int(Modif_wound_def)
     Modif_wound = Modif_wound_att + Modif_wound_def
     success_wounds = 0
     deva = 0
-    Strength = convert(Strength)
     if Strength == Toughness:
         unmodified_target_wound = 4
     elif Strength > Toughness:
@@ -483,7 +489,7 @@ class SimulationInput(BaseModel):
     Cover: bool
     Fnp: str
     Modif_hit_def: int
-    Modif_wound_def: int
+    Modif_wound_def: str
     Halve_damage: bool
     Reduce_damage_1: bool
     #Nb_iter: int
@@ -516,7 +522,7 @@ class DefenserParams(BaseModel):
     Cover: bool
     Fnp: str
     Modif_hit_def: int
-    Modif_wound_def: int
+    Modif_wound_def: str
     Halve_damage: bool
     Reduce_damage_1: bool
 

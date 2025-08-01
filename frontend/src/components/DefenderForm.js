@@ -11,7 +11,7 @@ const defaultParams = {
   Cover: false,
   Fnp: "N/A",
   Modif_hit_def: 0,
-  Modif_wound_def: 0,
+  Modif_wound_def: "0",
   Halve_damage: false,
   Reduce_damage_1: false
 };
@@ -23,8 +23,8 @@ const optionsMap = {
   Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
   Save_invu: ["N/A", "2", "3", "4", "5", "6"],
   Fnp: ["N/A", "4", "5", "6"],
-  Modif_hit_def: [0,-1,-2],
-  Modif_wound_def: [0, -1],
+  Modif_hit_def: [0, -1, -2],
+  Modif_wound_def: ["0", "-1", "-1 si F>E"],
 };
 
 function useFieldLabels(t) {
@@ -57,6 +57,8 @@ const DefenderForm = ({ params, setParams }) => {
       val = checked;
     } else if (["Save_invu", "Fnp"].includes(name) && value === "N/A") {
       val = "N/A";
+    } else if (name === "Modif_wound_def") {
+      val = value;
     } else {
       val = Number(value);
     }
@@ -69,6 +71,7 @@ const DefenderForm = ({ params, setParams }) => {
     if (["Save", "Save_invu", "Fnp"].includes(key) && val != "N/A") {
       return `${val}+`;
     }
+    if (key === "Modif_wound_def" && val === "-1 si F>E") return t("simulateur.defenseur.Minus_one_to_wound_if_SsE");
     return val;
   };
 
