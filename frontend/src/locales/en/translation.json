@@ -132,6 +132,7 @@
       "Fnp": "Feel No Pain (FNP)",
       "Modif_hit_def": "Hit modifier",
       "Modif_wound_def": "Wound modifier",
+      "Minus_one_to_wound_if_SsE" : "-1 if the strength is greater than the toughness",
       "Halve_damage": "Halves damage",
       "Reduce_damage_1": "Reduces damage by 1"
     },

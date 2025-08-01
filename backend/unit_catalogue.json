@@ -8,7 +8,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": false,
       "unit_type": "Light Infantry "
@@ -22,7 +22,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": false,
       "unit_type": "Infantry"
@@ -36,7 +36,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": false,
       "unit_type": "Infantry"
@@ -50,7 +50,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": false,
       "unit_type": "Heavy Infantry"
@@ -64,7 +64,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": true,
       "unit_type": "Heavy Infantry"
@@ -92,7 +92,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": false,
       "unit_type": "Vehicule"
@@ -106,7 +106,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": false,
       "unit_type": "Heavy Vehicule"
@@ -120,7 +120,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": false,
       "unit_type": "Light Vehicule"
@@ -148,7 +148,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": false,
       "unit_type": "Heavy Vehicule"
@@ -162,7 +162,7 @@
       "Cover": false,
       "Fnp": "N/A",
       "Modif_hit_def": 0,
-      "Modif_wound_def": 0,
+      "Modif_wound_def": "0",
       "Halve_damage": false,
       "Reduce_damage_1": false,
       "unit_type": "Heavy Vehicule"

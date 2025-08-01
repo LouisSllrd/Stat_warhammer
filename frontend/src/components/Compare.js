@@ -36,7 +36,7 @@ const defender = {
   Cover: false,
   Fnp: "N/A",
   Modif_hit_def: 0,
-  Modif_wound_def: 0,
+  Modif_wound_def: "0",
   Halve_damage: false,
   Reduce_damage_1: false
 };
@@ -96,9 +96,7 @@ const optionsMap = {
   Modif_hit_att: [0, 1, 2],
   Modif_wound_att: [0, 1],
   Crit_on_X_to_hit: [2, 3, 4, 5, 6],
-  Crit_on_X_to_wound: [2, 3, 4, 5, 6],
-  Toughness: Array.from({ length: 14 }, (_, i) => i + 1),
-  Fnp_X: [4, 5, 6],
+  Crit_on_X_to_wound: [2, 3, 4, 5, 6]
 };
 
 /*const saveOptions = [2, 3, 4, 5, 6, 7];*/
@@ -154,8 +152,6 @@ function Compare() {
         "Modif_wound_att",
         "Crit_on_X_to_hit",
         "Crit_on_X_to_wound",
-        "Toughness",
-        "Fnp_X",
         "CT",
         "Crit_on_X_to_hit",
         "Crit_on_X_to_wound",
@@ -172,10 +168,7 @@ function Compare() {
     const def = defaultAttacker[key];
     const value = attacker[key];
 
-    // Save et Save_invu_X spécial, ici dans defender uniquement, on ne les affiche pas dans attaquant
-    if (key === "Save" || key === "Save_invu_X") {
-      return null; // on ne gère pas ici
-    }
+    
 
     // Combo box si options définies
     if (optionsMap[key]) {

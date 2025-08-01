@@ -36,7 +36,7 @@ const defender = {
   Cover: false,
   Fnp: "N/A",
   Modif_hit_def: 0,
-  Modif_wound_def: 0,
+  Modif_wound_def: "0",
   Halve_damage: false,
   Reduce_damage_1: false
 };
@@ -155,8 +155,6 @@ const optionsMap = {
   Modif_wound_att: [0, 1],
   Crit_on_X_to_hit: [2, 3, 4, 5, 6],
   Crit_on_X_to_wound: [2, 3, 4, 5, 6],
-  Toughness: Array.from({ length: 14 }, (_, i) => i + 1),
-  Fnp_X: [4, 5, 6],
 };
 
 /*const saveOptions = [2, 3, 4, 5, 6, 7];*/
@@ -175,7 +173,7 @@ function CompareMobile() {
   const optionLabel = (key, val) => {
     if (key === "PA") return val === 0 ? "0" : `${val}`;               // On laisse tel quel (ex: -1)
     if (
-      key === "Modif_hit_att" || key === "Modif_wound_att" || key === "Modif_hit_def" || key === "Modif_wound_def"
+      key === "Modif_hit_att" || key === "Modif_wound_att" || key === "Modif_hit_def" 
     ) return val > 0 ? `+${val}` : `${val}`;
     if (
       key === "CT" && val != "Torrent" ||

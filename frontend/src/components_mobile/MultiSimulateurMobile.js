@@ -44,7 +44,7 @@ const defaultDefender = {
   Cover: false,
   Fnp: "N/A",
   Modif_hit_def: 0,
-  Modif_wound_def: 0,
+  Modif_wound_def: "0",
   Halve_damage: false,
   Reduce_damage_1: false,
 };

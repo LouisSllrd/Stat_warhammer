@@ -39,7 +39,7 @@ const defaultParams = {
   Cover: false,
   Fnp: "N/A",
   Modif_hit_def: 0,
-  Modif_wound_def: 0,
+  Modif_wound_def: "0",
   Halve_damage: false,
   Reduce_damage_1: false
 };
@@ -174,7 +174,7 @@ const [showFullResults, setShowFullResults] = useState(false);
     // Convertir les valeurs select en nombre
     if (
       ["Save", "Strength", "PA", "Melta", "Modif_hit_att", "Modif_wound_att",
-        "Crit_on_X_to_hit", "Crit_on_X_to_wound", "Toughness", "Modif_hit_def", "Modif_wound_def",
+        "Crit_on_X_to_hit", "Crit_on_X_to_wound", "Toughness", "Modif_hit_def"
       ].includes(name)
     ) {
       val = Number(val);
@@ -217,6 +217,7 @@ const [showFullResults, setShowFullResults] = useState(false);
     parsedParams.Re_roll_wound = String(parsedParams.Re_roll_wound);
     parsedParams.Save_invu = String(parsedParams.Save_invu);
     parsedParams.Fnp = String(parsedParams.Fnp);
+    parsedParams.Modif_wound_def = String(parsedParams.Modif_wound_def);
 
     console.log("FNP : ",parsedParams.Fnp )
 
@@ -253,7 +254,7 @@ const [showFullResults, setShowFullResults] = useState(false);
     Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
     Fnp: ["N/A", "4", "5", "6"],                                                  // 4+ à 6+
     Modif_hit_def: [0, -1, -2],                                      
-    Modif_wound_def: [0, -1],                                  
+    Modif_wound_def: ["0", "-1", "-1 si F>E"],                                  
     Save_invu: ["N/A", "2", "3", "4", "5", "6"]
   };
 
@@ -264,11 +265,11 @@ const [showFullResults, setShowFullResults] = useState(false);
       key === "Modif_hit_att" || key === "Modif_wound_att" || key === "Modif_hit_def" || key === "Modif_wound_def"
     ) return val > 0 ? `+${val}` : `${val}`;
     if (
-      key === "CT" && val != "Torrent" ||
-      key === "Crit_on_X_to_hit" ||
-      key === "Crit_on_X_to_wound" ||
-      key === "Save_invu" && val != "N/A" ||
-      key === "Fnp" && val != "N/A"
+      (key === "CT" && val !== "Torrent") ||
+      (key === "Crit_on_X_to_hit") ||
+      (key === "Crit_on_X_to_wound") ||
+      (key === "Save_invu" && val !== "N/A") ||
+      (key === "Fnp" && val !== "N/A")
     ) return `${val}+`;
     if (key === "Re_roll_hit" && val === "Relance des 1") return t("simulateur.re_roll.Re_roll_1_to_hit");
     if (key === "Re_roll_hit" && val === "Relance des touches ratées") return t("simulateur.re_roll.Re_roll_failed_roll_to_hit");
@@ -277,6 +278,8 @@ const [showFullResults, setShowFullResults] = useState(false);
     if (key === "Re_roll_wound" && val === "Relance des 1") return t("simulateur.re_roll.Re_roll_1_to_wound");
     if (key === "Re_roll_wound" && val === "Relance des blessures ratées") return t("simulateur.re_roll.Re_roll_failed_roll_to_wound");
     if (key === "Re_roll_wound" && val === "Relance des blessures non critiques (pêcher)") return t("simulateur.re_roll.Re_roll_non_critical_roll_to_wound");
+    
+    if (key === "Modif_wound_def" && val === "-1 si F>E") return t("simulateur.defenseur.Minus_one_to_wound_if_SsE");
     return `${val}`;
   };
 
