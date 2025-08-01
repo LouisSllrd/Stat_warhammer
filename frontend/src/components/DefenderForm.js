@@ -13,7 +13,8 @@ const defaultParams = {
   Modif_hit_def: 0,
   Modif_wound_def: "0",
   Halve_damage: false,
-  Reduce_damage_1: false
+  Reduce_damage_1: false,
+  Reduce_PA_1: false
 };
 
 // Ajout de Toughness dans optionsMap avec options 1 à 12
@@ -40,6 +41,7 @@ function useFieldLabels(t) {
     Modif_wound_def: t("simulateur.defenseur.Modif_wound_def"),
     Halve_damage: t("simulateur.defenseur.Halve_damage"),
     Reduce_damage_1: t("simulateur.defenseur.Reduce_damage_1"),
+    Reduce_PA_1: t("simulateur.defenseur.Reduce_PA_1")
   };
 }
 

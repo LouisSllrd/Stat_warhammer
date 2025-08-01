@@ -358,6 +358,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
         Modif_wound_def: "0",
         Halve_damage: false,
         Reduce_damage_1: false,
+        Reduce_PA_1: false,
         isFallback: true, // <--- utile pour l’interface
       };
     
@@ -397,6 +398,7 @@ const [selectedDefenseUnite, setSelectedDefenseUnite] = useState(null);
       Modif_wound_def: "0",
       Halve_damage: false,
       Reduce_damage_1: false,
+      Reduce_PA_1: false
     };
   
     setSelectedDefenseUnite(unit);

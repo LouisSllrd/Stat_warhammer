@@ -97,6 +97,7 @@ def damage_trial(params):
     Modif_wound_def = params["Modif_wound_def"]
     Halve_damage = params["Halve_damage"]
     Reduce_damage_1 = params["Reduce_damage_1"]
+    Reduce_PA_1 = params["Reduce_PA_1"]
 
     Total_attacks = 0
 
@@ -224,6 +225,8 @@ def damage_trial(params):
     # On regarde les résultats du jet de sauvegarde
     missed_svg = 0
     PA = convert(PA)
+    if Reduce_PA_1 :
+        PA += 1
     if Cover:
         target_svg = max(Save-PA-1,2)
     else :
@@ -340,6 +343,7 @@ def damage_simulation(params):
         params["Fnp"] = unit_stats["Fnp"]
         params["Halve_damage"] = unit_stats["Halve_damage"]
         params["Reduce_damage_1"] = unit_stats["Reduce_damage_1"]
+        params["Reduce_PA_1"] = unit_stats["Reduce_PA_1"]
 
         results_cat = [damage_trial(params) for _ in range(1000)]
 
@@ -433,6 +437,7 @@ def multi_profile_sim(params_attackers, params_defenser):
         params_defenser["Fnp"] = unit_stats["Fnp"]
         params_defenser["Halve_damage"] = unit_stats["Halve_damage"]
         params_defenser["Reduce_damage_1"] = unit_stats["Reduce_damage_1"]
+        params_defenser["Reduce_PA_1"] = unit_stats["Reduce_PA_1"]
 
         results_cat = np.zeros(1000)
         for attacker in params_attackers:
@@ -492,6 +497,7 @@ class SimulationInput(BaseModel):
     Modif_wound_def: str
     Halve_damage: bool
     Reduce_damage_1: bool
+    Reduce_PA_1: bool
     #Nb_iter: int
 
 class AttackerParams(BaseModel):
@@ -525,6 +531,7 @@ class DefenserParams(BaseModel):
     Modif_wound_def: str
     Halve_damage: bool
     Reduce_damage_1: bool
+    Reduce_PA_1: bool
 
 class MultiSimulationOutput(BaseModel):
     attackers_params: list[AttackerParams]

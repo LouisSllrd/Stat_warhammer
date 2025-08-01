@@ -137,7 +137,8 @@
               "Modif_wound_def": "Modificateur de blessure",
               "Minus_one_to_wound_if_SsE" : "-1 si la force est supérieure à l'endurance",
               "Halve_damage": "Divise les dégâts par 2",
-              "Reduce_damage_1": "Réduit les dégâts de 1"
+              "Reduce_damage_1": "Réduit les dégâts de 1",
+              "Reduce_PA_1": "Réduit la PA de 1"
             },
 
             "re_roll": {

@@ -12,14 +12,14 @@ const optionsMap = {
 };
 
 const booleanFields = new Set([
-   "Halve_damage", "Reduce_damage_1", "Cover"
+   "Halve_damage", "Reduce_damage_1", "Reduce_PA_1", "Cover"
 ]);
 
 const defaultFieldsToEdit = [
   "Toughness", "Save", "Save_invu", "PV",
   "Nb_of_models", "Fnp",
   "Modif_hit_def",
-  "Modif_wound_def", "Halve_damage", "Reduce_damage_1", "Cover"
+  "Modif_wound_def", "Halve_damage", "Reduce_damage_1", "Reduce_PA_1", "Cover"
 ];
 
 
@@ -36,6 +36,7 @@ function useFieldLabels(t) {
     Modif_wound_def: t("simulateur.defenseur.Modif_wound_def"),
     Halve_damage: t("simulateur.defenseur.Halve_damage"),
     Reduce_damage_1: t("simulateur.defenseur.Reduce_damage_1"),
+    Reduce_PA_1: t("simulateur.defenseur.Reduce_PA_1")
   };
 }
 
