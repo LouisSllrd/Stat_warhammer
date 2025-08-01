@@ -41,7 +41,8 @@ const defaultParams = {
   Modif_hit_def: 0,
   Modif_wound_def: "0",
   Halve_damage: false,
-  Reduce_damage_1: false
+  Reduce_damage_1: false,
+  Reduce_PA_1: false
 };
 
 const attackerFields = [
@@ -54,7 +55,7 @@ const attackerFields = [
 
 const defenderFields = [
   "Toughness", "Save", "Save_invu",
-  "PV", "Nb_of_models", "Cover", "Fnp","Modif_hit_def", "Modif_wound_def", "Halve_damage", "Reduce_damage_1"
+  "PV", "Nb_of_models", "Cover", "Fnp","Modif_hit_def", "Modif_wound_def", "Halve_damage", "Reduce_damage_1", "Reduce_PA_1"
 ];
 
 function useFieldLabels(t) {
@@ -88,6 +89,7 @@ function useFieldLabels(t) {
     Modif_wound_def: t("simulateur.defenseur.Modif_wound_def"),
     Halve_damage: t("simulateur.defenseur.Halve_damage"),
     Reduce_damage_1: t("simulateur.defenseur.Reduce_damage_1"),
+    Reduce_PA_1: t("simulateur.defenseur.Reduce_PA_1")
   };
 }
 

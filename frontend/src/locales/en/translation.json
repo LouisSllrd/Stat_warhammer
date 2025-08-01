@@ -134,7 +134,8 @@
       "Modif_wound_def": "Wound modifier",
       "Minus_one_to_wound_if_SsE" : "-1 if the strength is greater than the toughness",
       "Halve_damage": "Halves damage",
-      "Reduce_damage_1": "Reduces damage by 1"
+      "Reduce_damage_1": "Reduces damage by 1",
+      "Reduce_PA_1": "Reduces AP by 1"
     },
 
     "re_roll": {

@@ -117,6 +117,7 @@ const [defenderParams, setDefenderParams] = useState({ profils: [getDefaultDefen
         Modif_wound_def: "0",
         Halve_damage: false,
         Reduce_damage_1: false,
+        Reduce_PA_1: false
       };
   
       await addDoc(collection(db, "unités_adverses"), {
@@ -226,6 +227,7 @@ const [defenderParams, setDefenderParams] = useState({ profils: [getDefaultDefen
         Modif_wound_def: "0",
         Halve_damage: false,
         Reduce_damage_1: false,
+        Reduce_PA_1: false,
         Cover: false,
       };
     }
