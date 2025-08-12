@@ -255,8 +255,8 @@ const [showFullResults, setShowFullResults] = useState(false);
     PV: Array.from({ length: 30 }, (_, i) => i + 1),
     Nb_of_models: Array.from({ length: 20 }, (_, i) => i + 1),
     Fnp: ["N/A", "4", "5", "6"],                                                  // 4+ à 6+
-    Modif_hit_def: [0, -1, -2],                                      
-    Modif_wound_def: ["0", "-1", "-1 si F>E"],                                  
+    Modif_hit_def: [0, -1, -2],
+    Modif_wound_def: ["0", "-1", "-1 si F>E"],                                
     Save_invu: ["N/A", "2", "3", "4", "5", "6"]
   };
 
