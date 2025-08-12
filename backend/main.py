@@ -291,7 +291,7 @@ def damage_simulation(params):
     results = [damage_trial(params) for _ in range(1000)]
     mean = np.mean(results)
     std = np.std(results)
-    hist = dict()
+    hist = {}
     for r in results:
         hist[int(r)] = hist.get(int(r), 0) + 1
     total = len(results)
@@ -302,33 +302,69 @@ def damage_simulation(params):
     for val in reversed(sorted(hist)):
         cum_sum += hist[val]
         cumulative.append({"value": val, "cumulative_percent": 100 * cum_sum / total})
+    # Calcul proba_unit_killed avec interpolation si valeur manquante
     if params["Nb_of_models"] == 1:
         unit_descr = "Nombre de PV perdus"
         unit = "PV"
-        relative_damage = mean/params["PV"]*100
+        relative_damage = mean / params["PV"] * 100
         initial_force = params["PV"]
-        if relative_damage >=50:
-            proba_default_killed = 100
+
+        # Dictionnaire cumul pour accès direct
+        cum_dict = {entry["value"]: entry["cumulative_percent"] for entry in cumulative}
+
+        if initial_force in cum_dict:
+            proba_unit_killed = round(cum_dict[initial_force])
         else:
-            proba_default_killed = 0
-        proba_unit_killed = round(next(
-    (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
-    proba_default_killed))
- # par défaut si introuvable
+            # Recherche du plus proche inférieur et supérieur
+            lower_vals = [v for v in cum_dict.keys() if v < initial_force]
+            upper_vals = [v for v in cum_dict.keys() if v > initial_force]
+
+            if lower_vals and upper_vals:
+                lower = max(lower_vals)
+                upper = min(upper_vals)
+                # Interpolation linéaire
+                proba_lower = cum_dict[lower]
+                proba_upper = cum_dict[upper]
+                proba_unit_killed = round(
+                    proba_lower + (proba_upper - proba_lower) * ((initial_force - lower) / (upper - lower))
+                )
+            elif lower_vals:  # Seulement inférieur
+                proba_unit_killed = round(cum_dict[max(lower_vals)])
+            elif upper_vals:  # Seulement supérieur
+                proba_unit_killed = round(cum_dict[min(upper_vals)])
+            else:
+                proba_unit_killed = 0  # Aucun voisin
     
     else : 
         unit_descr = "Nombre de figurines tuées"
         unit = "figurines"
         relative_damage = mean/params["Nb_of_models"]*100
         initial_force = params["Nb_of_models"]
-        if relative_damage >=90:
-            proba_default_killed = 100
+        # Dictionnaire cumul pour accès direct
+        cum_dict = {entry["value"]: entry["cumulative_percent"] for entry in cumulative}
+
+        if initial_force in cum_dict:
+            proba_unit_killed = round(cum_dict[initial_force])
         else:
-            proba_default_killed = 0
-        proba_unit_killed = round(next(
-    (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
-    proba_default_killed))
- # par défaut si introuvable
+            # Recherche du plus proche inférieur et supérieur
+            lower_vals = [v for v in cum_dict.keys() if v < initial_force]
+            upper_vals = [v for v in cum_dict.keys() if v > initial_force]
+
+            if lower_vals and upper_vals:
+                lower = max(lower_vals)
+                upper = min(upper_vals)
+                # Interpolation linéaire
+                proba_lower = cum_dict[lower]
+                proba_upper = cum_dict[upper]
+                proba_unit_killed = round(
+                    proba_lower + (proba_upper - proba_lower) * ((initial_force - lower) / (upper - lower))
+                )
+            elif lower_vals:  # Seulement inférieur
+                proba_unit_killed = round(cum_dict[max(lower_vals)])
+            elif upper_vals:  # Seulement supérieur
+                proba_unit_killed = round(cum_dict[min(upper_vals)])
+            else:
+                proba_unit_killed = 0  # Aucun voisin
     
     # Résultats pour des profils d'unités classiques :
     catalogue = load_unit_catalogue()
@@ -402,27 +438,61 @@ def multi_profile_sim(params_attackers, params_defenser):
         unit = "PV"
         relative_damage = mean/params_defenser["PV"]*100
         initial_force = params_defenser["PV"]
-        if relative_damage >=50:
-            proba_default_killed = 100
+        # Dictionnaire cumul pour accès direct
+        cum_dict = {entry["value"]: entry["cumulative_percent"] for entry in cumulative}
+
+        if initial_force in cum_dict:
+            proba_unit_killed = round(cum_dict[initial_force])
         else:
-            proba_default_killed = 0
-        proba_unit_killed = round(next(
-    (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
-    proba_default_killed))
- # par défaut si introuvable
+            # Recherche du plus proche inférieur et supérieur
+            lower_vals = [v for v in cum_dict.keys() if v < initial_force]
+            upper_vals = [v for v in cum_dict.keys() if v > initial_force]
+
+            if lower_vals and upper_vals:
+                lower = max(lower_vals)
+                upper = min(upper_vals)
+                # Interpolation linéaire
+                proba_lower = cum_dict[lower]
+                proba_upper = cum_dict[upper]
+                proba_unit_killed = round(
+                    proba_lower + (proba_upper - proba_lower) * ((initial_force - lower) / (upper - lower))
+                )
+            elif lower_vals:  # Seulement inférieur
+                proba_unit_killed = round(cum_dict[max(lower_vals)])
+            elif upper_vals:  # Seulement supérieur
+                proba_unit_killed = round(cum_dict[min(upper_vals)])
+            else:
+                proba_unit_killed = 0  # Aucun voisin
     else : 
         unit_descr = "Nombre de figurines tuées"
         unit = "figurines"
         relative_damage = mean/params_defenser["Nb_of_models"]*100
         initial_force = params_defenser["Nb_of_models"]
-        if relative_damage >=90:
-            proba_default_killed = 100
+        # Dictionnaire cumul pour accès direct
+        cum_dict = {entry["value"]: entry["cumulative_percent"] for entry in cumulative}
+
+        if initial_force in cum_dict:
+            proba_unit_killed = round(cum_dict[initial_force])
         else:
-            proba_default_killed = 0
-        proba_unit_killed = round(next(
-    (entry["cumulative_percent"] for entry in cumulative if entry["value"] == initial_force),
-    proba_default_killed))
- # par défaut si introuvable
+            # Recherche du plus proche inférieur et supérieur
+            lower_vals = [v for v in cum_dict.keys() if v < initial_force]
+            upper_vals = [v for v in cum_dict.keys() if v > initial_force]
+
+            if lower_vals and upper_vals:
+                lower = max(lower_vals)
+                upper = min(upper_vals)
+                # Interpolation linéaire
+                proba_lower = cum_dict[lower]
+                proba_upper = cum_dict[upper]
+                proba_unit_killed = round(
+                    proba_lower + (proba_upper - proba_lower) * ((initial_force - lower) / (upper - lower))
+                )
+            elif lower_vals:  # Seulement inférieur
+                proba_unit_killed = round(cum_dict[max(lower_vals)])
+            elif upper_vals:  # Seulement supérieur
+                proba_unit_killed = round(cum_dict[min(upper_vals)])
+            else:
+                proba_unit_killed = 0  # Aucun voisin
 
     # Résultats pour des profils d'unités classiques :
     catalogue = load_unit_catalogue()
