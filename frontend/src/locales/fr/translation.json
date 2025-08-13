@@ -1,6 +1,7 @@
 
     {
-        "title_welcome": "Bienvenue sur la plateforme StatWarhammer40k pour ordinateur !",
+        "title_welcome_computer": "Bienvenue sur la plateforme StatWarhammer40k pour ordinateur !",
+        "title_welcome_mobile": "Bienvenue sur la plateforme StatWarhammer40k pour téléphone !",
       
         "accueil": {
           "intro": "Cette plateforme vous permet de réaliser des simulations de dégâts pour vos unités Warhammer 40k contre divers cibles. Que vous soyez en train de construire votre liste d'armée ou en pleine partie, vous pouvez rapidement estimer les dégâts potentiels que peut infliger une unité contre une cible spécifique. Cette plateforme possède un affichage adaptatif suivant si elle est ouverte sur oridnateur ou sur téléphone, pour simplifier son usage dans tous les cas d'utilisation.",

@@ -264,7 +264,7 @@ const [showFullResults, setShowFullResults] = useState(false);
   const optionLabel = (key, val) => {
     if (key === "PA") return val === 0 ? "0" : `${val}`;               // On laisse tel quel (ex: -1)
     if (
-      key === "Modif_hit_att" || key === "Modif_wound_att" || key === "Modif_hit_def" || key === "Modif_wound_def"
+      key === "Modif_hit_att" || key === "Modif_wound_att" || key === "Modif_hit_def" 
     ) return val > 0 ? `+${val}` : `${val}`;
     if (
       (key === "CT" && val !== "Torrent") ||

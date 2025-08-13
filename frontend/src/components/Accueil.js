@@ -6,7 +6,7 @@ const Accueil = () => {
 
   return (
     <div style={{ maxWidth: 900, margin: "0 auto", padding: 20, lineHeight: 1.7 }}>
-      <h1 style={{ fontSize: 28, marginBottom: 20 }}>{t("title_welcome")}</h1>
+      <h1 style={{ fontSize: 28, marginBottom: 20 }}>{t("title_welcome_computer")}</h1>
 
       <p>{t("accueil.intro")}</p>
 
