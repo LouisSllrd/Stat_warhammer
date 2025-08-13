@@ -69,8 +69,11 @@ const toggleLang = () => {
   
       // Affiche le message uniquement une fois par session après connexion
       if (currentUser && !hasShownWelcome) {
-        setShowWelcomeModal(true);
-        setHasShownWelcome(true);
+        // Chance 1 sur 10
+        if (Math.random() < 0.3) {
+          setShowWelcomeModal(true);
+          setHasShownWelcome(true);
+        }
       }
     });
     return () => unsubscribe();

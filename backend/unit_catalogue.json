@@ -1,5 +1,5 @@
 {
-    "Gardes impériaux": {
+    "Imperial guards": {
       "Toughness": 3,
       "Save": 5,
       "Save_invu": "N/A",
@@ -59,7 +59,7 @@
       "Reduce_PA_1": false,
       "unit_type": "Heavy Infantry"
     },
-    "Chevaliers Deathwing": {
+    "Deathwing Knights": {
       "Toughness": 5,
       "Save": 2,
       "Save_invu": "4",
@@ -119,7 +119,7 @@
       "Reduce_PA_1": false,
       "unit_type": "Heavy Vehicule"
     },
-    "Armiger avec invu 5+": {
+    "Armiger with invu 5+": {
       "Toughness": 9,
       "Save": 3,
       "Save_invu": "5",
@@ -134,7 +134,7 @@
       "Reduce_PA_1": false,
       "unit_type": "Light Vehicule"
     },
-    "Armiger sans invu 5+": {
+    "Armiger without invu 5+": {
       "Toughness": 9,
       "Save": 3,
       "Save_invu": "N/A",
@@ -149,7 +149,7 @@
       "Reduce_PA_1": false,
       "unit_type": "Light Vehicule"
     },
-    "Canis Rex avec invu 5+": {
+    "Canis Rex with invu 5+": {
       "Toughness": 11,
       "Save": 3,
       "Save_invu": "5",
@@ -164,7 +164,7 @@
       "Reduce_PA_1": false,
       "unit_type": "Heavy Vehicule"
     },
-    "Canis Rex sans invu 5+": {
+    "Canis Rex without invu 5+": {
       "Toughness": 11,
       "Save": 3,
       "Save_invu": "N/A",
